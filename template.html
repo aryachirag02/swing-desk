@@ -239,10 +239,27 @@ details.legend b{color:var(--ink)}
       <table><thead><tr><th>Date</th><th>Stock</th><th>Side</th><th>Qty</th><th>Price</th><th>Note</th><th></th></tr></thead>
       <tbody id="logrows"></tbody></table>
     </div>
-    <div style="display:flex;gap:8px;margin-top:12px">
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center">
       <button class="btn ghost" id="exportlog">Export log (JSON)</button>
       <label class="btn ghost" style="cursor:pointer">Import log<input type="file" id="importlog" accept=".json" hidden></label>
+      <button class="btn ghost" id="syncnow" style="display:none">Sync now</button>
+      <span id="syncstatus" style="font-size:12px;color:var(--mut)"></span>
     </div>
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;font-size:13px;color:var(--mut)">☁️ Cloud sync — access your trade log from every device</summary>
+      <div style="border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;font-size:13px">
+        <p style="margin:0 0 8px">Saves your log to a <b>private</b> GitHub repo so every device shares one log. Setup (once):
+        create a private repo (e.g. <code>swing-log</code>, tick "Add a README"), then create a fine-grained token at
+        GitHub → Settings → Developer settings → Fine-grained tokens → access to only that repo → Contents: Read &amp; write.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
+          <div><label style="font-size:11px">Repo (user/name)</label><br><input id="gh-repo" placeholder="aryachirag02/swing-log" style="width:220px"></div>
+          <div><label style="font-size:11px">Token (stored only in this browser)</label><br><input id="gh-token" type="password" placeholder="github_pat_..." style="width:260px"></div>
+          <button class="btn" id="gh-enable">Enable sync</button>
+          <button class="btn ghost" id="gh-disable">Disable</button>
+        </div>
+        <p style="margin:8px 0 0;color:var(--mut)">Last write wins across devices. Log stays out of your public dashboard repo. Enter the same repo + token once on each device.</p>
+      </div>
+    </details>
   </section>
 
   <!-- SYSTEM -->
@@ -300,7 +317,71 @@ $('#rail').innerHTML = DATA.sectors.map(s=>`
 let persist=true, mem=[];
 try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){persist=false;}
 const loadLog=()=>{ if(!persist) return mem; try{return JSON.parse(localStorage.getItem('swingdesk_log')||'[]')}catch(e){return[]} };
-const saveLog=l=>{ if(persist) localStorage.setItem('swingdesk_log',JSON.stringify(l)); else mem=l; };
+const saveLog=l=>{ if(persist){localStorage.setItem('swingdesk_log',JSON.stringify(l));localStorage.setItem('swingdesk_log_ts',new Date().toISOString());} else mem=l; schedulePush(); };
+
+/* ---------- Cloud sync (GitHub private repo) ---------- */
+const SYNCK='swingdesk_ghsync';
+const syncCfg=()=>{try{return JSON.parse(localStorage.getItem(SYNCK)||'{}')}catch(e){return{}}};
+const setSyncUI=msg=>{const el=$('#syncstatus'); if(el) el.textContent=msg||'';};
+function ghFetch(path,opts={}){
+  const c=syncCfg();
+  return fetch(`https://api.github.com/repos/${c.repo}/contents/${path}`,{...opts,
+    headers:{'Authorization':'Bearer '+c.token,'Accept':'application/vnd.github+json','If-None-Match':'',...(opts.headers||{})}});
+}
+const b64e=str=>btoa(unescape(encodeURIComponent(str)));
+const b64d=str=>decodeURIComponent(escape(atob(str.replace(/\s/g,''))));
+async function pullRemote(){
+  const r=await ghFetch('tradelog.json',{cache:'no-store'});
+  if(r.status===404) return null;
+  if(!r.ok) throw new Error('GitHub '+r.status);
+  const j=await r.json();
+  return {sha:j.sha, body:JSON.parse(b64d(j.content))};
+}
+let pushTimer=null, pushing=false;
+function schedulePush(){ if(!syncCfg().on) return; clearTimeout(pushTimer); pushTimer=setTimeout(pushRemote,1500); }
+async function pushRemote(retry=true){
+  if(!syncCfg().on||pushing) return; pushing=true; setSyncUI('syncing…');
+  try{
+    let sha; const cur=await ghFetch('tradelog.json',{cache:'no-store'});
+    if(cur.ok) sha=(await cur.json()).sha;
+    const body={updated_at:new Date().toISOString(), entries:loadLog()};
+    const r=await ghFetch('tradelog.json',{method:'PUT',
+      body:JSON.stringify({message:'trade log update',content:b64e(JSON.stringify(body,null,1)),sha})});
+    if(r.status===409&&retry){pushing=false;return pushRemote(false);}
+    if(!r.ok) throw new Error('GitHub '+r.status);
+    localStorage.setItem('swingdesk_log_ts',body.updated_at);
+    setSyncUI('☁ synced '+new Date().toLocaleTimeString());
+  }catch(e){ setSyncUI('sync failed: '+e.message); }
+  pushing=false;
+}
+async function startupSync(){
+  const c=syncCfg(); if(!c.on) return;
+  $('#syncnow').style.display=''; setSyncUI('checking cloud…');
+  try{
+    const remote=await pullRemote();
+    const localTs=localStorage.getItem('swingdesk_log_ts')||'1970';
+    if(remote&&remote.body&&remote.body.updated_at>localTs){
+      if(persist){localStorage.setItem('swingdesk_log',JSON.stringify(remote.body.entries||[]));
+                  localStorage.setItem('swingdesk_log_ts',remote.body.updated_at);}
+      renderLog(); setSyncUI('☁ pulled latest log from cloud');
+    } else if(remote===null||((remote.body&&remote.body.updated_at)||'1970')<localTs){
+      await pushRemote();
+    } else { setSyncUI('☁ in sync'); }
+  }catch(e){ setSyncUI('sync failed: '+e.message); }
+}
+function wireSyncUI(){
+  const c=syncCfg();
+  if(c.repo) $('#gh-repo').value=c.repo;
+  $('#gh-enable').onclick=async()=>{
+    const repo=$('#gh-repo').value.trim(), token=$('#gh-token').value.trim();
+    if(!repo.includes('/')||!token){alert('Enter repo as user/name and paste the token.');return;}
+    localStorage.setItem(SYNCK,JSON.stringify({repo,token,on:true}));
+    $('#gh-token').value=''; $('#syncnow').style.display='';
+    setSyncUI('testing…'); await startupSync();
+  };
+  $('#gh-disable').onclick=()=>{localStorage.removeItem(SYNCK);$('#syncnow').style.display='none';setSyncUI('sync off');};
+  $('#syncnow').onclick=()=>startupSync();
+}
 if(!persist) $('#persistnote').innerHTML='<div class="notice">Heads up: this preview can\'t save between sessions. Download the dashboard file and open it in your browser for a persistent log — or use Export/Import.</div>';
 
 const rowByTicker={}; DATA.rows.forEach(r=>rowByTicker[r.ticker]=r);
@@ -496,7 +577,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderLog(); renderSystem();
+renderChips(); renderTable(); renderIndices(); renderLog(); renderSystem(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>
