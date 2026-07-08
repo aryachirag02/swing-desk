@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 23882.1 · 50DMA 23828.0 · 200DMA 24858.1 · 1M +3.3%
-**Breadth:** 46.2% of universe above 50-DMA (Selective) · A/D 55/445
+**Breadth:** 46.1% of universe above 50-DMA (Selective) · A/D 54/445
 **Flows:** FII ₹+1,963 cr today (+2,356 cr 5-day) · DII ₹+790 cr
 
 **Indices:** NIFTY 50 23,882.1 (-2.1%) · BANK NIFTY 56,742.6 (-2.5%) · NIFTY REALTY 876.0 (-1.7%) · NIFTY PHARMA 25,429.8 (-1.0%) · NIFTY METAL 12,468.7 (-1.0%) · NIFTY MEDIA 1,452.4 (-4.0%)
@@ -18,7 +18,7 @@ Nifty 23882.1 · 50DMA 23828.0 · 200DMA 24858.1 · 1M +3.3%
 ## 🟢 Buy (0)
 - none today
 
-## 👀 Watchlist (182)
+## 👀 Watchlist (181)
 GODREJPROP · SOBHA · EXIDEIND · PARADEEP · ITCHOTELS · OBEROIRLTY · PRESTIGE · PAGEIND · TORNTPHARM · ANANTRAJ · BOSCHLTD · CEATLTD · CHOICEIN · ETERNAL · GMRAIRPORT · HOMEFIRST · INDHOTEL · INDUSINDBK · LTF · M&MFIN · PAYTM · PHOENIXLTD · PNBHOUSING · POONAWALLA · PWL …
 
 ## 📌 Position reminders (check Trade log tab)
