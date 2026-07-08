@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-08T11:09:13.789Z",
+ "updated_at": "2026-07-08T11:10:41.230Z",
  "entries": [
   {
    "date": "2026-07-08",
@@ -7,6 +7,14 @@
    "side": "Buy",
    "qty": "10",
    "price": "21",
+   "note": ""
+  },
+  {
+   "date": "2026-07-08",
+   "ticker": "ETERNAL",
+   "side": "Sell",
+   "qty": "5",
+   "price": "20",
    "note": ""
   }
  ]
