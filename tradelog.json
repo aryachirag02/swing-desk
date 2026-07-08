@@ -1,4 +1,13 @@
 {
- "updated_at": "2026-07-08T11:08:52.180Z",
- "entries": []
+ "updated_at": "2026-07-08T11:09:13.789Z",
+ "entries": [
+  {
+   "date": "2026-07-08",
+   "ticker": "ETERNAL",
+   "side": "Buy",
+   "qty": "10",
+   "price": "21",
+   "note": ""
+  }
+ ]
 }
