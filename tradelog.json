@@ -1,4 +1,13 @@
 {
- "updated_at": "2026-07-08T11:06:30.574Z",
- "entries": []
+ "updated_at": "2026-07-08T11:07:01.462Z",
+ "entries": [
+  {
+   "date": "2026-07-08",
+   "ticker": "INDHOTEL",
+   "side": "Buy",
+   "qty": "10",
+   "price": "10",
+   "note": ""
+  }
+ ]
 }
