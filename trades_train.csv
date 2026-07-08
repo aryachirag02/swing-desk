@@ -1,0 +1,47 @@
+ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
+LTF.NS,Financial Services,2025-04-24,2025-04-28,175.35,158.5,749,2,stop (gap),green,-12623.0,-1.22
+BIKAJI.NS,Fast Moving Consumer Goods,2025-04-25,2025-05-06,749.21,684.24,1,6,score decay,green,-65.0,-0.97
+IOC.NS,Oil Gas & Consumable Fuels,2025-05-06,2025-05-09,140.03,129.43,169,3,stop (gap),green,-1791.0,-1.14
+NIVABUPA.NS,Financial Services,2025-04-24,2025-06-02,84.0,84.0,1333,26,stop,green,0.0,0.0
+UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,113,33,stop,green,-10304.0,-1.0
+GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2653.91,2653.91,37,35,stop,green,0.0,0.0
+J&KBANK.NS,Financial Services,2025-06-11,2025-06-13,110.71,102.06,1279,2,stop,green,-11059.0,-1.0
+SOLARINDS.NS,Chemicals,2025-04-24,2025-07-10,13140.14,16146.76,11,54,stop,green,33073.0,3.34
+AUBANK.NS,Financial Services,2025-04-24,2025-07-18,657.69,794.9,167,60,time stop,green,22914.0,2.23
+DALBHARAT.NS,Construction Materials,2025-04-25,2025-07-21,1969.66,2251.36,66,60,time stop,green,18593.0,1.8
+JKCEMENT.NS,Construction Materials,2025-04-25,2025-07-21,5249.36,6416.0,24,60,time stop,green,27999.0,2.85
+ANURAS.NS,Chemicals,2025-04-25,2025-07-21,855.89,1159.5,5,60,time stop,green,1518.0,3.37
+RBLBANK.NS,Financial Services,2025-04-29,2025-07-23,204.75,257.98,468,60,time stop,green,24915.0,2.45
+WELCORP.NS,Capital Goods,2025-06-02,2025-07-25,921.95,883.96,121,39,score decay,green,-4596.0,-0.48
+KPRMILL.NS,Textiles,2025-05-09,2025-08-01,1144.41,1064.23,19,60,score decay,green,-1523.0,-0.64
+ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2250.29,2153.43,47,5,score decay,green,-4553.0,-0.66
+AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,193,12,stop,green,-5352.0,-1.0
+MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149865.74,142709.36,1,21,score decay,green,-7156.0,-0.85
+NAVA.NS,Power,2025-06-13,2025-08-18,536.83,575.95,194,45,score decay,green,7589.0,0.7
+KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,204.61,212.25,689,51,score decay,green,5261.0,0.48
+SHYAMMETL.NS,Capital Goods,2025-07-25,2025-08-28,950.26,905.9,1,22,score decay,green,-44.0,-0.76
+ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,78,46,stop,green,14470.0,1.27
+DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2263.1,2270.77,95,45,stop,green,729.0,0.06
+INDIACEM.NS,Construction Materials,2025-07-23,2025-10-20,368.6,392.15,327,60,time stop,green,7701.0,0.79
+MOTILALOFS.NS,Financial Services,2025-10-14,2025-10-29,1000.47,1000.47,154,10,stop,green,0.0,0.0
+ATHERENERG.NS,Automobile and Auto Components,2025-10-17,2025-10-30,680.0,680.0,136,8,stop,green,0.0,0.0
+IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,136,3,stop,green,-135.0,-1.0
+AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,289.0,260.56,407,12,stop,green,-11574.0,-1.0
+CEATLTD.NS,Automobile and Auto Components,2025-10-17,2025-11-07,3710.0,3913.1,39,13,stop,green,7921.0,0.83
+TATASTEEL.NS,Metals & Mining,2025-10-29,2025-11-14,179.96,171.34,13,11,stop,green,-112.0,-1.0
+SAGILITY.NS,Information Technology,2025-10-30,2025-11-14,53.45,48.0,2,10,stop (gap),green,-11.0,-1.41
+JSWSTEEL.NS,Metals & Mining,2025-10-30,2025-11-21,1201.0,1141.1,78,15,stop,green,-4672.0,-1.0
+SAIL.NS,Metals & Mining,2025-11-11,2025-11-21,144.27,133.54,1060,8,stop,green,-11377.0,-1.0
+WELSPUNLIV.NS,Textiles,2025-12-01,2025-12-08,146.6,133.24,3,5,stop,green,-40.0,-1.0
+SONACOMS.NS,Automobile and Auto Components,2025-10-15,2025-12-09,450.03,476.21,347,37,score decay,green,9087.0,0.79
+BHARTIARTL.NS,Telecommunication,2025-10-21,2025-12-11,2051.8,2051.8,62,35,stop,green,0.0,0.0
+BELRISE.NS,Automobile and Auto Components,2025-11-14,2025-12-18,163.0,155.98,14,24,score decay,green,-98.0,-0.54
+LTF.NS,Financial Services,2025-10-14,2025-12-31,265.27,312.73,674,53,end of test,green,31989.0,2.79
+MCX.NS,Financial Services,2025-10-14,2025-12-31,1802.8,2227.2,97,53,end of test,green,41167.0,3.61
+CUB.NS,Financial Services,2025-10-29,2025-12-31,180.0,218.1,842,43,end of test,green,32080.0,2.72
+INDUSTOWER.NS,Telecommunication,2025-11-06,2025-12-31,391.9,418.75,270,38,end of test,green,7250.0,0.98
+RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2025-12-31,1533.91,1563.17,150,27,end of test,green,4390.0,0.57
+HINDCOPPER.NS,Metals & Mining,2025-12-08,2025-12-31,371.4,517.47,1,16,end of test,green,146.0,4.46
+HINDZINC.NS,Metals & Mining,2025-12-11,2025-12-31,507.23,601.46,373,13,end of test,green,35147.0,2.94
+HINDALCO.NS,Metals & Mining,2025-12-15,2025-12-31,851.95,886.7,121,11,end of test,green,4205.0,0.8
+INDIACEM.NS,Construction Materials,2025-12-18,2025-12-31,436.2,435.25,6,8,end of test,green,-6.0,-0.02

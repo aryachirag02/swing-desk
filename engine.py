@@ -1,0 +1,297 @@
+"""Indicator + scoring engine. Everything downstream (dashboard, backtest, daily brief) uses this."""
+import os
+
+import numpy as np
+import pandas as pd
+import config as C
+
+
+# ---------------- low-level indicators ----------------
+def ema(s, n): return s.ewm(span=n, adjust=False).mean()
+
+def rsi(close, n=C.RSI_LEN):
+    d = close.diff()
+    up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean()
+    dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean()
+    rs = up / dn.replace(0, np.nan)
+    return (100 - 100 / (1 + rs)).fillna(50)
+
+def atr(df, n=C.ATR_LEN):
+    pc = df["close"].shift(1)
+    tr = pd.concat([df["high"] - df["low"],
+                    (df["high"] - pc).abs(),
+                    (df["low"] - pc).abs()], axis=1).max(axis=1)
+    return tr.ewm(alpha=1 / n, adjust=False).mean()
+
+
+# ---------------- per-stock indicator table ----------------
+def compute_indicators(df, bench_close):
+    """df: one ticker's OHLCV indexed by date. bench_close: benchmark close aligned to same dates."""
+    out = df.copy()
+    c = out["close"]
+    out["ema_f"] = ema(c, C.EMA_FAST)
+    out["ema_s"] = ema(c, C.EMA_SLOW)
+    out["rsi"] = rsi(c)
+    macd_line = ema(c, C.MACD_FAST) - ema(c, C.MACD_SLOW)
+    out["macd_hist"] = macd_line - ema(macd_line, C.MACD_SIG)
+    out["atr"] = atr(out)
+    out["atr_pct"] = out["atr"] / c * 100
+
+    b = bench_close.reindex(out.index).ffill()
+    out["rs_1m"] = (c.pct_change(C.RS_SHORT) - b.pct_change(C.RS_SHORT)) * 100
+    out["rs_3m"] = (c.pct_change(C.RS_LONG) - b.pct_change(C.RS_LONG)) * 100
+
+    out["vol_ratio"] = out["volume"] / out["volume"].rolling(C.VOL_AVG_LEN).mean()
+    out["high20"] = out["high"].rolling(C.BREAKOUT_LOOKBACK).max().shift(1)
+    out["turnover_cr"] = (c * out["volume"]).rolling(C.VOL_AVG_LEN).mean() / 1e7
+
+    slope_ok = out["ema_s"].diff(10) > 0
+    up = (c > out["ema_s"]) & (out["ema_f"] > out["ema_s"]) & slope_ok
+    down = (c < out["ema_s"]) & (out["ema_f"] < out["ema_s"])
+    out["trend"] = np.select([up, down], [2, 0], default=1)  # 2 up, 1 sideways, 0 down
+
+    # entry triggers
+    out["trig_breakout"] = (c > out["high20"]) & (out["vol_ratio"] >= 1.4)
+    near_ema = (out["low"] <= out["ema_f"] * 1.01).rolling(3).max().astype(bool)
+    out["trig_pullback"] = (out["trend"] == 2) & near_ema & (c > out["ema_f"]) & (c > c.shift(1))
+    mode = getattr(C, "TRIGGER_MODE", "both")
+    out["trigger"] = (out["trig_breakout"] if mode == "breakout"
+                      else out["trig_pullback"] if mode == "pullback"
+                      else out["trig_breakout"] | out["trig_pullback"])
+    return out
+
+
+# ---------------- composite score (vectorized; one source of truth) ----------------
+def score_frame(ind, sector_top):
+    """Composite 0-100 score for a full indicator frame.
+    ind: output of compute_indicators. sector_top: bool Series aligned to ind.index
+    (is this stock's sector in the top-N strongest sectors on that day)."""
+    # Trend (25)
+    s = np.select([ind["trend"] == 2, ind["trend"] == 1], [C.W_TREND, C.W_TREND * 0.45], 0.0)
+    # Momentum (25): RSI sweet spot + MACD state
+    rv = ind["rsi"]
+    s = s + np.select([(rv >= 55) & (rv <= 70), (rv >= 50) & (rv < 55),
+                       (rv > 70) & (rv <= 78), (rv >= 45) & (rv < 50)], [13, 9, 7, 4], 0)
+    mh = ind["macd_hist"]; rising = mh.diff() > 0
+    s = s + np.select([(mh > 0) & rising, (mh > 0), rising], [12, 8, 4], 0)
+    # Relative strength (30): vs Nifty 1M + 3M, bonus for a leading sector
+    r1, r3 = ind["rs_1m"], ind["rs_3m"]
+    s = s + np.select([r1 > 5, r1 > 0, r1 > -3], [12, 8, 3], 0)
+    s = s + np.select([r3 > 8, r3 > 0], [12, 8], 0)
+    s = s + np.where(sector_top.reindex(ind.index).fillna(False).to_numpy(), 6, 0)
+    # Volume (10): confirmation on up days
+    vr = ind["vol_ratio"]; upday = ind["close"] > ind["close"].shift(1)
+    s = s + np.select([(vr >= 1.5) & upday, vr >= 1.2, vr >= 0.8], [10, 6, 3], 0)
+    # Volatility sanity (10): tradable, not wild
+    ap = ind["atr_pct"]
+    s = s + np.select([ap <= 3.5, ap <= 5, ap <= 7], [10, 6, 3], 0)
+    return pd.Series(np.minimum(s, 100), index=ind.index).round(1)
+
+
+# ---------------- friendly labels ----------------
+def labels(r):
+    return {
+        "trend_label": {2: "Up ↑", 1: "Sideways →", 0: "Down ↓"}[int(r["trend"])],
+        "rsi_label": ("Overheated" if r["rsi"] > 70 else "Strong" if r["rsi"] >= 55
+                      else "Neutral" if r["rsi"] >= 45 else "Weak"),
+        "vs_market": ("Beating" if r["rs_1m"] > 2 else "Matching" if r["rs_1m"] >= -2 else "Lagging"),
+        "volume_label": ("Surge" if r["vol_ratio"] >= 1.5 else "Active" if r["vol_ratio"] >= 1.1
+                         else "Normal" if r["vol_ratio"] >= 0.7 else "Dry"),
+        "trigger_label": (f"Breakout — new {C.BREAKOUT_LOOKBACK}-day high on {float(r['vol_ratio']):.1f}× volume"
+                          if r.get("trig_breakout")
+                          else f"Pullback bounce — held the rising {C.EMA_FAST} EMA"
+                          if r.get("trig_pullback") else ""),
+    }
+
+
+def state_for(score, trigger, liquid=True):
+    """Market-side state for a stock we do NOT hold. (Held stocks -> Hold/Reduce/Exit in backtest/log.)"""
+    if not liquid: return "—"
+    if score >= C.STRONG_BUY_SCORE and trigger: return "Strong Buy"
+    if score >= C.BUY_SCORE and trigger: return "Buy"
+    if score >= C.WATCHLIST_SCORE: return "Watchlist"
+    return "—"
+
+
+# ---------------- market regime & sectors ----------------
+def market_breadth(px_stocks):
+    """Advance/decline today + % of the universe above its own 50-DMA (broad vs narrow rally)."""
+    ma50 = px_stocks.rolling(50).mean()
+    last, prev = px_stocks.iloc[-1], px_stocks.iloc[-2]
+    valid = last.notna() & prev.notna()
+    adv = int((last[valid] > prev[valid]).sum())
+    dec = int((last[valid] < prev[valid]).sum())
+    pct50 = round(float((last[valid] > ma50.iloc[-1][valid]).mean() * 100), 1)
+    label = ("Broad participation" if pct50 >= 60 else
+             "Selective" if pct50 >= 40 else "Narrow / weak")
+    return {"advancers": adv, "decliners": dec, "ad_ratio": round(adv / max(dec, 1), 2),
+            "pct_above_50dma": pct50, "label": label}
+
+
+def load_extras(asof=None):
+    """Optional data files -> earnings flags, ASM/GSM surveillance list, FII/DII flows.
+    Each is graceful: feature simply stays dark until its CSV exists."""
+    ex = {"earnings": {}, "surveillance": {}, "flows": None}
+    if os.path.exists(C.EARNINGS_FILE):
+        df = pd.read_csv(C.EARNINGS_FILE)
+        ex["earnings"] = dict(zip(df["ticker"], df["next_earnings"].astype(str)))
+    if os.path.exists(C.SURVEILLANCE_FILE):
+        df = pd.read_csv(C.SURVEILLANCE_FILE)
+        ex["surveillance"] = dict(zip(df["ticker"], df["list"].astype(str)))
+    if os.path.exists(C.FLOWS_FILE):
+        df = pd.read_csv(C.FLOWS_FILE).sort_values("date")
+        if len(df):
+            last = df.iloc[-1]
+            fii = df["fii_net_cr"].tolist()
+            streak, sign = 0, fii[-1] < 0
+            for v in reversed(fii):
+                if v != 0 and (v < 0) == sign: streak += 1
+                else: break
+            ex["flows"] = {"date": str(last["date"]),
+                           "fii_net_cr": round(float(last["fii_net_cr"])),
+                           "dii_net_cr": round(float(last["dii_net_cr"])),
+                           "fii_5d_cr": round(float(df["fii_net_cr"].tail(5).sum())),
+                           "dii_5d_cr": round(float(df["dii_net_cr"].tail(5).sum())),
+                           "fii_streak": streak, "fii_selling": bool(sign)}
+    return ex
+
+
+def market_regime(bench_close):
+    ma50 = bench_close.rolling(50).mean()
+    ma200 = bench_close.rolling(200).mean()
+    c, m50, m200 = bench_close.iloc[-1], ma50.iloc[-1], ma200.iloc[-1]
+    m50_rising = bench_close.rolling(50, min_periods=30).mean().diff(10).iloc[-1] > 0
+    if c > m50 and c > m200 and m50_rising:
+        light, advice = "green", "Full position size — trend supports new buys"
+    elif c > m50 and c > m200:
+        light, advice = "yellow", "No new buys — price above averages but 50DMA still falling (bull-trap filter)"
+    elif c < m50 and c < m200: light, advice = "red", "No new buys — protect capital, manage exits"
+    else: light, advice = "yellow", ("No new buys — mixed market (v2: yellow entries tested negative); manage holdings"
+                                    if C.REGIME_RISK.get("yellow", 0) == 0 else
+                                    "Half position size — mixed market, be selective")
+    return {"light": light, "advice": advice, "nifty": round(float(c), 1),
+            "ma50": round(float(m50), 1), "ma200": round(float(m200), 1),
+            "chg_1m": round(float(bench_close.pct_change(21).iloc[-1] * 100), 2)}
+
+def regime_series(bench_close):
+    ma50 = bench_close.rolling(50).mean(); ma200 = bench_close.rolling(200).mean()
+    g = (bench_close > ma50) & (bench_close > ma200)
+    r = (bench_close < ma50) & (bench_close < ma200)
+    return pd.Series(np.select([g, r], ["green", "red"], default="yellow"), index=bench_close.index)
+
+def sector_strength(prices_wide, meta, bench_close, asof=None):
+    """Equal-weight sector composites from our own universe -> rank by blended 1M/3M RS vs Nifty."""
+    px = prices_wide if asof is None else prices_wide.loc[:asof]
+    b = bench_close.reindex(px.index).ffill()
+    rows = []
+    for sec, g in meta.groupby("sector"):
+        cols = [t for t in g["ticker"] if t in px.columns]
+        if not cols: continue
+        comp = (px[cols] / px[cols].iloc[0]).mean(axis=1)
+        r1 = comp.pct_change(C.RS_SHORT).iloc[-1] - b.pct_change(C.RS_SHORT).iloc[-1]
+        r3 = comp.pct_change(C.RS_LONG).iloc[-1] - b.pct_change(C.RS_LONG).iloc[-1]
+        rows.append({"sector": sec, "rs_1m": round(r1 * 100, 2), "rs_3m": round(r3 * 100, 2),
+                     "blend": round((0.6 * r1 + 0.4 * r3) * 100, 2), "n": len(cols)})
+    df = pd.DataFrame(rows).sort_values("blend", ascending=False).reset_index(drop=True)
+    df["rank"] = df.index + 1
+    df["top"] = df["rank"] <= C.TOP_SECTORS
+    return df
+
+
+# ---------------- full-universe snapshot (for dashboard & daily brief) ----------------
+def snapshot(prices_long, meta):
+    """Latest-day view for every stock: indicators, labels, score, state, trade levels, sparkline."""
+    px_close = prices_long.pivot(index="date", columns="ticker", values="close").sort_index()
+    bench = px_close[C.BENCHMARK].dropna()
+    stocks_wide = px_close.drop(columns=[C.BENCHMARK])
+    sect = sector_strength(stocks_wide, meta, bench)
+    top_secs = set(sect[sect["top"]]["sector"])
+    regime = market_regime(bench)
+    breadth = market_breadth(stocks_wide)
+    extras = load_extras()
+    asof_date = px_close.index[-1]
+
+    rows = []
+    for t, g in prices_long[prices_long["ticker"] != C.BENCHMARK].groupby("ticker"):
+        g = g.sort_values("date").set_index("date")
+        if len(g) < C.RS_LONG + 10: continue
+        ind = compute_indicators(g, bench)
+        m = meta[meta["ticker"] == t].iloc[0]
+        cap = m.get("cap", "")
+        cap = "" if pd.isna(cap) else str(cap)
+        sec_top = pd.Series(m["sector"] in top_secs, index=ind.index)
+        sc = float(score_frame(ind, sec_top).iloc[-1])
+        r = ind.iloc[-1].copy()
+        r["prev_close"] = ind["close"].iloc[-2]
+        surv = extras["surveillance"].get(t, "")
+        liquid = r["turnover_cr"] >= C.MIN_TURNOVER_CR
+        st = state_for(sc, bool(r["trigger"]), liquid and not surv)  # surveillance list = never a Buy
+        earn = extras["earnings"].get(t, "")
+        earn_soon = False
+        if earn:
+            try:
+                d = pd.Timestamp(earn)
+                earn_soon = 0 <= (d - asof_date).days <= C.EARNINGS_WARN_DAYS
+                earn = str(d.date())
+            except Exception:
+                earn, earn_soon = "", False
+        lab = labels(r)
+        entry = float(r["close"]); stop = entry - C.STOP_ATR_MULT * float(r["atr"])
+        spark = ind["close"].iloc[-30:]
+        rows.append({
+            "ticker": t.replace(".NS", ""), "yahoo": t, "name": m["name"], "sector": m["sector"], "cap": cap,
+            "close": round(entry, 1), "chg_1d": round((entry / float(r["prev_close"]) - 1) * 100, 2),
+            "score": sc, "state": st, **lab,
+            "rsi": round(float(r["rsi"]), 0), "rs_1m": round(float(r["rs_1m"]), 1),
+            "atr": round(float(r["atr"]), 1), "atr_pct": round(float(r["atr_pct"]), 1),
+            "entry": round(entry, 1), "stop": round(stop, 1),
+            "target": round(entry + C.TARGET_R * (entry - stop), 1),
+            "risk_per_share": round(entry - stop, 1),
+            "turnover_cr": round(float(r["turnover_cr"]), 1), "liquid": bool(liquid),
+            "surveillance": surv, "earnings": earn, "earnings_soon": bool(earn_soon),
+            "spark": [round(x, 1) for x in (spark / spark.iloc[0] * 100).tolist()],
+        })
+    rows.sort(key=lambda x: -x["score"])
+    return {"asof": str(px_close.index[-1].date()), "regime": regime, "breadth": breadth,
+            "flows": extras["flows"], "sectors": sect.to_dict("records"), "rows": rows}
+
+
+def load_data():
+    prices = pd.read_csv(C.PRICES_FILE, parse_dates=["date"])
+    meta = pd.read_csv(C.META_FILE)
+    return prices, meta
+
+
+# ---------------- index snapshot (Indices tab) ----------------
+def index_snapshot(path=os.path.join(C.DATA_DIR, "indices.csv")):
+    """Per-index dashboard rows from real Yahoo index data. Returns [] if file absent."""
+    if not os.path.exists(path):
+        return []
+    df = pd.read_csv(path, parse_dates=["date"])
+    rows = []
+    for (sym, name), g in df.groupby(["ticker", "name"], sort=False):
+        g = g.sort_values("date")
+        c = g["close"]
+        if len(c) < 60:
+            continue
+        ma50 = c.rolling(50).mean(); ma200 = c.rolling(200).mean()
+        slope_up = ma50.diff(10).iloc[-1] > 0 if len(c) >= 60 else False
+        last = float(c.iloc[-1])
+        r = rsi(c).iloc[-1]
+        hi52 = float(c.tail(252).max()); lo52 = float(c.tail(252).min())
+        up = last > ma50.iloc[-1] and (len(c) < 200 or last > ma200.iloc[-1]) and slope_up
+        dn = last < ma50.iloc[-1] and (len(c) >= 200 and last < ma200.iloc[-1])
+        pct = lambda n: round((last / float(c.iloc[-n-1]) - 1) * 100, 1) if len(c) > n else None
+        rows.append({
+            "ticker": sym, "name": name, "close": round(last, 1),
+            "chg_1d": pct(1), "chg_1w": pct(5), "chg_1m": pct(21), "chg_3m": pct(63),
+            "vs_50dma": round((last / float(ma50.iloc[-1]) - 1) * 100, 1),
+            "vs_200dma": round((last / float(ma200.iloc[-1]) - 1) * 100, 1) if len(c) >= 200 else None,
+            "rsi": round(float(r), 0),
+            "from_52w_high": round((last / hi52 - 1) * 100, 1),
+            "trend_label": "Up ↑" if up else "Down ↓" if dn else "Sideways →",
+        })
+    order = {s: i for i, s in enumerate(["^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS", "^NSEMDCP50",
+                                          "NIFTY_MIDCAP_100.NS"])}
+    rows.sort(key=lambda r: (order.get(r["ticker"], 99), -(r["chg_1m"] or -999)))
+    return rows

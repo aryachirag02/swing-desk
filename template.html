@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swing Desk — Nifty 500</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F4; --panel:#FFFFFF; --ink:#16233A; --muted:#5B6B80; --line:#DCE3E0;
+  --brass:#9C7A2C; --sbuy:#0A6B44; --buy:#1E8A5A; --watch:#1D5FBF; --hold:#5B6B80;
+  --reduce:#B36A00; --exit:#C2372F; --lampg:#2FA84F; --lampy:#E0A62A; --lampr:#D64545;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace; --sans:'IBM Plex Sans',system-ui,sans-serif;
+  --disp:'Space Grotesk',var(--sans);
+}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45}
+.wrap{max-width:1280px;margin:0 auto;padding:20px 20px 80px}
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;
+  border-bottom:3px double var(--brass);padding-bottom:14px;margin-bottom:18px}
+.mast h1{font-family:var(--disp);font-weight:700;font-size:30px;letter-spacing:-.02em}
+.mast h1 span{color:var(--brass)}
+.mast .sub{color:var(--muted);font-family:var(--mono);font-size:12px;margin-top:2px}
+.badge-sample{background:#FBEFD9;border:1px solid var(--brass);color:#7A5B14;font-family:var(--mono);
+  font-size:11px;padding:4px 10px;border-radius:3px;font-weight:600}
+/* regime board */
+.board{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;
+  background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 20px;margin-bottom:14px}
+.lamps{display:flex;gap:10px;align-items:center}
+.lamp{width:34px;height:34px;border-radius:50%;background:#E7ECEA;border:2px solid var(--line);position:relative}
+.lamp.on-green{background:var(--lampg);border-color:#1E7A38;box-shadow:0 0 14px 2px rgba(47,168,79,.55)}
+.lamp.on-yellow{background:var(--lampy);border-color:#A97B12;box-shadow:0 0 14px 2px rgba(224,166,42,.55)}
+.lamp.on-red{background:var(--lampr);border-color:#A32C2C;box-shadow:0 0 14px 2px rgba(214,69,69,.55)}
+.board .advice{font-family:var(--disp);font-size:17px;font-weight:500}
+.board .why{color:var(--muted);font-size:12.5px;margin-top:2px}
+.board .nums{font-family:var(--mono);font-size:12.5px;text-align:right;color:var(--muted)}
+.board .nums b{color:var(--ink);font-size:15px}
+/* sector rail */
+.rail{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;margin-bottom:14px}
+.sec{min-width:118px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 10px;flex:0 0 auto}
+.sec.top{border-color:var(--buy);box-shadow:inset 0 2px 0 var(--buy)}
+.sec .nm{font-weight:600;font-size:12.5px;display:flex;justify-content:space-between;gap:6px}
+.sec .nm .rk{color:var(--muted);font-family:var(--mono);font-size:11px}
+.sec .bar{height:5px;background:#ECF0EE;border-radius:3px;margin:7px 0 5px;overflow:hidden}
+.sec .bar i{display:block;height:100%}
+.sec .rs{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.sec .lead{color:var(--buy);font-size:10px;font-weight:700;letter-spacing:.06em}
+/* tabs */
+.tabs{display:flex;gap:6px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.tab{font-family:var(--disp);font-weight:500;font-size:14px;padding:9px 16px;cursor:pointer;border:0;
+  background:none;color:var(--muted);border-bottom:3px solid transparent}
+.tab.active{color:var(--ink);border-bottom-color:var(--ink)}
+.tab:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--watch);outline-offset:1px}
+/* market internals + safety flags */
+.internals{display:flex;gap:22px;flex-wrap:wrap;padding:9px 2px 2px;font-size:12.5px;color:var(--muted)}
+.internals b{color:var(--ink);font-weight:600}
+.warnchip{color:#B3352C;border:1px solid #B3352C;border-radius:3px;padding:0 6px;font-size:10.5px;margin-left:6px;white-space:nowrap}
+.flag{display:inline-block;font-size:10px;line-height:15px;border:1px solid;border-radius:3px;padding:0 5px;margin:3px 4px 0 0;font-family:'IBM Plex Mono',monospace}
+.flag.surv{color:#B3352C;border-color:#B3352C}
+.flag.earn{color:#8A6A12;border-color:#C9A94E}
+.logwarn{color:#B3352C;font-size:12.5px;min-height:17px;margin:-6px 0 10px}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.chip{font-family:var(--mono);font-size:12px;padding:6px 11px;border-radius:20px;border:1px solid var(--line);
+  background:var(--panel);cursor:pointer;color:var(--ink)}
+.chip .n{color:var(--muted)}
+.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.active .n{color:#B8C4D4}
+.filters input[type=search],.filters select{padding:7px 10px;border:1px solid var(--line);border-radius:6px;
+  background:var(--panel);font-family:var(--sans);font-size:13px;color:var(--ink)}
+.filters label.tgl{font-size:12.5px;color:var(--muted);display:flex;gap:5px;align-items:center;cursor:pointer}
+/* table */
+.tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:1080px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);
+  text-align:left;padding:10px 10px;border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--panel);white-space:nowrap}
+th.sortable{cursor:pointer}
+th.sortable:after{content:' ↕';opacity:.4}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle;white-space:nowrap}
+tr:hover td{background:#F6F9F7}
+.tk{font-weight:600}
+.tk .co{display:block;font-weight:400;font-size:11px;color:var(--muted);max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.num{font-family:var(--mono);font-size:12.5px}
+.pos{color:var(--buy)} .neg{color:var(--exit)}
+.scorecell{display:flex;align-items:center;gap:8px}
+.scorebar{width:52px;height:6px;background:#ECF0EE;border-radius:3px;overflow:hidden}
+.scorebar i{display:block;height:100%;background:var(--ink)}
+.state{font-family:var(--mono);font-size:11px;font-weight:600;padding:4px 9px;border-radius:4px;display:inline-block}
+.st-strongbuy{background:var(--sbuy);color:#fff}
+.st-buy{background:#E4F3EC;color:var(--buy);border:1px solid var(--buy)}
+.st-watchlist{background:#E7EEFB;color:var(--watch);border:1px solid var(--watch)}
+.st-hold{background:#EEF1F0;color:var(--hold)}
+.st-reduce{background:#FBEFDB;color:var(--reduce);border:1px solid var(--reduce)}
+.st-exit{background:var(--exit);color:#fff}
+.st-none{color:var(--muted)}
+.plan{font-family:var(--mono);font-size:11.5px;line-height:1.5}
+.plan .lb{color:var(--muted)}
+.trigger{font-size:11.5px;color:var(--brass);font-weight:600}
+.dim td{opacity:.45}
+.held{font-size:10px;background:var(--ink);color:#fff;border-radius:3px;padding:2px 5px;margin-left:6px;font-family:var(--mono)}
+/* legend */
+details.legend{margin:14px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+details.legend summary{cursor:pointer;font-weight:600;font-family:var(--disp)}
+details.legend .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px;font-size:12.5px;color:var(--muted)}
+details.legend b{color:var(--ink)}
+/* trade log */
+.logform{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;background:var(--panel);
+  border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:14px}
+.logform label{font-size:11px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:block;margin-bottom:4px}
+.logform input,.logform select{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;font-family:var(--mono);font-size:13px}
+.btn{background:var(--ink);color:#fff;border:0;border-radius:6px;padding:10px 16px;font-family:var(--disp);
+  font-weight:500;font-size:13px;cursor:pointer}
+.btn.ghost{background:var(--panel);color:var(--ink);border:1px solid var(--line)}
+.notice{background:#FBEFD9;border:1px solid var(--brass);border-radius:6px;padding:9px 12px;font-size:12.5px;color:#7A5B14;margin-bottom:12px}
+.kpis{display:flex;gap:12px;flex-wrap:wrap;margin:4px 0 14px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 16px}
+.kpi .l{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.kpi .v{font-family:var(--disp);font-size:20px;font-weight:700;margin-top:2px}
+/* system tab */
+.sys{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.card h3{font-family:var(--disp);font-size:15px;margin-bottom:10px}
+.card table{min-width:0}
+.card td,.card th{padding:6px 8px;font-size:12.5px;position:static;border-bottom:1px solid var(--line)}
+.footer{margin-top:24px;color:var(--muted);font-size:11.5px;font-family:var(--mono)}
+@media (prefers-reduced-motion:no-preference){.lamp.on-green,.lamp.on-yellow,.lamp.on-red{transition:box-shadow .4s}}
+@media (max-width:720px){.board{grid-template-columns:1fr}.board .nums{text-align:left}.mast h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mast">
+    <div>
+      <h1>Swing Desk <span>·</span> Nifty 500</h1>
+      <div class="sub" id="asof"></div>
+    </div>
+    <div id="samplebadge"></div>
+  </div>
+
+  <div class="board">
+    <div class="lamps" id="lamps" aria-label="Market regime light"></div>
+    <div>
+      <div class="advice" id="advice"></div>
+      <div class="why" id="why"></div>
+    </div>
+    <div class="nums" id="niftynums"></div>
+  </div>
+
+  <div class="internals" id="internals"></div>
+
+  <div class="rail" id="rail"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="signals">Signals</button>
+    <button class="tab" data-tab="indices">Indices</button>
+    <button class="tab" data-tab="log">Trade log</button>
+    <button class="tab" data-tab="system">System</button>
+  </div>
+
+  <!-- SIGNALS -->
+  <section id="tab-signals">
+    <div class="filters" id="chips"></div>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Search stock…">
+      <select id="secfilter"><option value="">All sectors</option></select>
+      <select id="capfilter" hidden><option value="">All sizes</option></select>
+      <label class="tgl"><input type="checkbox" id="liqonly" checked> Hide illiquid</label>
+      <label class="tgl"><input type="checkbox" id="heldonly"> My positions only</label>
+    </div>
+    <div class="tablewrap">
+      <table id="tbl">
+        <thead><tr>
+          <th>Stock</th><th>Sector</th><th class="sortable" data-k="close">Price</th>
+          <th>30 days</th><th class="sortable" data-k="score">Score</th><th>Signal</th>
+          <th>Trend</th><th>Momentum</th><th class="sortable" data-k="rs_1m">vs Nifty (1M)</th>
+          <th>Volume</th><th>Trade plan</th><th>Entry trigger</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <details class="legend">
+      <summary>What the labels mean (plain English)</summary>
+      <div class="cols">
+        <div><b>Score (0–100)</b><br>One number combining trend, momentum, strength vs the market, volume and volatility. Higher = healthier setup.</div>
+        <div><b>Signal states</b><br><b>Strong Buy</b> score ≥ 80 + entry trigger fired · <b>Buy</b> ≥ 70 + trigger · <b>Watchlist</b> ≥ 60, no trigger yet — stalk it.</div>
+        <div><b>Hold / Reduce / Exit — stocks you own</b><br>Anything in your Trade log automatically switches to these on this table, using <i>your</i> entry price. <b>Exit:</b> price at/below your 2×ATR stop, score &lt; 40, or ~6 weeks with no progress. <b>Reduce:</b> +2R reached (book half) or score fading below 50. The reason shows under the chip.</div>
+        <div><b>Entry trigger</b><br>What actually gets you in: a <b>breakout</b> to a new 20-day high on ≥1.4× normal volume, or a <b>pullback bounce</b> off the rising 20-day EMA. A high score without a trigger = Watchlist, not Buy.</div>
+        <div><b>Trend</b><br>Up ↑ = price above the 50-day average and rising. Only buy Up-trends.</div>
+        <div><b>Momentum (RSI)</b><br>Strong = the sweet spot (55–70). Overheated (&gt;70) = late to chase. Weak (&lt;45) = leave it.</div>
+        <div><b>vs Nifty</b><br>How much the stock beat/lagged the index over 1 month. Winners tend to keep winning over a 4–6 week horizon.</div>
+        <div><b>Volume</b><br>Surge = 1.5× its normal volume — big money confirming the move.</div>
+        <div><b>Trade plan</b><br>Entry ≈ last close · Stop = entry − 2×ATR (2 normal daily wiggles) · Target = 2R. Risk/share = entry − stop → position size = (1% of capital) ÷ risk per share.</div>
+        <div><b>Regime lamps</b><br>Whole-market health from Nifty vs its 50 &amp; 200-day averages. Green: full size · Yellow: half size · Red: no new buys.</div>
+        <div><b>Universe & size filter</b><br>Nifty 500 = Nifty 100 large caps + Midcap 150 + Smallcap 250 — so all midcaps are in by construction. Use the size dropdown to trade only the segment you want (midcaps are the classic swing sweet spot; smallcaps are the riskiest).</div>
+        <div><b>Market breadth</b><br>% of the whole universe above its 50-day average, plus today's advances vs declines. Broad = healthy rally · Narrow = a few heavyweights carrying the index, be selective.</div>
+        <div><b>📅 results flag</b><br>Company reports results inside your holding window (next ~30 days) — earnings gaps can jump right past a stop-loss, so size down or wait.</div>
+        <div><b>ASM / GSM flag</b><br>Stock is on the exchange's surveillance list (unusual price/volume activity). Auto-blocked from Buy signals no matter the score.</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- TRADE LOG -->
+  <section id="tab-indices" hidden>
+    <div class="tablewrap">
+      <table id="idxtbl">
+        <thead><tr>
+          <th>Index</th><th class="num">Level</th><th class="num">1D%</th><th class="num">1W%</th>
+          <th class="num">1M%</th><th class="num">3M%</th><th class="num">vs 50DMA</th>
+          <th class="num">vs 200DMA</th><th class="num">RSI</th><th class="num">From 52w high</th><th>Trend</th>
+        </tr></thead>
+        <tbody id="idxrows"></tbody>
+      </table>
+    </div>
+    <p style="margin-top:8px;color:var(--mut);font-size:12px">
+      Real Yahoo Finance data. Nifty Smallcap has no reliable public feed; use the Small-cap filter on the Signals tab instead.
+    </p>
+  </section>
+
+  <section id="tab-log" hidden>
+    <div id="persistnote"></div>
+    <div class="kpis" id="logkpis"></div>
+    <div class="logform">
+      <div><label>Date</label><input type="date" id="f-date"></div>
+      <div><label>Stock</label><input list="ticklist" id="f-ticker" placeholder="e.g. RELIANCE"><datalist id="ticklist"></datalist></div>
+      <div><label>Side</label><select id="f-side"><option>Buy</option><option>Sell</option></select></div>
+      <div><label>Quantity</label><input type="number" id="f-qty" min="1" placeholder="0"></div>
+      <div><label>Price</label><input type="number" id="f-price" step="0.05" placeholder="0.00"></div>
+      <div><label>Note</label><input type="text" id="f-note" placeholder="optional"></div>
+      <div style="display:flex;align-items:flex-end"><button class="btn" id="f-add">Add entry</button></div>
+    </div>
+    <div id="logwarn" class="logwarn"></div>
+    <div class="tablewrap" style="margin-bottom:14px">
+      <table><thead><tr><th>Open positions</th><th>Qty</th><th>Avg cost</th><th>Last close</th><th>P&amp;L</th><th>P&amp;L %</th><th>Signal now</th></tr></thead>
+      <tbody id="positions"></tbody></table>
+    </div>
+    <div class="tablewrap">
+      <table><thead><tr><th>Date</th><th>Stock</th><th>Side</th><th>Qty</th><th>Price</th><th>Note</th><th></th></tr></thead>
+      <tbody id="logrows"></tbody></table>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button class="btn ghost" id="exportlog">Export log (JSON)</button>
+      <label class="btn ghost" style="cursor:pointer">Import log<input type="file" id="importlog" accept=".json" hidden></label>
+    </div>
+  </section>
+
+  <!-- SYSTEM -->
+  <section id="tab-system" hidden>
+    <div class="sys" id="syscards"></div>
+  </section>
+
+  <div class="footer" id="foot"></div>
+</div>
+
+<script>
+const DATA = __PAYLOAD__;
+
+// ---------- helpers ----------
+const $ = s => document.querySelector(s);
+const fmt = n => n==null?'—':Number(n).toLocaleString('en-IN',{maximumFractionDigits:1});
+const cls = v => v>0?'pos':v<0?'neg':'';
+const stCls = {'Strong Buy':'st-strongbuy','Buy':'st-buy','Watchlist':'st-watchlist','Hold':'st-hold','Reduce':'st-reduce','Exit':'st-exit','—':'st-none'};
+
+// ---------- header / regime / sectors ----------
+$('#asof').textContent = 'Signals as of ' + DATA.asof + ' close · generated ' + DATA.generated_at;
+if(DATA.sample) $('#samplebadge').innerHTML = '<span class="badge-sample">SAMPLE DATA — demo until Yahoo Finance is connected</span>';
+const R = DATA.regime;
+$('#lamps').innerHTML = ['green','yellow','red'].map(c=>`<div class="lamp ${R.light===c?'on-'+c:''}" title="${c}"></div>`).join('');
+$('#advice').textContent = {green:'GREEN — market supports new buys',yellow:'YELLOW — mixed market',red:'RED — defensive'}[R.light];
+$('#why').textContent = R.advice + ' · Nifty vs its 50 & 200-day averages';
+$('#niftynums').innerHTML = `NIFTY <b>${fmt(R.nifty)}</b> <span class="${cls(R.chg_1m)}">${R.chg_1m>0?'+':''}${R.chg_1m}% 1M</span><br>50-DMA ${fmt(R.ma50)} · 200-DMA ${fmt(R.ma200)}`;
+
+// market internals: breadth (always, from our own data) + FII/DII flows (when connected)
+const B=DATA.breadth, F=DATA.flows;
+let intern='';
+if(B){
+  intern += `<span><b>${B.pct_above_50dma}%</b> of universe above its 50-DMA — <b>${B.label}</b></span>`;
+  intern += `<span>Advances/Declines today <b>${B.advancers} / ${B.decliners}</b> (${B.ad_ratio}×)</span>`;
+  if(R.light==='green' && B.pct_above_50dma<40) $('#why').textContent += ' · ⚠ narrow rally — few stocks doing the lifting, be selective';
+}
+if(F){
+  const streak = F.fii_selling && F.fii_streak>=3 ? `<span class="warnchip">FII selling ${F.fii_streak} days — tighten up</span>` : '';
+  intern += `<span>FII <b class="${cls(F.fii_net_cr)}">${F.fii_net_cr>0?'+':''}₹${fmt(F.fii_net_cr)} cr</b> today · ${F.fii_5d_cr>0?'+':''}₹${fmt(F.fii_5d_cr)} cr 5-day${streak}</span>`;
+  intern += `<span>DII <b class="${cls(F.dii_net_cr)}">${F.dii_net_cr>0?'+':''}₹${fmt(F.dii_net_cr)} cr</b> today</span>`;
+}else{
+  intern += `<span>FII/DII flows — connects when NSE access is on (see README)</span>`;
+}
+$('#internals').innerHTML = intern;
+
+const maxAbs = Math.max(...DATA.sectors.map(s=>Math.abs(s.blend)),1);
+$('#rail').innerHTML = DATA.sectors.map(s=>`
+  <div class="sec ${s.top?'top':''}">
+    <div class="nm"><span>${s.sector}</span><span class="rk">#${s.rank}</span></div>
+    <div class="bar"><i style="width:${Math.min(100,Math.abs(s.blend)/maxAbs*100)}%;background:${s.blend>=0?'var(--buy)':'var(--exit)'}"></i></div>
+    <div class="rs">${s.blend>0?'+':''}${s.blend}% vs Nifty ${s.top?'<span class="lead"> LEADING</span>':''}</div>
+  </div>`).join('');
+
+// ---------- trade log storage ----------
+let persist=true, mem=[];
+try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){persist=false;}
+const loadLog=()=>{ if(!persist) return mem; try{return JSON.parse(localStorage.getItem('swingdesk_log')||'[]')}catch(e){return[]} };
+const saveLog=l=>{ if(persist) localStorage.setItem('swingdesk_log',JSON.stringify(l)); else mem=l; };
+if(!persist) $('#persistnote').innerHTML='<div class="notice">Heads up: this preview can\'t save between sessions. Download the dashboard file and open it in your browser for a persistent log — or use Export/Import.</div>';
+
+const rowByTicker={}; DATA.rows.forEach(r=>rowByTicker[r.ticker]=r);
+function positionsFromLog(log){
+  const p={};
+  [...log].sort((a,b)=>a.date.localeCompare(b.date)).forEach(e=>{
+    const t=e.ticker.toUpperCase(); p[t]=p[t]||{qty:0,cost:0,realized:0};
+    const q=Number(e.qty), px=Number(e.price);
+    if(e.side==='Buy'){if(p[t].qty<=0)p[t].first=e.date; p[t].cost+=q*px; p[t].qty+=q;}
+    else{const avg=p[t].qty>0?p[t].cost/p[t].qty:px; p[t].realized+=q*(px-avg); p[t].cost-=q*avg; p[t].qty-=q;}
+  });
+  return p;
+}
+function heldSignal(t,p){
+  const r=rowByTicker[t]; if(!r) return ['—','st-none',''];
+  const P=DATA.params, avg=p&&p.qty>0?p.cost/p.qty:r.close;
+  const stop=avg-P.STOP_ATR_MULT*r.atr, rUnit=P.STOP_ATR_MULT*r.atr||1;
+  const gainR=(r.close-avg)/rUnit;
+  const days=p&&p.first?Math.round((new Date(DATA.asof)-new Date(p.first))/864e5):0;
+  if(r.close<=stop)                return ['Exit','st-exit',`stop hit — close ₹${fmt(r.close)} ≤ stop ₹${fmt(stop)}`];
+  if(r.score<P.EXIT_SCORE)         return ['Exit','st-exit',`score ${r.score} — setup broken (< ${P.EXIT_SCORE})`];
+  const tsDays=Math.round((DATA.params.TIME_STOP_BARS||60)*7/5);
+  if(days>=tsDays)                 return ['Exit','st-exit',`time stop — held ~${Math.round(days/7)} weeks (limit ~${Math.round(tsDays/7)})`];
+  if(gainR>=P.TARGET_R)            return ['Reduce','st-reduce',`+${gainR.toFixed(1)}R — book half, trail the rest`];
+  if(r.score<P.REDUCE_SCORE)       return ['Reduce','st-reduce',`score fading (${r.score} < ${P.REDUCE_SCORE})`];
+  return ['Hold','st-hold',`${gainR>=0?'+':''}${gainR.toFixed(1)}R · your stop ₹${fmt(stop)}`];
+}
+function effState(r,pos){ // stocks you own switch to Hold/Reduce/Exit everywhere
+  const p=pos[r.ticker];
+  if(p&&p.qty>0){const [s,c,why]=heldSignal(r.ticker,p); return {s,c,why,held:true};}
+  return {s:r.state,c:stCls[r.state],why:'',held:false};
+}
+function renderIndices(){
+  const rows=DATA.indices||[]; const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy,#1a7f37)':v<0?'var(--exit,#b91c1c)':'inherit'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
+  $('#idxrows').innerHTML = rows.length? rows.map(r=>`<tr>
+    <td class="tk">${r.name}</td><td class="num">${fmt(r.close)}</td>
+    <td class="num">${pc(r.chg_1d)}</td><td class="num">${pc(r.chg_1w)}</td>
+    <td class="num">${pc(r.chg_1m)}</td><td class="num">${pc(r.chg_3m)}</td>
+    <td class="num">${pc(r.vs_50dma)}</td><td class="num">${pc(r.vs_200dma)}</td>
+    <td class="num">${r.rsi==null?'-':r.rsi}</td><td class="num">${pc(r.from_52w_high)}</td>
+    <td>${r.trend_label}</td></tr>`).join('')
+    : '<tr><td colspan="11" style="color:var(--mut)">No index data - run fetch_data.py</td></tr>';
+}
+function renderLog(){
+  const log=loadLog(), pos=positionsFromLog(log);
+  $('#logrows').innerHTML = log.length? log.map((e,i)=>`<tr><td class="num">${e.date}</td><td class="tk">${e.ticker}</td>
+    <td>${e.side}</td><td class="num">${e.qty}</td><td class="num">${fmt(e.price)}</td><td>${e.note||''}</td>
+    <td><button class="btn ghost" style="padding:3px 9px" onclick="delEntry(${i})">✕</button></td></tr>`).join('')
+    : '<tr><td colspan="7" style="color:var(--muted)">No trades logged yet — add your first buy above.</td></tr>';
+  let unreal=0, invested=0, realized=0, rowsHtml='';
+  Object.entries(pos).forEach(([t,p])=>{
+    realized+=p.realized;
+    if(p.qty<=0) return;
+    const last=rowByTicker[t]?rowByTicker[t].close:null, avg=p.cost/p.qty;
+    const pl=last!=null?(last-avg)*p.qty:0; unreal+=pl; invested+=p.cost;
+    const [sig,sc,why]=heldSignal(t,p);
+    rowsHtml+=`<tr><td class="tk">${t}</td><td class="num">${p.qty}</td><td class="num">${fmt(avg)}</td>
+      <td class="num">${last!=null?fmt(last):'—'}</td><td class="num ${cls(pl)}">${pl>0?'+':''}${fmt(pl)}</td>
+      <td class="num ${cls(pl)}">${invested?((pl/(avg*p.qty))*100).toFixed(1):'0'}%</td>
+      <td><span class="state ${sc}">${sig}</span><div style="font-size:10.5px;color:var(--muted);margin-top:3px">${why}</div></td></tr>`;
+  });
+  $('#positions').innerHTML = rowsHtml || '<tr><td colspan="7" style="color:var(--muted)">No open positions.</td></tr>';
+  $('#logkpis').innerHTML = `
+    <div class="kpi"><div class="l">Invested</div><div class="v">₹${fmt(invested)}</div></div>
+    <div class="kpi"><div class="l">Unrealised P&L</div><div class="v ${cls(unreal)}">₹${fmt(unreal)}</div></div>
+    <div class="kpi"><div class="l">Realised P&L</div><div class="v ${cls(realized)}">₹${fmt(realized)}</div></div>
+    <div class="kpi"><div class="l">Open positions</div><div class="v">${rowsHtml?Object.values(pos).filter(p=>p.qty>0).length:0} / ${DATA.params.MAX_POSITIONS}</div></div>`;
+  renderChips(); renderTable();
+}
+window.delEntry=i=>{const l=loadLog();l.splice(i,1);saveLog(l);renderLog();};
+function logWarnings(t, side){
+  if(side!=='Buy') return '';
+  const r=rowByTicker[t], pos=positionsFromLog(loadLog()), msgs=[];
+  const open=Object.entries(pos).filter(([k,p])=>p.qty>0).map(([k])=>k);
+  const isNew=!open.includes(t);
+  if(isNew && open.length+1>DATA.params.MAX_POSITIONS) msgs.push(`that's ${open.length+1} open positions — your rule is max ${DATA.params.MAX_POSITIONS}`);
+  if(r){
+    const same=open.filter(k=>k!==t&&rowByTicker[k]&&rowByTicker[k].sector===r.sector).length;
+    if(same+1>DATA.params.MAX_PER_SECTOR) msgs.push(`${same+1} positions in ${r.sector} — your rule is max ${DATA.params.MAX_PER_SECTOR}/sector (one bad sector day shouldn't nuke the book)`);
+    if(r.surveillance) msgs.push(`${t} is on the ${r.surveillance} surveillance list`);
+    if(r.earnings_soon) msgs.push(`${t} reports results on ${r.earnings} — inside your holding window`);
+    if(!r.liquid) msgs.push(`${t} is below the ₹${DATA.params.MIN_TURNOVER_CR} cr turnover floor`);
+  }
+  return msgs.length?'⚠ Logged, but: '+msgs.join(' · '):'';
+}
+$('#f-date').value=DATA.asof;
+$('#f-add').onclick=()=>{
+  const e={date:$('#f-date').value,ticker:$('#f-ticker').value.trim().toUpperCase(),side:$('#f-side').value,
+    qty:$('#f-qty').value,price:$('#f-price').value,note:$('#f-note').value.trim()};
+  if(!e.ticker||!e.qty||!e.price){alert('Stock, quantity and price are needed.');return;}
+  $('#logwarn').textContent = logWarnings(e.ticker, e.side);
+  const l=loadLog(); l.push(e); saveLog(l);
+  $('#f-qty').value='';$('#f-price').value='';$('#f-note').value='';
+  renderLog();
+};
+$('#exportlog').onclick=()=>{
+  const blob=new Blob([JSON.stringify(loadLog(),null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='swingdesk_log.json';a.click();
+};
+$('#importlog').onchange=ev=>{
+  const f=ev.target.files[0]; if(!f)return;
+  f.text().then(t=>{try{saveLog(JSON.parse(t));renderLog();}catch(e){alert('Not a valid log file.');}});
+};
+$('#ticklist').innerHTML=DATA.rows.map(r=>`<option value="${r.ticker}">`).join('');
+
+// ---------- signals table ----------
+let stateFilter='All', sortK='score', sortDir=-1;
+const states=['All','Strong Buy','Buy','Watchlist','Hold','Reduce','Exit','—'];
+function renderChips(){
+  const pos=positionsFromLog(loadLog());
+  const counts={All:DATA.rows.length};
+  DATA.rows.forEach(r=>{const s=effState(r,pos).s; counts[s]=(counts[s]||0)+1;});
+  $('#chips').innerHTML=states
+    .filter(s=>!['Hold','Reduce','Exit'].includes(s)||counts[s])   // held-only chips appear when relevant
+    .map(s=>`<button class="chip ${stateFilter===s?'active':''}" data-s="${s}">${s} <span class="n">${counts[s]||0}</span></button>`).join('');
+  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{stateFilter=c.dataset.s;renderChips();renderTable();});
+}
+const secs=[...new Set(DATA.rows.map(r=>r.sector))].sort();
+$('#secfilter').innerHTML+=secs.map(s=>`<option>${s}</option>`).join('');
+const caps=['Large','Mid','Small'].filter(c=>DATA.rows.some(r=>r.cap===c));
+if(caps.length){$('#capfilter').hidden=false;$('#capfilter').innerHTML+=caps.map(c=>`<option>${c}</option>`).join('');}
+['#q','#secfilter','#capfilter','#liqonly','#heldonly'].forEach(s=>$(s).addEventListener('input',renderTable));
+document.querySelectorAll('th.sortable').forEach(th=>th.onclick=()=>{
+  sortDir = sortK===th.dataset.k ? -sortDir : -1; sortK=th.dataset.k; renderTable();
+});
+function spark(vals){
+  if(!vals||vals.length<2)return'';
+  const min=Math.min(...vals),max=Math.max(...vals),rng=max-min||1;
+  const pts=vals.map((v,i)=>`${(i/(vals.length-1)*64).toFixed(1)},${(18-(v-min)/rng*16).toFixed(1)}`).join(' ');
+  const up=vals[vals.length-1]>=vals[0];
+  return `<svg width="66" height="20" viewBox="0 0 66 20"><polyline points="${pts}" fill="none" stroke="${up?'var(--buy)':'var(--exit)'}" stroke-width="1.5"/></svg>`;
+}
+function renderTable(){
+  const q=$('#q').value.toLowerCase(), sec=$('#secfilter').value, capf=$('#capfilter').value, liq=$('#liqonly').checked, heldOnly=$('#heldonly').checked;
+  const pos=positionsFromLog(loadLog());
+  let rows=DATA.rows.filter(r=>
+    (stateFilter==='All'||effState(r,pos).s===stateFilter) &&
+    (!sec||r.sector===sec) &&
+    (!capf||r.cap===capf) &&
+    (!liq||r.liquid) &&
+    (!heldOnly||(pos[r.ticker]&&pos[r.ticker].qty>0)) &&
+    (!q||r.ticker.toLowerCase().includes(q)||r.name.toLowerCase().includes(q)));
+  rows.sort((a,b)=>(a[sortK]-b[sortK])*(-sortDir)*-1);
+  $('#rows').innerHTML=rows.map(r=>{
+    const eff=effState(r,pos), held=eff.held;
+    return `<tr class="${r.liquid?'':'dim'}">
+    <td class="tk">${r.ticker}${held?'<span class="held">HELD</span>':''}<span class="co">${r.name}</span>${r.surveillance?`<span class="flag surv" title="On the exchange surveillance list — no Buy signals">${r.surveillance}</span>`:''}${r.earnings_soon?`<span class="flag earn" title="Results inside your holding window — earnings gaps can jump right past stop-losses">📅 results ${r.earnings}</span>`:''}</td>
+    <td style="font-size:12px">${r.sector}${r.cap?`<br><span style="color:var(--muted);font-size:10.5px">${r.cap} cap</span>`:''}</td>
+    <td class="num">${fmt(r.close)}<br><span class="${cls(r.chg_1d)}" style="font-size:11px">${r.chg_1d>0?'+':''}${r.chg_1d}%</span></td>
+    <td>${spark(r.spark)}</td>
+    <td><div class="scorecell"><span class="num" style="font-weight:600">${r.score}</span><span class="scorebar"><i style="width:${r.score}%"></i></span></div></td>
+    <td><span class="state ${eff.c}"${eff.why?` title="${eff.why}"`:''}>${eff.s}</span>${eff.why?`<div style="font-size:10px;color:var(--muted);margin-top:2px;max-width:150px">${eff.why}</div>`:''}</td>
+    <td style="font-size:12px">${r.trend_label}</td>
+    <td style="font-size:12px">${r.rsi_label} <span class="num" style="color:var(--muted)">${r.rsi}</span></td>
+    <td class="num ${cls(r.rs_1m)}">${r.rs_1m>0?'+':''}${r.rs_1m}%</td>
+    <td style="font-size:12px">${r.volume_label}</td>
+    <td class="plan"><span class="lb">In</span> ${fmt(r.entry)} · <span class="lb">Stop</span> ${fmt(r.stop)}<br><span class="lb">Tgt</span> ${fmt(r.target)} · <span class="lb">Risk/sh</span> ${fmt(r.risk_per_share)}</td>
+    <td class="trigger">${r.trigger_label||(eff.s==='Watchlist'?'<span style="color:var(--muted)">waiting for a trigger</span>':'')}</td></tr>`;}).join('')
+    || '<tr><td colspan="12" style="color:var(--muted);padding:20px">Nothing matches these filters — try widening them.</td></tr>';
+}
+
+// ---------- system tab ----------
+function renderSystem(){
+  const p=DATA.params, bt=DATA.backtest;
+  let btHtml='<p style="color:var(--muted);font-size:13px">No backtest run yet — run <code>python backtest.py --tune</code>.</p>';
+  if(bt&&bt.train){
+    const row=(k,tr,va)=>`<tr><td>${k}</td><td class="num">${tr==null?'—':tr}</td><td class="num">${va==null?'—':va}</td></tr>`;
+    const keys=[['Trades','trades'],['Win rate %','win_rate'],['Profit factor','profit_factor'],['Expectancy (R)','expectancy_R'],['Avg hold (days)','avg_hold_days'],['Total return %','total_return_pct'],['Max drawdown %','max_drawdown_pct']];
+    btHtml=`<table><thead><tr><th>Metric</th><th>Tuning 70%</th><th>Validation 30%</th></tr></thead><tbody>
+      ${keys.map(([l,k])=>row(l,bt.train[k],bt.validate?bt.validate[k]:null)).join('')}</tbody></table>
+      <p style="color:var(--muted);font-size:12px;margin-top:8px">Windows: ${bt.windows.train.join(' → ')} (tune) · ${bt.windows.validate.join(' → ')} (validate)${bt.tuning?` · tuned params ${bt.tuning.adopted?'ADOPTED after passing validation':'rejected by validation (defaults kept)'}`:''}</p>`;
+  }
+  $('#syscards').innerHTML=`
+    <div class="card"><h3>Live rule set ${DATA.tuned?'(tuned)':'(defaults)'}</h3><table><tbody>
+      <tr><td>Buy threshold</td><td class="num">score ≥ ${p.BUY_SCORE} + trigger</td></tr>
+      <tr><td>Strong Buy</td><td class="num">score ≥ ${p.STRONG_BUY_SCORE} + trigger</td></tr>
+      <tr><td>Watchlist</td><td class="num">score ≥ ${p.WATCHLIST_SCORE}</td></tr>
+      <tr><td>Hard stop</td><td class="num">entry − ${p.STOP_ATR_MULT} × ATR</td></tr>
+      <tr><td>Trail (after +1R)</td><td class="num">${p.TRAIL_ATR_MULT} × ATR below high · stop to breakeven</td></tr>
+      <tr><td>Score exit</td><td class="num">score &lt; ${p.EXIT_SCORE}</td></tr>
+      <tr><td>Time stop</td><td class="num">${p.TIME_STOP_BARS} trading days (~6 weeks)</td></tr>
+      <tr><td>Risk / trade</td><td class="num">${(p.RISK_PER_TRADE*100).toFixed(1)}% of capital</td></tr>
+      <tr><td>Limits</td><td class="num">max ${p.MAX_POSITIONS} positions · ${p.MAX_PER_SECTOR}/sector · top ${p.TOP_SECTORS} sectors only</td></tr>
+      <tr><td>Safety filters</td><td class="num">₹${p.MIN_TURNOVER_CR} cr min turnover · ASM/GSM auto-excluded · 📅 flag if results within ${p.EARNINGS_WARN_DAYS} days</td></tr>
+    </tbody></table></div>
+    <div class="card"><h3>Backtest — tuning vs validation</h3>${btHtml}</div>`;
+}
+
+// ---------- tabs ----------
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));
+  ['signals','indices','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
+});
+
+$('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
+renderChips(); renderTable(); renderIndices(); renderLog(); renderSystem();
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "windows": {
+    "train": [
+      "2024-10-22",
+      "2025-12-31"
+    ],
+    "validate": [
+      "2026-01-01",
+      "2026-07-07"
+    ]
+  },
+  "params_used": {
+    "BUY_SCORE": 70,
+    "STOP_ATR_MULT": 2.5,
+    "TRAIL_ATR_MULT": 4.0
+  },
+  "train": {
+    "trades": 46,
+    "win_rate": 45.7,
+    "avg_win": 16102.0,
+    "avg_loss": -3484.0,
+    "profit_factor": 3.88,
+    "expectancy_R": 0.481,
+    "avg_hold_days": 28.7,
+    "total_return_pct": 29.2,
+    "annualized_pct": 24.3,
+    "max_drawdown_pct": -3.6
+  },
+  "train_exit_breakdown": {
+    "end of test": {
+      "n": 9,
+      "avg_R": 2.09
+    },
+    "score decay": {
+      "n": 10,
+      "avg_R": -0.29
+    },
+    "stop": {
+      "n": 18,
+      "avg_R": -0.19
+    },
+    "stop (gap)": {
+      "n": 3,
+      "avg_R": -1.26
+    },
+    "time stop": {
+      "n": 6,
+      "avg_R": 2.25
+    }
+  },
+  "validate": {
+    "trades": 10,
+    "win_rate": 10.0,
+    "avg_win": 5536.0,
+    "avg_loss": -6794.0,
+    "profit_factor": 0.09,
+    "expectancy_R": -0.871,
+    "avg_hold_days": 10.4,
+    "total_return_pct": -2.8,
+    "annualized_pct": -5.5,
+    "max_drawdown_pct": -5.7
+  },
+  "validate_exit_breakdown": {
+    "stop": {
+      "n": 7,
+      "avg_R": -1.0
+    },
+    "stop (gap)": {
+      "n": 3,
+      "avg_R": -0.57
+    }
+  }
+}
