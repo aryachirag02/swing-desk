@@ -1,9 +1,9 @@
 name: Daily swing update
 on:
-  schedule:
-    - cron: '30 2 * * 1-5'    # 8:00 am IST — morning refresh (catches overnight data corrections)
-    - cron: '45 13 * * 1-5'   # 7:15 pm IST — main run after market close
-    - cron: '15 16 * * 1-5'   # 9:45 pm IST — backup in case Yahoo data was late
+schedule:
+    - cron: '30 10 * * 1-5'   # 4:00 pm IST - right after market close
+    - cron: '30 14 * * 1-5'   # 8:00 pm IST - main evening run
+    - cron: '30 16 * * 1-5'   # 10:00 pm IST - backup if Yahoo was late
   workflow_dispatch: {}        # adds a "Run workflow" button for manual runs
 
 permissions:
