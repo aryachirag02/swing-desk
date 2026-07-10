@@ -34,15 +34,16 @@ jobs:
         run: |
           if [ "$(date -u +%d)" -le "07" ] && [ "$(date -u +%u)" = "1" ]; then python backtest.py --tune; else python backtest.py; fi
 
-      - name: Build dashboard + brief
+ - name: Build dashboard + brief
         run: |
           python run_daily.py
+          cp dashboard.html index.html
 
       - name: Commit results back to the repo
         run: |
           git config user.name "swing-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in dashboard.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv params_tuned.json; do
+          for f in dashboard.html index.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv params_tuned.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git commit -m "Daily update $(date -u +%F)" || echo "nothing to commit"
