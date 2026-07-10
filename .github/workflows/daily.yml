@@ -1,10 +1,10 @@
 name: Daily swing update
 on:
-schedule:
+  schedule:
     - cron: '30 10 * * 1-5'   # 4:00 pm IST - right after market close
     - cron: '30 14 * * 1-5'   # 8:00 pm IST - main evening run
     - cron: '30 16 * * 1-5'   # 10:00 pm IST - backup if Yahoo was late
-  workflow_dispatch: {}        # adds a "Run workflow" button for manual runs
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -34,7 +34,7 @@ jobs:
         run: |
           if [ "$(date -u +%d)" -le "07" ] && [ "$(date -u +%u)" = "1" ]; then python backtest.py --tune; else python backtest.py; fi
 
- - name: Build dashboard + brief
+      - name: Build dashboard + brief
         run: |
           python run_daily.py
           cp dashboard.html index.html
