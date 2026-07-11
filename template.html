@@ -154,15 +154,21 @@ details.legend b{color:var(--ink)}
 
   <div id="fnobanner" style="display:none;margin:0 0 14px;border-radius:10px;padding:12px 16px;font-size:14px;font-weight:600"></div>
   <div class="tabs" role="tablist">
-    <button class="tab active" data-tab="signals">Signals</button>
+    <button class="tab active" data-tab="today">📋 Today</button>
+    <button class="tab" data-tab="signals">Signals</button>
     <button class="tab" data-tab="indices">Indices</button>
     <button class="tab" data-tab="micro">Microcap (watch)</button>
+    <button class="tab" data-tab="radar">Radar 🔭</button>
     <button class="tab" data-tab="log">Trade log</button>
     <button class="tab" data-tab="system">System</button>
   </div>
 
   <!-- SIGNALS -->
-  <section id="tab-signals">
+  <section id="tab-today">
+    <div id="todaybody" style="max-width:860px;font-size:15px;line-height:1.65"></div>
+  </section>
+
+  <section id="tab-signals" hidden>
     <div class="filters" id="chips"></div>
     <div class="filters">
       <input type="search" id="q" placeholder="Search stock…">
@@ -238,6 +244,24 @@ details.legend b{color:var(--ink)}
     </div>
   </section>
 
+  <section id="tab-radar" hidden>
+    <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px">
+      🔭 <b>Early-stage research radar — not signals.</b> Accumulation = tight base + volume quietly rising + RS turning
+      (weeks before a possible breakout, more false positives). Breakouts = the HFCL-at-₹84 moment. All feed the forward-test log.
+    </div>
+    <div id="radar-themes" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:13px;white-space:pre-wrap"></div>
+    <h3 style="margin:6px 0 8px;font-size:15px">🟡 Accumulation watch (base building, volume waking)</h3>
+    <div class="tablewrap"><table><thead><tr>
+      <th>Stock</th><th>Universe</th><th>Sector</th><th class="num">Close</th><th class="num">Base range</th>
+      <th class="num">Vol 20d/60d</th><th class="num">RS 3M</th><th class="num">Turnover ₹cr</th>
+    </tr></thead><tbody id="accumrows"></tbody></table></div>
+    <h3 style="margin:18px 0 8px;font-size:15px">🔶 Fresh breakouts (100-day high on volume)</h3>
+    <div class="tablewrap"><table><thead><tr>
+      <th>Stock</th><th>Universe</th><th>Sector</th><th class="num">Close</th><th class="num">RS 3M</th>
+      <th class="num">Vol surge</th><th class="num">Turnover ₹cr</th>
+    </tr></thead><tbody id="brkrows"></tbody></table></div>
+  </section>
+
   <section id="tab-log" hidden>
     <div id="persistnote"></div>
     <div class="kpis" id="logkpis"></div>
@@ -247,6 +271,11 @@ details.legend b{color:var(--ink)}
       <div><label>Side</label><select id="f-side"><option>Buy</option><option>Sell</option></select></div>
       <div><label>Quantity</label><input type="number" id="f-qty" min="1" placeholder="0"></div>
       <div><label>Price</label><input type="number" id="f-price" step="0.05" placeholder="0.00"></div>
+      <div><label>Source</label><select id="f-src">
+        <option value="">Signal (N500)</option><option value="FNO">F&amp;O dip-buy</option>
+        <option value="RADAR-brk">Radar breakout</option><option value="RADAR-accum">Radar accumulation</option>
+        <option value="INTEL">Intel / theme</option><option value="MANUAL">Manual / other</option>
+      </select></div>
       <div><label>Note</label><input type="text" id="f-note" placeholder="optional"></div>
       <div style="display:flex;align-items:flex-end"><button class="btn" id="f-add">Add entry</button></div>
     </div>
@@ -485,6 +514,65 @@ function renderMicro(){
     <td>${r.trend}</td><td>${r.setup_hi100?'🔶 breakout':''}</td></tr>`).join('')
     : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
+function renderRadar(){
+  const r=DATA.radar||{}; const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy)':v<0?'var(--exit)':'inherit'}">${v>0?'+':''}${v}%</span>`;
+  if(DATA.themes && DATA.themes.trim()){const t=$('#radar-themes');t.style.display='block';t.textContent=DATA.themes;}
+  $('#accumrows').innerHTML=(r.accum||[]).map(x=>`<tr>
+    <td class="tk">${x.ticker}<div style="font-size:10px;color:var(--mut)">${x.name}</div></td>
+    <td>${x.uni}</td><td>${x.sector}</td><td class="num">${fmt(x.close)}</td>
+    <td class="num">±${x.base_pct}%</td><td class="num"><b>${x.vol_trend}x</b></td>
+    <td class="num">${pc(x.rs_3m)}</td><td class="num">${x.turnover_cr}</td></tr>`).join('')
+    ||'<tr><td colspan="8" style="color:var(--mut)">none today</td></tr>';
+  $('#brkrows').innerHTML=(r.breakouts||[]).map(x=>`<tr>
+    <td class="tk">${x.ticker}<div style="font-size:10px;color:var(--mut)">${x.name}</div></td>
+    <td>${x.uni}</td><td>${x.sector}</td><td class="num">${fmt(x.close)}</td>
+    <td class="num">${pc(x.rs_3m)}</td><td class="num"><b>${x.vol_x}x</b></td>
+    <td class="num">${x.turnover_cr}</td></tr>`).join('')
+    ||'<tr><td colspan="7" style="color:var(--mut)">none today</td></tr>';
+}
+function renderToday(){
+  const g=DATA.regime||{}; const idx=(DATA.indices||[]).filter(x=>x.fno_dip!==undefined);
+  const setups=idx.filter(x=>String(x.fno_dip).indexOf('BUY-DIP')===0);
+  const sb=(DATA.rows||[]).filter(r=>r.signal==='Strong Buy').length, by=(DATA.rows||[]).filter(r=>r.signal==='Buy').length;
+  const rad=DATA.radar||{};
+  const card=(emoji,title,verdict,detail,color)=>`
+    <div style="border:1px solid var(--line);border-left:5px solid ${color};border-radius:10px;padding:14px 18px;margin-bottom:14px;background:var(--panel)">
+      <div style="font-size:13px;color:var(--mut);letter-spacing:.05em">${title}</div>
+      <div style="font-size:18px;font-weight:700;margin:4px 0">${emoji} ${verdict}</div>
+      <div style="font-size:13.5px;color:var(--ink)">${detail}</div>
+    </div>`;
+  let h='';
+  // 1 equity
+  if(g.light==='green'){
+    h+=card('🟢','1 · STOCKS (Nifty 500 — validated system)','BUY DAY',
+      `Market healthy. <b>${sb} Strong Buy</b> + ${by} Buy signals on the Signals tab. Take entries at tomorrow's open per the trade plan column. Risk 1% per trade, max 10 positions.`,'var(--lampg)');
+  } else {
+    h+=card(g.light==='red'?'🔴':'🟡','1 · STOCKS (Nifty 500 — validated system)','DO NOTHING TODAY',
+      `Regime is ${(g.light||'').toUpperCase()} — no new buys, whatever the scanner shows. Manage existing holdings only (check Trade log tab for exit advice). Patience is the position.`,g.light==='red'?'var(--lampr)':'var(--lampy)');
+  }
+  // 2 fno
+  if(setups.length){
+    h+=card('🟢','2 · INDEX F&O (validated dip-buy)','BUY-DIP SETUP: '+setups.map(x=>x.name).join(' + '),
+      setups.map(x=>`<b>${x.name}</b> RSI2=${x.rsi2}`).join(' · ')+` — buy near-month futures at <b>tomorrow's open</b>. Notional ≤ 1.5–2× capital. Exit the morning after RSI2 > 70. Log as NIFTYFUT/BANKNIFTYFUT.`,'var(--lampg)');
+  } else {
+    h+=card('⚪','2 · INDEX F&O (validated dip-buy)','NO SETUP — DO NOTHING',
+      idx.map(x=>`${x.name}: RSI2=${x.rsi2==null?'-':x.rsi2} (${x.fno_dip})`).join(' · ')+`. A setup needs RSI2 < 10 while above the 200DMA — you'll see a green banner here.`,'var(--line)');
+  }
+  // 3 radar
+  const a3=(rad.accum||[]).slice(0,3), b3=(rad.breakouts||[]).slice(0,3);
+  h+=card('🔭','3 · RADAR (research ideas — NOT signals)',
+    `${(rad.accum||[]).length} accumulating · ${(rad.breakouts||[]).length} breaking out`,
+    (b3.length?`<b>Fresh breakouts:</b> ${b3.map(x=>`${x.ticker} (${x.sector}, RS ${x.rs_3m>0?'+':''}${x.rs_3m}%)`).join(' · ')}<br>`:'')+
+    (a3.length?`<b>Quiet accumulation:</b> ${a3.map(x=>`${x.ticker} (vol ${x.vol_trend}x)`).join(' · ')}<br>`:'')+
+    `Research these yourself before any buy — Radar tab has the full lists. The intelligence report (in brief.md) explains the "why" for the top movers.`,'var(--watch)');
+  // 4 themes
+  if(DATA.themes && DATA.themes.trim()){
+    h+=card('🗓️','4 · FORWARD THEMES (weekly scan)','Upcoming catalysts & exposed stocks',
+      `<div style="white-space:pre-wrap;font-size:12.5px;max-height:220px;overflow:auto">${DATA.themes.replace(/</g,'&lt;')}</div>`,'var(--brass)');
+  }
+  h+=`<div style="color:var(--mut);font-size:12px;margin-top:6px">Cards 1–2 are validated systems: follow them mechanically. Cards 3–4 are research aids: your judgment required. Log every trade.</div>`;
+  $('#todaybody').innerHTML=h;
+}
 function renderLog(){
   const log=loadLog(), pos=positionsFromLog(log);
   $('#logrows').innerHTML = log.length? log.map((e,i)=>`<tr><td class="num">${e.date}</td><td class="tk">${e.ticker}</td>
@@ -533,7 +621,7 @@ $('#f-add').onclick=()=>{
     qty:$('#f-qty').value,price:$('#f-price').value,note:$('#f-note').value.trim()};
   if(!e.ticker||!e.qty||!e.price){alert('Stock, quantity and price are needed.');return;}
   $('#logwarn').textContent = logWarnings(e.ticker, e.side);
-  const l=loadLog(); l.push(e); saveLog(l);
+  const _src=(document.getElementById('f-src')||{}).value||''; if(_src) e.note=(_src+(e.note?' · '+e.note:'')); const l=loadLog(); l.push(e); saveLog(l);
   $('#f-qty').value='';$('#f-price').value='';$('#f-note').value='';
   renderLog();
 };
@@ -633,11 +721,11 @@ function renderSystem(){
 // ---------- tabs ----------
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));
-  ['signals','indices','micro','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
+  ['today','signals','indices','micro','radar','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>

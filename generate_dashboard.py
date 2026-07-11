@@ -1,5 +1,5 @@
 """Builds dashboard.html: latest snapshot + params + backtest summary injected into template.html."""
-import json, os
+import json, os, os
 from datetime import datetime
 import config as C
 import engine as E
@@ -16,6 +16,9 @@ def build(out="dashboard.html"):
         **snap,
         "indices": E.index_snapshot(),
         "microcaps": E.microcap_snapshot(),
+        "radar": E.radar_snapshot(),
+        "themes": (open(os.path.join(C.DATA_DIR, "themes.md")).read()
+                   if os.path.exists(os.path.join(C.DATA_DIR, "themes.md")) else ""),
         "generated_at": datetime.now().strftime("%d %b %Y, %H:%M"),
         "sample": os.path.exists(os.path.join(C.DATA_DIR, "SAMPLE_FLAG")),
         "tuned": os.path.exists(C.TUNED_FILE),

@@ -88,6 +88,15 @@ def write_brief(snap: dict, sample: bool, path: str = "brief.md"):
             f"{x['name']} RSI2={x.get('rsi2',0):.0f} → {x['fno_dip']}" for x in fno))
         lines.append("")
 
+    intel_path = os.path.join(C.DATA_DIR, "intel.md")
+    if os.path.exists(intel_path):
+        import datetime as _dt
+        age_h = (_dt.datetime.now() - _dt.datetime.fromtimestamp(os.path.getmtime(intel_path))).total_seconds()/3600
+        if age_h < 30:  # only include if fresh (skip stale weekend copies)
+            lines.append("---")
+            lines.append(open(intel_path).read())
+            lines.append("")
+
     top = [s for s in snap["sectors"] if s["top"]]
     lines += ["**Leading sectors:** " + " · ".join(f"{s['sector']} ({s['blend']:+.1f}%)" for s in top), ""]
 

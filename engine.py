@@ -347,3 +347,45 @@ def microcap_snapshot(px_path=os.path.join(C.DATA_DIR, "mc_prices.csv"),
         })
     rows.sort(key=lambda r: (not r["manual"], -(r["rs_3m"] if r["rs_3m"] is not None else -999)))
     return rows
+
+
+# ---------------- radar: accumulation + fresh breakouts (both universes) ----------------
+def radar_snapshot():
+    """Early-stage scan across Nifty500 + Microcap250 + watchlist.
+    ACCUMULATION = long tight base + volume quietly rising + RS turning up (pre-breakout footprint).
+    BREAKOUT = fresh 100d-high on volume. Research flags, not signals."""
+    accum, brk = [], []
+    bench = pd.read_csv(C.PRICES_FILE, parse_dates=["date"])
+    bench = bench[bench.ticker == C.BENCHMARK].set_index("date")["close"]
+    for pf, mf, uni in [(C.PRICES_FILE, C.META_FILE, "N500"),
+                        (os.path.join(C.DATA_DIR, "mc_prices.csv"), os.path.join(C.DATA_DIR, "mc_meta.csv"), "Micro")]:
+        if not os.path.exists(pf): continue
+        px = pd.read_csv(pf, parse_dates=["date"])
+        meta = pd.read_csv(mf).set_index("ticker")
+        for t, g in px.groupby("ticker"):
+            if t == C.BENCHMARK or len(g) < 130: continue
+            g = g.sort_values("date").set_index("date")
+            c = g.close
+            turn = float((c * g.volume / 1e7).tail(20).mean())
+            if turn < C.MIN_TURNOVER_CR: continue
+            b = bench.reindex(g.index).ffill()
+            rs_now = float((c.pct_change(63).iloc[-1] - b.pct_change(63).iloc[-1]) * 100)
+            rs_prev = float((c.pct_change(63).iloc[-21] - b.pct_change(63).iloc[-21]) * 100) if len(c) > 85 else rs_now
+            v20, v60 = float(g.volume.tail(20).mean()), float(g.volume.tail(60).mean())
+            hi100 = float(g.high.rolling(100).max().shift(1).iloc[-1])
+            vr = float(g.volume.iloc[-1] / max(1, g.volume.rolling(20).mean().iloc[-1]))
+            last = float(c.iloc[-1])
+            nm = str(meta.loc[t, "name"])[:30] if t in meta.index else t
+            sec = str(meta.loc[t, "sector"]) if t in meta.index else "?"
+            base = c.tail(60)
+            tight = float(base.max() / base.min())
+            row = {"ticker": t.replace(".NS", ""), "name": nm, "sector": sec, "uni": uni,
+                   "close": round(last, 1), "rs_3m": round(rs_now, 0), "turnover_cr": round(turn, 0)}
+            if last > hi100 and vr >= 1.5:
+                brk.append({**row, "vol_x": round(vr, 1)})
+            elif (tight <= 1.30 and v20 > v60 * 1.25 and rs_now > -5 and rs_now > rs_prev + 3
+                  and last > hi100 * 0.85):
+                accum.append({**row, "base_pct": round((tight - 1) * 100, 0),
+                              "vol_trend": round(v20 / v60, 2)})
+    accum.sort(key=lambda r: -r["vol_trend"]); brk.sort(key=lambda r: -r["rs_3m"])
+    return {"accum": accum[:25], "breakouts": brk[:25]}
