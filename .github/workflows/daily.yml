@@ -34,6 +34,18 @@ jobs:
         run: |
           if [ "$(date -u +%d)" -le "07" ] && [ "$(date -u +%u)" = "1" ]; then python backtest.py --tune; else python backtest.py; fi
 
+      - name: Market intelligence (main run only, needs ANTHROPIC_API_KEY secret)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INTEL_MAX_STOCKS: "30"
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ] && { [ "$(date -u +%H)" = "14" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; }; then
+            python intel.py || echo "intel failed - continuing without it"
+            if [ "$(date -u +%u)" = "5" ]; then python intel.py --themes || echo "themes failed"; fi
+          else
+            echo "intel skipped (no key or not the main run)"
+          fi
+
       - name: Build dashboard + brief
         run: |
           python run_daily.py
@@ -43,7 +55,7 @@ jobs:
         run: |
           git config user.name "swing-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in dashboard.html index.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv data/mc_meta.csv data/watchlist.txt data/mc_paper.csv params_tuned.json; do
+          for f in dashboard.html index.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv data/mc_meta.csv data/watchlist.txt data/mc_paper.csv data/intel.md data/themes.md params_tuned.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git commit -m "Daily update $(date -u +%F)" || echo "nothing to commit"
