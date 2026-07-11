@@ -547,17 +547,17 @@ function renderRadar(){
       ${ai&&ai.ai?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--sbuy);font-weight:600">🧠 Why is it moving? (AI research)</summary><div style="font-size:13px;white-space:pre-wrap;padding:8px 0 0">${ai.ai.replace(/</g,'&lt;')}</div></details>`:''}
     </div>`};
   $('#brkrows').innerHTML=(r.breakouts||[]).slice(0,8).map(x=>card(x,
-    `Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months. <b>→ open "Why is it moving?" below</b>, do your homework, buy only if the story holds.`)).join('')
+    `Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months. <b>→ open "Why is it moving?" below</b>, do your homework, buy only if the story holds. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
   $('#accumrows').innerHTML=(r.accum||[]).slice(0,8).map(x=>card(x,
-    `Sideways for ~3 months while buying volume rose to <b>${x.vol_trend}× normal</b> — possible quiet accumulation. <b>→ Don't buy yet</b>; if it shows up above later, that's your research cue.`)).join('')
+    `Sideways for ~3 months while buying volume rose to <b>${x.vol_trend}× normal</b> — possible quiet accumulation. <b>→ Don't buy yet</b>; if it shows up above later, that's your research cue. <span style="color:var(--mut);font-size:11.5px">If you ever buy → Source: <b>Radar accumulation</b></span>`)).join('')
     ||'<p style="color:var(--mut)">No quiet accumulators today.</p>';
   // leaders: intel stocks not already shown
   const shown=new Set([...(r.breakouts||[]).slice(0,8),...(r.accum||[]).slice(0,8)].map(x=>x.ticker));
   const leaders=(DATA.intel_rows||[]).filter(x=>!shown.has(x.ticker)).slice(0,12);
   $('#leadrows').innerHTML=leaders.length?leaders.map(x=>card(
     {ticker:x.ticker,name:x.name,sector:x.sector,close:x.close},
-    `Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — riskier entry; read the research and judge.`)).join('')
+    `Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — riskier entry; read the research and judge. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`)).join('')
     :'<p style="color:var(--mut)">—</p>';
 }
 
