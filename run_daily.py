@@ -59,6 +59,29 @@ def write_brief(snap: dict, sample: bool, path: str = "brief.md"):
             f"{r['name']} {r['close']:,} ({r['chg_1d']:+.1f}%)" for r in strip))
         lines.append("")
 
+    # forward-test tracker: record every microcap 🔶 setup (no hindsight, analyzed at review)
+    try:
+        mcs = [m for m in (snap.get("microcaps") or []) if m.get("setup_hi100")]
+        if mcs:
+            import csv
+            path = os.path.join(C.DATA_DIR, "mc_paper.csv")
+            seen = set()
+            if os.path.exists(path):
+                with open(path) as f:
+                    seen = {(r["date"], r["ticker"]) for r in csv.DictReader(f)}
+            new = [m for m in mcs if (snap["asof"], m["ticker"]) not in seen]
+            if new:
+                write_header = not os.path.exists(path)
+                with open(path, "a", newline="") as f:
+                    w = csv.writer(f)
+                    if write_header:
+                        w.writerow(["date", "ticker", "close", "rs_3m", "turnover_cr", "sector"])
+                    for m in new:
+                        w.writerow([snap["asof"], m["ticker"], m["close"], m["rs_3m"], m["turnover_cr"], m["sector"]])
+                print(f"Forward-test: logged {len(new)} microcap setup(s)")
+    except Exception as e:
+        print(f"paper tracker skipped ({type(e).__name__})")
+
     fno = [x for x in (snap.get("indices") or []) if x.get("fno_dip")]
     if fno:
         lines.append("**Index F&O (dip-buy):** " + " · ".join(
