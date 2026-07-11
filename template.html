@@ -155,6 +155,7 @@ details.legend b{color:var(--ink)}
   <div class="tabs" role="tablist">
     <button class="tab active" data-tab="signals">Signals</button>
     <button class="tab" data-tab="indices">Indices</button>
+    <button class="tab" data-tab="micro">Microcap (watch)</button>
     <button class="tab" data-tab="log">Trade log</button>
     <button class="tab" data-tab="system">System</button>
   </div>
@@ -216,6 +217,24 @@ details.legend b{color:var(--ink)}
     <p style="margin-top:8px;color:var(--mut);font-size:12px">
       Real Yahoo Finance data. Nifty Smallcap has no reliable public feed; use the Small-cap filter on the Signals tab instead.
     </p>
+  </section>
+
+  <section id="tab-micro" hidden>
+    <div style="border:1px solid var(--reduce);background:rgba(179,106,0,.07);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px">
+      ⚠️ <b>Watch-only universe — no validated edge.</b> Backtests on the Microcap 250 showed a thin, unproven edge
+      (one lucky +20R trade drove all trend profits; 0/10 validation winners — see MICROCAP_RESEARCH.md).
+      Flags below are <b>setups for your own research</b>, never trade signals. Add stocks via data/watchlist.txt in the repo.
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr>
+          <th>Stock</th><th>Sector</th><th class="num">Close</th><th class="num">1M%</th>
+          <th class="num">RS 3M</th><th class="num">vs 50DMA</th><th class="num">Turnover ₹cr</th>
+          <th>Trend</th><th>100d-high setup</th>
+        </tr></thead>
+        <tbody id="mcrows"></tbody>
+      </table>
+    </div>
   </section>
 
   <section id="tab-log" hidden>
@@ -385,6 +404,13 @@ function wireSyncUI(){
 if(!persist) $('#persistnote').innerHTML='<div class="notice">Heads up: this preview can\'t save between sessions. Download the dashboard file and open it in your browser for a persistent log — or use Export/Import.</div>';
 
 const rowByTicker={}; DATA.rows.forEach(r=>rowByTicker[r.ticker]=r);
+// index F&O aliases: log futures as NIFTYFUT / BANKNIFTYFUT (qty = lots x lot size)
+(DATA.indices||[]).forEach(x=>{
+  if(x.name==='NIFTY 50'){rowByTicker['NIFTYFUT']={ticker:'NIFTYFUT',close:x.close};rowByTicker['NIFTY']={ticker:'NIFTY',close:x.close};}
+  if(x.name==='BANK NIFTY'){rowByTicker['BANKNIFTYFUT']={ticker:'BANKNIFTYFUT',close:x.close};rowByTicker['BANKNIFTY']={ticker:'BANKNIFTY',close:x.close};}
+});
+// microcap watchlist marks too (ORIENTHOT etc.)
+(DATA.microcaps||[]).forEach(x=>{ if(!rowByTicker[x.ticker]) rowByTicker[x.ticker]={ticker:x.ticker,close:x.close}; });
 function positionsFromLog(log){
   const p={};
   [...log].sort((a,b)=>a.date.localeCompare(b.date)).forEach(e=>{
@@ -424,6 +450,17 @@ function renderIndices(){
     <td class="num">${r.rsi==null?'-':r.rsi}</td><td class="num">${pc(r.from_52w_high)}</td>
     <td>${r.trend_label}</td></tr>`).join('')
     : '<tr><td colspan="11" style="color:var(--mut)">No index data - run fetch_data.py</td></tr>';
+}
+function renderMicro(){
+  const rows=DATA.microcaps||[];
+  const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy)':v<0?'var(--exit)':'inherit'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
+  $('#mcrows').innerHTML = rows.length? rows.map(r=>`<tr${r.manual?' style="background:rgba(156,122,44,.08)"':''}>
+    <td class="tk">${r.ticker}${r.manual?' 📌':''}<div style="font-size:10px;color:var(--mut)">${r.name}</div></td>
+    <td>${r.sector}</td><td class="num">${fmt(r.close)}</td>
+    <td class="num">${pc(r.chg_1m)}</td><td class="num">${pc(r.rs_3m)}</td><td class="num">${pc(r.vs_50dma)}</td>
+    <td class="num">${r.turnover_cr}${r.thin?' <span style="color:var(--exit);font-size:10px">THIN</span>':''}</td>
+    <td>${r.trend}</td><td>${r.setup_hi100?'🔶 breakout':''}</td></tr>`).join('')
+    : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
 function renderLog(){
   const log=loadLog(), pos=positionsFromLog(log);
@@ -573,11 +610,11 @@ function renderSystem(){
 // ---------- tabs ----------
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));
-  ['signals','indices','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
+  ['signals','indices','micro','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderLog(); renderSystem(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderLog(); renderSystem(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>

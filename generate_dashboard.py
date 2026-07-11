@@ -15,6 +15,7 @@ def build(out="dashboard.html"):
     payload = {
         **snap,
         "indices": E.index_snapshot(),
+        "microcaps": E.microcap_snapshot(),
         "generated_at": datetime.now().strftime("%d %b %Y, %H:%M"),
         "sample": os.path.exists(os.path.join(C.DATA_DIR, "SAMPLE_FLAG")),
         "tuned": os.path.exists(C.TUNED_FILE),

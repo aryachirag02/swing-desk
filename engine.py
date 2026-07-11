@@ -291,7 +291,59 @@ def index_snapshot(path=os.path.join(C.DATA_DIR, "indices.csv")):
             "from_52w_high": round((last / hi52 - 1) * 100, 1),
             "trend_label": "Up ↑" if up else "Down ↓" if dn else "Sideways →",
         })
+        if sym in ("^NSEI", "^NSEBANK"):
+            delta = c.diff(); u = delta.clip(lower=0).ewm(alpha=1/2, adjust=False).mean()
+            dwn = (-delta.clip(upper=0)).ewm(alpha=1/2, adjust=False).mean()
+            rsi2 = float((100 - 100/(1 + u/dwn.replace(0, np.nan))).iloc[-1])
+            above200 = len(c) >= 200 and last > float(ma200.iloc[-1])
+            rows[-1]["rsi2"] = round(rsi2, 0)
+            rows[-1]["fno_dip"] = ("BUY-DIP setup (RSI2<10, above 200DMA)" if (above200 and rsi2 < 10)
+                                   else "in-dip: exit when RSI2>70" if (above200 and rsi2 < 70) and False
+                                   else "no setup" if above200 else "below 200DMA — stand aside")
     order = {s: i for i, s in enumerate(["^NSEI", "^NSEBANK", "NIFTY_FIN_SERVICE.NS", "^NSEMDCP50",
                                           "NIFTY_MIDCAP_100.NS"])}
     rows.sort(key=lambda r: (order.get(r["ticker"], 99), -(r["chg_1m"] or -999)))
+    return rows
+
+
+# ---------------- microcap watch-only snapshot ----------------
+def microcap_snapshot(px_path=os.path.join(C.DATA_DIR, "mc_prices.csv"),
+                      meta_path=os.path.join(C.DATA_DIR, "mc_meta.csv")):
+    """Watch-only rows for the Microcap tab. NO validated edge (MICROCAP_RESEARCH.md):
+    flags are setups for human research, never trade signals."""
+    if not (os.path.exists(px_path) and os.path.exists(meta_path)):
+        return []
+    px = pd.read_csv(px_path, parse_dates=["date"])
+    meta = pd.read_csv(meta_path)
+    bench = pd.read_csv(C.PRICES_FILE, parse_dates=["date"])
+    bench = bench[bench.ticker == C.BENCHMARK].set_index("date")["close"]
+    rows = []
+    for t, g in px.groupby("ticker"):
+        g = g.sort_values("date").set_index("date")
+        if len(g) < 60: continue
+        c = g["close"]; last = float(c.iloc[-1])
+        ma50 = c.rolling(50, min_periods=30).mean()
+        e20 = c.ewm(span=20, adjust=False).mean()
+        hi100 = g["high"].rolling(100).max().shift(1)
+        vr = g["volume"] / g["volume"].rolling(20).mean()
+        b = bench.reindex(g.index).ffill()
+        rs3 = (c.pct_change(63).iloc[-1] - b.pct_change(63).iloc[-1]) * 100 if len(c) > 63 else np.nan
+        turn = float((c * g["volume"] / 1e7).tail(20).mean())
+        mrow = meta[meta.ticker == t]
+        rows.append({
+            "ticker": t.replace(".NS", ""),
+            "name": (mrow["name"].iloc[0] if len(mrow) else t)[:34],
+            "sector": mrow["sector"].iloc[0] if len(mrow) else "?",
+            "manual": bool(len(mrow) and mrow["cap"].iloc[0] == "Manual"),
+            "close": round(last, 1),
+            "chg_1m": round((last / float(c.iloc[-22]) - 1) * 100, 1) if len(c) > 22 else None,
+            "rs_3m": round(float(rs3), 1) if rs3 == rs3 else None,
+            "vs_50dma": round((last / float(ma50.iloc[-1]) - 1) * 100, 1) if ma50.iloc[-1] == ma50.iloc[-1] else None,
+            "turnover_cr": round(turn, 1),
+            "thin": turn < C.MIN_TURNOVER_CR,
+            "setup_hi100": bool(len(g) > 101 and last > float(hi100.iloc[-1]) and float(vr.iloc[-1]) >= 1.5),
+            "trend": "Up" if (last > ma50.iloc[-1] and last > e20.iloc[-1]) else
+                     "Down" if (last < ma50.iloc[-1] and last < e20.iloc[-1]) else "Mixed",
+        })
+    rows.sort(key=lambda r: (not r["manual"], -(r["rs_3m"] if r["rs_3m"] is not None else -999)))
     return rows

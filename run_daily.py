@@ -59,6 +59,12 @@ def write_brief(snap: dict, sample: bool, path: str = "brief.md"):
             f"{r['name']} {r['close']:,} ({r['chg_1d']:+.1f}%)" for r in strip))
         lines.append("")
 
+    fno = [x for x in (snap.get("indices") or []) if x.get("fno_dip")]
+    if fno:
+        lines.append("**Index F&O (dip-buy):** " + " · ".join(
+            f"{x['name']} RSI2={x.get('rsi2',0):.0f} → {x['fno_dip']}" for x in fno))
+        lines.append("")
+
     top = [s for s in snap["sectors"] if s["top"]]
     lines += ["**Leading sectors:** " + " · ".join(f"{s['sector']} ({s['blend']:+.1f}%)" for s in top), ""]
 

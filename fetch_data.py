@@ -65,6 +65,56 @@ def _drop_live_bar(df):
     return df
 
 
+
+def fetch_microcaps(years=C.YEARS_OF_DATA):
+    """Nifty Microcap 250 + manual watchlist (data/watchlist.txt) -> data/mc_prices.csv/mc_meta.csv.
+    WATCH-ONLY universe: no validated edge (see MICROCAP_RESEARCH.md)."""
+    import yfinance as yf, io, requests
+    try:
+        r = requests.get("https://nsearchives.nseindia.com/content/indices/ind_niftymicrocap250_list.csv",
+                         timeout=20, headers={"User-Agent": "Mozilla/5.0"})
+        lst = pd.read_csv(io.StringIO(r.text))
+        lst["ticker"] = lst["Symbol"].str.strip() + ".NS"
+        meta = lst.rename(columns={"Company Name": "name", "Industry": "sector"})[["ticker", "name", "sector"]]
+        meta["cap"] = "Micro250"
+    except Exception as e:
+        print(f"microcap list fetch failed ({type(e).__name__}) — reusing last mc_meta.csv")
+        meta = pd.read_csv(os.path.join(C.DATA_DIR, "mc_meta.csv"))
+    wl_path = os.path.join(C.DATA_DIR, "watchlist.txt")
+    if os.path.exists(wl_path):
+        wl = [x.strip().upper() for x in open(wl_path) if x.strip() and not x.startswith("#")]
+        wl = [x if x.endswith(".NS") else x + ".NS" for x in wl]
+        extra = [t for t in wl if t not in set(meta.ticker)]
+        if extra:
+            meta = pd.concat([meta, pd.DataFrame({"ticker": extra, "name": [t[:-3] for t in extra],
+                                                  "sector": "Watchlist", "cap": "Manual"})], ignore_index=True)
+            print(f"manual watchlist: {extra}")
+    rows = []
+    tickers = meta["ticker"].tolist()
+    for i in range(0, len(tickers), 40):
+        batch = tickers[i:i+40]
+        try:
+            d = yf.download(batch, period=f"{years}y", interval="1d", auto_adjust=True,
+                            group_by="ticker", progress=False, threads=True)
+            for t in batch:
+                try:
+                    sub = d[t].dropna(subset=["Close"]) if len(batch) > 1 else d.dropna(subset=["Close"])
+                    if len(sub) < 50: continue
+                    sub = sub.reset_index().rename(columns={"Date": "date", "Open": "open", "High": "high",
+                                                            "Low": "low", "Close": "close", "Volume": "volume"})
+                    sub["ticker"] = t
+                    rows.append(sub[["date", "ticker", "open", "high", "low", "close", "volume"]])
+                except Exception: pass
+        except Exception: pass
+        time.sleep(0.4)
+    if rows:
+        px = pd.concat(rows, ignore_index=True)
+        px = _drop_live_bar(px)
+        px.to_csv(os.path.join(C.DATA_DIR, "mc_prices.csv"), index=False)
+        meta[meta.ticker.isin(px.ticker.unique())].to_csv(os.path.join(C.DATA_DIR, "mc_meta.csv"), index=False)
+        print(f"Microcap+watchlist saved: {px.ticker.nunique()} tickers")
+
+
 def get_universe():
     """Official Nifty 500 list -> (ticker, name, sector, cap). Falls back to embedded subset.
     Nifty 500 = Nifty 100 (Large) + Midcap 150 (Mid) + Smallcap 250 (Small); we tag each stock."""
@@ -254,6 +304,7 @@ if __name__ == "__main__":
     if os.path.exists(flag):
         os.remove(flag)  # real data now — clear the sample banner
     fetch_indices()        # NIFTY / BANK NIFTY / sector indices for the Indices tab
+    fetch_microcaps()      # Microcap 250 + manual watchlist (WATCH-ONLY tab)
     fetch_flows()          # best-effort extras: skip quietly if NSE is unreachable
     fetch_surveillance()
     if "--earnings" in sys.argv:
