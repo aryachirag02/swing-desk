@@ -152,6 +152,7 @@ details.legend b{color:var(--ink)}
 
   <div class="rail" id="rail"></div>
 
+  <div id="fnobanner" style="display:none;margin:0 0 14px;border-radius:10px;padding:12px 16px;font-size:14px;font-weight:600"></div>
   <div class="tabs" role="tablist">
     <button class="tab active" data-tab="signals">Signals</button>
     <button class="tab" data-tab="indices">Indices</button>
@@ -440,6 +441,21 @@ function effState(r,pos){ // stocks you own switch to Hold/Reduce/Exit everywher
   if(p&&p.qty>0){const [s,c,why]=heldSignal(r.ticker,p); return {s,c,why,held:true};}
   return {s:r.state,c:stCls[r.state],why:'',held:false};
 }
+function renderFnoBanner(){
+  const idx=(DATA.indices||[]).filter(x=>x.fno_dip!==undefined);
+  if(!idx.length) return;
+  const setups=idx.filter(x=>String(x.fno_dip).indexOf('BUY-DIP')===0);
+  const el=$('#fnobanner'); if(!el) return;
+  el.style.display='block';
+  if(setups.length){
+    el.style.background='rgba(10,107,68,.12)'; el.style.border='2px solid var(--sbuy)'; el.style.color='var(--sbuy)';
+    el.innerHTML='🟢 <b>INDEX F&O — BUY-DIP SETUP:</b> '+setups.map(x=>`${x.name} (RSI2=${x.rsi2})`).join(' · ')+
+      ' — buy next open per INDEX_STRATEGY.md · exit when RSI2 > 70';
+  } else {
+    el.style.background='rgba(91,107,128,.08)'; el.style.border='1px solid var(--line)'; el.style.color='var(--mut)'; el.style.fontWeight='400';
+    el.innerHTML='Index F&O (dip-buy): '+idx.map(x=>`${x.name} RSI2=${x.rsi2==null?'-':x.rsi2} — ${x.fno_dip}`).join(' · ');
+  }
+}
 function renderIndices(){
   const rows=DATA.indices||[]; const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy,#1a7f37)':v<0?'var(--exit,#b91c1c)':'inherit'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
   $('#idxrows').innerHTML = rows.length? rows.map(r=>`<tr>
@@ -614,7 +630,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderLog(); renderSystem(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>
