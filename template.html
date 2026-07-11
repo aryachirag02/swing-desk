@@ -450,7 +450,8 @@ function positionsFromLog(log){
   [...log].sort((a,b)=>a.date.localeCompare(b.date)).forEach(e=>{
     const t=e.ticker.toUpperCase(); p[t]=p[t]||{qty:0,cost:0,realized:0};
     const q=Number(e.qty), px=Number(e.price);
-    if(e.side==='Buy'){if(p[t].qty<=0)p[t].first=e.date; p[t].cost+=q*px; p[t].qty+=q;}
+    if(e.side==='Buy'){if(p[t].qty<=0)p[t].first=e.date; p[t].cost+=q*px; p[t].qty+=q;
+      if(/^(RADAR|INTEL|MANUAL)/i.test(e.note||'')) p[t].lt=true;}
     else{const avg=p[t].qty>0?p[t].cost/p[t].qty:px; p[t].realized+=q*(px-avg); p[t].cost-=q*avg; p[t].qty-=q;}
   });
   return p;
@@ -598,9 +599,10 @@ function renderToday(){
       const lines=tks.map(t=>{
         const p=posmap[t]; const last=rowByTicker[t]?rowByTicker[t].close:null;
         const avg=p.cost/p.qty; const pl=last?((last/avg-1)*100):null;
-        const hs=heldSignal(t); const adv=hs&&hs[0]?hs[0]:'Hold';
-        const advCol=adv==='Exit'?'var(--exit)':adv==='Reduce'?'var(--reduce)':'var(--buy)';
-        return `<b>${t}</b> — ${p.qty} @ ₹${fmt(avg)}${last?` → ₹${fmt(last)} (<span style="color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl>=0?'+':''}${pl.toFixed(1)}%</span>)`:''} · advice: <b style="color:${advCol}">${adv}</b>${hs&&hs[2]?` <span style="color:var(--mut);font-size:11.5px">(${hs[2]})</span>`:''}`;
+        let adv,advCol,reason='';
+        if(p.lt){adv='Long-term';advCol='var(--brass)';reason='your rules apply — swing exit advice off';}
+        else{const hs=heldSignal(t);adv=hs&&hs[0]?hs[0]:'Hold';advCol=adv==='Exit'?'var(--exit)':adv==='Reduce'?'var(--reduce)':'var(--buy)';reason=hs&&hs[2]?hs[2]:'';}
+        return `<b>${t}</b> — ${p.qty} @ ₹${fmt(avg)}${last?` → ₹${fmt(last)} (<span style="color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl>=0?'+':''}${pl.toFixed(1)}%</span>)`:''} · advice: <b style="color:${advCol}">${adv}</b>${reason?` <span style="color:var(--mut);font-size:11.5px">(${reason})</span>`:''}`;
       }).join('<br>');
       h+=card('📌','YOUR OPEN POSITIONS','What the system says about each holding',lines+'<br><span style="color:var(--mut);font-size:12px">Details & exits: Trade log tab.</span>','var(--brass)');
     }
@@ -632,6 +634,7 @@ function renderLog(){
     realized+=p.realized;
     if(p.qty<=0) return;
     const last=rowByTicker[t]?rowByTicker[t].close:null, avg=p.cost/p.qty;
+    const __lt=p.lt;
     const pl=last!=null?(last-avg)*p.qty:0; unreal+=pl; invested+=p.cost;
     const [sig,sc,why]=heldSignal(t,p);
     rowsHtml+=`<tr><td class="tk">${t}</td><td class="num">${p.qty}</td><td class="num">${fmt(avg)}</td>
