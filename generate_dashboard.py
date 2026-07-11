@@ -19,6 +19,8 @@ def build(out="dashboard.html"):
         "radar": E.radar_snapshot(),
         "themes": (open(os.path.join(C.DATA_DIR, "themes.md")).read()
                    if os.path.exists(os.path.join(C.DATA_DIR, "themes.md")) else ""),
+        "intel": (open(os.path.join(C.DATA_DIR, "intel.md")).read()
+                  if os.path.exists(os.path.join(C.DATA_DIR, "intel.md")) else ""),
         "generated_at": datetime.now().strftime("%d %b %Y, %H:%M"),
         "sample": os.path.exists(os.path.join(C.DATA_DIR, "SAMPLE_FLAG")),
         "tuned": os.path.exists(C.TUNED_FILE),
