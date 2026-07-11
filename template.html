@@ -159,6 +159,7 @@ details.legend b{color:var(--ink)}
     <button class="tab" data-tab="indices">Indices</button>
     <button class="tab" data-tab="micro">Microcap (watch)</button>
     <button class="tab" data-tab="radar">Radar 🔭</button>
+    <button class="tab" data-tab="intel">🧠 Intelligence</button>
     <button class="tab" data-tab="log">Trade log</button>
     <button class="tab" data-tab="system">System</button>
   </div>
@@ -245,21 +246,23 @@ details.legend b{color:var(--ink)}
   </section>
 
   <section id="tab-radar" hidden>
-    <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px">
-      🔭 <b>Early-stage research radar — not signals.</b> Accumulation = tight base + volume quietly rising + RS turning
-      (weeks before a possible breakout, more false positives). Breakouts = the HFCL-at-₹84 moment. All feed the forward-test log.
+    <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:13px">
+      🔭 <b>Radar = early ideas, NOT buy signals.</b> Top candidates only, in plain language. Any trade from here:
+      log it with <b>Source = Radar</b>. Full numbers live on the Microcap tab if you ever want them.
     </div>
-    <div id="radar-themes" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:13px;white-space:pre-wrap"></div>
-    <h3 style="margin:6px 0 8px;font-size:15px">🟡 Accumulation watch (base building, volume waking)</h3>
-    <div class="tablewrap"><table><thead><tr>
-      <th>Stock</th><th>Universe</th><th>Sector</th><th class="num">Close</th><th class="num">Base range</th>
-      <th class="num">Vol 20d/60d</th><th class="num">RS 3M</th><th class="num">Turnover ₹cr</th>
-    </tr></thead><tbody id="accumrows"></tbody></table></div>
-    <h3 style="margin:18px 0 8px;font-size:15px">🔶 Fresh breakouts (100-day high on volume)</h3>
-    <div class="tablewrap"><table><thead><tr>
-      <th>Stock</th><th>Universe</th><th>Sector</th><th class="num">Close</th><th class="num">RS 3M</th>
-      <th class="num">Vol surge</th><th class="num">Turnover ₹cr</th>
-    </tr></thead><tbody id="brkrows"></tbody></table></div>
+    <h3 style="margin:6px 0 8px;font-size:15px">🔶 JUST STARTED MOVING — research these first</h3>
+    <div id="brkrows"></div>
+    <h3 style="margin:18px 0 8px;font-size:15px">🟡 GETTING READY — watch these, don't buy yet</h3>
+    <div id="accumrows"></div>
+  </section>
+
+  <section id="tab-intel" hidden>
+    <div style="border:1px solid var(--sbuy);background:rgba(10,107,68,.05);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px">
+      🧠 <b>AI research on today's strongest movers.</b> "System signal" is the validated system's own verdict where the
+      stock is in the Nifty 500 — <b>only act on Strong Buy/Buy when the regime light is green</b>. "Watch-only" means no
+      validated signal exists: research idea only.
+    </div>
+    <div id="intelrows"></div>
   </section>
 
   <section id="tab-log" hidden>
@@ -515,21 +518,21 @@ function renderMicro(){
     : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
 function renderRadar(){
-  const r=DATA.radar||{}; const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy)':v<0?'var(--exit)':'inherit'}">${v>0?'+':''}${v}%</span>`;
-  if(DATA.themes && DATA.themes.trim()){const t=$('#radar-themes');t.style.display='block';t.textContent=DATA.themes;}
-  $('#accumrows').innerHTML=(r.accum||[]).map(x=>`<tr>
-    <td class="tk">${x.ticker}<div style="font-size:10px;color:var(--mut)">${x.name}</div></td>
-    <td>${x.uni}</td><td>${x.sector}</td><td class="num">${fmt(x.close)}</td>
-    <td class="num">±${x.base_pct}%</td><td class="num"><b>${x.vol_trend}x</b></td>
-    <td class="num">${pc(x.rs_3m)}</td><td class="num">${x.turnover_cr}</td></tr>`).join('')
-    ||'<tr><td colspan="8" style="color:var(--mut)">none today</td></tr>';
-  $('#brkrows').innerHTML=(r.breakouts||[]).map(x=>`<tr>
-    <td class="tk">${x.ticker}<div style="font-size:10px;color:var(--mut)">${x.name}</div></td>
-    <td>${x.uni}</td><td>${x.sector}</td><td class="num">${fmt(x.close)}</td>
-    <td class="num">${pc(x.rs_3m)}</td><td class="num"><b>${x.vol_x}x</b></td>
-    <td class="num">${x.turnover_cr}</td></tr>`).join('')
-    ||'<tr><td colspan="7" style="color:var(--mut)">none today</td></tr>';
+  const r=DATA.radar||{};
+  const rowCard=(x,sentence)=>`
+    <div style="border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--panel);display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+      <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
+      <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
+      <div style="flex:1;font-size:13px">${sentence}</div>
+    </div>`;
+  $('#brkrows').innerHTML=(r.breakouts||[]).slice(0,8).map(x=>rowCard(x,
+    `Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>. It's ${x.rs_3m>0?'beaten':'lagged'} the market by <b>${x.rs_3m>0?'+':''}${x.rs_3m}%</b> in 3 months. <b>→ Check the 🧠 Intelligence tab for WHY it's moving</b>, do your homework, and only buy if the story holds (green-regime days preferred).`)).join('')
+    ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
+  $('#accumrows').innerHTML=(r.accum||[]).slice(0,8).map(x=>rowCard(x,
+    `Price has gone <b>sideways for ~3 months</b> while buying volume quietly rose to <b>${x.vol_trend}× normal</b> — a sign big money may be accumulating. <b>→ Don't buy yet.</b> Put it on your watch; if it appears in "JUST STARTED MOVING" later, that's your cue to research.`)).join('')
+    ||'<p style="color:var(--mut)">No quiet accumulators found today.</p>';
 }
+
 function renderToday(){
   const g=DATA.regime||{}; const idx=(DATA.indices||[]).filter(x=>x.fno_dip!==undefined);
   const setups=idx.filter(x=>String(x.fno_dip).indexOf('BUY-DIP')===0);
@@ -576,6 +579,26 @@ function renderToday(){
   }
   h+=`<div style="color:var(--mut);font-size:12px;margin-top:6px">Cards 1–2 are validated systems: follow them mechanically. Cards 3–4 are research aids: your judgment required. Log every trade.</div>`;
   $('#todaybody').innerHTML=h;
+}
+function renderIntel(){
+  const rows=DATA.intel_rows||[]; const box=$('#intelrows');
+  if(!rows.length){box.innerHTML='<p style="color:var(--mut)">No intelligence report yet - appears after the 8pm run (needs API key).</p>';return;}
+  const chip=x=> x==='Strong Buy'?'<span style="background:var(--sbuy);color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">Strong Buy</span>'
+    : x==='Buy'?'<span style="background:var(--buy);color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">Buy</span>'
+    : x==='Watchlist'?'<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-size:12px">Watchlist</span>'
+    : '<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 10px;border-radius:6px;font-size:12px">'+(x||'-')+'</span>';
+  box.innerHTML=rows.map(r=>`
+    <div style="border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:var(--panel)">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+        <div><b style="font-size:15px">${r.ticker}</b> <span style="color:var(--mut);font-size:12px">${r.name} · ${r.sector}</span></div>
+        <div>${chip(r.signal)}</div>
+      </div>
+      <div style="font-size:12.5px;color:var(--mut);margin:6px 0">
+        ${r.close?('₹'+fmt(r.close)+' · '):''}Trend: <b>${r.trend||'-'}</b> · Strength vs market (3M): <b style="color:${r.rs3>0?'var(--buy)':'var(--exit)'}">${r.rs3>0?'+':''}${r.rs3}%</b>
+        ${r.breakout?' · 🔶 just broke to new highs':''}${r.vol>=2?' · volume '+r.vol+'x normal':''}
+      </div>
+      <div style="font-size:13px;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:8px;margin-top:6px">${(r.ai||'').replace(/</g,'&lt;')}</div>
+    </div>`).join('');
 }
 function renderLog(){
   const log=loadLog(), pos=positionsFromLog(log);
@@ -725,11 +748,11 @@ function renderSystem(){
 // ---------- tabs ----------
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));
-  ['today','signals','indices','micro','radar','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
+  ['today','signals','indices','micro','radar','intel','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderIntel(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>

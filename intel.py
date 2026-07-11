@@ -75,6 +75,7 @@ def main():
             ans = ask_claude([{"role": "user", "content": q}])
             sections.append(f"### {sym} — {c['name']} ({c['sector']}) · RS {c['rs3']:+.0f}%"
                             + (" · 🔶 breakout" if c["breakout"] else "") + f"\n{ans}\n")
+            c["ai"] = ans
             print(f"  ✓ {sym}")
         except Exception as e:
             print(f"  ✗ {sym}: {type(e).__name__}")
@@ -94,7 +95,10 @@ def main():
            f"_Claude web-research on the day's {len(cands)} quant-flagged movers. Research assistance, "
            f"NOT validated signals — verify before any long-term buy._\n\n")
     open(os.path.join(C.DATA_DIR, "intel.md"), "w").write(hdr + "\n".join(sections))
-    print(f"intel.md written ({len(sections)} sections)")
+    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai")}
+               for c in cands if c.get("ai")],
+              open(os.path.join(C.DATA_DIR, "intel.json"), "w"))
+    print(f"intel.md + intel.json written ({len(sections)} sections)")
 
 def themes():
     """Friday forward scan: upcoming catalysts (1-2 quarters) -> exposed listed names. Theme-first."""
