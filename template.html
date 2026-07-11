@@ -210,7 +210,7 @@ details.legend b{color:var(--ink)}
         <thead><tr>
           <th>Index</th><th class="num">Level</th><th class="num">1D%</th><th class="num">1W%</th>
           <th class="num">1M%</th><th class="num">3M%</th><th class="num">vs 50DMA</th>
-          <th class="num">vs 200DMA</th><th class="num">RSI</th><th class="num">From 52w high</th><th>Trend</th>
+          <th class="num">vs 200DMA</th><th class="num">RSI</th><th class="num">From 52w high</th><th>Trend</th><th>Signal</th>
         </tr></thead>
         <tbody id="idxrows"></tbody>
       </table>
@@ -464,7 +464,14 @@ function renderIndices(){
     <td class="num">${pc(r.chg_1m)}</td><td class="num">${pc(r.chg_3m)}</td>
     <td class="num">${pc(r.vs_50dma)}</td><td class="num">${pc(r.vs_200dma)}</td>
     <td class="num">${r.rsi==null?'-':r.rsi}</td><td class="num">${pc(r.from_52w_high)}</td>
-    <td>${r.trend_label}</td></tr>`).join('')
+    <td>${r.trend_label}</td><td>${
+      r.fno_dip===undefined ? '<span style="color:var(--mut)">—</span>'
+      : String(r.fno_dip).indexOf('BUY-DIP')===0
+        ? `<span style="background:rgba(10,107,68,.15);color:var(--sbuy);font-weight:700;padding:2px 8px;border-radius:6px">🟢 BUY-DIP · RSI2=${r.rsi2}</span>`
+      : String(r.fno_dip).indexOf('below')===0
+        ? `<span style="color:var(--exit);font-size:12px">stand aside (below 200DMA) · RSI2=${r.rsi2}</span>`
+        : `<span style="color:var(--mut);font-size:12px">no setup · RSI2=${r.rsi2}</span>`
+    }</td></tr>`).join('')
     : '<tr><td colspan="11" style="color:var(--mut)">No index data - run fetch_data.py</td></tr>';
 }
 function renderMicro(){
