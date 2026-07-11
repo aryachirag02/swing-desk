@@ -2,14 +2,14 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24206.9 · 50DMA 23829.7 · 200DMA 24848.0 · 1M +4.3%
-**Breadth:** 64.7% of universe above 50-DMA (Broad participation) · A/D 419/79
+**Breadth:** 64.6% of universe above 50-DMA (Broad participation) · A/D 420/79
 **Flows:** FII ₹+2,604 cr today (+4,427 cr 5-day) · DII ₹+2,020 cr
 
 **Indices:** NIFTY 50 24,206.9 (+1.0%) · BANK NIFTY 58,045.9 (+1.4%) · NIFTY REALTY 890.8 (+2.2%) · FIN NIFTY 26,875.1 (+0.0%) · NIFTY ENERGY 39,178.6 (-1.3%) · NIFTY METAL 12,598.5 (+0.8%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=69 → below 200DMA — stand aside · BANK NIFTY RSI2=74 → no setup
 
-**Leading sectors:** Realty (+18.1%) · Diversified (+16.8%) · Construction (+13.3%) · Consumer Services (+11.4%)
+**Leading sectors:** Realty (+18.1%) · Diversified (+16.8%) · Construction (+13.3%) · Consumer Services (+11.2%)
 
 ## ✅ Strong Buy (17)
 - **ANANTRAJ** (Realty · Small cap) — score 100, Breakout — new 20-day high on 2.0× volume. Entry ₹585.8 · Stop ₹535.9 · Target ₹685.7 · Risk/sh ₹49.9
