@@ -122,6 +122,86 @@ def themes():
     except Exception as e:
         print(f"themes failed: {type(e).__name__}")
 
+
+def portfolio():
+    """Weekly AI review of holdings from tradelog.json (requires Cloud sync). Per holding:
+    news, analyst view, fundamentals, technicals + CALL: HOLD/ADD/REDUCE/SELL."""
+    if not API_KEY: print("portfolio: no key"); return
+    lp = "tradelog.json"
+    if not os.path.exists(lp):
+        print("portfolio: tradelog.json not found (enable Cloud sync) — skipping"); return
+    try:
+        log = json.load(open(lp))
+        entries = log.get("entries", log if isinstance(log, list) else [])
+    except Exception as e:
+        print(f"portfolio: log parse failed {type(e).__name__}"); return
+    pos = {}
+    for e in sorted(entries, key=lambda x: x.get("date", "")):
+        t = str(e.get("ticker", "")).upper()
+        if not t: continue
+        q, px = float(e.get("qty", 0) or 0), float(e.get("price", 0) or 0)
+        p = pos.setdefault(t, {"qty": 0.0, "cost": 0.0, "first": e.get("date", ""), "note": ""})
+        if str(e.get("side")) == "Buy":
+            if p["qty"] <= 0: p["first"] = e.get("date", "")
+            p["cost"] += q * px; p["qty"] += q
+            p["note"] = (e.get("note") or p["note"])[:60]
+        else:
+            avg = p["cost"] / p["qty"] if p["qty"] > 0 else px
+            p["cost"] -= q * avg; p["qty"] -= q
+    holdings = {t: p for t, p in pos.items() if p["qty"] > 0.5}
+    if not holdings:
+        print("portfolio: no open holdings"); return
+    # price/technical context
+    frames = {}
+    for f in [C.PRICES_FILE, os.path.join(C.DATA_DIR, "mc_prices.csv")]:
+        if os.path.exists(f):
+            px = pd.read_csv(f, parse_dates=["date"])
+            for t, g in px.groupby("ticker"):
+                frames[t.replace(".NS", "")] = g.sort_values("date").set_index("date")
+    out = []
+    for t, p in holdings.items():
+        avg = p["cost"] / p["qty"]
+        g = frames.get(t)
+        tech = ""
+        last = None
+        if g is not None and len(g) > 70:
+            c = g.close; last = float(c.iloc[-1])
+            ma50 = float(c.rolling(50).mean().iloc[-1])
+            r3 = float(c.iloc[-1] / c.iloc[-64] - 1) * 100 if len(c) > 64 else 0
+            tech = (f"price {last:.1f} vs your avg {avg:.1f} ({(last/avg-1)*100:+.1f}%), "
+                    f"{'above' if last>ma50 else 'below'} its 50-day average, 3-month move {r3:+.0f}%")
+        q = (f"I hold NSE stock {t} (bought around Rs {avg:.0f}, since {p['first']}"
+             + (f", note: {p['note']}" if p['note'] else "") + f"). Current technicals: {tech or 'n/a'}. "
+             "Search recent news (last 4-6 weeks) and what analysts/brokerages currently say. "
+             "Reply in EXACTLY this 5-line format, simple everyday English, each line under 18 words, "
+             "no markdown, no preamble:\n"
+             "NEWS: <most important recent development with date>\n"
+             "ANALYSTS: <what brokerages/analysts say now: targets/upgrades/downgrades, or 'no recent coverage found'>\n"
+             "FUNDAMENTALS: <one line: growth/valuation health with 1 number>\n"
+             "TECHNICALS: <one line restating the technical picture simply>\n"
+             "CALL: <HOLD | ADD | REDUCE | SELL> — <under 10 words why, for a long-term holder>")
+        try:
+            ans = ask_claude([{"role": "user", "content": q}], 420)
+            m = None
+            import re as _re
+            mm = _re.search(r"CALL:\s*(HOLD|ADD|REDUCE|SELL)\s*[—-]?\s*(.*)", ans, _re.I)
+            call, why = (mm.group(1).upper(), mm.group(2).strip()[:80]) if mm else (None, "")
+            body = _re.sub(r"\n?CALL:.*", "", ans).strip()
+            out.append({"ticker": t, "qty": p["qty"], "avg": round(avg, 2), "since": p["first"],
+                        "last": last, "call": call, "why": why, "ai": body})
+            print(f"  ✓ {t} -> {call}")
+        except Exception as e:
+            print(f"  ✗ {t}: {type(e).__name__}")
+        time.sleep(1)
+    json.dump({"asof": pd.Timestamp.now().strftime("%Y-%m-%d"), "rows": out},
+              open(os.path.join(C.DATA_DIR, "portfolio_review.json"), "w"))
+    md = [f"# Weekly portfolio review — {pd.Timestamp.now().strftime('%Y-%m-%d')}\n"]
+    for r in out:
+        md.append(f"### {r['ticker']} — {r['call'] or '?'} ({r['why']})\n{r['ai']}\n")
+    open(os.path.join(C.DATA_DIR, "portfolio_review.md"), "w").write("\n".join(md))
+    print(f"portfolio review written ({len(out)} holdings)")
+
 if __name__ == "__main__":
     if "--themes" in sys.argv: themes()
+    elif "--portfolio" in sys.argv: portfolio()
     else: main()

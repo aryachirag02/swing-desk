@@ -167,6 +167,7 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
     <button class="tab" data-tab="indices">Indices</button>
     <button class="tab" data-tab="micro">Microcap (watch)</button>
     <button class="tab" data-tab="radar">💡 Ideas (Radar + AI)</button>
+    <button class="tab" data-tab="pf">💼 Portfolio</button>
     <button class="tab" data-tab="log">Trade log</button>
     <button class="tab" data-tab="system">System</button>
   </div>
@@ -265,6 +266,15 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
     <div id="leadrows"></div>
   </section>
 
+  <section id="tab-pf" hidden>
+    <div style="border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px">
+      💼 <b>Your holdings + a weekly AI review</b> (news, analyst views, fundamentals, technicals and a CALL per stock —
+      runs every Friday, needs Cloud sync ON so the robot can read your log). Add stocks via ➕ buttons on the Signals /
+      Microcap tabs, or the Trade log form. Reduce/Remove here logs a Sell in your trade log.
+    </div>
+    <div id="pfbody"></div>
+  </section>
+
   <section id="tab-log" hidden>
     <div id="persistnote"></div>
     <div class="kpis" id="logkpis"></div>
@@ -301,10 +311,10 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
       <summary style="cursor:pointer;font-size:13px;color:var(--mut)">☁️ Cloud sync — access your trade log from every device</summary>
       <div style="border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;font-size:13px">
         <p style="margin:0 0 8px">Saves your log to a <b>private</b> GitHub repo so every device shares one log. Setup (once):
-        create a private repo (e.g. <code>swing-log</code>, tick "Add a README"), then create a fine-grained token at
+        this saves the family log into the dashboard repo itself (visible to everyone who opens this page). To WRITE, create one fine-grained token at
         GitHub → Settings → Developer settings → Fine-grained tokens → access to only that repo → Contents: Read &amp; write.</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end">
-          <div><label style="font-size:11px">Repo (user/name)</label><br><input id="gh-repo" placeholder="aryachirag02/swing-log" style="width:220px"></div>
+          <div><label style="font-size:11px">Repo (user/name)</label><br><input id="gh-repo" placeholder="aryachirag02/swing-desk" value="aryachirag02/swing-desk" style="width:220px"></div>
           <div><label style="font-size:11px">Token (stored only in this browser)</label><br><input id="gh-token" type="password" placeholder="github_pat_..." style="width:260px"></div>
           <button class="btn" id="gh-enable">Enable sync</button>
           <button class="btn ghost" id="gh-disable">Disable</button>
@@ -368,6 +378,23 @@ $('#rail').innerHTML = DATA.sectors.map(s=>`
 // ---------- trade log storage ----------
 let persist=true, mem=[];
 try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){persist=false;}
+// family mode: viewers with no local log auto-load the shared tradelog.json (read-only until they add a token)
+(function(){try{
+  fetch('tradelog.json?v='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{
+    if(!j) return; const ent=j.entries||j; if(!Array.isArray(ent)||!ent.length) return;
+    const local=JSON.parse(localStorage.getItem('swingdesk_log')||'[]');
+    const seen=new Set(local.map(e=>JSON.stringify([e.date,e.ticker,e.side,e.qty,e.price,e.note||''])));
+    let added=0;
+    ent.forEach(e=>{const k=JSON.stringify([e.date,e.ticker,e.side,e.qty,e.price,e.note||'']); if(!seen.has(k)){local.push(e);seen.add(k);added++;}});
+    if(added||!localStorage.getItem('swingdesk_log')){
+      local.sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+      localStorage.setItem('swingdesk_log',JSON.stringify(local));
+      if(typeof renderLog==='function'){renderLog();renderPf();renderToday();}
+    }
+  }).catch(()=>{});
+}catch(e){}})();
+// FAMILY MODE: paste your Cloudflare Worker URL between the quotes to let ANY device log trades with no token.
+const FAMILY_WRITE_URL="https://swing-trades.aryachirag02.workers.dev";
 const loadLog=()=>{ if(!persist) return mem; try{return JSON.parse(localStorage.getItem('swingdesk_log')||'[]')}catch(e){return[]} };
 const saveLog=l=>{ if(persist){localStorage.setItem('swingdesk_log',JSON.stringify(l));localStorage.setItem('swingdesk_log_ts',new Date().toISOString());} else mem=l; schedulePush(); };
 
@@ -390,8 +417,20 @@ async function pullRemote(){
   return {sha:j.sha, body:JSON.parse(b64d(j.content))};
 }
 let pushTimer=null, pushing=false;
-function schedulePush(){ if(!syncCfg().on) return; clearTimeout(pushTimer); pushTimer=setTimeout(pushRemote,1500); }
+function schedulePush(){ if(!syncCfg().on && !FAMILY_WRITE_URL) return; clearTimeout(pushTimer); pushTimer=setTimeout(pushRemote,1500); }
 async function pushRemote(retry=true){
+  if(FAMILY_WRITE_URL){
+    if(pushing) return; pushing=true; setSyncUI('syncing…');
+    try{
+      const r=await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog()})});
+      if(!r.ok) throw new Error('worker '+r.status);
+      const j=await r.json().catch(()=>null);
+      if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();}}
+      setSyncUI('☁ family-synced '+new Date().toLocaleTimeString());
+    }catch(e){ setSyncUI('family sync failed: '+e.message); }
+    pushing=false; return;
+  }
   if(!syncCfg().on||pushing) return; pushing=true; setSyncUI('syncing…');
   try{
     let sha; const cur=await ghFetch('tradelog.json',{cache:'no-store'});
@@ -522,7 +561,7 @@ function renderMicro(){
   const rows=DATA.microcaps||[];
   const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy)':v<0?'var(--exit)':'inherit'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
   $('#mcrows').innerHTML = rows.length? rows.map(r=>`<tr${r.manual?' style="background:rgba(156,122,44,.08)"':''}>
-    <td class="tk">${r.ticker}${r.manual?' 📌':''}<div style="font-size:10px;color:var(--mut)">${r.name}</div></td>
+    <td class="tk">${r.ticker}${r.manual?' 📌':''} <span onclick="addToPf('${r.ticker}',${r.close},'MANUAL')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span><div style="font-size:10px;color:var(--mut)">${r.name}</div></td>
     <td>${r.sector}</td><td class="num">${fmt(r.close)}</td>
     <td class="num">${pc(r.chg_1m)}</td><td class="num">${pc(r.rs_3m)}</td><td class="num">${pc(r.vs_50dma)}</td>
     <td class="num">${r.turnover_cr}${r.thin?' <span style="color:var(--exit);font-size:10px">THIN</span>':''}</td>
@@ -640,6 +679,53 @@ function renderToday(){
   $('#todaybody').innerHTML=h;
 }
 
+function addToPf(tk,px,src){
+  document.querySelector('[data-tab="log"]').click();
+  $('#f-ticker').value=tk; $('#f-price').value=px||''; $('#f-side').value='Buy';
+  if(src!==undefined) $('#f-src').value=src;
+  $('#f-date').value=new Date().toISOString().slice(0,10);
+  $('#f-qty').focus();
+  window.scrollTo({top:document.getElementById('f-ticker').getBoundingClientRect().top+window.scrollY-140,behavior:'smooth'});
+}
+function pfSell(tk,qty){
+  const p=positionsFromLog(loadLog())[tk]; if(!p||p.qty<=0) return;
+  const q=qty==null?Number(prompt('Reduce '+tk+': how many shares to sell? (you hold '+p.qty+')','')):qty;
+  if(!q||q<=0) return;
+  const mark=rowByTicker[tk]?rowByTicker[tk].close:null;
+  const px=Number(prompt('Sell price for '+tk+'?',mark||''));
+  if(!px||px<=0) return;
+  const l=loadLog(); l.push({date:new Date().toISOString().slice(0,10),ticker:tk,side:'Sell',qty:Math.min(q,p.qty),price:px,note:'from portfolio tab'});
+  saveLog(l); renderPf(); renderLog(); renderToday();
+}
+function renderPf(){
+  const pos=positionsFromLog(loadLog()); const tks=Object.keys(pos).filter(t=>pos[t].qty>0);
+  const rev={}; ((DATA.pfreview||{}).rows||[]).forEach(r=>rev[r.ticker]=r);
+  const asof=(DATA.pfreview||{}).asof;
+  const box=$('#pfbody'); if(!box) return;
+  if(!tks.length){box.innerHTML='<p style="color:var(--mut)">No holdings yet. Use the ➕ Portfolio buttons on the Signals or Microcap tabs (or the Trade log form) to add your first position.</p>';return;}
+  const callChip=c=> c==='HOLD'?'<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">HOLD</span>'
+    : c==='ADD'?'<span style="background:var(--sbuy);color:#fff;padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">ADD</span>'
+    : c==='REDUCE'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">REDUCE</span>'
+    : c==='SELL'?'<span style="background:var(--exit);color:#fff;padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">SELL</span>'
+    : '<span style="color:var(--mut);font-size:12px">review pending (Friday run)</span>';
+  box.innerHTML=(asof?`<p style="color:var(--mut);font-size:12px">Last AI review: ${asof}</p>`:'')+tks.map(t=>{
+    const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
+    const pl=last?((last/avg-1)*100):null; const r=rev[t];
+    return `<div style="border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:var(--panel)">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+        <div><b style="font-size:16px">${t}</b> <span style="color:var(--mut);font-size:12px">since ${p.first||'—'}${p.lt?' · long-term':''}</span><br>
+          <span style="font-size:13px">${p.qty} shares @ ₹${fmt(avg)}${last?` → ₹${fmt(last)} <b style="color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl>=0?'+':''}${pl.toFixed(1)}%</b>`:''}</span></div>
+        <div style="text-align:right">${r?callChip(r.call):callChip(null)}
+          ${r&&r.why?`<div style="color:var(--mut);font-size:11px;margin-top:3px;max-width:230px">${r.why.replace(/</g,'&lt;')}</div>`:''}</div>
+      </div>
+      ${r&&r.ai?`<div style="font-size:13px;white-space:pre-wrap;border-top:1px solid var(--line);padding-top:8px;margin-top:8px">${r.ai.replace(/</g,'&lt;')}</div>`:''}
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <button class="btn" onclick="addToPf('${t}',${last||0})" style="font-size:12px;padding:5px 12px">＋ Add more</button>
+        <button class="btn" onclick="pfSell('${t}')" style="font-size:12px;padding:5px 12px">− Reduce</button>
+        <button class="btn" onclick="pfSell('${t}',${p.qty})" style="font-size:12px;padding:5px 12px;color:var(--exit)">✕ Remove (sell all)</button>
+      </div>
+    </div>`}).join('');
+}
 function renderLog(){
   const log=loadLog(), pos=positionsFromLog(log);
   $('#logrows').innerHTML = log.length? log.map((e,i)=>`<tr><td class="num">${e.date}</td><td class="tk">${e.ticker}</td>
@@ -744,7 +830,7 @@ function renderTable(){
   $('#rows').innerHTML=rows.map(r=>{
     const eff=effState(r,pos), held=eff.held;
     return `<tr class="${r.liquid?'':'dim'}">
-    <td class="tk">${r.ticker}${held?'<span class="held">HELD</span>':''}<span class="co">${r.name}</span>${r.surveillance?`<span class="flag surv" title="On the exchange surveillance list — no Buy signals">${r.surveillance}</span>`:''}${r.earnings_soon?`<span class="flag earn" title="Results inside your holding window — earnings gaps can jump right past stop-losses">📅 results ${r.earnings}</span>`:''}</td>
+    <td class="tk">${r.ticker} <span onclick="event.stopPropagation();addToPf('${r.ticker}',${r.price},'')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span>${held?'<span class="held">HELD</span>':''}<span class="co">${r.name}</span>${r.surveillance?`<span class="flag surv" title="On the exchange surveillance list — no Buy signals">${r.surveillance}</span>`:''}${r.earnings_soon?`<span class="flag earn" title="Results inside your holding window — earnings gaps can jump right past stop-losses">📅 results ${r.earnings}</span>`:''}</td>
     <td style="font-size:12px">${r.sector}${r.cap?`<br><span style="color:var(--muted);font-size:10.5px">${r.cap} cap</span>`:''}</td>
     <td class="num">${fmt(r.close)}<br><span class="${cls(r.chg_1d)}" style="font-size:11px">${r.chg_1d>0?'+':''}${r.chg_1d}%</span></td>
     <td>${spark(r.spark)}</td>
@@ -789,11 +875,11 @@ function renderSystem(){
 // ---------- tabs ----------
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));
-  ['today','signals','indices','micro','radar','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
+  ['today','signals','indices','micro','radar','pf','log','system'].forEach(n=>$('#tab-'+n).hidden = t.dataset.tab!==n);
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>
