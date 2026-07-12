@@ -1,14 +1,14 @@
 # Weekly portfolio review — 2026-07-12
 
-### VEDL — HOLD (Demerger overhang fading; high yield cushions downside.)
-**Important context note:** VEDL underwent a major demerger effective May 1, 2026, splitting into 5 listed entities. The current price of ~₹272 reflects only the **residual Vedanta** (base metals/copper/zinc-international), not the pre-demerger whole company. The pre-demerger stock was trading ~₹750-795 before the split. Your entry at ₹272 is post-demerger. Below is your requested format:
+### VEDL — HOLD (Post-demerger reset, analysts say "Buy," target Rs 316; await Q1 FY27 results Ju)
+**Important context note:** The VEDL price of ~₹272.5 reflects the *post-demerger residual* Vedanta entity (effective May 1, 2026), after spinning off Aluminium, Power, Oil & Gas, Iron & Steel, and Base Metals into separate listed companies. The pre-demerger 52-week high of ₹795 is not directly comparable. Your entry at ₹272 on July 12, 2026 is essentially in the new, slimmed-down residual entity.
 
 ---
 
- NEWS: Vedanta demerger into 6 entities made effective May 1, 2026; four new stocks listed. 
+ NEWS: Vedanta's demerged entities listed June 2026; Aluminium debuted at Rs 522, Power at Rs 41.80, Oil & Gas at Rs 38, residual Vedanta trading ~Rs 307. 
 
- ANALYSTS: 14 analysts rate VEDL "Buy"; average 12-month target ₹316, ~15% upside. 
+ ANALYSTS: 14 analysts rate VEDL "Buy"; average 12-month target Rs 316.60, implying ~16% upside. 
 
- FUNDAMENTALS: Q4 FY26 net profit jumped 92% YoY; dividend yield ~12.5%. 
+ FUNDAMENTALS: Q4 FY26 net profit jumped 92% YoY to Rs 6,698 Cr; dividend yield ~12.47%. 
 
- TECHNICALS: Stock down ~55% in 6 months post-demerger; below 50-day average, PE ~15x.
+ TECHNICALS: Price declined ~55% over six months; sitting near 52-week low, below key averages.
