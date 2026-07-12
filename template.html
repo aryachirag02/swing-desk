@@ -254,8 +254,7 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
 
   <section id="tab-radar" hidden>
     <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:13px">
-      🔭 <b>Radar = early ideas, NOT buy signals.</b> Top candidates only, in plain language. Any trade from here:
-      log it with <b>Source = Radar</b>. Full numbers live on the Microcap tab if you ever want them.
+      🔭 <b>Every card carries an AI CALL (Buy-worthy / Wait / Avoid)</b> — Claude's researched long-term opinion after reading the news + fundamentals for you. Honest label: this is <b>AI research, not the validated system</b> — its calls are being graded live through your log and the forward-test. Breakout cards also carry a <b>📊 Setup Grade (A/B/C) — this part IS backtested</b>: 10 years, 5,722 events, grade ordering confirmed on held-out 2023-26 data (A-setups: ~2x the doubling rate of C). Absolute returns in the study are survivorship-inflated; the A&gt;B&gt;C ranking is the trustworthy part. Best combo: <b>Setup A + AI CALL Buy-worthy</b>, starter size, Source as shown.
     </div>
     <div id="radar-themes2" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:12.5px;white-space:pre-wrap"></div>
     <h3 style="margin:6px 0 8px;font-size:15px">🔶 JUST STARTED MOVING — research these first</h3>
@@ -542,17 +541,34 @@ function renderRadar(){
       <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
         <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
         <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
-        <div style="flex:1;font-size:13px">${sentence}</div>
-        <div>${chip(ai?ai.signal:null)}</div>
+        <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span></div>`:''}</div>
+        <div style="text-align:right">
+          ${ai&&ai.call?(ai.call==='BUY-WORTHY'
+            ?`<div style="background:var(--sbuy);color:#fff;padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🟢 AI CALL: BUY-WORTHY</div>`
+            :ai.call==='WAIT'
+            ?`<div style="background:rgba(224,166,42,.18);color:var(--reduce);padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🟡 AI CALL: WAIT</div>`
+            :`<div style="background:rgba(194,55,47,.12);color:var(--exit);padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🔴 AI CALL: AVOID</div>`)
+            :`<div style="color:var(--mut);font-size:12px">AI call: pending next run</div>`}
+          ${ai&&ai.call_why?`<div style="color:var(--mut);font-size:11px;margin-top:3px;max-width:220px">${ai.call_why.replace(/</g,'&lt;')}</div>`:''}
+          <div style="margin-top:5px">${chip(ai?ai.signal:null)}</div>
+        </div>
       </div>
-      ${ai&&ai.ai?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--sbuy);font-weight:600">🧠 Why is it moving? (AI research)</summary><div style="font-size:13px;white-space:pre-wrap;padding:8px 0 0">${ai.ai.replace(/</g,'&lt;')}</div></details>`:''}
+      ${ai&&ai.ai?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--sbuy);font-weight:600">🧠 Why is it moving? (AI research)</summary><div style="font-size:13px;white-space:pre-wrap;padding:8px 0 0">${ai.ai.replace(/</g,'&lt;').replace(/\*\*/g,'').replace(/^#+\s*/gm,'').replace(/^---\s*$/gm,'').replace(/\n{3,}/g,'\n\n').trim()}</div></details>`:''}
     </div>`};
+  const gchip=x=>!x.grade?'':(x.grade==='A'
+    ?`<span style="background:rgba(10,107,68,.14);color:var(--sbuy);padding:2px 9px;border-radius:6px;font-weight:800;font-size:12px">📊 Setup A</span>`
+    :x.grade==='B'?`<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 9px;border-radius:6px;font-weight:700;font-size:12px">📊 Setup B</span>`
+    :`<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 9px;border-radius:6px;font-size:12px">📊 Setup C</span>`);
   $('#brkrows').innerHTML=(r.breakouts||[]).slice(0,8).map(x=>card(x,
-    `Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months. <b>→ open "Why is it moving?" below</b>, do your homework, buy only if the story holds. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
+    `${gchip(x)} Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
+  const restB=(r.breakouts||[]).slice(8);
+  if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
   $('#accumrows').innerHTML=(r.accum||[]).slice(0,8).map(x=>card(x,
     `Sideways for ~3 months while buying volume rose to <b>${x.vol_trend}× normal</b> — possible quiet accumulation. <b>→ Don't buy yet</b>; if it shows up above later, that's your research cue. <span style="color:var(--mut);font-size:11.5px">If you ever buy → Source: <b>Radar accumulation</b></span>`)).join('')
     ||'<p style="color:var(--mut)">No quiet accumulators today.</p>';
+  const restA=(r.accum||[]).slice(8);
+  if(restA.length) $('#accumrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restA.length} more accumulating (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restA.map(x=>`<b>${x.ticker}</b> (${x.sector}, vol ${x.vol_trend}×)`).join(' · ')}</div></details>`;
   // leaders: intel stocks not already shown
   const shown=new Set([...(r.breakouts||[]).slice(0,8),...(r.accum||[]).slice(0,8)].map(x=>x.ticker));
   const leaders=(DATA.intel_rows||[]).filter(x=>!shown.has(x.ticker)).slice(0,12);
@@ -610,7 +626,7 @@ function renderToday(){
   // 3 radar
   const a3=(rad.accum||[]).slice(0,3), b3=(rad.breakouts||[]).slice(0,3);
   h+=card('🔭','3 · RADAR (research ideas — NOT signals)',
-    `${(rad.accum||[]).length} accumulating · ${(rad.breakouts||[]).length} breaking out`,
+    `${(rad.breakouts||[]).length} breaking out · ${(rad.accum||[]).length} accumulating — top 8 each on the 💡 Ideas tab (rest expandable there)`,
     (b3.length?`<b>Fresh breakouts:</b> ${b3.map(x=>`${x.ticker} (${x.sector}, RS ${x.rs_3m>0?'+':''}${x.rs_3m}%)`).join(' · ')}<br>`:'')+
     (a3.length?`<b>Quiet accumulation:</b> ${a3.map(x=>`${x.ticker} (vol ${x.vol_trend}x)`).join(' · ')}<br>`:'')+
     `Research before any buy — The intelligence report (in brief.md) explains the "why" for the top movers.`,'var(--watch)');
