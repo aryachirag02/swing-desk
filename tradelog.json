@@ -1,4 +1,13 @@
 {
- "updated_at": "2026-07-08T11:11:32.174Z",
- "entries": []
+ "updated_at": "2026-07-12T18:40:45.325Z",
+ "entries": [
+  {
+   "date": "2026-07-12",
+   "ticker": "VEDL",
+   "side": "Buy",
+   "qty": "1",
+   "price": "272",
+   "note": ""
+  }
+ ]
 }
