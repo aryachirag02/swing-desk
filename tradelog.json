@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-12T18:46:20.781Z",
+ "updated_at": "2026-07-12T18:46:41.377Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -16,6 +16,14 @@
    "qty": 1,
    "price": 272.5,
    "note": "from portfolio tab"
+  },
+  {
+   "date": "2026-07-12",
+   "ticker": "VEDL",
+   "side": "Buy",
+   "qty": "1",
+   "price": "272",
+   "note": "MANUAL"
   }
  ]
 }
