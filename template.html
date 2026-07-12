@@ -559,11 +559,12 @@ function renderRadar(){
     ?`<span style="background:rgba(10,107,68,.14);color:var(--sbuy);padding:2px 9px;border-radius:6px;font-weight:800;font-size:12px">📊 Setup A</span>`
     :x.grade==='B'?`<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 9px;border-radius:6px;font-weight:700;font-size:12px">📊 Setup B</span>`
     :`<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 9px;border-radius:6px;font-size:12px">📊 Setup C</span>`);
-  $('#brkrows').innerHTML=(r.breakouts||[]).slice(0,8).map(x=>card(x,
+  const _bs=(r.breakouts||[]); const _nA=_bs.filter(x=>x.grade==='A').length; const _nCards=Math.max(8,_nA);
+  $('#brkrows').innerHTML=_bs.slice(0,_nCards).map(x=>card(x,
     `${gchip(x)} Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
-  const restB=(r.breakouts||[]).slice(8);
-  if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
+  const restB=_bs.slice(_nCards);
+  if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> [${x.grade||'-'}] (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
   $('#accumrows').innerHTML=(r.accum||[]).slice(0,8).map(x=>card(x,
     `Sideways for ~3 months while buying volume rose to <b>${x.vol_trend}× normal</b> — possible quiet accumulation. <b>→ Don't buy yet</b>; if it shows up above later, that's your research cue. <span style="color:var(--mut);font-size:11.5px">If you ever buy → Source: <b>Radar accumulation</b></span>`)).join('')
     ||'<p style="color:var(--mut)">No quiet accumulators today.</p>';
@@ -626,7 +627,7 @@ function renderToday(){
   // 3 radar
   const a3=(rad.accum||[]).slice(0,3), b3=(rad.breakouts||[]).slice(0,3);
   h+=card('🔭','3 · RADAR (research ideas — NOT signals)',
-    `${(rad.breakouts||[]).length} breaking out · ${(rad.accum||[]).length} accumulating — top 8 each on the 💡 Ideas tab (rest expandable there)`,
+    `${(rad.breakouts||[]).length} breaking out · ${(rad.accum||[]).length} accumulating — all Grade-A breakouts as full cards on the 💡 Ideas tab (B/C expandable there)`,
     (b3.length?`<b>Fresh breakouts:</b> ${b3.map(x=>`${x.ticker} (${x.sector}, RS ${x.rs_3m>0?'+':''}${x.rs_3m}%)`).join(' · ')}<br>`:'')+
     (a3.length?`<b>Quiet accumulation:</b> ${a3.map(x=>`${x.ticker} (vol ${x.vol_trend}x)`).join(' · ')}<br>`:'')+
     `Research before any buy — The intelligence report (in brief.md) explains the "why" for the top movers.`,'var(--watch)');

@@ -396,5 +396,6 @@ def radar_snapshot():
                   and last > hi100 * 0.85):
                 accum.append({**row, "base_pct": round((tight - 1) * 100, 0),
                               "vol_trend": round(v20 / v60, 2)})
-    accum.sort(key=lambda r: -r["vol_trend"]); brk.sort(key=lambda r: -r["rs_3m"])
-    return {"accum": accum[:25], "breakouts": brk[:25]}
+    accum.sort(key=lambda r: -r["vol_trend"])
+    brk.sort(key=lambda r: ({"A": 0, "B": 1, "C": 2}.get(r.get("grade"), 3), -r["rs_3m"]))
+    return {"accum": accum[:25], "breakouts": brk[:30]}
