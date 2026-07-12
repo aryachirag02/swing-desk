@@ -65,14 +65,18 @@ def main():
              + (f", volume {c['vol_surge']}x average" if c["vol_surge"] >= 2 else "") + "). "
              "First check screener.in/company/" + sym + "/ for fundamentals (sales & profit growth "
              "trend, ROE, debt, promoter holding change), then search recent news (last 3-4 weeks). "
-             "In max 4 short bullets: "
-             "(1) the specific catalyst (order wins, results, policy, sector theme) with dates if found, "
-             "(2) whether it's part of a broader sector/theme move and which peers, "
-             "(3) fundamentals check: is the price move backed by earnings/order growth or purely price action? "
-             "(4) credibility: hard news vs speculation/operator chatter. "
-             "If you find nothing concrete, say 'no clear public catalyst found' — do not invent reasons.")
+             "Reply in EXACTLY this 5-line format and nothing else — no preamble, no headers, "
+             "no ---, no markdown, no bold. Use simple everyday English a non-finance person understands. "
+             "Each line under 18 words. Max 80 words total:\n"
+             "CATALYST: <one sentence with the specific trigger and date>\n"
+             "THEME: <one sentence: broader sector story + 1-2 peer tickers, or 'stock-specific'>\n"
+             "FUNDAMENTALS: <one sentence: backed by earnings/orders (give 1 key number) or purely price action>\n"
+             "VERDICT: <Hard news | Mixed | Speculative> — <under 8 words why>\n"
+             "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words: your long-term investor judgment "
+             "combining catalyst quality, valuation sanity, and how extended the price already is>\n"
+             "If nothing concrete found, CATALYST line says 'no clear public catalyst found' and CALL is AVOID or WAIT.")
         try:
-            ans = ask_claude([{"role": "user", "content": q}])
+            ans = ask_claude([{"role": "user", "content": q}], 420)
             sections.append(f"### {sym} — {c['name']} ({c['sector']}) · RS {c['rs3']:+.0f}%"
                             + (" · 🔶 breakout" if c["breakout"] else "") + f"\n{ans}\n")
             c["ai"] = ans

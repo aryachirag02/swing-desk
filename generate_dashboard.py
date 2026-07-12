@@ -76,7 +76,16 @@ def _intel_rows(snap):
             signal, close, trend = "Watch-only", m_row.get("close"), m_row.get("trend", "")
         else:
             signal, close, trend = "Watch-only", None, ""
+        ai_txt = c.get("ai", "") or ""
+        call, call_why = None, ""
+        import re as _re
+        m = _re.search(r"CALL:\s*(BUY-WORTHY|WAIT|AVOID)\s*[—-]?\s*(.*)", ai_txt, _re.I)
+        if m:
+            call, call_why = m.group(1).upper(), m.group(2).strip()[:80]
+            ai_txt = _re.sub(r"\n?CALL:.*", "", ai_txt).strip()
+        c["ai"] = ai_txt
         out.append({"ticker": sym, "name": c.get("name", "")[:32], "sector": c.get("sector", ""),
+                    "call": call, "call_why": call_why,
                     "signal": signal, "close": close, "trend": trend,
                     "rs3": c.get("rs3"), "breakout": bool(c.get("breakout")),
                     "vol": c.get("vol_surge"), "ai": c.get("ai", "")})
