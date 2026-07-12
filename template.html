@@ -135,6 +135,12 @@ details.legend b{color:var(--ink)}
 }
 div:has(> .sec){overflow-x:auto;-webkit-overflow-scrolling:touch}
 div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+
+@media(max-width:700px){
+  .idearow{flex-direction:column;align-items:flex-start!important;gap:8px!important}
+  .idearow>div{min-width:0!important;width:100%;text-align:left!important;max-width:none!important}
+  .ideacard{padding:12px 13px}
+}
 </style>
 </head>
 <body>
@@ -254,8 +260,8 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
   </section>
 
   <section id="tab-radar" hidden>
-    <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:13px">
-      🔭 <b>Every card carries an AI CALL (Buy-worthy / Wait / Avoid)</b> — Claude's researched long-term opinion after reading the news + fundamentals for you. Honest label: this is <b>AI research, not the validated system</b> — its calls are being graded live through your log and the forward-test. Breakout cards also carry a <b>📊 Setup Grade (A/B/C) — this part IS backtested</b>: 10 years, 5,722 events, grade ordering confirmed on held-out 2023-26 data (A-setups: ~2x the doubling rate of C). Absolute returns in the study are survivorship-inflated; the A&gt;B&gt;C ranking is the trustworthy part. Best combo: <b>Setup A + AI CALL Buy-worthy</b>, starter size, Source as shown.
+    <div style="border:1px solid var(--watch);background:rgba(29,95,191,.06);border-radius:8px;padding:9px 14px;margin-bottom:14px;font-size:12.5px">
+      💡 <b>Setup Grade A/B/C</b> = backtested pattern quality (A best). <b>AI CALL</b> = Claude's researched opinion, graded live. Best combo: <b>Setup A + Buy-worthy</b> → starter size, Source as on the card.
     </div>
     <div id="radar-themes2" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:12.5px;white-space:pre-wrap"></div>
     <h3 style="margin:6px 0 8px;font-size:15px">🔶 JUST STARTED MOVING — research these first</h3>
@@ -576,8 +582,8 @@ function renderRadar(){
     : x==='Watchlist'?'<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-size:12px">Watchlist</span>'
     : '<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 10px;border-radius:6px;font-size:12px">'+(x||'Watch-only')+'</span>';
   const card=(x,sentence)=>{const ai=intel[x.ticker];return `
-    <div style="border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--panel)">
-      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+    <div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--panel)">
+      <div class="idearow" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
         <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
         <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
         <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span></div>`:''}</div>
@@ -712,7 +718,7 @@ function renderPf(){
     const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
     const pl=last?((last/avg-1)*100):null; const r=rev[t];
     return `<div style="border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:var(--panel)">
-      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+      <div class="idearow" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
         <div><b style="font-size:16px">${t}</b> <span style="color:var(--mut);font-size:12px">since ${p.first||'—'}${p.lt?' · long-term':''}</span><br>
           <span style="font-size:13px">${p.qty} shares @ ₹${fmt(avg)}${last?` → ₹${fmt(last)} <b style="color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl>=0?'+':''}${pl.toFixed(1)}%</b>`:''}</span></div>
         <div style="text-align:right">${r?callChip(r.call):callChip(null)}
