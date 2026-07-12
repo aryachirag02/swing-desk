@@ -38,7 +38,22 @@ def candidates():
             out[t] = {"ticker": t, "name": name, "sector": sector, "rs3": round(rs3, 0),
                       "breakout": brk, "vol_surge": round(vr, 1), "score": score}
     ranked = sorted(out.values(), key=lambda r: -r["score"])
-    return ranked[:MAX_STOCKS]
+    picks = ranked[:MAX_STOCKS]
+    # Fridays: also research the quiet accumulators (stories are cheapest before the breakout)
+    if pd.Timestamp.now().weekday() == 4:
+        try:
+            import engine as E
+            accum = E.radar_snapshot().get("accum", [])[:8]
+            have = {p["ticker"].replace(".NS", "") for p in picks}
+            for a in accum:
+                if a["ticker"] not in have:
+                    picks.append({"ticker": a["ticker"] + ".NS", "name": a["name"], "sector": a["sector"],
+                                  "rs3": a["rs_3m"], "breakout": False, "vol_surge": a.get("vol_trend", 0),
+                                  "score": 0, "accum": True})
+            print(f"Friday: +{len(picks)-len(ranked[:MAX_STOCKS])} accumulators added to research")
+        except Exception as e:
+            print(f"accum add skipped ({type(e).__name__})")
+    return picks
 
 def ask_claude(messages, max_tokens=700):
     r = rq.post("https://api.anthropic.com/v1/messages",
@@ -59,8 +74,21 @@ def main():
     sections = []
     for c in cands:
         sym = c["ticker"].replace(".NS", "")
-        q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) is up strongly "
-             f"({c['rs3']:+.0f}% vs Nifty over 3 months"
+        if c.get("accum"):
+            q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) has been "
+                 f"quiet/sideways for months but trading volume is quietly rising ({c['vol_surge']}x normal) — "
+                 "possible accumulation before a move. First check screener.in/company/" + sym + "/ for fundamentals, "
+                 "then search recent news + any upcoming catalysts (orders, results dates, capacity, policy). "
+                 "Reply in EXACTLY this 5-line format, simple everyday English, each line under 18 words, "
+                 "no markdown, no preamble:\n"
+                 "CATALYST: <any brewing story/upcoming event with date, or 'nothing found — may be noise'>\n"
+                 "THEME: <sector story if any, or 'stock-specific'>\n"
+                 "FUNDAMENTALS: <one line with 1 number>\n"
+                 "VERDICT: <Hard news | Mixed | Speculative>\n"
+                 "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>")
+        else:
+            q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) is up strongly "
+                 f"({c['rs3']:+.0f}% vs Nifty over 3 months"
              + (", fresh 100-day-high breakout" if c["breakout"] else "")
              + (f", volume {c['vol_surge']}x average" if c["vol_surge"] >= 2 else "") + "). "
              "First check screener.in/company/" + sym + "/ for fundamentals (sales & profit growth "
