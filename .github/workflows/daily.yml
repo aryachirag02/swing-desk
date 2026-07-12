@@ -1,13 +1,21 @@
 name: Daily swing update
 on:
   schedule:
-    - cron: '30 10 * * 1-5'   # 4:00 pm IST - right after market close
-    - cron: '30 14 * * 1-5'   # 8:00 pm IST - main evening run
-    - cron: '30 16 * * 1-5'   # 10:00 pm IST - backup if Yahoo was late
+    - cron: '45 3-9 * * 1-5'   # hourly 9:15am-3:15pm IST during market hours
+    - cron: '30 10 * * 1-5'    # 4:00 pm IST - right after market close
+    - cron: '30 14 * * 1-5'    # 8:00 pm IST - main evening run (intel)
+    - cron: '30 16 * * 1-5'    # 10:00 pm IST - backup if Yahoo was late
+  push:
+    paths:
+      - 'tradelog.json'        # a trade was logged -> refresh + portfolio review
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+concurrency:
+  group: swing-desk-daily
+  cancel-in-progress: true
 
 jobs:
   update:
@@ -34,17 +42,22 @@ jobs:
         run: |
           if [ "$(date -u +%d)" -le "07" ] && [ "$(date -u +%u)" = "1" ]; then python backtest.py --tune; else python backtest.py; fi
 
-      - name: Market intelligence (main run only, needs ANTHROPIC_API_KEY secret)
+      - name: Market intelligence + portfolio review (needs ANTHROPIC_API_KEY secret)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           INTEL_MAX_STOCKS: "30"
+          EVT: ${{ github.event_name }}
         run: |
-          if [ -n "$ANTHROPIC_API_KEY" ] && { [ "$(date -u +%H)" = "14" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; }; then
-            python intel.py || echo "intel failed - continuing without it"
-            if [ "$(date -u +%u)" = "5" ]; then python intel.py --themes || echo "themes failed"; fi
-            if [ "$(date -u +%u)" = "5" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then python intel.py --portfolio || echo "pf review failed"; fi
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            if [ "$(date -u +%H)" = "14" ] || [ "$EVT" = "workflow_dispatch" ]; then
+              python intel.py || echo "intel failed - continuing without it"
+              if [ "$(date -u +%u)" = "5" ]; then python intel.py --themes || echo "themes failed"; fi
+            fi
+            if [ "$(date -u +%u)" = "5" ] || [ "$EVT" = "workflow_dispatch" ] || [ "$EVT" = "push" ]; then
+              python intel.py --portfolio || echo "pf review failed"
+            fi
           else
-            echo "intel skipped (no key or not the main run)"
+            echo "no API key - AI steps skipped"
           fi
 
       - name: Build dashboard + brief
