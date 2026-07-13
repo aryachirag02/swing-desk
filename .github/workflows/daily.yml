@@ -46,6 +46,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           INTEL_MAX_STOCKS: "30"
+          INTEL_ACCUM: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
           EVT: ${{ github.event_name }}
         run: |
           if [ -n "$ANTHROPIC_API_KEY" ]; then
