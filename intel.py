@@ -40,7 +40,7 @@ def candidates():
     ranked = sorted(out.values(), key=lambda r: -r["score"])
     picks = ranked[:MAX_STOCKS]
     # Fridays: also research the quiet accumulators (stories are cheapest before the breakout)
-    if pd.Timestamp.now().weekday() == 4:
+    if pd.Timestamp.now().weekday() == 4 or os.environ.get("INTEL_ACCUM") == "1":
         try:
             import engine as E
             accum = E.radar_snapshot().get("accum", [])[:8]

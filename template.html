@@ -713,7 +713,7 @@ function renderPf(){
     : c==='ADD'?'<span style="background:var(--sbuy);color:#fff;padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">ADD</span>'
     : c==='REDUCE'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">REDUCE</span>'
     : c==='SELL'?'<span style="background:var(--exit);color:#fff;padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">SELL</span>'
-    : '<span style="color:var(--mut);font-size:12px">review pending (Friday run)</span>';
+    : '<span style="color:var(--mut);font-size:12px">review pending — fills a few minutes after each add (and Fridays)</span>';
   box.innerHTML=(asof?`<p style="color:var(--mut);font-size:12px">Last AI review: ${asof}</p>`:'')+tks.map(t=>{
     const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
     const pl=last?((last/avg-1)*100):null; const r=rev[t];
