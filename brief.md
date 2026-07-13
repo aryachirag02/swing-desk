@@ -243,7 +243,7 @@ VERDICT: Hard news — genuine profit growth, not rumour-driven.
 CALL: WAIT — PE of ~106x is very stretched; great story but price has run too far ahead.
 
 
-**Leading sectors:** Realty (+18.1%) · Diversified (+16.8%) · Construction (+13.3%) · Consumer Services (+11.2%)
+**Leading sectors:** Realty (+18.1%) · Diversified (+17.1%) · Construction (+13.1%) · Consumer Services (+11.2%)
 
 ## ✅ Strong Buy (17)
 - **ANANTRAJ** (Realty · Small cap) — score 100, Breakout — new 20-day high on 2.0× volume. Entry ₹585.8 · Stop ₹535.9 · Target ₹685.7 · Risk/sh ₹49.9
