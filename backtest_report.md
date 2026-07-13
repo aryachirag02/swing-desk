@@ -13,7 +13,7 @@
 - **annualized pct**: 26.4
 - **max drawdown pct**: -3.7
 
-## Validate window (2026-01-07 to 2026-07-10)
+## Validate window (2026-01-07 to 2026-07-13)
 
 - **trades**: 6
 - **win rate**: 50.0
@@ -22,6 +22,6 @@
 - **profit factor**: 0.83
 - **expectancy R**: -0.088
 - **avg hold days**: 14.3
-- **total return pct**: 2.7
+- **total return pct**: 2.8
 - **annualized pct**: 5.5
 - **max drawdown pct**: -3.9
