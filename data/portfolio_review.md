@@ -1,22 +1,20 @@
 # Weekly portfolio review — 2026-07-13
 
-### VEDL — HOLD (Demerger value unlock pending; Q1 FY27 results due July 29 key.)
-**Important context note:** VEDL underwent a major demerger effective May 1, 2026, splitting into 5 separate listed entities. The current VEDL price (~₹272) reflects only the **residual/rump Vedanta** post-demerger — not the pre-demerger price. Your buy price of ₹272 on 2026-07-12 is in the post-demerger residual stock. The -64% "3-month move" reflects the demerger adjustment, not a pure price decline.
+### VEDL — HOLD (Post-demerger residual; high yield cushions, wait for earnings clarity July 29.)
+**Important context note:** The price data and demerger context reveal that VEDL underwent a major demerger effective May 1, 2026 — the current ~₹269–272 price reflects the *residual* Vedanta entity post-demerger (stripped of aluminium, power, oil & gas, iron & steel). Your entry at ₹272 on July 12, 2026 is therefore in the post-demerger residual stock. Here is the answer:
 
 ---
 
- NEWS: Vedanta demerger effective May 1 2026, splitting into 5 listed entities including Aluminium, Power, Oil & Gas, Iron & Steel. 
+ NEWS: Vedanta demerger became effective May 1 2026, splitting into 6 separate listed companies. 
 
- ANALYSTS: 14 analysts rate VEDL "Buy"; consensus 12-month target ₹316.60, about 15% above current price. 
+ ANALYSTS: 14 analysts rate VEDL "Buy"; average 12-month target ₹316.60, implying ~15% upside. 
 
- FUNDAMENTALS: Q4 net profit up 92% YoY; FY26 revenue grew 24% to ₹768 billion; PE near 6x, cheap for a commodity major. 
+ FUNDAMENTALS: Net profit jumped 92% YoY in Q4 FY26; P/E is low at ~6x, dividend yield ~12.5%. 
 
- TECHNICALS: Stock is below 50-day average; near 52-week low ₹268, reflecting post-demerger price reset.
+ TECHNICALS: Stock down ~57% in six months, below 50-day average, near 52-week low of ₹268.70.
 
-### LENSKART — HOLD (rich valuation limits upside; strong growth already priced in.)
-Based on all findings: 
-
-NEWS: Jul 2 board approved JV with Mingfeng Glassesworld to manufacture metal frames in India.
-ANALYSTS: 14 analysts rate Buy; avg target Rs 584, high Rs 662; consensus near Rs 570.
-FUNDAMENTALS: Revenue surged 47% YoY in Q4 FY26 but PE is very rich at ~178x.
-TECHNICALS: At Rs 544, above 50-day average, near 52-week high of Rs 563, momentum neutral.
+### LENSKART — HOLD (valuation is expensive; wait for earnings growth to justify price.)
+NEWS:  Jul 2 — Board approved JV with China's Mingfeng Glassesworld to manufacture metal frames locally, reducing import dependence. 
+ANALYSTS:  16 analysts say Buy, avg target ₹599, high ₹730; valuation remains a concern for some. 
+FUNDAMENTALS:  FY27 revenue ₹8,988 cr, profit ₹505 cr, but P/E is stretched at ~191x. 
+TECHNICALS:  Stock near 52-week high of ₹563, above 50-day average, technicals signal strong buy.
