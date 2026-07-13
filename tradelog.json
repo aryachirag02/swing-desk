@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-12T18:46:41.377Z",
+ "updated_at": "2026-07-13T04:48:47.749Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -23,6 +23,14 @@
    "side": "Buy",
    "qty": "1",
    "price": "272",
+   "note": "MANUAL"
+  },
+  {
+   "date": "2026-07-13",
+   "ticker": "LENSKART",
+   "side": "Buy",
+   "qty": "1",
+   "price": "510",
    "note": "MANUAL"
   }
  ]
