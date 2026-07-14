@@ -81,13 +81,16 @@ def _intel_rows(snap):
         ai_txt = c.get("ai", "") or ""
         call, call_why = None, ""
         import re as _re
-        m = _re.search(r"CALL:\s*(BUY-WORTHY|WAIT|AVOID)\s*[—-]?\s*(.*)", ai_txt, _re.I)
+        wm = _re.search(r"WHY_CALL:\s*(.*?)(?:\n[A-Z_]+:|$)", ai_txt, _re.S)
+        call_full = wm.group(1).strip()[:400] if wm else ""
+        ai_txt = _re.sub(r"\n?WHY_CALL:.*", "", ai_txt, flags=_re.S).strip()
+        m = _re.search(r"CALL:\s*(BUY-NOW|BUY-WORTHY|WAIT|AVOID)\s*[—-]?\s*(.*)", ai_txt, _re.I)
         if m:
             call, call_why = m.group(1).upper(), m.group(2).strip()[:80]
             ai_txt = _re.sub(r"\n?CALL:.*", "", ai_txt).strip()
         c["ai"] = ai_txt
         out.append({"ticker": sym, "name": c.get("name", "")[:32], "sector": c.get("sector", ""),
-                    "call": call, "call_why": call_why,
+                    "call": call, "call_why": call_why, "call_full": call_full,
                     "signal": signal, "close": close, "trend": trend,
                     "rs3": c.get("rs3"), "breakout": bool(c.get("breakout")),
                     "vol": c.get("vol_surge"), "ai": c.get("ai", "")})

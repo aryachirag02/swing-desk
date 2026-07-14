@@ -86,11 +86,13 @@ def main():
                  "FUNDAMENTALS: <one line with 1 number>\n"
                  "VERDICT: <Hard news | Mixed | Speculative>\n"
                  "CALL calibration: you are judging a STARTER-SIZE long-term buy (1/3 position, adding later), not all-in at a perfect price. "
+                 "BUY-NOW = RARE highest-conviction (use sparingly, only when everything aligns): strong accelerating earnings, hard catalyst, sane valuation, and entry not overextended. "
                  "BUY-WORTHY = real earnings/order-backed story AND valuation acceptable for the growth (a big recent run does NOT disqualify if growth justifies it). "
                  "WAIT = good story but risk/reward genuinely poor right now (parabolic, results imminent, valuation far ahead of growth). "
                  "AVOID = no catalyst, weak/deteriorating fundamentals, or operator-pattern move. "
-                 "Across many quality earnings-backed movers, roughly a quarter should merit BUY-WORTHY - do not default to WAIT just because price already rose.\n"
-                 "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>")
+                 "Roughly a quarter of quality earnings-backed movers should merit BUY-WORTHY; BUY-NOW at most 1-2 per day across ALL stocks.\n"
+                 "CALL: <BUY-NOW | BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>\n"
+                 "WHY_CALL: <2-3 short plain sentences: the case for this call, the main risk, and what would change your mind>")
         else:
             q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) is up strongly "
                  f"({c['rs3']:+.0f}% vs Nifty over 3 months"
@@ -106,14 +108,16 @@ def main():
              "FUNDAMENTALS: <one sentence: backed by earnings/orders (give 1 key number) or purely price action>\n"
              "VERDICT: <Hard news | Mixed | Speculative> — <under 8 words why>\n"
              "CALL calibration: you are judging a STARTER-SIZE long-term buy (1/3 position, adding later), not all-in at a perfect price. "
+                 "BUY-NOW = RARE highest-conviction (use sparingly, only when everything aligns): strong accelerating earnings, hard catalyst, sane valuation, and entry not overextended. "
                  "BUY-WORTHY = real earnings/order-backed story AND valuation acceptable for the growth (a big recent run does NOT disqualify if growth justifies it). "
                  "WAIT = good story but risk/reward genuinely poor right now (parabolic, results imminent, valuation far ahead of growth). "
                  "AVOID = no catalyst, weak/deteriorating fundamentals, or operator-pattern move. "
-                 "Across many quality earnings-backed movers, roughly a quarter should merit BUY-WORTHY - do not default to WAIT just because price already rose.\n"
-             "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>\n"
+                 "Roughly a quarter of quality earnings-backed movers should merit BUY-WORTHY; BUY-NOW at most 1-2 per day across ALL stocks.\n"
+             "CALL: <BUY-NOW | BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>\n"
+             "WHY_CALL: <2-3 short plain sentences: the case for this call, the main risk, and what would change your mind>\n"
              "If nothing concrete found, CATALYST line says 'no clear public catalyst found' and CALL is AVOID or WAIT.")
         try:
-            ans = ask_claude([{"role": "user", "content": q}], 420)
+            ans = ask_claude([{"role": "user", "content": q}], 520)
             sections.append(f"### {sym} — {c['name']} ({c['sector']}) · RS {c['rs3']:+.0f}%"
                             + (" · 🔶 breakout" if c["breakout"] else "") + f"\n{ans}\n")
             c["ai"] = ans
@@ -218,7 +222,7 @@ def portfolio():
              "TECHNICALS: <one line restating the technical picture simply>\n"
              "CALL: <HOLD | ADD | REDUCE | SELL> — <under 10 words why, for a long-term holder>")
         try:
-            ans = ask_claude([{"role": "user", "content": q}], 420)
+            ans = ask_claude([{"role": "user", "content": q}], 520)
             m = None
             import re as _re
             mm = _re.search(r"CALL:\s*(HOLD|ADD|REDUCE|SELL)\s*[—-]?\s*(.*)", ans, _re.I)

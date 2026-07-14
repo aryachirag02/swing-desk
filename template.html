@@ -588,13 +588,16 @@ function renderRadar(){
         <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
         <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span></div>`:''}</div>
         <div style="text-align:right">
-          ${ai&&ai.call?(ai.call==='BUY-WORTHY'
+          ${ai&&ai.call?(ai.call==='BUY-NOW'
+            ?`<div style="background:#06341d;color:#fff;padding:5px 14px;border-radius:8px;font-weight:900;font-size:13.5px;box-shadow:0 0 0 2px #0A6B44">⚡ AI CALL: BUY NOW</div>`
+            :ai.call==='BUY-WORTHY' 
             ?`<div style="background:var(--sbuy);color:#fff;padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🟢 AI CALL: BUY-WORTHY</div>`
             :ai.call==='WAIT'
             ?`<div style="background:rgba(224,166,42,.18);color:var(--reduce);padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🟡 AI CALL: WAIT</div>`
             :`<div style="background:rgba(194,55,47,.12);color:var(--exit);padding:4px 12px;border-radius:8px;font-weight:800;font-size:13px">🔴 AI CALL: AVOID</div>`)
             :`<div style="color:var(--mut);font-size:12px">AI call: pending next run</div>`}
           ${ai&&ai.call_why?`<div style="color:var(--mut);font-size:11px;margin-top:3px;max-width:220px">${ai.call_why.replace(/</g,'&lt;')}</div>`:''}
+          ${ai&&ai.call_full?`<details style="margin-top:4px;max-width:240px;text-align:left"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:700">🎯 Why this call?</summary><div style="font-size:12px;color:var(--ink);padding-top:4px">${ai.call_full.replace(/</g,'&lt;')}</div></details>`:''}
           <div style="margin-top:5px">${chip(ai?ai.signal:null)}</div>
         </div>
       </div>
