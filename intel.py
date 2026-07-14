@@ -85,6 +85,11 @@ def main():
                  "THEME: <sector story if any, or 'stock-specific'>\n"
                  "FUNDAMENTALS: <one line with 1 number>\n"
                  "VERDICT: <Hard news | Mixed | Speculative>\n"
+                 "CALL calibration: you are judging a STARTER-SIZE long-term buy (1/3 position, adding later), not all-in at a perfect price. "
+                 "BUY-WORTHY = real earnings/order-backed story AND valuation acceptable for the growth (a big recent run does NOT disqualify if growth justifies it). "
+                 "WAIT = good story but risk/reward genuinely poor right now (parabolic, results imminent, valuation far ahead of growth). "
+                 "AVOID = no catalyst, weak/deteriorating fundamentals, or operator-pattern move. "
+                 "Across many quality earnings-backed movers, roughly a quarter should merit BUY-WORTHY - do not default to WAIT just because price already rose.\n"
                  "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>")
         else:
             q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) is up strongly "
@@ -100,8 +105,12 @@ def main():
              "THEME: <one sentence: broader sector story + 1-2 peer tickers, or 'stock-specific'>\n"
              "FUNDAMENTALS: <one sentence: backed by earnings/orders (give 1 key number) or purely price action>\n"
              "VERDICT: <Hard news | Mixed | Speculative> — <under 8 words why>\n"
-             "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words: your long-term investor judgment "
-             "combining catalyst quality, valuation sanity, and how extended the price already is>\n"
+             "CALL calibration: you are judging a STARTER-SIZE long-term buy (1/3 position, adding later), not all-in at a perfect price. "
+                 "BUY-WORTHY = real earnings/order-backed story AND valuation acceptable for the growth (a big recent run does NOT disqualify if growth justifies it). "
+                 "WAIT = good story but risk/reward genuinely poor right now (parabolic, results imminent, valuation far ahead of growth). "
+                 "AVOID = no catalyst, weak/deteriorating fundamentals, or operator-pattern move. "
+                 "Across many quality earnings-backed movers, roughly a quarter should merit BUY-WORTHY - do not default to WAIT just because price already rose.\n"
+             "CALL: <BUY-WORTHY | WAIT | AVOID> — <under 10 words for a long-term buyer>\n"
              "If nothing concrete found, CATALYST line says 'no clear public catalyst found' and CALL is AVOID or WAIT.")
         try:
             ans = ask_claude([{"role": "user", "content": q}], 420)
