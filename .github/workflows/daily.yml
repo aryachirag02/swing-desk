@@ -70,7 +70,7 @@ jobs:
         run: |
           git config user.name "swing-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in dashboard.html index.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv data/mc_meta.csv data/watchlist.txt data/mc_paper.csv data/intel.md data/intel.json data/themes.md data/portfolio_review.json data/portfolio_review.md data/ai_calls.csv params_tuned.json; do
+          for f in dashboard.html index.html brief.md backtest_summary.json backtest_report.md data/earnings.csv data/meta.csv data/flows.csv data/indices.csv data/mc_meta.csv data/watchlist.txt data/mc_paper.csv data/intel.md data/intel.json data/themes.md data/portfolio_review.json data/portfolio_review.md data/ai_calls.csv data/theme_map.json params_tuned.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git commit -m "Daily update $(date -u +%F)" || echo "nothing to commit"
