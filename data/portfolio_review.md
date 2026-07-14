@@ -38,3 +38,9 @@ TECHNICALS: Price ₹263.6 near cost; up 75% in 3 months; above 50-day average �
 
 ---
 *Note: RADAR-brk flag acknowledged. This is not SEBI-registered investment advice. Data sourced from publicly available reports as of 2026-07-14.*
+
+### ORIENTHOT — HOLD (strong performer but getting expensive; wait for breakout confirmation.)
+NEWS:  ICRA upgraded Oriental Hotels' credit rating to ICRA AA-/Stable and A1+, a positive signal. 
+ANALYSTS:  Uniresearch targets Rs 170 (bull case Rs 195, bear Rs 125) as of June 29, 2026. 
+FUNDAMENTALS:  FY26 revenue up 12%, but earnings surged 73% year-on-year — strong profit growth. 
+TECHNICALS:  Price near Rs 133–134, with 140 as resistance; a breakout above 140 could trigger a fresh rally.
