@@ -29,16 +29,27 @@ def candidates():
             if turn < C.MIN_TURNOVER_CR: continue
             rs3 = float((c.pct_change(63).iloc[-1] - b.pct_change(63).iloc[-1]) * 100)
             vr = float((g.volume.iloc[-1] / g.volume.rolling(20).mean().iloc[-1]) or 0)
-            hi100 = float(g.high.rolling(100).max().shift(1).iloc[-1])
+            hi100s = g.high.rolling(100).max().shift(1)
+            hi100 = float(hi100s.iloc[-1])
+            v20s = g.volume.rolling(20).mean()
+            sigs = (c > hi100s) & (g.volume >= 1.5 * v20s) & (c.pct_change(63) > 0)
+            fires = sigs[sigs].index
+            camp_days = 999
+            if len(fires):
+                first = fires[0]
+                for _k in range(1, len(fires)):
+                    if (fires[_k] - fires[_k-1]).days > 45: first = fires[_k]
+                camp_days = int((g.index[-1] - first).days) if hasattr(g,'index') else 999
             brk = bool(c.iloc[-1] > hi100)
             manual = str(meta.loc[t, "cap"]) == "Manual" if t in meta.index else False
-            score = rs3 + (25 if brk else 0) + (15 if vr >= 2 else 0) + (40 if manual else 0)
+            score = rs3 + (25 if brk else 0) + (15 if vr >= 2 else 0) + (40 if manual else 0) + (45 if (brk and camp_days <= 5) else 0)
             name = str(meta.loc[t, "name"]) if t in meta.index else t
             sector = str(meta.loc[t, "sector"]) if t in meta.index else "?"
             out[t] = {"ticker": t, "name": name, "sector": sector, "rs3": round(rs3, 0),
-                      "breakout": brk, "vol_surge": round(vr, 1), "score": score}
+                      "breakout": brk, "vol_surge": round(vr, 1), "score": score,
+                      "close": round(float(c.iloc[-1]), 2)}
     ranked = sorted(out.values(), key=lambda r: -r["score"])
-    picks = ranked[:MAX_STOCKS]
+    picks = ranked[:MAX_STOCKS + 15]
     # Fridays: also research the quiet accumulators (stories are cheapest before the breakout)
     if pd.Timestamp.now().weekday() == 4 or os.environ.get("INTEL_ACCUM") == "1":
         try:
@@ -70,9 +81,36 @@ def main():
     cands = candidates()
     if not cands:
         print("intel: no candidates"); return
-    print(f"intel: researching {len(cands)} quant-flagged movers via {MODEL}")
+    # cache: reuse research done in the last 2 days if price hasn't moved >5%
+    prev = {}
+    try:
+        for r0 in json.load(open(os.path.join(C.DATA_DIR, "intel.json"))):
+            prev[r0.get("ticker")] = r0
+    except Exception:
+        pass
+    today = pd.Timestamp.now()
+    budget = MAX_STOCKS
+    print(f"intel: {len(cands)} candidates, research budget {budget} via {MODEL}")
     sections = []
     for c in cands:
+        p = prev.get(c["ticker"])
+        fresh_cache = False
+        if p and p.get("ai") and p.get("asof") and p.get("close"):
+            try:
+                age = (today - pd.Timestamp(p["asof"])).days
+                drift = abs(c.get("close", 0) / float(p["close"]) - 1)
+                fresh_cache = age <= 2 and drift < 0.05
+            except Exception:
+                fresh_cache = False
+        if fresh_cache:
+            c["ai"] = p["ai"]; c["asof"] = p["asof"]
+            sym = c["ticker"].replace(".NS", "")
+            sections.append(f"### {sym} — {c['name']} ({c['sector']}) · RS {c['rs3']:+.0f}% (cached {p['asof']})\n{c['ai']}\n")
+            continue
+        if budget <= 0:
+            continue
+        budget -= 1
+        c["asof"] = today.strftime("%Y-%m-%d")
         sym = c["ticker"].replace(".NS", "")
         if c.get("accum"):
             q = (f"NSE-listed Indian stock {c['name']} (symbol {sym}, sector {c['sector']}) has been "
@@ -140,7 +178,7 @@ def main():
            f"_Claude web-research on the day's {len(cands)} quant-flagged movers. Research assistance, "
            f"NOT validated signals — verify before any long-term buy._\n\n")
     open(os.path.join(C.DATA_DIR, "intel.md"), "w").write(hdr + "\n".join(sections))
-    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai")}
+    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai","close","asof")}
                for c in cands if c.get("ai")],
               open(os.path.join(C.DATA_DIR, "intel.json"), "w"))
     print(f"intel.md + intel.json written ({len(sections)} sections)")
@@ -199,6 +237,18 @@ def portfolio():
             px = pd.read_csv(f, parse_dates=["date"])
             for t, g in px.groupby("ticker"):
                 frames[t.replace(".NS", "")] = g.sort_values("date").set_index("date")
+    prev = {}
+    try:
+        for r0 in json.load(open(os.path.join(C.DATA_DIR, "portfolio_review.json"))).get("rows", []):
+            prev[r0.get("ticker")] = r0
+    except Exception:
+        pass
+    prev_asof = None
+    try:
+        prev_asof = pd.Timestamp(json.load(open(os.path.join(C.DATA_DIR, "portfolio_review.json"))).get("asof"))
+    except Exception:
+        pass
+    is_friday = pd.Timestamp.now().weekday() == 4
     out = []
     for t, p in holdings.items():
         avg = p["cost"] / p["qty"]
@@ -211,6 +261,16 @@ def portfolio():
             r3 = float(c.iloc[-1] / c.iloc[-64] - 1) * 100 if len(c) > 64 else 0
             tech = (f"price {last:.1f} vs your avg {avg:.1f} ({(last/avg-1)*100:+.1f}%), "
                     f"{'above' if last>ma50 else 'below'} its 50-day average, 3-month move {r3:+.0f}%")
+        pr = prev.get(t)
+        if pr and prev_asof is not None and not is_friday:
+            try:
+                age = (pd.Timestamp.now() - prev_asof).days
+                drift = abs((last or 0) / float(pr.get("last") or last or 1) - 1) if last else 0
+                if age <= 5 and drift < 0.07 and pr.get("ai"):
+                    pr2 = dict(pr); pr2["qty"] = p["qty"]; pr2["avg"] = round(avg, 2); pr2["last"] = last
+                    out.append(pr2); print(f"  ↻ {t} (cached review)"); continue
+            except Exception:
+                pass
         q = (f"I hold NSE stock {t} (bought around Rs {avg:.0f}, since {p['first']}"
              + (f", note: {p['note']}" if p['note'] else "") + f"). Current technicals: {tech or 'n/a'}. "
              "Search recent news (last 4-6 weeks) and what analysts/brokerages currently say. "

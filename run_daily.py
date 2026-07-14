@@ -88,6 +88,40 @@ def write_brief(snap: dict, sample: bool, path: str = "brief.md"):
             f"{x['name']} RSI2={x.get('rsi2',0):.0f} → {x['fno_dip']}" for x in fno))
         lines.append("")
 
+    # forward-test ledger: record every AI call with price so calls can be graded later
+    try:
+        import csv, re as _re, json as _json
+        ip = os.path.join(C.DATA_DIR, "intel.json")
+        if os.path.exists(ip):
+            rows_i = _json.load(open(ip))
+            led_path = os.path.join(C.DATA_DIR, "ai_calls.csv")
+            led_seen = set()
+            if os.path.exists(led_path):
+                try:
+                    with open(led_path) as f:
+                        led_seen = {(r["date"], r["ticker"]) for r in csv.DictReader(f)}
+                except Exception:
+                    os.remove(led_path)  # corrupt ledger -> start fresh
+                    led_seen = set()
+            led_new = []
+            for r in rows_i:
+                d = r.get("asof") or snap["asof"]
+                t = str(r.get("ticker", "")).replace(".NS", "")
+                if not t or (d, t) in led_seen: continue
+                m = _re.search(r"CALL:\s*(BUY-NOW|BUY-WORTHY|WAIT|AVOID)", r.get("ai", ""), _re.I)
+                if not m: continue
+                led_new.append([d, t, m.group(1).upper(), r.get("close"), r.get("rs3"),
+                            "brk" if r.get("breakout") else ""])
+            if led_new:
+                led_hdr = not os.path.exists(led_path)
+                with open(led_path, "a", newline="") as f:
+                    w = csv.writer(f)
+                    if led_hdr: w.writerow(["date", "ticker", "call", "close", "rs3", "type"])
+                    w.writerows(led_new)
+                print(f"AI-call ledger: +{len(led_new)} calls recorded")
+    except Exception as e:
+        print(f"ai-call ledger skipped ({type(e).__name__})")
+
     intel_path = os.path.join(C.DATA_DIR, "intel.md")
     if os.path.exists(intel_path):
         import datetime as _dt

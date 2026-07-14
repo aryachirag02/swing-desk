@@ -355,6 +355,16 @@ def radar_snapshot():
     ACCUMULATION = long tight base + volume quietly rising + RS turning up (pre-breakout footprint).
     BREAKOUT = fresh 100d-high on volume. Research flags, not signals."""
     accum, brk = [], []
+    earn = {}
+    try:
+        _e = pd.read_csv(os.path.join(C.DATA_DIR, "earnings.csv"))
+        tcol = "ticker" if "ticker" in _e.columns else _e.columns[0]
+        dcol = [c0 for c0 in _e.columns if "date" in c0.lower() or "earn" in c0.lower()]
+        dcol = dcol[0] if dcol else _e.columns[1]
+        for _, r0 in _e.iterrows():
+            earn[str(r0[tcol]).replace(".NS", "")] = str(r0[dcol])[:10]
+    except Exception:
+        pass
     bench = pd.read_csv(C.PRICES_FILE, parse_dates=["date"])
     bench = bench[bench.ticker == C.BENCHMARK].set_index("date")["close"]
     for pf, mf, uni in [(C.PRICES_FILE, C.META_FILE, "N500"),
@@ -402,7 +412,14 @@ def radar_snapshot():
                        + {"A": "historically the strongest bucket (10y study)",
                           "B": "middle bucket historically",
                           "C": "weakest bucket historically"}[grade])
-                brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why, "camp_days": camp_days, "camp_run": round(camp_run)})
+                ed = earn.get(row["ticker"])
+                try:
+                    soon = bool(ed) and 0 <= (pd.Timestamp(ed) - pd.Timestamp.now()).days <= 21
+                except Exception:
+                    soon = False
+                brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why,
+                            "camp_days": camp_days, "camp_run": round(camp_run),
+                            "results": ed if soon else None})
             elif (tight <= 1.30 and v20 > v60 * 1.25 and rs_now > -5 and rs_now > rs_prev + 3
                   and last > hi100 * 0.85):
                 accum.append({**row, "base_pct": round((tight - 1) * 100, 0),

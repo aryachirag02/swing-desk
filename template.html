@@ -609,7 +609,7 @@ function renderRadar(){
     :`<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 9px;border-radius:6px;font-size:12px">📊 Setup C</span>`);
   const _bs=(r.breakouts||[]); const _nA=_bs.filter(x=>x.grade==='A').length; const _nCards=Math.max(8,_nA);
   $('#brkrows').innerHTML=_bs.slice(0,_nCards).map(x=>card(x,
-    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
+    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}${x.results?`<span style="background:rgba(194,55,47,.1);color:var(--exit);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px">📅 results ${x.results} — gap risk</span> `:''}Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
   const restB=_bs.slice(_nCards);
   if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> [${x.grade||'-'}] (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
@@ -717,7 +717,11 @@ function renderPf(){
     : c==='REDUCE'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">REDUCE</span>'
     : c==='SELL'?'<span style="background:var(--exit);color:#fff;padding:3px 12px;border-radius:8px;font-weight:800;font-size:13px">SELL</span>'
     : '<span style="color:var(--mut);font-size:12px">review pending — fills a few minutes after each add (and Fridays)</span>';
-  box.innerHTML=(asof?`<p style="color:var(--mut);font-size:12px">Last AI review: ${asof}</p>`:'')+tks.map(t=>{
+  const secOf={}; (DATA.rows||[]).forEach(r=>secOf[r.ticker]=r.sector); (DATA.microcaps||[]).forEach(m=>secOf[m.ticker]=m.sector);
+  const scount={}; tks.forEach(t=>{const s0=secOf[t]||'?'; scount[s0]=(scount[s0]||0)+1;});
+  let warn='';
+  Object.entries(scount).forEach(([s0,n])=>{ if(n>=2 && n/tks.length>=0.5) warn=`⚠️ <b>${n} of your ${tks.length} holdings are ${s0}</b> — one sector downturn hits most of your book. Consider diversifying the next buy.`; });
+  box.innerHTML=(warn?`<div style="border:1px solid var(--reduce);background:rgba(179,106,0,.08);border-radius:8px;padding:9px 14px;margin-bottom:12px;font-size:12.5px">${warn}</div>`:'')+(asof?`<p style="color:var(--mut);font-size:12px">Last AI review: ${asof}</p>`:'')+tks.map(t=>{
     const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
     const pl=last?((last/avg-1)*100):null; const r=rev[t];
     return `<div style="border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:var(--panel)">
