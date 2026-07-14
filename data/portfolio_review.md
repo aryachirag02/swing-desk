@@ -16,3 +16,25 @@ NEWS: Board approved China JV with Mingfeng Glassesworld to make metal frames in
 ANALYSTS: 16 analysts rate Buy; avg target Rs 599, high Rs 730; Ambit has a lone Sell at Rs 337.
 FUNDAMENTALS: Revenue Rs 8,988 cr in FY27; profitable, but P/E is expensive at ~191x.
 TECHNICALS: Price Rs 539 is above 50-day avg, up 5.7% from your cost, near 52-week high of Rs 563.
+
+### J&KBANK — HOLD (Stock has run ahead of earnings growth; analyst targets now near or below curren)
+NEWS:  RBI approved Kotak Mahindra Bank to acquire up to 9.99% stake in J&K Bank (conditional, within one year). 
+ANALYSTS:  JM Financial: Buy, target ₹180; ICICI Securities: Neutral, target ₹165.   One analyst on Investing.com has a 12-month target of ₹198. 
+FUNDAMENTALS:  Q4FY26 net profit surged to ₹797 cr vs ₹584 cr year ago; FY26 net profit up 13% YoY to ₹2,363 cr. 
+TECHNICALS:  Price well above 50-DMA (₹148) and 200-DMA (₹124), strong uptrend intact.
+
+### GREAVESCOT — HOLD (Multi-year breakout intact; let momentum confirm before adding more.)
+Here is the 5-line briefing on GREAVESCOT as of 2026-07-14:
+
+ NEWS: Jul 10 — Greaves Cotton approved subscribing to GEML's ₹331 crore rights issue, backing its EV arm. 
+
+ ANALYSTS: ICICIDirect rates it Buy long-term; one analyst target at ₹243; formal brokerage coverage is thin. 
+
+ FUNDAMENTALS: FY26 revenue +20% YoY to ₹2,215 Cr; PAT ₹182 Cr (+17%); EBITDA margin improved to 14.1%. 
+
+TECHNICALS: Price ₹263.6 near cost; up 75% in 3 months; above 50-day average — strong recent momentum.
+
+ 
+
+---
+*Note: RADAR-brk flag acknowledged. This is not SEBI-registered investment advice. Data sourced from publicly available reports as of 2026-07-14.*
