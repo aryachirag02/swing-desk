@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-14T07:40:45.679Z",
+ "updated_at": "2026-07-14T08:05:46.671Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -48,6 +48,14 @@
    "qty": "1000",
    "price": "264.7",
    "note": "RADAR-brk"
+  },
+  {
+   "date": "2026-07-14",
+   "ticker": "ORIENTHOT",
+   "side": "Buy",
+   "qty": "2000",
+   "price": "133.5",
+   "note": "MANUAL"
   }
  ]
 }
