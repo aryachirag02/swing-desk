@@ -141,6 +141,15 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
   .idearow>div{min-width:0!important;width:100%;text-align:left!important;max-width:none!important}
   .ideacard{padding:12px 13px}
 }
+
+@media(max-width:820px){
+  #tab-system .card{width:100%!important;max-width:100%!important;overflow-x:hidden}
+  #tab-system table{width:100%;table-layout:fixed;font-size:12px}
+  #tab-system td{white-space:normal!important;word-break:break-word;overflow-wrap:anywhere}
+  #tab-system td.num{text-align:left}
+  #tab-system td:first-child{width:38%}
+  .card{max-width:100%;overflow-x:auto}
+}
 </style>
 </head>
 <body>
@@ -264,6 +273,7 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
       💡 <b>Setup Grade A/B/C</b> = backtested pattern quality (A best). <b>AI CALL</b> = Claude's researched opinion, graded live. Best combo: <b>Setup A + Buy-worthy</b> → starter size, Source as on the card.
     </div>
     <div id="radar-themes2" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:12.5px;white-space:pre-wrap"></div>
+    <div id="thememap"></div>
     <h3 style="margin:6px 0 8px;font-size:15px">🔶 JUST STARTED MOVING — research these first</h3>
     <div id="brkrows"></div>
     <h3 style="margin:18px 0 8px;font-size:15px">🟡 GETTING READY — watch these, don't buy yet</h3>
@@ -574,6 +584,24 @@ function renderMicro(){
     <td>${r.trend}</td><td>${r.setup_hi100?'🔶 breakout':''}</td></tr>`).join('')
     : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
+function renderThemeMap(){
+  const tm=DATA.theme_map||[]; const box=$('#thememap'); if(!box) return;
+  if(!tm.length){box.innerHTML='';return;}
+  const stage={}; const r=DATA.radar||{};
+  (r.breakouts||[]).forEach(x=>stage[x.ticker]='🔶 breaking out');
+  (r.accum||[]).forEach(x=>stage[x.ticker]='🟡 getting ready');
+  (DATA.intel_rows||[]).forEach(x=>{if(!stage[x.ticker])stage[x.ticker]='🚀 leader';});
+  const chip=(tk,extra,muted)=>`<span style="display:inline-block;margin:2px 4px 2px 0;padding:3px 10px;border-radius:7px;font-size:12px;${muted?'background:rgba(91,107,128,.1);color:var(--ink)':'background:rgba(10,107,68,.1);color:var(--sbuy);font-weight:700'}">${tk}${extra?` <span style="color:var(--mut);font-size:10.5px">${extra}</span>`:''}</span>`;
+  box.innerHTML=`<h3 style="margin:6px 0 8px;font-size:15px">🗺️ THEME MAP — where money is flowing (AI, daily)</h3>`+tm.map(th=>`
+    <div class="ideacard" style="border:1px solid var(--brass);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:rgba(156,122,44,.04)">
+      <b style="font-size:14.5px">${(th.theme||'').replace(/</g,'&lt;')}</b>
+      <div style="font-size:12.5px;color:var(--mut);margin:3px 0 8px">${(th.why||'').replace(/</g,'&lt;')}</div>
+      <div style="font-size:11.5px;color:var(--mut)">Already moved:</div>
+      <div>${(th.moved||[]).map(tk=>chip(tk,stage[tk]||'',false)).join('')||'—'}</div>
+      <div style="font-size:11.5px;color:var(--mut);margin-top:6px">⭐ Not moved yet — early research candidates:</div>
+      <div>${(th.early||[]).map(e=>chip(e.ticker,(e.why||'')+(stage[e.ticker]?' · '+stage[e.ticker]:''),true)).join('')||'—'}</div>
+    </div>`).join('');
+}
 function renderRadar(){
   if(DATA.themes&&DATA.themes.trim()){const t=$('#radar-themes2');if(t){t.style.display='block';t.textContent=DATA.themes;}}
   const r=DATA.radar||{}; const intel={}; (DATA.intel_rows||[]).forEach(x=>intel[x.ticker]=x);
@@ -623,7 +651,7 @@ function renderRadar(){
   const leaders=(DATA.intel_rows||[]).filter(x=>!shown.has(x.ticker)).slice(0,12);
   $('#leadrows').innerHTML=leaders.length?leaders.map(x=>card(
     {ticker:x.ticker,name:x.name,sector:x.sector,close:x.close},
-    `Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — riskier entry; read the research and judge. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`)).join('')
+    `${x.camp_days!=null?`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of this move · </span>`:''}Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — the buy bar is higher: strong AI call + starter size only. Real value: shows <b>where money is flowing</b> — check its sector peers on the lists above. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`)).join('')
     :'<p style="color:var(--mut)">—</p>';
 }
 
@@ -892,7 +920,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderThemeMap(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>

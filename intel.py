@@ -47,7 +47,8 @@ def candidates():
             sector = str(meta.loc[t, "sector"]) if t in meta.index else "?"
             out[t] = {"ticker": t, "name": name, "sector": sector, "rs3": round(rs3, 0),
                       "breakout": brk, "vol_surge": round(vr, 1), "score": score,
-                      "close": round(float(c.iloc[-1]), 2)}
+                      "close": round(float(c.iloc[-1]), 2),
+                      "camp_days": camp_days if camp_days < 900 else None}
     ranked = sorted(out.values(), key=lambda r: -r["score"])
     picks = ranked[:MAX_STOCKS + 15]
     # Fridays: also research the quiet accumulators (stories are cheapest before the breakout)
@@ -163,6 +164,23 @@ def main():
         except Exception as e:
             print(f"  ✗ {sym}: {type(e).__name__}")
         time.sleep(1)
+    # structured THEME MAP: theme -> moved members + not-yet-moved peers (early entries)
+    try:
+        researched = [c for c in cands if c.get("ai")]
+        listing = "; ".join(f"{c['ticker'].replace('.NS','')} ({c['sector']}, {'+' if c['rs3']>0 else ''}{c['rs3']:.0f}%)" for c in researched)
+        tq = ("Today's strongest NSE movers: " + listing + ". "
+              "Identify the 2-4 clearest investable THEMES linking several of them (e.g. rooftop solar capex, "
+              "defence orders, infra capex). For each theme, also name 2-4 NSE-listed peers with direct exposure "
+              "that have NOT moved much yet (the early entries). Reply ONLY a JSON array, no markdown: "
+              '[{"theme":"...","why":"one plain sentence why money is flowing here now",'
+              '"moved":["TICK1","TICK2"],"early":[{"ticker":"TICK","why":"under 8 words"}]}]')
+        raw = ask_claude([{"role": "user", "content": tq}], 800)
+        raw = raw.strip().replace("```json", "").replace("```", "").strip()
+        tm = json.loads(raw[raw.find("["):raw.rfind("]")+1])
+        json.dump(tm, open(os.path.join(C.DATA_DIR, "theme_map.json"), "w"))
+        print(f"theme map: {len(tm)} themes")
+    except Exception as e:
+        print(f"theme map failed: {type(e).__name__}")
     # theme synthesis
     try:
         names = ", ".join(f"{c['ticker'].replace('.NS','')} ({c['sector']})" for c in cands)
@@ -178,7 +196,7 @@ def main():
            f"_Claude web-research on the day's {len(cands)} quant-flagged movers. Research assistance, "
            f"NOT validated signals — verify before any long-term buy._\n\n")
     open(os.path.join(C.DATA_DIR, "intel.md"), "w").write(hdr + "\n".join(sections))
-    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai","close","asof")}
+    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai","close","asof","camp_days")}
                for c in cands if c.get("ai")],
               open(os.path.join(C.DATA_DIR, "intel.json"), "w"))
     print(f"intel.md + intel.json written ({len(sections)} sections)")

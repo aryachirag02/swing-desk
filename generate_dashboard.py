@@ -22,6 +22,8 @@ def build(out="dashboard.html"):
         "intel": (open(os.path.join(C.DATA_DIR, "intel.md")).read()
                   if os.path.exists(os.path.join(C.DATA_DIR, "intel.md")) else ""),
         "intel_rows": _intel_rows(snap),
+        "theme_map": (json.load(open(os.path.join(C.DATA_DIR, "theme_map.json")))
+                      if os.path.exists(os.path.join(C.DATA_DIR, "theme_map.json")) else []),
         "pfreview": (json.load(open(os.path.join(C.DATA_DIR, "portfolio_review.json")))
                      if os.path.exists(os.path.join(C.DATA_DIR, "portfolio_review.json")) else {}),
         "generated_at": datetime.now().strftime("%d %b %Y, %H:%M"),
@@ -78,6 +80,8 @@ def _intel_rows(snap):
             signal, close, trend = "Watch-only", m_row.get("close"), m_row.get("trend", "")
         else:
             signal, close, trend = "Watch-only", None, ""
+        if close is None:
+            close = c.get("close")
         ai_txt = c.get("ai", "") or ""
         call, call_why = None, ""
         import re as _re
@@ -91,6 +95,7 @@ def _intel_rows(snap):
         c["ai"] = ai_txt
         out.append({"ticker": sym, "name": c.get("name", "")[:32], "sector": c.get("sector", ""),
                     "call": call, "call_why": call_why, "call_full": call_full,
+                    "camp_days": c.get("camp_days"),
                     "signal": signal, "close": close, "trend": trend,
                     "rs3": c.get("rs3"), "breakout": bool(c.get("breakout")),
                     "vol": c.get("vol_surge"), "ai": c.get("ai", "")})
