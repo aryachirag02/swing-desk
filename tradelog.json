@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-13T04:48:47.749Z",
+ "updated_at": "2026-07-14T07:39:39.523Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -32,6 +32,14 @@
    "qty": "1",
    "price": "510",
    "note": "MANUAL"
+  },
+  {
+   "date": "2026-07-14",
+   "ticker": "J&KBANK",
+   "side": "Buy",
+   "qty": "1500",
+   "price": "178",
+   "note": "RADAR-brk"
   }
  ]
 }
