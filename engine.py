@@ -382,6 +382,17 @@ def radar_snapshot():
             row = {"ticker": t.replace(".NS", ""), "name": nm, "sector": sec, "uni": uni,
                    "close": round(last, 1), "rs_3m": round(rs_now, 0), "turnover_cr": round(turn, 0)}
             if last > hi100 and vr >= 1.5:
+                hi100s = g["high"].rolling(100).max().shift(1)
+                v20s = g["volume"].rolling(20).mean()
+                sigs = (c > hi100s) & (g["volume"] >= 1.5 * v20s) & (c.pct_change(63) > 0)
+                fires = sigs[sigs].index
+                camp_days, camp_run = 0, 0.0
+                if len(fires):
+                    first = fires[0]
+                    for _k in range(1, len(fires)):
+                        if (fires[_k] - fires[_k-1]).days > 45: first = fires[_k]
+                    camp_days = int((g.index[-1] - first).days)
+                    camp_run = float(last / float(c.loc[first]) - 1) * 100
                 mom = rs_now
                 p_m = 0 if mom < 25 else 1 if mom < 60 else 2 if mom < 120 else 1
                 p_v = 0 if vr < 2.5 else 1 if vr < 5 else 2
@@ -391,7 +402,7 @@ def radar_snapshot():
                        + {"A": "historically the strongest bucket (10y study)",
                           "B": "middle bucket historically",
                           "C": "weakest bucket historically"}[grade])
-                brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why})
+                brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why, "camp_days": camp_days, "camp_run": round(camp_run)})
             elif (tight <= 1.30 and v20 > v60 * 1.25 and rs_now > -5 and rs_now > rs_prev + 3
                   and last > hi100 * 0.85):
                 accum.append({**row, "base_pct": round((tight - 1) * 100, 0),
