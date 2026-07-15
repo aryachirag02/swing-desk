@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-15T04:36:30.247Z",
+ "updated_at": "2026-07-15T04:42:04.397Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -56,6 +56,14 @@
    "qty": "2000",
    "price": "133.5",
    "note": "MANUAL"
+  },
+  {
+   "date": "2026-07-15",
+   "ticker": "GREAVESCOT",
+   "side": "Sell",
+   "qty": 1000,
+   "price": 262.7,
+   "note": "from portfolio tab"
   }
  ]
 }
