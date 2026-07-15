@@ -193,11 +193,38 @@ def main():
               "that have NOT moved much yet (the early entries). Reply ONLY a JSON array, no markdown: "
               '[{"theme":"...","why":"one plain sentence why money is flowing here now",'
               '"moved":["TICK1","TICK2"],"early":[{"ticker":"TICK","why":"under 8 words"}]}]')
-        raw = ask_claude([{"role": "user", "content": tq}], 800)
-        raw = raw.strip().replace("```json", "").replace("```", "").strip()
-        tm = json.loads(raw[raw.find("["):raw.rfind("]")+1])
-        json.dump(tm, open(os.path.join(C.DATA_DIR, "theme_map.json"), "w"))
-        print(f"theme map: {len(tm)} themes")
+        def _parse_themes(txt):
+            txt = txt.strip().replace("```json", "").replace("```", "").strip()
+            a, b = txt.find("["), txt.rfind("]")
+            if a < 0 or b < 0:
+                raise ValueError("no array")
+            frag = txt[a:b+1]
+            try:
+                return json.loads(frag)
+            except Exception:
+                import re as _r
+                frag2 = _r.sub(r",\s*([}\]])", r"\1", frag)   # trailing commas
+                frag2 = frag2.replace("\n", " ")
+                return json.loads(frag2)
+        tm = None
+        for _attempt in range(2):
+            try:
+                raw = ask_claude([{"role": "user",
+                    "content": tq + ("" if _attempt == 0 else
+                    " CRITICAL: output ONLY the raw JSON array starting with [ and ending with ]. "
+                    "No prose, no markdown, no code fences, nothing else.")}], 900)
+                tm = _parse_themes(raw)
+                if isinstance(tm, list) and tm:
+                    break
+            except Exception as _e:
+                last_err = _e; tm = None
+        if isinstance(tm, list) and tm:
+            # keep only well-formed entries
+            clean = [t for t in tm if isinstance(t, dict) and t.get("theme")]
+            json.dump(clean, open(os.path.join(C.DATA_DIR, "theme_map.json"), "w"))
+            print(f"theme map: {len(clean)} themes")
+        else:
+            print(f"theme map failed after retry: {type(last_err).__name__ if 'last_err' in dir() else 'empty'}")
     except Exception as e:
         print(f"theme map failed: {type(e).__name__}")
     # theme synthesis
