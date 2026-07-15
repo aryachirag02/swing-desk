@@ -1,11 +1,1 @@
-ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
-BPCL.NS,Oil Gas & Consumable Fuels,2026-01-01,2026-01-06,375.8,356.04,506,3,stop,green,-9998.0,-1.0
-IOC.NS,Oil Gas & Consumable Fuels,2026-01-01,2026-01-08,164.92,157.2,1295,5,stop,green,-9997.0,-1.0
-HINDPETRO.NS,Oil Gas & Consumable Fuels,2026-01-01,2026-01-08,499.75,471.78,357,5,stop,green,-9985.0,-1.0
-MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.8,48.33,5,3,stop,green,-22.0,-1.0
-NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2057,1,stop,green,-9761.0,-1.0
-NSLNISP.NS,Metals & Mining,2026-01-01,2026-01-12,44.3,40.85,2,7,stop,green,-7.0,-1.0
-CANBK.NS,Financial Services,2026-01-01,2026-01-30,150.05,142.01,216,20,stop,green,-1737.0,-1.0
-MAHABANK.NS,Financial Services,2026-01-01,2026-02-02,60.59,59.57,2912,21,stop (gap),green,-2968.0,-0.3
-TATASTEEL.NS,Metals & Mining,2026-01-01,2026-02-02,176.95,181.63,1182,21,stop (gap),green,5536.0,0.55
-BANKBARODA.NS,Financial Services,2026-01-06,2026-02-02,297.87,270.26,604,18,stop (gap),green,-16675.0,-1.96
+
