@@ -23,22 +23,6 @@ ANALYSTS:  JM Financial: Buy, target ₹180; ICICI Securities: Neutral, target �
 FUNDAMENTALS:  Q4FY26 net profit surged to ₹797 cr vs ₹584 cr year ago; FY26 net profit up 13% YoY to ₹2,363 cr. 
 TECHNICALS:  Price well above 50-DMA (₹148) and 200-DMA (₹124), strong uptrend intact.
 
-### GREAVESCOT — HOLD (Multi-year breakout intact; let momentum confirm before adding more.)
-Here is the 5-line briefing on GREAVESCOT as of 2026-07-14:
-
- NEWS: Jul 10 — Greaves Cotton approved subscribing to GEML's ₹331 crore rights issue, backing its EV arm. 
-
- ANALYSTS: ICICIDirect rates it Buy long-term; one analyst target at ₹243; formal brokerage coverage is thin. 
-
- FUNDAMENTALS: FY26 revenue +20% YoY to ₹2,215 Cr; PAT ₹182 Cr (+17%); EBITDA margin improved to 14.1%. 
-
-TECHNICALS: Price ₹263.6 near cost; up 75% in 3 months; above 50-day average — strong recent momentum.
-
- 
-
----
-*Note: RADAR-brk flag acknowledged. This is not SEBI-registered investment advice. Data sourced from publicly available reports as of 2026-07-14.*
-
 ### ORIENTHOT — HOLD (strong performer but getting expensive; wait for breakout confirmation.)
 NEWS:  ICRA upgraded Oriental Hotels' credit rating to ICRA AA-/Stable and A1+, a positive signal. 
 ANALYSTS:  Uniresearch targets Rs 170 (bull case Rs 195, bear Rs 125) as of June 29, 2026. 
