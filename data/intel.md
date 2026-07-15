@@ -2,19 +2,19 @@
 _Claude web-research on the day's 68 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 ## Theme read
-Here are **four clear macro themes** running through today's mover list:
+Here are **four distinct macro themes** running through today's mover list:
 
 ---
 
-### 🔌 Theme 1: Optical Fiber & Telecom Infrastructure Capex (AI + BharatNet + 5G)
-**Members: HFCL, STLTECH, ROUTE, OPTIEMUS, BHARTIHEXA**
+### 🔌 Theme 1: Optical Fiber & Digital Infrastructure Capex
+**Members: HFCL, STLTECH, ROUTE, OPTIEMUS, BHARTIHEXA, RATEGAIN, BBOX, HAPPSTMNDS, IKS**
 
- The telecom infrastructure sector is witnessing strong structural growth driven by rapid 5G rollout, rising broadband penetration, and the explosive expansion of data centers — with global and domestic capex increasingly shifting toward high-speed fiber networks, optical connectivity, and digital backbone infrastructure.  HFCL is the most direct play:  it is investing ₹950 crore over the next two years to expand optical fibre and cable manufacturing capacity, driven by growing demand from AI-powered data centres, telecom networks, and the defence sector.   HFCL reported its highest-ever order book of ₹21,206 crore in FY26 — more than double the prior year — with its OFC business alone at ₹13,483 crore.  STLTECH (Sterlite) mirrors this, with  management positioning the company at the center of three major long-term capex cycles: FTTx, data centers, and 5G. 
+ The telecom infrastructure sector is seeing strong structural growth driven by rapid 5G rollout, rising broadband penetration, and AI/cloud-fuelled data centre expansion, with global and domestic capex shifting decisively toward high-speed fiber networks and optical connectivity.  This is the single biggest catalyst in the list:  HFCL alone is investing ₹950 crore over two years to expand optical fibre capacity, and reported a record order book of ₹21,206 crore in FY26 — more than double the prior year — including ₹13,483 crore specifically in optical fibre cable.   STL (STLTECH) positions itself at the centre of three long-term capex cycles — FTTx, data centres, and 5G — driving sustained demand for optical infrastructure.  IT enablers like RATEGAIN, BBOX, HAPPSTMNDS, and IKS ride the downstream digital services demand from the same build-out.
 
 ---
 
-### ☀️ Theme 2: Renewable Energy / Green Capex Supercycle
-**Members: ADANI
+### ☀️ Theme 2: Renewable Energy & Power Capex Buildout
+**Members: ADANIGREEN, UTLSOLAR,
 
 ### CEMPRO — Cemindia Projects Ltd. (Construction) · RS +148% (cached 2026-07-14)
 CATALYST: Adani Group acquired control in May 2025, rebranding from ITD Cementation; Q4 FY26 profit surged 114% YoY reported May 14 2026.
@@ -492,124 +492,129 @@ CALL: WAIT — stock near 52-week high, PE ~42x, annual revenue still shrinking;
 WHY_CALL: The Q4 bounce is real and music licensing growth at ~17-19% is genuinely exciting. But full-year FY26 revenue dropped 16% and ROE sits at just ~13%, meaning the ₹470+ price already prices in a lot of recovery hope. What would change the mind: a strong Q1 FY27 result confirming the Q4 rebound was not a one-off, or a meaningful price pullback to the ₹390-410 range.
 
 ### SUMICHEM — Sumitomo Chemical India Ltd. (Chemicals) · RS +26%
-Here is the analysis, in the exact requested format:
+Here is the full picture synthesised from screener.in data, company filings, and recent results:
 
 ---
 
-CATALYST:  Q1 FY27 results board meeting on 27 July 2026  — imminent;  AGM same day seeks MD promotion approval; Dahej ₹150 crore plant progressing on track. 
+ CATALYST: Q1 FY27 results board meeting confirmed on 27 July 2026 — results imminent, near-term event risk. 
 
-THEME:  India elevated by parent SCC Japan for early-stage new molecule introductions;   JV with Samsung Electro-Mechanics for semiconductor materials, targeting FY28 supply. 
+ THEME: India agrochemicals — sector had a tough FY26 (excess rain, weak demand) but SCIL hit highest-ever FY26 profitability despite it. 
 
-FUNDAMENTALS:  FY26 record PAT ₹543 crore, EBITDA margin 20.7%;   PE ~41.75x TTM;   debt-free, net worth up 17% to ₹3,394 crore. 
+ FUNDAMENTALS: FY26 full-year net profit up ~7% to ₹543 crore on ~3% revenue growth to ₹3,238 crore; PE ~42x. 
 
-VERDICT: Mixed —  highest-ever profit despite a tough agrochemical year,  but  H2 FY26 showed declining profits and sales sequentially;  results due in days add near-term uncertainty.
+VERDICT: Mixed
 
-CALL: WAIT — results imminent, valuation ~42x not cheap for low single-digit revenue growth.
+CALL: WAIT — results in 12 days, valuation stretched at 42x for low-growth year.
 
-WHY_CALL: The business is genuinely solid — debt-free, record PAT, exciting parent-backed new molecule and semiconductor JV stories brewing. However,  full-year FY26 net profit grew only 7% and sales just 3%,  making a 42x PE hard to justify for a starter buy right now. Wait for Q1 FY27 numbers on 27 July — a strong quarter showing re-acceleration
+ WHY_CALL: The story is real — debt-free, highest-ever profits, strong parent backing — but 5-year sales growth is a weak ~3.8% and FY26 was an acknowledged tough sector year. At ~42x PE with Q1 FY27 results just 12 days away and the stock already up from lows, risk/reward is poor right now for a new entry. Volume spike could be pre-results positioning, not deep accumulation. Wait for the Q1 number — a strong beat on both revenue growth and margin would change the call to BUY-WORTHY.
 
 ### TSFINV — TSF Investments Ltd. (Financial Services) · RS +24%
-Here is the analysis based on all available data:
+Here is the analysis in the requested format:
 
-CATALYST: nothing found — name change (Oct 2025) done; Q1 FY26 results next, no date confirmed
-THEME: stock-specific; holding company for Sundaram Finance/TVS auto ecosystem
-FUNDAMENTALS: underlying profit up ~14% ex-one-offs but stock trades at P/E ~18, down 44% from 52-week high
-VERDICT: Mixed
-CALL: WAIT — stock off highs but profit momentum thin and murky
-WHY_CALL: Headline profits fell sharply (FY25 PAT ₹412 Cr vs ₹533 Cr prior year) due to a one-time FY24 gain; strip that out and core growth is a modest ~14-15%. The stock has already corrected nearly 44% from its October 2025 peak, but volume pickup without a hard catalyst smells more like trading noise than true institutional accumulation. What would change the view: a strong Q1 FY26 result showing sustained double-digit core profit growth, or a concrete corporate action (subsidiary listing, asset monetisation) — then re-evaluate for BUY-WORTHY.
+CATALYST:  Final dividend of ₹4.45/share recommended May 2026, AGM approval pending — no hard growth catalyst found. 
+
+THEME:  Auto-sector investment holding company; rides India auto cycle  — no broad sector surge visible now.
+
+FUNDAMENTALS:  45% profit CAGR over 5 years, but 3-year ROE only 9.37%  — value trap risk at holding-company level.
+
+VERDICT:  Profit is actually declining (TTM ₹137 Cr vs ₹533 Cr in FY24)  — Mixed leaning Speculative.
+
+CALL: AVOID —  promoters quietly selling shares; no hard catalyst justifies chasing rising volume here. 
+
+WHY_CALL: This is a holding company whose reported profits are sharply down from peak, ROE is low, and promoters have been trimming — classic signs of accumulation noise rather than informed buying. The volume pickup could simply be retail rotation into a recognisable Sundaram-group name after rebranding. What would change the view: sustained promoter buying, a special dividend or portfolio restructuring announcement with clear value-unlock math, or a confirmed earnings recovery for two consecutive quarters.
 
 ### BHARTIHEXA — Bharti Hexacom Ltd. (Telecommunication) · RS +3%
-Here is the analysis in the requested format:
+Here is the analysis:
 
----
+ CATALYST: Q1 FY27 results due mid-July 2026; Jefferies has Buy with ₹2,060 target. 
+ THEME: India telecom premiumisation + 5G/fiber rollout; tower transfer to Indus boosting EBITDA margins. 
+ FUNDAMENTALS: ROE 24%, pre-tax margin 24%, P/E ~46x on FY26 PAT of ₹1,733 crore. 
+ VERDICT: Mixed — revenue growing 9% YoY but net profit dipped YoY two quarters running. 
+ CALL: WAIT — good story but stock near 200DMA resistance; wait for Q1 FY27 results clarity. 
 
- CATALYST: Sector-wide ~15% telecom tariff hike expected Q2 FY27 (Jul–Sep 2026); Q1 FY27 results due soon. 
-
- THEME: Indian telecom premiumisation + post-5G capex-to-cashflow inflection; parent Airtel driving it. 
-
- FUNDAMENTALS: EBITDA margin 54.3% (Q3 FY26); PE ~45x on TTM EPS ₹34.66 — quality but priced in. 
-
- VERDICT: Mixed — revenue growing 10–18% YoY but net profit declining YoY in recent quarters. 
-
- CALL: BUY-WORTHY — tariff hike story real; don't overpay, analysts see fair value ~₹1,848. 
-
- WHY_CALL: The anticipated tariff hike and Airtel's premiumisation push are real earnings levers for Hexacom's Rajasthan/NE circles. Main risk is hike delay or subscriber churn if pricing bites rural users hard. Tower transfer to Indus boosting EBITDA margins is a structural positive; confirmed hike execution would upgrade this to BUY-NOW.
+WHY_CALL:  Bharti Hexacom delivered ₹9,354 crore revenue and 16% profit growth in FY26 with EBITDA margin expanding 350 bps  — the business quality is real.  But net profit has fallen ~4.6% YoY in the latest quarter , and at P/E ~46x the valuation already prices in a recovery, leaving little margin of safety at current levels. What would change the mind: a clean Q1 FY27 beat (profit growth resuming, ARPU rising) with the stock holding above its 200DMA would shift this to BUY-WORTHY.
 
 ### MSUMI — Motherson Sumi Wiring India Lt (Automobile and Auto Components) · RS +4%
-Here is the analysis based on all data gathered:
+Here is the analysis, drawn from the latest data across screener.in, quarterly results, analyst notes, and company filings:
 
 ---
 
- CATALYST: Q1 FY27 results due ~late July 2025; EV revenue share rising (8.6% in Q4FY26); company debt-free. 
+ CATALYST: Q1 FY27 results due July 28, 2025; greenfield profitability recovery expected H2 FY27. 
 
- THEME: India auto components + EV content growth; company outperforming underlying industry. 
+ THEME: India auto volume growth plus EV wiring expansion; EV revenue share rising to ~8.6%. 
 
- FUNDAMENTALS: FY26 revenue +23% YoY to ₹11,478 Cr; net profit only +3.2%, margin compressed to 5.4%. 
+ FUNDAMENTALS: FY26 revenue up 23% to ₹11,429 Cr; net profit only up 3% to ₹625 Cr — margin squeeze ongoing. 
 
- VERDICT: Mixed — strong revenue growth but profits squeezed by copper costs and greenfield ramp-up drag. 
+ VERDICT: Mixed — revenue is strong but margins keep slipping due to copper inflation and slow greenfield ramp. 
 
- CALL: WAIT — analyst target ~₹53 but stock trades at 43x forward P/E vs sector avg 29x; overvalued for current profit growth. 
+ CALL: WAIT — PE ~41x, EPS lagging revenue growth; share price has underperformed earnings for 3 years. 
 
-WHY_CALL:  Revenue is genuinely accelerating (+23% FY26) but profits barely moved (+3.2%) with margins shrinking , making the ~40x PE hard to justify for a long-term entry.  Copper price inflation and slower-than-expected greenfield ramp-ups are the key near-term risks squeezing earnings.   If EV revenue share keeps climbing and greenfield plants reach utilisation, margin recovery could re-rate the stock — that's the trigger to watch.
+WHY_CALL:  Revenue is genuinely accelerating (+23% FY26) but profits barely grew (+3%), with margins falling from 6.5% to 5.4%  — that's a growth story with a broken profit engine right now.  The greenfield ramp is slower than expected, though management believes improved greenfield profitability should come in H2 FY27.  What would change the view: a Q1 FY27 print (July 28) showing margin stabilization at 7%+ and greenfield breakeven — that would make this BUY-WORTHY.
 
 ### NUVOCO — Nuvoco Vistas Corporation Ltd. (Construction Materials) · RS +10%
-Here is the analysis, exactly as requested:
+Here is the analysis. All supporting data is drawn from the sources below.
 
 ---
 
- CATALYST: Surat 2 MMTPA plant inaugurated ahead of schedule; Kutch ops start Q3FY27; record Q1FY27 EBITDA announced July 14, 2026. 
+ CATALYST: Vadraj Cement Limla plant (2 MMTPA grinding) inaugurated ahead of schedule; Kutch plant Q3FY27. 
 
- THEME: Cement sector — government infra/roads/housing spend driving demand; FY27 capex policy tailwind. 
+ THEME: Cement sector — price hikes but cost inflation and weak Q2FY27 margins cloud near-term outlook. 
 
- FUNDAMENTALS: Q1FY27 PAT up ~20% YoY; revenue ₹3,129 Cr (+9% YoY); 5-yr sales growth only 8.65% CAGR. 
+ FUNDAMENTALS: FY26 record — EBITDA up 35% YoY to ₹1,881 crore; PAT surged from ₹22 Cr to ₹360 Cr. 
 
- VERDICT: Mixed — strong fresh results and capacity trigger, but EBITDA margins flat and heavy capex ahead. 
+ VERDICT: Mixed — strong Q1FY27 beat with broker upgrades, but macro headwinds and margin pressure persist. 
 
- CALL: BUY-WORTHY — capacity re-rating story with 30% expansion, Nomura ₹470 target, real volume-backed growth. 
+ CALL: BUY-WORTHY — capacity story real, earnings recovering, 21% analyst upside at PE 31.65. 
 
- WHY_CALL: Nuvoco just delivered a clean Q1FY27 beat with highest-ever first-quarter EBITDA and ahead-of-schedule plant commissioning — a genuine re-rating trigger. Main risk is heavy capex of ₹900–960 Cr over FY27-28 keeping debt elevated and margins under pressure if demand slips. What changes the mind: EBITDA/tonne deteriorating, Kutch commissioning slipping beyond Q1FY28, or cement prices correcting sharply.
+ WHY_CALL: Q1FY27 beat drove 10% single-day surge with Nomura/Choice seeing up to 47% upside, backed by real capacity additions taking total to 35 MMTPA by FY28. Main risk is management's own warning that external pressures (geopolitics, cost inflation) may squeeze margins for one to two quarters. If Q2FY27 margins disappoint or cement pricing turns negative, revisit.
 
 ### SHAKTIPUMP — Shakti Pumps (India) Ltd. (Capital Goods) · RS +8%
-Here is the analysis in the requested format:
+Here is the assessment based on screener.in fundamentals, recent filings, and news:
 
 ---
 
- CATALYST: Fresh Maharashtra solar pump empanelment (Jul 4) — 15,000 pumps worth ₹353 Cr, executable in 60 days. 
+ CATALYST: Fresh Maharashtra solar pump empanelment (15,000 pumps, ₹354 Cr) received July 4, executable within 60 days. 
 
- THEME: PM-KUSUM solar irrigation policy tailwind; EV motor division approaching commercial launch adds optionality. 
+ THEME: PM-KUSUM solar irrigation policy tailwind; EV motor division nearing go-to-market — sector + stock-specific. 
 
- FUNDAMENTALS: FY25 revenue up 85% to ₹2,530 Cr, net profit up 188%; PE at 26x, below 3-year average of 33x. 
+ FUNDAMENTALS: FY25 revenue up 85% to ₹2,530 Cr; net profit ₹408 Cr (up 188% YoY), but TTM profit has since dipped to ₹258 Cr — earnings oscillating. 
 
- VERDICT: Mixed — order wins are hard news, but Q2FY26 profit dipped ~10% YoY and receivables remain stretched at ~₹1,639 Cr. 
+ VERDICT: Mixed — order wins are real but Q2FY26 profit dipped ~10.5% YoY and receivables (₹1,639 Cr) remain a concern. 
 
-CALL: BUY-WORTHY — real orders, below-average valuation, policy-backed growth story.
+ CALL: BUY-WORTHY — PE at 26x below 3-yr avg of 33x, mkt cap ₹6,855 Cr, management targeting ₹3,200 Cr revenue via debottlenecking — growth story intact for a patient starter position. 
 
- WHY_CALL: A fresh ₹353 Cr order just landed (Jul 4) with 60-day execution, and management guided for ₹3,200 Cr revenue via debottlenecking alone — no big capex needed.   Main risk is very high debtors (173 days) and stretched receivables — state-scheme cash collection is slow and can squeeze working capital hard.   What would change the view: consistent quarterly receivables reduction toward management's 120-day target would confirm the story and warrant adding the next tranche.
+WHY_CALL: Fresh hard orders under PM-KUSUM keep revenue visibility real, and valuation is below its own historical average after a sharp drawdown. Main risk is stretched receivables (173 days) — cash conversion from government schemes is slow and lumpy. Change of mind: if Q1FY27 results (due ~August) show further profit erosion or receivables worsen beyond 180 days, downgrade to WAIT.
 
 ### UTIAMC — UTI Asset Management Company L (Financial Services) · RS +3%
-Here is the analysis in the requested format:
+Here is the assessment based on all sourced data:
 
 ---
 
- CATALYST: Q1 FY27 results due soon; Q1 FY26 showed PAT down 7% YoY despite revenue up 3%. 
+ CATALYST: Rs 40/share dividend ex-date July 14, 2026 — already passed, no major upcoming hard catalyst. 
 
- THEME: Indian AMC/mutual fund sector — regulatory margin pressure and passive-shift headwinds are sector-wide. 
+ THEME: Indian AMC sector faces margin pressure from passive/alternative shift and regulatory headwinds — sector-level drag, not tailwind. 
 
- FUNDAMENTALS: FY26 consolidated PAT down 45% YoY to ₹404 crore; revenue fell 8% YoY. 
+ FUNDAMENTALS: FY26 net profit down 45% to Rs 404 crore; revenue fell 8% YoY — deteriorating across the board. 
 
- VERDICT: Mixed — revenue missed estimates 7.7%, EPS missed 41%; AUM growing but profits shrinking. 
+ VERDICT: Mixed — AUM growing but earnings badly missed estimates; margins collapsed from 40% to 24%. 
 
- CALL: AVOID — poor technicals, weak earnings trend, peers outperforming significantly. 
+CALL: AVOID — earnings in freefall, no hard catalyst ahead.
 
-WHY_CALL:  Q4 FY26 standalone PAT crashed 73% YoY, driven by one-off VRS/labour cost charges, making earnings highly unreliable right now.   The main risk is continued peer underperformance — Nippon Life AMC outperformed UTIAMC by 64% over the past year alone.   What would change the view: revenue forecast of 12% annual growth needs to actually show up in clean, recurring profit growth — not just AUM gains — for two consecutive quarters before revisiting.
+ WHY_CALL: Expenses jumped 89% in Q4 FY26 and a Rs 176 crore fair-value loss crushed profitability — these are not one-time in nature yet proven.   AUM growth of 11% YoY is the only bright spot, but fees aren't converting to profit, making a long-term buy case thin right now.  What would change the mind: two consecutive quarters of recovering normalised PAT, operating cost ratios stabilising, and the volume spike confirming institutional buyers — not sellers offloading into quiet tape.
 
 ### HAPPSTMNDS — Happiest Minds Technologies Lt (Information Technology) · RS +3%
 Here is the analysis based on the data gathered:
 
- CATALYST: FY27 Board-approved AI platform launched May 2026; 12.5% growth guidance reconfirmed, 15% aspirational 
- THEME: Mid-cap IT AI pivot — shifting from legacy digital services to productized AI-first operating model 
- FUNDAMENTALS: FY26 revenue ₹2,315 Cr (+12.3% YoY); net profit margin compressed to ~9% vs 15% prior year 
- VERDICT: Mixed — EPS recovery story with guidance upgrades, but margins still under pressure 
- CALL: WAIT — growth story real but margin recovery and AI-decoupled profitability unproven yet; volume uptick may reflect smart positioning, but rising attrition (18.2%), compressed PAT margins (~9% vs 15% two years ago), and a P/E still above 50x leave risk/reward stretched for a new entry at this level; wait for one clean quarter showing margin recovery alongside revenue growth before adding even a starter position. 
+---
 
-WHY_CALL: The AI-first pivot and guidance upgrade are genuine, not hype — deal momentum and record pipeline (+27%) give credibility. The main risk is that margin erosion (from acquisitions and wage costs) has outpaced revenue growth, and the stock has already fallen ~37% in a year, meaning it's not a screaming value yet. What would change the view: one quarter with adjusted PAT margin recovering toward 12–13% alongside sustained double-digit revenue growth would justify a BUY-WORTHY entry.
+ CATALYST: FY27 Enterprise AI Platform launched May 2026; board-approved 12.5% growth guidance confirmed. 
+
+ THEME: Mid-cap IT pivoting to AI-First productized model; sector-wide digital + GenAI services demand tailwind. 
+
+ FUNDAMENTALS: FY26 revenue ₹2,315 Cr (+12.3% YoY); profit ₹213 Cr; mkt cap ~₹5,981 Cr (~P/E 28x adjusted). 
+
+ VERDICT: Mixed — guidance upgrade and record pipeline (+27%) are real, but margin compression lingers. 
+
+ CALL: WAIT — growth real but margins still squeezed; not yet cheap enough to add confidently. 
+
+ WHY_CALL: Revenue is growing double-digit and the AI-First pivot is credible, but net income fell 26% in FY25 due to higher costs, and margins remain compressed well below historical levels.   The guidance upgrade from 10% to 12.5% driven by early AI deal traction is encouraging, and if margins recover toward 12–13% as AI agents decouple revenue from headcount, the story improves meaningfully.   Main risk: analyst targets range from ₹430 to ₹682, showing wide uncertainty; if Q1 FY27 results (due ~late July/early August 2026) disappoint on margins again, the stock drifts lower — that would be the better entry.
