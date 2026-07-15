@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24078.5 · 50DMA 23830.6 · 200DMA 24829.8 · 1M +0.9%
-**Breadth:** 63.3% of universe above 50-DMA (Broad participation) · A/D 303/196
+**Breadth:** 63.4% of universe above 50-DMA (Broad participation) · A/D 304/196
 **Flows:** FII ₹-736 cr today (-2,467 cr 5-day — **selling streak, tighten up**) · DII ₹+705 cr
 
 **Indices:** NIFTY 50 24,078.5 (+0.1%) · BANK NIFTY 57,757.9 (+0.5%) · NIFTY REALTY 915.2 (-2.5%) · NIFTY PHARMA 26,003.6 (+0.4%) · NIFTY FMCG 48,286.5 (-2.1%) · NIFTY METAL 12,536.9 (-1.2%)
@@ -11,7 +11,7 @@ Nifty 24078.5 · 50DMA 23830.6 · 200DMA 24829.8 · 1M +0.9%
 
 ---
 # Market intelligence — 2026-07-15
-_Claude web-research on the day's 62 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+_Claude web-research on the day's 61 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 ### CEMPRO — Cemindia Projects Ltd. (Construction) · RS +149% (cached 2026-07-14)
 CATALYST: Adani Group acquired control in May 2025, rebranding from ITD Cementation; Q4 FY26 profit surged 114% YoY reported May 14 2026.
@@ -371,14 +371,6 @@ VERDICT: Hard news — strong results with real margin expansion to 51%, not hyp
 CALL: WAIT — stock up ~50% YTD, PE near 38x, Q1 FY27 results due July 22.
 WHY_CALL: The business is genuinely strong with accelerating profits and a sticky banking-software moat. However, the stock has already priced in much of the good news, running 50% in months, and Q1 results drop on July 22 — a miss could hurt badly. Wait for the results, then reassess; a 10–15% post-result pullback would make this clearly BUY-WORTHY.
 
-### NYKAA — FSN E-Commerce Ventures Ltd. (Consumer Services) · RS +23% (cached 2026-07-15)
-CATALYST: Q4 FY26 results (May 21, 2026) — profit quadrupled to ₹79 Cr and revenue grew 28%, Nykaa's highest YoY growth in 12 quarters. 
- THEME: India premium beauty/lifestyle e-commerce boom (peers ETERNAL, FIRSTCRY); stock-specific moat via Nike digital deal and $5B GMV FY30 target. 
- FUNDAMENTALS: Backed by real earnings — FY26 revenue crossed ₹10,000 Cr (+26% YoY) and PAT surged 183% to ₹204 Cr. 
- VERDICT: Hard news — strong earnings beat with analyst buy ratings, but PE of 474x is sky-high. 
- CALL: WAIT — stock near 52-week high, trading at 376x trailing PE, average analyst target only ~7% above current price, consensus is Hold. 
- WHY_CALL: Nykaa closed FY26 with its strongest profitability since listing — real earnings, not hype. The main risk is brutal valuation; the stock has already priced in years of perfect execution. Add on a meaningful pullback of 15-20%, or when Fashion turns consistently profitable and the PE compresses closer to 200x.
-
 ### GODREJIND — Godrej Industries Ltd. (Diversified) · RS +50% (cached 2026-07-15)
 CATALYST: April 23, 2026 — Godrej Group unveiled Rs 5,000–7,000 crore investment plan and Rs 5 lakh crore market-cap ambition by 2031.
 THEME: Conglomerate re-rating on new leadership and listing plans; peers GODREJPROP, GODREJCP also benefiting.
@@ -532,7 +524,7 @@ WHY_CALL: Growth is real — capacity and profits are accelerating nicely, and t
 - **FORTIS** — 2026-08-06
 - **GODREJPROP** — 2026-07-30
 
-## 👀 Watchlist (237)
+## 👀 Watchlist (238)
 APOLLOHOSP · ASTERDM · 3MINDIA · BIOCON · MANKIND · AARTIIND · ABBOTINDIA · AJANTPHARM · BHEL · ENDURANCE · NEWGEN · NH · LUPIN · ZYDUSLIFE · APTUS · ARE&M · CHALET · JSWCEMENT · SHYAMMETL · SUNPHARMA · ABB · ANANTRAJ · FORTIS · GLAXO · GODREJPROP …
 
 ## 📌 Position reminders (check Trade log tab)
