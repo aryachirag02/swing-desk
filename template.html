@@ -624,14 +624,22 @@ function renderWatch(){
     : c==='BUY-WORTHY'?'<span style="background:var(--sbuy);color:#fff;padding:2px 9px;border-radius:6px;font-weight:700;font-size:11px">BUY-WORTHY</span>'
     : c==='WAIT'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:2px 9px;border-radius:6px;font-size:11px">WAIT</span>'
     : c==='AVOID'?'<span style="background:rgba(194,55,47,.12);color:var(--exit);padding:2px 9px;border-radius:6px;font-size:11px">AVOID</span>':'<span style="color:var(--mut);font-size:11px">analysis pending</span>';
-  box.innerHTML=rows.map(x=>`<div class="ideacard" style="border:1px solid var(--watch);border-radius:10px;padding:12px 15px;margin-bottom:8px;background:var(--panel)">
-    <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+  const _rb=DATA.radar||{}; const _bk=(tk)=>(_rb.breakouts||[]).find(z=>z&&z.ticker===tk);
+  box.innerHTML=rows.map(x=>{
+    const b=_bk(x.ticker);   // if this watch stock is also a live breakout, borrow its grade/levels/momentum
+    const gradeLine = b ? `<div style="font-size:11px;color:var(--mut);margin-top:3px"><span style="font-weight:700;padding:1px 7px;border-radius:5px;${b.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':b.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup ${b.grade}</span> momentum ${b.camp_run>0?'+':''}${b.rs_3m}% + volume ${b.vol_sig||b.vol_x}× — ${b.grade==='A'?'historically the strongest bucket':'middle bucket'} (10y study)</div>` : '';
+    const levelsLine = b && (b.headroom!=null||b.support_dist!=null) ? `<div style="font-size:11px;color:var(--mut)">📈 Levels (context, not a signal): ${b.headroom!=null?`~${b.headroom}% to nearest ceiling`:'clear overhead'}${b.support_dist!=null?` · support ~${b.support_dist}% below`:''}</div>` : '';
+    return `<div class="ideacard" style="border:1px solid var(--watch);border-radius:10px;padding:12px 15px;margin-bottom:8px;background:var(--panel)">
+    <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between">
       <div style="min-width:150px"><b>${x.ticker}</b> <span onclick="unwatch('${x.ticker}')" title="remove" style="cursor:pointer;font-size:12px">✕</span><div style="font-size:10.5px;color:var(--mut)">${x.name||''} ${x.sector||''}</div></div>
-      <div style="flex:1;font-size:12.5px">${x.rs3!=null?`${x.rs3>0?'+':''}${x.rs3}% vs market`:''} ${chip(x.call)}${x.call_why?`<div style="font-size:11px;color:var(--mut)">${String(x.call_why).replace(/</g,'&lt;')}</div>`:''}</div>
-      <div><button class="btn" onclick="addToPf('${x.ticker}',${x.close||0},'MANUAL')" style="font-size:11px;padding:4px 10px">＋ Portfolio</button></div>
+      <div style="flex:1;font-size:12.5px">${x.rs3!=null?`${x.rs3>0?'+':''}${x.rs3}% vs market`:''}${gradeLine}${levelsLine}</div>
+      <div style="text-align:right;min-width:160px">${chip(x.call)}${x.call_why?`<div style="font-size:11px;color:var(--mut);margin-top:2px;max-width:200px">${String(x.call_why).replace(/</g,'&lt;')}</div>`:''}
+        ${x.call_full?`<details style="margin-top:3px"><summary style="cursor:pointer;font-size:11px;color:var(--sbuy);font-weight:600">🎯 Why this call?</summary><div style="font-size:11.5px;color:var(--ink);padding-top:3px;text-align:left">${String(x.call_full).replace(/</g,'&lt;')}</div></details>`:''}
+        <div style="margin-top:5px"><button class="btn" onclick="addToPf('${x.ticker}',${x.close||0},'MANUAL')" style="font-size:11px;padding:4px 10px">＋ Portfolio</button></div>
+      </div>
     </div>
     ${x.ai?`<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:600">🧠 Full analysis</summary><div style="font-size:12px;white-space:pre-wrap;padding-top:5px;border-top:1px solid var(--line);margin-top:4px">${String(x.ai).replace(/</g,'&lt;')}</div></details>`:''}
-  </div>`).join('');
+  </div>`;}).join('');
 }
 // watchlist is stored locally + synced; a small note tells user it applies next run
 const WATCHK='swingdesk_watch';
