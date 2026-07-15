@@ -78,5 +78,9 @@ jobs:
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git commit -m "Daily update $(date -u +%F)" || echo "nothing to commit"
-          git pull --rebase origin main || true
-          git push || (git pull --rebase origin main && git push)
+          git stash -u || true
+          git pull --rebase origin main || git rebase --abort || true
+          git stash pop || true
+          git add -A
+          git commit -m "Daily update $(date -u +%F) (merge)" || echo "nothing more"
+          git push || (git fetch origin main && git rebase origin/main -X ours && git push) || echo "push failed - will retry next run"
