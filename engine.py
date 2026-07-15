@@ -391,21 +391,34 @@ def radar_snapshot():
             tight = float(base.max() / base.min())
             row = {"ticker": t.replace(".NS", ""), "name": nm, "sector": sec, "uni": uni,
                    "close": round(last, 1), "rs_3m": round(rs_now, 0), "turnover_cr": round(turn, 0)}
-            if last > hi100 and vr >= 1.5:
-                hi100s = g["high"].rolling(100).max().shift(1)
-                v20s = g["volume"].rolling(20).mean()
-                sigs = (c > hi100s) & (g["volume"] >= 1.5 * v20s) & (c.pct_change(63) > 0)
-                fires = sigs[sigs].index
-                camp_days, camp_run = 0, 0.0
-                if len(fires):
-                    first = fires[0]
-                    for _k in range(1, len(fires)):
-                        if (fires[_k] - fires[_k-1]).days > 45: first = fires[_k]
-                    camp_days = int((g.index[-1] - first).days)
-                    camp_run = float(last / float(c.loc[first]) - 1) * 100
-                mom = rs_now
+            hi100s = g["high"].rolling(100).max().shift(1)
+            v20s = g["volume"].rolling(20).mean()
+            sigs = (c > hi100s) & (g["volume"] >= 1.5 * v20s) & (c.pct_change(63) > 0)
+            fires = sigs[sigs].index
+            in_window = False
+            camp_days, camp_run, window_day, sig_price, fired_today = 0, 0.0, 0, None, False
+            mom_sig, vr_sig = 0.0, 0.0
+            if len(fires):
+                first = fires[0]
+                for _k in range(1, len(fires)):
+                    if (fires[_k] - fires[_k-1]).days > 45: first = fires[_k]
+                camp_days = int((g.index[-1] - first).days)
+                camp_run = float(last / float(c.loc[first]) - 1) * 100
+                last_fire = fires[-1]
+                window_day = int(len(c) - 1 - g.index.get_loc(last_fire))
+                sig_price = float(c.loc[first])
+                fired_today = window_day == 0
+                fi = g.index.get_loc(first)
+                if fi > 63:
+                    mom_sig = float(c.iloc[fi] / c.iloc[fi - 63] - 1) * 100
+                    vr_sig = float(g["volume"].iloc[fi] / max(1, g["volume"].iloc[fi-20:fi].mean()))
+                # active buy window: signal within 10 sessions AND not failed (>7% below campaign signal price)
+                in_window = window_day <= 10 and last >= sig_price * 0.93
+            if in_window:
+                mom = mom_sig if mom_sig else rs_now
+                vr_g = vr_sig if vr_sig else vr
                 p_m = 0 if mom < 25 else 1 if mom < 60 else 2 if mom < 120 else 1
-                p_v = 0 if vr < 2.5 else 1 if vr < 5 else 2
+                p_v = 0 if vr_g < 2.5 else 1 if vr_g < 5 else 2
                 sc = p_m + p_v
                 grade = "A" if sc >= 3 else "B" if sc >= 1 else "C"
                 why = (f"momentum {mom:+.0f}% + volume {vr:.1f}x — "
@@ -418,7 +431,7 @@ def radar_snapshot():
                 except Exception:
                     soon = False
                 brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why,
-                            "camp_days": camp_days, "camp_run": round(camp_run),
+                            "camp_days": camp_days, "camp_run": round(camp_run), "window_day": window_day, "sig_price": round(sig_price or 0, 1), "fired_today": fired_today,
                             "results": ed if soon else None})
             elif (tight <= 1.30 and v20 > v60 * 1.25 and rs_now > -5 and rs_now > rs_prev + 3
                   and last > hi100 * 0.85):

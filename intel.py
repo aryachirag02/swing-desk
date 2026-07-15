@@ -51,6 +51,25 @@ def candidates():
                       "camp_days": camp_days if camp_days < 900 else None}
     ranked = sorted(out.values(), key=lambda r: -r["score"])
     picks = ranked[:MAX_STOCKS + 15]
+    # guarantee: every FRESH breakout (<=5 days into its move) gets a seat regardless of rank
+    have = {p["ticker"] for p in picks}
+    for r in ranked[MAX_STOCKS + 15:]:
+        if r.get("breakout") and (r.get("camp_days") is not None) and r["camp_days"] <= 5 and r["ticker"] not in have:
+            picks.append(r); have.add(r["ticker"])
+    # guarantee: every displayed breakout gets researched, regardless of score rank
+    try:
+        import engine as _E
+        have = {p["ticker"] for p in picks}
+        for b in _E.radar_snapshot().get("breakouts", []):
+            tk = b["ticker"] + ".NS"
+            if tk not in have:
+                picks.append({"ticker": tk, "name": b.get("name", ""), "sector": b.get("sector", ""),
+                              "rs3": b.get("rs_3m", 0), "breakout": True,
+                              "vol_surge": b.get("vol_x", 0), "score": 0,
+                              "close": b.get("close"), "camp_days": b.get("camp_days")})
+                have.add(tk)
+    except Exception as e:
+        print(f"breakout force-include skipped ({type(e).__name__})")
     # Fridays: also research the quiet accumulators (stories are cheapest before the breakout)
     if pd.Timestamp.now().weekday() == 4 or os.environ.get("INTEL_ACCUM") == "1":
         try:

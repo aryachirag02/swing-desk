@@ -150,6 +150,10 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
   #tab-system td:first-child{width:38%}
   .card{max-width:100%;overflow-x:auto}
 }
+
+.secfold{margin:4px 0 10px}
+.secfold>summary{cursor:pointer;font-size:15px;font-weight:700;margin:6px 0 8px;list-style-position:outside}
+.secfold[open]>summary{margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -273,13 +277,16 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
       💡 <b>Setup Grade A/B/C</b> = backtested pattern quality (A best). <b>AI CALL</b> = Claude's researched opinion, graded live. Best combo: <b>Setup A + Buy-worthy</b> → starter size, Source as on the card.
     </div>
     <div id="radar-themes2" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:12.5px;white-space:pre-wrap"></div>
-    <div id="thememap"></div>
-    <h3 style="margin:6px 0 8px;font-size:15px">🔶 JUST STARTED MOVING — research these first</h3>
+    <div id="ideasbook"></div>
+    <details class="secfold"><summary id="sum-pin">📍 PINNED COMPANIES</summary><div id="pinrows"></div></details>
+    <details class="secfold"><summary id="sum-theme">🗺️ THEME MAP — where money is flowing (AI, daily)</summary><div id="thememap"></div></details>
+    <details class="secfold"><summary id="sum-brk">🔶 JUST STARTED MOVING — research these first</summary>
     <div id="brkrows"></div>
-    <h3 style="margin:18px 0 8px;font-size:15px">🟡 GETTING READY — watch these, don't buy yet</h3>
-    <div id="accumrows"></div>
-    <h3 style="margin:18px 0 8px;font-size:15px">🚀 STILL RUNNING — today's market leaders (AI-researched)</h3>
-    <div id="leadrows"></div>
+    </details>
+    <details class="secfold"><summary id="sum-accum">🟡 GETTING READY — watch these, don't buy yet</summary>
+    <div id="accumrows"></div></details>
+    <details class="secfold"><summary id="sum-lead">🚀 STILL RUNNING — today's market leaders (AI-researched)</summary>
+    <div id="leadrows"></div></details>
   </section>
 
   <section id="tab-pf" hidden>
@@ -397,7 +404,9 @@ try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){per
 // family mode: viewers with no local log auto-load the shared tradelog.json (read-only until they add a token)
 (function(){try{
   fetch('tradelog.json?v='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{
-    if(!j) return; const ent=j.entries||j; if(!Array.isArray(ent)||!ent.length) return;
+    if(!j) return;
+    if(Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins)); if(typeof renderPinned==='function') renderPinned();}
+    const ent=j.entries||j; if(!Array.isArray(ent)||!ent.length) return;
     const local=JSON.parse(localStorage.getItem('swingdesk_log')||'[]');
     const seen=new Set(local.map(e=>JSON.stringify([e.date,e.ticker,e.side,e.qty,e.price,e.note||''])));
     let added=0;
@@ -439,9 +448,10 @@ async function pushRemote(retry=true){
     if(pushing) return; pushing=true; setSyncUI('syncing…');
     try{
       const r=await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog()})});
+        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins()})});
       if(!r.ok) throw new Error('worker '+r.status);
       const j=await r.json().catch(()=>null);
+      if(j&&Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins));}
       if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();}}
       setSyncUI('☁ family-synced '+new Date().toLocaleTimeString());
     }catch(e){ setSyncUI('family sync failed: '+e.message); }
@@ -584,6 +594,62 @@ function renderMicro(){
     <td>${r.trend}</td><td>${r.setup_hi100?'🔶 breakout':''}</td></tr>`).join('')
     : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
+function renderIdeasBook(){
+  const box=$('#ideasbook'); if(!box) return;
+  const pos=positionsFromLog(loadLog());
+  const tks=Object.keys(pos).filter(t=>pos[t].qty>0 && pos[t].lt);
+  if(!tks.length){box.innerHTML='';return;}
+  const stage={}; const r=DATA.radar||{};
+  (r.breakouts||[]).forEach(x=>stage[x.ticker]='🔶 still breaking out');
+  (r.accum||[]).forEach(x=>stage[x.ticker]='🟡 basing');
+  (DATA.intel_rows||[]).forEach(x=>{if(!stage[x.ticker])stage[x.ticker]='🚀 leader';});
+  const rev={}; ((DATA.pfreview||{}).rows||[]).forEach(x=>rev[x.ticker]=x);
+  const callChip=c=> c==='ADD'?'<span style="background:var(--sbuy);color:#fff;padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">ADD</span>'
+    : c==='HOLD'?'<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">HOLD</span>'
+    : c==='REDUCE'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">REDUCE</span>'
+    : c==='SELL'?'<span style="background:var(--exit);color:#fff;padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">SELL</span>'
+    : '<span style="color:var(--mut);font-size:11px">review pending</span>';
+  box.innerHTML=`<details open style="margin-bottom:14px"><summary style="cursor:pointer;font-size:15px;font-weight:700;margin:6px 0 8px">📌 YOUR IDEAS-BOOK POSITIONS (${tks.length}) — Radar/Intel buys being tracked</summary>`+
+    tks.map(t=>{const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
+      const pl=last?((last/avg-1)*100):null; const rv=rev[t];
+      return `<div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:11px 15px;margin-bottom:8px;background:var(--panel)">
+        <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+          <div style="min-width:140px"><b>${t}</b><div style="font-size:11px;color:var(--mut)">${p.qty} @ ₹${fmt(avg)}${last?` → ₹${fmt(last)}`:''}</div></div>
+          <div style="font-size:13px;font-weight:700;color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl!=null?(pl>=0?'+':'')+pl.toFixed(1)+'%':''}</div>
+          <div style="font-size:12px;color:var(--mut)">${stage[t]||'⚪ off the lists (cooled)'}</div>
+          <div>${callChip(rv?rv.call:null)}${rv&&rv.why?`<div style="color:var(--mut);font-size:10.5px;max-width:200px">${rv.why.replace(/</g,'&lt;')}</div>`:''}</div>
+          <div><button class="btn" onclick="addToPf('${t}',${last||0})" style="font-size:11px;padding:4px 10px">＋ Add</button>
+          <button class="btn" onclick="pfSell('${t}')" style="font-size:11px;padding:4px 10px">− Reduce</button></div>
+        </div>
+      </div>`}).join('')+`<div style="font-size:11.5px;color:var(--mut);margin:2px 0 6px">Full reviews on the 💼 Portfolio tab · weekly + after every add.</div></details>`;
+}
+const PINK='swingdesk_pins';
+const getPins=()=>{try{return JSON.parse(localStorage.getItem(PINK)||'[]')}catch(e){return[]}};
+const isPinned=t=>getPins().includes(t);
+function togglePin(tk){let p=getPins(); p=p.includes(tk)?p.filter(x=>x!==tk):[...p,tk];
+  localStorage.setItem(PINK,JSON.stringify(p)); renderRadar(); renderPinned(); if(typeof schedulePush==='function') schedulePush(); }
+function renderPinned(){
+  const box=$('#pinrows'); if(!box) return;
+  const pins=getPins();
+  const sum=$('#sum-pin'); if(sum) sum.textContent=`📍 PINNED COMPANIES (${pins.length})`;
+  if(!pins.length){box.innerHTML='<p style="color:var(--mut);font-size:12.5px">Nothing pinned. Tap the 📍 on any card to keep a company here permanently — pinned names never vanish when lists rotate.</p>';return;}
+  const r=DATA.radar||{}; const find=(arr,tk)=>(arr||[]).find(x=>x.ticker===tk);
+  const intel={}; (DATA.intel_rows||[]).forEach(x=>intel[x.ticker]=x);
+  box.innerHTML=pins.map(tk=>{
+    const b=find(r.breakouts,tk), a=find(r.accum,tk), ai=intel[tk];
+    const px=(b&&b.close)||(a&&a.close)||(ai&&ai.close)||(rowByTicker[tk]&&rowByTicker[tk].close)||null;
+    const stage=b?('🔶 breaking out'+(b.camp_days!=null?` (day ${b.camp_days})`:'')):a?'🟡 getting ready':ai?'🚀 leader':'⚪ quiet today — still tracked';
+    const grade=b&&b.grade?` · Setup ${b.grade}`:'';
+    const call=ai&&ai.call?` · AI: <b>${ai.call}</b>`:'';
+    return `<div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:8px;background:var(--panel)">
+      <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div style="min-width:130px"><b>${tk}</b>${px?`<div style="font-size:11px;color:var(--mut)">₹${fmt(px)}</div>`:''}</div>
+        <div style="flex:1;font-size:12.5px">${stage}${grade}${call}</div>
+        <div><button class="btn" onclick="addToPf('${tk}',${px||0})" style="font-size:11px;padding:4px 10px">＋ Portfolio</button>
+        <button class="btn" onclick="togglePin('${tk}')" style="font-size:11px;padding:4px 10px">✕ Unpin</button></div>
+      </div></div>`;
+  }).join('');
+}
 function renderThemeMap(){
   const tm=DATA.theme_map||[]; const box=$('#thememap'); if(!box) return;
   if(!tm.length){box.innerHTML='';return;}
@@ -592,7 +658,8 @@ function renderThemeMap(){
   (r.accum||[]).forEach(x=>stage[x.ticker]='🟡 getting ready');
   (DATA.intel_rows||[]).forEach(x=>{if(!stage[x.ticker])stage[x.ticker]='🚀 leader';});
   const chip=(tk,extra,muted)=>`<span style="display:inline-block;margin:2px 4px 2px 0;padding:3px 10px;border-radius:7px;font-size:12px;${muted?'background:rgba(91,107,128,.1);color:var(--ink)':'background:rgba(10,107,68,.1);color:var(--sbuy);font-weight:700'}">${tk}${extra?` <span style="color:var(--mut);font-size:10.5px">${extra}</span>`:''}</span>`;
-  box.innerHTML=`<h3 style="margin:6px 0 8px;font-size:15px">🗺️ THEME MAP — where money is flowing (AI, daily)</h3>`+tm.map(th=>`
+  const sumT=$('#sum-theme'); if(sumT) sumT.textContent=`🗺️ THEME MAP (${tm.length} themes) — where money is flowing`;
+  box.innerHTML=tm.map(th=>`
     <div class="ideacard" style="border:1px solid var(--brass);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:rgba(156,122,44,.04)">
       <b style="font-size:14.5px">${(th.theme||'').replace(/</g,'&lt;')}</b>
       <div style="font-size:12.5px;color:var(--mut);margin:3px 0 8px">${(th.why||'').replace(/</g,'&lt;')}</div>
@@ -612,7 +679,7 @@ function renderRadar(){
   const card=(x,sentence)=>{const ai=intel[x.ticker];return `
     <div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--panel)">
       <div class="idearow" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
-        <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
+        <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b> <span onclick="togglePin('${x.ticker}')" title="Pin to keep permanently" style="cursor:pointer;font-size:13px">${isPinned(x.ticker)?'📌':'📍'}</span><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
         <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
         <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span></div>`:''}</div>
         <div style="text-align:right">
@@ -637,7 +704,7 @@ function renderRadar(){
     :`<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 9px;border-radius:6px;font-size:12px">📊 Setup C</span>`);
   const _bs=(r.breakouts||[]); const _nA=_bs.filter(x=>x.grade==='A').length; const _nCards=Math.max(8,_nA);
   $('#brkrows').innerHTML=_bs.slice(0,_nCards).map(x=>card(x,
-    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}${x.results?`<span style="background:rgba(194,55,47,.1);color:var(--exit);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px">📅 results ${x.results} — gap risk</span> `:''}Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
+    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}${x.results?`<span style="background:rgba(194,55,47,.1);color:var(--exit);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px">📅 results ${x.results} — gap risk</span> `:''}${x.fired_today?`Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>`:`Broke out <b>${x.window_day} session${x.window_day===1?'':'s'} ago</b> at ₹${fmt(x.sig_price)} — <b>still in the buy window</b>`}; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
   const restB=_bs.slice(_nCards);
   if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> [${x.grade||'-'}] (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
@@ -649,6 +716,9 @@ function renderRadar(){
   // leaders: intel stocks not already shown
   const shown=new Set([...(r.breakouts||[]).slice(0,8),...(r.accum||[]).slice(0,8)].map(x=>x.ticker));
   const leaders=(DATA.intel_rows||[]).filter(x=>!shown.has(x.ticker)).slice(0,12);
+  const _sb=$('#sum-brk'); if(_sb) _sb.textContent=`🔶 JUST STARTED MOVING (${(r.breakouts||[]).length}) — research these first`;
+  const _sa=$('#sum-accum'); if(_sa) _sa.textContent=`🟡 GETTING READY (${(r.accum||[]).length}) — watch, don't buy yet`;
+  const _sl=$('#sum-lead'); if(_sl) _sl.textContent=`🚀 STILL RUNNING (${leaders.length}) — market leaders (AI-researched)`;
   $('#leadrows').innerHTML=leaders.length?leaders.map(x=>card(
     {ticker:x.ticker,name:x.name,sector:x.sector,close:x.close},
     `${x.camp_days!=null?`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of this move · </span>`:''}Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — the buy bar is higher: strong AI call + starter size only. Real value: shows <b>where money is flowing</b> — check its sector peers on the lists above. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`)).join('')
@@ -920,7 +990,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderThemeMap(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderThemeMap(); renderIdeasBook(); renderPinned(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>
