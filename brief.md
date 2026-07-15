@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24211.0 · 50DMA 23830.3 · 200DMA 24842.9 · 1M +4.5%
-**Breadth:** 58.5% of universe above 50-DMA (Selective) · A/D 61/196
+**Breadth:** 60.4% of universe above 50-DMA (Broad participation) · A/D 118/381
 **Flows:** FII ₹-740 cr today (+232 cr 5-day) · DII ₹+2,928 cr
 
 **Indices:** NIFTY 50 24,211.0 (+0.0%) · BANK NIFTY 58,131.4 (+0.1%) · NIFTY REALTY 938.6 (+3.5%) · NIFTY MIDCAP 50 18,089.6 (+0.2%) · NIFTY FMCG 49,310.6 (-0.1%) · NIFTY METAL 12,688.9 (+1.5%)
@@ -11,26 +11,24 @@ Nifty 24211.0 · 50DMA 23830.3 · 200DMA 24842.9 · 1M +4.5%
 
 ---
 # Market intelligence — 2026-07-15
-_Claude web-research on the day's 68 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+_Claude web-research on the day's 64 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 ## Theme read
-Here are **four sharp macro themes** running through today's quant-flagged list:
+Here are the four dominant sector themes running through today's quant-flagged movers:
 
 ---
 
-### 🔌 1. Optical Fiber / AI Data-Centre Capex Supercycle
-**Members: HFCL, STLTECH (Sterlite Technologies), ROUTE, OPTIEMUS, BHARTIHEXA**
+**1. AI/Data Centre Optical Fibre Capex — HFCL, STLTECH, BHARTIHEXA**
 
- The telecom infrastructure sector is witnessing strong structural growth driven by rapid 5G rollout, rising broadband penetration, and the explosive expansion of data centres fuelled by cloud and AI workloads — with global and domestic capex increasingly shifting toward high-speed fiber networks and optical connectivity.  The catalyst is very live:  HFCL is investing ₹950 crore over the next two years to expand optical fibre manufacturing, and reported its highest-ever order book of ₹21,206 crore in FY26 — more than double the prior year — with its OFC business alone at ₹13,483 crore.  STLTECH is riding the same wave,  positioned at the centre of three major long-term capex cycles: FTTx, data centres, and 5G. 
+This is the single hottest structural narrative.  The telecom infrastructure sector is witnessing strong growth driven by rapid 5G rollout and the explosive expansion of data centres fuelled by AI workloads, with global capex increasingly shifting toward high-speed fibre networks and optical connectivity.   The sector came back into sharp focus after STL secured a ₹10,000 crore order from a global hyperscaler, turning investor eyes toward optical fibre players as AI-led demand remains upbeat.   HFCL has separately allocated ₹950 crore to add six more production lines, targeting a ramp-up from 30 million to 40 million fibre-km per annum , with  STLTECH launching India's first Hollow Core Fibre cable designed to meet the low-latency and high-bandwidth requirements of modern data centres and hyperscalers. 
 
 ---
 
-### ☀️ 2. Renewable Energy / Power Capex Build-Out
-**Members: ADANIGREEN, UTLSOLAR, REFEX, WABAG, SHAKTIPUMP, GRWRHITECH**
+**2. Renewable Power Capex — ADANIGREEN, ACMESOLAR, UTLSOLAR, WABAG**
 
- The government's target of 500
+ India has crossed 195 GW of installed renewable capacity, and the government's 500 GW non-fossil target by
 
-### CEMPRO — Cemindia Projects Ltd. (Construction) · RS +148% (cached 2026-07-14)
+### CEMPRO — Cemindia Projects Ltd. (Construction) · RS +147% (cached 2026-07-14)
 CATALYST: Adani Group acquired control in May 2025, rebranding from ITD Cementation; Q4 FY26 profit surged 114% YoY reported May 14 2026.
 THEME: India infra EPC boom driven by government capex; peers include Kalpataru Projects (KPIL) and Afcons Infrastructure (AFCONS).
 FUNDAMENTALS: Earnings-backed — Q4 FY26 net profit ₹242 crore, up 114% YoY, with three straight quarters of accelerating revenue and profit.
@@ -46,7 +44,7 @@ VERDICT: Hard news — UBS initiation plus strong Q1 results; but 70% run in wee
 CALL: WAIT — strong story, but stock up 70% in weeks; let it breathe.
 WHY_CALL: Earnings are genuinely accelerating and the UBS catalyst is real, not hype. But a 70% surge in under two months means you're paying a steep price — forward PE near 67x is demanding. Wait for a pullback toward ₹2,400–2,500 or post-Q2 results confirmation before adding even a starter position.
 
-### HFCL — HFCL Ltd. (Telecommunication) · RS +144% (cached 2026-07-14)
+### HFCL — HFCL Ltd. (Telecommunication) · RS +133% (cached 2026-07-14)
 CATALYST: On June 17 2026, HFCL won a ₹2,666 crore BharatNet contract from RVNL, the biggest recent trigger.
 THEME: Optical fibre and defence telecom boom (AI data centre demand); peers Sterlite Technologies (STLTECH), Tejas Networks (TEJASNET).
 FUNDAMENTALS: Real orders; Q4 FY26 net profit swung to ₹178 crore vs a loss of ₹81 crore a year ago, but 5-year sales growth is weak at 2.3% and ROE is a thin 6.4%.
@@ -70,21 +68,13 @@ VERDICT: Hard news — Q1 beat plus PFSCM long-term contract plus new facility a
 CALL: WAIT — stock up 940% in a year, P/E near 260x is parabolic.
 WHY_CALL: Growth is genuinely explosive and the PFSCM contract gives multi-year revenue visibility. But at 260x earnings and up 60% in one month alone, the price is far ahead of even the upgraded guidance. Wait for the actual Q1 FY27 results to confirm the ₹150 crore number, or for a 20-30% pullback to enter — whichever comes first.
 
-### OPTIEMUS — Optiemus Infracom Ltd. (Telecommunication) · RS +46% (cached 2026-07-14)
-CATALYST: On July 14, 2026, board approved three new subsidiaries (Vision, Display, Micro Electronics) for component manufacturing.
-THEME: India Make-in-India EMS/telecom manufacturing boom; peers include Dixon Technologies, HFCL.
-FUNDAMENTALS: Revenue grew ~40% five-year CAGR but profits barely moved; Q4 FY26 net profit flat at ₹22.5 crore YoY.
-VERDICT: Mixed — rapid subsidiary expansion but profits not keeping pace with growth story.
-CALL: WAIT — stock at 5x book, PE ~155x, profits flat; wait for earnings to catch up with valuation and expansion story.
-WHY_CALL: The business is genuinely pivoting into high-growth manufacturing with real brand partners like Nothing and OnePlus. But profits are essentially flat while the stock trades at a sky-high PE of ~155x — growth is not yet in the earnings. Watch for two consecutive quarters of profit acceleration; that would justify revisiting as a buy.
-
-### IFBIND — IFB Industries Ltd. (Consumer Durables) · RS +30% (cached 2026-07-14)
-CATALYST: Q4 FY26 results (June 10, 2026 investor call) showed PAT up 78% QoQ and EBITDA up 34%, sparking the breakout.
-THEME: India consumer durables upcycle (summer AC/washing machine demand); peers Voltas, Blue Star.
-FUNDAMENTALS: Backed by real earnings recovery; Q4 FY26 revenue grew 11% YoY to ₹1,456 crore with 5-year profit CAGR of ~19%.
-VERDICT: Hard news — strong Q4 earnings recovery with accelerating margins confirmed.
-CALL: WAIT — Q1 FY27 results due July 28; entry now adds event risk.
-WHY_CALL: Earnings are genuinely recovering and the story is real, not just price action. However, stock has run hard into the results window — Q1 FY27 numbers drop July 28, just two weeks away, creating binary risk at an extended price. Wait for post-results pullback or confirmation; if Q1 FY27 also shows double-digit profit growth, this becomes BUY-WORTHY at that dip.
+### RUBICON — Rubicon Research Ltd. (Healthcare) · RS +82% (cached 2026-07-14)
+CATALYST: Strong Q4 FY26 results (May 29, 2026) — profit up 84%, revenue up 37% YoY — triggered the rally.
+THEME: US-focused specialty pharma; peers include Suven Pharma, Windlas Biotech; story is stock-specific execution.
+FUNDAMENTALS: Earnings-backed — FY26 net profit jumped 84% to ₹247 crore on 37% revenue growth; ROE 27%.
+VERDICT: Hard news — real profit growth, FDA inspection, acquisition all confirmed.
+CALL: WAIT — PE of ~95–120x already prices in near-perfect execution; stock on NSE ASM watch; Pithampur FDA Form 483 still open; wait for a 15–20% pullback or Q1 FY27 results confirmation before adding even a starter position.
+WHY_CALL: Growth is genuinely exceptional and fundamentals are solid, but at 95–120x earnings the stock needs flawless delivery to justify the price. The open Form 483 at Pithampur and ASM listing add near-term uncertainty. A clean Pithampur FDA resolution and Q1 FY27 numbers holding 35%+ growth would make this BUY-WORTHY.
 
 ### ADANIGREEN — Adani Green Energy Ltd. (Power) · RS +43% (cached 2026-07-15)
 CATALYST: Q1 FY27 operational update (July 10) showed capacity up 27% YoY to 20,142 MW and energy sales up 30%.
@@ -102,37 +92,13 @@ VERDICT: Mixed — real orders exist but debt high, promoters trimmed, margins f
 CALL: WAIT — stock up 399% in a year, P/E near 535, results due July 23; let entry settle post-earnings before adding even a starter position.
 WHY_CALL: The story is real — BharatNet orders, AI fibre demand, and a legal win are genuine positives. But valuation is extreme, debt remains heavy, promoters cut stake, and earnings barely exist yet. Wait for the July 23 results; if profits accelerate meaningfully and stock pulls back toward ₹400–430, that's the trigger to start a position.
 
-### BALAMINES — Balaji Amines Ltd. (Chemicals) · RS +108% (cached 2026-07-14)
+### BALAMINES — Balaji Amines Ltd. (Chemicals) · RS +103% (cached 2026-07-14)
 CATALYST: DGTR recommended anti-dumping duty on ethylene diamine imports (China, EU, Saudi Arabia, Taiwan) around July 2–8, 2026.
 THEME: Indian specialty chemicals recovery play; peers Alkyl Amines (ALKYLAMINE) and Chemplast Sanmar benefit similarly.
 FUNDAMENTALS: Earnings-backed — Q4 FY26 net profit jumped 58% year-on-year to Rs 63 crore with margins expanding sharply.
 VERDICT: Mixed — duty not yet Finance Ministry-approved; fundamentals genuinely improving.
 CALL: WAIT — stock up 100%-plus in 2026; entry is stretched now.
 WHY_CALL: The earnings turnaround is real and the anti-dumping duty, if finalized, could meaningfully lift margins for years. However, the stock has already doubled in 2026 and trades at PE of ~46 with ROE still a weak 8–9%, meaning most good news is priced in. Wait for either a pullback to a saner entry or Finance Ministry confirmation of the duty to add conviction.
-
-### UTLSOLAR — Fujiyama Power Systems Ltd. (Capital Goods) · RS +68% (cached 2026-07-14)
-CATALYST: Board approved ₹350 Cr, 1.2 GW TOPCon solar cell plant (May 22) plus Q4 FY26 profit up 107% YoY.
-THEME: India rooftop solar boom driven by PM Surya Ghar subsidies and ALMM-II DCR mandate; peers Waaree, Premier Energies.
-FUNDAMENTALS: Earnings-backed — Q4 FY26 sales grew 88% YoY to ₹901 Cr with ROE of 36% and net debt falling.
-VERDICT: Hard news — strong results plus real capacity expansion announcement.
-CALL: BUY-WORTHY — earnings accelerating, policy tailwind real, valuation not stretched at PE ~31.
-WHY_CALL: Profit is doubling yearly with genuine government-backed demand and smart backward integration into DCR cells. Main risks are working capital stretch (inventory days rose to 123), BIS/customs notices, and TOPCon capex execution. If quarterly growth slows or DCR policy reverses, revisit the thesis.
-
-### BALRAMCHIN — Balrampur Chini Mills Ltd. (Fast Moving Consumer Goods) · RS +21% (cached 2026-07-14)
-CATALYST: India's Supreme Court dismissed E20 PIL on Sep 1 2025, clearing ethanol deregulation; sugar stocks rerated sector-wide.
-THEME: Sugar-ethanol deregulation plays broadly; peers RENUKA, TRIVENI and DHAMPUR rode same wave — sector story, not stock-specific.
-FUNDAMENTALS: Mixed picture — Q4FY25 PAT grew 12.65% to Rs 229 crore, but 5-year sales CAGR is weak at ~5%, ROE only 11%.
-VERDICT: Mixed — earnings recovering but growth history thin and valuation now expensive.
-CALL: WAIT — post-20%-plus run, entry is stretched versus modest earnings growth.
-WHY_CALL: The ethanol policy story is real and long-term promising, but fundamentals are mediocre and the stock has already priced in much of the good news. Main risk is sugar price softness or poor monsoon denting both sugar and ethanol volumes. You'd want to see two back-to-back strong earnings quarters confirming the margin recovery before adding size.
-
-### ROUTE — Route Mobile Ltd. (Telecommunication) · RS +17% (cached 2026-07-14)
-CATALYST: Founder Rajdipkumar Gupta returned as CEO after prior CEO resigned July 17, 2025; Q1 FY26 results released same day.
-THEME: CPaaS/A2P messaging growth story; peers include Tanla Platforms (TANLA) and Route's parent Proximus Global; stock-specific.
-FUNDAMENTALS: Weak earnings backing — Q1 FY26 profit fell 27.6% and revenue fell 4.8% year-on-year; no growth catalyst in numbers.
-VERDICT: Mixed — founder return excites market but earnings are clearly deteriorating.
-CALL: WAIT — post-result spike on leadership change; fundamentals don't justify chasing yet.
-WHY_CALL: The founder returning as CEO sparks optimism, but profits are falling sharply. The stock just surged on sentiment, not improving numbers, making the entry risky right now. Watch for two consecutive quarters of profit recovery before adding.
 
 ### DIVISLAB — Divi's Laboratories Ltd. (Healthcare) · RS +16% (cached 2026-07-15)
 CATALYST: Long-term supply deal with unnamed global pharma signed May 24-26 2025; stock hit record high on 3x volume.
@@ -149,21 +115,13 @@ VERDICT: Hard news — real orders, record backlog, two-year revenue visibility 
 CALL: WAIT — stock up 129% in six months, entry too stretched now.
 WHY_CALL: The business is genuinely strong with a record order book and hard catalysts, but the stock has more than doubled in six months and is hitting fresh highs, meaning most good news is already priced in. The main risk is a pullback if macro conditions soften or US energy demand slows. Wait for a 15–20% correction or a base-building consolidation before adding.
 
-### PAYTM — One 97 Communications Ltd. (Financial Services) · RS +22% (cached 2026-07-14)
-CATALYST: Paytm announced Indonesia Soundbox/tech partnership with Flip and DTK on July 9, 2026, sparking a 5-7% single-day rally.
-THEME: Indian fintech expansion story; digital payments peers include PB Fintech and One MobiKwik.
-FUNDAMENTALS: Earnings-backed — FY26 revenue grew 28% YoY to ₹8,437 crore; swung to ₹552 crore annual profit from a ₹663 crore loss.
-VERDICT: Mixed — real profit turn, but Indonesia deal is tiny and non-material per SEBI.
-CALL: BUY-WORTHY — profit turnaround is real; entry not yet extreme for long-term buyers.
-WHY_CALL: Paytm has genuinely flipped from heavy losses to profit, with revenue growing strongly. The risk is the stock jumped 31% in a month partly on a small overseas deal, so you may get a better price on any pullback. If Q1 FY27 results (due soon) confirm continued profit growth and margins keep expanding, conviction rises to add more.
-
-### SFL — Sheela Foam Ltd. (Consumer Durables) · RS +51% (cached 2026-07-14)
-CATALYST: Q4 FY26 results on May 15, 2026 — PAT up ~600% YoY, core EBITDA up 90%, first-ever dividend declared.
-THEME: India organized mattress market re-rating; peers include Duroflex (unlisted) and Furlenco; partly stock-specific on Kurlon turnaround.
-FUNDAMENTALS: Backed by real earnings — FY26 PAT grew 78.5% to ₹161 crore on 11% revenue growth, with EBITDA margins expanding 400 bps.
-VERDICT: Hard news — strong earnings beat, not just price action.
-CALL: WAIT — stock already up 51% post-results; entry is stretched now.
-WHY_CALL: The earnings recovery is real and Kurlon integration is finally paying off. But at ~55x PE with ROE still only ~5%, you are paying a lot for a story still maturing. Wait for a pullback toward ₹650–680 or one more quarter confirming margin expansion before adding.
+### BLUESTONE — BlueStone Jewellery and Lifestyle Ltd. (Consumer Durables) · RS +19% · 🔶 breakout
+CATALYST: Strong Q1 FY27 business update (mid-June 2026) and bold 705-store, ₹12,000 Cr revenue by FY30 guidance announced July 13-14, 2026.
+THEME: India's premiumisation of daily-wear jewellery; peers Kalyan Jewellers (KALYANKJIL), Titan (TITAN) riding same wave.
+FUNDAMENTALS: Earnings-backed turnaround — FY26 revenue grew 34% to ₹2,436 Cr, first-ever annual profit of ₹13 Cr after years of losses.
+VERDICT: Mixed — first profit tiny, promoter pledge high (37%), results due July 20.
+CALL: WAIT — results in 5 days; entry risk/reward poor right now.
+WHY_CALL: The turnaround is real but paper-thin (₹13 Cr profit on ₹2,436 Cr sales), and the stock trades at 500x+ earnings with Q1 FY27 results due July 20. Promoters have pledged 37% of their holding, and a key compliance officer just resigned — both are yellow flags. Wait for the July 20 result to confirm profit is growing, then consider a starter position if numbers beat.
 
 ### AEGISLOG — Aegis Logistics Ltd. (Oil Gas & Consumable Fuels) · RS +86% (cached 2026-07-15)
 CATALYST: Blowout Q4 FY26 results on May 29, 2026 — revenue +52% and profit +56% YoY smashed estimates badly.
@@ -172,30 +130,6 @@ FUNDAMENTALS: Earnings-backed — full-year net profit grew 35% to ₹898 crore;
 VERDICT: Hard news — massive earnings beat with new terminal commissioning driving volumes.
 CALL: WAIT — PE ~50x now prices in most of the good news already.
 WHY_CALL: Growth is genuine and the Pipavav LPG terminal adds real capacity for future volume. But at 50x earnings after an 86% run, the stock already reflects the good news; margin compression (EBITDA margin dipped to 22% from 24%) is a watch item. A pullback toward 40x earnings, or a clear next capacity expansion announcement, would make this BUY-WORTHY.
-
-### UJJIVANSFB — Ujjivan Small Finance Bank Ltd. (Financial Services) · RS +14% (cached 2026-07-14)
-CATALYST: Exchange sought clarification on July 9, 2026 news; strong FY26 results (all-time-high RoA 2.1%) drove the re-rating.
-THEME: Small Finance Bank re-rating on microfinance stress recovery; peers AU Small Finance, Equitas SFB also benefiting.
-FUNDAMENTALS: Backed by real earnings — secured book grew 63% YoY in Q1FY26, with FY26 revenue up ~18% YoY.
-VERDICT: Mixed — earnings improving but exchange clarification pending, results due July 23.
-CALL: WAIT — results in 9 days; risk/reward unclear until then.
-WHY_CALL: The business turnaround (shift to secured loans, improving RoA) is genuinely exciting for a long-term buyer. But with Q1FY27 results on July 23 and an unexplained exchange clarification query from July 9 still outstanding, entering now means riding into uncertainty blind. Wait for results clarity, then buy the dip if numbers hold up.
-
-### HOMEFIRST — Home First Finance Company India Ltd. (Financial Services) · RS +14% (cached 2026-07-14)
-CATALYST: Strong FY26 results (May 2026) — PAT up 41% YoY, record disbursements, improving asset quality — re-rated stock higher.
-THEME: Affordable housing finance tailwind; peers Aavas Financiers (AAVAS), PNB Housing (PNBH) riding same RBI rate-cut cycle.
-FUNDAMENTALS: Earnings-backed — FY26 PAT ₹540 crore, up 41% YoY, ROE ~16%, AUM growing ~25% with recovering asset quality.
-VERDICT: Hard news — real profit growth, rating upgrade, improving delinquencies.
-CALL: BUY-WORTHY — steady compounder, growth justifies recent re-rating.
-WHY_CALL: PAT growing 40%+ with PE near historical lows makes this attractively priced for a patient buyer. Main risk is Q1 FY27 results (due soon) showing disbursement slowdown or rising bad loans again. A miss on asset quality next quarter would change the view to WAIT.
-
-### AEGISVOPAK — Aegis Vopak Terminals Ltd. (Oil Gas & Consumable Fuels) · RS +55% (cached 2026-07-14)
-CATALYST: NSE queried unusual volume on Jul 6; stock hit all-time high Jul 13 post strong FY26 results (net profit +52% YoY, revenue +17%).
-THEME: India energy infrastructure buildout — LPG/liquid storage capacity boom; peers include AEGISLOG, IOT Infrastructure.
-FUNDAMENTALS: Real earnings behind the move — FY26 net profit grew 52% to ₹342 crore; but ROE is low at ~10% and P/E is stretched at ~106x.
-VERDICT: Mixed — strong profit growth but expensive valuation and exchange volume query flag.
-CALL: WAIT — valuation far ahead of growth; entry risk is high now.
-WHY_CALL: The profit growth is real and the $1.2bn expansion plan (Project GATI) is credible long-term. But at 100x+ earnings after a 55% run, you are paying a steep price for future growth that must keep compounding. Wait for a pullback to 70-80x earnings or Q1FY27 results to confirm the growth trend holds before adding.
 
 ### GRWRHITECH — Garware Hi-Tech Films Ltd. (Capital Goods) · RS +77% (cached 2026-07-14)
 CATALYST: Q4 FY26 results on May 6, 2026 — record PAT of ₹338 crore and ₹191 crore capacity expansion approved.
@@ -212,21 +146,6 @@ VERDICT: Mixed — real revenue growth but profit inconsistent and debt rising.
 CALL: WAIT — sharp rally with no confirmed trigger; entry too risky now.
 WHY_CALL: Revenue is genuinely growing and promoters quietly raised stake to 68%, which is encouraging. But profit has been erratic, debt is climbing, ROE is just 5%, and the exchange itself flagged unusual price movement on June 24. Re-enter only if price cools to near 52-week mid-range (~₹110-115) or Q1 FY27 results confirm profit acceleration.
 
-### RUBICON — Rubicon Research Ltd. (Healthcare) · RS +74% (cached 2026-07-14)
-CATALYST: Strong Q4 FY26 results (May 29, 2026) — profit up 84%, revenue up 37% YoY — triggered the rally.
-THEME: US-focused specialty pharma; peers include Suven Pharma, Windlas Biotech; story is stock-specific execution.
-FUNDAMENTALS: Earnings-backed — FY26 net profit jumped 84% to ₹247 crore on 37% revenue growth; ROE 27%.
-VERDICT: Hard news — real profit growth, FDA inspection, acquisition all confirmed.
-CALL: WAIT — PE of ~95–120x already prices in near-perfect execution; stock on NSE ASM watch; Pithampur FDA Form 483 still open; wait for a 15–20% pullback or Q1 FY27 results confirmation before adding even a starter position.
-WHY_CALL: Growth is genuinely exceptional and fundamentals are solid, but at 95–120x earnings the stock needs flawless delivery to justify the price. The open Form 483 at Pithampur and ASM listing add near-term uncertainty. A clean Pithampur FDA resolution and Q1 FY27 numbers holding 35%+ growth would make this BUY-WORTHY.
-
-### NEOGEN — NEOGEN CHEMICALS LTD. (Chemicals) · RS +48% (cached 2026-07-14)
-CATALYST: Q4 FY26 results (May 16, 2026) showed PAT up ~450% YoY; Dahej replacement plant commissioning by June 2026 added momentum.
-THEME: India specialty chemicals re-rating + EV battery materials; peers Gujarat Fluorochemicals, Aether Industries (AETHER).
-FUNDAMENTALS: Real earnings recovery — Q4 revenue up 22% YoY to ₹247 crore — but FY26 full-year PAT fell 17% and debt nearly doubled to ₹1,330 crore.
-VERDICT: Mixed — profit bouncing hard but debt is heavy and execution risk remains.
-CALL: WAIT — strong story, but debt load and Dahej timeline delays make current run risky. A confirmed Dahej commissioning and two more clean quarters of PAT growth would justify adding; the near-parabolic 48% run ahead of Q1 FY27 results (due soon) is the main near-term risk.
-
 ### CPPLUS — Aditya Infotech Ltd. (Capital Goods) · RS +73% (cached 2026-07-14)
 CATALYST: Q4 FY26 results (May 28, 2026) showed profit up ~208% YoY; Q4 earnings results beat expectations significantly.
 THEME: India surveillance/AI-security boom; no direct listed peers — largely stock-specific with government and enterprise tailwinds.
@@ -242,22 +161,6 @@ FUNDAMENTALS: Earnings-backed — FY26 sales up 61% and net profit doubled to �
 VERDICT: Mixed — real growth but 30% promoter pledge and dilutive preferential issue worry.
 CALL: WAIT — big acquisition overhang, heavy dilution, and pledged promoter shares add real near-term risk. Growth story is genuine but wait for EGM clarity and acquisition integration before adding; re-enter if pledge falls and dilution gets absorbed cleanly.
 
-### GREAVESCOT — Greaves Cotton Ltd. (Capital Goods) · RS +67% (cached 2026-07-14)
-CATALYST: Board approved ₹331 crore investment in EV arm GEML's rights issue on July 10, 2026, ahead of planned IPO.
-THEME: India EV two-wheeler ramp-up story; peers include Bajaj Auto, TVS Motor — but this is largely stock-specific given GEML IPO angle.
-FUNDAMENTALS: Backed by real earnings — FY26 revenue up 18% to ₹3,437 crore and net profit nearly doubled to ₹107 crore, but consolidated ROE stays weak at ~4.5%.
-VERDICT: Mixed — earnings growing but GEML losses drag profits; valuation at 150x PE is stretched.
-CALL: WAIT — stock priced for perfection; GEML losses and 150x PE are real risks right now. A pullback to calmer levels or clearer GEML IPO timeline would change the view to BUY-WORTHY.
-WHY_CALL: Core engine business is genuinely improving with 18% revenue growth and rising margins. However, GEML is still deeply loss-making and soaks up huge parent capital, capping consolidated profits. At 150x earnings after a 35% single-month run, risk-reward for new buyers is poor; wait for a calmer entry or GEML IPO clarity.
-
-### ASTRAMICRO — Astra Microwave Products Ltd. (Capital Goods) · RS +67% (cached 2026-07-14)
-CATALYST: June 10, 2026 board approved demerger of Space/Meteorology into a new listed entity (1:1 share ratio), unlocking pure-play defence value.
-THEME: India defence electronics boom; peers BEL and HAL also re-rated; DAC approved Rs 52,000 cr in defence deals recently.
-FUNDAMENTALS: Real earnings — FY26 net profit up 27% to Rs 193 cr; order book Rs 2,610 cr (2.2x revenue); 46% profit CAGR over 5 years.
-VERDICT: Hard news — demerger approved, strong Q4 results, genuine order book.
-CALL: WAIT — stock at 86x PE near 52-week high, run already large.
-WHY_CALL: The business is genuinely strong — orders, margins, and a value-unlocking demerger are real. But at 86x earnings near an all-time high, most of the good news is already priced in for a starter buy. Wait for a 15-20% pullback or post-demerger price discovery; what would change my mind is a major new radar/EW order or a sharp correction bringing PE below 65x.
-
 ### JBCHEPHARM — J.B. Chemicals & Pharmaceuticals Ltd. (Healthcare) · RS +26% (cached 2026-07-15)
 CATALYST: NCLT approved JB Chemicals merger into Torrent Pharma on July 6, 2026; record date July 17, swap ratio 51:100.
 THEME: M&A-driven re-rating in Indian pharma; peers Torrent Pharma (TORNTPHARM) and Sun Pharma (SUNPHARMA) benefiting similarly.
@@ -266,21 +169,13 @@ VERDICT: Hard news — NCLT-approved merger with clear record date and swap rati
 CALL: WAIT — swap ratio locks upside; merger arbitrage play only now.
 WHY_CALL: The stock is rising purely to close the arbitrage gap versus Torrent Pharma's swap price, not on operating momentum. Q4 profit fell 30% and the company ceases to exist post-merger, so there is no long-term standalone story left. Would only revisit if the merger falls through unexpectedly and the stock resets lower on its own fundamentals.
 
-### RATEGAIN — Rategain Travel Technologies Ltd. (Information Technology) · RS +65% (cached 2026-07-14)
-CATALYST: Sojern acquisition completed Nov 2025; Anand Rathi raised target to ₹1,000 (~3 weeks ago), ICICI Securities initiated BUY at ₹1,050.
-THEME: AI-powered travel SaaS re-rating globally; peers MapMyIndia (MAPMYINDIA), Intellicheck — largely stock-specific within niche.
-FUNDAMENTALS: Backed by real revenue growth — revenue doubled YoY in Q3 FY26 to ₹540 crore; profit margins compressed sharply (PAT -53% YoY), ROE a modest 12.8%.
-VERDICT: Mixed — strong revenue, but profit margins are shrinking badly post-acquisition.
-CALL: WAIT — 92% rally from lows, margin recovery still unproven.
-WHY_CALL: Revenue is genuinely growing fast but profits collapsed post-Sojern due to integration costs, making this a show-me story. The stock has already run hard; entry here prices in synergies before they appear. Wait for two clean quarters showing margin recovery back above 15% PAT before adding.
-
-### WELSPUNLIV — Welspun Living Ltd. (Textiles) · RS +40% (cached 2026-07-14)
-CATALYST: India-UK FTA (effective July 15, 2026) cutting UK textile tariffs to near-zero, confirmed June 18, triggered Welspun Living surging ~10%.
-THEME: Broad India textile export re-rating on dual US+UK trade deals; peers KPR Mill, Indo Count, Gokaldas all rallied similarly.
-FUNDAMENTALS: Price-action led rally; underlying FY26 profit fell 21% YoY to ₹104 crore with revenue also down ~8%, ROE a weak 7-11%.
-VERDICT: Mixed — trade tailwind is real but earnings are currently declining.
-CALL: WAIT — stock at 73x PE, earnings still falling, tariff gains unproven yet.
-WHY_CALL: The India-UK and US trade deals are genuine structural positives for this sector, but Welspun's profits cratered in FY26 and the stock now trades at ~73x earnings after a big run. The main risk is that tariff benefits take 2-4 quarters to show in revenue while you're paying a full-recovery price today. Turn bullish if Q1 FY27 results show revenue and margin actually recovering, or if the price pulls back 15-20% to a saner entry.
+### GREAVESCOT — Greaves Cotton Ltd. (Capital Goods) · RS +66% (cached 2026-07-14)
+CATALYST: Board approved ₹331 crore investment in EV arm GEML's rights issue on July 10, 2026, ahead of planned IPO.
+THEME: India EV two-wheeler ramp-up story; peers include Bajaj Auto, TVS Motor — but this is largely stock-specific given GEML IPO angle.
+FUNDAMENTALS: Backed by real earnings — FY26 revenue up 18% to ₹3,437 crore and net profit nearly doubled to ₹107 crore, but consolidated ROE stays weak at ~4.5%.
+VERDICT: Mixed — earnings growing but GEML losses drag profits; valuation at 150x PE is stretched.
+CALL: WAIT — stock priced for perfection; GEML losses and 150x PE are real risks right now. A pullback to calmer levels or clearer GEML IPO timeline would change the view to BUY-WORTHY.
+WHY_CALL: Core engine business is genuinely improving with 18% revenue growth and rising margins. However, GEML is still deeply loss-making and soaks up huge parent capital, capping consolidated profits. At 150x earnings after a 35% single-month run, risk-reward for new buyers is poor; wait for a calmer entry or GEML IPO clarity.
 
 ### LLOYDSENGG — Lloyds Engineering Works Ltd. (Capital Goods) · RS +64% (cached 2026-07-14)
 CATALYST: Board approved ₹1,073 crore acquisition of Steel Infra Solutions (SISCOL) on June 18, 2026, targeting ₹10,000 crore revenue by FY30.
@@ -298,13 +193,13 @@ VERDICT: Mixed — profit accelerating, but revenue growth weak and PE at 76x is
 CALL: WAIT — stock up 110% in a year; valuation price has outrun growth speed.
 WHY_CALL: Profit momentum is genuine and the AI-infrastructure theme is real, but at 76x earnings the price already prices in several years of perfection. The main risk is that revenue growth stays single-digit while the stock demands double-digit. Revisit if the stock corrects 20–25% or next quarter shows revenue growth clearly above 12%.
 
-### TRIVENI — Triveni Engineering & Industries Ltd. (Fast Moving Consumer Goods) · RS +23% (cached 2026-07-14)
-CATALYST: Demerger record date July 22, 2026 announced; shareholders get 1 free TPTL share per 3 held.
-THEME: India ethanol/sugar sector play; peers Balrampur Chini (BALRAMCHIN), Shree Renuka Sugars (RENUKA); partly stock-specific on demerger.
-FUNDAMENTALS: Real earnings story; FY26 full-year net profit up ~10% to Rs 269 crore on 11% revenue growth, but ROE only 10%.
-VERDICT: Mixed — earnings growing but ROE weak; demerger value unlock unproven yet.
-CALL: WAIT — stock up 25% YTD, record date imminent, post-demerger picture unclear.
-WHY_CALL: The demerger is a genuine value-unlock story as the high-margin gearbox business gets its own listing, but you are buying right at the record date with 25% gains already priced in. Post-record-date, the sugar rump trades at lower multiples and sugar margins stay volatile. Wait for the dust to settle after TPTL lists in August; a pullback then would be a much cleaner entry.
+### RATEGAIN — Rategain Travel Technologies Ltd. (Information Technology) · RS +64% (cached 2026-07-14)
+CATALYST: Sojern acquisition completed Nov 2025; Anand Rathi raised target to ₹1,000 (~3 weeks ago), ICICI Securities initiated BUY at ₹1,050.
+THEME: AI-powered travel SaaS re-rating globally; peers MapMyIndia (MAPMYINDIA), Intellicheck — largely stock-specific within niche.
+FUNDAMENTALS: Backed by real revenue growth — revenue doubled YoY in Q3 FY26 to ₹540 crore; profit margins compressed sharply (PAT -53% YoY), ROE a modest 12.8%.
+VERDICT: Mixed — strong revenue, but profit margins are shrinking badly post-acquisition.
+CALL: WAIT — 92% rally from lows, margin recovery still unproven.
+WHY_CALL: Revenue is genuinely growing fast but profits collapsed post-Sojern due to integration costs, making this a show-me story. The stock has already run hard; entry here prices in synergies before they appear. Wait for two clean quarters showing margin recovery back above 15% PAT before adding.
 
 ### SPARC — Sun Pharma Advanced Research Company Ltd. (Healthcare) · RS +62% (cached 2026-07-14)
 CATALYST: SPARC sold its FDA Priority Review Voucher (Sezaby) for $195 million on April 30, 2026, turning a loss-making company profitable overnight.
@@ -322,21 +217,21 @@ VERDICT: Hard news — strong audited earnings beat drove the move.
 CALL: WAIT — stock up ~82% in FY27 YTD; PE at 57x, well above peers' 31x average; great story, stretched price.
 WHY_CALL: The earnings are real and accelerating, but the stock has nearly doubled in months and trades at nearly twice the sector PE. Entry here risks buying into peak excitement before Q1FY27 results. Wait for a 15-20% pullback or post-Q1 results clarity before adding even a starter position.
 
-### AVALON — Avalon Technologies Ltd. (Capital Goods) · RS +61% (cached 2026-07-14)
+### ASTRAMICRO — Astra Microwave Products Ltd. (Capital Goods) · RS +60% (cached 2026-07-14)
+CATALYST: June 10, 2026 board approved demerger of Space/Meteorology into a new listed entity (1:1 share ratio), unlocking pure-play defence value.
+THEME: India defence electronics boom; peers BEL and HAL also re-rated; DAC approved Rs 52,000 cr in defence deals recently.
+FUNDAMENTALS: Real earnings — FY26 net profit up 27% to Rs 193 cr; order book Rs 2,610 cr (2.2x revenue); 46% profit CAGR over 5 years.
+VERDICT: Hard news — demerger approved, strong Q4 results, genuine order book.
+CALL: WAIT — stock at 86x PE near 52-week high, run already large.
+WHY_CALL: The business is genuinely strong — orders, margins, and a value-unlocking demerger are real. But at 86x earnings near an all-time high, most of the good news is already priced in for a starter buy. Wait for a 15-20% pullback or post-demerger price discovery; what would change my mind is a major new radar/EW order or a sharp correction bringing PE below 65x.
+
+### AVALON — Avalon Technologies Ltd. (Capital Goods) · RS +59% (cached 2026-07-14)
 CATALYST: Strong Q4 FY26 results (May 2026) — revenue +46% YoY and net profit +78% YoY full-year, order book hitting ₹2,196 crore record.
 THEME: India EMS manufacturing boom (China+1 tailwind); peers Kaynes Technology, Dixon Technologies also rallying strongly.
 FUNDAMENTALS: Earnings-backed — FY26 revenue ₹1,603 crore (+46% YoY), profit ₹113 crore (+78%), ROCE improved to 20.6%; not pure price action.
 VERDICT: Hard News — real earnings growth and record order book drive the move.
 CALL: WAIT — after doubling in six months, PE ~106x prices in perfection already.
 WHY_CALL: Avalon's growth is genuinely strong and the order book is healthy, but at PE 106x you are paying for several years of flawless execution upfront. The main risk is any margin squeeze or US revenue slowdown — margins already dipped slightly in Q4. Wait for a 15-20% pullback or next quarterly result to confirm the growth trend before adding even a starter position.
-
-### WABAG — Va Tech Wabag Ltd. (Utilities) · RS +61% (cached 2026-07-15)
-CATALYST: Q4FY26 results (revenue +24%, profit +29% YoY) plus Vienna order win on July 1, 2026.
-THEME: Global water infrastructure buildout; peers Enviro Infra Engineers, Ion Exchange also benefiting.
-FUNDAMENTALS: Backed by real earnings and ₹17,200 crore order book; ROE above 15%, net cash balance sheet.
-VERDICT: Hard news — strong earnings, steady international order wins confirm the story.
-CALL: BUY-WORTHY — earnings accelerating, order book visible, balance sheet clean.
-WHY_CALL: Growth is real with 20%+ profit gains and a massive global order pipeline backing it. Main risk is the stock has run hard, so entry at current levels prices in near-perfection. If orders slow or Middle East execution stumbles, you'd add at lower levels, not chase further.
 
 ### RAIN — Rain Industries Ltd (Chemicals) · RS +56% (cached 2026-07-14)
 CATALYST: Hindalco's results flagged higher CPC and CTP prices, triggering a 14% single-day surge in Rain stock recently.
@@ -354,22 +249,6 @@ VERDICT: Mixed — earnings solid, but PE of ~119x prices in years of perfect ex
 CALL: WAIT — valuation stretched at 119x PE after a 100%+ run.
 WHY_CALL: The Guardian-1 deal and strong FY26 growth are genuine, not hype. But at 119x earnings with promoter holding flat and the license lasting only 12 months with no disclosed revenue, price has run well ahead of near-term reality. Watch for a Q1 FY27 earnings beat or a confirmed MoD order from the Guardian-1 programme to justify re-entry.
 
-### QUESS — Quess Corp Ltd. (Services) · RS +55% (cached 2026-07-15)
-CATALYST: Digitide Solutions listed independently after Quess's 3-way demerger completed (April-May 2025), unlocking pure-play staffing value; Indo-Japan GCC corridor deal announced June 23, 2026.
-THEME: India GCC staffing boom benefits focused staffing players; peers Teamlease (TEAMLEASE), SIS Ltd; story is partly stock-specific post-demerger re-rating.
-FUNDAMENTALS: Backed by real improvement — 20% ROE, zero debt, and Q2 FY26 PAT jumped 79% YoY to ₹71 crore on 11% revenue growth.
-VERDICT: Hard news — demerger complete, earnings recovering, GCC demand real.
-CALL: BUY-WORTHY — demerger-driven re-rating with genuine earnings recovery underway.
-WHY_CALL: Post-demerger Quess is a clean, debt-free staffing pure-play with improving returns and a real GCC tailwind. Main risk is that the stock already ran hard from ₹166 lows and IT hiring remains muted. Add more only if Q4 FY26 results (due soon) confirm continued profit growth.
-
-### PNBHOUSING — PNB Housing Finance Ltd. (Financial Services) · RS +30% (cached 2026-07-15)
-CATALYST: Morgan Stanley maintained Overweight with ₹1,250 target (~July 12), reaffirming strong FY26 results beat.
-THEME: India affordable housing finance boom; peers Can Fin Homes (CANFINHOME), LIC Housing (LICHSGFIN) riding same tailwind.
-FUNDAMENTALS: Earnings-backed — FY26 PAT up 18% to ₹2,291 crore, loan book +16%, GNPA improved to 0.93%.
-VERDICT: Hard news — strong Q4 beat, broker upgrade, management guidance raise all concrete.
-CALL: BUY-WORTHY — good earnings growth, sane P/E ~11, entry not stretched.
-WHY_CALL: Profit growing steadily, asset quality is best-ever, and stock trades cheaply at ~11x earnings for 18-20% guided growth. Main risk: NIM is under mild pressure and promoter holding has quietly fallen 4.5% over three years. Change of mind if Q1 FY27 shows margin compression worse than guided or credit costs flip positive.
-
 ### OFSS — Oracle Financial Services Software Ltd. (Information Technology) · RS +54% (cached 2026-07-14)
 CATALYST: Q4 FY26 results on April 22, 2026 showed revenue up 20% and net profit up 31% year-on-year, blowing past estimates.
 THEME: Global banking software digitalisation and AI adoption; peers KPIT Technologies, Newgen Software — mostly stock-specific given OFSS's niche.
@@ -377,6 +256,14 @@ FUNDAMENTALS: Earnings-backed — Q4 FY26 net profit ₹842 crore, +31% YoY; ROE
 VERDICT: Hard news — strong results with real margin expansion to 51%, not hype.
 CALL: WAIT — stock up ~50% YTD, PE near 38x, Q1 FY27 results due July 22.
 WHY_CALL: The business is genuinely strong with accelerating profits and a sticky banking-software moat. However, the stock has already priced in much of the good news, running 50% in months, and Q1 results drop on July 22 — a miss could hurt badly. Wait for the results, then reassess; a 10–15% post-result pullback would make this clearly BUY-WORTHY.
+
+### THYROCARE — Thyrocare Technologies Ltd. (Healthcare) · RS +39%
+CATALYST: Strong Q4FY26 results (May 2026) — PAT up 128% YoY and FY26 full-year profit up ~79% YoY.
+THEME: India diagnostics sector re-rating; peers Dr Lal PathLabs, Metropolis also rallying together.
+FUNDAMENTALS: Backed by real earnings — FY26 revenue grew 21% and PAT surged 79% to ₹162.85 crore.
+VERDICT: Hard news — profit growth is real, multi-quarter acceleration confirmed.
+CALL: WAIT — stock up 39% already; promoters pledged 100%, holding falling.
+WHY_CALL: Earnings are genuinely strong and accelerating, so the story is real. But 100% promoter pledge and a 10%+ drop in promoter holding over three years are serious red flags for a long-term holder. Wait for a 15–20% pullback or clarity on promoter stake situation before adding.
 
 ### CAPLIPOINT — Caplin Point Laboratories Ltd. (Healthcare) · RS +54% (cached 2026-07-15)
 CATALYST: Q4 FY26 results (May 14, 2026) showed record quarterly revenue ₹600 crore and net profit up ~19% YoY, reigniting the rally.
@@ -386,21 +273,29 @@ VERDICT: Hard news — record results, steady ANDA approvals, zero debt, promote
 CALL: WAIT — stock near all-time high, up ~75% in 3 months, stretched.
 WHY_CALL: The business is genuinely excellent with steady compounding earnings and no debt. But a 75% move in 3 months prices in a lot of good news, and fair value estimates suggest a ~50% premium to intrinsic value. Wait for a 15-20% pullback or consolidation; re-entry near ₹2,100-2,200 would make the risk-reward compelling for a starter position.
 
-### GODREJIND — Godrej Industries Ltd. (Diversified) · RS +53% (cached 2026-07-15)
-CATALYST: April 23, 2026 — Godrej Group unveiled Rs 5,000–7,000 crore investment plan and Rs 5 lakh crore market-cap ambition by 2031.
-THEME: Conglomerate re-rating on new leadership and listing plans; peers GODREJPROP, GODREJCP also benefiting.
-FUNDAMENTALS: Mostly a valuation re-rating story; group claims 20%-plus CAGR in sales/profit, but holding-company ROE is a weak 7.9% over 3 years.
-VERDICT: Mixed — strong narrative, weak standalone returns, elevated price.
-CALL: WAIT — run is steep; holding-company discount and low ROE unresolved.
-WHY_CALL: The group story is genuinely exciting with new listings and 20%-plus growth targets. But at P/E 37 after a 53% run, you are paying full price for promises, not proven earnings. Wait for a 15–20% pullback or one quarter of strong consolidated results before adding.
+### DIACABS — Diamond Power Infrastructure Ltd. (Capital Goods) · RS +52% (cached 2026-07-14)
+CATALYST: ₹435.71 crore data center cable order received July 5, 2026, for Hyderabad projects.
+THEME: India power infra buildout (data centers, renewables, T&D); peers include KEI Industries, Polycab.
+FUNDAMENTALS: Real earnings behind it — Q3 FY26 net profit jumped ~8x to ₹49.72 crore year-on-year.
+VERDICT: Hard news — large order win plus genuine profit turnaround confirmed.
+CALL: WAIT — debt jumped massively; QIP dilution risk near-term.
+WHY_CALL: Earnings are genuinely accelerating and orders are real, but net debt surged from ₹433 crore to ₹2,426 crore in one year, raising serious balance sheet risk. The QIP of up to ₹2,000 crore will dilute shareholders, and the stock is already up sharply. Wait for QIP pricing clarity and one more clean quarterly result before adding; a pull-back to pre-order levels with debt stabilising would make this BUY-WORTHY.
 
-### WEWORK — WeWork India Management Ltd. (Services) · RS +52% (cached 2026-07-15)
-CATALYST: Jefferies issued a Buy rating with ₹900 target, citing strong flex-office demand and AI-driven enterprise workspace growth (June–July 2025).
-THEME: India flex-workspace boom driven by enterprise and AI-firm demand; peers include Embassy Office Parks (EMBASSY) and Awfis Space Solutions (AWFIS).
-FUNDAMENTALS: Backed by real earnings — Q4 FY26 revenue up 29% YoY to ₹696 crore, but full-year net profit fell 42% due to expansion costs.
-VERDICT: Mixed — strong revenue growth, but profit shrank and promoters pledged 41% of holding.
-CALL: WAIT — post-run valuation at 130x P/E prices in perfection already.
-WHY_CALL: Revenue is genuinely growing fast (25%+ annually) and the flex-office story is real with new leases and capacity additions. The main risk is the stretched valuation (P/E ~130x), falling full-year profit, and heavy promoter pledge (41.4%), which add meaningful downside if growth stumbles. Wait for a pullback toward fair value or one clean quarter showing profit growth matching revenue growth before adding.
+### SHILPAMED — Shilpa Medicare Ltd. (Healthcare) · RS +51%
+CATALYST: Shilpa Biologicals signed a nivolumab biosimilar Europe deal with Finland's Orion on June 30, 2026.
+THEME: Indian oncology biosimilar push is real; peers like Biocon (BIOCON) and Natco Pharma (NATCOPHARM) play this theme too.
+FUNDAMENTALS: Backed by real earnings — Q4 FY26 net profit surged 643% to ₹107 crore; full-year profit tripled to ₹243 crore.
+VERDICT: Mixed — strong earnings turnaround, but biosimilar deal is multi-year with undisclosed financials.
+CALL: WAIT — stock near 52-week high; biosimilar revenue is years away.
+WHY_CALL: Profits are genuinely recovering fast and the Orion deal is strategically meaningful for long-term growth. However, the stock has run hard, PE is ~50x, and the biosimilar won't add real cash for 3–5 years. Wait for a pullback or a concrete EMA filing milestone to justify adding at these levels.
+
+### SUMICHEM — Sumitomo Chemical India Ltd. (Chemicals) · RS +26% · 🔶 breakout
+CATALYST: Parent Sumitomo Chemical Japan announced a Samsung Electro-Mechanics semiconductor JV on July 3, 2025, sending SUMICHEM up ~10%.
+THEME: Indian agrochemical sector recovery (peers PI Industries, UPL) plus speculative AI-semiconductor halo from Japanese parent.
+FUNDAMENTALS: Backed by real earnings — FY26 record PAT of ₹543 crore, up 7%, but only 3.8% five-year sales CAGR; debt-free.
+VERDICT: Mixed — earnings real but JV benefit is parent-level, not Indian subsidiary.
+CALL: WAIT — valuation at 41x PE stretched; JV revenue impact on India entity unclear until FY28 at earliest; wait for Q1 FY27 results on July 27 to confirm earnings momentum before adding.
+WHY_CALL: The agrochemical business is real and profitable, but Q1 FY27 results on July 27 will reveal if volume growth is actually picking up. The semiconductor JV belongs to a Korean subsidiary of the Japanese parent — India-listed SUMICHEM gets zero direct revenue from it. Buy only if Q1 numbers show revenue acceleration above 10% and stock pulls back closer to ₹400–420.
 
 ### AEQUS — Aequs Ltd. (Capital Goods) · RS +51% (cached 2026-07-14)
 CATALYST: Two brokerages initiated Buy coverage on July 8, 2026, with targets of ₹320 and ₹444, sparking an 11% two-day surge.
@@ -410,13 +305,109 @@ VERDICT: Mixed — real revenue growth but losses deepening, valuation extreme.
 CALL: WAIT — parabolic run, loss-making, profitability still two years away.
 WHY_CALL: Revenue growth is real at 33%, and the $814M order book gives long-term credibility. Main risk is valuation (PE of 335 on losses) and the company won't turn profitable until FY28 at best. Add on a meaningful dip or after first profit quarter; CFO resignation adds near-term uncertainty too.
 
-### REFEX — Refex Industries Ltd. (Utilities) · RS +45% (cached 2026-07-15)
-CATALYST: Q4 FY26 results (May 26, 2026) showed 88% profit jump and promoter bought shares open-market in late June.
-THEME: Ash handling + wind energy buildout in India; peers include Suzlon Energy, KP Energy.
-FUNDAMENTALS: Backed by real earnings — FY26 PAT up 34% to ₹247 Cr, order book ₹3,360 Cr combined.
-VERDICT: Mixed — strong growth but 41% promoter pledge and rising debtor days are real risks.
-CALL: WAIT — stock up sharply; pledge overhang and run-up need to cool first.
-WHY_CALL: Earnings are genuinely strong and the order book is large, so this is not a story to ignore. The big risk is that promoters have pledged over 41% of their shares, which can force sudden selling if the price drops. Wait for either a 15-20% pullback or pledge levels falling before adding even a starter position.
+### QUESS — Quess Corp Ltd. (Services) · RS +51% (cached 2026-07-15)
+CATALYST: Digitide Solutions listed independently after Quess's 3-way demerger completed (April-May 2025), unlocking pure-play staffing value; Indo-Japan GCC corridor deal announced June 23, 2026.
+THEME: India GCC staffing boom benefits focused staffing players; peers Teamlease (TEAMLEASE), SIS Ltd; story is partly stock-specific post-demerger re-rating.
+FUNDAMENTALS: Backed by real improvement — 20% ROE, zero debt, and Q2 FY26 PAT jumped 79% YoY to ₹71 crore on 11% revenue growth.
+VERDICT: Hard news — demerger complete, earnings recovering, GCC demand real.
+CALL: BUY-WORTHY — demerger-driven re-rating with genuine earnings recovery underway.
+WHY_CALL: Post-demerger Quess is a clean, debt-free staffing pure-play with improving returns and a real GCC tailwind. Main risk is that the stock already ran hard from ₹166 lows and IT hiring remains muted. Add more only if Q4 FY26 results (due soon) confirm continued profit growth.
+
+### THANGAMAYL — Thangamayil Jewellery Ltd. (Consumer Durables) · RS +51%
+CATALYST: ICRA reaffirmed ratings (June 2026); FY26 revenue surged 73% to ₹8,502 crore with OPM expanding to 6.6%.
+THEME: Organised jewellery sector re-rating; peers Kalyan Jewellers (KALYANKJIL), Senco Gold (SENCO) also rallying strongly.
+FUNDAMENTALS: Backed by real earnings — FY26 PAT up sharply, same-store sales grew 38%, Chennai expansion adding 20% revenue.
+VERDICT: Mixed — strong FY26 beat, but Q1FY27 profit fell 19% and P/E near 50x.
+CALL: WAIT — stock up 240% from 52-week low, Q1FY27 margins slipping, valuation stretched near all-time high; wait for a meaningful pullback or next clean quarterly beat before adding.
+WHY_CALL: The underlying story is real — store expansion, brand traction, and sector tailwinds are genuine. But the stock has already priced in a lot of good news and Q1FY27 showed profit dropping 19% on volume pressure. A 15–20% correction or a clean Q2FY27 earnings beat would make this a BUY-WORTHY entry.
+
+### IPCALAB — Ipca Laboratories Ltd. (Healthcare) · RS +26% · 🔶 breakout
+CATALYST: June 26 board approved Krebs Biochemicals merger; June 12 global biologics licensing deal with BRL signed.
+THEME: Indian pharma export recovery plus domestic formulation growth; peers Sun Pharma, Torrent Pharma also riding this wave.
+FUNDAMENTALS: Earnings-backed — FY26 consolidated profit jumped 55%, with FY27 guidance of 12-13% revenue growth and 22-23% margins.
+VERDICT: Hard news — real Q4 results, merger deal, licensing deal, and management guidance all confirmed.
+CALL: BUY-WORTHY — margins accelerating, debt low, clear growth roadmap ahead.
+WHY_CALL: Profit grew 55% in FY26, margins are rising, and FY27 guidance is credible with Unichem synergies kicking in. Main risk is the stock already ran hard and trades at 36x trailing earnings, leaving little room for disappointment. A Q4 sequential margin dip is worth watching; if FY27 Q1 margins slip below 21%, revisit.
+
+### MARKSANS — Marksans Pharma Ltd. (Healthcare) · RS +50%
+CATALYST: Q4 FY26 results on May 26 showed 64% profit surge and record revenue; stock jumped ~16% that day.
+THEME: Stock-specific; US OTC pharma turnaround plus European expansion (peers: Ipca Labs, Glenmark).
+FUNDAMENTALS: Backed by real earnings — FY26 PAT ₹420 cr, North America revenue up 24% YoY, debt-free, ROE ~17%.
+VERDICT: Hard news — strong quarterly earnings beat with clear margin expansion.
+CALL: BUY-WORTHY — earnings-backed, debt-free, 15-20% FY27 growth guided.
+WHY_CALL: Real profit growth, clean balance sheet, and Europe acquisitions add future revenue legs. Main risk: stock price has run hard and trades ~36x PE, so growth must keep accelerating. If FY27 Q1/Q2 show profit growth slowing below 15%, re-evaluate.
+
+### UTLSOLAR — Fujiyama Power Systems Ltd. (Capital Goods) · RS +50% (cached 2026-07-14)
+CATALYST: Board approved ₹350 Cr, 1.2 GW TOPCon solar cell plant (May 22) plus Q4 FY26 profit up 107% YoY.
+THEME: India rooftop solar boom driven by PM Surya Ghar subsidies and ALMM-II DCR mandate; peers Waaree, Premier Energies.
+FUNDAMENTALS: Earnings-backed — Q4 FY26 sales grew 88% YoY to ₹901 Cr with ROE of 36% and net debt falling.
+VERDICT: Hard news — strong results plus real capacity expansion announcement.
+CALL: BUY-WORTHY — earnings accelerating, policy tailwind real, valuation not stretched at PE ~31.
+WHY_CALL: Profit is doubling yearly with genuine government-backed demand and smart backward integration into DCR cells. Main risks are working capital stretch (inventory days rose to 123), BIS/customs notices, and TOPCon capex execution. If quarterly growth slows or DCR policy reverses, revisit the thesis.
+
+### ICIL — Indo Count Industries Ltd. (Textiles) · RS +49%
+CATALYST: India-UK trade deal (CETA, effective July 15) eliminating 12% textile tariffs, plus Motilal Oswal BUY initiation with ₹550 target on June 22.
+THEME: Broad Indian textile export re-rating on US/UK tariff relief; peers include Welspun Living (WELSPUNLIV) and Gokaldas Exports (GOKALDAS).
+FUNDAMENTALS: Partly backed by real improvement — Q4 FY26 EBITDA grew 21.5% to ₹116 crore — but 3-year ROE is a weak 11% and profits fell 27% in FY25.
+VERDICT: Mixed — real policy catalyst, but profits still recovering and valuation at 54x PE is stretched.
+CALL: WAIT — run is steep, valuation far ahead of actual earnings recovery.
+WHY_CALL: The UK FTA and US tariff normalisation are genuine tailwinds, and management guides record FY27 volumes (105–110 million metres). But at 54x PE with profits still climbing out of a deep hole and the stock up ~91% in a year, you are paying tomorrow's earnings today. Enter on a pullback to the ₹360–380 zone, or wait for Q1 FY27 results confirming margin expansion above 12%.
+
+### ACMESOLAR — ACME Solar Holdings Ltd. (Power) · RS +34%
+CATALYST: Q4 FY26 results (May 19, 2026) showed revenue up 59% and profit nearly doubling to ₹498 crore.
+THEME: India's renewable energy buildout (FDRE, BESS, hybrid) — peers include Adani Green (ADANIGREEN), Greenko (unlisted).
+FUNDAMENTALS: Backed by real earnings — FY26 PAT grew ~99% YoY, revenue ₹2,507 crore, 1,401 MW new project wins added.
+VERDICT: Hard news — strong earnings, order wins, and capacity commissioning all confirmed.
+CALL: BUY-WORTHY — earnings are real, growth is accelerating, entry still below 52-week high range.
+WHY_CALL: Revenue nearly doubled over two years with 90%+ EBITDA margins and a growing 5 GW construction pipeline. Main risk is high debt load; rising interest costs squeezed net margins despite revenue surge. A Q1 FY27 results miss or debt spike would make you reassess.
+
+### ACUTAAS — Acutaas Chemicals Ltd. (Healthcare) · RS +48% (cached 2026-07-15)
+CATALYST: Record FY26 results (May 16, 2026) — revenue +33%, profit up 124% year-on-year drove re-rating.
+THEME: India specialty/pharma-chem wave (peers: Divi's Labs, Neogen Chemicals); CDMO + battery + semiconductor pivot adds legs.
+FUNDAMENTALS: Backed by real earnings — FY26 profit grew 124% to ₹356 crore; FY27 guidance targets 25-28% more growth.
+VERDICT: Mixed — strong earnings but stock now trades 55% above analyst consensus target of ₹2,529.
+CALL: WAIT — price has run well past fundamentals' fair value today.
+WHY_CALL: Growth is genuine and accelerating, but at PE 78 the stock already prices in years of perfection. Main risk is any earnings miss or margin slip crushing the valuation. Wait for a 15-20% pullback or next quarterly result to confirm FY27 momentum before adding.
+
+### SFL — Sheela Foam Ltd. (Consumer Durables) · RS +48% (cached 2026-07-14)
+CATALYST: Q4 FY26 results on May 15, 2026 — PAT up ~600% YoY, core EBITDA up 90%, first-ever dividend declared.
+THEME: India organized mattress market re-rating; peers include Duroflex (unlisted) and Furlenco; partly stock-specific on Kurlon turnaround.
+FUNDAMENTALS: Backed by real earnings — FY26 PAT grew 78.5% to ₹161 crore on 11% revenue growth, with EBITDA margins expanding 400 bps.
+VERDICT: Hard news — strong earnings beat, not just price action.
+CALL: WAIT — stock already up 51% post-results; entry is stretched now.
+WHY_CALL: The earnings recovery is real and Kurlon integration is finally paying off. But at ~55x PE with ROE still only ~5%, you are paying a lot for a story still maturing. Wait for a pullback toward ₹650–680 or one more quarter confirming margin expansion before adding.
+
+### WABAG — Va Tech Wabag Ltd. (Utilities) · RS +47% (cached 2026-07-15)
+CATALYST: Q4FY26 results (revenue +24%, profit +29% YoY) plus Vienna order win on July 1, 2026.
+THEME: Global water infrastructure buildout; peers Enviro Infra Engineers, Ion Exchange also benefiting.
+FUNDAMENTALS: Backed by real earnings and ₹17,200 crore order book; ROE above 15%, net cash balance sheet.
+VERDICT: Hard news — strong earnings, steady international order wins confirm the story.
+CALL: BUY-WORTHY — earnings accelerating, order book visible, balance sheet clean.
+WHY_CALL: Growth is real with 20%+ profit gains and a massive global order pipeline backing it. Main risk is the stock has run hard, so entry at current levels prices in near-perfection. If orders slow or Middle East execution stumbles, you'd add at lower levels, not chase further.
+
+### GODREJIND — Godrej Industries Ltd. (Diversified) · RS +45% (cached 2026-07-15)
+CATALYST: April 23, 2026 — Godrej Group unveiled Rs 5,000–7,000 crore investment plan and Rs 5 lakh crore market-cap ambition by 2031.
+THEME: Conglomerate re-rating on new leadership and listing plans; peers GODREJPROP, GODREJCP also benefiting.
+FUNDAMENTALS: Mostly a valuation re-rating story; group claims 20%-plus CAGR in sales/profit, but holding-company ROE is a weak 7.9% over 3 years.
+VERDICT: Mixed — strong narrative, weak standalone returns, elevated price.
+CALL: WAIT — run is steep; holding-company discount and low ROE unresolved.
+WHY_CALL: The group story is genuinely exciting with new listings and 20%-plus growth targets. But at P/E 37 after a 53% run, you are paying full price for promises, not proven earnings. Wait for a 15–20% pullback or one quarter of strong consolidated results before adding.
+
+### AEGISVOPAK — Aegis Vopak Terminals Ltd. (Oil Gas & Consumable Fuels) · RS +42% · 🔶 breakout
+CATALYST: FY26 net profit surged 52% to ₹342 Cr (results May 28, 2026); NSE sought volume-move clarification July 6, 2026.
+THEME: India LPG/liquid storage infrastructure buildout; peers AEGISLOG, GUJARATGAS benefit similarly — not purely stock-specific.
+FUNDAMENTALS: Earnings-backed — FY26 revenue grew 17% and net profit grew 52%, with a fat 74% EBITDA margin.
+VERDICT: Mixed — strong earnings but PE of ~100x prices in years of growth already.
+CALL: WAIT — strong story, but valuation far outruns near-term earnings growth.
+WHY_CALL: Profit growth is real and the $1.2B capex plan is exciting for long-term holders. The risk is a PE of ~100x leaves zero room for any earnings miss or macro slowdown. Wait for a pullback toward ₹220–240 before adding, or for FY27 earnings to close the valuation gap.
+
+### WEWORK — WeWork India Management Ltd. (Services) · RS +42% (cached 2026-07-15)
+CATALYST: Jefferies issued a Buy rating with ₹900 target, citing strong flex-office demand and AI-driven enterprise workspace growth (June–July 2025).
+THEME: India flex-workspace boom driven by enterprise and AI-firm demand; peers include Embassy Office Parks (EMBASSY) and Awfis Space Solutions (AWFIS).
+FUNDAMENTALS: Backed by real earnings — Q4 FY26 revenue up 29% YoY to ₹696 crore, but full-year net profit fell 42% due to expansion costs.
+VERDICT: Mixed — strong revenue growth, but profit shrank and promoters pledged 41% of holding.
+CALL: WAIT — post-run valuation at 130x P/E prices in perfection already.
+WHY_CALL: Revenue is genuinely growing fast (25%+ annually) and the flex-office story is real with new leases and capacity additions. The main risk is the stretched valuation (P/E ~130x), falling full-year profit, and heavy promoter pledge (41.4%), which add meaningful downside if growth stumbles. Wait for a pullback toward fair value or one clean quarter showing profit growth matching revenue growth before adding.
 
 ### ARVIND — Arvind Ltd. (Textiles) · RS +40% (cached 2026-07-15)
 CATALYST: India-US trade deal optimism + Arvind buying US nonwovens firm Dalco (~$130M deal, May–June 2026) boosted exports outlook.
@@ -426,13 +417,6 @@ VERDICT: Mixed — earnings growing but ROE weak, debt climbing, valuation now a
 CALL: WAIT — stock up 74% YTD, PE above 3-year average, entry stretched.
 WHY_CALL: The textile export story is real and order visibility is genuinely improving with global retailers. But the stock has already priced in a lot — PE is above its own 3-year average and the Dalco acquisition adds fresh debt. Wait for either a 15–20% pullback or one more quarter confirming accelerating margins before adding.
 
-### ALKYLAMINE — Alkyl Amines Chemicals Ltd. (Chemicals) · RS +36% (cached 2026-07-15)
-CATALYST: July 3, 2026 AGM — govt approved anti-dumping duty on acetonitrile imports from China, protecting pricing.
-THEME: Indian specialty chemicals recovery; peers Balaji Amines (BALAMINES), Amines & Plasticizers (AMINES) face same cycle.
-FUNDAMENTALS: Partly earnings-backed — FY26 revenue flat, only 4.3% five-year sales growth, ROE just 12.8%.
-VERDICT: Mixed — real catalyst but weak recent earnings and soft growth numbers.
-CALL: WAIT — anti-dumping duty helps, but growth too sluggish to justify post-run entry now. FY27 results confirming actual margin recovery, not just duty approval, would make this BUY-WORTHY. Main risk is duty benefit delayed or partially offset by methylamines oversupply. Watch Q1FY27 results (August 14) for confirmation.
-
 ### PWL — Physicswallah Ltd. (Consumer Services) · RS +35% (cached 2026-07-15)
 CATALYST: PWL exited direct student lending (June 2026), partnering with NBFCs instead; stock surged ~17% on the news.
 THEME: India affordable edtech boom; peers include Byju's (unlisted) and Career Point (CAREERPOI); story is broadly stock-specific given PWL's unique scale.
@@ -441,7 +425,14 @@ VERDICT: Mixed — strong revenue growth but profit-positive only on EBITDA, not
 CALL: WAIT — 35% run on still-loss-making stock; entry overextended near 100-day high.
 WHY_CALL: Revenue acceleration and loss narrowing are genuine and encouraging for long-term buyers. But the stock is near its all-time high with no net profit yet and trades at 9x book — too much priced in right now. Wait for a pullback to the ₹115–125 zone or a clean profitable quarter before adding.
 
-### BORORENEW — Borosil Renewables Ltd. (Capital Goods) · RS +34% (cached 2026-07-15)
+### ALKYLAMINE — Alkyl Amines Chemicals Ltd. (Chemicals) · RS +32% (cached 2026-07-15)
+CATALYST: July 3, 2026 AGM — govt approved anti-dumping duty on acetonitrile imports from China, protecting pricing.
+THEME: Indian specialty chemicals recovery; peers Balaji Amines (BALAMINES), Amines & Plasticizers (AMINES) face same cycle.
+FUNDAMENTALS: Partly earnings-backed — FY26 revenue flat, only 4.3% five-year sales growth, ROE just 12.8%.
+VERDICT: Mixed — real catalyst but weak recent earnings and soft growth numbers.
+CALL: WAIT — anti-dumping duty helps, but growth too sluggish to justify post-run entry now. FY27 results confirming actual margin recovery, not just duty approval, would make this BUY-WORTHY. Main risk is duty benefit delayed or partially offset by methylamines oversupply. Watch Q1FY27 results (August 14) for confirmation.
+
+### BORORENEW — Borosil Renewables Ltd. (Capital Goods) · RS +31% (cached 2026-07-15)
 CATALYST: India imposed anti-dumping duties on Chinese solar glass (Dec 2024), lifting prices 29% and triggering record FY26 revenue announced May 2026.
 THEME: India solar glass localisation play; peers include Triveni Renewables and Vishakha Glass; strong policy tailwind drives the whole domestic segment.
 FUNDAMENTALS: Backed by hard earnings — FY26 revenue up 38% and EBITDA up 172% year-on-year to Rs 492 crore, with margins doubling to 32%.
@@ -449,7 +440,15 @@ VERDICT: Hard news — anti-dumping duty is a real, government-imposed structura
 CALL: BUY-WORTHY — strong earnings revival, real policy catalyst, expansion funded and on track.
 WHY_CALL: The earnings turnaround is genuine — losses reversed to big profits on a durable duty shield, not just sentiment. The main risk is duty removal or dilution if solar module makers lobby hard against it. What would change the view: DGTR reversing the duty, or Q1 FY27 results (due July 16) showing margin compression from rising LNG costs.
 
-### IKS — Inventurus Knowledge Solutions (Information Technology) · RS +26% (cached 2026-07-15)
+### IFBIND — IFB Industries Ltd. (Consumer Durables) · RS +27% (cached 2026-07-14)
+CATALYST: Q4 FY26 results (June 10, 2026 investor call) showed PAT up 78% QoQ and EBITDA up 34%, sparking the breakout.
+THEME: India consumer durables upcycle (summer AC/washing machine demand); peers Voltas, Blue Star.
+FUNDAMENTALS: Backed by real earnings recovery; Q4 FY26 revenue grew 11% YoY to ₹1,456 crore with 5-year profit CAGR of ~19%.
+VERDICT: Hard news — strong Q4 earnings recovery with accelerating margins confirmed.
+CALL: WAIT — Q1 FY27 results due July 28; entry now adds event risk.
+WHY_CALL: Earnings are genuinely recovering and the story is real, not just price action. However, stock has run hard into the results window — Q1 FY27 numbers drop July 28, just two weeks away, creating binary risk at an extended price. Wait for post-results pullback or confirmation; if Q1 FY27 also shows double-digit profit growth, this becomes BUY-WORTHY at that dip.
+
+### IKS — Inventurus Knowledge Solutions (Information Technology) · RS +23% (cached 2026-07-15)
 CATALYST: IKS completed $557M acquisition of TruBridge on July 9, 2026, expanding into US rural hospital RCM.
 THEME: US healthcare IT outsourcing and AI-driven RCM; stock-specific scale-up, peers Allscripts/Netsmart not listed India.
 FUNDAMENTALS: Backed by real earnings — revenue grew 24% and profit jumped 41% year-on-year in Q3 FY26.
@@ -457,7 +456,7 @@ VERDICT: Hard news — major acquisition closed with strong underlying profit gr
 CALL: WAIT — post-$557M deal, debt load is large; let integration play out before adding.
 WHY_CALL: Earnings are genuinely strong and the TruBridge deal meaningfully expands IKS's US hospital footprint. However, the company just took on over $575M in acquisition debt (corporate guarantee $603M), which is a big new risk for a ~₹32,000Cr company. Wait for one full post-acquisition quarterly result to see if margins hold; a clean Q1 FY27 result with stable debt servicing would be the trigger to buy.
 
-### AETHER — Aether Industries Ltd. (Chemicals) · RS +23% (cached 2026-07-15)
+### AETHER — Aether Industries Ltd. (Chemicals) · RS +21% (cached 2026-07-15)
 CATALYST: Site 5 (GIDC Panoli) commercial operations began June 26, 2026, adding fresh capacity.
 THEME: India specialty chemicals upcycle (peers: Tatva Chintan, Neogen Chemicals); partly stock-specific CRAMS growth.
 FUNDAMENTALS: Earnings-backed — FY26 full-year sales up 38%, profit up 39% to ₹219 crore; Site 5 adds next leg.
@@ -473,23 +472,7 @@ VERDICT: Mixed — revenue strong but profit slipping; ROE a low 5%.
 CALL: WAIT — stock has run hard; profit trend now weakening.
 WHY_CALL: The big revenue jump (62% Q4 FY26) is largely acquisition-inflated, not organic magic. Profit is actually falling now, ROE sits at just 5%, and the stock already surged 44% in a year. Wait for either a price pullback to digest gains or two quarters of clean profit recovery before adding.
 
-### ACUTAAS — Acutaas Chemicals Ltd. (Healthcare) · RS +53% (cached 2026-07-15)
-CATALYST: Record FY26 results (May 16, 2026) — revenue +33%, profit up 124% year-on-year drove re-rating.
-THEME: India specialty/pharma-chem wave (peers: Divi's Labs, Neogen Chemicals); CDMO + battery + semiconductor pivot adds legs.
-FUNDAMENTALS: Backed by real earnings — FY26 profit grew 124% to ₹356 crore; FY27 guidance targets 25-28% more growth.
-VERDICT: Mixed — strong earnings but stock now trades 55% above analyst consensus target of ₹2,529.
-CALL: WAIT — price has run well past fundamentals' fair value today.
-WHY_CALL: Growth is genuine and accelerating, but at PE 78 the stock already prices in years of perfection. Main risk is any earnings miss or margin slip crushing the valuation. Wait for a 15-20% pullback or next quarterly result to confirm FY27 momentum before adding.
-
-### DIACABS — Diamond Power Infrastructure L (Capital Goods) · RS +52% (cached 2026-07-14)
-CATALYST: ₹435.71 crore data center cable order received July 5, 2026, for Hyderabad projects.
-THEME: India power infra buildout (data centers, renewables, T&D); peers include KEI Industries, Polycab.
-FUNDAMENTALS: Real earnings behind it — Q3 FY26 net profit jumped ~8x to ₹49.72 crore year-on-year.
-VERDICT: Hard news — large order win plus genuine profit turnaround confirmed.
-CALL: WAIT — debt jumped massively; QIP dilution risk near-term.
-WHY_CALL: Earnings are genuinely accelerating and orders are real, but net debt surged from ₹433 crore to ₹2,426 crore in one year, raising serious balance sheet risk. The QIP of up to ₹2,000 crore will dilute shareholders, and the stock is already up sharply. Wait for QIP pricing clarity and one more clean quarterly result before adding; a pull-back to pre-order levels with debt stabilising would make this BUY-WORTHY.
-
-### BLUEJET — Blue Jet Healthcare Ltd. (Healthcare) · RS +49% (cached 2026-07-15)
+### BLUEJET — Blue Jet Healthcare Ltd. (Healthcare) · RS +45% (cached 2026-07-15)
 CATALYST: Rs 800 crore QIP allotted July 9-10, 2026, attracting ICICI Prudential MF and other big institutions.
 THEME: Indian pharma CDMO and contrast media intermediates boom; peers include Divi's Labs, Neuland Labs.
 FUNDAMENTALS: Revenue fell 40% YoY in Q3 FY26 and PAT dropped 41% over nine months; recovery not yet proven.
@@ -497,166 +480,160 @@ VERDICT: Mixed — QIP is real but earnings are sharply deteriorating right now.
 CALL: WAIT — stock has run hard on liquidity news, not earnings recovery.
 WHY_CALL: The QIP brings strong institutional validation and balance sheet muscle for Vizag expansion, which is genuinely positive. However, sales and profits have fallen sharply, the stock is up nearly 90% from its March lows, and current price is above some analyst fair-value estimates. Wait for one quarter of clear revenue recovery before adding; a confirmed earnings upturn would change this to BUY-WORTHY.
 
-### SAREGAMA — Saregama India Ltd (Media Entertainment & Publication) · RS +46% (cached 2026-07-15)
-CATALYST: Q4 FY26 results (May 14, 2026) showed revenue +19% and net profit +25% YoY, igniting the rally.
-THEME: Indian music IP monetization boom; peers Tips Music (TIPSMUSIC), Nazara Technologies (NAZARA); largely stock-specific.
-FUNDAMENTALS: Backed by real earnings — Q4 EBITDA up 31% YoY — but full-year sales actually fell 16%, so recovery is uneven.
-VERDICT: Mixed — strong quarter but annual sales declined; ROE a modest 13%.
-CALL: WAIT — stock near 52-week high, PE ~42x, annual revenue still shrinking; wait for one more clean quarter confirming the recovery trend before adding even a starter position.
-WHY_CALL: The Q4 bounce is real and music licensing growth at ~17-19% is genuinely exciting. But full-year FY26 revenue dropped 16% and ROE sits at just ~13%, meaning the ₹470+ price already prices in a lot of recovery hope. What would change the mind: a strong Q1 FY27 result confirming the Q4 rebound was not a one-off, or a meaningful price pullback to the ₹390-410 range.
-
-### SUMICHEM — Sumitomo Chemical India Ltd. (Chemicals) · RS +26%
-Here is the analysis in the requested format:
-
----
-
- CATALYST: Q1 FY26 results board meeting on August 4, 2025 — near-term earnings event. 
-
- THEME: Indian agrochemicals recovery — domestic volume gains, margin expansion, new product launches. 
-
- FUNDAMENTALS: FY26 full-year net profit +7.4% to ₹543 Cr; sales grew just 2.85% — growth slowing. 
-
- VERDICT: Mixed — Q1 FY26 strong (+41% PAT) but Q3 missed estimates by 20%; results volatile. 
-
- CALL: WAIT — debt-free, profitable, but 5-year sales growth weak at 3.81%, stock at 7.9x book value. 
-
-WHY_CALL:  The most recent quarter (Q1 FY26) was genuinely strong — profit up 41% and sales up 26% year-on-year , showing real earnings momentum.  However, Q3 just missed forecasts badly — net profit and revenue missed by 20.8% and 7.8% , meaning earnings quality is inconsistent and results risk is real with a board meeting imminent on August 4.  With the stock at 7.9x book value and only 3.81% five-year sales growth , valuation is not cheap enough to absorb another miss — wait for the August 4 results to confirm if Q1's strength is a true trend before adding.
-
 ### TSFINV — TSF Investments Ltd. (Financial Services) · RS +24%
-Here is the full picture, synthesized from screener.in, Trendlyne, Tickertape, Zerodha, and other sources:
+Here is the analysis based on all available data:
 
 ---
 
-**Key data points used:**
--  The company was formerly known as Sundaram Finance Holdings Limited and changed its name to TSF Investments Limited in October 2025. 
--  SFHL functions as an exempted Core Investment Company (CIC), holding investments in 12 group companies; total net-worth of portfolio companies stands at ~₹13,875 Cr as on FY25. 
--  Stock P/E is 22.3, ROCE 3.38%, ROE 8.23%. 
--  Company is almost debt free. It has delivered good profit growth of 45.3% CAGR over last 5 years, but has a low return on equity of 9.37% over last 3 years. 
--  Net profit rose 50.36% to ₹161.07 Cr in Q4 FY26 vs ₹107.12 Cr in Q4 FY25; sales rose 502.98% to ₹297.57 Cr. 
--  The profit before tax in FY24 included a one-time gain of ₹175.67 Cr from TVS Holdings redemption; excluding this, net profit for FY25 rose 15.28%. 
--  TSF Investments is expensive considering PE ratio; latest PE is 18.39 while 3-year average PE is 14.14. 
--  Number of FII/FPI investors increased from 62 to 68 in the Dec 2025 quarter.
+ CATALYST: Company renamed from Sundaram Finance Holdings to TSF Investments in Oct 2025; no hard upcoming event found — may be noise. 
 
-### BHARTIHEXA — Bharti Hexacom Ltd. (Telecommunication) · RS +3%
-CATALYST:  Q1 FY27 results expected mid-July 2026 ;  Jefferies maintains Buy with ₹2060 target citing strong Q4 beat 
-THEME:  Telecom premiumization; 5G rollout driving sector-wide ARPU and margin recovery 
-FUNDAMENTALS:  FY26 revenue ₹9,354 Cr, PAT ₹1,733 Cr, 16% profit growth, EBITDA margin ~53% ;  P/E ~46x 
-VERDICT: Mixed —  latest Q4 PAT fell 4.63% YoY  but  margin expanded 350 bps; record dividend declared; debt lower entering FY27 
-CALL: WAIT —  stock below 200DMA, needs to reclaim that level first ;  down ~25% from ATH of ₹2,052 ; results imminent this week
+ THEME: Stock-specific CIC holding company; 12 group companies, portfolio net worth ~₹13,875 Cr FY25. 
 
-WHY_CALL: The business is genuinely solid — 53% EBITDA margins, falling debt, and a 5G-backed ARPU upcycle — but PAT growth has stalled in recent quarters and the stock is sitting below its 200DMA with Q1 FY27 results due mid-July, creating binary risk right now. The 46x P/E is not cheap for flat near-term profit growth, so the reward does not clearly beat the risk at this entry. If Q1 results show PAT re-acceleration (not just revenue growth) and the stock reclaims ₹1,650–1,
+ FUNDAMENTALS: P/E ~22x, ROE ~8%, debt-free, 45% profit CAGR over 5 years but recent TTM profit declining. 
 
-### MSUMI — Motherson Sumi Wiring India Lt (Automobile and Auto Components) · RS +4%
-CATALYST: Q1 FY27 results due July–August 2026; market watching revenue and margin recovery closely.
-THEME: India auto electrification — EV content 1.5–1.7x ICE, company winning orders across ICE, EV, hybrid.
-FUNDAMENTALS: FY26 revenue grew 23% to ₹11,478 Cr; profit only up 3%, margins squeezed to 5.4% by copper costs.
-VERDICT: Mixed — strong top-line growth but earnings growth lagging badly; margin pressure is real, not temporary noise.
-CALL: WAIT — entry not punished yet; risk/reward needs margin proof first.
-WHY_CALL: Revenue is genuinely accelerating and the EV content story is real, but profits barely grew 3% on 23% revenue in FY26 due to copper cost pass-through lag and greenfield startup drag. At ~42x trailing P/E with shrinking margins, the stock prices in a recovery that hasn't arrived yet. What changes the call: Q1 FY27 showing margin stabilization (EBITDA recovering toward 11%+) and copper cost passthrough fully kicking in would make this BUY-WORTHY quickly.
+ VERDICT: Mixed — underlying 5-year CAGR strong but TTM profit falling; FY24 gains were one-time, FY25 adjusted +15%. 
 
-### NUVOCO — Nuvoco Vistas Corporation Ltd. (Construction Materials) · RS +10%
-Here is the analysis, exactly in the requested format:
+CALL: WAIT — entry not bad, but earnings visibility is low right now.
 
-CATALYST:  Vadraj Surat plant (2 MMTPA) just opened; Kutch ops start Q3FY27; 35 MMTPA target FY28. 
-THEME:  Indian cement sector — rising trade/premium sales but cost inflation may squeeze near-term margins. 
-FUNDAMENTALS:  FY26 PAT ₹360 crore vs ₹22 crore prior year; EBITDA up 35% YoY; PE ~32x. 
-VERDICT:  Hard news — Q1FY27 beats, brokerages bullish on profitability, pricing, cost discipline, and capacity. 
-CALL: BUY-WORTHY —  stock 33% off 52-week high, analysts see ~21% upside; earnings recovery real. 
-WHY_CALL:  Q1FY27 volumes grew 5% YoY and EBITDA hit a record first-quarter high, showing the turnaround is genuine.  Main risk:  cost inflation and weak Q2FY27 margins could stall the re-rating.  What changes the mind: a second consecutive quarter of margin compression or Kutch commissioning delays would push this to WAIT.
+ WHY_CALL: The company has outgrown peers at ~14.6% over 8 years and is debt-free, but promoters have been marginally trimming and MF holding is dipping, both mild red flags. The rising volume is intriguing but with no hard catalyst found and TTM profits weak, risk/reward doesn't yet justify adding even a starter position. A clean Q1 FY27 result showing profit re-acceleration would be the trigger to upgrade to BUY-WORTHY.
 
-### SHAKTIPUMP — Shakti Pumps (India) Ltd. (Capital Goods) · RS +8%
-Here is the analysis based on screener.in data, recent filings, and news:
+### BHARTIHEXA — Bharti Hexacom Ltd. (Telecommunication) · RS +6%
+Here is the analysis, strictly in the requested 5-line format:
 
 ---
 
- CATALYST: Fresh Maharashtra PM-KUSUM empanelment — 15,000 solar pumps worth ₹353.89 Cr, executable within 60 days (Jul 4, 2026). 
+ CATALYST: Q1 FY27 results due mid-July 2026  —  plus Adani spectrum deal (Apr 2025) still digesting. 
 
- THEME: PM-KUSUM solar irrigation policy drive; EV motor division moving toward go-to-market. 
+ THEME: India telecom premiumization + 5G rollout; wireless growth slowing below 10%. 
 
- FUNDAMENTALS: FY25 revenue ₹25.3B (up 85% YoY), net profit up 188% YoY — but TTM profit has since slipped to ₹258 Cr. 
+ FUNDAMENTALS: FY26 revenue ₹9,354 Cr, PAT ₹1,733 Cr; 16% profit growth, EBITDA margin at 53%. 
 
- VERDICT: Mixed — hard order wins but high debtor days (173 days) and recent profit pressure. 
+ VERDICT: Mixed — profits dipped YoY in Q4, P/E sits at ~46x; growth real but decelerating. 
 
- CALL: BUY-WORTHY — PE ~26x, below 3-yr avg; fresh ₹353 Cr order just landed. 
+CALL: WAIT — good business, but price not compelling yet.
 
-WHY_CALL:  A real fresh order (₹353.89 Cr Maharashtra empanelment, 60-day execution window) gives near-term revenue visibility, not just a rumour.   The main risk is very high receivables (173 days) driven by slow government payment cycles, which can squeeze cash even on good revenue.   What would change the view: if FY26 debottlenecking delivers the guided ₹3,200 Cr topline, that confirms the story; if receivables keep ballooning, reduce or exit.
+ WHY_CALL: Stock trades below its 200 DMA and needs to reclaim that level before a meaningful move.   Analyst consensus fair value is ~₹1,848, offering modest upside from current ~₹1,587.   Key risks include concentration in just two state circles and dependence on parent Airtel, including merger risk at an unfavorable swap ratio.
 
-### UTIAMC — UTI Asset Management Company L (Financial Services) · RS +3%
+### MSUMI — Motherson Sumi Wiring India Lt (Automobile and Auto Components) · RS +2%
 Here is the analysis based on all data gathered:
 
 ---
 
- **CATALYST:** ₹40/share dividend ex-date just passed (Jul 14, 2026) — post-dividend drift likely; Q1 FY27 results expected ~July/Aug, no hard new catalyst found. 
+ CATALYST: Q1 FY27 results due July–August 2026; Street watching revenue, margins, FY27 guidance closely. 
 
- **THEME:** India MF industry growth; but rising passive/alternatives and SEBI regulatory pressure compress AMC margins — sector headwinds real. 
+ THEME: India EV/auto upcycle — but rising copper prices (+10% YoY) squeezing wiring harness margins sector-wide. 
 
- **FUNDAMENTALS:** FY26 net profit down ~45% to ₹404 crore; sales fell 8% YoY — earnings in clear retreat. 
+ FUNDAMENTALS: Revenue ₹11,478 Cr (+23% YoY FY26), but net profit only up 3.2% as margins slipped to 5.4%. 
 
- **VERDICT:** Mixed — AUM growing 11% but profitability badly missed estimates (EPS missed by 41%), margins collapsed from 40% to 24%. 
+ VERDICT: Mixed — strong revenue growth and order wins across ICE/EV/hybrid, but copper pass-through lag keeps profits soft. 
 
- **CALL:** AVOID — earnings deteriorating badly, valuation (P/E ~28x) not cheap for declining profits. 
+ CALL: BUY-WORTHY — near 52-week lows, PE below 3-yr avg, EPS lagging share price for years; patient entry rewarded. 
 
-**WHY_CALL:**  Total expenses jumped 89% and a ₹176 crore fair-value loss hit Q4 FY26, making the profit collapse look partly one-off  — but  revenue forecast of ~6% annual growth badly lags the 13% industry forecast , so UTI is losing share to nimbler peers like Nippon. The main risk is you're buying a structurally weakening franchise at a still-expensive multiple. What would change this: two consecutive quarters of recovering normalized PAT, margin stabilization above 35%, and a clear cost-reset story from management.
+ WHY_CALL: Revenue growing 33% and winning orders across all powertrains, yet profit is barely moving due to copper inflation with a 3–6 month pass-through lag. Main risk is copper staying elevated through FY27, keeping margins suppressed and EPS disappointing again. Mind would change to WAIT if Q1 FY27 results show another quarter of EPS miss alongside margin deterioration.
 
-### HAPPSTMNDS — Happiest Minds Technologies Lt (Information Technology) · RS +3%
-Here is the analysis in the requested format:
+### NUVOCO — Nuvoco Vistas Corporation Ltd. (Construction Materials) · RS +10%
+Here is the full breakdown, with every claim sourced:
 
 ---
 
- CATALYST: Exchange sought clarification July 13 2026 on fresh Moneycontrol news; Q1 FY27 results imminent (late July), dividend ex-date July 17. 
- THEME: Mid-tier IT consolidation play; AI-led digital engineering demand driving PE interest in the sector. 
- FUNDAMENTALS: Q4 FY26 net profit up ~80% YoY to ₹61 Cr; PE near 23x on improving but historically compressed margins. 
- VERDICT: Mixed — fresh exchange query (July 13) likely stake-sale rumour redux; PE acquisition story unconfirmed and previously denied. 
- CALL: WAIT — results imminent, catalyst unconfirmed, risk/reward unclear right now.
-WHY_CALL: Profit recovery is real — Q4 FY26 PAT up 80% YoY and analysts project +36% FY27 earnings growth, which is genuinely encouraging. However, Q1 FY27 results are due any day and the July 13 exchange query (likely another stake-sale rumour that was previously denied) could mean the stock moves sharply either way before you settle in. Wait for the Q1 results to confirm the earnings trajectory and for the exchange clarification to resolve — if numbers beat and the catalyst is confirmed real, it becomes BUY-WORTHY at the right entry.
+ CATALYST: Q1FY27 results just out (July 14); record-high Q1 EBITDA of ₹572 Cr, up 7% YoY; Surat 2 MMTPA plant inaugurated ahead of schedule. 
+
+ THEME: Broad India cement upcycle — government infra spending driving sector-wide volume recovery. 
+
+ FUNDAMENTALS: Q1FY27 PAT up 20% YoY to ₹160 Cr, but 3-year avg ROE remains low at ~2%. 
+
+VERDICT: Mixed
+
+ CALL: BUY-WORTHY — fresh results with hard catalyst, brokerages bullish (Nomura target ₹470); expansion on track. 
+
+ WHY_CALL: Capacity racing to 35 MMTPA by FY28 with Vadraj integration delivering — this is a real earnings-backed expansion story. Main risk is thin historical ROE (~2%) and Q4 FY26 PAT declined 15% YoY despite revenue growth, meaning margins can slip fast. What changes the mind: two more quarters of consistent PAT growth + EBITDA/ton holding above ₹950 as new capacity comes online.
+
+### UTIAMC — UTI Asset Management Company L (Financial Services) · RS +3%
+Here is the assessment based on all data gathered:
+
+---
+
+ **CATALYST:** ₹40/share final dividend ex-date was July 14, 2026 — dividend-capture trade likely driving recent volume spike. 
+
+ **THEME:** Indian AMC sector tailwind exists but regulatory pressure and passive-fund shift threaten margins; stock-specific underperformance story. 
+
+ **FUNDAMENTALS:** FY26 net profit crashed 45% YoY to ₹404 cr; revenue also fell 8% — earnings clearly deteriorating. 
+
+**VERDICT:** Mixed — AUM growing 11% YoY but profits collapsing; volume likely dividend-driven noise, not genuine accumulation.
+
+**CALL: AVOID** — earnings in freefall, no hard recovery catalyst visible yet.
+
+**WHY_CALL:**  Q4 FY26 standalone PAT crashed 73% YoY and normalised core PAT dropped 36%, signalling something deeper than a one-off.   Total expenses jumped 89% in Q4 and the AMC recorded a net loss on fair value changes of ₹176 crore — a large mark-to-market hit distorting results.  The volume uptick is almost certainly the dividend ex-date trade, not genuine accumulation; conviction would require at least two quarters of profit recovery and expense normalisation before re-entry.
+
+### HAPPSTMNDS — Happiest Minds Technologies Lt (Information Technology) · RS +3%
+There's your answer — and the volume surge suddenly makes complete sense. Here's the 5-line verdict:
+
+---
+
+ CATALYST: ITC Infotech frontrunner to buy majority stake from founder Ashok Soota; deal terms still being finalised — no confirmed date yet. 
+
+ THEME: M&A consolidation in Indian mid-tier IT; buyer wants AI, cloud, digital engineering capabilities — sector-specific deal story. 
+
+ FUNDAMENTALS: Revenue up 27% YoY in FY25 but net profit fell 26% and margin compressed to 9% from 15% — growth-without-earnings story. 
+
+ VERDICT: Mixed — hard M&A catalyst exists but open-offer price, deal structure, and SEBI mandatory-offer mechanics are all unresolved. 
+
+ CALL: WAIT — stock already jumped 9% on news; current price ~₹403–629 range, open-offer price unknown, deal not confirmed yet. 
+
+**WHY_CALL:**  The ITC Infotech acquisition story is real and potentially large, but deal size, valuation, and structure are still being finalised  — meaning you could be buying ahead of a deal that falls apart, or at a price already above any open-offer. The main risk is the deal collapses or the open-offer price comes in below current market, leaving you trapped. What would change the call to BUY-WORTHY: a confirmed deal announcement with a clear open-offer price meaningfully above the current market price.
+
+### PPLPHARMA — Piramal Pharma Ltd. (Healthcare) · RS +17%
+Here is the analysis, backed by the data gathered:
+
+---
+
+ CATALYST: CDMO order inflows recovering since Sep-25; Kenalog acquisition adds CHG revenue in FY27 — both actively unfolding now. 
+
+ THEME: India CDMO / pharma onshoring — $90M US facility expansion targets rising demand for domestic drug supply. 
+
+ FUNDAMENTALS: FY26 revenue ₹8,869 Cr (-3% YoY); CDMO dragged; PAT negative ₹326 Cr due to ₹196 Cr exceptional impairment. 
+
+ VERDICT: Mixed — FY26 was a "transitional year," company exited on a stronger note with momentum building. 
+
+ CALL: WAIT — FY27 recovery story is real but earnings are still sub-zero and need proof. 
+
+WHY_CALL:  The CDMO order-inflow recovery from Sep-25 is genuine and translating into good RFP momentum , but  the company posted a full-year PAT loss of ₹326 Cr in FY26 and EBITDA margins fell from 17% to 13%  — not yet a confirmed earnings comeback.  The $90M US expansion (Lexington site operational by late 2027) is a long-dated catalyst, not a near-term trigger.  What would change the mind: two consecutive PAT-positive quarters with CDMO revenue clearly re-accelerating above 10% YoY would move this to BUY-WORTHY.
 
 
-**Leading sectors:** Consumer Services (+26.9%) · Fast Moving Consumer Goods (+15.6%) · Realty (+13.3%) · Services (+8.9%)
+**Leading sectors:** Diversified (+12.7%) · Realty (+12.4%) · Healthcare (+11.6%) · Consumer Services (+9.3%)
 
-## ✅ Strong Buy (16)
-- **BALRAMCHIN** (Fast Moving Consumer Goods · Small cap) — score 100, Breakout — new 20-day high on 5.4× volume. Entry ₹584.8 · Stop ₹540.2 · Target ₹674.2 · Risk/sh ₹44.7
-- **HOMEFIRST** (Financial Services · Small cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹1261.0 · Stop ₹1158.9 · Target ₹1465.3 · Risk/sh ₹102.1
-- **AFFLE** (Information Technology · Small cap) — score 90, Breakout — new 20-day high on 5.9× volume. Entry ₹1539.3 · Stop ₹1423.6 · Target ₹1770.6 · Risk/sh ₹115.7
-- **BIOCON** (Healthcare · Mid cap) — score 90, Breakout — new 20-day high on 7.2× volume. Entry ₹437.3 · Stop ₹404.0 · Target ₹504.0 · Risk/sh ₹33.3 · 📅 results 2026-08-06 — inside holding window
-- **ECLERX** (Services · Small cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹1718.3 · Stop ₹1551.0 · Target ₹2052.9 · Risk/sh ₹167.3
+## ✅ Strong Buy (8)
+- **BIOCON** (Healthcare · Mid cap) — score 96, Breakout — new 20-day high on 7.2× volume. Entry ₹437.3 · Stop ₹404.0 · Target ₹504.0 · Risk/sh ₹33.3 · 📅 results 2026-08-06 — inside holding window
+- **DIVISLAB** (Healthcare · Large cap) — score 94, Breakout — new 20-day high on 3.0× volume. Entry ₹7188.5 · Stop ₹6804.7 · Target ₹7956.1 · Risk/sh ₹383.8 · 📅 results 2026-08-05 — inside holding window
 - **NUVOCO** (Construction Materials · Small cap) — score 90, Breakout — new 20-day high on 16.2× volume. Entry ₹341.4 · Stop ₹309.6 · Target ₹405.0 · Risk/sh ₹31.8
-- **DIVISLAB** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 3.0× volume. Entry ₹7188.5 · Stop ₹6804.7 · Target ₹7956.1 · Risk/sh ₹383.8 · 📅 results 2026-08-05 — inside holding window
-- **JUBLINGREA** (Chemicals · Small cap) — score 88, Breakout — new 20-day high on 1.5× volume. Entry ₹733.2 · Stop ₹675.7 · Target ₹848.3 · Risk/sh ₹57.5
 - **WELCORP** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1683.4 · Stop ₹1546.1 · Target ₹1958.1 · Risk/sh ₹137.3
 - **ADANIGREEN** (Power · Large cap) — score 86, Breakout — new 20-day high on 1.9× volume. Entry ₹1604.5 · Stop ₹1471.9 · Target ₹1869.7 · Risk/sh ₹132.6 · 📅 results 2026-07-22 — inside holding window
-- **CANHLIFE** (Financial Services · Small cap) — score 86, Breakout — new 20-day high on 13.2× volume. Entry ₹147.3 · Stop ₹135.7 · Target ₹170.5 · Risk/sh ₹11.6
-- **IPCALAB** (Healthcare · Mid cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹1823.3 · Stop ₹1693.3 · Target ₹2083.4 · Risk/sh ₹130.0 · 📅 results 2026-08-10 — inside holding window
-- **KAJARIACER** (Consumer Durables · Small cap) — score 84, Breakout — new 20-day high on 2.5× volume. Entry ₹1236.4 · Stop ₹1163.1 · Target ₹1383.0 · Risk/sh ₹73.3 · 📅 results 2026-07-21 — inside holding window
+- **ECLERX** (Services · Small cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹1718.3 · Stop ₹1551.0 · Target ₹2052.9 · Risk/sh ₹167.3
+- **JBCHEPHARM** (Healthcare · Small cap) — score 83, Breakout — new 20-day high on 2.3× volume. Entry ₹2487.6 · Stop ₹2362.6 · Target ₹2737.6 · Risk/sh ₹125.0 · 📅 results 2026-07-30 — inside holding window
 - **CARTRADE** (Consumer Services · Small cap) — score 82, Breakout — new 20-day high on 3.2× volume. Entry ₹2895.0 · Stop ₹2572.1 · Target ₹3540.8 · Risk/sh ₹322.9
-- **AEGISVOPAK** (Oil Gas & Consumable Fuels · Small cap) — score 81, Breakout — new 20-day high on 2.0× volume. Entry ₹303.3 · Stop ₹264.6 · Target ₹380.7 · Risk/sh ₹38.7
 
-## 🟢 Buy (6)
-- **FSL** (Services · Small cap) — score 78, Breakout — new 20-day high on 1.6× volume. Entry ₹265.1 · Stop ₹239.5 · Target ₹316.3 · Risk/sh ₹25.6
-- **JBCHEPHARM** (Healthcare · Small cap) — score 77, Breakout — new 20-day high on 2.3× volume. Entry ₹2487.6 · Stop ₹2362.6 · Target ₹2737.6 · Risk/sh ₹125.0 · 📅 results 2026-07-30 — inside holding window
-- **MAPMYINDIA** (Information Technology · Small cap) — score 77, Breakout — new 20-day high on 3.6× volume. Entry ₹1184.9 · Stop ₹1042.3 · Target ₹1470.0 · Risk/sh ₹142.6
-- **CONCOR** (Services · Mid cap) — score 74, Breakout — new 20-day high on 6.0× volume. Entry ₹493.1 · Stop ₹460.6 · Target ₹558.3 · Risk/sh ₹32.6 · 📅 results 2026-08-04 — inside holding window
-- **EIDPARRY** (Fast Moving Consumer Goods · Small cap) — score 74, Breakout — new 20-day high on 1.8× volume. Entry ₹784.7 · Stop ₹727.5 · Target ₹899.1 · Risk/sh ₹57.2
-- **TORNTPHARM** (Healthcare · Large cap) — score 73, Breakout — new 20-day high on 1.4× volume. Entry ₹4951.1 · Stop ₹4692.9 · Target ₹5467.5 · Risk/sh ₹258.2 · 📅 results 2026-07-27 — inside holding window
+## 🟢 Buy (1)
+- **TORNTPHARM** (Healthcare · Large cap) — score 79, Breakout — new 20-day high on 1.4× volume. Entry ₹4973.5 · Stop ₹4717.0 · Target ₹5486.5 · Risk/sh ₹256.5 · 📅 results 2026-07-27 — inside holding window
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **ETERNAL** — 2026-07-21
-- **INDHOTEL** — 2026-07-16
 - **BIOCON** — 2026-08-06
-- **PHOENIXLTD** — 2026-07-23
-- **PVRINOX** — 2026-08-06
 - **SUNPHARMA** — 2026-07-30
-- **GODREJPROP** — 2026-07-30
-- **RADICO** — 2026-07-30
 - **DIVISLAB** — 2026-08-05
 - **LALPATHLAB** — 2026-07-24
 - **ABBOTINDIA** — 2026-08-11
-- **ADANIGREEN** — 2026-07-22
-- **DELHIVERY** — 2026-07-31
-- **DLF** — 2026-08-04
+- **ETERNAL** — 2026-07-21
 - **GLENMARK** — 2026-08-13
+- **LAURUSLABS** — 2026-07-24
+- **GODREJPROP** — 2026-07-30
+- **OBEROIRLTY** — 2026-07-20
+- **PRESTIGE** — 2026-08-05
+- **ALKEM** — 2026-08-12
+- **IPCALAB** — 2026-08-10
+- **ADANIGREEN** — 2026-07-22
+- **DLF** — 2026-08-04
 
-## 👀 Watchlist (220)
-CHALET · ETERNAL · INDHOTEL · APTUS · ARE&M · CCL · GLAXO · JSWINFRA · NIVABUPA · PGEL · PHOENIXLTD · PVRINOX · SHYAMMETL · SUNPHARMA · GODREJPROP · RADICO · SOBHA · AJANTPHARM · CANFINHOME · GRAVITA · LALPATHLAB · PNBHOUSING · ABBOTINDIA · ANANTRAJ · BLUEJET …
+## 👀 Watchlist (217)
+GLAXO · SUNPHARMA · BALRAMCHIN · CHALET · LALPATHLAB · ABBOTINDIA · ETERNAL · GLENMARK · 3MINDIA · AJANTPHARM · ARE&M · LAURUSLABS · SHYAMMETL · ASTERDM · GODREJPROP · OBEROIRLTY · PRESTIGE · RAINBOW · SAILIFE · SOBHA · ALKEM · IPCALAB · ANANTRAJ · BHARTIHEXA · DLF …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
