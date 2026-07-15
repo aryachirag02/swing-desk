@@ -56,6 +56,24 @@ def candidates():
     for r in ranked[MAX_STOCKS + 15:]:
         if r.get("breakout") and (r.get("camp_days") is not None) and r["camp_days"] <= 5 and r["ticker"] not in have:
             picks.append(r); have.add(r["ticker"])
+    # USER WATCHLIST: force-research these regardless of budget/rank; tag so UI shows a dedicated section
+    wl_path = os.path.join(C.DATA_DIR, "user_watchlist.txt")
+    if os.path.exists(wl_path):
+        wl = [l.strip().upper() for l in open(wl_path) if l.strip() and not l.startswith("#")]
+        for sym in wl:
+            t = sym if sym.endswith(".NS") else sym + ".NS"
+            if t in have:
+                # already in funnel — just flag it as watchlist too
+                for p in picks:
+                    if p["ticker"] == t: p["user_watch"] = True
+                continue
+            if t in out:
+                row = dict(out[t]); row["user_watch"] = True; picks.append(row); have.add(t)
+            else:
+                # not in scanned universe (e.g. off-index) — build a minimal row so it still gets researched
+                picks.append({"ticker": t, "name": sym, "sector": "", "rs3": 0, "breakout": False,
+                              "vol_surge": 0, "score": 0, "close": None, "user_watch": True})
+                have.add(t)
     # guarantee: every displayed breakout gets researched, regardless of score rank
     try:
         import engine as _E
@@ -242,7 +260,7 @@ def main():
            f"_Claude web-research on the day's {len(cands)} quant-flagged movers. Research assistance, "
            f"NOT validated signals — verify before any long-term buy._\n\n")
     open(os.path.join(C.DATA_DIR, "intel.md"), "w").write(hdr + "\n".join(sections))
-    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai","close","asof","camp_days")}
+    json.dump([{k: c.get(k) for k in ("ticker","name","sector","rs3","breakout","vol_surge","ai","close","asof","camp_days","user_watch")}
                for c in cands if c.get("ai")],
               open(os.path.join(C.DATA_DIR, "intel.json"), "w"))
     print(f"intel.md + intel.json written ({len(sections)} sections)")

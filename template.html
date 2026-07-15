@@ -260,6 +260,13 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
       (one lucky +20R trade drove all trend profits; 0/10 validation winners — see MICROCAP_RESEARCH.md).
       Flags below are <b>setups for your own research</b>, never trade signals. Add stocks via data/watchlist.txt in the repo.
     </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
+      <input id="mc-search" placeholder="🔍 Filter microcap list…" oninput="filterMicro()" style="flex:1;min-width:180px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:13px">
+      <div style="display:flex;gap:6px;align-items:center">
+        <input id="mc-analyze" placeholder="Analyze ANY ticker (e.g. AARTIDRUGS)" style="min-width:200px;padding:8px 12px;border:1px solid var(--watch);border-radius:8px;font-size:13px" onkeydown="if(event.key==='Enter')analyzeTyped()">
+        <button class="btn" onclick="analyzeTyped()" style="padding:8px 12px;font-size:12px">⭐ Analyze</button>
+      </div>
+    </div>
     <div class="tablewrap">
       <table>
         <thead><tr>
@@ -278,6 +285,7 @@ div:has(> .tab){overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:to
     </div>
     <div id="radar-themes2" style="display:none;border:1px solid var(--brass);background:rgba(156,122,44,.06);border-radius:8px;padding:12px 16px;margin-bottom:14px;font-size:12.5px;white-space:pre-wrap"></div>
     <div id="ideasbook"></div>
+    <details class="secfold"><summary id="sum-watch">⭐ MY WATCHLIST — deep analysis</summary><div id="watchrows"></div></details>
     <details class="secfold"><summary id="sum-pin">📍 PINNED COMPANIES</summary><div id="pinrows"></div></details>
     <details class="secfold"><summary id="sum-theme">🗺️ THEME MAP — where money is flowing (AI, daily)</summary><div id="thememap"></div></details>
     <details class="secfold"><summary id="sum-brk">🔶 JUST STARTED MOVING — research these first</summary>
@@ -448,7 +456,7 @@ async function pushRemote(retry=true){
     if(pushing) return; pushing=true; setSyncUI('syncing…');
     try{
       const r=await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins()})});
+        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch()})});
       if(!r.ok) throw new Error('worker '+r.status);
       const j=await r.json().catch(()=>null);
       if(j&&Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins));}
@@ -587,13 +595,58 @@ function renderMicro(){
   const rows=DATA.microcaps||[];
   const pc=v=>v==null?'-':`<span style="color:${v>0?'var(--buy)':v<0?'var(--exit)':'inherit'}">${v>0?'+':''}${v.toFixed(1)}%</span>`;
   $('#mcrows').innerHTML = rows.length? rows.map(r=>`<tr${r.manual?' style="background:rgba(156,122,44,.08)"':''}>
-    <td class="tk">${r.ticker}${r.manual?' 📌':''} <span onclick="addToPf('${r.ticker}',${r.close},'MANUAL')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span><div style="font-size:10px;color:var(--mut)">${r.name}</div></td>
+    <td class="tk">${r.ticker}${r.manual?' 📌':''} <span onclick="addToPf('${r.ticker}',${r.close},'MANUAL')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span> <span onclick="analyzeStock('${r.ticker}')" title="Deep analysis in ⭐ Watchlist" style="cursor:pointer;font-size:11px;border:1px solid var(--watch);border-radius:5px;padding:0 5px;color:var(--watch)">⭐</span><div style="font-size:10px;color:var(--mut)">${r.name}</div></td>
     <td>${r.sector}</td><td class="num">${fmt(r.close)}</td>
     <td class="num">${pc(r.chg_1m)}</td><td class="num">${pc(r.rs_3m)}</td><td class="num">${pc(r.vs_50dma)}</td>
     <td class="num">${r.turnover_cr}${r.thin?' <span style="color:var(--exit);font-size:10px">THIN</span>':''}</td>
     <td>${r.trend}</td><td>${r.setup_hi100?'🔶 breakout':''}</td></tr>`).join('')
     : '<tr><td colspan="9" style="color:var(--mut)">No microcap data yet - run fetch</td></tr>';
 }
+function filterMicro(){
+  const q=(($('#mc-search')||{}).value||'').trim().toUpperCase();
+  document.querySelectorAll('#mcrows tr').forEach(tr=>{
+    const txt=tr.textContent.toUpperCase();
+    tr.style.display=(!q||txt.includes(q))?'':'none';
+  });
+}
+function analyzeTyped(){
+  const el=$('#mc-analyze'); if(!el) return;
+  const tk=(el.value||'').trim().toUpperCase().replace(/\s+/g,'').replace('.NS','');
+  if(!tk){return;}
+  if(typeof analyzeStock==='function'){ analyzeStock(tk); el.value=''; }
+}
+function renderWatch(){
+  const box=$('#watchrows'); if(!box) return;
+  const rows=(DATA.intel_rows||[]).filter(x=>x&&x.user_watch);
+  const sum=$('#sum-watch'); if(sum) sum.textContent=`⭐ MY WATCHLIST — deep analysis (${rows.length})`;
+  if(!rows.length){box.innerHTML='<p style="color:var(--mut);font-size:12.5px">No watchlist stocks yet. On the Microcap or Signals tab, tap <b>⭐ Analyze</b> on any stock to get a full grade + AI research here — it won\'t count toward the daily 30. (Takes effect next run.)</p>';return;}
+  const chip=c=> c==='BUY-NOW'?'<span style="background:#06341d;color:#fff;padding:2px 9px;border-radius:6px;font-weight:800;font-size:11px">⚡BUY-NOW</span>'
+    : c==='BUY-WORTHY'?'<span style="background:var(--sbuy);color:#fff;padding:2px 9px;border-radius:6px;font-weight:700;font-size:11px">BUY-WORTHY</span>'
+    : c==='WAIT'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:2px 9px;border-radius:6px;font-size:11px">WAIT</span>'
+    : c==='AVOID'?'<span style="background:rgba(194,55,47,.12);color:var(--exit);padding:2px 9px;border-radius:6px;font-size:11px">AVOID</span>':'<span style="color:var(--mut);font-size:11px">analysis pending</span>';
+  box.innerHTML=rows.map(x=>`<div class="ideacard" style="border:1px solid var(--watch);border-radius:10px;padding:12px 15px;margin-bottom:8px;background:var(--panel)">
+    <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+      <div style="min-width:150px"><b>${x.ticker}</b> <span onclick="unwatch('${x.ticker}')" title="remove" style="cursor:pointer;font-size:12px">✕</span><div style="font-size:10.5px;color:var(--mut)">${x.name||''} ${x.sector||''}</div></div>
+      <div style="flex:1;font-size:12.5px">${x.rs3!=null?`${x.rs3>0?'+':''}${x.rs3}% vs market`:''} ${chip(x.call)}${x.call_why?`<div style="font-size:11px;color:var(--mut)">${String(x.call_why).replace(/</g,'&lt;')}</div>`:''}</div>
+      <div><button class="btn" onclick="addToPf('${x.ticker}',${x.close||0},'MANUAL')" style="font-size:11px;padding:4px 10px">＋ Portfolio</button></div>
+    </div>
+    ${x.ai?`<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:600">🧠 Full analysis</summary><div style="font-size:12px;white-space:pre-wrap;padding-top:5px;border-top:1px solid var(--line);margin-top:4px">${String(x.ai).replace(/</g,'&lt;')}</div></details>`:''}
+  </div>`).join('');
+}
+// watchlist is stored locally + synced; a small note tells user it applies next run
+const WATCHK='swingdesk_watch';
+const getWatch=()=>{try{return JSON.parse(localStorage.getItem(WATCHK)||'[]')}catch(e){return[]}};
+function analyzeStock(tk){let w=getWatch(); if(!w.includes(tk)){w.push(tk); localStorage.setItem(WATCHK,JSON.stringify(w));}
+  triggerWatchAnalysis();
+  alert(tk+' added to your watchlist ⭐\nAnalysis is running now — it appears in ⭐ MY WATCHLIST in about 10 minutes (refresh then). It won\'t count toward the daily 30.');
+  renderWatch();}
+// push watch list to worker WITH a trigger flag so it auto-runs the analysis workflow
+async function triggerWatchAnalysis(){
+  if(!FAMILY_WRITE_URL) return;
+  try{ await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch(),trigger:true})}); }catch(e){}
+}
+function unwatch(tk){let w=getWatch().filter(x=>x!==tk); localStorage.setItem(WATCHK,JSON.stringify(w)); if(typeof schedulePush==='function')schedulePush(); renderWatch();}
 function renderIdeasBook(){
   const box=$('#ideasbook'); if(!box) return;
   const pos=positionsFromLog(loadLog());
@@ -794,7 +847,7 @@ function renderToday(){
   // 2.5 open positions needing attention
   try{
     const posmap=positionsFromLog(loadLog());
-    const tks=Object.keys(posmap);
+    const tks=Object.keys(posmap).filter(t=>posmap[t].qty>0.0001);
     if(tks.length){
       const lines=tks.map(t=>{
         const p=posmap[t]; const last=rowByTicker[t]?rowByTicker[t].close:null;
@@ -978,7 +1031,7 @@ function renderTable(){
   $('#rows').innerHTML=rows.map(r=>{
     const eff=effState(r,pos), held=eff.held;
     return `<tr class="${r.liquid?'':'dim'}">
-    <td class="tk">${r.ticker} <span onclick="event.stopPropagation();addToPf('${r.ticker}',${r.price},'')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span>${held?'<span class="held">HELD</span>':''}<span class="co">${r.name}</span>${r.surveillance?`<span class="flag surv" title="On the exchange surveillance list — no Buy signals">${r.surveillance}</span>`:''}${r.earnings_soon?`<span class="flag earn" title="Results inside your holding window — earnings gaps can jump right past stop-losses">📅 results ${r.earnings}</span>`:''}</td>
+    <td class="tk">${r.ticker} <span onclick="event.stopPropagation();addToPf('${r.ticker}',${r.price},'')" title="Add to portfolio" style="cursor:pointer;font-size:11px;border:1px solid var(--line);border-radius:5px;padding:0 5px;color:var(--mut)">➕</span> <span onclick="event.stopPropagation();analyzeStock('${r.ticker}')" title="Deep analysis in ⭐ Watchlist" style="cursor:pointer;font-size:11px;border:1px solid var(--watch);border-radius:5px;padding:0 5px;color:var(--watch)">⭐</span>${held?'<span class="held">HELD</span>':''}<span class="co">${r.name}</span>${r.surveillance?`<span class="flag surv" title="On the exchange surveillance list — no Buy signals">${r.surveillance}</span>`:''}${r.earnings_soon?`<span class="flag earn" title="Results inside your holding window — earnings gaps can jump right past stop-losses">📅 results ${r.earnings}</span>`:''}</td>
     <td style="font-size:12px">${r.sector}${r.cap?`<br><span style="color:var(--muted);font-size:10.5px">${r.cap} cap</span>`:''}</td>
     <td class="num">${fmt(r.close)}<br><span class="${cls(r.chg_1d)}" style="font-size:11px">${r.chg_1d>0?'+':''}${r.chg_1d}%</span></td>
     <td>${spark(r.spark)}</td>
@@ -1027,7 +1080,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 });
 
 $('#foot').textContent='Educational tool, not investment advice. Signals from end-of-day data · refresh daily after market close.';
-renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderThemeMap(); renderIdeasBook(); renderPinned(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
+renderChips(); renderTable(); renderIndices(); renderMicro(); renderRadar(); renderThemeMap(); renderWatch(); renderIdeasBook(); renderPinned(); renderPf(); renderToday(); renderLog(); renderSystem(); renderFnoBanner(); wireSyncUI(); startupSync();
 </script>
 </body>
 </html>

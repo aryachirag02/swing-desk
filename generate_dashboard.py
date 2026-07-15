@@ -95,7 +95,7 @@ def _intel_rows(snap):
         c["ai"] = ai_txt
         out.append({"ticker": sym, "name": c.get("name", "")[:32], "sector": c.get("sector", ""),
                     "call": call, "call_why": call_why, "call_full": call_full,
-                    "camp_days": c.get("camp_days"),
+                    "camp_days": c.get("camp_days"), "user_watch": c.get("user_watch", False),
                     "signal": signal, "close": close, "trend": trend,
                     "rs3": c.get("rs3"), "breakout": bool(c.get("breakout")),
                     "vol": c.get("vol_surge"), "ai": c.get("ai", "")})
