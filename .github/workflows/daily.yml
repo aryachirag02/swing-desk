@@ -67,6 +67,9 @@ jobs:
           python run_daily.py
           cp dashboard.html index.html
 
+      - name: Healthcheck (self-audit, non-blocking)
+        run: python healthcheck.py || echo "::warning::healthcheck reported issues — see log above"
+
       - name: Commit results back to the repo
         run: |
           git config user.name "swing-bot"
