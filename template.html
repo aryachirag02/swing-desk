@@ -627,7 +627,10 @@ function renderIdeasBook(){
       else if(a){ ctx=`🟡 basing · buying ${a.vol_trend}× normal — accumulation`; }
       else if(ai){ ctx=`🚀 market leader · +${ai.rs3}% vs market`; }
       // AI research dropdown (from intel) — same as the breakout cards
-      const research = ai&&ai.ai ? `<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:600">🧠 Why is it moving? (AI research)</summary><div style="font-size:12px;white-space:pre-wrap;padding-top:5px;border-top:1px solid var(--line);margin-top:4px">${String(ai.ai).replace(/</g,'&lt;')}</div></details>` : '';
+      // prefer the holding's own weekly review body (news/analysts/fundamentals/technicals); fall back to intel research
+      const reviewBody = rv&&rv.ai ? String(rv.ai) : (ai&&ai.ai ? String(ai.ai) : '');
+      const reviewLabel = rv&&rv.ai ? '🧠 Full review (news · analysts · fundamentals · technicals)' : '🧠 Why is it moving? (AI research)';
+      const research = reviewBody ? `<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:600">${reviewLabel}</summary><div style="font-size:12px;white-space:pre-wrap;padding-top:5px;border-top:1px solid var(--line);margin-top:4px">${reviewBody.replace(/</g,'&lt;')}</div></details>` : `<details style="margin-top:6px"><summary style="cursor:pointer;font-size:11.5px;color:var(--mut)">🧠 Review pending — runs Friday & after each add</summary><div style="font-size:11.5px;color:var(--mut);padding-top:4px">This holding gets a full news/analyst/fundamental review on the next portfolio run. Log an add or wait for Friday to generate it now.</div></details>`;
       const aiCallChip = ai&&ai.call ? ` · ${ai.call==='BUY-WORTHY'?'<span style="color:var(--sbuy);font-weight:700;font-size:11px">BUY-WORTHY</span>':ai.call==='WAIT'?'<span style="color:var(--reduce);font-size:11px">WAIT</span>':ai.call==='AVOID'?'<span style="color:var(--exit);font-size:11px">AVOID</span>':'<span style="color:#06341d;font-weight:800;font-size:11px">⚡BUY-NOW</span>'}` : '';
       return `<div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:11px 15px;margin-bottom:8px;background:var(--panel)">
         <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
