@@ -430,8 +430,15 @@ def radar_snapshot():
                     soon = bool(ed) and 0 <= (pd.Timestamp(ed) - pd.Timestamp.now()).days <= 21
                 except Exception:
                     soon = False
+                # informational levels (context, NOT a grade input — backtested as non-predictive)
+                _hist = g.iloc[max(0, len(g)-504):len(g)]
+                _c = float(c.iloc[-1])
+                _ceil = _hist["high"].values[(_hist["high"].values > _c) & (_hist["high"].values < _c*1.5)]
+                _floor = _hist["low"].values[(_hist["low"].values < _c) & (_hist["low"].values > _c*0.6)]
+                headroom = round(float(np.percentile(_ceil, 20)/_c - 1)*100) if len(_ceil) >= 3 else None
+                support_dist = round(float(1 - np.percentile(_floor, 80)/_c)*100) if len(_floor) >= 3 else None
                 brk.append({**row, "vol_x": round(vr, 1), "grade": grade, "grade_why": why,
-                            "camp_days": camp_days, "camp_run": round(camp_run), "window_day": window_day, "sig_price": round(sig_price or 0, 1), "fired_today": fired_today,
+                            "camp_days": camp_days, "camp_run": round(camp_run), "window_day": window_day, "sig_price": round(sig_price or 0, 1), "fired_today": fired_today, "vol_sig": round(vr_sig, 1) if vr_sig else round(vr, 1), "headroom": headroom, "support_dist": support_dist,
                             "results": ed if soon else None})
             elif (tight <= 1.30 and v20 > v60 * 1.25 and rs_now > -5 and rs_now > rs_prev + 3
                   and last > hi100 * 0.85):

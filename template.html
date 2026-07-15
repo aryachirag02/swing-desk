@@ -515,7 +515,7 @@ function positionsFromLog(log){
     const t=e.ticker.toUpperCase(); p[t]=p[t]||{qty:0,cost:0,realized:0};
     const q=Number(e.qty), px=Number(e.price);
     if(e.side==='Buy'){if(p[t].qty<=0)p[t].first=e.date; p[t].cost+=q*px; p[t].qty+=q;
-      if(/^(RADAR|INTEL|MANUAL)/i.test(e.note||'')) p[t].lt=true;}
+      if(/\b(RADAR|INTEL|MANUAL)/i.test(e.note||'') || /^(RADAR|INTEL|MANUAL)/i.test(e.src||'')) p[t].lt=true;}
     else{const avg=p[t].qty>0?p[t].cost/p[t].qty:px; p[t].realized+=q*(px-avg); p[t].cost-=q*avg; p[t].qty-=q;}
   });
   return p;
@@ -597,7 +597,7 @@ function renderMicro(){
 function renderIdeasBook(){
   const box=$('#ideasbook'); if(!box) return;
   const pos=positionsFromLog(loadLog());
-  const tks=Object.keys(pos).filter(t=>pos[t].qty>0 && pos[t].lt);
+  const tks=Object.keys(pos).filter(t=>pos[t].qty>0);   // ALL open positions — nothing you own is ever hidden
   if(!tks.length){box.innerHTML='';return;}
   const stage={}; const r=DATA.radar||{};
   (r.breakouts||[]).forEach(x=>stage[x.ticker]='🔶 still breaking out');
@@ -609,14 +609,14 @@ function renderIdeasBook(){
     : c==='REDUCE'?'<span style="background:rgba(224,166,42,.2);color:var(--reduce);padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">REDUCE</span>'
     : c==='SELL'?'<span style="background:var(--exit);color:#fff;padding:2px 10px;border-radius:6px;font-weight:800;font-size:12px">SELL</span>'
     : '<span style="color:var(--mut);font-size:11px">review pending</span>';
-  box.innerHTML=`<details open style="margin-bottom:14px"><summary style="cursor:pointer;font-size:15px;font-weight:700;margin:6px 0 8px">📌 YOUR IDEAS-BOOK POSITIONS (${tks.length}) — Radar/Intel buys being tracked</summary>`+
+  box.innerHTML=`<details open style="margin-bottom:14px"><summary style="cursor:pointer;font-size:15px;font-weight:700;margin:6px 0 8px">📌 YOUR OPEN POSITIONS (${tks.length}) — every holding, wherever it is in its cycle</summary>`+
     tks.map(t=>{const p=pos[t]; const avg=p.cost/p.qty; const last=rowByTicker[t]?rowByTicker[t].close:null;
       const pl=last?((last/avg-1)*100):null; const rv=rev[t];
       return `<div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:11px 15px;margin-bottom:8px;background:var(--panel)">
         <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
           <div style="min-width:140px"><b>${t}</b><div style="font-size:11px;color:var(--mut)">${p.qty} @ ₹${fmt(avg)}${last?` → ₹${fmt(last)}`:''}</div></div>
           <div style="font-size:13px;font-weight:700;color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl!=null?(pl>=0?'+':'')+pl.toFixed(1)+'%':''}</div>
-          <div style="font-size:12px;color:var(--mut)">${stage[t]||'⚪ off the lists (cooled)'}</div>
+          <div style="font-size:12px;color:var(--mut)">${stage[t]||'⚪ off the lists today — still held & tracked'}</div>
           <div>${callChip(rv?rv.call:null)}${rv&&rv.why?`<div style="color:var(--mut);font-size:10.5px;max-width:200px">${rv.why.replace(/</g,'&lt;')}</div>`:''}</div>
           <div><button class="btn" onclick="addToPf('${t}',${last||0})" style="font-size:11px;padding:4px 10px">＋ Add</button>
           <button class="btn" onclick="pfSell('${t}')" style="font-size:11px;padding:4px 10px">− Reduce</button></div>
@@ -637,17 +637,13 @@ function renderPinned(){
   const intel={}; (DATA.intel_rows||[]).forEach(x=>intel[x.ticker]=x);
   box.innerHTML=pins.map(tk=>{
     const b=find(r.breakouts,tk), a=find(r.accum,tk), ai=intel[tk];
-    const px=(b&&b.close)||(a&&a.close)||(ai&&ai.close)||(rowByTicker[tk]&&rowByTicker[tk].close)||null;
-    const stage=b?('🔶 breaking out'+(b.camp_days!=null?` (day ${b.camp_days})`:'')):a?'🟡 getting ready':ai?'🚀 leader':'⚪ quiet today — still tracked';
-    const grade=b&&b.grade?` · Setup ${b.grade}`:'';
-    const call=ai&&ai.call?` · AI: <b>${ai.call}</b>`:'';
-    return `<div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:8px;background:var(--panel)">
-      <div class="idearow" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-        <div style="min-width:130px"><b>${tk}</b>${px?`<div style="font-size:11px;color:var(--mut)">₹${fmt(px)}</div>`:''}</div>
-        <div style="flex:1;font-size:12.5px">${stage}${grade}${call}</div>
-        <div><button class="btn" onclick="addToPf('${tk}',${px||0})" style="font-size:11px;padding:4px 10px">＋ Portfolio</button>
-        <button class="btn" onclick="togglePin('${tk}')" style="font-size:11px;padding:4px 10px">✕ Unpin</button></div>
-      </div></div>`;
+    // if the pinned stock is a live breakout/accumulator, render the SAME rich card as the main lists
+    if(b){return card(b, `${b.fired_today?`Hit a <b>new 100-day high today</b> on <b>${b.vol_x}× buying</b>`:`Broke out <b>${b.window_day||b.camp_days} sessions ago</b> at ₹${fmt(b.sig_price)} on <b>${b.vol_sig}× volume</b> — still in the buy window`}; +${b.rs_3m}% vs market. <span style="color:var(--mut);font-size:11px">📍 pinned · Source: Radar breakout</span>`);}
+    if(a){return card(a, `Sideways ~3 months, buying volume ${a.vol_trend}× normal — possible accumulation. <span style="color:var(--mut);font-size:11px">📍 pinned · watch, don't buy yet</span>`);}
+    // otherwise a compact card with whatever intel/price we have + honest "quiet today" note
+    const px=(ai&&ai.close)||(rowByTicker[tk]&&rowByTicker[tk].close)||null;
+    const ric=ai?{ticker:tk,name:ai.name,sector:ai.sector,close:px,rs_3m:ai.rs3,camp_days:null}:{ticker:tk,name:'',sector:'',close:px};
+    return card(ric, `${ai?`🚀 market leader: +${ai.rs3}% vs market — mid-move, higher bar.`:'⚪ Quiet today — not on any list, but still tracked. Full research appears when it re-enters the movers.'} <span style="color:var(--mut);font-size:11px">📍 pinned</span>`);
   }).join('');
 }
 function renderThemeMap(){
@@ -681,7 +677,7 @@ function renderRadar(){
       <div class="idearow" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
         <div style="min-width:150px"><b style="font-size:15px">${x.ticker}</b> <span onclick="togglePin('${x.ticker}')" title="Pin to keep permanently" style="cursor:pointer;font-size:13px">${isPinned(x.ticker)?'📌':'📍'}</span><div style="font-size:10.5px;color:var(--mut)">${x.name}</div></div>
         <div style="min-width:110px;font-size:12px;color:var(--mut)">${x.sector}<br>₹${fmt(x.close)}</div>
-        <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span></div>`:''}</div>
+        <div style="flex:1;font-size:13px">${sentence}${x.grade?`<div style="margin-top:5px"><span style="font-weight:800;font-size:12px;padding:2px 9px;border-radius:6px;${x.grade==='A'?'background:rgba(10,107,68,.14);color:var(--sbuy)':x.grade==='B'?'background:rgba(224,166,42,.16);color:var(--reduce)':'background:rgba(91,107,128,.12);color:var(--mut)'}">Setup grade ${x.grade} (backtested)</span> <span style="color:var(--mut);font-size:11.5px">${x.grade_why||''}</span>${(x.headroom!=null||x.support_dist!=null)?`<div style="font-size:11px;color:var(--mut);margin-top:3px">📈 Levels (context, not a signal): ${x.headroom!=null?`~${x.headroom}% to nearest ceiling`:'clear overhead'}${x.support_dist!=null?` · support ~${x.support_dist}% below`:''}</div>`:''}</div>`:''}</div>
         <div style="text-align:right">
           ${ai&&ai.call?(ai.call==='BUY-NOW'
             ?`<div style="background:#06341d;color:#fff;padding:5px 14px;border-radius:8px;font-weight:900;font-size:13.5px;box-shadow:0 0 0 2px #0A6B44">⚡ AI CALL: BUY NOW</div>`
@@ -704,7 +700,7 @@ function renderRadar(){
     :`<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 9px;border-radius:6px;font-size:12px">📊 Setup C</span>`);
   const _bs=(r.breakouts||[]); const _nA=_bs.filter(x=>x.grade==='A').length; const _nCards=Math.max(8,_nA);
   $('#brkrows').innerHTML=_bs.slice(0,_nCards).map(x=>card(x,
-    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}${x.results?`<span style="background:rgba(194,55,47,.1);color:var(--exit);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px">📅 results ${x.results} — gap risk</span> `:''}${x.fired_today?`Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>`:`Broke out <b>${x.window_day} session${x.window_day===1?'':'s'} ago</b> at ₹${fmt(x.sig_price)} — <b>still in the buy window</b>`}; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
+    `${gchip(x)} ${x.camp_days<=5?`<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🆕 FRESH — day ${x.camp_days} of this move</span> `:`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of move, ${x.camp_run>0?'+':''}${x.camp_run}% since first signal · </span>`}${x.results?`<span style="background:rgba(194,55,47,.1);color:var(--exit);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px">📅 results ${x.results} — gap risk</span> `:''}${x.fired_today?`Hit a <b>new 100-day high today</b> on <b>${x.vol_x}× normal buying</b>`:`Broke out <b>${x.window_day} session${x.window_day===1?'':'s'} ago</b> at ₹${fmt(x.sig_price)} on <b>${x.vol_sig}× volume</b> — <b>still in the buy window</b>`}; ${x.rs_3m>0?'+':''}${x.rs_3m}% vs market in 3 months.${x.grade_why?` <span style="color:var(--mut);font-size:11.5px">(${x.grade_why})</span>`:''} The AI has done the homework — <b>its call is on the right</b>; details below. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Radar breakout</b></span>`)).join('')
     ||'<p style="color:var(--mut)">Nothing broke out today.</p>';
   const restB=_bs.slice(_nCards);
   if(restB.length) $('#brkrows').innerHTML+=`<details style="margin:4px 0 8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--mut)">+ ${restB.length} more breakouts (compact list)</summary><div style="font-size:12.5px;padding:8px 4px;color:var(--ink)">${restB.map(x=>`<b>${x.ticker}</b> [${x.grade||'-'}] (${x.sector}, +${x.rs_3m}%, vol ${x.vol_x}×)`).join(' · ')}</div></details>`;
