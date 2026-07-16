@@ -1,4 +1,4 @@
-# Weekly portfolio review — 2026-07-15
+# Weekly portfolio review — 2026-07-16
 
 ### VEDL — HOLD (demerger-driven price drop distorts loss; yield and long-term value remain intac)
 Here is your 5-line report:
