@@ -8,8 +8,8 @@ import requests as rq
 import config as C
 
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-MODEL = os.environ.get("INTEL_MODEL", "claude-sonnet-4-6")
-MAX_STOCKS = int(os.environ.get("INTEL_MAX_STOCKS", "20"))
+MODEL = os.environ.get("INTEL_MODEL", "claude-haiku-4-5-20251001")
+MAX_STOCKS = int(os.environ.get("INTEL_MAX_STOCKS", "15"))
 
 def candidates():
     """Funnel: top RS + fresh 100d-high breakouts + volume surges across Nifty500+Microcap, plus watchlist."""
@@ -45,12 +45,25 @@ def candidates():
             score = rs3 + (25 if brk else 0) + (15 if vr >= 2 else 0) + (40 if manual else 0) + (45 if (brk and camp_days <= 5) else 0)
             name = str(meta.loc[t, "name"]) if t in meta.index else t
             sector = str(meta.loc[t, "sector"]) if t in meta.index else "?"
-            out[t] = {"ticker": t, "name": name, "sector": sector, "rs3": round(rs3, 0),
+            # light grade proxy for the cost filter (mirrors engine's A/B/C rule)
+            _g = "C"
+            if rs3 > 120: _g = "C"
+            elif 25 <= rs3 <= 120 and vr >= 2.5: _g = "A"
+            elif (25 <= rs3 <= 120) or vr >= 2.5: _g = "B"
+            out[t] = {"ticker": t, "name": name, "sector": sector, "rs3": round(rs3, 0), "grade": _g,
                       "breakout": brk, "vol_surge": round(vr, 1), "score": score,
                       "close": round(float(c.iloc[-1]), 2),
                       "camp_days": camp_days if camp_days < 900 else None}
     ranked = sorted(out.values(), key=lambda r: -r["score"])
-    picks = ranked[:MAX_STOCKS + 15]
+    # COST FILTER: only pay for AI on likely BUY candidates —
+    # fresh/active breakouts graded A or B. Skip weak C-grades and extended non-breakout leaders.
+    def _worth_research(r):
+        if not r.get("breakout"):
+            return False  # skip pure momentum leaders (extended, rarely fresh buys)
+        g = r.get("grade")
+        return g in ("A", "B")
+    buy_candidates = [r for r in ranked if _worth_research(r)]
+    picks = buy_candidates[:MAX_STOCKS]
     # guarantee: every FRESH breakout (<=5 days into its move) gets a seat regardless of rank
     have = {p["ticker"] for p in picks}
     for r in ranked[MAX_STOCKS + 15:]:
