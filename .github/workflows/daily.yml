@@ -51,7 +51,7 @@ jobs:
         run: |
           if [ -n "$ANTHROPIC_API_KEY" ]; then
             H=$(date -u +%H)
-            if [ "$H" = "10" ] || [ "$H" = "14" ] || [ "$H" = "16" ] || [ "$EVT" = "workflow_dispatch" ]; then
+            if [ "$H" = "14" ] || [ "$EVT" = "workflow_dispatch" ]; then
               python intel.py || echo "intel failed - continuing without it"
               if [ "$(date -u +%u)" = "5" ]; then python intel.py --themes || echo "themes failed"; fi
             fi
