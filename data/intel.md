@@ -1,8 +1,12 @@
 # Market intelligence — 2026-07-16
-_Claude web-research on the day's 47 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+_Claude web-research on the day's 46 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 ## Theme read
-Based on the sector composition and recent Indian market developments, the strongest thematic narrative emerges around **Power Transmission and Renewable Energy Infrastructure Capex**:  India's power transmission sector is expected to witness capital expenditure of ₹5-6 trillion between FY27 and FY32, focusing on upgrading transmission infrastructure and developing new transmission corridors to integrate the government's target of over 900 GW of non-fossil fuel capacity by 2035-36 . This directly benefits **ADANIGREEN** (which  has become the first renewable energy company in India to cross 20 GW of operational renewable energy capacity ), plus the capital goods and utilities beneficiaries: **APOLLO, AEQUS, GREAVESCOT, DIACABS** (capital goods suppliers), **WABAG** (utilities/water treatment), and **ATHERENERG** (auto components for power equipment). A secondary thread involves **Infrastructure/Construction Materials Capex**:  The Union Budget 2026–27 increased capital investment outlay for infrastructure to Rs. 12.22 lakh crore, with public capital expenditure rising 11.5% to support infrastructure-led economic growth , supporting **NUVOCO** (cement/construction materials), **CEMPRO**, and construction-linked names like **KALYANKJIL** and **IFBIND** (consumer durables tied to construction).
+Based on current Indian market narratives, two dominant macro themes emerge from this quant-screened list:
+
+**1. Power Sector Transmission & Renewable Evacuation Capex:**  India's power transmission sector is expected to see ₹5-6 trillion capex between FY27-FY32 to strengthen grid infrastructure supporting rapid renewable energy expansion . Members: ADANIGREEN (Power), NUVOCO (cement for transmission tower foundations), APOLLOINDUS (likely utility equipment capex).  Around 33% of recently commissioned 54.8 GW renewable capacity faced 50-60% curtailment due to inadequate transmission infrastructure as of May 2026 , creating urgent equipment and infrastructure demand.
+
+**2. Infrastructure & Construction Capex Cycle:**  The Union Budget 2026-27 allocated ₹12.2 trillion for capital expenditure, an 11.5% increase over FY25-26 . Members: NUVOCO (cement), CEMPRO, IFBIND, GREAVESCOT (industrial equipment), BALAMINES (specialty chemicals for construction), APOLLOINDUS (capital goods).  A new Scheme for Enhancement of Construction and Infrastructure Equipment will boost domestic manufacturing of technologically advanced equipment for metro and high-altitude projects , directly benefiting construction-adjacent capex plays.
 
 ### ADANIGREEN — Adani Green Energy Ltd. (Power) · RS +44% (cached 2026-07-15)
 CATALYST: Q1 FY27 operational update (July 10) showed capacity up 27% YoY to 20,142 MW and energy sales up 30%.
@@ -59,7 +63,7 @@ VERDICT: Mixed — earnings recovering but ROE still weak, valuation stretched.
 CALL: WAIT — run already large; add after Q1FY27 results confirm inflection.
 WHY_CALL: GFL has genuine catalysts — refrigerant expansion, semiconductor entry, EV battery funding — and analysts see ~46% PAT CAGR through FY27. But the stock has surged 24% in three months on a PE above 95x, so a starter entry here offers poor risk-reward. If Q1FY27 results (due early August) show clear margin expansion and ROE starts climbing above 10%, that is the moment to buy.
 
-### SUMICHEM — Sumitomo Chemical India Ltd. (Chemicals) · RS +27% · 🔶 breakout
+### SUMICHEM — Sumitomo Chemical India Ltd. (Chemicals) · RS +27% (cached 2026-07-16)
 I'll check the fundamentals and recent news for SUMICHEM. CATALYST:  FY26 annual report filed July 3 with record PAT Rs 543 crore; AGM 27 July 
 THEME:  Agrochemical sector growth, supported by China+1 sourcing shift ; stock-specific brand strength
 FUNDAMENTALS:  Record PAT Rs 543 crore, EBITDA margin 20.7% (all-time high), ROE 17.7%, but 5-year sales growth only 3.81% 
@@ -75,38 +79,30 @@ VERDICT: Hard news — real Q4 results, merger deal, licensing deal, and managem
 CALL: BUY-WORTHY — margins accelerating, debt low, clear growth roadmap ahead.
 WHY_CALL: Profit grew 55% in FY26, margins are rising, and FY27 guidance is credible with Unichem synergies kicking in. Main risk is the stock already ran hard and trades at 36x trailing earnings, leaving little room for disappointment. A Q4 sequential margin dip is worth watching; if FY27 Q1 margins slip below 21%, revisit.
 
-### RKFORGE — Ramkrishna Forgings Ltd. (Automobile and Auto Components) · RS +4%
-I'll check the fundamentals and recent news for Ramkrishna Forgings Ltd. Let me search for more recent news specific to the last 3-4 weeks. Based on my research, here is the analysis in the exact 5-line format requested:
+### AARTIDRUGS — AARTIDRUGS () · RS +0%
+I'll check the fundamentals and recent news for AARTIDRUGS. Let me search for more recent news from the last 3-4 weeks. Based on my research, here's the analysis in your requested format:
 
-CATALYST: Q4FY26 net profit surged 312% YoY to ₹55.94 crore (reported mid-July 2026).
-THEME: Auto component cyclical recovery tied to India vehicle demand; peers Bharat Forge, UNO Minda.
-FUNDAMENTALS: Price-action driven—Q4 showed strong profit spike but ROE still weak at 2.56%, debt high at ₹1,585 crore.
-VERDICT: Mixed — sharp one-quarter earnings spike masks structural weakness and stretched valuation.
-CALL: WAIT — valuation far ahead of sustained earnings, debt burden unresolved, and recent spike may not repeat.
-WHY_CALL:  Q4 profit jumped 312% but Q3 to Q4 was an outlier driven by mix/margin timing, not sustainable demand acceleration.   At P/E 127 and debt of ₹1,585 crore against modest FCF, the stock prices in multi-year improvement that hasn't yet materialized.   While earnings grew 31% over 5 years and analyst forecasts suggest acceleration, the company's current ROE of 2.56% and interest coverage weakness mean debt deleveraging remains the bigger story than new order wins.  Risk: profit reverts to trend below management guidance. Change mind if: sustained quarterly profit above ₹40 crore and debt falls below ₹1,000 crore within 12 months.
+CATALYST:  US FDA lifted import restrictions on AARTIDRUGS' API facility , enabling US exports.
+THEME: Stock-specific—API manufacturing recovery and capacity utilization ramp-up.
+FUNDAMENTALS:  June quarter net profit rose 62.2% YoY; revenue up 6.3% YoY , backed by production recovery.
+VERDICT: Mixed — margin pressures unresolved, raw material volatility persists.
+CALL: WAIT — FDA clearance real, but entry from ₹564 peak now ₹397 doesn't offset weak medium-term visibility.
+WHY_CALL: FDA lift is tangible but already partially priced in near ₹400. Management guidance of 15–20% FY27 growth depends entirely on salicylic acid ramp—a critical execution risk.  Raw material cost pressures limit orders to 8–10 days; ammonia cost surge hit Metformin and Metronidazole output . Valuation at 21× PE on uncertain leverage makes margin upside speculative; wait for quarterly progress on new capacity utilization or cost normalization before adding.
 
-### ORIENTHOT — ORIENTHOT (Watchlist) · RS +35% (cached 2026-07-14)
-CATALYST: NSE sought clarification June 24, 2026 on the price surge; no verified public catalyst found for the move.
-THEME: India luxury hotels recovery tailwind (peers: Indian Hotels IHCL, EIH); partly stock-specific given small-cap illiquidity.
-FUNDAMENTALS: Sales grew 31% YoY in Q1 FY26 and profit swung to positive, but full-year profit fell vs FY23 and ROE is a weak 5%.
-VERDICT: Mixed — real revenue growth but profit inconsistent and debt rising.
-CALL: WAIT — sharp rally with no confirmed trigger; entry too risky now.
-WHY_CALL: Revenue is genuinely growing and promoters quietly raised stake to 68%, which is encouraging. But profit has been erratic, debt is climbing, ROE is just 5%, and the exchange itself flagged unusual price movement on June 24. Re-enter only if price cools to near 52-week mid-range (~₹110-115) or Q1 FY27 results confirm profit acceleration.
+### HYUNDAI — Hyundai Motor India Ltd. (Automobile and Auto Components) · RS +6%
+I'll help you analyze Hyundai Motor India Ltd. Let me gather the necessary information. Let me search for more recent news on HYUNDAI stock specifically, particularly any announcements or catalysts in the last 3-4 weeks. Based on my research, here is the analysis in the exact 5-line format you requested:
 
-### PARADEEP — Paradeep Phosphates Ltd. (Chemicals) · RS +17%
-I'll check the screener data and recent news for Paradeep Phosphates. I have solid data on fundamentals and recent technical/news signals. Let me do one more targeted search for specific recent catalyst news from the past 3-4 weeks. Based on screener data and recent news, here is my analysis:
+CATALYST:  Battery-as-a-Service (BaaS) CRETA Electric launch July 6, 2026  — India's affordable EV ownership model.
 
-CATALYST:  Q4 FY26 net sales rose 34.6% Y-o-Y but net profit fell 2.8% in March 2026 ;  S&P Global Sustainability Yearbook 2026 recognition in February 2026  as only Indian fertilizer company featured.
+THEME: India electric SUV adoption + affordability play, similar to MSIL and TATAMOTORS leading EV transition.
 
-THEME:  Profit growing (TTM ₹936 Cr vs Mar 2025 ₹552 Cr vs Mar 2024 ₹99.91 Cr) ; fertilizer sector with peers CHMB, MDFT; expansion into Goa phosphoric acid plant.
+FUNDAMENTALS:  April 2026 domestic sales 51,902 units (+17% YoY) ,  nearly debt-free with 36.8% ROE  — backed by volume growth.
 
-FUNDAMENTALS:  Q4 sales up 34.6% YoY to ₹4,701.97 crore ;  P/E 13.28 below 3-year average 26.61; EV/EBITDA 9.68 vs 3yr average 12.68  but  debt-to-equity 1.07 is high .
+VERDICT: Mixed — margin pressure from commodities, post-IPO valuation re-rating risk.
 
-VERDICT: Mixed —  strong long-term growth but disappointing recent quarterly results .
+CALL: BUY-WORTHY — real volume traction and EV positioning, but not stretched yet.
 
-CALL: WAIT —  stock at ₹134.55 is 42.5% below 52-week high .
-
-WHY_CALL: Earnings growth is real (profit up 9x in 3 years) and valuation is cheap, but recent profit decline despite sales jump signals margin pressure. Downgrade to Sell on June 29 reflects mixed technicals. Wait for next quarterly results to confirm recovery or deterioration before a starter position.
+WHY_CALL:  Company faced production loss from supplier fire but recovered by June 22, 2026 , showing resilience.  CRETA EV remains primary valuation catalyst . Main risk:  price hike of ₹12,800 (June 2026) aims to protect margins after 3.7% FY26 profit dip and 70 bps EBITDA contraction  — volume response critical. Watch: if new EV models and Pune plant expansion (₹7,500 crore capex) deliver earnings growth justifying P/E 30, this becomes attractive for long-term buyers at current levels.
 
 ### CEMPRO — Cemindia Projects Ltd. (Construction) · RS +148% (cached 2026-07-14)
 CATALYST: Adani Group acquired control in May 2025, rebranding from ITD Cementation; Q4 FY26 profit surged 114% YoY reported May 14 2026.
@@ -164,7 +160,7 @@ VERDICT: Mixed — strong revenue growth, but profit shrank and promoters pledge
 CALL: WAIT — post-run valuation at 130x P/E prices in perfection already.
 WHY_CALL: Revenue is genuinely growing fast (25%+ annually) and the flex-office story is real with new leases and capacity additions. The main risk is the stretched valuation (P/E ~130x), falling full-year profit, and heavy promoter pledge (41.4%), which add meaningful downside if growth stumbles. Wait for a pullback toward fair value or one clean quarter showing profit growth matching revenue growth before adding.
 
-### ARVIND — Arvind Ltd. (Textiles) · RS +41% · 🔶 breakout
+### ARVIND — Arvind Ltd. (Textiles) · RS +41% (cached 2026-07-16)
 I'll check the screener data and search for recent news on Arvind Ltd. Let me search for more recent specific news and catalyst information from the last 3-4 weeks. Based on the research, here is my analysis:
 
 CATALYST:  Arvind announced FY26 record revenue of ₹9,303 Cr (up 12%), EBITDA up 15% to ₹1,061 Cr, and completed $136M Dalco-GFT acquisition in May 2026 
@@ -317,7 +313,7 @@ VERDICT: Mixed — QIP is real but earnings are sharply deteriorating right now.
 CALL: WAIT — stock has run hard on liquidity news, not earnings recovery.
 WHY_CALL: The QIP brings strong institutional validation and balance sheet muscle for Vizag expansion, which is genuinely positive. However, sales and profits have fallen sharply, the stock is up nearly 90% from its March lows, and current price is above some analyst fair-value estimates. Wait for one quarter of clear revenue recovery before adding; a confirmed earnings upturn would change this to BUY-WORTHY.
 
-### GLAND — Gland Pharma Ltd. (Healthcare) · RS +44% · 🔶 breakout
+### GLAND — Gland Pharma Ltd. (Healthcare) · RS +44% (cached 2026-07-16)
 I'll check the screener data and recent news for Gland Pharma to provide you with the analysis. Let me search for more recent news from the last 2-3 weeks to capture any fresh catalysts. Based on the data gathered, here is my analysis:
 
 CATALYST:  Q4 FY26 earnings beat with 96% profit jump and ₹20 dividend proposed May 18, 2026 
@@ -335,70 +331,69 @@ VERDICT: Mixed — real growth but 30% promoter pledge and dilutive preferential
 CALL: WAIT — big acquisition overhang, heavy dilution, and pledged promoter shares add real near-term risk. Growth story is genuine but wait for EGM clarity and acquisition integration before adding; re-enter if pledge falls and dilution gets absorbed cleanly.
 
 ### RBA — Restaurant Brands Asia Ltd. (Consumer Services) · RS +12%
-I'll check the fundamentals on screener.in and search for recent news and catalysts for RBA. CATALYST: Inspira Global controlling stake acquisition; capacity to 800 stores by FY29
-THEME: QSR recovery in India driven by digital, dine-in, value offerings
-FUNDAMENTALS: FY26 revenue ₹28.2b (+10.7% YoY), net loss ₹1.87b (-13% narrower)
-VERDICT: Mixed — turnaround story but still unprofitable; execution risk
-CALL: BUY-WORTHY — starter long position with patience for India momentum
+I'll check the fundamentals and recent news for RBA to assess this potential accumulation setup. Based on my research, here is your assessment:
 
-WHY_CALL:  Strong dine-in and digital growth drove record gross margins and EBITDA, with India outperforming and Indonesia's Burger King turning EBITDA positive .  Analysts expect breakeven for the first time, with losses reducing 19% per year to 2028, and profit of ₹525m by 2029 . Rising volume on near-lows signals quiet accumulation before this cash-flow inflection—but  losses still at ₹1.87b  and  target of ₹83.80 offers only +13.75% upside , so entry risk is real if margin recovery stalls or Indonesia drags longer.
+CATALYST:  Inspira Global acquiring controlling stake (approval pending) , ₹1,500 crore capital injection, management change July 2026
+THEME: Stock-specific
+FUNDAMENTALS:  Revenue ₹2,823 Cr, still loss-making (-₹204 Cr net), 5.94x book 
+VERDICT: Mixed
+CALL: WAIT — execution risk from ownership turmoil remains high
+WHY_CALL:  Q4 FY26 showed strong 17.1% revenue growth and 27.6% EBITDA growth with 6.3% same-store sales (best in 12 quarters) , and  analysts expect breakeven by 2028 with losses reducing 19% annually —real operational momentum exists. However,  major ownership/management change just executed July 2026 with new promoters taking control  creates execution uncertainty.  Indonesia remains a significant drag and company carries high debt-to-equity . Recent hard catalyst (promoter change) could unlock value but integration risk is non-trivial; better to wait for one full quarter under new management to confirm momentum holds.
 
 ### TSFINV — TSF Investments Ltd. (Financial Services) · RS +24%
-I'll help you analyze TSF Investments Ltd. Let me gather the necessary information. Based on my research, here's my analysis of TSF Investments Ltd (TSFINV):
+I'll check the fundamentals and search for recent news on TSF Investments Ltd. Based on my research, here's the analysis in your requested format:
 
-CATALYST: Final dividend ₹4.45/share approved May 2026 — no major news-driven orders or capacity announcements visible
-THEME: Investment holding company with auto-sector exposure — not a high-growth operating business
-FUNDAMENTALS:  Low ROE of 9.37% over 3 years; P/E ~20 , while  debtor days increased sharply from 31.9 to 74.1 days 
+CATALYST: Dividend ex-date July 7, 2026 (₹4.45 per share), final dividend expected.
+THEME: Stock-specific; core investment/fintech play underperforming earnings.
+FUNDAMENTALS:  Profit declining FY24 ₹533Cr → FY25 ₹412Cr → TTM ₹137Cr; PE 18.63. 
 VERDICT: Mixed
-CALL: WAIT — dividend play with weakening fundamentals in sideways tape
-
-WHY_CALL:  Q4 FY26 net profit jumped 50.36%  and  earnings up 37% annually for 5 years with 28% annual dividend growth , which looks good on paper. However, rising debtor days signal working capital stress,  low ROE suggests capital inefficiency , and the stock is down 44% from Oct 2025 highs—the volume uptick could be institutional accumulation BUT appears more likely a dividend-chase sideways move. Risk: valuation already reflects recent earnings strength; Q1 FY27 results could disappoint. What changes call: breakthrough order from portfolio companies (Axles India or others), or proof that debtor days stabilize with margin expansion.
+CALL: AVOID — earnings collapse signals deeper trouble, not accumulation.
+WHY_CALL:  Revenue down 28.6% and net profit down 26.6% YoY FY25; fundamentals deteriorating badly.  Volume rise amid profit crash suggests forced consolidation or insider weakness, not smart accumulation. Wait for stabilization and clarity on why profits halved.
 
 ### BHARTIHEXA — Bharti Hexacom Ltd. (Telecommunication) · RS +6%
-I'll gather the information you need on Bharti Hexacom Ltd. Based on the research, here's your analysis in the exact format requested:
+I'll search for the latest information on Bharti Hexacom Ltd. to analyze this potential accumulation setup. Based on my research, here's the analysis in your exact format:
 
-CATALYST: Nothing found — may be noise
-THEME: Stock-specific
-FUNDAMENTALS: Q4 FY26 net income ₹447 cr, up 4.6% YoY but down 5.7% QoQ
+CATALYST: Nothing found — may be noise, or Q3 results expected soon
+THEME: Stock-specific; Bharti Airtel subsidiary in regional telecom
+FUNDAMENTALS:  Net profit jumped 110% YoY to ₹468 crore in Q4 FY25 , but  fell -4.63% in Q4 FY26 
 VERDICT: Mixed
-CALL: WAIT — valuation too stretched relative to growth prospects
-WHY_CALL:  Q4 revenue grew only 5.4% YoY with homes business surging 65.3% while EBITDA margins expanded 113 bps , but  P/E of 42.27x exceeds parent Bharti Airtel's 35.48x despite Airtel's superior scale and stronger returns .  Stock down 27% from 52-week high despite solid earnings, signalling investor scepticism on sustainability . Rising volumes suggest accumulation by informed players, but fundamentals don't support the premium — wait for a harder pullback or clearer Q1 FY27 momentum before entry at a 1/3 starter position.
+CALL: WAIT — volume spike without clear catalyst or earnings date
+WHY_CALL: Stock is down ~19% from ATH and trading sideways, but rising volume without an announced catalyst or imminent results date is ambiguous. Q3 results timing unclear and recent profit deceleration (FY26 down 5%) weakens the accumulation thesis. Broker Jefferies bullish on homes growth, but no trigger date visible. Wait for Q3 results announcement or a concrete acquisition/capacity story.
 
 ### MSUMI — Motherson Sumi Wiring India Lt (Automobile and Auto Components) · RS +3%
-I'll check the fundamentals and search for recent news and catalysts on Motherson Sumi Wiring India. Let me search for more specific recent news about orders, capacity expansion, or upcoming catalysts. Based on my research, here's my analysis:
+I'll check the screener data and search for recent catalysts and news on MSUMI. Based on the research, here is my analysis in the exact 5-line format you requested:
 
-CATALYST:  Q1 FY27 results expected July-August 2026 ; greenfield ramp-up underway
-THEME: Stock-specific — execution on greenfield capacity absorption and margin recovery
-FUNDAMENTALS:  Revenue up 24% FY26 to ₹114.8b; profit margin 5.4% (down from 6.5%) 
-VERDICT: Mixed — strong growth, but margin pressure from copper/polymer costs and greenfield start-up drags
-CALL: BUY-WORTHY — earn growth + EV/ICE demand tailwind, not priced in yet
-
-WHY_CALL:  EPS up 13% per year over 3 years but stock up only 7%, lagging earnings .  Copper inflation lag (3–6 months) to customers is temporary; ~28% volume growth is real .  Greenfields at 50–80% utilization (Pune ~50%, Kharkhoda 80%, Gujarat 60%); expected to hit ₹2,000 crore annual run-rate once fully loaded, erasing start-up losses . Risk: global auto slowdown or customer de-stocking could delay volume ramp-up. Catalyst: Q1 FY27 results in July/August — if volumes confirm and margins stabilize post-copper pass-through, a re-rating toward ₹50–55 is justified.
+CATALYST: Q1 FY27 results August 5, 2026 — greenfield ramp-up trajectory critical
+THEME: Stock-specific — wiring harness growth outpacing autos, EV/hybrid content lift
+FUNDAMENTALS: Revenue ₹114.8b FY26, up 24% YoY; EPS ₹0.94 up 3% despite margin pressure
+VERDICT: Hard news — earnings growth solid but greenfield drag + copper inflation offsetting gains
+CALL: WAIT — volume spike may mask ramp timing risk, entry still overextended relative to near-term return
+WHY_CALL:  Company outperforms market with 33% revenue growth , but  new plant startup costs hit margins  and  greenfields like Pune running only 50% utilization . Valuation at  forward P/E 43x versus 29x industry average  prices in flawless execution. Watch Q1 results August 5 for greenfield ramp-up timing before adding; rising volume may signal insider confidence, but risk-reward improves post-results clarity on customer volume timing.
 
 ### UTIAMC — UTI Asset Management Company L (Financial Services) · RS -1%
-I'll help you analyze UTI Asset Management Company Ltd. Let me gather the necessary data. Based on my research, here's the 5-line analysis for UTIAMC:
+I'll help you analyze UTIAMC. Let me gather the necessary information. Based on my research, here's the analysis in your requested format:
 
-CATALYST: Q1FY27 results expected July-August; Budget 2026-27 NPS incentives and ETF growth tailwinds
-THEME: Indian asset management sector expanding 12-18% annually; index fund and pension fund AUM growing
-FUNDAMENTALS:  Revenue ₹1,705 Cr, Profit ₹472 Cr; poor 7.84% sales growth over past 5 years 
-VERDICT: Mixed
-CALL: WAIT — Recent Q4FY26 showed earnings and profit margin pressure
-WHY_CALL:  FY27 expected to deliver 18-22% PAT expansion through operating leverage , offering real growth upside, but  Q4FY26 reported a loss of Rs 67 crore vs profit of Rs 87 crore in Q4FY25  shows recent execution challenges. Volume rise + sideways action suggests quiet accumulation, but wait for Q1FY27 results in late July/August to confirm turnaround before entry—don't chase into results announcement.
+CATALYST:  Q1 earnings call July 23 at 4 PM , AGM July 21 approval for ₹40 dividend, leadership settled post-Feb 2026.
+THEME: Stock-specific — asset management facing margin compression; sector growth headwinds.
+FUNDAMENTALS:  FY26 EPS ₹31.51 (down 45% to ₹4.04b net income), revenue down 7.4%. 
+VERDICT: Mixed — AUM growing but earnings collapsed; near-term catalysts exist but weak.
+CALL: WAIT — earnings too weak; patience until growth stabilizes and valuation re-rates down.
+WHY_CALL:  Profit margin crashed to 24% from 40%  driven by costs; rising volume before results may be noise. Main risk: Q1 numbers miss badly again; upside hinges on FY27 guidance beat and margin recovery—neither guaranteed yet.
 
 ### AADHARHFC — Aadhar Housing Finance Ltd. (Financial Services) · RS +5%
-I'll help you analyze Aadhar Housing Finance Ltd. Let me check the fundamentals first, then search for recent news and catalysts. CATALYST:  FY27 guidance: 20-22% AUM and profit growth, 17-18% disbursement growth ,  AGM August 6, 2026 
-THEME:  Pradhan Mantri Awas Yojana 2.0 scheme driving affordable housing demand 
-FUNDAMENTALS:  FY26 AUM grew 20%, PAT rose 22% to ₹1,108 crore 
-VERDICT: Hard news
-CALL: WAIT — rally stretched, recent highs limit entry safety
-WHY_CALL:  Stock trades at 22x P/E and 3.22x P/B, elevated vs peers . Real growth (20%+ AUM/profit) and government tailwinds justify valuation, but  all-time high hit July 3 —momentum play now, not builder's setup. Volume surge may be late-stage accumulation, not early-stage. Hold for pullback to ₹480–500 or Q1 FY27 preview; better entry will come.
+I'll check the fundamentals on screener.in and search for recent news and catalysts on Aadhar Housing Finance. CATALYST:  Union Budget 2026-27 doubled PMAY-Urban subsidy allocation to ₹18,625 crore  — ongoing structural driver, not imminent date-catalyst.
+THEME: stock-specific, riding affordable housing wave with policy tailwinds.
+FUNDAMENTALS:  AUM ₹30,571 crore (20% YoY), PAT ₹1,096 crore (20% YoY growth) .
+VERDICT: Hard news —  Q4 net profit up 22% YoY, revenue up 18% YoY , backed by management guidance and branch expansion.
+CALL: BUY-WORTHY — strong earnings growth, proven execution, affordable-housing tailwinds, fair valuation for 18-20% loan growth trajectory.
+WHY_CALL:  20% AUM growth and 17%+ RoE despite sector headwinds .  Management targets ₹50,000 crore AUM by FY29 with 18-20% loan growth  — realistic given current momentum and  branch expansion plan of 40-50 new branches annually . Risk:  promoter stake reduced 10.29% to 64.9%; monitor confidence signals . Change mind if loan growth slips below 15% or NPA ratio breaches 1.5%.
 
 ### CANFINHOME — Can Fin Homes Ltd. (Financial Services) · RS +6%
-I'll check the fundamentals and search for recent news and catalysts for Can Fin Homes Ltd. Based on the search results, here's your analysis:
+I'll check the fundamentals and search for recent news and catalysts for Can Fin Homes Ltd. Based on the research, here's your analysis:
 
-CATALYST:  Q1 FY2026-27 results board meeting July 18, 2026 ;  ₹5,000 crore NCD approval for housing loan growth funding 
-THEME: Housing finance sector consolidation, mid-market lending defensive moat
-FUNDAMENTALS:  EPS grew 26.67% YoY to ₹81.54 in FY26, CRAR 23.15% 
-VERDICT: Hard news
-CALL: BUY-WORTHY — accelerating earnings with real capacity to deploy
-WHY_CALL:  Q4 net profit surged 31% QoQ to ₹346 crore  and  strong Q4 disbursement momentum with FY27 targeting 14% AUM growth  show genuine earnings traction.  ₹5,000 crore NCD approval strengthens capital for affordable/mid-income housing demand , providing a hard runway. Risk:  CVC investigation ordered into recruitment irregularities  could drag sentiment. Rising volume on sideways price suggests quiet accumulation before results; if Q1 disappoints or investigation widens, reversal fast.
+CATALYST:  Q1 FY2026-27 results board meeting July 18, 2026 ; earnings call July 20
+THEME: Stock-specific; housing finance, PMAY-driven demand growth
+FUNDAMENTALS:  FY26 net profit +27% YoY to ₹1,086 cr; P/E 10.87, P/B 2.33 
+VERDICT: Hard news — imminent Q1 results; strong prior quarter growth but valuation concerns
+CALL: BUY-WORTHY — starter long-term position on dips
+WHY_CALL:  ROE avg 17.03%, Q4 net sales ₹1,073.65cr, PAT surged 47.8% to ₹345.67cr , with rising volume suggesting smart accumulation.  Hold rating warns fair valuation and sideways technicals; momentum shift needed post-Q1 . Risk: results must sustain 25%+ profit growth and margin stability; results miss would trigger exit.
