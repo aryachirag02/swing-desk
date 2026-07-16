@@ -2,8 +2,8 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24072.8 · 50DMA 23831.4 · 200DMA 24823.5 · 1M +0.3%
-**Breadth:** 64.0% of universe above 50-DMA (Broad participation) · A/D 217/282
-**Flows:** FII ₹-736 cr today (-2,467 cr 5-day — **selling streak, tighten up**) · DII ₹+705 cr
+**Breadth:** 63.9% of universe above 50-DMA (Broad participation) · A/D 217/281
+**Flows:** FII ₹-4,206 cr today (-6,140 cr 5-day — **selling streak, tighten up**) · DII ₹+2,986 cr
 
 **Indices:** NIFTY 50 24,072.8 (-0.0%) · BANK NIFTY 57,582.2 (-0.3%) · NIFTY REALTY 906.2 (-3.5%) · NIFTY PHARMA 26,008.1 (+0.0%) · NIFTY FMCG 48,408.0 (-1.8%) · NIFTY METAL 12,495.9 (-1.5%)
 
@@ -446,7 +446,7 @@ WHY_CALL:  ROE avg 17.03%, Q4 net sales ₹1,073.65cr, PAT surged 47.8% to ₹34
 - **IPCALAB** — 2026-08-10
 - **ALKEM** — 2026-08-12
 
-## 👀 Watchlist (230)
+## 👀 Watchlist (229)
 SAILIFE · DIVISLAB · ENDURANCE · AJANTPHARM · BIOCON · JBCHEPHARM · JUBLPHARMA · AARTIIND · ABBOTINDIA · FLUOROCHEM · HYUNDAI · RKFORGE · SHREECEM · 3MINDIA · ABREL · VIJAYA · POLYMED · CHALET · LLOYDSME · ALKEM · AMBER · ANANTRAJ · ASTERDM · CONCORDBIO · GODREJPROP …
 
 ## 📌 Position reminders (check Trade log tab)
