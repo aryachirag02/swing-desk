@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24078.5 · 50DMA 23830.6 · 200DMA 24829.8 · 1M +0.9%
-**Breadth:** 56.4% of universe above 50-DMA (Selective) · A/D 119/106
+**Breadth:** 63.3% of universe above 50-DMA (Broad participation) · A/D 303/196
 **Flows:** FII ₹-736 cr today (-2,467 cr 5-day — **selling streak, tighten up**) · DII ₹+705 cr
 
 **Indices:** NIFTY 50 24,078.5 (+0.1%) · BANK NIFTY 57,757.9 (+0.5%) · NIFTY REALTY 938.6 (+3.5%) · NIFTY PHARMA 26,003.6 (+0.4%) · NIFTY FMCG 49,310.6 (-0.1%) · NIFTY METAL 12,688.9 (+1.5%)
@@ -411,42 +411,42 @@ CALL: BUY-WORTHY — starter long-term position on dips
 WHY_CALL:  ROE avg 17.03%, Q4 net sales ₹1,073.65cr, PAT surged 47.8% to ₹345.67cr , with rising volume suggesting smart accumulation.  Hold rating warns fair valuation and sideways technicals; momentum shift needed post-Q1 . Risk: results must sustain 25%+ profit growth and margin stability; results miss would trigger exit.
 
 
-**Leading sectors:** Textiles (+21.3%) · Capital Goods (+19.5%) · Chemicals (+16.0%) · Consumer Services (+15.4%)
+**Leading sectors:** Diversified (+14.0%) · Healthcare (+13.4%) · Realty (+11.5%) · Textiles (+9.6%)
 
-## ✅ Strong Buy (8)
-- **FLUOROCHEM** (Chemicals · Mid cap) — score 100, Breakout — new 20-day high on 3.4× volume. Entry ₹4131.6 · Stop ₹3840.7 · Target ₹4713.3 · Risk/sh ₹290.9 · 📅 results 2026-08-04 — inside holding window
-- **JUBLPHARMA** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 5.5× volume. Entry ₹1028.4 · Stop ₹960.4 · Target ₹1164.5 · Risk/sh ₹68.0 · 📅 results 2026-08-07 — inside holding window
-- **DIVISLAB** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 3.0× volume. Entry ₹7188.5 · Stop ₹6804.7 · Target ₹7956.1 · Risk/sh ₹383.8 · 📅 results 2026-08-05 — inside holding window
-- **ADANIGREEN** (Power · Large cap) — score 86, Breakout — new 20-day high on 1.9× volume. Entry ₹1604.5 · Stop ₹1471.9 · Target ₹1869.7 · Risk/sh ₹132.6 · 📅 results 2026-07-22 — inside holding window
+## ✅ Strong Buy (10)
+- **JUBLPHARMA** (Healthcare · Small cap) — score 96, Breakout — new 20-day high on 5.5× volume. Entry ₹1028.4 · Stop ₹960.4 · Target ₹1164.5 · Risk/sh ₹68.0 · 📅 results 2026-08-07 — inside holding window
+- **DIVISLAB** (Healthcare · Large cap) — score 94, Breakout — new 20-day high on 1.9× volume. Entry ₹7273.0 · Stop ₹6891.3 · Target ₹8036.3 · Risk/sh ₹381.7 · 📅 results 2026-08-05 — inside holding window
+- **FLUOROCHEM** (Chemicals · Mid cap) — score 94, Breakout — new 20-day high on 3.4× volume. Entry ₹4131.6 · Stop ₹3840.7 · Target ₹4713.3 · Risk/sh ₹290.9 · 📅 results 2026-08-04 — inside holding window
+- **GROWW** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 4.3× volume. Entry ₹216.3 · Stop ₹197.4 · Target ₹254.2 · Risk/sh ₹18.9
+- **LLOYDSME** (Metals & Mining · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹1866.1 · Stop ₹1728.2 · Target ₹2141.9 · Risk/sh ₹137.9
+- **GABRIEL** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 4.6× volume. Entry ₹1354.5 · Stop ₹1228.9 · Target ₹1605.7 · Risk/sh ₹125.6
 - **ULTRACEMCO** (Construction Materials · Large cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹11812.0 · Stop ₹11277.1 · Target ₹12881.9 · Risk/sh ₹534.9 · 📅 results 2026-07-20 — inside holding window
 - **ATHERENERG** (Automobile and Auto Components · Small cap) — score 84, Breakout — new 20-day high on 3.6× volume. Entry ₹1296.4 · Stop ₹1160.6 · Target ₹1568.0 · Risk/sh ₹135.8
-- **ECLERX** (Services · Small cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹1718.3 · Stop ₹1551.0 · Target ₹2052.9 · Risk/sh ₹167.3
 - **NUVOCO** (Construction Materials · Small cap) — score 84, Breakout — new 20-day high on 13.3× volume. Entry ₹377.2 · Stop ₹337.6 · Target ₹456.6 · Risk/sh ₹39.7
+- **JBCHEPHARM** (Healthcare · Small cap) — score 83, Breakout — new 20-day high on 1.8× volume. Entry ₹2506.0 · Stop ₹2377.7 · Target ₹2762.7 · Risk/sh ₹128.3 · 📅 results 2026-07-30 — inside holding window
 
-## 🟢 Buy (3)
-- **JBCHEPHARM** (Healthcare · Small cap) — score 77, Breakout — new 20-day high on 2.3× volume. Entry ₹2487.6 · Stop ₹2362.6 · Target ₹2737.6 · Risk/sh ₹125.0 · 📅 results 2026-07-30 — inside holding window
+## 🟢 Buy (1)
 - **KALYANKJIL** (Consumer Durables · Mid cap) — score 77, Breakout — new 20-day high on 1.9× volume. Entry ₹548.1 · Stop ₹486.7 · Target ₹670.8 · Risk/sh ₹61.4
-- **HEG** (Capital Goods · Small cap) — score 74, Breakout — new 20-day high on 2.0× volume. Entry ₹585.6 · Stop ₹534.8 · Target ₹687.3 · Risk/sh ₹50.8
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **FLUOROCHEM** — 2026-08-04
-- **ETERNAL** — 2026-07-21
+- **APOLLOHOSP** — 2026-08-12
 - **JUBLPHARMA** — 2026-08-07
 - **DIVISLAB** — 2026-08-05
-- **LALPATHLAB** — 2026-07-24
-- **ABBOTINDIA** — 2026-08-11
-- **ADANIGREEN** — 2026-07-22
+- **FLUOROCHEM** — 2026-08-04
 - **BIOCON** — 2026-08-06
-- **GLENMARK** — 2026-08-13
 - **MANKIND** — 2026-08-06
-- **ULTRACEMCO** — 2026-07-20
-- **COFORGE** — 2026-07-27
-- **KAJARIACER** — 2026-07-21
-- **BAJAJ-AUTO** — 2026-07-21
-- **DELHIVERY** — 2026-07-31
+- **AARTIIND** — 2026-07-30
+- **ABBOTINDIA** — 2026-08-11
+- **BHEL** — 2026-07-30
+- **LUPIN** — 2026-08-05
+- **ZYDUSLIFE** — 2026-08-12
+- **SUNPHARMA** — 2026-07-30
+- **ABB** — 2026-07-30
+- **FORTIS** — 2026-08-06
+- **GODREJPROP** — 2026-07-30
 
-## 👀 Watchlist (232)
-BALRAMCHIN · CHALET · SHYAMMETL · ETERNAL · GLAXO · NEWGEN · JUBLINGREA · JYOTICNC · PREMIERENE · ARE&M · LALPATHLAB · WELCORP · ABBOTINDIA · BHARTIHEXA · BIOCON · FSL · GLENMARK · HYUNDAI · J&KBANK · MANKIND · SUMICHEM · ACE · 3MINDIA · AJANTPHARM · APTUS …
+## 👀 Watchlist (237)
+APOLLOHOSP · ASTERDM · 3MINDIA · BIOCON · MANKIND · AARTIIND · ABBOTINDIA · AJANTPHARM · BHEL · ENDURANCE · NEWGEN · NH · LUPIN · ZYDUSLIFE · APTUS · ARE&M · CHALET · JSWCEMENT · SHYAMMETL · SUNPHARMA · ABB · ANANTRAJ · FORTIS · GLAXO · GODREJPROP …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
