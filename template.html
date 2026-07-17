@@ -826,7 +826,7 @@ function renderRadar(){
 function renderToday(){
   const g=DATA.regime||{}; const idx=(DATA.indices||[]).filter(x=>x.fno_dip!==undefined);
   const setups=idx.filter(x=>String(x.fno_dip).indexOf('BUY-DIP')===0);
-  const sb=(DATA.rows||[]).filter(r=>r.signal==='Strong Buy').length, by=(DATA.rows||[]).filter(r=>r.signal==='Buy').length;
+  const sb=(DATA.rows||[]).filter(r=>r.state==='Strong Buy').length, by=(DATA.rows||[]).filter(r=>r.state==='Buy').length;
   const rad=DATA.radar||{};
   const card=(emoji,title,verdict,detail,color)=>`
     <div style="border:1px solid var(--line);border-left:5px solid ${color};border-radius:10px;padding:14px 18px;margin-bottom:14px;background:var(--panel)">
