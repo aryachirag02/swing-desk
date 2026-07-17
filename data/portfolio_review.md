@@ -1,13 +1,16 @@
-# Weekly portfolio review — 2026-07-16
+# Weekly portfolio review — 2026-07-17
 
-### J&KBANK — HOLD (Stock has run ahead of earnings growth; analyst targets now near or below curren)
-NEWS:  RBI approved Kotak Mahindra Bank to acquire up to 9.99% stake in J&K Bank (conditional, within one year). 
-ANALYSTS:  JM Financial: Buy, target ₹180; ICICI Securities: Neutral, target ₹165.   One analyst on Investing.com has a 12-month target of ₹198. 
-FUNDAMENTALS:  Q4FY26 net profit surged to ₹797 cr vs ₹584 cr year ago; FY26 net profit up 13% YoY to ₹2,363 cr. 
-TECHNICALS:  Price well above 50-DMA (₹148) and 200-DMA (₹124), strong uptrend intact.
+### J&KBANK — ? ()
+I'll search for recent news and analyst coverage on J&K Bank. NEWS:  J&K Bank announced sale of 0.5% stake in PNB MetLife for Rs 120.1 crore on July 15, 2026 
+ANALYSTS:  JM Financial Buy target Rs 180, ICICI Securities Neutral target Rs 165 
+FUNDAMENTALS:  FY26 earnings up 13.34%, but revenue down 2.11% 
+TECHNICALS: Price at 182.6 above 50-day average, up 39% in three months, bullish momentum
+HOLD — Strong gains priced in; wait for deeper pullback to add more.
 
-### ORIENTHOT — HOLD (strong performer but getting expensive; wait for breakout confirmation.)
-NEWS:  ICRA upgraded Oriental Hotels' credit rating to ICRA AA-/Stable and A1+, a positive signal. 
-ANALYSTS:  Uniresearch targets Rs 170 (bull case Rs 195, bear Rs 125) as of June 29, 2026. 
-FUNDAMENTALS:  FY26 revenue up 12%, but earnings surged 73% year-on-year — strong profit growth. 
-TECHNICALS:  Price near Rs 133–134, with 140 as resistance; a breakout above 140 could trigger a fresh rally.
+### ORIENTHOT — HOLD (Wait for Q1 FY27 results; expensive valuation despite strong earnings growth)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the past 4-6 weeks specifically. Based on my search results, here's your analysis in the exact format requested:
+
+NEWS:  ICRA upgraded Oriental Hotels' credit ratings to AA-; Stable / A1+ from A+; A1 (May 2026) 
+ANALYSTS:  Consensus target Rs 139.7; Motilal Oswal Buy at Rs 148.6; Prabhudas Lilladher Neutral at Rs 129.7 
+FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3%; elevated PE of 36.7x 
+TECHNICALS: Price 129.4 above 50-day average; 3-month rally +31% but down 3.1% from your entry
