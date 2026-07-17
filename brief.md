@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24072.8 · 50DMA 23831.4 · 200DMA 24823.5 · 1M +0.3%
-**Breadth:** 58.5% of universe above 50-DMA (Selective) · A/D 109/136
+**Breadth:** 64.0% of universe above 50-DMA (Broad participation) · A/D 218/281
 **Flows:** FII ₹-4,206 cr today (-6,140 cr 5-day — **selling streak, tighten up**) · DII ₹+2,986 cr
 
 **Indices:** NIFTY 50 24,072.8 (-0.0%) · BANK NIFTY 57,582.2 (-0.3%) · NIFTY REALTY 938.6 (+3.5%) · NIFTY PHARMA 26,008.1 (+0.0%) · NIFTY IT 28,722.6 (+0.7%) · NIFTY METAL 12,688.9 (+1.5%)
@@ -411,21 +411,19 @@ CALL: BUY-WORTHY — starter long-term position on dips
 WHY_CALL:  ROE avg 17.03%, Q4 net sales ₹1,073.65cr, PAT surged 47.8% to ₹345.67cr , with rising volume suggesting smart accumulation.  Hold rating warns fair valuation and sideways technicals; momentum shift needed post-Q1 . Risk: results must sustain 25%+ profit growth and margin stability; results miss would trigger exit.
 
 
-**Leading sectors:** Diversified (+46.4%) · Consumer Durables (+31.7%) · Telecommunication (+25.3%) · Construction (+13.9%)
+**Leading sectors:** Healthcare (+13.8%) · Diversified (+12.6%) · Realty (+11.1%) · Telecommunication (+9.9%)
 
-## ✅ Strong Buy (13)
+## ✅ Strong Buy (11)
+- **ERIS** (Healthcare · Small cap) — score 96, Breakout — new 20-day high on 2.1× volume. Entry ₹1488.4 · Stop ₹1388.1 · Target ₹1688.9 · Risk/sh ₹100.3
 - **ABB** (Capital Goods · Large cap) — score 94, Breakout — new 20-day high on 6.5× volume. Entry ₹7667.5 · Stop ₹7097.1 · Target ₹8808.3 · Risk/sh ₹570.4 · 📅 results 2026-07-31 — inside holding window
-- **DIXON** (Consumer Durables · Mid cap) — score 94, Breakout — new 20-day high on 3.3× volume. Entry ₹14507.0 · Stop ₹13358.5 · Target ₹16804.0 · Risk/sh ₹1148.5 · 📅 results 2026-07-22 — inside holding window
-- **FLUOROCHEM** (Chemicals · Mid cap) — score 94, Breakout — new 20-day high on 3.4× volume. Entry ₹4131.6 · Stop ₹3840.7 · Target ₹4713.3 · Risk/sh ₹290.9 · 📅 results 2026-08-04 — inside holding window
 - **IIFL** (Financial Services · Small cap) — score 94, Breakout — new 20-day high on 2.3× volume. Entry ₹567.1 · Stop ₹519.4 · Target ₹662.4 · Risk/sh ₹47.7 · 📅 results 2026-07-29 — inside holding window
-- **LLOYDSME** (Metals & Mining · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹1866.1 · Stop ₹1728.2 · Target ₹2141.9 · Risk/sh ₹137.9
-- **PGEL** (Consumer Durables · Small cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹621.0 · Stop ₹570.6 · Target ₹721.6 · Risk/sh ₹50.3
 - **SRF** (Chemicals · Mid cap) — score 94, Breakout — new 20-day high on 3.3× volume. Entry ₹2889.3 · Stop ₹2714.5 · Target ₹3238.9 · Risk/sh ₹174.8 · 📅 results 2026-07-22 — inside holding window
 - **BHEL** (Capital Goods · Mid cap) — score 90, Breakout — new 20-day high on 3.2× volume. Entry ₹434.0 · Stop ₹395.7 · Target ₹510.6 · Risk/sh ₹38.3 · 📅 results 2026-07-16 — inside holding window
 - **CHENNPETRO** (Oil Gas & Consumable Fuels · Small cap) — score 90, Breakout — new 20-day high on 6.2× volume. Entry ₹1240.8 · Stop ₹1103.4 · Target ₹1515.7 · Risk/sh ₹137.4
-- **GABRIEL** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 4.6× volume. Entry ₹1354.5 · Stop ₹1228.9 · Target ₹1605.7 · Risk/sh ₹125.6
-- **JUBLPHARMA** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 5.5× volume. Entry ₹1028.4 · Stop ₹960.4 · Target ₹1164.5 · Risk/sh ₹68.0 · 📅 results 2026-08-07 — inside holding window
-- **DIVISLAB** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 1.9× volume. Entry ₹7273.0 · Stop ₹6891.3 · Target ₹8036.3 · Risk/sh ₹381.7 · 📅 results 2026-08-05 — inside holding window
+- **DIXON** (Consumer Durables · Mid cap) — score 88, Breakout — new 20-day high on 3.3× volume. Entry ₹14507.0 · Stop ₹13358.5 · Target ₹16804.0 · Risk/sh ₹1148.5 · 📅 results 2026-07-22 — inside holding window
+- **PGEL** (Consumer Durables · Small cap) — score 88, Breakout — new 20-day high on 2.2× volume. Entry ₹621.0 · Stop ₹570.6 · Target ₹721.6 · Risk/sh ₹50.3
+- **IPCALAB** (Healthcare · Mid cap) — score 87, Breakout — new 20-day high on 2.8× volume. Entry ₹1890.2 · Stop ₹1762.6 · Target ₹2145.4 · Risk/sh ₹127.6 · 📅 results 2026-08-10 — inside holding window
+- **HSCL** (Chemicals · Small cap) — score 86, Breakout — new 20-day high on 2.4× volume. Entry ₹722.3 · Stop ₹654.4 · Target ₹858.2 · Risk/sh ₹67.9
 - **DEEPAKNTR** (Chemicals · Small cap) — score 80, Breakout — new 20-day high on 1.9× volume. Entry ₹1741.8 · Stop ₹1606.3 · Target ₹2012.7 · Risk/sh ₹135.5 · 📅 results 2026-08-12 — inside holding window
 
 ## 🟢 Buy (0)
@@ -433,23 +431,23 @@ WHY_CALL:  ROE avg 17.03%, Q4 net sales ₹1,073.65cr, PAT surged 47.8% to ₹34
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **ABB** — 2026-07-31
-- **APOLLOHOSP** — 2026-08-12
-- **DIXON** — 2026-07-22
-- **FLUOROCHEM** — 2026-08-04
+- **DIVISLAB** — 2026-08-05
 - **IIFL** — 2026-07-29
 - **SRF** — 2026-07-22
-- **AARTIIND** — 2026-07-30
-- **BHEL** — 2026-07-16
-- **JUBLPHARMA** — 2026-08-07
-- **KAJARIACER** — 2026-07-21
-- **DIVISLAB** — 2026-08-05
-- **TITAN** — 2026-08-06
 - **BIOCON** — 2026-08-06
-- **MANKIND** — 2026-08-06
-- **PVRINOX** — 2026-08-06
+- **JUBLPHARMA** — 2026-08-07
+- **AARTIIND** — 2026-07-30
+- **ABBOTINDIA** — 2026-08-11
+- **BHEL** — 2026-07-16
+- **FLUOROCHEM** — 2026-08-04
+- **SHREECEM** — 2026-07-31
+- **DIXON** — 2026-07-22
+- **IPCALAB** — 2026-08-10
+- **ALKEM** — 2026-08-12
+- **GODREJPROP** — 2026-07-30
 
-## 👀 Watchlist (234)
-APOLLOHOSP · ENDURANCE · 3MINDIA · AARTIIND · HYUNDAI · KAJARIACER · RKFORGE · TITAN · ASTERDM · BIOCON · CHALET · SHYAMMETL · BHARTIHEXA · J&KBANK · JKTYRE · MANKIND · NUVOCO · PVRINOX · ABBOTINDIA · AJANTPHARM · APTUS · BALRAMCHIN · HOMEFIRST · SONACOMS · ARE&M …
+## 👀 Watchlist (229)
+SAILIFE · DIVISLAB · ENDURANCE · AJANTPHARM · BIOCON · JUBLPHARMA · AARTIIND · ABBOTINDIA · FLUOROCHEM · HYUNDAI · RKFORGE · SHREECEM · 3MINDIA · ABREL · VIJAYA · POLYMED · CHALET · LLOYDSME · ALKEM · AMBER · ANANTRAJ · ASTERDM · CONCORDBIO · GODREJPROP · JKTYRE …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.

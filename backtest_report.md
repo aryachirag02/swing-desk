@@ -4,8 +4,8 @@
 
 - **trades**: 49
 - **win rate**: 42.9
-- **avg win**: 14636.0
-- **avg loss**: -4188.0
+- **avg win**: 14622.0
+- **avg loss**: -4186.0
 - **profit factor**: 2.62
 - **expectancy R**: 0.356
 - **avg hold days**: 29.2
