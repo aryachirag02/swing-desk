@@ -1,6 +1,6 @@
 ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
 LTF.NS,Financial Services,2025-04-24,2025-04-28,175.35,158.5,747,2,stop (gap),green,-12590.0,-1.22
-BIKAJI.NS,Fast Moving Consumer Goods,2025-04-25,2025-05-06,749.21,684.24,1,6,score decay,green,-65.0,-0.97
+BIKAJI.NS,Fast Moving Consumer Goods,2025-04-25,2025-05-06,747.74,682.9,1,6,score decay,green,-65.0,-0.97
 IOC.NS,Oil Gas & Consumable Fuels,2025-05-06,2025-05-09,140.03,129.43,13,3,stop (gap),green,-138.0,-1.14
 NIVABUPA.NS,Financial Services,2025-04-24,2025-06-02,84.0,84.0,1331,26,stop,green,0.0,0.0
 UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,113,33,stop,green,-10304.0,-1.0
@@ -15,36 +15,36 @@ ANURAS.NS,Chemicals,2025-04-25,2025-07-21,855.89,1159.5,4,60,time stop,green,121
 WELCORP.NS,Capital Goods,2025-06-02,2025-07-25,921.95,883.96,121,39,score decay,green,-4596.0,-0.48
 KPRMILL.NS,Textiles,2025-05-09,2025-08-01,1144.41,1064.23,1,60,score decay,green,-80.0,-0.64
 ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2246.4,2149.7,47,5,score decay,green,-4545.0,-0.66
-MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149865.74,142709.36,1,21,score decay,green,-7156.0,-0.85
+MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.6,142460.7,1,21,score decay,green,-7144.0,-0.85
 NAVA.NS,Power,2025-06-13,2025-08-18,536.83,575.95,196,45,score decay,green,7667.0,0.7
 KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,204.61,212.25,701,51,score decay,green,5353.0,0.48
 SHYAMMETL.NS,Capital Goods,2025-07-25,2025-08-28,950.26,905.9,1,22,score decay,green,-44.0,-0.76
-ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,72,46,stop,green,13357.0,1.27
+ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,71,46,stop,green,13172.0,1.27
 DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2263.1,2270.77,95,45,stop,green,729.0,0.06
-CHOICEIN.NS,Financial Services,2025-07-17,2025-09-30,752.85,767.5,231,51,score decay,green,3384.0,0.3
-PVRINOX.NS,Media Entertainment & Publication,2025-07-22,2025-10-17,1035.0,1092.6,89,60,time stop,green,5126.0,0.82
+CHOICEIN.NS,Financial Services,2025-07-17,2025-09-30,752.85,767.5,232,51,score decay,green,3399.0,0.3
+PVRINOX.NS,Media Entertainment & Publication,2025-07-22,2025-10-17,1035.0,1092.6,90,60,time stop,green,5184.0,0.82
 MOTILALOFS.NS,Financial Services,2025-10-14,2025-10-29,1000.47,1000.47,155,10,stop,green,0.0,0.0
 ATHERENERG.NS,Automobile and Auto Components,2025-10-17,2025-10-30,680.0,680.0,136,8,stop,green,0.0,0.0
-IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,158,3,stop,green,-157.0,-1.0
+IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,122,3,stop,green,-121.0,-1.0
 AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,288.79,260.37,409,12,stop,green,-11623.0,-1.0
 CEATLTD.NS,Automobile and Auto Components,2025-10-17,2025-11-07,3710.0,3913.1,47,13,stop,green,9546.0,0.83
 TATASTEEL.NS,Metals & Mining,2025-10-29,2025-11-14,179.96,171.34,14,11,stop,green,-121.0,-1.0
-SAGILITY.NS,Information Technology,2025-10-30,2025-11-14,53.45,48.0,5,10,stop (gap),green,-27.0,-1.41
-JSWSTEEL.NS,Metals & Mining,2025-10-30,2025-11-21,1201.0,1141.1,78,15,stop,green,-4672.0,-1.0
+SAGILITY.NS,Information Technology,2025-10-30,2025-11-14,53.45,48.0,21,10,stop (gap),green,-114.0,-1.41
+JSWSTEEL.NS,Metals & Mining,2025-10-30,2025-11-21,1201.0,1141.1,77,15,stop,green,-4612.0,-1.0
 SAIL.NS,Metals & Mining,2025-11-11,2025-11-21,144.27,133.54,1118,8,stop,green,-11999.0,-1.0
 SONACOMS.NS,Automobile and Auto Components,2025-10-15,2025-12-09,450.03,476.21,350,37,score decay,green,9166.0,0.79
-BHARTIARTL.NS,Telecommunication,2025-10-21,2025-12-11,2051.8,2051.8,47,35,stop,green,0.0,0.0
-BELRISE.NS,Automobile and Auto Components,2025-11-14,2025-12-18,163.0,155.98,157,24,score decay,green,-1102.0,-0.54
-RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2026-01-06,1533.91,1500.66,155,31,score decay,green,-5153.0,-0.65
-BSOFT.NS,Information Technology,2025-12-04,2026-01-06,415.86,415.86,1,22,stop,green,0.0,0.0
-HINDZINC.NS,Metals & Mining,2025-12-12,2026-01-08,523.44,578.58,317,18,stop,green,17480.0,1.67
-UNOMINDA.NS,Automobile and Auto Components,2026-01-06,2026-01-08,1339.54,1263.58,59,2,stop,green,-4482.0,-1.0
+BHARTIARTL.NS,Telecommunication,2025-10-21,2025-12-11,2051.8,2051.8,48,35,stop,green,0.0,0.0
+BELRISE.NS,Automobile and Auto Components,2025-11-14,2025-12-18,163.0,155.98,162,24,score decay,green,-1137.0,-0.54
+RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2026-01-06,1533.91,1500.66,154,31,score decay,green,-5120.0,-0.65
+BSOFT.NS,Information Technology,2025-12-04,2026-01-06,415.86,415.86,2,22,stop,green,0.0,0.0
+HINDZINC.NS,Metals & Mining,2025-12-12,2026-01-08,523.44,578.58,321,18,stop,green,17700.0,1.67
+UNOMINDA.NS,Automobile and Auto Components,2026-01-06,2026-01-08,1339.54,1263.58,58,2,stop,green,-4406.0,-1.0
 LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,677,60,time stop,green,21242.0,1.85
-MCX.NS,Financial Services,2025-10-14,2026-01-09,1802.8,2191.0,98,60,time stop,green,38044.0,3.3
+MCX.NS,Financial Services,2025-10-14,2026-01-09,1802.8,2191.0,97,60,time stop,green,37655.0,3.3
 MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2943,3,stop,green,-12967.0,-1.0
-NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2693,1,stop,green,-12779.0,-1.0
+NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2692,1,stop,green,-12774.0,-1.0
 CUB.NS,Financial Services,2025-10-29,2026-01-09,180.0,210.82,847,50,end of test,green,26109.0,2.2
 INDUSTOWER.NS,Telecommunication,2025-11-06,2026-01-09,391.9,433.4,271,45,end of test,green,11246.0,1.52
 PFOCUS.NS,Media Entertainment & Publication,2025-12-11,2026-01-09,208.0,230.22,467,20,end of test,green,10377.0,0.87
 NATIONALUM.NS,Metals & Mining,2025-12-15,2026-01-09,272.91,342.04,1,18,end of test,green,69.0,3.89
-SAGILITY.NS,Information Technology,2025-12-22,2026-01-09,53.25,50.14,462,13,end of test,green,-1437.0,-0.74
+SAGILITY.NS,Information Technology,2025-12-22,2026-01-09,53.25,50.14,475,13,end of test,green,-1477.0,-0.74
