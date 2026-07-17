@@ -43,8 +43,8 @@ LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,677,60,time stop,g
 MCX.NS,Financial Services,2025-10-14,2026-01-09,1802.8,2191.0,97,60,time stop,green,37655.0,3.3
 MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2943,3,stop,green,-12967.0,-1.0
 NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2692,1,stop,green,-12774.0,-1.0
-CUB.NS,Financial Services,2025-10-29,2026-01-09,180.0,210.82,847,50,end of test,green,26109.0,2.2
-INDUSTOWER.NS,Telecommunication,2025-11-06,2026-01-09,391.9,433.4,271,45,end of test,green,11246.0,1.52
-PFOCUS.NS,Media Entertainment & Publication,2025-12-11,2026-01-09,208.0,230.22,467,20,end of test,green,10377.0,0.87
-NATIONALUM.NS,Metals & Mining,2025-12-15,2026-01-09,272.91,342.04,1,18,end of test,green,69.0,3.89
-SAGILITY.NS,Information Technology,2025-12-22,2026-01-09,53.25,50.14,475,13,end of test,green,-1477.0,-0.74
+CUB.NS,Financial Services,2025-10-29,2026-01-12,180.0,201.8,847,51,stop,green,18461.0,1.56
+INDUSTOWER.NS,Telecommunication,2025-11-06,2026-01-12,391.9,432.6,271,46,end of test,green,11030.0,1.49
+PFOCUS.NS,Media Entertainment & Publication,2025-12-11,2026-01-12,208.0,242.75,467,21,end of test,green,16228.0,1.35
+NATIONALUM.NS,Metals & Mining,2025-12-15,2026-01-12,272.91,344.01,1,19,end of test,green,71.0,4.0
+SAGILITY.NS,Information Technology,2025-12-22,2026-01-12,53.25,50.6,475,14,end of test,green,-1259.0,-0.63
