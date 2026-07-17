@@ -75,7 +75,7 @@ def _intel_rows(snap):
         s_row = sig.get(sym) or sig.get(t)
         m_row = mic.get(t)
         if s_row:
-            signal, close, trend = s_row.get("signal", "—"), s_row.get("price"), s_row.get("trend", "")
+            signal, close, trend = s_row.get("state", "—"), s_row.get("close"), s_row.get("trend_label", "")
         elif m_row:
             signal, close, trend = "Watch-only", m_row.get("close"), m_row.get("trend", "")
         else:

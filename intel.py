@@ -115,6 +115,18 @@ def candidates():
             print(f"Friday: +{len(picks)-len(ranked[:MAX_STOCKS])} accumulators added to research")
         except Exception as e:
             print(f"accum add skipped ({type(e).__name__})")
+    # RESEARCH PRIORITY: main() spends the budget in list order, so put the picks we
+    # actually promise to research at the front (otherwise high-score leaders can starve
+    # them). 1) user-watchlist (forced regardless of budget/rank), 2) fresh A/B breakouts
+    # (<=5 days into the move — the guarantee), 3) everyone else by score. Budget cap unchanged.
+    def _prio(r):
+        if r.get("user_watch"):
+            return 0
+        if (r.get("breakout") and r.get("grade") in ("A", "B")
+                and r.get("camp_days") is not None and r["camp_days"] <= 5):
+            return 1
+        return 2
+    picks.sort(key=lambda r: (_prio(r), -(r.get("score") or 0)))
     return picks
 
 def ask_claude(messages, max_tokens=700):
