@@ -861,7 +861,7 @@ function renderToday(){
         const avg=p.cost/p.qty; const pl=last?((last/avg-1)*100):null;
         let adv,advCol,reason='';
         if(p.lt){adv='Long-term';advCol='var(--brass)';reason='your rules apply — swing exit advice off';}
-        else{const hs=heldSignal(t);adv=hs&&hs[0]?hs[0]:'Hold';advCol=adv==='Exit'?'var(--exit)':adv==='Reduce'?'var(--reduce)':'var(--buy)';reason=hs&&hs[2]?hs[2]:'';}
+        else{const hs=heldSignal(t,p);adv=hs&&hs[0]?hs[0]:'Hold';advCol=adv==='Exit'?'var(--exit)':adv==='Reduce'?'var(--reduce)':'var(--buy)';reason=hs&&hs[2]?hs[2]:'';}
         return `<b>${t}</b> — ${p.qty} @ ₹${fmt(avg)}${last?` → ₹${fmt(last)} (<span style="color:${pl>=0?'var(--buy)':'var(--exit)'}">${pl>=0?'+':''}${pl.toFixed(1)}%</span>)`:''} · advice: <b style="color:${advCol}">${adv}</b>${reason?` <span style="color:var(--mut);font-size:11.5px">(${reason})</span>`:''}`;
       }).join('<br>');
       h+=card('📌','YOUR OPEN POSITIONS','What the system says about each holding',lines+'<br><span style="color:var(--mut);font-size:12px">Details & exits: Trade log tab.</span>','var(--brass)');
