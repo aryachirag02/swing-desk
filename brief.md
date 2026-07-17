@@ -451,9 +451,9 @@ WHY_CALL:  Recent analyst downgrades (2026 EPS cut from ₹26.69 to ₹23.80 per
 - **TECHM** (Information Technology · Large cap) — score 94, Breakout — new 20-day high on 3.9× volume. Entry ₹1572.9 · Stop ₹1454.3 · Target ₹1810.2 · Risk/sh ₹118.6
 - **BAJFINANCE** (Financial Services · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹1056.3 · Stop ₹996.5 · Target ₹1176.0 · Risk/sh ₹59.8 · 📅 results 2026-07-30 — inside holding window
 - **HSCL** (Chemicals · Small cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹741.5 · Stop ₹671.7 · Target ₹881.3 · Risk/sh ₹69.9
-- **EXIDEIND** (Automobile and Auto Components · Mid cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹435.2 · Stop ₹407.8 · Target ₹490.1 · Risk/sh ₹27.4 · 📅 results 2026-08-04 — inside holding window
+- **EXIDEIND** (Automobile and Auto Components · Mid cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹435.2 · Stop ₹407.8 · Target ₹490.1 · Risk/sh ₹27.4 · 📅 results 2026-07-30 — inside holding window
 - **AIIL** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 7.6× volume. Entry ₹571.0 · Stop ₹515.2 · Target ₹682.6 · Risk/sh ₹55.8
-- **SONACOMS** (Automobile and Auto Components · Small cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹704.8 · Stop ₹660.6 · Target ₹793.3 · Risk/sh ₹44.2
+- **SONACOMS** (Automobile and Auto Components · Small cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹704.8 · Stop ₹660.6 · Target ₹793.3 · Risk/sh ₹44.2 · 📅 results 2026-07-23 — inside holding window
 - **FEDERALBNK** (Financial Services · Mid cap) — score 80, Breakout — new 20-day high on 5.4× volume. Entry ₹349.0 · Stop ₹329.5 · Target ₹388.0 · Risk/sh ₹19.5 · 📅 results 2026-07-17 — inside holding window
 
 ## 🟢 Buy (2)
@@ -466,7 +466,7 @@ WHY_CALL:  Recent analyst downgrades (2026 EPS cut from ₹26.69 to ₹23.80 per
 - **BAJFINANCE** — 2026-07-30
 - **DIVISLAB** — 2026-08-05
 - **GODREJPROP** — 2026-07-30
-- **EXIDEIND** — 2026-08-04
+- **EXIDEIND** — 2026-07-30
 - **TORNTPHARM** — 2026-07-30
 - **ABBOTINDIA** — 2026-08-11
 - **FLUOROCHEM** — 2026-08-04
