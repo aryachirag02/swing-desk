@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-20T06:16:42.848Z",
+ "updated_at": "2026-07-20T06:17:20.764Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -82,9 +82,6 @@
    "note": "from portfolio tab"
   }
  ],
- "pins": [
-  "IKS",
-  "IPCALAB"
- ],
+ "pins": [],
  "watch": []
 }
