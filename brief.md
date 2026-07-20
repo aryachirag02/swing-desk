@@ -441,18 +441,18 @@ WHY_CALL:  Stock up 18.48% in three months, 28.89% YoY , and  hit all-time high 
 **Leading sectors:** Healthcare (+11.6%) · Realty (+10.8%) · Diversified (+10.3%) · Construction (+7.6%)
 
 ## ✅ Strong Buy (8)
-- **ANANTRAJ** (Realty · Small cap) — score 100, Breakout — new 20-day high on 1.8× volume. Entry ₹592.1 · Stop ₹540.9 · Target ₹694.5 · Risk/sh ₹51.2
-- **TECHM** (Information Technology · Large cap) — score 94, Breakout — new 20-day high on 3.9× volume. Entry ₹1572.9 · Stop ₹1454.3 · Target ₹1810.2 · Risk/sh ₹118.6
-- **BAJFINANCE** (Financial Services · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹1056.3 · Stop ₹996.5 · Target ₹1176.0 · Risk/sh ₹59.8 · 📅 results 2026-07-30 — inside holding window
-- **HSCL** (Chemicals · Small cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹741.5 · Stop ₹671.7 · Target ₹881.3 · Risk/sh ₹69.9
-- **EXIDEIND** (Automobile and Auto Components · Mid cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹435.2 · Stop ₹407.8 · Target ₹490.1 · Risk/sh ₹27.4 · 📅 results 2026-07-30 — inside holding window
-- **AIIL** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 7.6× volume. Entry ₹571.0 · Stop ₹515.2 · Target ₹682.6 · Risk/sh ₹55.8
-- **SONACOMS** (Automobile and Auto Components · Small cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹704.8 · Stop ₹660.6 · Target ₹793.3 · Risk/sh ₹44.2 · 📅 results 2026-07-23 — inside holding window
-- **FEDERALBNK** (Financial Services · Mid cap) — score 80, Breakout — new 20-day high on 5.4× volume. Entry ₹349.0 · Stop ₹329.5 · Target ₹388.0 · Risk/sh ₹19.5 · 📅 results 2026-07-17 — inside holding window
+- **ANANTRAJ** (Realty) — score 100, Breakout — new 20-day high on 1.8× volume. Entry ₹592.1 · Stop ₹540.9 · Target ₹694.5 · Risk/sh ₹51.2
+- **TECHM** (Information Technology) — score 94, Breakout — new 20-day high on 3.9× volume. Entry ₹1572.9 · Stop ₹1454.3 · Target ₹1810.2 · Risk/sh ₹118.6
+- **BAJFINANCE** (Financial Services) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹1056.3 · Stop ₹996.5 · Target ₹1176.0 · Risk/sh ₹59.8 · 📅 results 2026-07-30 — inside holding window
+- **HSCL** (Chemicals) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹741.5 · Stop ₹671.7 · Target ₹881.3 · Risk/sh ₹69.9
+- **EXIDEIND** (Automobile and Auto Components) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹435.2 · Stop ₹407.8 · Target ₹490.1 · Risk/sh ₹27.4 · 📅 results 2026-07-30 — inside holding window
+- **AIIL** (Financial Services) — score 86, Breakout — new 20-day high on 7.6× volume. Entry ₹571.0 · Stop ₹515.2 · Target ₹682.6 · Risk/sh ₹55.8
+- **SONACOMS** (Automobile and Auto Components) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹704.8 · Stop ₹660.6 · Target ₹793.3 · Risk/sh ₹44.2 · 📅 results 2026-07-23 — inside holding window
+- **FEDERALBNK** (Financial Services) — score 80, Breakout — new 20-day high on 5.4× volume. Entry ₹349.0 · Stop ₹329.5 · Target ₹388.0 · Risk/sh ₹19.5 · 📅 results 2026-07-17 — inside holding window
 
 ## 🟢 Buy (2)
-- **ECLERX** (Services · Small cap) — score 77, Breakout — new 20-day high on 6.4× volume. Entry ₹1979.8 · Stop ₹1768.5 · Target ₹2402.4 · Risk/sh ₹211.3
-- **KALYANKJIL** (Consumer Durables · Mid cap) — score 73, Breakout — new 20-day high on 1.4× volume. Entry ₹574.4 · Stop ₹511.2 · Target ₹700.8 · Risk/sh ₹63.2
+- **ECLERX** (Services) — score 77, Breakout — new 20-day high on 6.4× volume. Entry ₹1979.8 · Stop ₹1768.5 · Target ₹2402.4 · Risk/sh ₹211.3
+- **KALYANKJIL** (Consumer Durables) — score 73, Breakout — new 20-day high on 1.4× volume. Entry ₹574.4 · Stop ₹511.2 · Target ₹700.8 · Risk/sh ₹63.2
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **BIOCON** — 2026-08-06
