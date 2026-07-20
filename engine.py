@@ -445,5 +445,7 @@ def radar_snapshot():
                 accum.append({**row, "base_pct": round((tight - 1) * 100, 0),
                               "vol_trend": round(v20 / v60, 2)})
     accum.sort(key=lambda r: -r["vol_trend"])
-    brk.sort(key=lambda r: ({"A": 0, "B": 1, "C": 2}.get(r.get("grade"), 3), -r["rs_3m"]))
+    # fresh first (day 0-5 of campaign can never be crowded out), then grade, then momentum
+    brk.sort(key=lambda r: (0 if (r.get("camp_days") is not None and r["camp_days"] <= 5) else 1,
+                            {"A": 0, "B": 1, "C": 2}.get(r.get("grade"), 3), -r["rs_3m"]))
     return {"accum": accum[:25], "breakouts": brk[:30]}

@@ -414,6 +414,7 @@ try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){per
   fetch('tradelog.json?v='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{
     if(!j) return;
     if(Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins)); if(typeof renderPinned==='function') renderPinned();}
+    if(Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch)); if(typeof renderWatch==='function') renderWatch();}
     const ent=j.entries||j; if(!Array.isArray(ent)||!ent.length) return;
     const local=JSON.parse(localStorage.getItem('swingdesk_log')||'[]');
     const seen=new Set(local.map(e=>JSON.stringify([e.date,e.ticker,e.side,e.qty,e.price,e.note||''])));
@@ -456,10 +457,14 @@ async function pushRemote(retry=true){
     if(pushing) return; pushing=true; setSyncUI('syncing…');
     try{
       const r=await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch()})});
+        body:JSON.stringify(Object.assign({updated_at:new Date().toISOString(),entries:loadLog()},
+        localStorage.getItem('swingdesk_pins')!==null?{pins:getPins()}:{},
+        localStorage.getItem('swingdesk_watch')!==null?{watch:getWatch()}:{}))});
       if(!r.ok) throw new Error('worker '+r.status);
       const j=await r.json().catch(()=>null);
       if(j&&Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins));}
+      if(j&&Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch));}
+      if(j&&Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch)); if(typeof renderWatch==='function') renderWatch();}
       if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();renderWatch();}}
       setSyncUI('☁ family-synced '+new Date().toLocaleTimeString());
     }catch(e){ setSyncUI('family sync failed: '+e.message); }
@@ -652,7 +657,9 @@ function analyzeStock(tk){let w=getWatch(); if(!w.includes(tk)){w.push(tk); loca
 async function triggerWatchAnalysis(){
   if(!FAMILY_WRITE_URL) return;
   try{ await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch(),trigger:true})}); }catch(e){}
+    body:JSON.stringify(Object.assign({updated_at:new Date().toISOString(),entries:loadLog(),trigger:true},
+        localStorage.getItem('swingdesk_pins')!==null?{pins:getPins()}:{},
+        localStorage.getItem('swingdesk_watch')!==null?{watch:getWatch()}:{}))}); }catch(e){}
 }
 function unwatch(tk){let w=getWatch().filter(x=>x!==tk); localStorage.setItem(WATCHK,JSON.stringify(w)); if(typeof schedulePush==='function')schedulePush(); renderWatch();}
 function renderIdeasBook(){
