@@ -12,3 +12,9 @@ ANALYSTS:  Motilal Oswal Buy 148.6 target, Centrum Add at 140.7
 FUNDAMENTALS:  FY26 revenue up 12%, earnings surged 73% to 679 Cr 
 TECHNICALS: Above 50-day average, recovered +28% in 3 months, but 5% below entry
 HOLD — Stock fairly valued near analyst targets; hold for dividend and recovery
+
+### FEDERALBNK — HOLD (Strong Q1 gains already priced in at 52-week high.)
+I'll search for recent news and analyst coverage on Federal Bank. Let me search for the most recent specific news developments. NEWS:  Q1 FY27 results July 17: net profit up 37% YoY, shares hit 52-week high 
+ANALYSTS:  ICICI Securities Buy target ₹380, Kotak Securities Buy target ₹360 
+FUNDAMENTALS:  Core NII grew 26%, advances up 15%, NIM improved to 3.33% 
+TECHNICALS:  52-week high ₹351 hit today, 3-month move +18%, above 50-day average
