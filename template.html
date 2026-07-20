@@ -422,7 +422,7 @@ try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){per
     if(added||!localStorage.getItem('swingdesk_log')){
       local.sort((a,b)=>String(a.date).localeCompare(String(b.date)));
       localStorage.setItem('swingdesk_log',JSON.stringify(local));
-      if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();}
+      if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();renderWatch();}
     }
   }).catch(()=>{});
 }catch(e){}})();
@@ -460,7 +460,7 @@ async function pushRemote(retry=true){
       if(!r.ok) throw new Error('worker '+r.status);
       const j=await r.json().catch(()=>null);
       if(j&&Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins));}
-      if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();}}
+      if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();renderWatch();}}
       setSyncUI('☁ family-synced '+new Date().toLocaleTimeString());
     }catch(e){ setSyncUI('family sync failed: '+e.message); }
     pushing=false; return;
@@ -488,7 +488,7 @@ async function startupSync(){
     if(remote&&remote.body&&remote.body.updated_at>localTs){
       if(persist){localStorage.setItem('swingdesk_log',JSON.stringify(remote.body.entries||[]));
                   localStorage.setItem('swingdesk_log_ts',remote.body.updated_at);}
-      renderLog(); renderPf(); renderToday(); renderIdeasBook(); renderPinned(); setSyncUI('☁ pulled latest log from cloud');
+      renderLog(); renderPf(); renderToday(); renderIdeasBook(); renderPinned(); renderWatch(); setSyncUI('☁ pulled latest log from cloud');
     } else if(remote===null||((remote.body&&remote.body.updated_at)||'1970')<localTs){
       await pushRemote();
     } else { setSyncUI('☁ in sync'); }
@@ -617,7 +617,8 @@ function analyzeTyped(){
 }
 function renderWatch(){
   const box=$('#watchrows'); if(!box) return;
-  const rows=(DATA.intel_rows||[]).filter(x=>x&&x.user_watch);
+  const _lw=getWatch().map(s=>String(s).toUpperCase().replace('.NS',''));
+  const rows=(DATA.intel_rows||[]).filter(x=>x&&x.user_watch&&_lw.includes(String(x.ticker).toUpperCase().replace('.NS','')));
   const sum=$('#sum-watch'); if(sum) sum.textContent=`⭐ MY WATCHLIST — deep analysis (${rows.length})`;
   if(!rows.length){box.innerHTML='<p style="color:var(--mut);font-size:12.5px">No watchlist stocks yet. On the Microcap or Signals tab, tap <b>⭐ Analyze</b> on any stock to get a full grade + AI research here — it won\'t count toward the daily 30. (Takes effect next run.)</p>';return;}
   const chip=c=> c==='BUY-NOW'?'<span style="background:#06341d;color:#fff;padding:2px 9px;border-radius:6px;font-weight:800;font-size:11px">⚡BUY-NOW</span>'
@@ -769,10 +770,17 @@ function renderThemeMap(){
 function renderRadar(){
   if(DATA.themes&&DATA.themes.trim()){const t=$('#radar-themes2');if(t){t.style.display='block';t.textContent=DATA.themes;}}
   const r=DATA.radar||{}; const intel={}; (DATA.intel_rows||[]).forEach(x=>intel[x.ticker]=x);
-  const chip=x=> x==='Strong Buy'?'<span style="background:var(--sbuy);color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">Strong Buy</span>'
-    : x==='Buy'?'<span style="background:var(--buy);color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">Buy</span>'
-    : x==='Watchlist'?'<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-size:12px">Watchlist</span>'
-    : '<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 10px;border-radius:6px;font-size:12px">'+(x||'Watch-only')+'</span>';
+  const _lt=(DATA.regime||{}).light||'';
+  const _blocked=_lt!=='green';
+  const chip=x=>{
+    const lbl='<div style="font-size:9.5px;color:var(--mut);margin-bottom:1px">swing signal</div>';
+    if(x==='Strong Buy'||x==='Buy'){
+      const col=x==='Strong Buy'?'var(--sbuy)':'var(--buy)';
+      return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:${col};color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">${x}</span>${_blocked?`<div style="font-size:9.5px;color:var(--reduce);margin-top:1px">🟡 regime: no new entries</div>`:''}</span>`;
+    }
+    if(x==='Watchlist') return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-size:12px">Watchlist</span></span>`;
+    return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 10px;border-radius:6px;font-size:12px">${x||'Watch-only'}</span></span>`;
+  };
   const card=(x,sentence)=>{const ai=intel[x.ticker];return `
     <div class="ideacard" style="border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--panel)">
       <div class="idearow" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
@@ -818,7 +826,9 @@ function renderRadar(){
   const _sl=$('#sum-lead'); if(_sl) _sl.textContent=`🚀 STILL RUNNING (${leaders.length}) — market leaders (AI-researched)`;
   $('#leadrows').innerHTML=leaders.length?leaders.map(x=>card(
     {ticker:x.ticker,name:x.name,sector:x.sector,close:x.close},
-    `${x.camp_days!=null?`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of this move · </span>`:''}Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — the buy bar is higher: strong AI call + starter size only. Real value: shows <b>where money is flowing</b> — check its sector peers on the lists above. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`)).join('')
+    (x.camp_days!=null&&x.camp_days<=10?
+    `<span style="background:#06341d;color:#fff;font-weight:800;font-size:11px;padding:2px 8px;border-radius:6px">🔶 FRESH BREAKOUT — day ${x.camp_days}</span> Broke out on ${x.vol>=1?x.vol+'×':'heavy'} volume; +${x.rs3}% vs market. <b>This is a buy-window stock that overflowed the 🔶 list</b> (display caps at 30) — apply the same rules as Just Started Moving: grade + AI call + starter size. <span style="color:var(--mut);font-size:11.5px">Source: <b>Radar breakout</b></span>`
+   :`${x.camp_days!=null?`<span style="color:var(--mut);font-size:11.5px">Day ${x.camp_days} of this move · </span>`:''}Already a <b>market leader</b>: ${x.rs3>0?'+':''}${x.rs3}% vs market in 3 months${x.vol>=2?', volume '+x.vol+'× normal':''}. Mid-move — the buy bar is higher: strong AI call + starter size only. Real value: shows <b>where money is flowing</b> — check its sector peers on the lists above. <span style="color:var(--mut);font-size:11.5px">If you buy → Source: <b>Intel / theme</b></span>`))).join('')
     :'<p style="color:var(--mut)">—</p>';
 }
 
