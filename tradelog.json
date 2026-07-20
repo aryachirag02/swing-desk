@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-20T09:20:06.526Z",
+ "updated_at": "2026-07-20T10:00:22.847Z",
  "entries": [
   {
    "date": "2026-07-12",
@@ -80,6 +80,14 @@
    "qty": 1,
    "price": 544.3,
    "note": "from portfolio tab"
+  },
+  {
+   "date": "2026-07-17",
+   "ticker": "FEDERALBNK",
+   "side": "Buy",
+   "qty": "2000",
+   "price": "351",
+   "note": "RADAR-accum"
   }
  ],
  "pins": [
