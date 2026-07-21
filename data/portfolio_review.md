@@ -1,4 +1,4 @@
-# Weekly portfolio review — 2026-07-20
+# Weekly portfolio review — 2026-07-21
 
 ### J&KBANK — HOLD (Stock fairly valued near analysts' consensus Rs 173 midpoint; wait for revenue c)
 I'll search for recent news and analyst coverage on J&K Bank NSE stock. NEWS:  Bank announced sale of 0.5% stake in PNB MetLife Insurance for Rs 120.1 crore on July 14-15, 2026 
