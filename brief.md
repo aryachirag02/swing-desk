@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24187.7 · 50DMA 23829.9 · 200DMA 24810.2 · 1M +0.7%
-**Breadth:** 56.5% of universe above 50-DMA (Selective) · A/D 133/114
+**Breadth:** 63.2% of universe above 50-DMA (Broad participation) · A/D 277/219
 **Flows:** FII ₹+1,650 cr today (-4,789 cr 5-day) · DII ₹-657 cr
 
 **Indices:** NIFTY 50 24,187.7 (-0.2%) · BANK NIFTY 57,835.4 (-0.2%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PHARMA 26,092.8 (+0.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
@@ -430,46 +430,46 @@ CALL: WAIT — valuation stretched; recalibrate post-FY27 guidance clarity
 WHY_CALL:  Q4 42% revenue growth was JB Pharma-driven , masking organic deceleration.  Net debt 2.3x EBITDA  post-acquisition is manageable but caps upside.  Elevated valuation multiples and recent financial trend softness  make risk/reward poor at ~₹4,200+.  Semaglutide launch successful  and  India expected mid-teens organic growth in FY27 , but  German business declined 1% in constant currency . Entry risk: stock just hit all-time high; wait for FY27 guidance and margin stabilisation post-integration before buying.
 
 
-**Leading sectors:** Consumer Services (+21.5%) · Healthcare (+19.3%) · Chemicals (+18.6%) · Consumer Durables (+14.9%)
+**Leading sectors:** Realty (+12.0%) · Healthcare (+11.0%) · Diversified (+10.6%) · Services (+6.1%)
 
-## ✅ Strong Buy (13)
-- **SOLARINDS** (Chemicals · Large cap) — score 96, Breakout — new 20-day high on 1.6× volume. Entry ₹19028.0 · Stop ₹17607.0 · Target ₹21870.0 · Risk/sh ₹1421.0 · 📅 results 2026-08-06 — inside holding window
+## ✅ Strong Buy (14)
+- **ANANTRAJ** (Realty · Small cap) — score 96, Breakout — new 20-day high on 1.4× volume. Entry ₹608.8 · Stop ₹558.8 · Target ₹708.9 · Risk/sh ₹50.0
 - **AJANTPHARM** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.5× volume. Entry ₹3575.3 · Stop ₹3314.8 · Target ₹4096.2 · Risk/sh ₹260.5
-- **FLUOROCHEM** (Chemicals · Mid cap) — score 94, Breakout — new 20-day high on 1.9× volume. Entry ₹4316.2 · Stop ₹4014.3 · Target ₹4920.0 · Risk/sh ₹301.9 · 📅 results 2026-08-04 — inside holding window
 - **MANAPPURAM** (Financial Services · Small cap) — score 94, Breakout — new 20-day high on 3.1× volume. Entry ₹351.8 · Stop ₹324.9 · Target ₹405.5 · Risk/sh ₹26.9
-- **ANANTRAJ** (Realty · Small cap) — score 90, Breakout — new 20-day high on 1.4× volume. Entry ₹608.8 · Stop ₹558.8 · Target ₹708.9 · Risk/sh ₹50.0
-- **HSCL** (Chemicals · Small cap) — score 90, Breakout — new 20-day high on 1.8× volume. Entry ₹800.9 · Stop ₹723.7 · Target ₹955.2 · Risk/sh ₹77.2
 - **KARURVYSYA** (Financial Services · Small cap) — score 90, Breakout — new 20-day high on 12.2× volume. Entry ₹340.3 · Stop ₹309.7 · Target ₹401.6 · Risk/sh ₹30.6
-- **SAREGAMA** (Media Entertainment & Publication · Small cap) — score 90, Breakout — new 20-day high on 3.4× volume. Entry ₹514.2 · Stop ₹466.0 · Target ₹610.5 · Risk/sh ₹48.2
 - **TVSMOTOR** (Automobile and Auto Components · Large cap) — score 90, Breakout — new 20-day high on 2.2× volume. Entry ₹3792.0 · Stop ₹3553.3 · Target ₹4269.5 · Risk/sh ₹238.7 · 📅 results 2026-07-21 — inside holding window
+- **BALRAMCHIN** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 4.1× volume. Entry ₹617.8 · Stop ₹571.1 · Target ₹711.3 · Risk/sh ₹46.7
 - **INDUSINDBK** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 2.2× volume. Entry ₹1063.4 · Stop ₹1002.2 · Target ₹1186.0 · Risk/sh ₹61.3 · 📅 results 2026-07-22 — inside holding window
 - **EXIDEIND** (Automobile and Auto Components · Mid cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹443.5 · Stop ₹415.7 · Target ₹499.0 · Risk/sh ₹27.8 · 📅 results 2026-07-30 — inside holding window
 - **GABRIEL** (Automobile and Auto Components · Small cap) — score 84, Breakout — new 20-day high on 3.8× volume. Entry ₹1488.5 · Stop ₹1339.6 · Target ₹1786.4 · Risk/sh ₹148.9
+- **HSCL** (Chemicals · Small cap) — score 84, Breakout — new 20-day high on 1.8× volume. Entry ₹800.9 · Stop ₹723.7 · Target ₹955.2 · Risk/sh ₹77.2
+- **JUBLINGREA** (Chemicals · Small cap) — score 84, Breakout — new 20-day high on 1.9× volume. Entry ₹763.8 · Stop ₹703.8 · Target ₹883.7 · Risk/sh ₹60.0
 - **M&MFIN** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 3.8× volume. Entry ₹349.9 · Stop ₹319.1 · Target ₹411.4 · Risk/sh ₹30.8 · 📅 results 2026-07-21 — inside holding window
+- **ULTRACEMCO** (Construction Materials · Large cap) — score 82, Breakout — new 20-day high on 3.2× volume. Entry ₹12094.0 · Stop ₹11552.9 · Target ₹13176.2 · Risk/sh ₹541.1
+- **FLUOROCHEM** (Chemicals · Mid cap) — score 81, Breakout — new 20-day high on 3.9× volume. Entry ₹4607.1 · Stop ₹4268.9 · Target ₹5283.4 · Risk/sh ₹338.2 · 📅 results 2026-08-04 — inside holding window
 
-## 🟢 Buy (2)
+## 🟢 Buy (1)
 - **CRISIL** (Financial Services · Mid cap) — score 78, Breakout — new 20-day high on 1.9× volume. Entry ₹4302.4 · Stop ₹4038.1 · Target ₹4831.0 · Risk/sh ₹264.3
-- **ULTRACEMCO** (Construction Materials · Large cap) — score 78, Breakout — new 20-day high on 2.0× volume. Entry ₹11903.0 · Stop ₹11363.1 · Target ₹12982.7 · Risk/sh ₹539.9
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **SOLARINDS** — 2026-08-06
-- **FLUOROCHEM** — 2026-08-04
 - **LUPIN** — 2026-08-05
-- **SRF** — 2026-07-22
-- **TORNTPHARM** — 2026-07-30
-- **PPLPHARMA** — 2026-07-27
-- **PVRINOX** — 2026-08-06
-- **TVSMOTOR** — 2026-07-21
 - **IPCALAB** — 2026-08-10
-- **NAVINFLUOR** — 2026-08-05
+- **PPLPHARMA** — 2026-07-27
+- **ABBOTINDIA** — 2026-08-11
+- **IIFL** — 2026-07-29
+- **LAURUSLABS** — 2026-07-24
+- **TORNTPHARM** — 2026-07-30
+- **TVSMOTOR** — 2026-07-21
 - **INDUSINDBK** — 2026-07-22
-- **MANKIND** — 2026-08-06
-- **PIDILITIND** — 2026-08-04
+- **GODREJPROP** — 2026-07-30
+- **SRF** — 2026-07-22
+- **ALKEM** — 2026-08-12
 - **BIOCON** — 2026-08-06
-- **BPCL** — 2026-07-22
+- **JUBLPHARMA** — 2026-08-07
+- **MANKIND** — 2026-08-06
 
-## 👀 Watchlist (218)
-PCBL · LUPIN · SRF · TORNTPHARM · PPLPHARMA · ACUTAAS · J&KBANK · LLOYDSME · PVRINOX · SAILIFE · IPCALAB · NAVINFLUOR · ERIS · MANKIND · PIDILITIND · SHYAMMETL · ANTHEM · HOMEFIRST · ARE&M · BIOCON · BPCL · CANHLIFE · CHENNPETRO · DIXON · GRANULES …
+## 👀 Watchlist (227)
+EMCURE · LUPIN · IPCALAB · PPLPHARMA · ABBOTINDIA · ACUTAAS · IIFL · J&KBANK · JSWCEMENT · LAURUSLABS · LENSKART · LLOYDSME · PCBL · TORNTPHARM · ERIS · SHYAMMETL · GODREJPROP · HOMEFIRST · SRF · 3MINDIA · AIIL · ALKEM · BIOCON · CANHLIFE · CHENNPETRO …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
