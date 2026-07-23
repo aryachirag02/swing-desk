@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-07-22
+# Daily swing brief — 2026-07-23
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 23996.2 · 50DMA 23833.5 · 200DMA 24805.7 · 1M -0.4%
-**Breadth:** 59.4% of universe above 50-DMA (Selective) · A/D 92/405
+Nifty 23869.6 · 50DMA 23843.3 · 200DMA 24801.8 · 1M +0.2%
+**Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 105/393
 **Flows:** FII ₹-819 cr today (-4,872 cr 5-day) · DII ₹-418 cr
 
-**Indices:** NIFTY 50 23,996.2 (-0.8%) · BANK NIFTY 57,126.8 (-1.2%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PHARMA 25,752.2 (-1.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 23,869.6 (-0.5%) · BANK NIFTY 56,592.0 (-0.9%) · NIFTY REALTY 886.7 (-3.5%) · NIFTY IT 28,533.6 (-0.1%) · NIFTY METAL 12,469.7 (+0.3%) · NIFTY PSU BANK 8,297.7 (-1.0%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=12 → below 200DMA — stand aside · BANK NIFTY RSI2=12 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=7 → below 200DMA — stand aside · BANK NIFTY RSI2=6 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-07-21
@@ -430,41 +430,35 @@ CALL: WAIT — valuation stretched; recalibrate post-FY27 guidance clarity
 WHY_CALL:  Q4 42% revenue growth was JB Pharma-driven , masking organic deceleration.  Net debt 2.3x EBITDA  post-acquisition is manageable but caps upside.  Elevated valuation multiples and recent financial trend softness  make risk/reward poor at ~₹4,200+.  Semaglutide launch successful  and  India expected mid-teens organic growth in FY27 , but  German business declined 1% in constant currency . Entry risk: stock just hit all-time high; wait for FY27 guidance and margin stabilisation post-integration before buying.
 
 
-**Leading sectors:** Realty (+10.9%) · Diversified (+9.2%) · Healthcare (+9.1%) · Media Entertainment & Publication (+6.1%)
+**Leading sectors:** Diversified (+8.5%) · Healthcare (+8.2%) · Realty (+7.2%) · Media Entertainment & Publication (+6.0%)
 
-## ✅ Strong Buy (9)
-- **ABBOTINDIA** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.6× volume. Entry ₹28900.0 · Stop ₹27567.2 · Target ₹31565.6 · Risk/sh ₹1332.8 · 📅 results 2026-08-11 — inside holding window
-- **ANANTRAJ** (Realty · Small cap) — score 94, Breakout — new 20-day high on 2.7× volume. Entry ₹616.3 · Stop ₹566.1 · Target ₹716.9 · Risk/sh ₹50.3
-- **CHENNPETRO** (Oil Gas & Consumable Fuels · Small cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹1307.8 · Stop ₹1171.9 · Target ₹1579.7 · Risk/sh ₹135.9
-- **NESTLEIND** (Fast Moving Consumer Goods · Large cap) — score 90, Breakout — new 20-day high on 3.3× volume. Entry ₹1493.6 · Stop ₹1419.1 · Target ₹1642.6 · Risk/sh ₹74.5 · 📅 results 2026-07-22 — inside holding window
-- **BAJAJ-AUTO** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹10998.5 · Stop ₹10407.6 · Target ₹12180.3 · Risk/sh ₹590.9
-- **INDUSINDBK** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 2.0× volume. Entry ₹1069.3 · Stop ₹1008.4 · Target ₹1191.1 · Risk/sh ₹60.9 · 📅 results 2026-07-22 — inside holding window
-- **TVSMOTOR** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹3907.6 · Stop ₹3655.0 · Target ₹4412.8 · Risk/sh ₹252.6
-- **CRISIL** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 5.5× volume. Entry ₹4495.2 · Stop ₹4199.1 · Target ₹5087.5 · Risk/sh ₹296.1
-- **JKCEMENT** (Construction Materials · Mid cap) — score 82, Breakout — new 20-day high on 1.5× volume. Entry ₹5762.0 · Stop ₹5326.7 · Target ₹6632.6 · Risk/sh ₹435.3
+## ✅ Strong Buy (2)
+- **MEDANTA** (Healthcare · Mid cap) — score 92, Breakout — new 20-day high on 4.8× volume. Entry ₹1378.2 · Stop ₹1294.1 · Target ₹1546.4 · Risk/sh ₹84.1
+- **BAJAJ-AUTO** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹11283.5 · Stop ₹10669.8 · Target ₹12510.9 · Risk/sh ₹613.7
 
-## 🟢 Buy (1)
-- **M&MFIN** (Financial Services · Mid cap) — score 77, Breakout — new 20-day high on 7.4× volume. Entry ₹378.1 · Stop ₹343.4 · Target ₹447.6 · Risk/sh ₹34.7
+## 🟢 Buy (2)
+- **HEG** (Capital Goods · Small cap) — score 78, Breakout — new 20-day high on 7.4× volume. Entry ₹623.8 · Stop ₹562.7 · Target ₹746.2 · Risk/sh ₹61.2
+- **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 76, Breakout — new 20-day high on 2.0× volume. Entry ₹5173.8 · Stop ₹4908.5 · Target ₹5704.4 · Risk/sh ₹265.3 · 📅 results 2026-08-05 — inside holding window
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **ABBOTINDIA** — 2026-08-11
-- **NESTLEIND** — 2026-07-22
-- **INDUSINDBK** — 2026-07-22
-- **IIFL** — 2026-07-29
 - **TORNTPHARM** — 2026-07-30
-- **BIOCON** — 2026-08-06
 - **SUNPHARMA** — 2026-07-31
+- **PPLPHARMA** — 2026-07-27
+- **ABBOTINDIA** — 2026-08-11
 - **DIVISLAB** — 2026-08-05
-- **GODREJIND** — 2026-08-12
-- **HAL** — 2026-08-11
-- **NAVINFLUOR** — 2026-08-05
-- **PIDILITIND** — 2026-08-04
-- **SRF** — 2026-07-22
-- **EXIDEIND** — 2026-07-30
 - **GODREJPROP** — 2026-07-30
+- **HAL** — 2026-08-11
+- **M&M** — 2026-07-30
+- **BIOCON** — 2026-08-06
+- **GODREJIND** — 2026-08-12
+- **IIFL** — 2026-07-29
+- **PFIZER** — 2026-08-12
+- **SHREECEM** — 2026-07-31
+- **UNITDSPR** — 2026-08-13
+- **DIXON** — 2026-07-24
 
-## 👀 Watchlist (202)
-3MINDIA · GLAXO · INDIACEM · MEDANTA · MANAPPURAM · ACUTAAS · AJANTPHARM · EMCURE · IIFL · KARURVYSYA · LODHA · TORNTPHARM · BIOCON · RAINBOW · SUNPHARMA · ADANIENSOL · DIVISLAB · LLOYDSME · GABRIEL · GODREJIND · HAL · HSCL · NAVINFLUOR · PIDILITIND · SRF …
+## 👀 Watchlist (176)
+TORNTPHARM · SUNPHARMA · PPLPHARMA · LLOYDSME · MANAPPURAM · ABBOTINDIA · ADANIENSOL · DIVISLAB · NUVAMA · ANANTRAJ · GODREJPROP · KARURVYSYA · TVSMOTOR · BALRAMCHIN · HAL · ICICIBANK · M&M · TECHM · BIOCON · CHENNPETRO · DATAPATTNS · EMCURE · ETERNAL · GLAXO · GODREJIND …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
