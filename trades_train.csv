@@ -16,7 +16,7 @@ WELCORP.NS,Capital Goods,2025-06-02,2025-07-25,921.95,883.96,121,39,score decay,
 KPRMILL.NS,Textiles,2025-05-09,2025-08-01,1141.9,1061.9,1,60,score decay,green,-80.0,-0.64
 ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2246.4,2149.7,47,5,score decay,green,-4545.0,-0.66
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,1,12,stop,green,-28.0,-1.0
-MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.62,142460.7,1,21,score decay,green,-7144.0,-0.85
+MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.6,142460.7,1,21,score decay,green,-7144.0,-0.85
 NAVA.NS,Power,2025-06-13,2025-08-18,536.83,575.95,196,45,score decay,green,7667.0,0.7
 KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,204.61,212.25,700,51,score decay,green,5345.0,0.48
 ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,72,46,stop,green,13357.0,1.27
