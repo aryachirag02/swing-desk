@@ -17,35 +17,35 @@
   "train": {
     "trades": 50,
     "win_rate": 46.0,
-    "avg_win": 13140.0,
-    "avg_loss": -4280.0,
+    "avg_win": 13201.0,
+    "avg_loss": -4287.0,
     "profit_factor": 2.62,
-    "expectancy_R": 0.297,
-    "avg_hold_days": 29.8,
-    "total_return_pct": 22.5,
-    "annualized_pct": 18.7,
-    "max_drawdown_pct": -7.4
+    "expectancy_R": 0.386,
+    "avg_hold_days": 29.2,
+    "total_return_pct": 22.6,
+    "annualized_pct": 18.8,
+    "max_drawdown_pct": -7.2
   },
   "train_exit_breakdown": {
     "end of test": {
-      "n": 4,
-      "avg_R": 0.77
+      "n": 5,
+      "avg_R": 1.62
     },
     "score decay": {
-      "n": 11,
-      "avg_R": -0.23
+      "n": 12,
+      "avg_R": -0.27
     },
     "stop": {
-      "n": 24,
-      "avg_R": 0.04
+      "n": 23,
+      "avg_R": 0.09
     },
     "stop (gap)": {
       "n": 3,
       "avg_R": -1.26
     },
     "time stop": {
-      "n": 8,
-      "avg_R": 2.13
+      "n": 7,
+      "avg_R": 2.32
     }
   },
   "validate": {

@@ -1,25 +1,21 @@
 # Weekly portfolio review — 2026-07-24
 
-### J&KBANK — HOLD (Stock priced fairly; target above entry, valuation less attractive now.)
-I'll search for recent news and analyst coverage on J&KBANK. Let me search for more recent July 2026 specific news and analyst updates. Based on the research, here's your analysis in the exact format requested:
+### J&KBANK — HOLD (Recent valuation adjustment suggests tempered near-term upside despite growth.)
+I'll search for recent news and analyst coverage on J&KBANK. Based on recent news and analyst coverage, here is your analysis:
 
-NEWS:  ₹3 trillion business milestone achieved; Q1 FY26 board results meeting July 29, 2026 
-ANALYSTS:  Downgraded Strong Buy to Buy June 3, 2026; analysts revised target to ₹198 
-FUNDAMENTALS:  Net profit up 37% YoY to ₹799 Cr Q4 FY26 
-TECHNICALS:  Price above 50-day moving average with bullish momentum
+NEWS:  Board meeting July 29, 2026 for Q1 FY26 results announcement 
+ANALYSTS:  JM Financial targets Rs 180 (Buy), ICICI Securities targets Rs 165 (Neutral) 
+FUNDAMENTALS:  FY26 net profit growth 36.48% YoY, solid capital adequacy 16.55% 
+TECHNICALS: Price 173.4 above 50-day average, up 34% in three months, near support zone
 
-### ORIENTHOT — ADD (Analyst targets 25% upside; strong earnings growth justifies position)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news in the past 4-6 weeks. Based on my research, here's your ORIENTHOT holding analysis:
+### ORIENTHOT — HOLD (Valuations expensive at 34 PE; wait for Q1 results confirmation before adding)
+I'll search for recent news and analyst coverage on ORIENTHOT. NEWS:  ICRA upgraded credit ratings to AA-/A1+ May 2026 
+ANALYSTS:  Consensus target Rs 139.7; Motilal Oswal Rs 148.6 Buy; Prabhudas Lilladher Rs 129.7 Neutral 
+FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3% 
+TECHNICALS: Trading 127.4 above 50-day average, down from 3-month high of 161 near year-high 169
 
-NEWS:  Q1 FY27 profit Rs11.35 crore standalone, board approved July 15 2026 
-ANALYSTS:  12-month target Rs 170 with bull Rs 195, bear Rs 125 
-FUNDAMENTALS:  FY26 earnings up 73% YoY , strong growth but  PE now elevated at 32.66 
-TECHNICALS: Price 134.8 above 50-day average, 42% rally past 3 months, momentum extended
-
-### FEDERALBNK — HOLD (Strong growth streak, valuation reasonable vs. target, hold accumulation positio)
-I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent specific news from the last 4-6 weeks. Based on my search, I have information from February 2026 about Blackstone's RBI approval, but the most recent specific news development is the dividend announcement from July 2026. Let me compile your report based on the available data:
-
-NEWS:  Dividend of INR 1.20 announced, ex-date Aug 14, 2026 
-ANALYSTS:  Mean price target Rs 361.59 with overweight average rating 
-FUNDAMENTALS:  Net profit up 8.9% to Rs 4,052 crore in FY25 
-TECHNICALS: Price near 353, above 50-day MA, strong 3-month momentum continues
+### FEDERALBNK — HOLD (Strong earnings momentum but valuation stretched near highs)
+I'll search for recent news and analyst coverage on Federal Bank. NEWS:  Q1FY27 results announced 17 Jul 2026: net profit ₹1,17,693 lakhs 
+ANALYSTS:  ICICI Securities ₹380 Buy, Kotak Securities ₹360 Buy 
+FUNDAMENTALS:  Net profit +36.78% YoY to ₹1,256 cr, operating income +9.94% 
+TECHNICALS: Above 50-day average, up 21% in 3 months, near 352 resistance
