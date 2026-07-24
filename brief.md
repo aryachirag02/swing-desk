@@ -2,10 +2,10 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 23869.6 · 50DMA 23843.3 · 200DMA 24801.8 · 1M +0.2%
-**Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 105/393
+**Breadth:** 44.1% of universe above 50-DMA (Selective) · A/D 54/183
 **Flows:** FII ₹-2,999 cr today (-3,666 cr 5-day) · DII ₹+2,947 cr
 
-**Indices:** NIFTY 50 23,869.6 (-0.5%) · BANK NIFTY 56,592.0 (-0.9%) · NIFTY REALTY 886.7 (-3.5%) · NIFTY IT 28,533.6 (-0.1%) · NIFTY METAL 12,469.7 (+0.3%) · NIFTY PSU BANK 8,297.7 (-1.0%)
+**Indices:** NIFTY 50 23,869.6 (-0.5%) · BANK NIFTY 56,592.0 (-0.9%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 28,533.6 (-0.1%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=7 → below 200DMA — stand aside · BANK NIFTY RSI2=6 → below 200DMA — stand aside
 
@@ -430,35 +430,39 @@ CALL: WAIT — valuation stretched; recalibrate post-FY27 guidance clarity
 WHY_CALL:  Q4 42% revenue growth was JB Pharma-driven , masking organic deceleration.  Net debt 2.3x EBITDA  post-acquisition is manageable but caps upside.  Elevated valuation multiples and recent financial trend softness  make risk/reward poor at ~₹4,200+.  Semaglutide launch successful  and  India expected mid-teens organic growth in FY27 , but  German business declined 1% in constant currency . Entry risk: stock just hit all-time high; wait for FY27 guidance and margin stabilisation post-integration before buying.
 
 
-**Leading sectors:** Diversified (+8.5%) · Healthcare (+8.2%) · Realty (+7.2%) · Media Entertainment & Publication (+6.0%)
+**Leading sectors:** Healthcare (+20.4%) · Media Entertainment & Publication (+20.3%) · Construction (+16.9%) · Realty (+8.8%)
 
-## ✅ Strong Buy (2)
+## ✅ Strong Buy (6)
+- **ABBOTINDIA** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.6× volume. Entry ₹28900.0 · Stop ₹27567.2 · Target ₹31565.6 · Risk/sh ₹1332.8 · 📅 results 2026-08-11 — inside holding window
 - **MEDANTA** (Healthcare · Mid cap) — score 92, Breakout — new 20-day high on 4.8× volume. Entry ₹1378.2 · Stop ₹1294.1 · Target ₹1546.4 · Risk/sh ₹84.1
 - **BAJAJ-AUTO** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹11283.5 · Stop ₹10669.8 · Target ₹12510.9 · Risk/sh ₹613.7
+- **TVSMOTOR** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹3907.6 · Stop ₹3655.0 · Target ₹4412.8 · Risk/sh ₹252.6
+- **CRISIL** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 5.5× volume. Entry ₹4495.2 · Stop ₹4199.1 · Target ₹5087.5 · Risk/sh ₹296.1
+- **JKCEMENT** (Construction Materials · Mid cap) — score 82, Breakout — new 20-day high on 1.5× volume. Entry ₹5762.0 · Stop ₹5326.7 · Target ₹6632.6 · Risk/sh ₹435.3
 
 ## 🟢 Buy (2)
 - **HEG** (Capital Goods · Small cap) — score 78, Breakout — new 20-day high on 7.4× volume. Entry ₹623.8 · Stop ₹562.7 · Target ₹746.2 · Risk/sh ₹61.2
-- **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 76, Breakout — new 20-day high on 2.0× volume. Entry ₹5173.8 · Stop ₹4908.5 · Target ₹5704.4 · Risk/sh ₹265.3 · 📅 results 2026-08-05 — inside holding window
+- **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 76, Breakout — new 20-day high on 2.0× volume. Entry ₹5098.8 · Stop ₹4837.3 · Target ₹5621.7 · Risk/sh ₹261.5 · 📅 results 2026-08-05 — inside holding window
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **TORNTPHARM** — 2026-07-30
-- **SUNPHARMA** — 2026-07-31
-- **PPLPHARMA** — 2026-07-27
 - **ABBOTINDIA** — 2026-08-11
-- **DIVISLAB** — 2026-08-05
-- **GODREJPROP** — 2026-07-30
+- **SUNPHARMA** — 2026-07-31
+- **MANAPPURAM** — 2026-08-06
+- **LODHA** — 2026-07-24
+- **TORNTPHARM** — 2026-07-30
+- **DIVISLAB** — 2026-08-01
 - **HAL** — 2026-08-11
 - **M&M** — 2026-07-30
 - **BIOCON** — 2026-08-06
-- **GODREJIND** — 2026-08-12
-- **IIFL** — 2026-07-29
-- **PFIZER** — 2026-08-12
-- **SHREECEM** — 2026-07-31
-- **UNITDSPR** — 2026-08-13
-- **DIXON** — 2026-07-24
+- **GODREJPROP** — 2026-08-04
+- **PRESTIGE** — 2026-08-05
+- **DIXON** — 2026-07-28
+- **EXIDEIND** — 2026-07-30
+- **NAUKRI** — 2026-08-07
+- **BHARTIARTL** — 2026-08-04
 
-## 👀 Watchlist (176)
-TORNTPHARM · SUNPHARMA · PPLPHARMA · LLOYDSME · MANAPPURAM · ABBOTINDIA · ADANIENSOL · DIVISLAB · NUVAMA · ANANTRAJ · GODREJPROP · KARURVYSYA · TVSMOTOR · BALRAMCHIN · HAL · ICICIBANK · M&M · TECHM · BIOCON · CHENNPETRO · DATAPATTNS · EMCURE · ETERNAL · GLAXO · GODREJIND …
+## 👀 Watchlist (193)
+GLAXO · INDIACEM · SUNPHARMA · 3MINDIA · LLOYDSME · MANAPPURAM · ADANIENSOL · AJANTPHARM · EMCURE · KARURVYSYA · LODHA · NUVAMA · TORNTPHARM · ANANTRAJ · RAINBOW · BALRAMCHIN · DIVISLAB · HAL · M&M · BIOCON · CHENNPETRO · DATAPATTNS · ETERNAL · IIFL · INDUSINDBK …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
