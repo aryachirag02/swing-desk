@@ -1,21 +1,25 @@
 # Weekly portfolio review — 2026-07-24
 
-### J&KBANK — HOLD (Analyst target ₹198 gives modest 15% upside; already up 34%.)
-I'll search for recent news and analyst coverage on J&KBANK. NEWS:  J&K Bank plans PNB MetLife stake divestment at ₹117.2/share, valued at ₹120.1 Cr (July 2026) 
-ANALYSTS:  Analyst target raised to ₹198, citing lower discount rate and higher revenue growth 
-FUNDAMENTALS:  FY26 net profit grew 13.34% to ₹2,360 Cr 
-TECHNICALS: Above 50-day average, rallied 34% in three months; near short-term profit booking zone
+### J&KBANK — HOLD (Strong growth momentum but near 3-month peak, profit-take risk remains)
+I'll search for recent news and analyst coverage on J&KBANK. Let me search for more recent news and analyst updates from the last 4-6 weeks. Based on my research, here is your J&KBANK position analysis:
 
-### ORIENTHOT — HOLD (Strong growth but high PE 34, wait for clarity on FY27 momentum)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for the most recent news from the last 4-6 weeks. Based on my research, here is your analysis in the requested format:
+NEWS:  Q1 June 2026 business grew 20.36% YoY; advances jumped 25.51% YoY 
+ANALYSTS:  Target raised to Rs 198; lower discount rate, higher revenue growth outlook 
+FUNDAMENTALS:  FY26 EPS Rs 21.42, up from Rs 18.91; net income Rs 23.6b, up 13% 
+TECHNICALS:  Price 172.6 below 50-day average; 34% up 3 months shows strong momentum
 
-NEWS:  Q1 FY27 profit announced July 15, 2026; standalone profit Rs11.35 crore 
-ANALYSTS:  12-month target Rs 170 with bull case Rs 195 
-FUNDAMENTALS:  FY26 revenue up 12.31%, earnings up 73.32% 
-TECHNICALS: Price 134.8 above 50-day average, 3-month up 36%, near yearly high 168.99
+### ORIENTHOT — HOLD (Recent Q1 profit miss weakens momentum despite analyst upside)
+I'll search for recent news and analyst commentary on ORIENTHOT. Let me search for more recent news from the last 4-6 weeks. Based on recent news and analyst coverage, here's your stock analysis:
 
-### FEDERALBNK — ADD (Strong earnings growth, asset quality improving, valuation reasonable)
-I'll search for recent news and analyst coverage on FEDERALBNK. NEWS:  Q1 FY27 strong start: net profit +36.57% YoY to Rs 1,177 cr (Jul 2026) 
-ANALYSTS:  Mean price target Rs 361.59, overweight consensus 
-FUNDAMENTALS:  Net interest income +26%, net NPA at 0.18% record low 
-TECHNICALS: Price 354.3, above 50-day moving average, +22% in 3 months
+NEWS:  Q1 FY27 profit Rs 11.35 crore standalone approved July 15, 2026 
+ANALYSTS:  Consensus target Rs 139.7 ;  Uniresearch 12-month target Rs 170 bull case Rs 195 bear Rs 125 
+FUNDAMENTALS:  FY26 revenue +12.31% to Rs 4.94B, earnings +73.32% ;  Q1 FY27 consolidated profit down 20% YoY despite 3.56% revenue growth 
+TECHNICALS:  Stock at 132.81 today, above 50-day average, 3-month gain strong
+
+### FEDERALBNK — HOLD (Stock richly valued; dividend awaits and upside modest near targets)
+I'll search for recent news and analyst coverage on Federal Bank. Based on recent news and analyst coverage, here's your Federal Bank analysis:
+
+NEWS:  Dividend of INR 1.20 announced with ex-date Aug 14, 2026 
+ANALYSTS:  ICICI Securities Buy target Rs 380, Kotak Securities Buy target Rs 360 
+FUNDAMENTALS:  FY25 net profit +8.9% to Rs 4,051.89 crore; PE ratio 19.7 
+TECHNICALS: Price 354.3 above 50-day MA, up 22% in three months, near 52-week highs
