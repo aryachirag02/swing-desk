@@ -414,7 +414,6 @@ try{localStorage.setItem('__t','1');localStorage.removeItem('__t');}catch(e){per
   fetch('tradelog.json?v='+Date.now()).then(r=>r.ok?r.json():null).then(j=>{
     if(!j) return;
     if(Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins)); if(typeof renderPinned==='function') renderPinned();}
-    if(Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch)); if(typeof renderWatch==='function') renderWatch();}
     const ent=j.entries||j; if(!Array.isArray(ent)||!ent.length) return;
     const local=JSON.parse(localStorage.getItem('swingdesk_log')||'[]');
     const seen=new Set(local.map(e=>JSON.stringify([e.date,e.ticker,e.side,e.qty,e.price,e.note||''])));
@@ -457,14 +456,10 @@ async function pushRemote(retry=true){
     if(pushing) return; pushing=true; setSyncUI('syncing…');
     try{
       const r=await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-        body:JSON.stringify(Object.assign({updated_at:new Date().toISOString(),entries:loadLog()},
-        localStorage.getItem('swingdesk_pins')!==null?{pins:getPins()}:{},
-        localStorage.getItem('swingdesk_watch')!==null?{watch:getWatch()}:{}))});
+        body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch()})});
       if(!r.ok) throw new Error('worker '+r.status);
       const j=await r.json().catch(()=>null);
       if(j&&Array.isArray(j.pins)){localStorage.setItem('swingdesk_pins',JSON.stringify(j.pins));}
-      if(j&&Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch));}
-      if(j&&Array.isArray(j.watch)){localStorage.setItem('swingdesk_watch',JSON.stringify(j.watch)); if(typeof renderWatch==='function') renderWatch();}
       if(j&&Array.isArray(j.entries)){localStorage.setItem('swingdesk_log',JSON.stringify(j.entries));if(typeof renderLog==='function'){renderLog();renderPf();renderToday();renderIdeasBook();renderPinned();renderWatch();}}
       setSyncUI('☁ family-synced '+new Date().toLocaleTimeString());
     }catch(e){ setSyncUI('family sync failed: '+e.message); }
@@ -657,9 +652,7 @@ function analyzeStock(tk){let w=getWatch(); if(!w.includes(tk)){w.push(tk); loca
 async function triggerWatchAnalysis(){
   if(!FAMILY_WRITE_URL) return;
   try{ await fetch(FAMILY_WRITE_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify(Object.assign({updated_at:new Date().toISOString(),entries:loadLog(),trigger:true},
-        localStorage.getItem('swingdesk_pins')!==null?{pins:getPins()}:{},
-        localStorage.getItem('swingdesk_watch')!==null?{watch:getWatch()}:{}))}); }catch(e){}
+    body:JSON.stringify({updated_at:new Date().toISOString(),entries:loadLog(),pins:getPins(),watch:getWatch(),trigger:true})}); }catch(e){}
 }
 function unwatch(tk){let w=getWatch().filter(x=>x!==tk); localStorage.setItem(WATCHK,JSON.stringify(w)); if(typeof schedulePush==='function')schedulePush(); renderWatch();}
 function renderIdeasBook(){
@@ -779,11 +772,21 @@ function renderRadar(){
   const r=DATA.radar||{}; const intel={}; (DATA.intel_rows||[]).forEach(x=>intel[x.ticker]=x);
   const _lt=(DATA.regime||{}).light||'';
   const _blocked=_lt!=='green';
-  const chip=x=>{
+  const sigWhy=row=>{
+    // build a plain-language reason the swing signal fired, from what we actually know about the row
+    const bits=[];
+    if(row.grade) bits.push(`Setup ${row.grade}`);
+    if(row.rs_3m!=null) bits.push(`${row.rs_3m>0?'+':''}${row.rs_3m}% vs market (3m)`);
+    if(row.vol_sig!=null||row.vol_x!=null) bits.push(`${row.vol_sig||row.vol_x}× signal volume`);
+    if(row.fired_today) bits.push('fresh high today');
+    return bits.length? `score crossed the buy threshold on ${bits.join(' · ')}` : 'score crossed the buy threshold (momentum + volume rule)';
+  };
+  const chip=(x,row)=>{
     const lbl='<div style="font-size:9.5px;color:var(--mut);margin-bottom:1px">swing signal</div>';
     if(x==='Strong Buy'||x==='Buy'){
       const col=x==='Strong Buy'?'var(--sbuy)':'var(--buy)';
-      return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:${col};color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">${x}</span>${_blocked?`<div style="font-size:9.5px;color:var(--reduce);margin-top:1px">🟡 regime: no new entries</div>`:''}</span>`;
+      const why=row?sigWhy(row):'';
+      return `<span style="display:inline-block;text-align:left">${lbl}<span style="background:${col};color:#fff;padding:2px 10px;border-radius:6px;font-weight:700;font-size:12px">${x}</span>${why?`<div style="font-size:10px;color:var(--mut);margin-top:2px;max-width:170px">${why}</div>`:''}${_blocked?`<div style="font-size:9.5px;color:var(--reduce);margin-top:1px">🟡 regime: no new entries</div>`:''}</span>`;
     }
     if(x==='Watchlist') return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:rgba(29,95,191,.12);color:var(--watch);padding:2px 10px;border-radius:6px;font-size:12px">Watchlist</span></span>`;
     return `<span style="display:inline-block;text-align:center">${lbl}<span style="background:rgba(91,107,128,.12);color:var(--mut);padding:2px 10px;border-radius:6px;font-size:12px">${x||'Watch-only'}</span></span>`;
@@ -805,7 +808,7 @@ function renderRadar(){
             :`<div style="color:var(--mut);font-size:11.5px">${x.grade==='C'?'AI call skipped — low-grade setup (⭐ Analyze to force)':'AI call: pending next run'}</div>`}
           ${ai&&ai.call_why?`<div style="color:var(--mut);font-size:11px;margin-top:3px;max-width:220px">${ai.call_why.replace(/</g,'&lt;')}</div>`:''}
           ${ai&&ai.call_full?`<details style="margin-top:4px;max-width:240px;text-align:left"><summary style="cursor:pointer;font-size:11.5px;color:var(--sbuy);font-weight:700">🎯 Why this call?</summary><div style="font-size:12px;color:var(--ink);padding-top:4px">${ai.call_full.replace(/</g,'&lt;')}</div></details>`:''}
-          <div style="margin-top:5px">${chip(ai?ai.signal:null)}</div>
+          <div style="margin-top:5px">${chip(ai?ai.signal:null, x)}</div>
         </div>
       </div>
       ${ai&&ai.ai?`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:12.5px;color:var(--sbuy);font-weight:600">🧠 Why is it moving? (AI research)</summary><div style="font-size:13px;white-space:pre-wrap;padding:8px 0 0">${ai.ai.replace(/</g,'&lt;').replace(/\*\*/g,'').replace(/^#+\s*/gm,'').replace(/^---\s*$/gm,'').replace(/\n{3,}/g,'\n\n').trim()}</div></details>`:''}

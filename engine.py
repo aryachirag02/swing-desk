@@ -421,7 +421,7 @@ def radar_snapshot():
                 p_v = 0 if vr_g < 2.5 else 1 if vr_g < 5 else 2
                 sc = p_m + p_v
                 grade = "A" if sc >= 3 else "B" if sc >= 1 else "C"
-                why = (f"momentum {mom:+.0f}% + volume {vr:.1f}x — "
+                why = (f"momentum {mom:+.0f}% + volume {vr_g:.1f}x at signal — "
                        + {"A": "historically the strongest bucket (10y study)",
                           "B": "middle bucket historically",
                           "C": "weakest bucket historically"}[grade])
