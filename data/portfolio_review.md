@@ -1,4 +1,4 @@
-# Weekly portfolio review — 2026-07-24
+# Weekly portfolio review — 2026-07-27
 
 ### J&KBANK — HOLD (Strong earnings but mixed analyst views, valuation stretched current levels)
 I'll search for recent news and analyst coverage on J&K Bank. NEWS:  Board meeting scheduled July 29, 2026 to consider Q1 FY26 results 
