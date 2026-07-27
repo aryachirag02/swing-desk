@@ -1,13 +1,13 @@
 # Daily swing brief — 2026-07-24
 
-**Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 23767.4 · 50DMA 23850.4 · 200DMA 24797.4 · 1M -1.1%
+**Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
+Nifty 23869.6 · 50DMA 23843.3 · 200DMA 24801.8 · 1M +0.2%
 **Breadth:** 51.6% of universe above 50-DMA (Selective) · A/D 218/282
 **Flows:** FII ₹-3,893 cr today (-7,182 cr 5-day — **selling streak, tighten up**) · DII ₹+5,454 cr
 
-**Indices:** NIFTY 50 23,767.4 (-0.4%) · BANK NIFTY 56,693.5 (+0.2%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 28,767.9 (+0.8%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 23,869.6 (-0.5%) · BANK NIFTY 56,592.0 (-0.9%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 28,533.6 (-0.1%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=4 → below 200DMA — stand aside · BANK NIFTY RSI2=21 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=7 → below 200DMA — stand aside · BANK NIFTY RSI2=6 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-07-27
@@ -470,7 +470,7 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Media Entertainment & Publication (+9.3%) · Diversified (+8.9%) · Healthcare (+8.3%) · Realty (+7.2%)
+**Leading sectors:** Media Entertainment & Publication (+8.9%) · Diversified (+8.5%) · Healthcare (+7.9%) · Realty (+6.8%)
 
 ## ✅ Strong Buy (2)
 - **PVRINOX** (Media Entertainment & Publication · Small cap) — score 96, Breakout — new 20-day high on 5.2× volume. Entry ₹1063.9 · Stop ₹990.7 · Target ₹1210.5 · Risk/sh ₹73.3
@@ -493,11 +493,11 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **EXIDEIND** — 2026-07-30
 - **KIMS** — 2026-08-06
 - **MARICO** — 2026-08-04
-- **PIDILITIND** — 2026-08-04
 - **SUNPHARMA** — 2026-07-31
+- **TORNTPHARM** — 2026-07-30
 
-## 👀 Watchlist (171)
-MEDANTA · LALPATHLAB · BAJAJ-AUTO · LLOYDSME · MANAPPURAM · BIOCON · DIVISLAB · EMCURE · RRKABEL · ANANTRAJ · LAURUSLABS · HCLTECH · KARURVYSYA · PERSISTENT · SBILIFE · TVSMOTOR · ACE · DATAPATTNS · GLAXO · NUVAMA · PPLPHARMA · ABBOTINDIA · BALRAMCHIN · BHEL · EXIDEIND …
+## 👀 Watchlist (167)
+MEDANTA · LALPATHLAB · BAJAJ-AUTO · LLOYDSME · MANAPPURAM · BIOCON · DIVISLAB · EMCURE · RRKABEL · ANANTRAJ · LAURUSLABS · KARURVYSYA · PERSISTENT · SBILIFE · TVSMOTOR · ACE · DATAPATTNS · GLAXO · NUVAMA · PPLPHARMA · ABBOTINDIA · BALRAMCHIN · EXIDEIND · HCLTECH · KIMS …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
