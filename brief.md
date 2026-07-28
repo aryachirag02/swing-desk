@@ -1,13 +1,13 @@
 # Daily swing brief — 2026-07-28
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 23985.3 · 50DMA 23863.4 · 200DMA 24790.1 · 1M +0.2%
+Nifty 23985.3 · 50DMA 23860.9 · 200DMA 24795.5 · 1M -0.3%
 **Breadth:** 55.2% of universe above 50-DMA (Selective) · A/D 186/313
 **Flows:** FII ₹-1,688 cr today (-7,749 cr 5-day — **selling streak, tighten up**) · DII ₹+2,329 cr
 
-**Indices:** NIFTY 50 23,985.3 (-0.0%) · BANK NIFTY 56,755.6 (-0.6%) · NIFTY IT 30,418.3 (+3.3%) · NIFTY REALTY 921.5 (+0.3%) · NIFTY ENERGY 38,174.8 (-2.8%) · NIFTY MIDCAP 100 62,351.5 (-0.1%)
+**Indices:** NIFTY 50 23,985.3 (-0.0%) · BANK NIFTY 56,755.6 (-0.6%) · NIFTY REALTY 921.5 (+0.3%) · NIFTY IT 30,418.3 (+3.3%) · NIFTY ENERGY 38,174.8 (-2.8%) · NIFTY MIDCAP 100 62,351.5 (-0.1%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=63 → below 200DMA — stand aside · BANK NIFTY RSI2=34 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=48 → below 200DMA — stand aside · BANK NIFTY RSI2=31 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-07-27
