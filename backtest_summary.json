@@ -2,11 +2,11 @@
   "windows": {
     "train": [
       "2024-11-11",
-      "2026-01-20"
+      "2026-01-21"
     ],
     "validate": [
-      "2026-01-21",
-      "2026-07-27"
+      "2026-01-22",
+      "2026-07-28"
     ]
   },
   "params_used": {
@@ -17,19 +17,19 @@
   "train": {
     "trades": 49,
     "win_rate": 44.9,
-    "avg_win": 13405.0,
-    "avg_loss": -4535.0,
+    "avg_win": 13398.0,
+    "avg_loss": -4537.0,
     "profit_factor": 2.41,
-    "expectancy_R": 0.374,
+    "expectancy_R": 0.375,
     "avg_hold_days": 30.2,
     "total_return_pct": 21.1,
-    "annualized_pct": 17.6,
+    "annualized_pct": 17.5,
     "max_drawdown_pct": -7.8
   },
   "train_exit_breakdown": {
     "end of test": {
       "n": 3,
-      "avg_R": 0.26
+      "avg_R": 0.28
     },
     "score decay": {
       "n": 10,
