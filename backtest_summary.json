@@ -17,8 +17,8 @@
   "train": {
     "trades": 49,
     "win_rate": 44.9,
-    "avg_win": 13403.0,
-    "avg_loss": -4534.0,
+    "avg_win": 13405.0,
+    "avg_loss": -4535.0,
     "profit_factor": 2.41,
     "expectancy_R": 0.374,
     "avg_hold_days": 30.2,

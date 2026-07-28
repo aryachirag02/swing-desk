@@ -1,8 +1,8 @@
 # Daily swing brief — 2026-07-27
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 23995.9 · 50DMA 23856.6 · 200DMA 24794.4 · 1M -0.2%
-**Breadth:** 52.6% of universe above 50-DMA (Selective) · A/D 180/68
+Nifty 23995.9 · 50DMA 23855.0 · 200DMA 24798.6 · 1M -0.1%
+**Breadth:** 57.2% of universe above 50-DMA (Selective) · A/D 387/112
 **Flows:** FII ₹-1,688 cr today (-7,749 cr 5-day — **selling streak, tighten up**) · DII ₹+2,329 cr
 
 **Indices:** NIFTY 50 23,995.9 (+1.0%) · BANK NIFTY 57,087.2 (+0.7%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 29,441.9 (+2.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
@@ -470,17 +470,20 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Media Entertainment & Publication (+27.7%) · Construction (+24.6%) · Consumer Durables (+23.7%) · Healthcare (+20.7%)
+**Leading sectors:** Media Entertainment & Publication (+10.5%) · Healthcare (+9.8%) · Diversified (+9.6%) · Realty (+8.8%)
 
-## ✅ Strong Buy (11)
+## ✅ Strong Buy (14)
 - **PPLPHARMA** (Healthcare · Small cap) — score 96, Breakout — new 20-day high on 2.0× volume. Entry ₹192.1 · Stop ₹173.7 · Target ₹228.8 · Risk/sh ₹18.4 · 📅 results 2026-07-29 — inside holding window
 - **IDFCFIRSTB** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 7.1× volume. Entry ₹84.9 · Stop ₹79.5 · Target ₹95.7 · Risk/sh ₹5.4
+- **LALPATHLAB** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 4.7× volume. Entry ₹1827.2 · Stop ₹1676.6 · Target ₹2128.5 · Risk/sh ₹150.6
 - **LAURUSLABS** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 3.6× volume. Entry ₹1713.4 · Stop ₹1598.4 · Target ₹1943.3 · Risk/sh ₹115.0
 - **MEDANTA** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹1407.2 · Stop ₹1322.8 · Target ₹1576.0 · Risk/sh ₹84.4
 - **NH** (Healthcare · Small cap) — score 92, Breakout — new 20-day high on 1.7× volume. Entry ₹2054.0 · Stop ₹1932.6 · Target ₹2296.8 · Risk/sh ₹121.4
+- **SUNPHARMA** (Healthcare · Large cap) — score 92, Breakout — new 20-day high on 2.5× volume. Entry ₹1973.7 · Stop ₹1896.0 · Target ₹2129.1 · Risk/sh ₹77.7 · 📅 results 2026-07-31 — inside holding window
 - **PVRINOX** (Media Entertainment & Publication · Small cap) — score 90, Breakout — new 20-day high on 3.7× volume. Entry ₹1123.2 · Stop ₹1042.1 · Target ₹1285.3 · Risk/sh ₹81.1
 - **RKFORGE** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 5.8× volume. Entry ₹625.5 · Stop ₹575.9 · Target ₹724.6 · Risk/sh ₹49.6
 - **SAGILITY** (Information Technology · Small cap) — score 90, Breakout — new 20-day high on 3.9× volume. Entry ₹43.3 · Stop ₹39.7 · Target ₹50.6 · Risk/sh ₹3.6
+- **LLOYDSME** (Metals & Mining · Mid cap) — score 88, Breakout — new 20-day high on 2.7× volume. Entry ₹2014.9 · Stop ₹1852.1 · Target ₹2340.5 · Risk/sh ₹162.8
 - **SPLPETRO** (Chemicals · Small cap) — score 86, Breakout — new 20-day high on 3.0× volume. Entry ₹760.9 · Stop ₹696.9 · Target ₹889.0 · Risk/sh ₹64.0
 - **CONCOR** (Services · Mid cap) — score 82, Breakout — new 20-day high on 4.6× volume. Entry ₹510.5 · Stop ₹474.8 · Target ₹581.9 · Risk/sh ₹35.7
 - **KFINTECH** (Financial Services · Small cap) — score 82, Breakout — new 20-day high on 6.8× volume. Entry ₹949.2 · Stop ₹873.6 · Target ₹1100.6 · Risk/sh ₹75.7
@@ -490,23 +493,23 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **PPLPHARMA** — 2026-07-29
+- **SUNPHARMA** — 2026-07-31
 - **DIVISLAB** — 2026-08-01
 - **MANAPPURAM** — 2026-08-06
 - **ABBOTINDIA** — 2026-08-11
 - **BIOCON** — 2026-08-06
+- **COLPAL** — 2026-07-29
 - **PERSISTENT** — 2026-08-02
+- **PFIZER** — 2026-07-28
+- **CUMMINSIND** — 2026-08-05
 - **HAL** — 2026-08-11
+- **RADICO** — 2026-07-28
+- **GODREJPROP** — 2026-08-04
 - **UNITDSPR** — 2026-08-13
 - **EICHERMOT** — 2026-07-29
-- **TITAN** — 2026-08-07
-- **ABB** — 2026-07-31
-- **BAJFINANCE** — 2026-07-30
-- **MARICO** — 2026-08-04
-- **MSUMI** — 2026-07-28
-- **COFORGE** — 2026-07-27
 
-## 👀 Watchlist (180)
-EMCURE · LALPATHLAB · DIVISLAB · BAJAJ-AUTO · LLOYDSME · MANAPPURAM · ABBOTINDIA · BIOCON · CREDITACC · RECLTD · RRKABEL · SBILIFE · CAPLIPOINT · KARURVYSYA · PERSISTENT · ACE · AEGISVOPAK · HAL · TVSMOTOR · ETERNAL · GLAXO · HCLTECH · UNITDSPR · AIIL · BALRAMCHIN …
+## 👀 Watchlist (194)
+ANANTRAJ · EMCURE · GLAXO · DIVISLAB · SAILIFE · MANAPPURAM · ABBOTINDIA · BIOCON · COLPAL · CREDITACC · RECLTD · RRKABEL · SBILIFE · CAPLIPOINT · LODHA · PERSISTENT · PFIZER · ACE · AEGISVOPAK · CUMMINSIND · HAL · IIFL · ANTHEM · CARTRADE · ETERNAL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
