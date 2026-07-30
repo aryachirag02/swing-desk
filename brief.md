@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-07-29
+# Daily swing brief — 2026-07-30
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24250.2 · 50DMA 23875.4 · 200DMA 24786.9 · 1M +1.6%
-**Breadth:** 60.2% of universe above 50-DMA (Broad participation) · A/D 376/124
+Nifty 24317.2 · 50DMA 23889.4 · 200DMA 24783.1 · 1M +1.3%
+**Breadth:** 55.4% of universe above 50-DMA (Selective) · A/D 155/343
 **Flows:** FII ₹+2,982 cr today (-4,843 cr 5-day) · DII ₹+998 cr
 
-**Indices:** NIFTY 50 24,250.2 (+1.1%) · BANK NIFTY 57,205.9 (+0.8%) · NIFTY IT 31,123.1 (+2.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 24,317.2 (+0.3%) · BANK NIFTY 57,147.5 (-0.1%) · NIFTY IT 31,194.6 (+0.2%) · NIFTY REALTY 899.5 (-2.1%) · NIFTY ENERGY 38,313.6 (-2.5%) · NIFTY FMCG 49,642.1 (+1.8%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=91 → below 200DMA — stand aside · BANK NIFTY RSI2=71 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=93 → below 200DMA — stand aside · BANK NIFTY RSI2=62 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-07-27
@@ -470,50 +470,46 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Media Entertainment & Publication (+13.1%) · Realty (+11.3%) · Information Technology (+9.2%) · Healthcare (+7.3%)
+**Leading sectors:** Information Technology (+10.8%) · Media Entertainment & Publication (+9.6%) · Healthcare (+6.6%) · Diversified (+6.2%)
 
 ## ✅ Strong Buy (13)
-- **SAGILITY** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 1.7× volume. Entry ₹44.9 · Stop ₹41.0 · Target ₹52.6 · Risk/sh ₹3.9
-- **COFORGE** (Information Technology · Mid cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹1714.9 · Stop ₹1566.4 · Target ₹2011.8 · Risk/sh ₹148.5
-- **PPLPHARMA** (Healthcare · Small cap) — score 92, Breakout — new 20-day high on 1.5× volume. Entry ₹195.7 · Stop ₹177.4 · Target ₹232.3 · Risk/sh ₹18.3 · 📅 results 2026-07-29 — inside holding window
-- **SBILIFE** (Financial Services · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹1894.9 · Stop ₹1799.3 · Target ₹2086.2 · Risk/sh ₹95.6
-- **RADICO** (Fast Moving Consumer Goods · Mid cap) — score 88, Breakout — new 20-day high on 3.1× volume. Entry ₹4373.8 · Stop ₹4100.3 · Target ₹4920.7 · Risk/sh ₹273.5
-- **TVSMOTOR** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 1.6× volume. Entry ₹4075.6 · Stop ₹3827.5 · Target ₹4571.8 · Risk/sh ₹248.1
-- **DIVISLAB** (Healthcare · Large cap) — score 87, Breakout — new 20-day high on 2.5× volume. Entry ₹7784.5 · Stop ₹7371.5 · Target ₹8610.6 · Risk/sh ₹413.0 · 📅 results 2026-08-01 — inside holding window
-- **SWIGGY** (Consumer Services · Mid cap) — score 86, Breakout — new 20-day high on 3.0× volume. Entry ₹287.3 · Stop ₹257.8 · Target ₹346.4 · Risk/sh ₹29.5
-- **CRAFTSMAN** (Automobile and Auto Components · Small cap) — score 84, Breakout — new 20-day high on 7.1× volume. Entry ₹9913.0 · Stop ₹9209.0 · Target ₹11321.0 · Risk/sh ₹704.0
-- **FSL** (Services · Small cap) — score 84, Breakout — new 20-day high on 12.5× volume. Entry ₹293.6 · Stop ₹266.2 · Target ₹348.4 · Risk/sh ₹27.4
-- **LLOYDSME** (Metals & Mining · Mid cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹2051.3 · Stop ₹1885.6 · Target ₹2382.8 · Risk/sh ₹165.7
-- **PARADEEP** (Chemicals · Small cap) — score 84, Breakout — new 20-day high on 13.8× volume. Entry ₹156.5 · Stop ₹142.5 · Target ₹184.5 · Risk/sh ₹14.0
-- **PCBL** (Chemicals · Small cap) — score 84, Breakout — new 20-day high on 11.3× volume. Entry ₹365.7 · Stop ₹329.7 · Target ₹437.8 · Risk/sh ₹36.0
+- **SAGILITY** (Information Technology · Small cap) — score 100, Breakout — new 20-day high on 1.7× volume. Entry ₹46.0 · Stop ₹42.0 · Target ₹53.9 · Risk/sh ₹4.0
+- **ALKEM** (Healthcare · Mid cap) — score 92, Breakout — new 20-day high on 2.0× volume. Entry ₹5816.5 · Stop ₹5520.7 · Target ₹6408.1 · Risk/sh ₹295.8 · 📅 results 2026-08-14 — inside holding window
+- **RAINBOW** (Healthcare · Small cap) — score 92, Breakout — new 20-day high on 1.7× volume. Entry ₹1520.6 · Stop ₹1426.1 · Target ₹1709.6 · Risk/sh ₹94.5
+- **ENDURANCE** (Automobile and Auto Components · Mid cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹2804.3 · Stop ₹2605.5 · Target ₹3201.8 · Risk/sh ₹198.8
+- **CRAFTSMAN** (Automobile and Auto Components · Small cap) — score 88, Breakout — new 20-day high on 2.3× volume. Entry ₹10047.0 · Stop ₹9285.4 · Target ₹11570.1 · Risk/sh ₹761.6
+- **IIFL** (Financial Services · Small cap) — score 88, Breakout — new 20-day high on 1.6× volume. Entry ₹607.8 · Stop ₹556.1 · Target ₹711.3 · Risk/sh ₹51.7
+- **NESTLEIND** (Fast Moving Consumer Goods · Large cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹1520.7 · Stop ₹1436.2 · Target ₹1689.7 · Risk/sh ₹84.5
+- **SWIGGY** (Consumer Services · Mid cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹295.9 · Stop ₹265.3 · Target ₹357.0 · Risk/sh ₹30.6
+- **FSL** (Services · Small cap) — score 84, Breakout — new 20-day high on 1.6× volume. Entry ₹299.6 · Stop ₹271.6 · Target ₹355.7 · Risk/sh ₹28.0
+- **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 84, Breakout — new 20-day high on 2.0× volume. Entry ₹5325.0 · Stop ₹5047.4 · Target ₹5880.3 · Risk/sh ₹277.6 · 📅 results 2026-08-05 — inside holding window
+- **REDINGTON** (Services · Small cap) — score 84, Breakout — new 20-day high on 11.1× volume. Entry ₹311.0 · Stop ₹279.4 · Target ₹374.1 · Risk/sh ₹31.6
+- **SONACOMS** (Automobile and Auto Components · Small cap) — score 81, Breakout — new 20-day high on 2.6× volume. Entry ₹763.8 · Stop ₹710.4 · Target ₹870.4 · Risk/sh ₹53.3
+- **TVSMOTOR** (Automobile and Auto Components · Large cap) — score 81, Breakout — new 20-day high on 2.4× volume. Entry ₹4208.4 · Stop ₹3951.4 · Target ₹4722.3 · Risk/sh ₹257.0
 
-## 🟢 Buy (6)
-- **PFOCUS** (Media Entertainment & Publication · Small cap) — score 78, Breakout — new 20-day high on 3.1× volume. Entry ₹308.7 · Stop ₹276.0 · Target ₹374.2 · Risk/sh ₹32.7
-- **SAPPHIRE** (Consumer Services · Small cap) — score 78, Breakout — new 20-day high on 2.3× volume. Entry ₹193.7 · Stop ₹175.2 · Target ₹230.7 · Risk/sh ₹18.5
-- **TCS** (Information Technology · Large cap) — score 78, Breakout — new 20-day high on 1.4× volume. Entry ₹2446.6 · Stop ₹2287.2 · Target ₹2765.3 · Risk/sh ₹159.4
-- **INFY** (Information Technology · Large cap) — score 74, Breakout — new 20-day high on 2.3× volume. Entry ₹1155.6 · Stop ₹1071.1 · Target ₹1324.5 · Risk/sh ₹84.5
-- **WIPRO** (Information Technology · Large cap) — score 74, Breakout — new 20-day high on 1.5× volume. Entry ₹183.6 · Stop ₹174.5 · Target ₹201.8 · Risk/sh ₹9.1
-- **BSOFT** (Information Technology · Small cap) — score 70, Breakout — new 20-day high on 2.7× volume. Entry ₹311.1 · Stop ₹282.0 · Target ₹369.5 · Risk/sh ₹29.2
+## 🟢 Buy (2)
+- **BALKRISIND** (Automobile and Auto Components · Mid cap) — score 76, Breakout — new 20-day high on 11.3× volume. Entry ₹2306.9 · Stop ₹2119.6 · Target ₹2681.6 · Risk/sh ₹187.3
+- **WIPRO** (Information Technology · Large cap) — score 74, Breakout — new 20-day high on 3.1× volume. Entry ₹186.3 · Stop ₹176.5 · Target ₹206.1 · Risk/sh ₹9.9
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
+- **PERSISTENT** — 2026-08-02
+- **ALKEM** — 2026-08-14
 - **SONATSOFTW** — 2026-07-30
 - **SUNPHARMA** — 2026-07-31
-- **PPLPHARMA** — 2026-07-29
-- **ASIANPAINT** — 2026-07-29
-- **COLPAL** — 2026-07-29
-- **PERSISTENT** — 2026-08-02
+- **ABBOTINDIA** — 2026-08-11
+- **EXIDEIND** — 2026-07-30
+- **M&M** — 2026-07-30
 - **MANKIND** — 2026-08-06
 - **GLAND** — 2026-08-05
-- **BAJAJFINSV** — 2026-07-31
+- **HEROMOTOCO** — 2026-08-05
+- **UNITDSPR** — 2026-08-13
 - **DIVISLAB** — 2026-08-01
-- **ABBOTINDIA** — 2026-08-11
 - **MARICO** — 2026-08-04
-- **GODREJPROP** — 2026-08-04
-- **PRESTIGE** — 2026-08-05
-- **MANAPPURAM** — 2026-08-06
+- **PIDILITIND** — 2026-08-04
+- **NYKAA** — 2026-08-12
 
-## 👀 Watchlist (205)
-AFFLE · SONATSOFTW · LALPATHLAB · SAILIFE · SUNPHARMA · PFIZER · CIPLA · ASIANPAINT · COLPAL · MEDANTA · PERSISTENT · MANKIND · SAREGAMA · CONCORDBIO · GLAND · BAJAJFINSV · GLAXO · IIFL · TECHM · ABBOTINDIA · ANANTRAJ · DEEPAKFERT · MARICO · NESTLEIND · NH …
+## 👀 Watchlist (184)
+PERSISTENT · TATATECH · COFORGE · TECHM · AFFLE · EICHERMOT · LALPATHLAB · NH · PPLPHARMA · RBLBANK · MEDANTA · PFIZER · SAILIFE · SONATSOFTW · AJANTPHARM · ZEEL · CREDITACC · SUNPHARMA · ABBOTINDIA · EXIDEIND · M&M · MAPMYINDIA · PARADEEP · GLAXO · MANKIND …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
