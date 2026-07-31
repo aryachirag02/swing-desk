@@ -13,6 +13,6 @@
 - **annualized pct**: 17.6
 - **max drawdown pct**: -7.7
 
-## Validate window (2026-01-27 to 2026-07-30)
+## Validate window (2026-01-27 to 2026-07-31)
 
 - **trades**: 0
