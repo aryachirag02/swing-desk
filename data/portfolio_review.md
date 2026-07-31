@@ -1,19 +1,23 @@
-# Weekly portfolio review — 2026-07-27
+# Weekly portfolio review — 2026-07-31
 
-### J&KBANK — HOLD (Strong earnings but mixed analyst views, valuation stretched current levels)
-I'll search for recent news and analyst coverage on J&K Bank. NEWS:  Board meeting scheduled July 29, 2026 to consider Q1 FY26 results 
-ANALYSTS:  JM Financial Buy with target Rs 180 ; consensus varies Rs 131–198
-FUNDAMENTALS:  Q3 FY26 net profit up 10.4% YoY; total business grew 13.6% 
-TECHNICALS: Price 172.6 above 50-day MA, +34% in 3 months; pullback from recent highs
+### J&KBANK — HOLD (Wait for margin stabilization before adding; downside protected by valuations)
+I'll search for recent news and analyst views on J&KBANK. Let me search for more recent Q1 FY27 results and analyst updates. Based on my research, here is your analysis in the requested format:
 
-### ORIENTHOT — HOLD (Stock fair near target; wait for Q1 results before adding)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the last 4-6 weeks specifically. NEWS:  Declared INR 0.65/share annual dividend, ex-date July 23, 2026 
-ANALYSTS:  12-month target Rs 170, bull case Rs 195, bear case Rs 125 
-FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3%; PE 33–37 
-TECHNICALS: Price 134.8 above 50-day average, 3-month +36%, strong momentum but near overbought
+NEWS:  Q1 FY27 net profit ₹424 Cr, advances grew to ₹1.28 Lakh Cr, Gross NPA at 2.37%, announced July 29, 2026 
+ANALYSTS:  JM Financial targets ₹180 (Buy) and ICICI Securities targets ₹165 (Neutral) 
+FUNDAMENTALS:  Net profit fell 12.5% YoY despite 6.9% income growth; margin compression pressure 
+TECHNICALS:  Price fell 12.79% to ₹154.63 from ₹177.30; broke below intraday high of ₹182.29
 
-### FEDERALBNK — HOLD (Strong earnings, fair valuation but analyst targets near-term show limited upsid)
-I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent specific news and earnings updates for Federal Bank in the last 4-6 weeks. NEWS:  Q1 FY27 net profit ₹1,177 Cr up 36.6% YoY, July 17, 2026 
-ANALYSTS:  ICICI Securities target ₹380 Buy, Kotak Securities ₹360 Buy 
-FUNDAMENTALS:  PE 18.0x, PB 2.26x mid valuation 
-TECHNICALS:  Price ₹356 above 50-day average; moderately bullish momentum
+### ORIENTHOT — HOLD (valuations rich at 34x P/E; wait for Q2 momentum clarity)
+I'll search for recent news and analyst commentary on ORIENTHOT. Let me search for more recent news developments in the last 4-6 weeks. NEWS:  Q1 FY27 results approved July 15, 2026; standalone profit Rs 11.35 cr 
+ANALYSTS:  12-month target Rs 170 (bull Rs 195, bear Rs 125) 
+FUNDAMENTALS:  FY26 earnings +73% YoY 
+TECHNICALS: Price 135 above 50-day MA, +37% in 3 months, near 52-week high 169
+
+### FEDERALBNK — ADD (Strong earnings growth, record credit quality, significant upside to analyst tar)
+I'll search for recent news and analyst coverage on Federal Bank to help inform your decision. Based on recent news and analyst coverage, here's your stock assessment:
+
+NEWS:  Q1 FY27 net profit rose 36.57% YoY to INR 1,177 crore, driven by core franchise strength 
+ANALYSTS:  ICICI Securities Buy target Rs 380; Kotak Securities Buy target Rs 360 
+FUNDAMENTALS:  Record-low net NPA at 0.18%, gross NPA 1.52%, strong asset quality momentum 
+TECHNICALS: Price near 52-week highs, above 50-day average, 22% three-month gain signals strong momentum
