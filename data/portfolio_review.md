@@ -1,23 +1,23 @@
 # Weekly portfolio review — 2026-07-31
 
-### J&KBANK — HOLD (Analysts show caution, recovery momentum intact but valuation stretched)
-I'll search for recent news and analyst views on J&K Bank. NEWS:  Q1 FY27 net profit ₹424 crore announced July 29, 2026 
-ANALYSTS:  JM Financial Buy ₹180, ICICI Securities Neutral ₹165 
-FUNDAMENTALS:  Total business up 13.6%, advances up 18% YoY to ₹122,641 cr 
-TECHNICALS:  Price ₹153 below 50-day MA, recovered 48% in 6 months
+### J&KBANK — HOLD (Target upside credible at 198; await margin recovery before adding)
+I'll search for recent news and analyst views on J&KBANK stock. NEWS:  Q1 FY27 results announced July 29, 2026 ;  net profit down to INR 424 crore 
+ANALYSTS:  Target price Rs 198 with Buy rating ;  JM Financial Buy Rs 180, ICICI Securities Neutral Rs 165 
+FUNDAMENTALS:  Net profit growth 36.48% YoY FY26; but Q1 FY27 profit fell YoY 
+TECHNICALS: Price below 50-day average, down 12.4% from your entry, but +16% over 3 months shows momentum recovery
 
-### ORIENTHOT — HOLD (Target near current, valuations elevated at 34x PE)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more specific recent news from the last 4-6 weeks. Based on my research, here's your analysis in the requested format:
+### ORIENTHOT — HOLD (Strong earnings momentum justifies valuation, limited upside at 131.6)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the last 4-6 weeks to get the latest developments. Based on my research, here's your analysis in the exact format requested:
 
-NEWS:  Q1 FY27 results approved July 15, 2026; standalone profit Rs 11.35 cr 
-ANALYSTS:  Consensus target Rs 139.7; bull case Rs 155.1, bear Rs 111.5 
-FUNDAMENTALS:  FY26 earnings up 73.3% YoY; strong profitability recovery 
-TECHNICALS: Price 131.6 above 50-day average; up 28% in 3 months; momentum positive
+NEWS:  Q1 FY27 results approved July 15, 2026 with standalone profit Rs11.35 crore 
+ANALYSTS:  Target Rs 170 (bull case Rs 195, bear Rs 125) 
+FUNDAMENTALS:  Revenue up 12.3% YoY, earnings up 73.3% in FY26 
+TECHNICALS: Price 131.6 above 50-day avg, 3-month up 28%, from July low 80
 
-### FEDERALBNK — ADD (Analyst consensus upbeat, strong asset quality, 23% gains validate thesis)
-I'll search for recent news and analyst coverage on Federal Bank (FEDERALBNK). Let me search for the most recent Q2 FY2026 results and analyst reactions. Based on my research, here's your analysis in the exact format requested:
+### FEDERALBNK — HOLD (Strong growth, fair valuation, already rallied significantly since entry.)
+I'll search for recent news and analyst coverage on Federal Bank. Let me search for the most recent news from the last 4-6 weeks specifically. The search results are returning information about the US Federal Reserve, not Federal Bank (India). Based on my earlier search results, here is your analysis:
 
-NEWS:  Fair value revised to ₹327.20 per share (July 19, 2026) 
-ANALYSTS:  ICICI Securities target ₹380 Buy; Kotak Securities ₹360 Buy 
-FUNDAMENTALS:  Asset quality strong (GNPA 1.83%), NII up 5.4% YoY 
-TECHNICALS: Price 358.9 above 50-day average, +23% in 3 months, momentum sustained
+NEWS:  AGM scheduled Aug 21, 2026; investor meet with IKIGAI held July 30 
+ANALYSTS:  ICICI Securities target Rs 380 (Buy); Kotak Securities target Rs 360 (Buy) 
+FUNDAMENTALS:  FY2025 revenue +19.4% to Rs 30,167Cr; net profit +8.9% to Rs 4,052Cr 
+TECHNICALS: Price 358.9, above 50-day average, up 23% in 3 months; near 52-week high
