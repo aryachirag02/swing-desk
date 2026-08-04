@@ -47,6 +47,6 @@ NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2697,1,stop,green,-127
 CUB.NS,Financial Services,2025-10-29,2026-01-12,178.33,199.92,861,51,stop,green,18592.0,1.56
 NSLNISP.NS,Metals & Mining,2025-12-31,2026-01-12,44.0,40.92,1,8,stop,green,-3.0,-1.0
 PFOCUS.NS,Media Entertainment & Publication,2025-12-11,2026-01-20,208.0,208.0,467,27,stop,green,0.0,0.0
-INDUSTOWER.NS,Telecommunication,2025-11-06,2026-01-28,391.9,425.3,273,57,end of test,green,9118.0,1.22
-SAGILITY.NS,Information Technology,2025-12-22,2026-01-28,53.25,51.7,366,25,end of test,green,-567.0,-0.37
-NATIONALUM.NS,Metals & Mining,2026-01-08,2026-01-28,341.99,399.14,106,13,end of test,green,6057.0,2.35
+SAGILITY.NS,Information Technology,2025-12-22,2026-01-29,53.25,49.29,366,26,score decay,green,-1449.0,-0.95
+INDUSTOWER.NS,Telecommunication,2025-11-06,2026-01-29,391.9,441.55,273,58,end of test,green,13554.0,1.82
+NATIONALUM.NS,Metals & Mining,2026-01-08,2026-01-29,341.99,421.45,106,14,end of test,green,8422.0,3.26
