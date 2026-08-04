@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24614.9 · 50DMA 23944.2 · 200DMA 24775.3 · 1M +0.8%
-**Breadth:** 62.2% of universe above 50-DMA (Broad participation) · A/D 195/297
+**Breadth:** 59.2% of universe above 50-DMA (Selective) · A/D 195/297
 **Flows:** FII ₹+2,446 cr today (+10,252 cr 5-day) · DII ₹-936 cr
 
 **Indices:** NIFTY 50 24,614.9 (-0.6%) · BANK NIFTY 57,907.2 (-0.6%) · NIFTY IT 31,454.2 (-0.8%) · NIFTY REALTY 891.2 (-3.0%) · NIFTY PSU BANK 8,479.9 (+1.2%) · NIFTY ENERGY 38,816.6 (-1.2%)
@@ -480,7 +480,7 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **ATHERENERG** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 4.2× volume. Entry ₹1450.4 · Stop ₹1292.6 · Target ₹1766.0 · Risk/sh ₹157.8
 - **UNOMINDA** (Automobile and Auto Components · Mid cap) — score 90, Breakout — new 20-day high on 2.6× volume. Entry ₹1227.0 · Stop ₹1148.5 · Target ₹1384.0 · Risk/sh ₹78.5 · 📅 results 2026-08-04 — inside holding window
 - **RAINBOW** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 1.8× volume. Entry ₹1579.0 · Stop ₹1473.0 · Target ₹1791.1 · Risk/sh ₹106.0
-- **SIEMENS** (Capital Goods · Large cap) — score 84, Breakout — new 20-day high on 2.8× volume. Entry ₹4000.5 · Stop ₹3724.2 · Target ₹4553.1 · Risk/sh ₹276.3 · 📅 results 2026-08-06 — inside holding window
+- **SIEMENS** (Capital Goods · Large cap) — score 84, Breakout — new 20-day high on 2.9× volume. Entry ₹4000.5 · Stop ₹3726.9 · Target ₹4547.6 · Risk/sh ₹273.6 · 📅 results 2026-08-06 — inside holding window
 
 ## 🟢 Buy (7)
 - **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 79, Breakout — new 20-day high on 1.4× volume. Entry ₹5548.0 · Stop ₹5266.1 · Target ₹6111.9 · Risk/sh ₹281.9 · 📅 results 2026-08-06 — inside holding window
