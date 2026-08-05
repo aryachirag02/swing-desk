@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24624.7 · 50DMA 23956.0 · 200DMA 24772.0 · 1M +0.9%
-**Breadth:** 64.4% of universe above 50-DMA (Broad participation) · A/D 291/205
+**Breadth:** 61.6% of universe above 50-DMA (Broad participation) · A/D 291/205
 **Flows:** FII ₹+2,446 cr today (+10,252 cr 5-day) · DII ₹-936 cr
 
 **Indices:** NIFTY 50 24,624.7 (+0.0%) · BANK NIFTY 57,739.9 (-0.3%) · NIFTY IT 31,404.1 (-0.2%) · NIFTY AUTO 29,411.6 (+8.5%) · NIFTY PSU BANK 8,541.3 (+1.9%) · NIFTY ENERGY 38,830.1 (-1.1%)
@@ -500,7 +500,6 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **MANAPPURAM** — 2026-08-06
 - **BOSCHLTD** — 2026-08-10
 - **APOLLOTYRE** — 2026-08-06
-- **TRENT** — 2026-08-06
 - **ASHOKLEY** — 2026-08-13
 - **JUBLFOOD** — 2026-08-13
 - **AUROPHARMA** — 2026-08-05
@@ -509,9 +508,10 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **HEROMOTOCO** — 2026-08-06
 - **SBIN** — 2026-08-07
 - **BHARATFORG** — 2026-08-06
+- **SIEMENS** — 2026-08-06
 
-## 👀 Watchlist (236)
-ASAHIINDIA · ARE&M · EXIDEIND · MOTHERSON · ENDURANCE · MPHASIS · BATAINDIA · MANAPPURAM · NAM-INDIA · NEULANDLAB · SAPPHIRE · TATACAP · THELEELA · USHAMART · WOCKPHARMA · MINDACORP · JKTYRE · ACE · APOLLOTYRE · JYOTICNC · TRENT · AFFLE · EICHERMOT · EMCURE · HCLTECH …
+## 👀 Watchlist (235)
+ASAHIINDIA · ARE&M · EXIDEIND · MOTHERSON · ENDURANCE · MPHASIS · BATAINDIA · MANAPPURAM · NAM-INDIA · NEULANDLAB · SAPPHIRE · TATACAP · THELEELA · WOCKPHARMA · MINDACORP · JKTYRE · APOLLOTYRE · JYOTICNC · AFFLE · EICHERMOT · EMCURE · HCLTECH · M&M · PNBHOUSING · TMCV …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
