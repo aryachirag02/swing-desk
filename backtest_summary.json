@@ -15,13 +15,13 @@
     "TRAIL_ATR_MULT": 4.0
   },
   "train": {
-    "trades": 48,
-    "win_rate": 41.7,
+    "trades": 49,
+    "win_rate": 40.8,
     "avg_win": 14064.0,
-    "avg_loss": -3936.0,
+    "avg_loss": -3800.0,
     "profit_factor": 2.55,
-    "expectancy_R": 0.313,
-    "avg_hold_days": 30.5,
+    "expectancy_R": 0.286,
+    "avg_hold_days": 29.9,
     "total_return_pct": 20.9,
     "annualized_pct": 17.4,
     "max_drawdown_pct": -5.9
@@ -36,8 +36,8 @@
       "avg_R": 0.06
     },
     "stop (gap)": {
-      "n": 4,
-      "avg_R": -0.45
+      "n": 5,
+      "avg_R": -0.56
     },
     "time stop": {
       "n": 8,
