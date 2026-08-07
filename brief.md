@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24636.0 · 50DMA 23970.5 · 200DMA 24769.0 · 1M +3.2%
-**Breadth:** 58.4% of universe above 50-DMA (Selective) · A/D 210/282
+**Breadth:** 31.8% of universe above 50-DMA (Narrow / weak) · A/D 210/282
 **Flows:** FII ₹-18 cr today (+2,685 cr 5-day) · DII ₹+4,014 cr
 
 **Indices:** NIFTY 50 24,636.0 (+0.0%) · BANK NIFTY 58,063.6 (+0.6%) · NIFTY IT 31,106.2 (-0.9%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
@@ -472,27 +472,28 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 
 **Leading sectors:** Media Entertainment & Publication (+8.2%) · Information Technology (+7.1%) · Automobile and Auto Components (+6.1%) · Services (+4.7%)
 
-## ✅ Strong Buy (12)
+## ✅ Strong Buy (11)
 - **TATATECH** (Information Technology · Small cap) — score 100, Breakout — new 20-day high on 6.3× volume. Entry ₹801.5 · Stop ₹736.1 · Target ₹932.4 · Risk/sh ₹65.4
 - **CHOLAFIN** (Financial Services · Large cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹1940.0 · Stop ₹1797.8 · Target ₹2224.3 · Risk/sh ₹142.2
 - **TATACAP** (Financial Services · Large cap) — score 94, Breakout — new 20-day high on 3.5× volume. Entry ₹382.7 · Stop ₹355.7 · Target ₹436.8 · Risk/sh ₹27.0
-- **AIIL** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 5.5× volume. Entry ₹596.2 · Stop ₹538.1 · Target ₹712.4 · Risk/sh ₹58.1
+- **AIIL** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 5.5× volume. Entry ₹596.2 · Stop ₹538.4 · Target ₹711.7 · Risk/sh ₹57.8
 - **NAVINFLUOR** (Chemicals · Small cap) — score 88, Breakout — new 20-day high on 12.5× volume. Entry ₹8650.0 · Stop ₹7955.2 · Target ₹10039.7 · Risk/sh ₹694.8
-- **SAILIFE** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 2.9× volume. Entry ₹1413.5 · Stop ₹1317.7 · Target ₹1605.0 · Risk/sh ₹95.8
+- **SAILIFE** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 2.9× volume. Entry ₹1413.5 · Stop ₹1317.6 · Target ₹1605.2 · Risk/sh ₹95.9
 - **SHRIRAMFIN** (Financial Services · Large cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹1141.0 · Stop ₹1064.9 · Target ₹1293.2 · Risk/sh ₹76.1
 - **AUBANK** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 2.8× volume. Entry ₹1087.6 · Stop ₹1015.3 · Target ₹1232.2 · Risk/sh ₹72.3
-- **PIDILITIND** (Chemicals · Large cap) — score 86, Breakout — new 20-day high on 1.4× volume. Entry ₹1686.0 · Stop ₹1598.1 · Target ₹1861.8 · Risk/sh ₹87.9
-- **RITES** (Construction · Small cap) — score 86, Breakout — new 20-day high on 2.5× volume. Entry ₹231.4 · Stop ₹214.2 · Target ₹265.8 · Risk/sh ₹17.2
-- **NEULANDLAB** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 12.2× volume. Entry ₹21543.0 · Stop ₹19621.8 · Target ₹25385.3 · Risk/sh ₹1921.2
+- **PIDILITIND** (Chemicals · Large cap) — score 86, Breakout — new 20-day high on 1.4× volume. Entry ₹1686.0 · Stop ₹1600.2 · Target ₹1857.5 · Risk/sh ₹85.8
+- **NEULANDLAB** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 11.9× volume. Entry ₹21543.0 · Stop ₹19619.8 · Target ₹25389.3 · Risk/sh ₹1923.2
 - **WELCORP** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 1.4× volume. Entry ₹1819.6 · Stop ₹1680.4 · Target ₹2097.9 · Risk/sh ₹139.2
 
-## 🟢 Buy (3)
+## 🟢 Buy (4)
 - **POONAWALLA** (Financial Services · Small cap) — score 78, Breakout — new 20-day high on 2.0× volume. Entry ₹490.9 · Stop ₹453.0 · Target ₹566.6 · Risk/sh ₹37.9
 - **HAL** (Capital Goods · Large cap) — score 76, Breakout — new 20-day high on 5.7× volume. Entry ₹4920.0 · Stop ₹4669.3 · Target ₹5421.3 · Risk/sh ₹250.7 · 📅 results 2026-08-12 — inside holding window
 - **SCI** (Services · Small cap) — score 74, Breakout — new 20-day high on 2.4× volume. Entry ₹308.6 · Stop ₹284.6 · Target ₹356.7 · Risk/sh ₹24.0
+- **RITES** (Construction · Small cap) — score 73, Breakout — new 20-day high on 2.3× volume. Entry ₹231.4 · Stop ₹214.0 · Target ₹266.1 · Risk/sh ₹17.4
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **MOTHERSON** — 2026-08-06
+- **TRENT** — 2026-08-06
 - **TITAN** — 2026-08-07
 - **APOLLOTYRE** — 2026-08-06
 - **BIOCON** — 2026-08-06
@@ -501,15 +502,14 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **BATAINDIA** — 2026-08-11
 - **GLAND** — 2026-08-10
 - **SONATSOFTW** — 2026-08-06
-- **TRENT** — 2026-08-06
 - **AIAENG** — 2026-08-12
 - **ASHOKLEY** — 2026-08-14
 - **BHARATFORG** — 2026-08-10
 - **MANAPPURAM** — 2026-08-11
-- **HAL** — 2026-08-12
+- **APOLLOHOSP** — 2026-08-12
 
-## 👀 Watchlist (233)
-MOTHERSON · ASTERDM · MEDANTA · BELRISE · TECHM · THELEELA · ENDURANCE · HCLTECH · NETWEB · ASAHIINDIA · TITAN · APOLLOTYRE · CRISIL · ETERNAL · UNIONBANK · APARINDS · BERGEPAINT · BIOCON · EICHERMOT · OFSS · PNBHOUSING · PTCIL · PVRINOX · SBIN · ZFCVINDIA …
+## 👀 Watchlist (235)
+MOTHERSON · ASTERDM · MEDANTA · BELRISE · TECHM · THELEELA · TRENT · ENDURANCE · HCLTECH · NETWEB · ASAHIINDIA · TITAN · APOLLOTYRE · ETERNAL · UNIONBANK · APARINDS · BAJAJ-AUTO · BERGEPAINT · BIOCON · EICHERMOT · OFSS · PNBHOUSING · PTCIL · SBIN · ZFCVINDIA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
