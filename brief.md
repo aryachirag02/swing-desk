@@ -3,7 +3,7 @@
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24570.7 · 50DMA 23983.8 · 200DMA 24766.1 · 1M +2.5%
 **Breadth:** 63.8% of universe above 50-DMA (Broad participation) · A/D 237/258
-**Flows:** FII ₹-18 cr today (+2,685 cr 5-day) · DII ₹+4,014 cr
+**Flows:** FII ₹+480 cr today (+2,888 cr 5-day) · DII ₹+236 cr
 
 **Indices:** NIFTY 50 24,570.7 (-0.3%) · BANK NIFTY 57,746.4 (-0.5%) · NIFTY IT 31,547.7 (+1.4%) · NIFTY AUTO 29,647.9 (+9.4%) · NIFTY ENERGY 38,749.9 (-1.3%) · NIFTY INFRA 9,504.2 (+1.4%)
 
@@ -502,7 +502,7 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **GLAND** — 2026-08-10
 - **HAL** — 2026-08-12
 - **CARBORUNIV** — 2026-08-07
-- **SIEMENS** — 2026-08-13
+- **SIEMENS** — 2026-08-11
 - **AIAENG** — 2026-08-12
 - **ASHOKLEY** — 2026-08-14
 - **FLUOROCHEM** — 2026-08-12
