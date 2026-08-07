@@ -1,33 +1,25 @@
-# Weekly portfolio review — 2026-08-03
+# Weekly portfolio review — 2026-08-07
 
-### J&KBANK — HOLD (Valuation low but profit decline and mixed analyst coverage warrant patience)
-I'll search for recent news and analyst coverage on J&KBANK. Based on my search for recent news and analyst coverage on J&KBANK, here is your response in the exact format requested:
+### J&KBANK — HOLD (Valuation cheap at 7.5x PE; wait for capital raise clarity before adding)
+I'll search for recent news and analyst coverage on J&KBANK. Let me search for more recent specific analyst coverage from July-August 2026. Based on the search results, here's your analysis in the requested format:
 
-NEWS:  Q1 net profit fell 12.5% YoY to Rs 424.2 crore due to higher provisions (July 2026) 
-ANALYSTS:  JM Financial targets Rs 180 (Buy); ICICI Securities targets Rs 165 (Neutral) 
-FUNDAMENTALS:  PE ratio 8.26, valuation attractive; growth moderate with solid asset base 
-TECHNICALS: Price 156 below 50-day moving average; 3-month gain 16% shows recovery from July lows
+NEWS:  Board to meet Aug 11 2026 to consider Tier I capital raising 
+ANALYSTS:  Target price 198 INR; JM Financial Buy 180, ICICI Neutral 165 
+FUNDAMENTALS:  FY26 net income up 13%, profit margin 35%, strong earnings 
+TECHNICALS: Price 160.1 below 50-day average, down 10% from purchase, near 52-week low support band
 
-### ORIENTHOT — HOLD (Ratings support upside, but premium valuation limits fresh entry at 134)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the last 4-6 weeks specifically. Based on my search results, I found analyst targets and recent performance data, but limited specific news from the last 4–6 weeks. Here's what I found:
+### ORIENTHOT — HOLD (Fairly valued; await Q1 results impact before fresh allocation)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news developments specifically. Based on my research, here's your 5-line analysis:
 
- ICRA upgraded Oriental Hotels' credit ratings to AA-; Stable / ICRA A1+ in May 2026  — that's the most recent significant development I located.
+NEWS:  Q1 FY27 results approved July 15, 2026; standalone profit Rs 11.35 crore 
+ANALYSTS:  Analyst consensus target Rs 139.7; bull case Rs 155.1, bear case Rs 111.5 
+FUNDAMENTALS:  FY26 revenue up 12.3%, earnings up 73.3%; premium valuation at P/E 31-37 
+TECHNICALS: Price above 50-day MA, recovered from lows; 3-month surge near resistance
 
- Analyst consensus target is Rs 139.7 , with  Uniresearch projecting 12-month target of Rs 170, bull case Rs 195 and bear case Rs 125 .  TipRanks shows 1 Hold rating with average target Rs 153 (20.28% upside) .
+### FEDERALBNK — HOLD (Stock near consensus targets, profit-taking warrants caution for accumulation)
+I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent news from the last 4-6 weeks specifically. Based on my research, here's your analysis in the requested format:
 
-On fundamentals:  FY2026 revenue grew 12.31% to Rs 4.94B; earnings surged 73.32% . However,  revenue declined last 2 quarters, and P/E is high at ~32 .
-
-Technicals:  Stock is moderately bullish technically but valuations are medium and getting expensive .
-
-NEWS: Credit rating upgrade to AA- Stable by ICRA, May 2026
-ANALYSTS: Consensus target Rs 139.7; Uniresearch Rs 170; TipRanks Rs 153
-FUNDAMENTALS: FY26 earnings surged 73%, but P/E at 32 signals steep valuation
-TECHNICALS: Above 50-day average, +28% in 3 months, moderately bullish
-
-### FEDERALBNK — HOLD (Strong quarter priced in; near analyst target already)
-I'll search for recent news and analyst coverage on Federal Bank NSE stock. Let me search for more recent Q1 FY27 results and latest analyst updates from late July 2026. Based on my research, here's your 5-line assessment:
-
-NEWS:  Q1 FY27 net profit surged 36.6% YoY to ₹1,177 crore on July 17, 2026 
-ANALYSTS:  Analysts target ₹316.97 average, range ₹260-357 
-FUNDAMENTALS:  NII grew 26.06% YoY; Net NPA at historic 0.18% 
-TECHNICALS:  Price 357.80 above 50-day MA, +23% in 3 months
+NEWS:  Dividend of Rs 1.20 announced, ex-date Aug 14, 2026 
+ANALYSTS:  Consensus rating Buy from 33 analysts; 24 buy, 1 sell, 7 hold. Average target Rs 294 
+FUNDAMENTALS:  Revenue growth forecast 14% p.a. next 3 years vs flat Indian banking sector 
+TECHNICALS: Price 353.5 above 50-day average, +21% in 3 months, momentum strong
