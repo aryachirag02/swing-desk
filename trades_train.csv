@@ -1,11 +1,10 @@
 ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
-LTF.NS,Financial Services,2025-04-24,2025-04-28,175.35,158.5,744,2,stop (gap),green,-12539.0,-1.22
-GMRAIRPORT.NS,Services,2025-05-19,2025-05-21,91.65,84.7,1,2,stop (gap),green,-7.0,-1.02
+LTF.NS,Financial Services,2025-04-24,2025-04-28,175.35,158.5,745,2,stop (gap),green,-12556.0,-1.22
 NIVABUPA.NS,Financial Services,2025-04-24,2025-06-02,84.0,84.0,1326,26,stop,green,0.0,0.0
 UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,112,33,stop,green,-10213.0,-1.0
 GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2653.91,2653.91,37,35,stop,green,0.0,0.0
 J&KBANK.NS,Financial Services,2025-06-11,2025-06-13,110.71,102.06,1294,2,stop,green,-11189.0,-1.0
-TRIDENT.NS,Textiles,2025-05-22,2025-06-19,32.23,28.86,3,20,stop,green,-10.0,-1.0
+TRIDENT.NS,Textiles,2025-05-22,2025-06-19,32.23,28.86,2,20,stop,green,-7.0,-1.0
 SOLARINDS.NS,Chemicals,2025-04-24,2025-07-10,13132.38,16137.22,11,54,stop,green,33053.0,3.34
 MFSL.NS,Financial Services,2025-04-28,2025-07-17,1260.0,1526.28,94,57,stop,green,25030.0,3.34
 AUBANK.NS,Financial Services,2025-04-24,2025-07-18,657.05,794.13,167,60,time stop,green,22892.0,2.23
@@ -16,7 +15,7 @@ WELCORP.NS,Capital Goods,2025-06-02,2025-07-25,921.95,883.96,120,39,score decay,
 BEL.NS,Capital Goods,2025-06-23,2025-07-28,408.31,385.09,9,25,stop,green,-209.0,-1.0
 ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2246.4,2149.7,47,5,score decay,green,-4545.0,-0.66
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,1,12,stop,green,-28.0,-1.0
-MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.6,142460.7,1,21,score decay,green,-7144.0,-0.85
+MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.62,142460.7,1,21,score decay,green,-7144.0,-0.85
 NAVA.NS,Power,2025-06-13,2025-08-18,531.86,570.62,198,45,score decay,green,7674.0,0.7
 KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,203.04,210.61,704,51,score decay,green,5334.0,0.48
 ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,72,46,stop,green,13357.0,1.27
@@ -25,7 +24,7 @@ CHOICEIN.NS,Financial Services,2025-07-17,2025-09-30,752.85,767.5,227,51,score d
 PVRINOX.NS,Media Entertainment & Publication,2025-07-22,2025-10-17,1035.0,1092.6,89,60,time stop,green,5126.0,0.82
 MOTILALOFS.NS,Financial Services,2025-10-14,2025-10-29,1000.47,1000.47,154,10,stop,green,0.0,0.0
 ATHERENERG.NS,Automobile and Auto Components,2025-10-17,2025-10-30,680.0,680.0,136,8,stop,green,0.0,0.0
-IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,135,3,stop,green,-134.0,-1.0
+IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,134,3,stop,green,-133.0,-1.0
 AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,288.79,260.37,408,12,stop,green,-11594.0,-1.0
 CEATLTD.NS,Automobile and Auto Components,2025-10-17,2025-11-07,3672.51,3873.56,48,13,stop,green,9650.0,0.83
 IGIL.NS,Services,2025-11-07,2025-11-10,359.77,343.35,392,1,score decay,green,-6438.0,-0.55
