@@ -6,7 +6,7 @@ NIVABUPA.NS,Financial Services,2025-04-24,2025-06-02,84.0,84.0,1325,26,stop,gree
 UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,112,33,stop,green,-10213.0,-1.0
 GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2653.91,2653.91,37,35,stop,green,0.0,0.0
 J&KBANK.NS,Financial Services,2025-06-11,2025-06-13,110.71,102.06,1293,2,stop,green,-11180.0,-1.0
-SOLARINDS.NS,Chemicals,2025-04-24,2025-07-10,13132.38,16137.23,11,54,stop,green,33053.0,3.34
+SOLARINDS.NS,Chemicals,2025-04-24,2025-07-10,13132.38,16137.22,11,54,stop,green,33053.0,3.34
 MFSL.NS,Financial Services,2025-04-28,2025-07-17,1260.0,1526.28,93,57,stop,green,24764.0,3.34
 AUBANK.NS,Financial Services,2025-04-24,2025-07-18,657.05,794.13,167,60,time stop,green,22892.0,2.23
 DALBHARAT.NS,Construction Materials,2025-04-25,2025-07-21,1969.66,2251.36,66,60,time stop,green,18593.0,1.8
@@ -16,7 +16,7 @@ WELCORP.NS,Capital Goods,2025-06-02,2025-07-25,921.95,883.96,120,39,score decay,
 KPRMILL.NS,Textiles,2025-05-09,2025-08-01,1141.9,1061.9,1,60,score decay,green,-80.0,-0.64
 ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2246.4,2149.7,47,5,score decay,green,-4545.0,-0.66
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,1,12,stop,green,-28.0,-1.0
-MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.6,142460.7,1,21,score decay,green,-7144.0,-0.85
+MRF.NS,Automobile and Auto Components,2025-07-10,2025-08-08,149604.62,142460.7,1,21,score decay,green,-7144.0,-0.85
 NAVA.NS,Power,2025-06-13,2025-08-18,531.86,570.62,197,45,score decay,green,7635.0,0.7
 KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,203.04,210.61,703,51,score decay,green,5327.0,0.48
 ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,72,46,stop,green,13357.0,1.27
