@@ -2,10 +2,10 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24570.7 · 50DMA 23983.8 · 200DMA 24766.1 · 1M +2.5%
-**Breadth:** 63.8% of universe above 50-DMA (Broad participation) · A/D 237/258
+**Breadth:** 53.6% of universe above 50-DMA (Selective) · A/D 237/258
 **Flows:** FII ₹+480 cr today (+2,888 cr 5-day) · DII ₹+236 cr
 
-**Indices:** NIFTY 50 24,570.7 (-0.3%) · BANK NIFTY 57,746.4 (-0.5%) · NIFTY IT 31,547.7 (+1.4%) · NIFTY AUTO 29,647.9 (+9.4%) · NIFTY ENERGY 38,749.9 (-1.3%) · NIFTY INFRA 9,504.2 (+1.4%)
+**Indices:** NIFTY 50 24,570.7 (-0.3%) · BANK NIFTY 57,746.4 (-0.5%) · NIFTY IT 31,547.7 (+1.4%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=31 → below 200DMA — stand aside · BANK NIFTY RSI2=36 → no setup
 
@@ -470,7 +470,7 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Information Technology (+9.0%) · Automobile and Auto Components (+7.2%) · Media Entertainment & Publication (+6.0%) · Consumer Services (+5.5%)
+**Leading sectors:** Information Technology (+9.0%) · Automobile and Auto Components (+7.1%) · Media Entertainment & Publication (+5.8%) · Consumer Services (+5.4%)
 
 ## ✅ Strong Buy (14)
 - **BELRISE** (Automobile and Auto Components · Small cap) — score 96, Breakout — new 20-day high on 1.4× volume. Entry ₹248.2 · Stop ₹231.1 · Target ₹282.5 · Risk/sh ₹17.1
@@ -482,34 +482,34 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **GRASIM** (Construction Materials · Large cap) — score 90, Breakout — new 20-day high on 2.0× volume. Entry ₹3323.0 · Stop ₹3140.9 · Target ₹3687.3 · Risk/sh ₹182.1 · 📅 results 2026-08-12 — inside holding window
 - **INDIANB** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 2.0× volume. Entry ₹889.5 · Stop ₹837.1 · Target ₹994.3 · Risk/sh ₹52.4
 - **SAPPHIRE** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 6.3× volume. Entry ₹224.2 · Stop ₹199.1 · Target ₹274.6 · Risk/sh ₹25.2
+- **PTCIL** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 5.5× volume. Entry ₹19076.0 · Stop ₹17865.3 · Target ₹21497.4 · Risk/sh ₹1210.7
 - **AUROPHARMA** (Healthcare · Mid cap) — score 86, Breakout — new 20-day high on 2.0× volume. Entry ₹1658.0 · Stop ₹1549.5 · Target ₹1874.9 · Risk/sh ₹108.5
-- **RITES** (Construction · Small cap) — score 86, Breakout — new 20-day high on 1.8× volume. Entry ₹234.2 · Stop ₹217.1 · Target ₹268.6 · Risk/sh ₹17.2
+- **RITES** (Construction · Small cap) — score 86, Breakout — new 20-day high on 1.8× volume. Entry ₹232.8 · Stop ₹215.8 · Target ₹267.0 · Risk/sh ₹17.1
 - **NEULANDLAB** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 3.5× volume. Entry ₹22855.0 · Stop ₹20721.6 · Target ₹27121.8 · Risk/sh ₹2133.4
-- **PTCIL** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 5.4× volume. Entry ₹19076.0 · Stop ₹17874.4 · Target ₹21479.2 · Risk/sh ₹1201.6
 - **SBIN** (Financial Services · Large cap) — score 84, Breakout — new 20-day high on 2.7× volume. Entry ₹1097.2 · Stop ₹1044.4 · Target ₹1202.9 · Risk/sh ₹52.8 · 📅 results 2026-08-07 — inside holding window
 
 ## 🟢 Buy (1)
-- **ENRIN** (Capital Goods · Large cap) — score 72, Breakout — new 20-day high on 10.4× volume. Entry ₹3648.8 · Stop ₹3297.8 · Target ₹4350.8 · Risk/sh ₹351.0
+- **ENRIN** (Capital Goods · Large cap) — score 76, Breakout — new 20-day high on 10.4× volume. Entry ₹3648.8 · Stop ₹3291.0 · Target ₹4364.4 · Risk/sh ₹357.8
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **JUBLFOOD** — 2026-08-13
 - **BHARATFORG** — 2026-08-10
 - **GRASIM** — 2026-08-12
+- **BOSCHLTD** — 2026-08-10
 - **BRIGADE** — 2026-08-13
 - **TITAN** — 2026-08-07
-- **BOSCHLTD** — 2026-08-10
 - **SBIN** — 2026-08-07
 - **GLAND** — 2026-08-10
 - **HAL** — 2026-08-12
+- **MANAPPURAM** — 2026-08-11
 - **CARBORUNIV** — 2026-08-07
 - **SIEMENS** — 2026-08-11
 - **AIAENG** — 2026-08-12
 - **ASHOKLEY** — 2026-08-14
 - **FLUOROCHEM** — 2026-08-12
-- **GODREJIND** — 2026-08-12
 
-## 👀 Watchlist (217)
-JUBLFOOD · HEROMOTOCO · MEDANTA · LTM · M&M · AIIL · NAVINFLUOR · UNIONBANK · MPHASIS · NETWEB · THELEELA · ASTERDM · TECHM · CRISIL · EMCURE · EXIDEIND · WOCKPHARMA · BAJAJ-AUTO · BRIGADE · EICHERMOT · ENDURANCE · ETERNAL · HCLTECH · INDGN · OFSS …
+## 👀 Watchlist (216)
+JUBLFOOD · HEROMOTOCO · MEDANTA · LTM · M&M · AIIL · NAVINFLUOR · UNIONBANK · BOSCHLTD · MPHASIS · NETWEB · THELEELA · ASTERDM · TECHM · CRISIL · EMCURE · EXIDEIND · WOCKPHARMA · BAJAJ-AUTO · BRIGADE · EICHERMOT · ENDURANCE · ETERNAL · HCLTECH · INDGN …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
