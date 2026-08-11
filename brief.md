@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-08-10
+# Daily swing brief — 2026-08-11
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24583.8 · 50DMA 24004.5 · 200DMA 24762.4 · 1M +1.6%
-**Breadth:** 57.2% of universe above 50-DMA (Selective) · A/D 235/260
+Nifty 24471.7 · 50DMA 24026.3 · 200DMA 24756.9 · 1M +1.1%
+**Breadth:** 28.6% of universe above 50-DMA (Narrow / weak) · A/D 199/298
 **Flows:** FII ₹+1,975 cr today (+3,940 cr 5-day) · DII ₹-1,290 cr
 
-**Indices:** NIFTY 50 24,583.8 (+0.1%) · BANK NIFTY 57,686.9 (-0.1%) · NIFTY IT 31,631.4 (+0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 24,471.7 (-0.5%) · BANK NIFTY 57,446.2 (-0.4%) · NIFTY AUTO 29,458.6 (+8.7%) · NIFTY IT 31,823.2 (+0.6%) · NIFTY FMCG 48,787.9 (+0.1%) · NIFTY ENERGY 38,707.8 (-1.4%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=43 → below 200DMA — stand aside · BANK NIFTY RSI2=31 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=11 → below 200DMA — stand aside · BANK NIFTY RSI2=13 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-07-27
@@ -470,46 +470,46 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Information Technology (+8.6%) · Automobile and Auto Components (+7.2%) · Media Entertainment & Publication (+6.0%) · Consumer Services (+4.7%)
+**Leading sectors:** Information Technology (+8.7%) · Automobile and Auto Components (+8.1%) · Consumer Services (+6.6%) · Healthcare (+5.3%)
 
-## ✅ Strong Buy (13)
-- **BELRISE** (Automobile and Auto Components · Small cap) — score 100, Breakout — new 20-day high on 1.6× volume. Entry ₹252.8 · Stop ₹235.4 · Target ₹287.4 · Risk/sh ₹17.3
-- **MINDACORP** (Automobile and Auto Components · Small cap) — score 96, Breakout — new 20-day high on 2.7× volume. Entry ₹736.1 · Stop ₹681.6 · Target ₹845.0 · Risk/sh ₹54.5
-- **GLAND** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 1.6× volume. Entry ₹2647.3 · Stop ₹2453.1 · Target ₹3035.7 · Risk/sh ₹194.2 · 📅 results 2026-08-10 — inside holding window
-- **NAUKRI** (Consumer Services · Mid cap) — score 92, Breakout — new 20-day high on 3.0× volume. Entry ₹1282.0 · Stop ₹1188.2 · Target ₹1469.6 · Risk/sh ₹93.8 · 📅 results 2026-08-10 — inside holding window
-- **BRIGADE** (Realty · Small cap) — score 90, Breakout — new 20-day high on 4.2× volume. Entry ₹607.7 · Stop ₹561.2 · Target ₹700.7 · Risk/sh ₹46.5 · 📅 results 2026-08-13 — inside holding window
-- **GRASIM** (Construction Materials · Large cap) — score 90, Breakout — new 20-day high on 4.1× volume. Entry ₹3380.5 · Stop ₹3189.8 · Target ₹3761.9 · Risk/sh ₹190.7 · 📅 results 2026-08-12 — inside holding window
-- **SUMICHEM** (Chemicals · Small cap) — score 90, Breakout — new 20-day high on 2.9× volume. Entry ₹561.2 · Stop ₹509.5 · Target ₹664.7 · Risk/sh ₹51.7
-- **TITAN** (Consumer Durables · Large cap) — score 88, Breakout — new 20-day high on 3.9× volume. Entry ₹5090.0 · Stop ₹4845.9 · Target ₹5578.3 · Risk/sh ₹244.1
-- **CARBORUNIV** (Capital Goods · Small cap) — score 86, Breakout — new 20-day high on 2.3× volume. Entry ₹1121.0 · Stop ₹1023.7 · Target ₹1315.5 · Risk/sh ₹97.3
-- **SYRMA** (Capital Goods · Small cap) — score 86, Breakout — new 20-day high on 2.5× volume. Entry ₹1516.4 · Stop ₹1373.8 · Target ₹1801.5 · Risk/sh ₹142.6
-- **INDGN** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹568.8 · Stop ₹519.2 · Target ₹667.9 · Risk/sh ₹49.6
-- **JINDALSAW** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 1.4× volume. Entry ₹279.0 · Stop ₹257.2 · Target ₹322.7 · Risk/sh ₹21.8
-- **PAYTM** (Financial Services · Mid cap) — score 81, Breakout — new 20-day high on 4.3× volume. Entry ₹1584.1 · Stop ₹1452.0 · Target ₹1848.3 · Risk/sh ₹132.1
+## ✅ Strong Buy (14)
+- **ARE&M** (Automobile and Auto Components · Small cap) — score 100, Breakout — new 20-day high on 6.8× volume. Entry ₹970.2 · Stop ₹893.0 · Target ₹1124.8 · Risk/sh ₹77.3
+- **POLYMED** (Healthcare · Small cap) — score 100, Breakout — new 20-day high on 5.9× volume. Entry ₹1863.9 · Stop ₹1702.0 · Target ₹2187.6 · Risk/sh ₹161.9
+- **ZYDUSLIFE** (Healthcare · Large cap) — score 96, Breakout — new 20-day high on 6.0× volume. Entry ₹1191.0 · Stop ₹1122.0 · Target ₹1329.0 · Risk/sh ₹69.0 · 📅 results 2026-08-11 — inside holding window
+- **BOSCHLTD** (Automobile and Auto Components · Large cap) — score 94, Breakout — new 20-day high on 4.3× volume. Entry ₹45185.0 · Stop ₹42508.7 · Target ₹50537.6 · Risk/sh ₹2676.3
+- **NAUKRI** (Consumer Services · Mid cap) — score 94, Breakout — new 20-day high on 4.3× volume. Entry ₹1360.0 · Stop ₹1254.5 · Target ₹1570.9 · Risk/sh ₹105.5
+- **CARBORUNIV** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹1173.8 · Stop ₹1069.0 · Target ₹1383.4 · Risk/sh ₹104.8
+- **POLICYBZR** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 2.3× volume. Entry ₹1733.0 · Stop ₹1599.0 · Target ₹2000.9 · Risk/sh ₹134.0
+- **SAPPHIRE** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 3.5× volume. Entry ₹236.0 · Stop ₹209.2 · Target ₹289.7 · Risk/sh ₹26.8
+- **TITAN** (Consumer Durables · Large cap) — score 88, Breakout — new 20-day high on 1.7× volume. Entry ₹5128.0 · Stop ₹4887.4 · Target ₹5609.2 · Risk/sh ₹240.6
+- **GLAND** (Healthcare · Small cap) — score 87, Breakout — new 20-day high on 10.1× volume. Entry ₹2924.4 · Stop ₹2683.2 · Target ₹3406.9 · Risk/sh ₹241.2
+- **CHENNPETRO** (Oil Gas & Consumable Fuels · Small cap) — score 84, Breakout — new 20-day high on 5.7× volume. Entry ₹1426.1 · Stop ₹1255.2 · Target ₹1767.9 · Risk/sh ₹170.9
+- **ANTHEM** (Healthcare · Mid cap) — score 83, Breakout — new 20-day high on 1.6× volume. Entry ₹891.7 · Stop ₹828.0 · Target ₹1019.0 · Risk/sh ₹63.7
+- **DEVYANI** (Consumer Services · Small cap) — score 83, Breakout — new 20-day high on 3.4× volume. Entry ₹142.8 · Stop ₹129.1 · Target ₹170.2 · Risk/sh ₹13.7
+- **OIL** (Oil Gas & Consumable Fuels · Mid cap) — score 82, Breakout — new 20-day high on 3.0× volume. Entry ₹470.4 · Stop ₹437.7 · Target ₹535.7 · Risk/sh ₹32.7
 
-## 🟢 Buy (2)
-- **RAMCOCEM** (Construction Materials · Small cap) — score 78, Breakout — new 20-day high on 8.5× volume. Entry ₹953.8 · Stop ₹885.8 · Target ₹1089.6 · Risk/sh ₹67.9
-- **POWERINDIA** (Capital Goods · Mid cap) — score 76, Breakout — new 20-day high on 4.8× volume. Entry ₹36050.0 · Stop ₹32894.1 · Target ₹42361.9 · Risk/sh ₹3155.9
+## 🟢 Buy (1)
+- **PINELABS** (Financial Services · Small cap) — score 72, Breakout — new 20-day high on 2.1× volume. Entry ₹167.6 · Stop ₹148.6 · Target ₹205.6 · Risk/sh ₹19.0
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **GLAND** — 2026-08-10
-- **BOSCHLTD** — 2026-08-10
-- **NAUKRI** — 2026-08-10
+- **ZYDUSLIFE** — 2026-08-11
 - **BRIGADE** — 2026-08-13
-- **GRASIM** — 2026-08-12
 - **JUBLFOOD** — 2026-08-13
-- **ASHOKLEY** — 2026-08-14
-- **AIAENG** — 2026-08-12
-- **SOLARINDS** — 2026-08-13
 - **SIEMENS** — 2026-08-11
-- **HAL** — 2026-08-12
+- **ASHOKLEY** — 2026-08-14
+- **SOLARINDS** — 2026-08-13
+- **AIAENG** — 2026-08-12
+- **GRASIM** — 2026-08-12
+- **ABBOTINDIA** — 2026-08-12
 - **FLUOROCHEM** — 2026-08-12
+- **IPCALAB** — 2026-08-13
 - **MANAPPURAM** — 2026-08-11
-- **IRCTC** — 2026-08-12
-- **KPRMILL** — 2026-08-10
+- **HAL** — 2026-08-12
+- **KPIL** — 2026-08-11
+- **FINCABLES** — 2026-08-11
 
-## 👀 Watchlist (217)
-LENSKART · SAILIFE · TATATECH · MPHASIS · BOSCHLTD · CONCORDBIO · EMCURE · ENDURANCE · MOTHERSON · BALRAMCHIN · LTM · M&M · MEDANTA · BAJAJ-AUTO · COROMANDEL · CRAFTSMAN · EICHERMOT · ETERNAL · HCLTECH · INDIANB · JSWINFRA · JUBLFOOD · LLOYDSME · NEWGEN · OFSS …
+## 👀 Watchlist (216)
+CONCORDBIO · MPHASIS · BELRISE · ENDURANCE · ETERNAL · MRPL · SAILIFE · EICHERMOT · MEDANTA · ASTERDM · INDGN · LENSKART · LTM · AFFLE · BAJAJ-AUTO · BRIGADE · CPPLUS · CRAFTSMAN · EMCURE · HCLTECH · LTTS · OFSS · PERSISTENT · SONATSOFTW · ZFCVINDIA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
