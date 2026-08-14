@@ -1,25 +1,23 @@
 # Weekly portfolio review — 2026-08-14
 
-### J&KBANK — HOLD (Margin dip temporary; expect recovery to 3.5% by Q3)
-I'll search for recent news and analyst coverage on J&K Bank. Let me search for more recent Q1 FY27 results and analyst updates from August 2026. Based on my research, here's your analysis in the exact format requested:
+### J&KBANK — HOLD (Valuation attractive; wait for margin normalization signal)
+I'll search for recent news and analyst coverage on J&KBANK. Let me search for the most recent Q1 FY27 earnings news from late July/early August 2026. NEWS:  Q1 FY27 net profit ₹424 Cr announced July 29, 2026 
+ANALYSTS:  Target raised to ₹218 from ₹198, updated growth/margin assumptions 
+FUNDAMENTALS:  Advances up 25.5% YoY, deposits up 16.75%; margin compression pressure 
+TECHNICALS: Price 155.5 below 50-day MA, 3-month rally +22% but off recent highs
 
-NEWS:  Q1 FY27 net profit ₹424 Cr, advances ₹1.28L Cr, gross NPA 2.37% (Jul 29) 
-ANALYSTS:  JM Financial Buy, target ₹180; consensus target ₹173 
-FUNDAMENTALS:  Strong 25% credit growth, NIM compressed to 3.28% due to bulk deposits 
-TECHNICALS:  Price 154.63 vs prior 177.3 (-12.8%), below 50-day average
+### ORIENTHOT — HOLD (Strong fundamentals and credit rating support, but valuations elevated at ~37x P)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the last 4-6 weeks. Based on my search results, I found relevant analyst coverage and company financials, though specific recent news within the 4-6 week window was limited in the results. Here's your answer in the exact format requested:
 
-### ORIENTHOT — HOLD (Stock recovering from lows, near 50-day MA support, wait for Q1 clarity)
-I'll search for recent news and analyst commentary on ORIENTHOT. Let me search for more recent news developments in the last 4-6 weeks. Based on my research, here's your analysis in the requested format:
+NEWS:  ICRA upgraded credit ratings to AA-; Stable / A1+ in May 2026 
+ANALYSTS:  Consensus target Rs 139.7; bull case Rs 155.1, bear case Rs 111.5 
+FUNDAMENTALS:  FY26 revenue +12.31%, earnings +73.32% YoY 
+TECHNICALS: Price below 50-day MA, rebounded 28% in 3 months, faces resistance near 140
 
-NEWS:  Q1 FY27 profit Rs 11.35 crore standalone, approved July 15, 2026 
-ANALYSTS:  Consensus target Rs 139.7 ;  Uniresearch Rs 170 target, bull Rs 195 
-FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3% , but  revenue down last 2 quarters 
-TECHNICALS: Price 124.2 below 50-day MA, down 7% from entry, 3-month +23%
+### FEDERALBNK — HOLD (Stock near fair value target; wait for FY27 guidance and earnings momentum befor)
+I'll search for recent news and analyst coverage on Federal Bank. Based on the latest search results, here's your analysis:
 
-### FEDERALBNK — HOLD (Fairly valued; wait for full-year guidance clarity)
-I'll search for recent news and analyst coverage on Federal Bank. Let me search for the most recent analyst rating updates and news from the last 4-6 weeks. Based on my search results, I can now provide your analysis:
-
-NEWS:  Q1 FY27 (July 2026): Net profit up 36.57% YoY, operating profit up 21.91% YoY 
-ANALYSTS:  Target price Rs 316.97 with range Rs 260–357 
-FUNDAMENTALS:  Revenue forecast 16% annual growth vs 1.6% for banking sector 
-TECHNICALS: Price 351.3, above 50-day average, up 25% in three months, momentum strong
+NEWS:  Federal Bank announced cash dividend of INR 1.20 with ex-date August 14, 2026 
+ANALYSTS:  Analyst consensus target is ₹316.97 with max ₹357 based on 37 analysts in past 3 months 
+FUNDAMENTALS:  FY26 EPS ₹17.67 up from ₹16.98; revenue up 7.8% to ₹145.3b, healthy growth trajectory 
+TECHNICALS: Stock at 351.3 above 50-day average, up 24% in 3 months; near analyst target resistance zone
