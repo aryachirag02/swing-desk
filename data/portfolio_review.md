@@ -1,22 +1,23 @@
 # Weekly portfolio review — 2026-08-14
 
-### J&KBANK — ? ()
-NEWS:  Board approved raising up to INR 1,000 crore via QIP on 11 August 2026 
-ANALYSTS:  Price target raised to ₹218 from ₹198  (38% upside)
-FUNDAMENTALS:  FY26 EPS ₹21.42, net income up 13% with 35% profit margin 
-TECHNICALS:  Price 157.78 below 50-day average, but 3-month performance +24% 
-HOLD — Attractive valuation awaits pullback completion; capital raise may dilute short term.
+### J&KBANK — HOLD (fundamentals strong but NIM compression, fair value 165-180 warrants patience)
+I'll search for recent news and analyst coverage on J&K Bank. Let me search for more recent analyst ratings and news from late July to early August 2026. Based on my research, here's your requested analysis:
 
-### ORIENTHOT — HOLD (Consensus target shows modest upside; valuation getting expensive at 31.6x PE)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news from the past 4-6 weeks specifically. The search didn't return ORIENTHOT-specific news for July-August 2026. Based on the earlier search results, here's what I found from the most recent available data:
+NEWS:  Q1 net profit ₹424 crore, crossed ₹3 lakh crore business milestone (July 29) 
+ANALYSTS:  JM Financial targets ₹180 (Buy); ICICI Securities ₹165 (Neutral) 
+FUNDAMENTALS:  Q1 profit down 12.6% YoY; advances +25%, deposits +17%, improving asset quality 
+TECHNICALS: Price below 50-day average at ₹155.5; 3-month rally +17% but down from July peak ₹202
 
-NEWS:  ICRA upgraded Oriental Hotels' credit ratings to AA- Stable/A1+ in May 2026 
-ANALYSTS:  Analyst consensus target Rs 139.7 (bull case Rs 155.1, bear case Rs 111.5) 
-FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3% year-on-year 
-TECHNICALS: Price 123.7 below 50-day average, down 7.3% from your cost, up 27% in 3 months
+### ORIENTHOT — HOLD (Strong fundamentals justify long-term patience, credit rating upgrade positive)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news and any downgrades or recent analyst moves. Based on the search results, here's the analysis in your requested format:
 
-### FEDERALBNK — ADD (Strong Q1 earnings momentum, healthy margin expansion, asset quality improving)
-I'll search for recent news and analyst coverage on Federal Bank NSE stock. NEWS:  Q1 FY27 earnings July 17: Net profit rose 36.57% YoY to Rs 1,177 crore, net NPAs fell to decadal low 
-ANALYSTS:  Consensus price target Rs 316.97 from 37 analysts in past 3 months, ranging Rs 260-357 
-FUNDAMENTALS:  NII up 26%, margins at 3.33%, gross NPA 1.52%, net NPA record low 0.18% 
-TECHNICALS: Above 50-day average, up 24% in three months, near 52-week high of Rs 371.70
+NEWS:  ICRA upgraded credit ratings to AA-/A1+ from A+/A1 (July 2026) 
+ANALYSTS:  Consensus target Rs 139.7 with bull case Rs 155.1 
+FUNDAMENTALS:  FY26 revenue +12.3%, earnings +73.3% strong growth momentum 
+TECHNICALS: Price 124.2 below 50-day average, 3-month +30%, technicals remain mixed
+
+### FEDERALBNK — HOLD (Strong earnings growth supports current price, approach recent highs prudently)
+I'll search for recent news and analyst coverage on Federal Bank. NEWS:  Cash dividend of INR 1.20 announced with ex-date August 14, 2026 
+ANALYSTS:  Price target 316.97 with consensus buy rating from 37 analysts 
+FUNDAMENTALS:  FY26 EPS 17.67 up from 16.98, with 7.8% revenue growth 
+TECHNICALS: Price near 50-day average, above entry, holding strong uptrend since July
