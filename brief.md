@@ -1,11 +1,11 @@
 # Daily swing brief — 2026-08-14
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24366.0 · 50DMA 24084.1 · 200DMA 24735.7 · 1M +1.2%
-**Breadth:** 49.5% of universe above 50-DMA (Selective) · A/D 156/317
+Nifty 24366.0 · 50DMA 24038.9 · 200DMA 24760.0 · 1M +0.6%
+**Breadth:** 17.9% of universe above 50-DMA (Narrow / weak) · A/D 104/231
 **Flows:** FII ₹-511 cr today (+1,200 cr 5-day) · DII ₹+4,353 cr
 
-**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY REALTY 895.7 (-2.5%) · NIFTY FMCG 48,615.1 (-0.3%) · NIFTY ENERGY 38,554.2 (-1.8%)
+**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY MIDCAP 50 18,260.7 (-0.7%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
 
@@ -472,15 +472,14 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 
 **Leading sectors:** Automobile and Auto Components (+7.7%) · Consumer Services (+7.1%) · Information Technology (+6.8%) · Realty (+3.8%)
 
-## ✅ Strong Buy (6)
-- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 96, Breakout — new 20-day high on 3.5× volume. Entry ₹939.2 · Stop ₹874.2 · Target ₹1069.2 · Risk/sh ₹65.0
-- **BDL** (Capital Goods · Mid cap) — score 90, Breakout — new 20-day high on 6.4× volume. Entry ₹1398.0 · Stop ₹1305.7 · Target ₹1582.7 · Risk/sh ₹92.3 · 📅 results 2026-08-14 — inside holding window
-- **BLS** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 1.9× volume. Entry ₹278.1 · Stop ₹257.2 · Target ₹319.9 · Risk/sh ₹20.9
-- **ELGIEQUIP** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 10.8× volume. Entry ₹609.5 · Stop ₹567.0 · Target ₹694.4 · Risk/sh ₹42.5
-- **HONASA** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 11.3× volume. Entry ₹502.8 · Stop ₹462.9 · Target ₹582.6 · Risk/sh ₹39.9
+## ✅ Strong Buy (4)
+- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 10.5× volume. Entry ₹609.5 · Stop ₹564.7 · Target ₹699.2 · Risk/sh ₹44.8
+- **BDL** (Capital Goods · Mid cap) — score 90, Breakout — new 20-day high on 6.4× volume. Entry ₹1398.0 · Stop ₹1304.5 · Target ₹1584.9 · Risk/sh ₹93.5 · 📅 results 2026-08-14 — inside holding window
+- **HONASA** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 12.1× volume. Entry ₹502.8 · Stop ₹461.9 · Target ₹584.7 · Risk/sh ₹40.9
 - **LGEINDIA** (Consumer Durables · Mid cap) — score 88, Breakout — new 20-day high on 13.2× volume. Entry ₹1729.7 · Stop ₹1625.1 · Target ₹1938.9 · Risk/sh ₹104.6
 
-## 🟢 Buy (2)
+## 🟢 Buy (3)
+- **BLS** (Consumer Services · Small cap) — score 76, Breakout — new 20-day high on 1.9× volume. Entry ₹278.1 · Stop ₹256.1 · Target ₹322.2 · Risk/sh ₹22.1
 - **GLAXO** (Healthcare · Mid cap) — score 76, Breakout — new 20-day high on 1.4× volume. Entry ₹2688.8 · Stop ₹2530.1 · Target ₹3006.1 · Risk/sh ₹158.7
 - **IDEA** (Telecommunication · Mid cap) — score 72, Breakout — new 20-day high on 2.1× volume. Entry ₹14.1 · Stop ₹13.1 · Target ₹16.2 · Risk/sh ₹1.0
 
@@ -488,8 +487,8 @@ WHY_CALL:  Demerger execution underway with NCLT approval, but effective date Ap
 - **BDL** — 2026-08-14
 - **ASHOKLEY** — 2026-08-14
 
-## 👀 Watchlist (228)
-BATAINDIA · JUBLFOOD · LENSKART · BELRISE · BRIGADE · URBANCO · ENDURANCE · NETWEB · AARTIIND · ASHOKLEY · COFORGE · CRAFTSMAN · EICHERMOT · EXIDEIND · HYUNDAI · LTM · M&M · MPHASIS · NAUKRI · PETRONET · POONAWALLA · SOLARINDS · UNOMINDA · CONCORDBIO · HAL …
+## 👀 Watchlist (223)
+ASAHIINDIA · BATAINDIA · PERSISTENT · ENDURANCE · AARTIIND · JUBLFOOD · LENSKART · SOLARINDS · BELRISE · URBANCO · NETWEB · ASHOKLEY · COFORGE · CRAFTSMAN · EICHERMOT · EXIDEIND · HYUNDAI · LTM · M&M · MPHASIS · PETRONET · POONAWALLA · BRIGADE · CONCORDBIO · HAL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
