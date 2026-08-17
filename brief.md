@@ -2,10 +2,10 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24366.0 · 50DMA 24038.9 · 200DMA 24760.0 · 1M +0.6%
-**Breadth:** 40.2% of universe above 50-DMA (Selective) · A/D 161/324
+**Breadth:** 18.9% of universe above 50-DMA (Narrow / weak) · A/D 156/303
 **Flows:** FII ₹+508 cr today (+1,228 cr 5-day) · DII ₹+356 cr
 
-**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY ENERGY 39,277.0 (-0.2%) · NIFTY PSU BANK 8,381.8 (+0.4%)
+**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY MIDCAP 100 62,428.1 (-0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
 
@@ -470,25 +470,24 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Automobile and Auto Components (+9.4%) · Information Technology (+8.2%) · Consumer Services (+7.1%) · Telecommunication (+6.7%)
+**Leading sectors:** Automobile and Auto Components (+10.4%) · Telecommunication (+6.7%) · Consumer Services (+5.6%) · Information Technology (+4.8%)
 
-## ✅ Strong Buy (6)
-- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 96, Breakout — new 20-day high on 3.5× volume. Entry ₹939.2 · Stop ₹874.2 · Target ₹1069.2 · Risk/sh ₹65.0
+## ✅ Strong Buy (4)
 - **BDL** (Capital Goods · Mid cap) — score 90, Breakout — new 20-day high on 6.4× volume. Entry ₹1398.0 · Stop ₹1304.5 · Target ₹1584.9 · Risk/sh ₹93.5 · 📅 results 2026-08-14 — inside holding window
 - **BLS** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 1.8× volume. Entry ₹278.1 · Stop ₹256.8 · Target ₹320.7 · Risk/sh ₹21.3
 - **LGEINDIA** (Consumer Durables · Mid cap) — score 88, Breakout — new 20-day high on 13.3× volume. Entry ₹1729.7 · Stop ₹1624.2 · Target ₹1940.7 · Risk/sh ₹105.5
 - **HONASA** (Fast Moving Consumer Goods · Small cap) — score 84, Breakout — new 20-day high on 11.5× volume. Entry ₹502.8 · Stop ₹463.2 · Target ₹582.1 · Risk/sh ₹39.6
-- **GLAXO** (Healthcare · Mid cap) — score 82, Breakout — new 20-day high on 1.4× volume. Entry ₹2688.8 · Stop ₹2528.5 · Target ₹3009.4 · Risk/sh ₹160.3
 
-## 🟢 Buy (1)
+## 🟢 Buy (2)
 - **IDEA** (Telecommunication · Mid cap) — score 78, Breakout — new 20-day high on 2.1× volume. Entry ₹14.1 · Stop ₹13.1 · Target ₹16.2 · Risk/sh ₹1.0
+- **GLAXO** (Healthcare · Mid cap) — score 76, Breakout — new 20-day high on 1.4× volume. Entry ₹2688.8 · Stop ₹2530.1 · Target ₹3006.1 · Risk/sh ₹158.7
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **BDL** — 2026-08-14
 - **ASHOKLEY** — 2026-08-14
 
-## 👀 Watchlist (223)
-BATAINDIA · JUBLFOOD · LENSKART · SOLARINDS · BELRISE · URBANCO · ENDURANCE · NETWEB · AARTIIND · ASHOKLEY · CRAFTSMAN · EICHERMOT · EXIDEIND · HYUNDAI · LTM · M&M · MPHASIS · PETRONET · POONAWALLA · TATATECH · UNOMINDA · BHARTIARTL · HAL · TMCV · ASTRAL …
+## 👀 Watchlist (225)
+ASAHIINDIA · BATAINDIA · AARTIIND · JUBLFOOD · LENSKART · SOLARINDS · BELRISE · URBANCO · ENDURANCE · NETWEB · ARE&M · ASHOKLEY · CRAFTSMAN · EICHERMOT · EXIDEIND · HYUNDAI · LTM · M&M · MPHASIS · PETRONET · POONAWALLA · UNOMINDA · PERSISTENT · BHARTIARTL · HAL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
