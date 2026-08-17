@@ -5,7 +5,7 @@ Nifty 24366.0 · 50DMA 24084.1 · 200DMA 24735.7 · 1M +1.2%
 **Breadth:** 28.2% of universe above 50-DMA (Narrow / weak) · A/D 165/333
 **Flows:** FII ₹+508 cr today (+1,228 cr 5-day) · DII ₹+356 cr
 
-**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY AUTO 29,207.9 (+7.8%) · NIFTY FMCG 48,615.1 (-0.3%) · NIFTY ENERGY 38,554.2 (-1.8%)
+**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
 
@@ -470,7 +470,7 @@ CALL: WAIT — accumulation pattern, but de-rating risk real
 WHY_CALL:  Demerger execution underway with NCLT approval, but effective date April 1, 2026 already past suggests disclosure/implementation gaps.  Company has capacity expansion completed and earnings grew 26.7% YoY (FY26 vs FY25), yet stock trading sideways below prior highs shows market skepticism on demerger timing and standalone entity valuations. Rising volume could be exit by early buyers, not accumulation. Better entry after AGM clarity on demerger timeline and FY27 guidance on August 19.
 
 
-**Leading sectors:** Automobile and Auto Components (+7.7%) · Consumer Services (+7.1%) · Information Technology (+6.8%) · Realty (+3.8%)
+**Leading sectors:** Automobile and Auto Components (+7.7%) · Consumer Services (+7.1%) · Information Technology (+6.8%) · Realty (+3.6%)
 
 ## ✅ Strong Buy (7)
 - **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 96, Breakout — new 20-day high on 3.5× volume. Entry ₹939.2 · Stop ₹873.4 · Target ₹1070.8 · Risk/sh ₹65.8
