@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24366.0 · 50DMA 24084.1 · 200DMA 24735.7 · 1M +1.2%
-**Breadth:** 27.1% of universe above 50-DMA (Narrow / weak) · A/D 234/262
+**Breadth:** 27.0% of universe above 50-DMA (Narrow / weak) · A/D 234/263
 **Flows:** FII ₹-2,535 cr today (-3,282 cr 5-day) · DII ₹+5,101 cr
 
 **Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
@@ -335,7 +335,7 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 ## 🟢 Buy (0)
 - none today
 
-## 👀 Watchlist (219)
+## 👀 Watchlist (220)
 UNOMINDA · ASHOKLEY · ENDURANCE · KFINTECH · BATAINDIA · IFCI · LENSKART · NETWEB · TBOTEK · ZENTEC · BDL · KPIL · AFFLE · BAJAJHLDNG · BRIGADE · COFORGE · CRAFTSMAN · EICHERMOT · ESCORTS · EXIDEIND · FINCABLES · HEROMOTOCO · HYUNDAI · LGEINDIA · LTM …
 
 ## 📌 Position reminders (check Trade log tab)
