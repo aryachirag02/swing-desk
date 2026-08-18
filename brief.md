@@ -1,11 +1,11 @@
 # Daily swing brief — 2026-08-17
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24366.0 · 50DMA 24084.1 · 200DMA 24735.7 · 1M +1.2%
-**Breadth:** 29.9% of universe above 50-DMA (Narrow / weak) · A/D 147/159
+Nifty 24366.0 · 50DMA 24038.9 · 200DMA 24760.0 · 1M +0.6%
+**Breadth:** 6.1% of universe above 50-DMA (Narrow / weak) · A/D 132/147
 **Flows:** FII ₹-2,535 cr today (-3,282 cr 5-day) · DII ₹+5,101 cr
 
-**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY MIDCAP 50 18,260.7 (-0.7%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
 
@@ -322,21 +322,17 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 
 **Leading sectors:** Consumer Services (+22.0%) · Diversified (+21.6%) · Information Technology (+10.8%) · Chemicals (+10.6%)
 
-## ✅ Strong Buy (8)
-- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.3× volume. Entry ₹624.2 · Stop ₹580.0 · Target ₹712.6 · Risk/sh ₹44.2
-- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 3.5× volume. Entry ₹939.2 · Stop ₹873.4 · Target ₹1070.8 · Risk/sh ₹65.8
-- **OBEROIRLTY** (Realty · Mid cap) — score 90, Breakout — new 20-day high on 5.0× volume. Entry ₹1931.0 · Stop ₹1807.2 · Target ₹2178.6 · Risk/sh ₹123.8
-- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1515.0 · Stop ₹1384.9 · Target ₹1775.3 · Risk/sh ₹130.1
-- **BHEL** (Capital Goods · Mid cap) — score 86, Breakout — new 20-day high on 1.8× volume. Entry ₹436.0 · Stop ₹405.4 · Target ₹497.1 · Risk/sh ₹30.6
-- **HINDCOPPER** (Metals & Mining · Small cap) — score 86, Breakout — new 20-day high on 3.0× volume. Entry ₹572.7 · Stop ₹517.8 · Target ₹682.3 · Risk/sh ₹54.8
-- **SUPREMEIND** (Capital Goods · Mid cap) — score 86, Breakout — new 20-day high on 1.8× volume. Entry ₹3590.0 · Stop ₹3350.8 · Target ₹4068.5 · Risk/sh ₹239.2
-- **HAL** (Capital Goods · Large cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹5059.0 · Stop ₹4778.4 · Target ₹5620.3 · Risk/sh ₹280.6
+## ✅ Strong Buy (4)
+- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 4.2× volume. Entry ₹624.2 · Stop ₹579.4 · Target ₹713.8 · Risk/sh ₹44.8
+- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1515.0 · Stop ₹1383.4 · Target ₹1778.2 · Risk/sh ₹131.6
+- **SUPREMEIND** (Capital Goods · Mid cap) — score 86, Breakout — new 20-day high on 1.7× volume. Entry ₹3590.0 · Stop ₹3349.3 · Target ₹4071.5 · Risk/sh ₹240.7
+- **HAL** (Capital Goods · Large cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹5059.0 · Stop ₹4776.8 · Target ₹5623.4 · Risk/sh ₹282.2
 
-## 🟢 Buy (0)
-- none today
+## 🟢 Buy (1)
+- **HINDCOPPER** (Metals & Mining · Small cap) — score 78, Breakout — new 20-day high on 3.0× volume. Entry ₹572.7 · Stop ₹517.8 · Target ₹682.3 · Risk/sh ₹54.8
 
-## 👀 Watchlist (221)
-KFINTECH · AARTIIND · SOLARINDS · ASHOKLEY · BATAINDIA · ENDURANCE · IFCI · LENSKART · NETWEB · URBANCO · KPIL · AFFLE · CLEAN · COFORGE · LGEINDIA · LTM · MPHASIS · NAVINFLUOR · PETRONET · PIDILITIND · POONAWALLA · WELSPUNLIV · BLS · SUMICHEM · GLAXO …
+## 👀 Watchlist (225)
+AARTIIND · SOLARINDS · KFINTECH · ASAHIINDIA · ASHOKLEY · ENDURANCE · IFCI · LENSKART · NETWEB · URBANCO · BATAINDIA · KPIL · AFFLE · CLEAN · COFORGE · IPCALAB · LTM · MPHASIS · NAVINFLUOR · PETRONET · PIDILITIND · POONAWALLA · WELSPUNLIV · BLS · OBEROIRLTY …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
