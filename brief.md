@@ -1,13 +1,13 @@
 # Daily swing brief — 2026-08-17
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24287.7 · 50DMA 24102.5 · 200DMA 24727.7 · 1M -0.2%
-**Breadth:** 46.2% of universe above 50-DMA (Selective) · A/D 234/263
+Nifty 24366.0 · 50DMA 24038.9 · 200DMA 24760.0 · 1M +0.6%
+**Breadth:** 19.9% of universe above 50-DMA (Narrow / weak) · A/D 139/152
 **Flows:** FII ₹-2,535 cr today (-3,282 cr 5-day) · DII ₹+5,101 cr
 
-**Indices:** NIFTY 50 24,287.7 (-0.3%) · BANK NIFTY 57,497.8 (+0.0%) · NIFTY REALTY 908.7 (-1.1%) · NIFTY AUTO 29,178.1 (+7.7%) · NIFTY FMCG 48,105.1 (-1.3%) · NIFTY ENERGY 38,652.6 (-1.6%)
+**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PHARMA 26,445.6 (-0.9%) · NIFTY INFRA 9,377.3 (+0.5%) · NIFTY ENERGY 39,277.0 (-0.2%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=1 → below 200DMA — stand aside · BANK NIFTY RSI2=29 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
 
 ---
 # Market intelligence — 2026-08-17
@@ -320,23 +320,20 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Automobile and Auto Components (+9.1%) · Consumer Services (+9.0%) · Information Technology (+7.5%) · Capital Goods (+5.7%)
+**Leading sectors:** Consumer Services (+22.0%) · Diversified (+21.6%) · Information Technology (+10.8%) · Chemicals (+10.6%)
 
-## ✅ Strong Buy (8)
-- **ELGIEQUIP** (Capital Goods · Small cap) — score 100, Breakout — new 20-day high on 2.3× volume. Entry ₹624.2 · Stop ₹580.6 · Target ₹711.4 · Risk/sh ₹43.6
-- **PTCIL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 9.5× volume. Entry ₹20584.0 · Stop ₹19175.4 · Target ₹23401.2 · Risk/sh ₹1408.6
-- **BHEL** (Capital Goods · Mid cap) — score 92, Breakout — new 20-day high on 1.8× volume. Entry ₹436.0 · Stop ₹405.4 · Target ₹497.1 · Risk/sh ₹30.6
-- **SUPREMEIND** (Capital Goods · Mid cap) — score 92, Breakout — new 20-day high on 1.7× volume. Entry ₹3590.0 · Stop ₹3355.0 · Target ₹4060.0 · Risk/sh ₹235.0
-- **HAL** (Capital Goods · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹5059.0 · Stop ₹4778.4 · Target ₹5620.3 · Risk/sh ₹280.6
-- **OBEROIRLTY** (Realty · Mid cap) — score 90, Breakout — new 20-day high on 5.0× volume. Entry ₹1931.0 · Stop ₹1809.1 · Target ₹2174.8 · Risk/sh ₹121.9
-- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1515.0 · Stop ₹1384.9 · Target ₹1775.3 · Risk/sh ₹130.1
+## ✅ Strong Buy (5)
+- **ELGIEQUIP** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 2.3× volume. Entry ₹624.2 · Stop ₹580.6 · Target ₹711.4 · Risk/sh ₹43.6
+- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1515.0 · Stop ₹1383.4 · Target ₹1778.2 · Risk/sh ₹131.6
 - **HINDCOPPER** (Metals & Mining · Small cap) — score 86, Breakout — new 20-day high on 3.0× volume. Entry ₹572.7 · Stop ₹517.8 · Target ₹682.3 · Risk/sh ₹54.8
+- **SUPREMEIND** (Capital Goods · Mid cap) — score 86, Breakout — new 20-day high on 1.7× volume. Entry ₹3590.0 · Stop ₹3349.3 · Target ₹4071.5 · Risk/sh ₹240.7
+- **HAL** (Capital Goods · Large cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹5059.0 · Stop ₹4778.4 · Target ₹5620.3 · Risk/sh ₹280.6
 
 ## 🟢 Buy (0)
 - none today
 
 ## 👀 Watchlist (223)
-UNOMINDA · ASHOKLEY · ENDURANCE · KFINTECH · ZENTEC · BATAINDIA · IFCI · LENSKART · ASAHIINDIA · NETWEB · TBOTEK · BDL · CLEAN · KPIL · AFFLE · ARE&M · BRIGADE · COFORGE · CRAFTSMAN · EICHERMOT · ESCORTS · EXIDEIND · FINCABLES · GRASIM · HEROMOTOCO …
+AARTIIND · SOLARINDS · KFINTECH · ASAHIINDIA · ASHOKLEY · ENDURANCE · IFCI · LENSKART · NETWEB · URBANCO · BATAINDIA · KPIL · AFFLE · CLEAN · COFORGE · IPCALAB · LGEINDIA · LTM · MPHASIS · NAVINFLUOR · PETRONET · PIDILITIND · POONAWALLA · WELSPUNLIV · BLS …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
