@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-08-17
+# Daily swing brief — 2026-08-18
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24366.0 · 50DMA 24084.1 · 200DMA 24735.7 · 1M +1.2%
-**Breadth:** 27.0% of universe above 50-DMA (Narrow / weak) · A/D 234/263
+Nifty 24154.9 · 50DMA 24099.9 · 200DMA 24727.1 · 1M -0.7%
+**Breadth:** 27.0% of universe above 50-DMA (Narrow / weak) · A/D 188/310
 **Flows:** FII ₹-2,535 cr today (-3,282 cr 5-day) · DII ₹+5,101 cr
 
-**Indices:** NIFTY 50 24,366.0 (-0.1%) · BANK NIFTY 57,491.1 (-0.3%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 31,357.8 (-0.3%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 24,154.9 (-0.9%) · BANK NIFTY 57,262.4 (-0.4%) · NIFTY AUTO 29,264.6 (+8.0%) · NIFTY REALTY 895.8 (-2.5%) · NIFTY FMCG 47,734.8 (-2.1%) · NIFTY ENERGY 38,578.9 (-1.8%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=27 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=0 → below 200DMA — stand aside · BANK NIFTY RSI2=13 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-08-17
@@ -320,23 +320,27 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Automobile and Auto Components (+8.8%) · Consumer Services (+8.7%) · Information Technology (+7.2%) · Capital Goods (+5.4%)
+**Leading sectors:** Automobile and Auto Components (+9.8%) · Consumer Services (+8.6%) · Media Entertainment & Publication (+7.1%) · Information Technology (+7.0%)
 
-## ✅ Strong Buy (8)
-- **ELGIEQUIP** (Capital Goods · Small cap) — score 100, Breakout — new 20-day high on 2.3× volume. Entry ₹624.2 · Stop ₹580.0 · Target ₹712.6 · Risk/sh ₹44.2
-- **PTCIL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 9.5× volume. Entry ₹20584.0 · Stop ₹19169.5 · Target ₹23412.9 · Risk/sh ₹1414.5
-- **BHEL** (Capital Goods · Mid cap) — score 92, Breakout — new 20-day high on 1.8× volume. Entry ₹436.0 · Stop ₹405.4 · Target ₹497.1 · Risk/sh ₹30.6
-- **SUPREMEIND** (Capital Goods · Mid cap) — score 92, Breakout — new 20-day high on 1.8× volume. Entry ₹3590.0 · Stop ₹3350.8 · Target ₹4068.5 · Risk/sh ₹239.2
-- **HAL** (Capital Goods · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹5059.0 · Stop ₹4778.4 · Target ₹5620.3 · Risk/sh ₹280.6
-- **OBEROIRLTY** (Realty · Mid cap) — score 90, Breakout — new 20-day high on 5.0× volume. Entry ₹1931.0 · Stop ₹1807.2 · Target ₹2178.6 · Risk/sh ₹123.8
-- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 3.2× volume. Entry ₹1515.0 · Stop ₹1384.9 · Target ₹1775.3 · Risk/sh ₹130.1
-- **HINDCOPPER** (Metals & Mining · Small cap) — score 86, Breakout — new 20-day high on 3.0× volume. Entry ₹572.7 · Stop ₹517.8 · Target ₹682.3 · Risk/sh ₹54.8
+## ✅ Strong Buy (12)
+- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 100, Breakout — new 20-day high on 3.3× volume. Entry ₹962.8 · Stop ₹894.3 · Target ₹1099.7 · Risk/sh ₹68.5
+- **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 1.6× volume. Entry ₹5354.5 · Stop ₹4817.2 · Target ₹6429.1 · Risk/sh ₹537.3
+- **ACE** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.0× volume. Entry ₹1184.8 · Stop ₹1081.1 · Target ₹1392.1 · Risk/sh ₹103.7
+- **IFCI** (Financial Services · Small cap) — score 94, Breakout — new 20-day high on 2.6× volume. Entry ₹81.4 · Stop ₹74.3 · Target ₹95.5 · Risk/sh ₹7.1
+- **BEML** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 1.6× volume. Entry ₹1965.5 · Stop ₹1809.3 · Target ₹2278.0 · Risk/sh ₹156.2
+- **CONCORDBIO** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 2.3× volume. Entry ₹1565.7 · Stop ₹1430.0 · Target ₹1837.0 · Risk/sh ₹135.7
+- **ZENTEC** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 4.9× volume. Entry ₹1982.4 · Stop ₹1816.0 · Target ₹2315.1 · Risk/sh ₹166.4
+- **BOSCHLTD** (Automobile and Auto Components · Large cap) — score 87, Breakout — new 20-day high on 2.1× volume. Entry ₹48730.0 · Stop ₹45884.5 · Target ₹54421.0 · Risk/sh ₹2845.5
+- **LENSKART** (Consumer Services · Mid cap) — score 87, Breakout — new 20-day high on 1.7× volume. Entry ₹628.4 · Stop ₹584.0 · Target ₹717.2 · Risk/sh ₹44.4
+- **JYOTICNC** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 4.3× volume. Entry ₹929.2 · Stop ₹836.8 · Target ₹1113.9 · Risk/sh ₹92.4
+- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 5.3× volume. Entry ₹2877.4 · Stop ₹2690.2 · Target ₹3251.8 · Risk/sh ₹187.2
+- **HEG** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 1.8× volume. Entry ₹739.2 · Stop ₹676.9 · Target ₹863.9 · Risk/sh ₹62.3
 
-## 🟢 Buy (0)
-- none today
+## 🟢 Buy (1)
+- **MCX** (Financial Services · Mid cap) — score 78, Breakout — new 20-day high on 1.4× volume. Entry ₹3040.0 · Stop ₹2803.0 · Target ₹3514.1 · Risk/sh ₹237.0
 
-## 👀 Watchlist (220)
-UNOMINDA · ASHOKLEY · ENDURANCE · KFINTECH · BATAINDIA · IFCI · LENSKART · NETWEB · TBOTEK · ZENTEC · BDL · KPIL · AFFLE · BAJAJHLDNG · BRIGADE · COFORGE · CRAFTSMAN · EICHERMOT · ESCORTS · EXIDEIND · FINCABLES · HEROMOTOCO · HYUNDAI · LGEINDIA · LTM …
+## 👀 Watchlist (205)
+MINDACORP · LTF · ENDURANCE · AFFLE · GRASIM · SOLARINDS · THELEELA · WELSPUNLIV · TBOTEK · CRAFTSMAN · KFINTECH · PVRINOX · APARINDS · BDL · CHENNPETRO · DATAPATTNS · HEROMOTOCO · HFCL · JUBLFOOD · MRPL · PETRONET · PTCIL · SYRMA · UNOMINDA · URBANCO …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
