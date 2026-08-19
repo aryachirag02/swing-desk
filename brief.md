@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-08-18
+# Daily swing brief — 2026-08-19
 
-**Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24154.9 · 50DMA 24069.9 · 200DMA 24744.5 · 1M +0.3%
-**Breadth:** 4.6% of universe above 50-DMA (Narrow / weak) · A/D 188/310
+**Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
+Nifty 24078.3 · 50DMA 24139.9 · 200DMA 24710.1 · 1M -0.5%
+**Breadth:** 25.4% of universe above 50-DMA (Narrow / weak) · A/D 152/346
 **Flows:** FII ₹+1,652 cr today (-1,889 cr 5-day) · DII ₹+2,579 cr
 
-**Indices:** NIFTY 50 24,154.9 (-0.5%) · BANK NIFTY 57,262.4 (-0.4%) · NIFTY IT 30,213.4 (-1.9%) · NIFTY PHARMA 26,361.9 (+0.1%) · NIFTY PHARMA 26,361.9 (+0.1%) · NIFTY MIDCAP 50 18,216.8 (-0.3%)
+**Indices:** NIFTY 50 24,078.3 (-0.3%) · BANK NIFTY 57,239.8 (-0.0%) · NIFTY REALTY 895.3 (-2.5%) · NIFTY AUTO 29,185.4 (+7.7%) · NIFTY FMCG 47,473.9 (-2.6%) · NIFTY ENERGY 38,124.4 (-2.9%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=0 → below 200DMA — stand aside · BANK NIFTY RSI2=9 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=0 → below 200DMA — stand aside · BANK NIFTY RSI2=8 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-08-18
@@ -278,27 +278,23 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+23.8%) · Media Entertainment & Publication (+23.8%) · Information Technology (+21.7%) · Fast Moving Consumer Goods (+21.4%)
+**Leading sectors:** Consumer Services (+8.9%) · Automobile and Auto Components (+8.1%) · Information Technology (+7.2%) · Media Entertainment & Publication (+6.5%)
 
-## ✅ Strong Buy (12)
-- **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 1.6× volume. Entry ₹5354.5 · Stop ₹4812.8 · Target ₹6437.8 · Risk/sh ₹541.7
-- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 94, Breakout — new 20-day high on 3.3× volume. Entry ₹962.8 · Stop ₹894.0 · Target ₹1100.3 · Risk/sh ₹68.8
-- **ACE** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 2.0× volume. Entry ₹1184.8 · Stop ₹1080.5 · Target ₹1393.5 · Risk/sh ₹104.3
-- **BEML** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 1.6× volume. Entry ₹1965.5 · Stop ₹1807.3 · Target ₹2282.0 · Risk/sh ₹158.2
-- **IFCI** (Financial Services · Small cap) — score 90, Breakout — new 20-day high on 2.6× volume. Entry ₹81.4 · Stop ₹74.1 · Target ₹95.8 · Risk/sh ₹7.2
-- **ZENTEC** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 4.9× volume. Entry ₹1982.4 · Stop ₹1815.5 · Target ₹2316.2 · Risk/sh ₹166.9
-- **LENSKART** (Consumer Services · Mid cap) — score 87, Breakout — new 20-day high on 1.7× volume. Entry ₹628.4 · Stop ₹584.0 · Target ₹717.2 · Risk/sh ₹44.4
-- **CONCORDBIO** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 2.3× volume. Entry ₹1565.7 · Stop ₹1428.7 · Target ₹1839.8 · Risk/sh ₹137.0
-- **JYOTICNC** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 4.3× volume. Entry ₹929.2 · Stop ₹836.8 · Target ₹1113.9 · Risk/sh ₹92.4
-- **BOSCHLTD** (Automobile and Auto Components · Large cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹48730.0 · Stop ₹45880.3 · Target ₹54429.4 · Risk/sh ₹2849.7
-- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 5.5× volume. Entry ₹2877.4 · Stop ₹2691.6 · Target ₹3249.0 · Risk/sh ₹185.8
-- **HEG** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 1.8× volume. Entry ₹739.2 · Stop ₹676.9 · Target ₹863.9 · Risk/sh ₹62.3
+## ✅ Strong Buy (8)
+- **THELEELA** (Consumer Services · Small cap) — score 100, Breakout — new 20-day high on 2.3× volume. Entry ₹532.8 · Stop ₹487.6 · Target ₹623.3 · Risk/sh ₹45.2
+- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.5× volume. Entry ₹637.8 · Stop ₹591.1 · Target ₹731.1 · Risk/sh ₹46.7
+- **NAM-INDIA** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 1.4× volume. Entry ₹1217.0 · Stop ₹1133.0 · Target ₹1385.1 · Risk/sh ₹84.0
+- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹288.1 · Stop ₹272.6 · Target ₹319.2 · Risk/sh ₹15.5
+- **JYOTICNC** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 2.0× volume. Entry ₹950.7 · Stop ₹856.1 · Target ₹1139.7 · Risk/sh ₹94.5
+- **POLICYBZR** (Financial Services · Mid cap) — score 82, Breakout — new 20-day high on 1.8× volume. Entry ₹1782.1 · Stop ₹1658.2 · Target ₹2029.8 · Risk/sh ₹123.9
+- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2822.2 · Target ₹3452.9 · Risk/sh ₹210.2
+- **WELCORP** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹1973.9 · Stop ₹1847.2 · Target ₹2227.3 · Risk/sh ₹126.7
 
-## 🟢 Buy (0)
-- none today
+## 🟢 Buy (1)
+- **CYIENT** (Information Technology · Small cap) — score 74, Breakout — new 20-day high on 3.0× volume. Entry ₹894.5 · Stop ₹831.3 · Target ₹1021.0 · Risk/sh ₹63.2
 
-## 👀 Watchlist (203)
-AFFLE · ELGIEQUIP · GRASIM · LTF · MINDACORP · PETRONET · SOLARINDS · THELEELA · WELSPUNLIV · TBOTEK · ENDURANCE · KFINTECH · APARINDS · BDL · CHENNPETRO · DATAPATTNS · DLF · ENGINERSIN · LTFOODS · MRPL · PTCIL · SYRMA · URBANCO · AJANTPHARM · BALRAMCHIN …
+## 👀 Watchlist (196)
+MEESHO · IFCI · ASAHIINDIA · CHENNPETRO · CRAFTSMAN · MGL · SUPREMEIND · URBANCO · ENDURANCE · NETWEB · ACE · PNBHOUSING · AFFLE · CASTROLIND · JUBLFOOD · LGEINDIA · MINDACORP · OBEROIRLTY · PAYTM · UNOMINDA · WELSPUNLIV · ETERNAL · NAUKRI · AARTIIND · ANANDRATHI …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
