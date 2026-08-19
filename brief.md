@@ -1,11 +1,11 @@
 # Daily swing brief — 2026-08-19
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 24078.3 · 50DMA 24139.9 · 200DMA 24710.1 · 1M -0.5%
-**Breadth:** 25.4% of universe above 50-DMA (Narrow / weak) · A/D 152/346
-**Flows:** FII ₹+1,652 cr today (-1,889 cr 5-day) · DII ₹+2,579 cr
+Nifty 24078.3 · 50DMA 24083.2 · 200DMA 24735.5 · 1M +0.0%
+**Breadth:** 21.6% of universe above 50-DMA (Narrow / weak) · A/D 152/346
+**Flows:** FII ₹+408 cr today (-478 cr 5-day) · DII ₹+3,974 cr
 
-**Indices:** NIFTY 50 24,078.3 (-0.3%) · BANK NIFTY 57,239.8 (-0.0%) · NIFTY REALTY 895.3 (-2.5%) · NIFTY AUTO 29,185.4 (+7.7%) · NIFTY FMCG 47,473.9 (-2.6%) · NIFTY ENERGY 38,124.4 (-2.9%)
+**Indices:** NIFTY 50 24,078.3 (-0.3%) · BANK NIFTY 57,239.8 (-0.0%) · NIFTY AUTO 29,185.4 (+7.7%) · NIFTY IT 30,433.1 (+0.7%) · FIN NIFTY 26,013.0 (-3.3%) · NIFTY ENERGY 38,124.4 (-2.9%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=0 → below 200DMA — stand aside · BANK NIFTY RSI2=8 → below 200DMA — stand aside
 
@@ -278,23 +278,23 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+8.9%) · Automobile and Auto Components (+8.1%) · Information Technology (+7.2%) · Media Entertainment & Publication (+6.5%)
+**Leading sectors:** Consumer Services (+9.1%) · Automobile and Auto Components (+8.2%) · Information Technology (+7.4%) · Media Entertainment & Publication (+6.6%)
 
 ## ✅ Strong Buy (8)
-- **THELEELA** (Consumer Services · Small cap) — score 100, Breakout — new 20-day high on 2.3× volume. Entry ₹532.8 · Stop ₹487.6 · Target ₹623.3 · Risk/sh ₹45.2
-- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.5× volume. Entry ₹637.8 · Stop ₹591.1 · Target ₹731.1 · Risk/sh ₹46.7
+- **THELEELA** (Consumer Services · Small cap) — score 100, Breakout — new 20-day high on 2.3× volume. Entry ₹532.8 · Stop ₹487.4 · Target ₹623.5 · Risk/sh ₹45.4
+- **ELGIEQUIP** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 4.1× volume. Entry ₹637.8 · Stop ₹590.6 · Target ₹732.1 · Risk/sh ₹47.2
+- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 90, Breakout — new 20-day high on 2.7× volume. Entry ₹288.1 · Stop ₹272.7 · Target ₹319.1 · Risk/sh ₹15.5
 - **NAM-INDIA** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 1.4× volume. Entry ₹1217.0 · Stop ₹1133.0 · Target ₹1385.1 · Risk/sh ₹84.0
-- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹288.1 · Stop ₹272.6 · Target ₹319.2 · Risk/sh ₹15.5
-- **JYOTICNC** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 2.0× volume. Entry ₹950.7 · Stop ₹856.1 · Target ₹1139.7 · Risk/sh ₹94.5
+- **JYOTICNC** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 2.0× volume. Entry ₹950.7 · Stop ₹855.5 · Target ₹1140.9 · Risk/sh ₹95.1
 - **POLICYBZR** (Financial Services · Mid cap) — score 82, Breakout — new 20-day high on 1.8× volume. Entry ₹1782.1 · Stop ₹1658.2 · Target ₹2029.8 · Risk/sh ₹123.9
-- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2822.2 · Target ₹3452.9 · Risk/sh ₹210.2
+- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2823.5 · Target ₹3450.3 · Risk/sh ₹208.9
 - **WELCORP** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹1973.9 · Stop ₹1847.2 · Target ₹2227.3 · Risk/sh ₹126.7
 
 ## 🟢 Buy (1)
 - **CYIENT** (Information Technology · Small cap) — score 74, Breakout — new 20-day high on 3.0× volume. Entry ₹894.5 · Stop ₹831.3 · Target ₹1021.0 · Risk/sh ₹63.2
 
-## 👀 Watchlist (196)
-MEESHO · IFCI · ASAHIINDIA · CHENNPETRO · CRAFTSMAN · MGL · SUPREMEIND · URBANCO · ENDURANCE · NETWEB · ACE · PNBHOUSING · AFFLE · CASTROLIND · JUBLFOOD · LGEINDIA · MINDACORP · OBEROIRLTY · PAYTM · UNOMINDA · WELSPUNLIV · ETERNAL · NAUKRI · AARTIIND · ANANDRATHI …
+## 👀 Watchlist (200)
+MEESHO · IFCI · ASAHIINDIA · CHENNPETRO · CRAFTSMAN · MGL · SUPREMEIND · URBANCO · ENDURANCE · NETWEB · ACE · NIACL · PNBHOUSING · AFFLE · ANANTRAJ · CASTROLIND · JUBLFOOD · MINDACORP · PAYTM · UNOMINDA · WELSPUNLIV · ETERNAL · NAUKRI · ANANDRATHI · BEML …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
