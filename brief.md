@@ -2,10 +2,10 @@
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 24078.3 · 50DMA 24083.2 · 200DMA 24735.5 · 1M +0.0%
-**Breadth:** 17.5% of universe above 50-DMA (Narrow / weak) · A/D 95/223
+**Breadth:** 20.0% of universe above 50-DMA (Narrow / weak) · A/D 95/223
 **Flows:** FII ₹+408 cr today (-478 cr 5-day) · DII ₹+3,974 cr
 
-**Indices:** NIFTY 50 24,078.3 (-0.3%) · BANK NIFTY 57,239.8 (-0.0%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 30,433.1 (+0.7%) · NIFTY PHARMA 26,313.8 (-0.2%) · NIFTY MIDCAP 50 18,220.7 (+0.0%)
+**Indices:** NIFTY 50 24,078.3 (-0.3%) · BANK NIFTY 57,239.8 (-0.0%) · NIFTY IT 30,433.1 (+0.7%) · FIN NIFTY 26,903.3 (+1.3%) · NIFTY INFRA 9,377.3 (+0.5%) · NIFTY ENERGY 39,277.0 (-0.2%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=0 → below 200DMA — stand aside · BANK NIFTY RSI2=8 → below 200DMA — stand aside
 
@@ -281,15 +281,15 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 **Leading sectors:** Healthcare (+15.2%) · Information Technology (+10.7%) · Capital Goods (+8.8%) · Financial Services (+7.8%)
 
 ## ✅ Strong Buy (11)
+- **ACE** (Capital Goods · Small cap) — score 100, Breakout — new 20-day high on 3.0× volume. Entry ₹1184.8 · Stop ₹1083.4 · Target ₹1387.5 · Risk/sh ₹101.4
 - **ELGIEQUIP** (Capital Goods · Small cap) — score 100, Breakout — new 20-day high on 4.1× volume. Entry ₹637.8 · Stop ₹590.6 · Target ₹732.1 · Risk/sh ₹47.2
-- **ACE** (Capital Goods · Small cap) — score 96, Breakout — new 20-day high on 2.0× volume. Entry ₹1184.8 · Stop ₹1080.5 · Target ₹1393.5 · Risk/sh ₹104.3
+- **CONCORDBIO** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 2.3× volume. Entry ₹1565.7 · Stop ₹1430.0 · Target ₹1837.0 · Risk/sh ₹135.7
 - **ZENTEC** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 4.9× volume. Entry ₹1982.4 · Stop ₹1815.5 · Target ₹2316.2 · Risk/sh ₹166.9
 - **NAM-INDIA** (Financial Services · Mid cap) — score 92, Breakout — new 20-day high on 1.4× volume. Entry ₹1217.0 · Stop ₹1133.0 · Target ₹1385.1 · Risk/sh ₹84.0
-- **CONCORDBIO** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 2.3× volume. Entry ₹1565.7 · Stop ₹1428.7 · Target ₹1839.8 · Risk/sh ₹137.0
-- **JYOTICNC** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 2.0× volume. Entry ₹950.7 · Stop ₹856.1 · Target ₹1139.7 · Risk/sh ₹94.5
+- **JYOTICNC** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 2.0× volume. Entry ₹950.7 · Stop ₹855.5 · Target ₹1140.9 · Risk/sh ₹95.1
+- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 90, Breakout — new 20-day high on 2.7× volume. Entry ₹288.1 · Stop ₹272.7 · Target ₹319.1 · Risk/sh ₹15.5
 - **POLICYBZR** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 1.8× volume. Entry ₹1782.1 · Stop ₹1658.2 · Target ₹2029.8 · Risk/sh ₹123.9
 - **GLAXO** (Healthcare · Mid cap) — score 87, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2822.2 · Target ₹3452.9 · Risk/sh ₹210.2
-- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹288.1 · Stop ₹272.6 · Target ₹319.2 · Risk/sh ₹15.5
 - **BOSCHLTD** (Automobile and Auto Components · Large cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹48730.0 · Stop ₹45880.3 · Target ₹54429.4 · Risk/sh ₹2849.7
 - **LENSKART** (Consumer Services · Mid cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹628.4 · Stop ₹584.0 · Target ₹717.2 · Risk/sh ₹44.4
 
@@ -297,8 +297,8 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 - **CYIENT** (Information Technology · Small cap) — score 74, Breakout — new 20-day high on 3.0× volume. Entry ₹894.5 · Stop ₹831.3 · Target ₹1021.0 · Risk/sh ₹63.2
 - **ICICIAMC** (Financial Services · Mid cap) — score 70, Breakout — new 20-day high on 4.2× volume. Entry ₹3260.9 · Stop ₹3068.1 · Target ₹3646.5 · Risk/sh ₹192.8
 
-## 👀 Watchlist (207)
-IFCI · PAYTM · PTCIL · CHENNPETRO · GRASIM · MINDACORP · ANANDRATHI · BEML · DATAPATTNS · HAL · NETWEB · PFIZER · ASAHIINDIA · ENDURANCE · AFFLE · ANANTRAJ · ASHOKLEY · AUBANK · CASTROLIND · ENGINERSIN · GLAND · INDGN · LGEINDIA · MGL · NIACL …
+## 👀 Watchlist (206)
+IFCI · PAYTM · PTCIL · CHENNPETRO · GRASIM · MINDACORP · ANANDRATHI · BEML · DATAPATTNS · HAL · NETWEB · PFIZER · ASAHIINDIA · ENDURANCE · RRKABEL · TBOTEK · AFFLE · ASHOKLEY · AUBANK · CASTROLIND · ENGINERSIN · GLAND · INDGN · LGEINDIA · MGL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
