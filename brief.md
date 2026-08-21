@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24231.8 · 50DMA 24160.2 · 200DMA 24701.6 · 1M +1.0%
-**Breadth:** 50.0% of universe above 50-DMA (Selective) · A/D 197/121
+**Breadth:** 52.0% of universe above 50-DMA (Selective) · A/D 303/192
 **Flows:** FII ₹-583 cr today (-551 cr 5-day) · DII ₹+3,538 cr
 
 **Indices:** NIFTY 50 24,231.8 (+0.6%) · BANK NIFTY 57,495.9 (+0.4%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 30,673.1 (+0.8%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
@@ -278,13 +278,13 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+16.1%) · Information Technology (+10.8%) · Services (+9.7%) · Consumer Durables (+9.3%)
+**Leading sectors:** Consumer Services (+10.2%) · Information Technology (+9.2%) · Media Entertainment & Publication (+8.9%) · Automobile and Auto Components (+7.3%)
 
-## ✅ Strong Buy (16)
-- **DIXON** (Consumer Durables · Mid cap) — score 100, Breakout — new 20-day high on 1.8× volume. Entry ₹14850.0 · Stop ₹13867.2 · Target ₹16815.6 · Risk/sh ₹982.8
+## ✅ Strong Buy (13)
 - **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 2.5× volume. Entry ₹5419.8 · Stop ₹4833.1 · Target ₹6593.1 · Risk/sh ₹586.7
 - **ACMESOLAR** (Power · Small cap) — score 94, Breakout — new 20-day high on 4.4× volume. Entry ₹397.4 · Stop ₹363.2 · Target ₹465.8 · Risk/sh ₹34.2
 - **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 3.1× volume. Entry ₹625.8 · Stop ₹575.8 · Target ₹725.7 · Risk/sh ₹50.0
+- **DIXON** (Consumer Durables · Mid cap) — score 94, Breakout — new 20-day high on 1.8× volume. Entry ₹14850.0 · Stop ₹13867.2 · Target ₹16815.6 · Risk/sh ₹982.8
 - **NAM-INDIA** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 3.0× volume. Entry ₹1232.5 · Stop ₹1146.7 · Target ₹1404.0 · Risk/sh ₹85.8
 - **360ONE** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 1.8× volume. Entry ₹1203.0 · Stop ₹1123.0 · Target ₹1363.1 · Risk/sh ₹80.0
 - **COHANCE** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 5.1× volume. Entry ₹475.5 · Stop ₹428.4 · Target ₹569.8 · Risk/sh ₹47.1
@@ -293,15 +293,14 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 - **DALBHARAT** (Construction Materials · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹1897.0 · Stop ₹1793.5 · Target ₹2104.1 · Risk/sh ₹103.5
 - **BALRAMCHIN** (Fast Moving Consumer Goods · Small cap) — score 84, Breakout — new 20-day high on 13.7× volume. Entry ₹767.1 · Stop ₹688.6 · Target ₹924.1 · Risk/sh ₹78.5
 - **WELSPUNLIV** (Textiles · Small cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹188.7 · Stop ₹169.0 · Target ₹228.0 · Risk/sh ₹19.7
-- **MMTC** (Services · Small cap) — score 82, Breakout — new 20-day high on 12.4× volume. Entry ₹66.3 · Stop ₹61.4 · Target ₹75.9 · Risk/sh ₹4.8
 - **MCX** (Financial Services · Mid cap) — score 82, Breakout — new 20-day high on 1.6× volume. Entry ₹3126.0 · Stop ₹2875.1 · Target ₹3627.8 · Risk/sh ₹250.9
-- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2822.2 · Target ₹3452.9 · Risk/sh ₹210.2
 
-## 🟢 Buy (1)
-- **CYIENT** (Information Technology · Small cap) — score 74, Breakout — new 20-day high on 3.0× volume. Entry ₹894.5 · Stop ₹832.1 · Target ₹1019.4 · Risk/sh ₹62.4
+## 🟢 Buy (2)
+- **MMTC** (Services · Small cap) — score 76, Breakout — new 20-day high on 12.4× volume. Entry ₹66.3 · Stop ₹61.4 · Target ₹75.9 · Risk/sh ₹4.8
+- **CANFINHOME** (Financial Services · Small cap) — score 72, Breakout — new 20-day high on 2.2× volume. Entry ₹842.9 · Stop ₹796.5 · Target ₹935.6 · Risk/sh ₹46.4
 
-## 👀 Watchlist (203)
-THELEELA · AUBANK · ABREL · INDGN · KFINTECH · BATAINDIA · ETERNAL · ELGIEQUIP · IFCI · PNBHOUSING · AFFLE · JUBLFOOD · MOTILALOFS · PETRONET · TBOTEK · PERSISTENT · CRAFTSMAN · LTTS · MINDACORP · NAUKRI · ANANDRATHI · ENDURANCE · IPCALAB · PTCIL · ANANTRAJ …
+## 👀 Watchlist (211)
+THELEELA · AUBANK · ABREL · AFFLE · INDGN · KFINTECH · MINDACORP · PNBHOUSING · ETERNAL · ELGIEQUIP · IFCI · KPRMILL · SAILIFE · ASAHIINDIA · CRAFTSMAN · JUBLFOOD · MOTILALOFS · NAUKRI · PETRONET · TBOTEK · ENDURANCE · PERSISTENT · LTM · LTTS · PVRINOX …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
