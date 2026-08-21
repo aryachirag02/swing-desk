@@ -2,10 +2,10 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24231.8 · 50DMA 24160.2 · 200DMA 24701.6 · 1M +1.0%
-**Breadth:** 23.3% of universe above 50-DMA (Narrow / weak) · A/D 197/121
+**Breadth:** 50.0% of universe above 50-DMA (Selective) · A/D 197/121
 **Flows:** FII ₹-583 cr today (-551 cr 5-day) · DII ₹+3,538 cr
 
-**Indices:** NIFTY 50 24,231.8 (+0.6%) · BANK NIFTY 57,495.9 (+0.4%) · NIFTY IT 30,673.1 (+0.8%) · NIFTY PHARMA 26,416.0 (+0.4%) · NIFTY PHARMA 26,416.0 (+0.4%) · NIFTY MIDCAP 50 18,300.7 (+0.4%)
+**Indices:** NIFTY 50 24,231.8 (+0.6%) · BANK NIFTY 57,495.9 (+0.4%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 30,673.1 (+0.8%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=64 → below 200DMA — stand aside · BANK NIFTY RSI2=75 → no setup
 
@@ -282,26 +282,26 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 
 ## ✅ Strong Buy (16)
 - **DIXON** (Consumer Durables · Mid cap) — score 100, Breakout — new 20-day high on 1.8× volume. Entry ₹14850.0 · Stop ₹13867.2 · Target ₹16815.6 · Risk/sh ₹982.8
-- **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 2.5× volume. Entry ₹5419.8 · Stop ₹4831.4 · Target ₹6596.6 · Risk/sh ₹588.4
+- **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 2.5× volume. Entry ₹5419.8 · Stop ₹4833.1 · Target ₹6593.1 · Risk/sh ₹586.7
 - **ACMESOLAR** (Power · Small cap) — score 94, Breakout — new 20-day high on 4.4× volume. Entry ₹397.4 · Stop ₹363.2 · Target ₹465.8 · Risk/sh ₹34.2
-- **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 3.1× volume. Entry ₹625.8 · Stop ₹575.5 · Target ₹726.2 · Risk/sh ₹50.2
+- **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 3.1× volume. Entry ₹625.8 · Stop ₹575.8 · Target ₹725.7 · Risk/sh ₹50.0
 - **NAM-INDIA** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 3.0× volume. Entry ₹1232.5 · Stop ₹1146.7 · Target ₹1404.0 · Risk/sh ₹85.8
 - **360ONE** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 1.8× volume. Entry ₹1203.0 · Stop ₹1123.0 · Target ₹1363.1 · Risk/sh ₹80.0
 - **COHANCE** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 5.1× volume. Entry ₹475.5 · Stop ₹428.4 · Target ₹569.8 · Risk/sh ₹47.1
 - **MEESHO** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 2.8× volume. Entry ₹209.5 · Stop ₹193.1 · Target ₹242.2 · Risk/sh ₹16.4
 - **TEGA** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 3.9× volume. Entry ₹1776.5 · Stop ₹1620.0 · Target ₹2089.6 · Risk/sh ₹156.5
-- **DALBHARAT** (Construction Materials · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹1897.0 · Stop ₹1792.8 · Target ₹2105.4 · Risk/sh ₹104.2
-- **BALRAMCHIN** (Fast Moving Consumer Goods · Small cap) — score 84, Breakout — new 20-day high on 13.6× volume. Entry ₹767.1 · Stop ₹686.7 · Target ₹927.9 · Risk/sh ₹80.4
-- **WELSPUNLIV** (Textiles · Small cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹188.7 · Stop ₹169.0 · Target ₹228.2 · Risk/sh ₹19.7
-- **MMTC** (Services · Small cap) — score 82, Breakout — new 20-day high on 12.4× volume. Entry ₹66.3 · Stop ₹61.4 · Target ₹76.0 · Risk/sh ₹4.9
+- **DALBHARAT** (Construction Materials · Mid cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹1897.0 · Stop ₹1793.5 · Target ₹2104.1 · Risk/sh ₹103.5
+- **BALRAMCHIN** (Fast Moving Consumer Goods · Small cap) — score 84, Breakout — new 20-day high on 13.7× volume. Entry ₹767.1 · Stop ₹688.6 · Target ₹924.1 · Risk/sh ₹78.5
+- **WELSPUNLIV** (Textiles · Small cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹188.7 · Stop ₹169.0 · Target ₹228.0 · Risk/sh ₹19.7
+- **MMTC** (Services · Small cap) — score 82, Breakout — new 20-day high on 12.4× volume. Entry ₹66.3 · Stop ₹61.4 · Target ₹75.9 · Risk/sh ₹4.8
 - **MCX** (Financial Services · Mid cap) — score 82, Breakout — new 20-day high on 1.6× volume. Entry ₹3126.0 · Stop ₹2875.1 · Target ₹3627.8 · Risk/sh ₹250.9
-- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2821.7 · Target ₹3453.8 · Risk/sh ₹210.7
+- **GLAXO** (Healthcare · Mid cap) — score 81, Breakout — new 20-day high on 8.9× volume. Entry ₹3032.4 · Stop ₹2822.2 · Target ₹3452.9 · Risk/sh ₹210.2
 
 ## 🟢 Buy (1)
 - **CYIENT** (Information Technology · Small cap) — score 74, Breakout — new 20-day high on 3.0× volume. Entry ₹894.5 · Stop ₹832.1 · Target ₹1019.4 · Risk/sh ₹62.4
 
 ## 👀 Watchlist (203)
-THELEELA · AUBANK · ABREL · ELGIEQUIP · INDGN · KFINTECH · BATAINDIA · ETERNAL · COFORGE · IFCI · PNBHOUSING · AFFLE · JUBLFOOD · MOTILALOFS · PETRONET · TBOTEK · PERSISTENT · CRAFTSMAN · LTTS · MINDACORP · NAUKRI · ANANDRATHI · ENDURANCE · GLENMARK · IPCALAB …
+THELEELA · AUBANK · ABREL · INDGN · KFINTECH · BATAINDIA · ETERNAL · ELGIEQUIP · IFCI · PNBHOUSING · AFFLE · JUBLFOOD · MOTILALOFS · PETRONET · TBOTEK · PERSISTENT · CRAFTSMAN · LTTS · MINDACORP · NAUKRI · ANANDRATHI · ENDURANCE · IPCALAB · PTCIL · ANANTRAJ …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
