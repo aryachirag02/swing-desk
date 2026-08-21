@@ -6,7 +6,7 @@ UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,112
 GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2615.65,2615.65,38,35,stop,green,0.0,0.0
 HINDPETRO.NS,Oil Gas & Consumable Fuels,2025-05-06,2025-06-13,376.04,341.08,107,28,stop,green,-3740.0,-1.0
 J&KBANK.NS,Financial Services,2025-06-11,2025-06-13,110.71,102.06,1270,2,stop,green,-10982.0,-1.0
-IOC.NS,Oil Gas & Consumable Fuels,2025-05-05,2025-06-19,134.79,128.91,8,33,score decay,green,-47.0,-0.68
+IOC.NS,Oil Gas & Consumable Fuels,2025-05-05,2025-06-19,134.79,128.91,6,33,score decay,green,-35.0,-0.68
 RHIM.NS,Capital Goods,2025-06-13,2025-07-01,475.51,461.13,250,12,score decay,green,-3594.0,-0.33
 SUPREMEIND.NS,Capital Goods,2025-06-18,2025-07-08,4549.6,4193.79,6,14,stop,green,-2135.0,-1.0
 DEEPAKFERT.NS,Chemicals,2025-07-01,2025-07-10,1707.77,1566.15,68,7,stop,green,-9630.0,-1.0
@@ -20,7 +20,7 @@ KPIL.NS,Construction,2025-06-26,2025-07-25,1232.63,1142.85,2,21,score decay,gree
 KPRMILL.NS,Textiles,2025-07-09,2025-08-01,1196.51,1085.82,21,17,stop,green,-2325.0,-1.0
 ZFCVINDIA.NS,Automobile and Auto Components,2025-07-25,2025-08-01,2246.4,2149.7,48,5,score decay,green,-4641.0,-0.66
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,112,12,stop,green,-3106.0,-1.0
-KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,203.04,210.61,694,51,score decay,green,5258.0,0.48
+KARURVYSYA.NS,Financial Services,2025-06-16,2025-08-28,203.04,210.61,693,51,score decay,green,5251.0,0.48
 ECLERX.NS,Services,2025-07-18,2025-09-24,1847.54,2033.05,71,46,stop,green,13172.0,1.27
 DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2263.1,2270.77,92,45,stop,green,706.0,0.06
 CHOICEIN.NS,Financial Services,2025-07-17,2025-09-30,752.85,767.5,192,51,score decay,green,2813.0,0.3
@@ -28,27 +28,27 @@ CUMMINSIND.NS,Capital Goods,2025-07-10,2025-10-07,3467.22,3916.95,30,60,time sto
 PVRINOX.NS,Media Entertainment & Publication,2025-07-22,2025-10-17,1035.0,1092.6,157,60,time stop,green,9043.0,0.82
 MOTILALOFS.NS,Financial Services,2025-10-14,2025-10-29,1000.47,1000.47,152,10,stop,green,0.0,0.0
 ATHERENERG.NS,Automobile and Auto Components,2025-10-17,2025-10-30,680.0,680.0,134,8,stop,green,0.0,0.0
-IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,74,3,stop,green,-74.0,-1.0
-AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,288.79,260.37,403,12,stop,green,-11452.0,-1.0
+IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,151,3,stop,green,-150.0,-1.0
+AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,288.79,260.37,402,12,stop,green,-11424.0,-1.0
 CEATLTD.NS,Automobile and Auto Components,2025-10-17,2025-11-07,3672.51,3873.56,47,13,stop,green,9449.0,0.83
 TATASTEEL.NS,Metals & Mining,2025-10-29,2025-11-14,179.96,171.34,10,11,stop,green,-86.0,-1.0
-SAGILITY.NS,Information Technology,2025-10-30,2025-11-14,53.32,47.89,11,10,stop (gap),green,-60.0,-1.41
-JSWSTEEL.NS,Metals & Mining,2025-10-30,2025-11-21,1201.0,1141.1,76,15,stop,green,-4552.0,-1.0
+SAGILITY.NS,Information Technology,2025-10-30,2025-11-14,53.32,47.89,1,10,stop (gap),green,-5.0,-1.41
+JSWSTEEL.NS,Metals & Mining,2025-10-30,2025-11-21,1201.0,1141.1,77,15,stop,green,-4612.0,-1.0
 SAIL.NS,Metals & Mining,2025-11-11,2025-11-21,144.27,133.54,1100,8,stop,green,-11806.0,-1.0
-MRPL.NS,Oil Gas & Consumable Fuels,2025-11-18,2025-11-26,179.81,160.37,144,6,stop,green,-2799.0,-1.0
+MRPL.NS,Oil Gas & Consumable Fuels,2025-11-18,2025-11-26,179.81,160.37,140,6,stop,green,-2721.0,-1.0
 GMRAIRPORT.NS,Services,2025-11-19,2025-12-08,104.2,98.1,1,13,stop,green,-6.0,-1.0
-SONACOMS.NS,Automobile and Auto Components,2025-10-15,2025-12-09,450.03,476.21,345,37,score decay,green,9035.0,0.79
-KPITTECH.NS,Information Technology,2025-12-02,2025-12-10,1240.28,1185.96,4,6,score decay,green,-217.0,-0.69
+SONACOMS.NS,Automobile and Auto Components,2025-10-15,2025-12-09,450.03,476.21,344,37,score decay,green,9009.0,0.79
+KPITTECH.NS,Information Technology,2025-12-02,2025-12-10,1240.28,1185.96,3,6,score decay,green,-163.0,-0.69
 BHARTIARTL.NS,Telecommunication,2025-10-21,2025-12-11,2026.3,2026.3,47,35,stop,green,0.0,0.0
-RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2026-01-06,1533.91,1500.66,152,31,score decay,green,-5053.0,-0.65
-HINDZINC.NS,Metals & Mining,2025-12-12,2026-01-08,523.44,578.58,323,18,stop,green,17811.0,1.67
-LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,667,60,time stop,green,20928.0,1.85
+RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2026-01-06,1533.91,1500.66,153,31,score decay,green,-5087.0,-0.65
+HINDZINC.NS,Metals & Mining,2025-12-12,2026-01-08,523.44,578.58,319,18,stop,green,17590.0,1.67
+LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,666,60,time stop,green,20897.0,1.85
 MCX.NS,Financial Services,2025-10-14,2026-01-09,1802.8,2191.0,96,60,time stop,green,37267.0,3.3
-HINDCOPPER.NS,Metals & Mining,2025-12-08,2026-01-09,371.4,511.93,1,23,stop,green,141.0,4.29
-MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2896,3,stop,green,-12760.0,-1.0
-NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2658,1,stop,green,-12613.0,-1.0
+HINDCOPPER.NS,Metals & Mining,2025-12-08,2026-01-09,371.4,511.93,2,23,stop,green,281.0,4.29
+MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2895,3,stop,green,-12755.0,-1.0
+NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,2657,1,stop,green,-12608.0,-1.0
 CUB.NS,Financial Services,2025-10-29,2026-01-12,178.33,199.92,842,51,stop,green,18181.0,1.56
 PFOCUS.NS,Media Entertainment & Publication,2025-12-11,2026-01-20,208.0,208.0,459,27,stop,green,0.0,0.0
 LTM.NS,Information Technology,2025-12-01,2026-01-21,6041.04,5733.76,3,36,stop,green,-922.0,-1.0
-SAGILITY.NS,Information Technology,2025-12-22,2026-01-29,53.13,49.18,2,26,score decay,green,-8.0,-0.95
+NATIONALUM.NS,Metals & Mining,2025-12-15,2026-01-30,272.91,393.02,1,32,stop,green,120.0,6.76
 INDUSTOWER.NS,Telecommunication,2025-11-06,2026-02-02,377.69,416.14,277,60,time stop,green,10651.0,1.46
