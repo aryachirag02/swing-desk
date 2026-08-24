@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24219.1 · 50DMA 24194.0 · 200DMA 24684.3 · 1M +1.9%
-**Breadth:** 49.2% of universe above 50-DMA (Selective) · A/D 208/289
+**Breadth:** 49.3% of universe above 50-DMA (Selective) · A/D 207/289
 **Flows:** FII ₹-543 cr today (-1,602 cr 5-day) · DII ₹+2,124 cr
 
 **Indices:** NIFTY 50 24,219.1 (-0.1%) · BANK NIFTY 57,525.9 (-0.4%) · NIFTY REALTY 917.1 (-0.2%) · NIFTY AUTO 29,101.3 (+7.4%) · NIFTY FMCG 47,527.8 (-2.5%) · NIFTY ENERGY 38,335.9 (-2.4%)
