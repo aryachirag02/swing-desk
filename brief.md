@@ -5,7 +5,7 @@ Nifty 24252.0 · 50DMA 24182.0 · 200DMA 24692.6 · 1M +1.6%
 **Breadth:** 51.4% of universe above 50-DMA (Selective) · A/D 224/267
 **Flows:** FII ₹-543 cr today (-1,602 cr 5-day) · DII ₹+2,124 cr
 
-**Indices:** NIFTY 50 24,252.0 (+0.1%) · BANK NIFTY 57,761.9 (+0.5%) · NIFTY IT 30,532.2 (-0.5%) · NIFTY MIDCAP 50 18,320.2 (+0.1%) · NIFTY MIDCAP 50 18,320.2 (+0.1%) · NIFTY PHARMA 26,359.8 (-0.2%)
+**Indices:** NIFTY 50 24,252.0 (+0.1%) · BANK NIFTY 57,761.9 (+0.5%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY IT 30,532.2 (-0.5%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=69 → below 200DMA — stand aside · BANK NIFTY RSI2=90 → no setup
 
@@ -278,7 +278,7 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+11.8%) · Media Entertainment & Publication (+10.3%) · Information Technology (+9.1%) · Automobile and Auto Components (+6.9%)
+**Leading sectors:** Consumer Services (+12.0%) · Media Entertainment & Publication (+10.3%) · Information Technology (+9.0%) · Automobile and Auto Components (+6.8%)
 
 ## ✅ Strong Buy (11)
 - **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 2.2× volume. Entry ₹5601.0 · Stop ₹5000.0 · Target ₹6802.9 · Risk/sh ₹601.0
