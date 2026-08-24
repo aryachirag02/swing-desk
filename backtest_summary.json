@@ -2,11 +2,11 @@
   "windows": {
     "train": [
       "2024-12-10",
-      "2026-02-17"
+      "2026-02-18"
     ],
     "validate": [
-      "2026-02-18",
-      "2026-08-21"
+      "2026-02-19",
+      "2026-08-24"
     ]
   },
   "params_used": {
@@ -23,7 +23,7 @@
     "expectancy_R": 0.54,
     "avg_hold_days": 31.5,
     "total_return_pct": 21.4,
-    "annualized_pct": 17.9,
+    "annualized_pct": 17.8,
     "max_drawdown_pct": -5.1
   },
   "train_exit_breakdown": {

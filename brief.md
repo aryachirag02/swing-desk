@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-08-21
+# Daily swing brief — 2026-08-24
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24252.0 · 50DMA 24182.0 · 200DMA 24692.6 · 1M +1.6%
-**Breadth:** 51.4% of universe above 50-DMA (Selective) · A/D 224/267
+Nifty 24219.1 · 50DMA 24194.0 · 200DMA 24684.3 · 1M +1.9%
+**Breadth:** 49.2% of universe above 50-DMA (Selective) · A/D 208/289
 **Flows:** FII ₹-543 cr today (-1,602 cr 5-day) · DII ₹+2,124 cr
 
-**Indices:** NIFTY 50 24,252.0 (+0.1%) · BANK NIFTY 57,761.9 (+0.5%) · NIFTY IT 30,532.2 (-0.5%) · NIFTY MIDCAP 50 18,320.2 (+0.1%) · NIFTY MIDCAP 50 18,320.2 (+0.1%) · NIFTY PHARMA 26,359.8 (-0.2%)
+**Indices:** NIFTY 50 24,219.1 (-0.1%) · BANK NIFTY 57,525.9 (-0.4%) · NIFTY REALTY 917.1 (-0.2%) · NIFTY AUTO 29,101.3 (+7.4%) · NIFTY FMCG 47,527.8 (-2.5%) · NIFTY ENERGY 38,335.9 (-2.4%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=69 → below 200DMA — stand aside · BANK NIFTY RSI2=90 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=47 → below 200DMA — stand aside · BANK NIFTY RSI2=44 → no setup
 
 ---
 # Market intelligence — 2026-08-18
@@ -278,26 +278,26 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+12.0%) · Media Entertainment & Publication (+10.3%) · Information Technology (+9.0%) · Automobile and Auto Components (+6.8%)
+**Leading sectors:** Consumer Services (+12.2%) · Media Entertainment & Publication (+8.9%) · Information Technology (+7.3%) · Realty (+6.7%)
 
-## ✅ Strong Buy (11)
-- **NETWEB** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 2.2× volume. Entry ₹5601.0 · Stop ₹5000.0 · Target ₹6802.9 · Risk/sh ₹601.0
-- **JINDALSAW** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 9.3× volume. Entry ₹291.6 · Stop ₹267.6 · Target ₹339.7 · Risk/sh ₹24.0
-- **CDSL** (Financial Services · Small cap) — score 90, Breakout — new 20-day high on 3.3× volume. Entry ₹1388.9 · Stop ₹1316.5 · Target ₹1533.7 · Risk/sh ₹72.4
-- **MOTILALOFS** (Financial Services · Mid cap) — score 90, Breakout — new 20-day high on 1.6× volume. Entry ₹990.0 · Stop ₹918.4 · Target ₹1133.2 · Risk/sh ₹71.6
-- **PIRAMALFIN** (Financial Services · Small cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹2180.8 · Stop ₹2031.9 · Target ₹2478.5 · Risk/sh ₹148.9
-- **THELEELA** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 1.4× volume. Entry ₹561.7 · Stop ₹514.4 · Target ₹656.4 · Risk/sh ₹47.3
-- **URBANCO** (Consumer Services · Small cap) — score 90, Breakout — new 20-day high on 4.6× volume. Entry ₹158.6 · Stop ₹144.0 · Target ₹187.9 · Risk/sh ₹14.6
-- **BRIGADE** (Realty · Small cap) — score 88, Breakout — new 20-day high on 2.2× volume. Entry ₹639.3 · Stop ₹588.7 · Target ₹740.5 · Risk/sh ₹50.6
-- **IIFL** (Financial Services · Small cap) — score 88, Breakout — new 20-day high on 5.2× volume. Entry ₹679.8 · Stop ₹630.4 · Target ₹778.7 · Risk/sh ₹49.4
-- **KOTAKBANK** (Financial Services · Large cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹402.8 · Stop ₹385.5 · Target ₹437.4 · Risk/sh ₹17.3
-- **WELCORP** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 11.7× volume. Entry ₹2311.9 · Stop ₹2133.1 · Target ₹2669.5 · Risk/sh ₹178.8
+## ✅ Strong Buy (8)
+- **DLF** (Realty · Large cap) — score 96, Breakout — new 20-day high on 1.5× volume. Entry ₹689.0 · Stop ₹648.9 · Target ₹769.1 · Risk/sh ₹40.1
+- **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹654.1 · Stop ₹600.9 · Target ₹760.4 · Risk/sh ₹53.2
+- **ENGINERSIN** (Construction · Small cap) — score 90, Breakout — new 20-day high on 2.2× volume. Entry ₹254.8 · Stop ₹234.2 · Target ₹296.1 · Risk/sh ₹20.6
+- **LTFOODS** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 14.2× volume. Entry ₹459.0 · Stop ₹422.2 · Target ₹532.7 · Risk/sh ₹36.8
+- **PTCIL** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹21672.0 · Stop ₹19973.1 · Target ₹25069.9 · Risk/sh ₹1698.9
+- **URBANCO** (Consumer Services · Small cap) — score 83, Breakout — new 20-day high on 3.7× volume. Entry ₹168.8 · Stop ₹152.6 · Target ₹201.3 · Risk/sh ₹16.2
+- **IIFL** (Financial Services · Small cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹696.4 · Stop ₹646.0 · Target ₹797.2 · Risk/sh ₹50.4
+- **WELCORP** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 3.1× volume. Entry ₹2409.2 · Stop ₹2215.5 · Target ₹2796.7 · Risk/sh ₹193.7
 
-## 🟢 Buy (0)
-- none today
+## 🟢 Buy (4)
+- **GLENMARK** (Healthcare · Mid cap) — score 78, Breakout — new 20-day high on 1.4× volume. Entry ₹2390.7 · Stop ₹2247.1 · Target ₹2678.0 · Risk/sh ₹143.6
+- **IDBI** (Financial Services · Small cap) — score 76, Breakout — new 20-day high on 9.8× volume. Entry ₹87.9 · Stop ₹82.4 · Target ₹98.9 · Risk/sh ₹5.5
+- **SIEMENS** (Capital Goods · Large cap) — score 76, Breakout — new 20-day high on 2.9× volume. Entry ₹4114.0 · Stop ₹3852.1 · Target ₹4637.8 · Risk/sh ₹261.9
+- **VMM** (Consumer Services · Mid cap) — score 70, Breakout — new 20-day high on 9.6× volume. Entry ₹113.5 · Stop ₹105.0 · Target ₹130.5 · Risk/sh ₹8.5
 
-## 👀 Watchlist (214)
-CARTRADE · ENDURANCE · ACMESOLAR · KFINTECH · ETERNAL · CARBORUNIV · DIXON · NAM-INDIA · PTCIL · ASAHIINDIA · MEESHO · ACE · AUBANK · KPRMILL · AFFLE · ANTHEM · BALRAMCHIN · CRAFTSMAN · DATAPATTNS · GRASIM · JUBLFOOD · NAUKRI · ZFCVINDIA · APOLLOTYRE · COFORGE …
+## 👀 Watchlist (204)
+EIDPARRY · PVRINOX · ABREL · PFOCUS · AFFLE · JSWSTEEL · PIRAMALFIN · CYIENT · MEESHO · NETWEB · ACMESOLAR · AUBANK · JINDALSAW · MOTILALOFS · NAM-INDIA · CDSL · COFORGE · ETERNAL · HFCL · JUBLFOOD · KFINTECH · PRESTIGE · TBOTEK · THELEELA · HONASA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
