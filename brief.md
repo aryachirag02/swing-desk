@@ -298,7 +298,7 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 - **URBANCO** (Consumer Services · Small cap) — score 77, Breakout — new 20-day high on 3.7× volume. Entry ₹168.8 · Stop ₹152.6 · Target ₹201.3 · Risk/sh ₹16.2
 - **IDBI** (Financial Services · Small cap) — score 76, Breakout — new 20-day high on 9.8× volume. Entry ₹87.9 · Stop ₹82.4 · Target ₹98.9 · Risk/sh ₹5.5
 
-## 👀 Watchlist (202)
+## 👀 Watchlist (201)
 CARBORUNIV · EIDPARRY · ACE · JINDALSAW · PFOCUS · CARTRADE · JSWSTEEL · ELGIEQUIP · ACMESOLAR · AUBANK · MOTILALOFS · NAM-INDIA · CDSL · GRASIM · HFCL · KFINTECH · RRKABEL · TMCV · ZENTEC · HONASA · AARTIIND · ASAHIINDIA · IFCI · PETRONET · PVRINOX …
 
 ## 📌 Position reminders (check Trade log tab)
