@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24219.1 · 50DMA 24194.0 · 200DMA 24684.3 · 1M +1.9%
-**Breadth:** 49.2% of universe above 50-DMA (Selective) · A/D 208/289
+**Breadth:** 48.7% of universe above 50-DMA (Selective) · A/D 139/175
 **Flows:** FII ₹+1,182 cr today (+2,115 cr 5-day) · DII ₹+2,493 cr
 
 **Indices:** NIFTY 50 24,219.1 (-0.1%) · BANK NIFTY 57,525.9 (-0.4%) · NIFTY IT 30,596.9 (+0.2%) · NIFTY MIDCAP 50 18,331.8 (+0.1%) · NIFTY MIDCAP 50 18,331.8 (+0.1%) · NIFTY PHARMA 26,339.3 (-0.1%)
@@ -278,26 +278,28 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+12.2%) · Media Entertainment & Publication (+8.9%) · Information Technology (+7.3%) · Realty (+6.7%)
+**Leading sectors:** Media Entertainment & Publication (+17.8%) · Capital Goods (+13.4%) · Diversified (+13.3%) · Services (+9.7%)
 
-## ✅ Strong Buy (8)
-- **DLF** (Realty · Large cap) — score 96, Breakout — new 20-day high on 1.5× volume. Entry ₹689.0 · Stop ₹648.9 · Target ₹769.1 · Risk/sh ₹40.1
-- **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹654.1 · Stop ₹600.9 · Target ₹760.4 · Risk/sh ₹53.2
+## ✅ Strong Buy (11)
+- **PTCIL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.1× volume. Entry ₹21672.0 · Stop ₹19973.1 · Target ₹25069.9 · Risk/sh ₹1698.9
+- **DLF** (Realty · Large cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹689.0 · Stop ₹648.9 · Target ₹769.1 · Risk/sh ₹40.1
 - **ENGINERSIN** (Construction · Small cap) — score 90, Breakout — new 20-day high on 2.2× volume. Entry ₹254.8 · Stop ₹234.2 · Target ₹296.1 · Risk/sh ₹20.6
+- **PIRAMALFIN** (Financial Services · Small cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹2180.8 · Stop ₹2031.9 · Target ₹2478.5 · Risk/sh ₹148.9
+- **BRIGADE** (Realty · Small cap) — score 88, Breakout — new 20-day high on 2.2× volume. Entry ₹654.1 · Stop ₹600.9 · Target ₹760.4 · Risk/sh ₹53.2
 - **LTFOODS** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 14.2× volume. Entry ₹459.0 · Stop ₹422.2 · Target ₹532.7 · Risk/sh ₹36.8
-- **PTCIL** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹21672.0 · Stop ₹19973.1 · Target ₹25069.9 · Risk/sh ₹1698.9
-- **URBANCO** (Consumer Services · Small cap) — score 83, Breakout — new 20-day high on 3.7× volume. Entry ₹168.8 · Stop ₹152.6 · Target ₹201.3 · Risk/sh ₹16.2
+- **WELCORP** (Capital Goods · Small cap) — score 87, Breakout — new 20-day high on 3.1× volume. Entry ₹2409.2 · Stop ₹2215.5 · Target ₹2796.7 · Risk/sh ₹193.7
+- **KOTAKBANK** (Financial Services · Large cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹402.8 · Stop ₹385.5 · Target ₹437.4 · Risk/sh ₹17.3
+- **THELEELA** (Consumer Services · Small cap) — score 84, Breakout — new 20-day high on 1.4× volume. Entry ₹561.7 · Stop ₹514.4 · Target ₹656.4 · Risk/sh ₹47.3
+- **SIEMENS** (Capital Goods · Large cap) — score 82, Breakout — new 20-day high on 2.9× volume. Entry ₹4114.0 · Stop ₹3852.1 · Target ₹4637.8 · Risk/sh ₹261.9
 - **IIFL** (Financial Services · Small cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹696.4 · Stop ₹646.0 · Target ₹797.2 · Risk/sh ₹50.4
-- **WELCORP** (Capital Goods · Small cap) — score 81, Breakout — new 20-day high on 3.1× volume. Entry ₹2409.2 · Stop ₹2215.5 · Target ₹2796.7 · Risk/sh ₹193.7
 
-## 🟢 Buy (4)
+## 🟢 Buy (3)
 - **GLENMARK** (Healthcare · Mid cap) — score 78, Breakout — new 20-day high on 1.4× volume. Entry ₹2390.7 · Stop ₹2247.1 · Target ₹2678.0 · Risk/sh ₹143.6
+- **URBANCO** (Consumer Services · Small cap) — score 77, Breakout — new 20-day high on 3.7× volume. Entry ₹168.8 · Stop ₹152.6 · Target ₹201.3 · Risk/sh ₹16.2
 - **IDBI** (Financial Services · Small cap) — score 76, Breakout — new 20-day high on 9.8× volume. Entry ₹87.9 · Stop ₹82.4 · Target ₹98.9 · Risk/sh ₹5.5
-- **SIEMENS** (Capital Goods · Large cap) — score 76, Breakout — new 20-day high on 2.9× volume. Entry ₹4114.0 · Stop ₹3852.1 · Target ₹4637.8 · Risk/sh ₹261.9
-- **VMM** (Consumer Services · Mid cap) — score 70, Breakout — new 20-day high on 9.6× volume. Entry ₹113.5 · Stop ₹105.0 · Target ₹130.5 · Risk/sh ₹8.5
 
-## 👀 Watchlist (204)
-EIDPARRY · PVRINOX · ABREL · PFOCUS · AFFLE · JSWSTEEL · PIRAMALFIN · CYIENT · MEESHO · NETWEB · ACMESOLAR · AUBANK · JINDALSAW · MOTILALOFS · NAM-INDIA · CDSL · COFORGE · ETERNAL · HFCL · JUBLFOOD · KFINTECH · PRESTIGE · TBOTEK · THELEELA · HONASA …
+## 👀 Watchlist (202)
+CARBORUNIV · EIDPARRY · ACE · JINDALSAW · PFOCUS · CARTRADE · JSWSTEEL · ELGIEQUIP · ACMESOLAR · AUBANK · MOTILALOFS · NAM-INDIA · CDSL · GRASIM · HFCL · KFINTECH · RRKABEL · TMCV · ZENTEC · HONASA · AARTIIND · ASAHIINDIA · IFCI · PETRONET · PVRINOX …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
