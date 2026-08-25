@@ -1,13 +1,13 @@
 # Daily swing brief — 2026-08-25
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
-Nifty 24334.6 · 50DMA 24203.6 · 200DMA 24677.3 · 1M +1.4%
+Nifty 24219.1 · 50DMA 24194.0 · 200DMA 24684.3 · 1M +1.9%
 **Breadth:** 50.9% of universe above 50-DMA (Selective) · A/D 163/153
-**Flows:** FII ₹+1,182 cr today (+2,115 cr 5-day) · DII ₹+2,493 cr
+**Flows:** FII ₹+1,594 cr today (+2,057 cr 5-day) · DII ₹+230 cr
 
-**Indices:** NIFTY 50 24,334.6 (+0.5%) · BANK NIFTY 57,514.2 (-0.0%) · NIFTY IT 30,771.8 (+0.6%) · NIFTY MIDCAP 50 18,412.2 (+0.4%) · NIFTY MIDCAP 50 18,412.2 (+0.4%) · NIFTY PHARMA 26,564.0 (+0.9%)
+**Indices:** NIFTY 50 24,219.1 (-0.1%) · BANK NIFTY 57,525.9 (-0.4%) · NIFTY IT 30,596.9 (+0.2%) · NIFTY MIDCAP 50 18,331.8 (+0.1%) · NIFTY MIDCAP 50 18,331.8 (+0.1%) · NIFTY PHARMA 26,339.3 (-0.1%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=84 → below 200DMA — stand aside · BANK NIFTY RSI2=41 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=47 → below 200DMA — stand aside · BANK NIFTY RSI2=44 → no setup
 
 ---
 # Market intelligence — 2026-08-18
@@ -278,7 +278,7 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Consumer Services (+10.3%) · Media Entertainment & Publication (+7.0%) · Information Technology (+5.8%) · Realty (+5.3%)
+**Leading sectors:** Consumer Services (+10.8%) · Media Entertainment & Publication (+7.4%) · Information Technology (+6.2%) · Realty (+5.8%)
 
 ## ✅ Strong Buy (9)
 - **CHALET** (Consumer Services · Small cap) — score 100, Breakout — new 20-day high on 6.7× volume. Entry ₹894.0 · Stop ₹831.4 · Target ₹1019.3 · Risk/sh ₹62.6
@@ -291,11 +291,11 @@ WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run ha
 - **IDEA** (Telecommunication · Mid cap) — score 84, Breakout — new 20-day high on 3.5× volume. Entry ₹15.2 · Stop ₹14.1 · Target ₹17.5 · Risk/sh ₹1.1
 - **SAIL** (Metals & Mining · Mid cap) — score 82, Breakout — new 20-day high on 3.2× volume. Entry ₹184.6 · Stop ₹170.0 · Target ₹213.8 · Risk/sh ₹14.6
 
-## 🟢 Buy (0)
-- none today
+## 🟢 Buy (1)
+- **HDFCAMC** (Financial Services · Large cap) — score 76, Breakout — new 20-day high on 1.6× volume. Entry ₹2698.0 · Stop ₹2555.1 · Target ₹2983.7 · Risk/sh ₹142.9
 
 ## 👀 Watchlist (209)
-PVRINOX · AWL · BRIGADE · DIXON · IDBI · IFCI · MAZDOCK · PIRAMALFIN · TBOTEK · LODHA · MEESHO · MOTILALOFS · ETERNAL · NIACL · AFFLE · IIFL · JUBLFOOD · LAURUSLABS · SIEMENS · NETWEB · COFORGE · JSWINFRA · LGEINDIA · THELEELA · CDSL …
+PVRINOX · MEESHO · AWL · BRIGADE · DIXON · IDBI · IFCI · MAZDOCK · PIRAMALFIN · TBOTEK · LODHA · MOTILALOFS · ETERNAL · NIACL · AFFLE · IIFL · JUBLFOOD · LAURUSLABS · SIEMENS · NETWEB · COFORGE · JSWINFRA · LGEINDIA · THELEELA · CDSL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
