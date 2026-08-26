@@ -2,7 +2,7 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — mixed market (v2: yellow entries tested negative); manage holdings
 Nifty 24334.6 · 50DMA 24203.6 · 200DMA 24677.3 · 1M +1.4%
-**Breadth:** 54.3% of universe above 50-DMA (Selective) · A/D 169/157
+**Breadth:** 51.6% of universe above 50-DMA (Selective) · A/D 253/247
 **Flows:** FII ₹+1,594 cr today (+2,057 cr 5-day) · DII ₹+230 cr
 
 **Indices:** NIFTY 50 24,334.6 (+0.5%) · BANK NIFTY 57,514.2 (-0.0%) · NIFTY IT 30,771.8 (+0.6%) · NIFTY MIDCAP 50 18,412.2 (+0.4%) · NIFTY MIDCAP 50 18,412.2 (+0.4%) · NIFTY PHARMA 26,564.0 (+0.9%)
@@ -278,24 +278,23 @@ CALL: WAIT —  share price +236% annually vs. 91% EPS growth, price tracking fa
 WHY_CALL: Strong earnings and acquisition-backed story, but valuation has run hard post-earnings.  Cash flow weakness—dividend paid despite no free cash flows . Watch Q2 results and acquisition close (expected by July 31 already passed; status unclear) before entry at better risk/reward.
 
 
-**Leading sectors:** Media Entertainment & Publication (+17.8%) · Consumer Durables (+13.6%) · Realty (+12.8%) · Financial Services (+8.2%)
+**Leading sectors:** Consumer Services (+10.3%) · Media Entertainment & Publication (+7.0%) · Information Technology (+5.8%) · Realty (+5.3%)
 
-## ✅ Strong Buy (9)
-- **AUBANK** (Financial Services · Mid cap) — score 100, Breakout — new 20-day high on 3.2× volume. Entry ₹1128.6 · Stop ₹1067.9 · Target ₹1249.9 · Risk/sh ₹60.7
-- **BRIGADE** (Realty · Small cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹654.1 · Stop ₹600.9 · Target ₹760.4 · Risk/sh ₹53.2
+## ✅ Strong Buy (8)
+- **CHALET** (Consumer Services · Small cap) — score 96, Breakout — new 20-day high on 6.4× volume. Entry ₹894.0 · Stop ₹830.6 · Target ₹1021.0 · Risk/sh ₹63.5
+- **AUBANK** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 3.2× volume. Entry ₹1128.6 · Stop ₹1067.9 · Target ₹1249.9 · Risk/sh ₹60.7
 - **PARADEEP** (Chemicals · Small cap) — score 94, Breakout — new 20-day high on 3.3× volume. Entry ₹159.6 · Stop ₹146.5 · Target ₹185.8 · Risk/sh ₹13.1
-- **PAYTM** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 1.9× volume. Entry ₹1718.0 · Stop ₹1585.8 · Target ₹1982.4 · Risk/sh ₹132.2
-- **GROWW** (Financial Services · Mid cap) — score 92, Breakout — new 20-day high on 2.0× volume. Entry ₹203.0 · Stop ₹188.3 · Target ₹232.4 · Risk/sh ₹14.7
-- **PTCIL** (Capital Goods · Small cap) — score 88, Breakout — new 20-day high on 2.1× volume. Entry ₹21672.0 · Stop ₹19973.1 · Target ₹25069.9 · Risk/sh ₹1698.9
+- **CYIENT** (Information Technology · Small cap) — score 90, Breakout — new 20-day high on 5.6× volume. Entry ₹979.0 · Stop ₹901.9 · Target ₹1133.3 · Risk/sh ₹77.1
+- **PAYTM** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 1.9× volume. Entry ₹1718.0 · Stop ₹1585.8 · Target ₹1982.4 · Risk/sh ₹132.2
 - **ADANIENT** (Metals & Mining · Large cap) — score 86, Breakout — new 20-day high on 1.9× volume. Entry ₹3110.0 · Stop ₹2946.4 · Target ₹3437.2 · Risk/sh ₹163.6
-- **CYIENT** (Information Technology · Small cap) — score 84, Breakout — new 20-day high on 5.6× volume. Entry ₹979.0 · Stop ₹901.9 · Target ₹1133.3 · Risk/sh ₹77.1
+- **GROWW** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 2.0× volume. Entry ₹203.0 · Stop ₹188.3 · Target ₹232.4 · Risk/sh ₹14.7
 - **SAIL** (Metals & Mining · Mid cap) — score 82, Breakout — new 20-day high on 3.2× volume. Entry ₹184.6 · Stop ₹170.0 · Target ₹213.8 · Risk/sh ₹14.6
 
-## 🟢 Buy (1)
-- **HDFCAMC** (Financial Services · Large cap) — score 70, Breakout — new 20-day high on 1.6× volume. Entry ₹2698.0 · Stop ₹2560.4 · Target ₹2973.3 · Risk/sh ₹137.6
+## 🟢 Buy (0)
+- none today
 
-## 👀 Watchlist (211)
-DIXON · IDBI · IFCI · PIRAMALFIN · MOTILALOFS · NIACL · IIFL · AWL · LGEINDIA · MAZDOCK · CDSL · KARURVYSYA · LODHA · ACMESOLAR · LAURUSLABS · PRESTIGE · PVRINOX · SIEMENS · KOTAKBANK · NAM-INDIA · UNIONBANK · AFFLE · CGCL · HONASA · JSWINFRA …
+## 👀 Watchlist (204)
+AWL · BRIGADE · DIXON · IDBI · IFCI · MAZDOCK · PIRAMALFIN · TBOTEK · LODHA · MEESHO · MOTILALOFS · ETERNAL · NIACL · AFFLE · IIFL · JUBLFOOD · LAURUSLABS · PVRINOX · SIEMENS · THELEELA · NETWEB · COFORGE · JSWINFRA · LGEINDIA · PNBHOUSING …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
