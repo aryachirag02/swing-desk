@@ -5,7 +5,7 @@ Nifty 24207.8 · 50DMA 24207.9 · 200DMA 24669.5 · 1M +0.9%
 **Breadth:** 46.9% of universe above 50-DMA (Selective) · A/D 115/199
 **Flows:** FII ₹-298 cr today (+2,437 cr 5-day) · DII ₹+4,977 cr
 
-**Indices:** NIFTY 50 24,207.8 (-0.5%) · BANK NIFTY 57,783.8 (+0.5%) · NIFTY PHARMA 26,626.3 (+0.2%) · NIFTY MIDCAP 50 18,380.6 (-0.2%) · NIFTY MIDCAP 50 18,380.6 (-0.2%) · NIFTY IT 30,318.8 (-1.5%)
+**Indices:** NIFTY 50 24,207.8 (-0.5%) · BANK NIFTY 57,783.8 (+0.5%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PHARMA 26,626.3 (+0.2%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=33 → below 200DMA — stand aside · BANK NIFTY RSI2=82 → no setup
 
