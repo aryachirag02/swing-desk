@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-08-28
+# Daily swing brief — 2026-08-31
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 24175.7 · 50DMA 24208.2 · 200DMA 24655.3 · 1M -0.6%
-**Breadth:** 49.4% of universe above 50-DMA (Selective) · A/D 227/271
-**Flows:** FII ₹-5,040 cr today (-2,060 cr 5-day) · DII ₹+5,184 cr
+Nifty 24080.4 · 50DMA 24209.5 · 200DMA 24648.3 · 1M -1.2%
+**Breadth:** 47.5% of universe above 50-DMA (Selective) · A/D 114/202
+**Flows:** FII ₹-7,986 cr today (-11,228 cr 5-day — **selling streak, tighten up**) · DII ₹+4,589 cr
 
-**Indices:** NIFTY 50 24,175.7 (+0.4%) · BANK NIFTY 57,496.3 (-0.0%) · NIFTY REALTY 918.7 (+1.4%) · NIFTY PHARMA 26,991.8 (+0.5%) · NIFTY PSU BANK 8,381.8 (+0.4%) · NIFTY METAL 12,437.0 (-0.5%)
+**Indices:** NIFTY 50 24,080.4 (-0.4%) · BANK NIFTY 58,024.9 (+0.9%) · NIFTY PHARMA 27,186.4 (+0.7%) · NIFTY MIDCAP 50 18,491.4 (+0.5%) · NIFTY MIDCAP 50 18,491.4 (+0.5%) · NIFTY IT 31,191.4 (-0.3%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=52 → below 200DMA — stand aside · BANK NIFTY RSI2=32 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=26 → below 200DMA — stand aside · BANK NIFTY RSI2=87 → no setup
 
 ---
 # Market intelligence — 2026-08-27
@@ -15,29 +15,31 @@ _Claude web-research on the day's 38 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Consumer Services (+9.5%) · Capital Goods (+6.7%) · Healthcare (+5.7%) · Automobile and Auto Components (+5.1%)
+**Leading sectors:** Consumer Services (+10.3%) · Capital Goods (+5.8%) · Healthcare (+5.3%) · Automobile and Auto Components (+5.3%)
 
-## ✅ Strong Buy (14)
-- **CRAFTSMAN** (Automobile and Auto Components · Small cap) — score 100, Breakout — new 20-day high on 1.9× volume. Entry ₹11118.0 · Stop ₹10317.3 · Target ₹12719.3 · Risk/sh ₹800.7
-- **CRISIL** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 2.1× volume. Entry ₹4732.7 · Stop ₹4456.9 · Target ₹5284.4 · Risk/sh ₹275.8
-- **GLENMARK** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.5× volume. Entry ₹2512.5 · Stop ₹2361.7 · Target ₹2814.1 · Risk/sh ₹150.8
-- **OFSS** (Information Technology · Mid cap) — score 94, Breakout — new 20-day high on 2.1× volume. Entry ₹12190.0 · Stop ₹11325.0 · Target ₹13920.1 · Risk/sh ₹865.0
-- **PTCIL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹22110.0 · Stop ₹20224.2 · Target ₹25881.6 · Risk/sh ₹1885.8
-- **SHYAMMETL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 4.4× volume. Entry ₹1099.8 · Stop ₹1024.8 · Target ₹1249.8 · Risk/sh ₹75.0
-- **PERSISTENT** (Information Technology · Mid cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹5875.0 · Stop ₹5503.9 · Target ₹6617.3 · Risk/sh ₹371.1
-- **COFORGE** (Information Technology · Mid cap) — score 88, Breakout — new 20-day high on 2.6× volume. Entry ₹2014.6 · Stop ₹1887.7 · Target ₹2268.5 · Risk/sh ₹126.9
-- **DIVISLAB** (Healthcare · Large cap) — score 87, Breakout — new 20-day high on 1.6× volume. Entry ₹9239.0 · Stop ₹8798.5 · Target ₹10120.1 · Risk/sh ₹440.5
-- **IFCI** (Financial Services · Small cap) — score 84, Breakout — new 20-day high on 4.3× volume. Entry ₹90.0 · Stop ₹81.5 · Target ₹106.9 · Risk/sh ₹8.5
-- **PIRAMALFIN** (Financial Services · Small cap) — score 84, Breakout — new 20-day high on 1.5× volume. Entry ₹2278.4 · Stop ₹2121.0 · Target ₹2593.2 · Risk/sh ₹157.4
-- **SAGILITY** (Information Technology · Small cap) — score 84, Breakout — new 20-day high on 2.7× volume. Entry ₹46.3 · Stop ₹42.9 · Target ₹53.3 · Risk/sh ₹3.5
-- **ATHERENERG** (Automobile and Auto Components · Small cap) — score 82, Breakout — new 20-day high on 2.9× volume. Entry ₹1616.3 · Stop ₹1465.0 · Target ₹1918.8 · Risk/sh ₹151.3
-- **CYIENT** (Information Technology · Small cap) — score 81, Breakout — new 20-day high on 1.6× volume. Entry ₹1107.4 · Stop ₹1015.3 · Target ₹1291.8 · Risk/sh ₹92.2
+## ✅ Strong Buy (15)
+- **AUROPHARMA** (Healthcare · Mid cap) — score 100, Breakout — new 20-day high on 2.2× volume. Entry ₹1717.0 · Stop ₹1622.9 · Target ₹1905.3 · Risk/sh ₹94.1
+- **CRAFTSMAN** (Automobile and Auto Components · Small cap) — score 100, Breakout — new 20-day high on 4.9× volume. Entry ₹11198.5 · Stop ₹10351.3 · Target ₹12892.8 · Risk/sh ₹847.2
+- **TBOTEK** (Consumer Services · Small cap) — score 100, Breakout — new 20-day high on 1.6× volume. Entry ₹1745.1 · Stop ₹1598.6 · Target ₹2038.0 · Risk/sh ₹146.5
+- **ENGINERSIN** (Construction · Small cap) — score 94, Breakout — new 20-day high on 2.0× volume. Entry ₹261.9 · Stop ₹241.0 · Target ₹303.6 · Risk/sh ₹20.9
+- **INDGN** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 4.2× volume. Entry ₹611.7 · Stop ₹566.2 · Target ₹702.6 · Risk/sh ₹45.5
+- **KPRMILL** (Textiles · Mid cap) — score 94, Breakout — new 20-day high on 3.1× volume. Entry ₹1177.6 · Stop ₹1088.6 · Target ₹1355.6 · Risk/sh ₹89.0
+- **NIACL** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 6.5× volume. Entry ₹191.2 · Stop ₹175.8 · Target ₹222.1 · Risk/sh ₹15.4
+- **OFSS** (Information Technology · Mid cap) — score 94, Breakout — new 20-day high on 2.2× volume. Entry ₹12540.0 · Stop ₹11654.6 · Target ₹14310.8 · Risk/sh ₹885.4
+- **BAJAJ-AUTO** (Automobile and Auto Components · Large cap) — score 92, Breakout — new 20-day high on 1.5× volume. Entry ₹12130.0 · Stop ₹11613.1 · Target ₹13163.9 · Risk/sh ₹516.9
+- **CRISIL** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 2.4× volume. Entry ₹4821.8 · Stop ₹4538.6 · Target ₹5388.2 · Risk/sh ₹283.2
+- **PIRAMALFIN** (Financial Services · Small cap) — score 88, Breakout — new 20-day high on 2.5× volume. Entry ₹2300.4 · Stop ₹2142.7 · Target ₹2615.9 · Risk/sh ₹157.7
+- **SAGILITY** (Information Technology · Small cap) — score 88, Breakout — new 20-day high on 2.6× volume. Entry ₹47.0 · Stop ₹43.5 · Target ₹54.1 · Risk/sh ₹3.5
+- **DIVISLAB** (Healthcare · Large cap) — score 87, Breakout — new 20-day high on 1.5× volume. Entry ₹9467.0 · Stop ₹8999.5 · Target ₹10401.9 · Risk/sh ₹467.5
+- **ECLERX** (Services · Small cap) — score 86, Breakout — new 20-day high on 4.6× volume. Entry ₹1976.9 · Stop ₹1777.3 · Target ₹2376.1 · Risk/sh ₹199.6
+- **ATHERENERG** (Automobile and Auto Components · Small cap) — score 83, Breakout — new 20-day high on 3.4× volume. Entry ₹1717.7 · Stop ₹1559.1 · Target ₹2034.8 · Risk/sh ₹158.6
 
-## 🟢 Buy (1)
-- **SAIL** (Metals & Mining · Mid cap) — score 76, Breakout — new 20-day high on 2.0× volume. Entry ₹200.0 · Stop ₹183.3 · Target ₹233.5 · Risk/sh ₹16.7
+## 🟢 Buy (2)
+- **CYIENT** (Information Technology · Small cap) — score 77, Breakout — new 20-day high on 1.5× volume. Entry ₹1174.8 · Stop ₹1069.5 · Target ₹1385.5 · Risk/sh ₹105.3
+- **CGPOWER** (Capital Goods · Large cap) — score 70, Breakout — new 20-day high on 1.4× volume. Entry ₹916.0 · Stop ₹858.8 · Target ₹1030.4 · Risk/sh ₹57.2
 
-## 👀 Watchlist (200)
-SUPREMEIND · ENGINERSIN · APOLLOTYRE · BEML · ELGIEQUIP · HEG · INDGN · MEDANTA · RRKABEL · CGCL · CHALET · IDBI · LAURUSLABS · ANANDRATHI · ANTHEM · APARINDS · BHEL · CANHLIFE · IPCALAB · KAYNES · LENSKART · MEESHO · THELEELA · TORNTPHARM · ZYDUSLIFE …
+## 👀 Watchlist (197)
+LAURUSLABS · TORNTPHARM · LENSKART · THELEELA · MEDANTA · NYKAA · ANTHEM · GLENMARK · RRKABEL · SUNPHARMA · ACMESOLAR · BPCL · CANHLIFE · CUB · ICICIBANK · PETRONET · PTCIL · BHEL · CHALET · MEESHO · ZYDUSLIFE · ETERNAL · INDHOTEL · TMCV · VIJAYA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
