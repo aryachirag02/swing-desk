@@ -1,7 +1,7 @@
 # Daily swing brief — 2026-09-02
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 23914.4 · 50DMA 24203.4 · 200DMA 24639.4 · 1M -3.5%
+Nifty 23914.4 · 50DMA 24210.4 · 200DMA 24631.8 · 1M -2.9%
 **Breadth:** 40.4% of universe above 50-DMA (Selective) · A/D 163/335
 **Flows:** FII ₹+6,688 cr today (-5,492 cr 5-day) · DII ₹+2,813 cr
 
@@ -10,8 +10,8 @@ Nifty 23914.4 · 50DMA 24203.4 · 200DMA 24639.4 · 1M -3.5%
 **Index F&O (dip-buy):** NIFTY 50 RSI2=6 → below 200DMA — stand aside · BANK NIFTY RSI2=20 → below 200DMA — stand aside
 
 ---
-# Market intelligence — 2026-09-01
-_Claude web-research on the day's 38 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+# Market intelligence — 2026-09-02
+_Claude web-research on the day's 31 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 
 
