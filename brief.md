@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-09-07
+# Daily swing brief — 2026-09-08
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 23779.2 · 50DMA 24200.9 · 200DMA 24601.2 · 1M -3.2%
-**Breadth:** 36.9% of universe above 50-DMA (Narrow / weak) · A/D 72/169
-**Flows:** FII ₹+280 cr today (+2,654 cr 5-day) · DII ₹+567 cr
+Nifty 23635.1 · 50DMA 24196.3 · 200DMA 24589.3 · 1M -3.9%
+**Breadth:** 39.7% of universe above 50-DMA (Narrow / weak) · A/D 129/165
+**Flows:** FII ₹-123 cr today (+1,388 cr 5-day) · DII ₹+1,350 cr
 
-**Indices:** NIFTY 50 23,779.2 (-0.5%) · BANK NIFTY 57,088.3 (-0.5%) · NIFTY REALTY 918.7 (+1.4%) · FIN NIFTY 26,903.3 (+1.3%) · NIFTY METAL 12,437.0 (-0.5%) · NIFTY IT 29,995.2 (-2.3%)
+**Indices:** NIFTY 50 23,635.1 (-0.6%) · BANK NIFTY 56,777.6 (-0.5%) · NIFTY REALTY 892.0 (-2.9%) · NIFTY AUTO 27,775.3 (+2.5%) · NIFTY ENERGY 38,093.5 (-3.0%) · NIFTY FMCG 45,749.9 (-6.2%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=8 → below 200DMA — stand aside · BANK NIFTY RSI2=16 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=7 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-07
@@ -15,22 +15,23 @@ _Claude web-research on the day's 33 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Chemicals (+16.9%) · Realty (+13.0%) · Oil Gas & Consumable Fuels (+12.2%) · Construction (+8.6%)
+**Leading sectors:** Consumer Services (+9.8%) · Realty (+8.3%) · Media Entertainment & Publication (+8.0%) · Textiles (+6.8%)
 
-## ✅ Strong Buy (7)
-- **SPLPETRO** (Chemicals · Small cap) — score 100, Breakout — new 20-day high on 7.5× volume. Entry ₹771.0 · Stop ₹712.8 · Target ₹887.6 · Risk/sh ₹58.3
-- **ACMESOLAR** (Power · Small cap) — score 90, Breakout — new 20-day high on 2.9× volume. Entry ₹418.0 · Stop ₹376.9 · Target ₹500.1 · Risk/sh ₹41.1
-- **IDEA** (Telecommunication · Mid cap) — score 90, Breakout — new 20-day high on 1.5× volume. Entry ₹15.6 · Stop ₹14.3 · Target ₹18.1 · Risk/sh ₹1.3
-- **RBLBANK** (Financial Services · Small cap) — score 88, Breakout — new 20-day high on 2.5× volume. Entry ₹414.4 · Stop ₹391.7 · Target ₹459.7 · Risk/sh ₹22.7
-- **LICHSGFIN** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹562.0 · Stop ₹528.6 · Target ₹628.9 · Risk/sh ₹33.4
-- **WOCKPHARMA** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 4.4× volume. Entry ₹2208.0 · Stop ₹2000.7 · Target ₹2622.6 · Risk/sh ₹207.3
-- **ZYDUSWELL** (Fast Moving Consumer Goods · Small cap) — score 80, Breakout — new 20-day high on 12.9× volume. Entry ₹555.3 · Stop ₹509.3 · Target ₹647.5 · Risk/sh ₹46.1
+## ✅ Strong Buy (8)
+- **GRANULES** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 2.8× volume. Entry ₹895.3 · Stop ₹831.6 · Target ₹1022.8 · Risk/sh ₹63.7
+- **HOMEFIRST** (Financial Services · Small cap) — score 94, Breakout — new 20-day high on 3.9× volume. Entry ₹1237.1 · Stop ₹1159.5 · Target ₹1392.3 · Risk/sh ₹77.6
+- **DIVISLAB** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 1.9× volume. Entry ₹9575.0 · Stop ₹9067.2 · Target ₹10590.7 · Risk/sh ₹507.8
+- **SAILIFE** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 2.0× volume. Entry ₹1647.1 · Stop ₹1516.8 · Target ₹1907.7 · Risk/sh ₹130.3
+- **SPLPETRO** (Chemicals · Small cap) — score 88, Breakout — new 20-day high on 3.3× volume. Entry ₹828.4 · Stop ₹763.6 · Target ₹958.1 · Risk/sh ₹64.8
+- **NEULANDLAB** (Healthcare · Small cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹23995.0 · Stop ₹22266.7 · Target ₹27451.7 · Risk/sh ₹1728.3
+- **SYRMA** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 2.8× volume. Entry ₹1639.2 · Stop ₹1495.0 · Target ₹1927.6 · Risk/sh ₹144.2
+- **PPLPHARMA** (Healthcare · Small cap) — score 80, Breakout — new 20-day high on 4.6× volume. Entry ₹226.6 · Stop ₹207.4 · Target ₹265.2 · Risk/sh ₹19.3
 
 ## 🟢 Buy (1)
-- **IGL** (Oil Gas & Consumable Fuels · Small cap) — score 74, Breakout — new 20-day high on 3.1× volume. Entry ₹158.0 · Stop ₹149.2 · Target ₹175.8 · Risk/sh ₹8.9
+- **JUBLPHARMA** (Healthcare · Small cap) — score 70, Breakout — new 20-day high on 3.3× volume. Entry ₹997.8 · Stop ₹915.8 · Target ₹1161.7 · Risk/sh ₹82.0
 
-## 👀 Watchlist (159)
-ANANTRAJ · BRIGADE · NCC · CUB · GRANULES · TITAGARH · OIL · BEML · CANHLIFE · SOLARINDS · JMFINANCIL · AEGISVOPAK · CRAFTSMAN · GAIL · IFCI · KPRMILL · ANTHEM · CAPLIPOINT · CDSL · HOMEFIRST · INDGN · REDINGTON · THELEELA · CLEAN · IIFL …
+## 👀 Watchlist (164)
+PFOCUS · BEML · ANANTRAJ · AUROPHARMA · DATAPATTNS · PINELABS · PIRAMALFIN · CARTRADE · CHALET · MEESHO · NYKAA · PVRINOX · ANTHEM · GRAPHITE · KAJARIACER · NAVINFLUOR · OIL · HAL · PCBL · CRAFTSMAN · SBICARD · SUNDARMFIN · GLENMARK · JSL · KIRLOSENG …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
