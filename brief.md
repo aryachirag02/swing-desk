@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-09-07
+# Daily swing brief — 2026-09-08
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 23779.2 · 50DMA 24200.9 · 200DMA 24601.2 · 1M -3.2%
-**Breadth:** 38.7% of universe above 50-DMA (Narrow / weak) · A/D 96/203
+Nifty 23635.1 · 50DMA 24196.3 · 200DMA 24589.3 · 1M -3.9%
+**Breadth:** 40.7% of universe above 50-DMA (Selective) · A/D 88/115
 **Flows:** FII ₹-123 cr today (+1,388 cr 5-day) · DII ₹+1,350 cr
 
-**Indices:** NIFTY 50 23,779.2 (-0.5%) · BANK NIFTY 57,088.3 (-0.5%) · NIFTY REALTY 918.7 (+1.4%) · FIN NIFTY 26,903.3 (+1.3%) · NIFTY METAL 12,437.0 (-0.5%) · NIFTY IT 29,995.2 (-2.3%)
+**Indices:** NIFTY 50 23,635.1 (-0.6%) · BANK NIFTY 56,777.6 (-0.5%) · NIFTY REALTY 918.7 (+1.4%) · FIN NIFTY 26,903.3 (+1.3%) · NIFTY METAL 12,437.0 (-0.5%) · NIFTY IT 29,883.5 (-0.4%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=8 → below 200DMA — stand aside · BANK NIFTY RSI2=16 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=7 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-08
@@ -15,21 +15,23 @@ _Claude web-research on the day's 35 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Chemicals (+16.9%) · Realty (+13.0%) · Oil Gas & Consumable Fuels (+12.2%) · Telecommunication (+11.1%)
+**Leading sectors:** Construction (+15.7%) · Realty (+11.3%) · Construction Materials (+10.7%) · Media Entertainment & Publication (+8.9%)
 
-## ✅ Strong Buy (6)
-- **SPLPETRO** (Chemicals · Small cap) — score 100, Breakout — new 20-day high on 7.5× volume. Entry ₹771.0 · Stop ₹712.8 · Target ₹887.6 · Risk/sh ₹58.3
-- **IDEA** (Telecommunication · Mid cap) — score 96, Breakout — new 20-day high on 1.5× volume. Entry ₹15.6 · Stop ₹14.3 · Target ₹18.1 · Risk/sh ₹1.3
-- **RBLBANK** (Financial Services · Small cap) — score 88, Breakout — new 20-day high on 2.5× volume. Entry ₹414.4 · Stop ₹391.7 · Target ₹459.7 · Risk/sh ₹22.7
+## ✅ Strong Buy (8)
+- **GRANULES** (Healthcare · Small cap) — score 94, Breakout — new 20-day high on 2.8× volume. Entry ₹895.3 · Stop ₹831.6 · Target ₹1022.8 · Risk/sh ₹63.7
+- **SPLPETRO** (Chemicals · Small cap) — score 94, Breakout — new 20-day high on 7.5× volume. Entry ₹771.0 · Stop ₹712.8 · Target ₹887.6 · Risk/sh ₹58.3
+- **DIVISLAB** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 1.9× volume. Entry ₹9575.0 · Stop ₹9067.2 · Target ₹10590.7 · Risk/sh ₹507.8
+- **SAILIFE** (Healthcare · Small cap) — score 88, Breakout — new 20-day high on 2.0× volume. Entry ₹1647.1 · Stop ₹1516.8 · Target ₹1907.7 · Risk/sh ₹130.3
+- **NEULANDLAB** (Healthcare · Small cap) — score 86, Breakout — new 20-day high on 1.6× volume. Entry ₹23995.0 · Stop ₹22266.7 · Target ₹27451.7 · Risk/sh ₹1728.3
 - **LICHSGFIN** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 2.2× volume. Entry ₹562.0 · Stop ₹528.6 · Target ₹628.9 · Risk/sh ₹33.4
-- **WOCKPHARMA** (Healthcare · Small cap) — score 84, Breakout — new 20-day high on 4.4× volume. Entry ₹2208.0 · Stop ₹2000.7 · Target ₹2622.6 · Risk/sh ₹207.3
-- **ZYDUSWELL** (Fast Moving Consumer Goods · Small cap) — score 80, Breakout — new 20-day high on 12.9× volume. Entry ₹555.3 · Stop ₹509.3 · Target ₹647.5 · Risk/sh ₹46.1
+- **SYRMA** (Capital Goods · Small cap) — score 84, Breakout — new 20-day high on 2.8× volume. Entry ₹1639.2 · Stop ₹1495.0 · Target ₹1927.6 · Risk/sh ₹144.2
+- **PPLPHARMA** (Healthcare · Small cap) — score 80, Breakout — new 20-day high on 4.6× volume. Entry ₹226.6 · Stop ₹207.4 · Target ₹265.2 · Risk/sh ₹19.3
 
 ## 🟢 Buy (1)
-- **IGL** (Oil Gas & Consumable Fuels · Small cap) — score 74, Breakout — new 20-day high on 3.1× volume. Entry ₹158.0 · Stop ₹149.2 · Target ₹175.8 · Risk/sh ₹8.9
+- **JUBLPHARMA** (Healthcare · Small cap) — score 70, Breakout — new 20-day high on 3.3× volume. Entry ₹997.8 · Stop ₹915.8 · Target ₹1161.7 · Risk/sh ₹82.0
 
-## 👀 Watchlist (159)
-ANANTRAJ · BRIGADE · CUB · GRANULES · PIRAMALFIN · TITAGARH · OIL · BEML · SOLARINDS · JMFINANCIL · NCC · CRAFTSMAN · GAIL · IFCI · KPRMILL · ANTHEM · CAPLIPOINT · CDSL · EMCURE · HOMEFIRST · MEESHO · REDINGTON · AEGISVOPAK · CLEAN · IIFL …
+## 👀 Watchlist (158)
+PFOCUS · BEML · ANANTRAJ · AUROPHARMA · CUB · DATAPATTNS · PINELABS · PIRAMALFIN · TITAGARH · PVRINOX · GRAPHITE · NAVINFLUOR · OIL · HAL · PCBL · NCC · CRAFTSMAN · KPRMILL · SBICARD · ANTHEM · CAPLIPOINT · HOMEFIRST · KIRLOSENG · MEESHO · REDINGTON …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
