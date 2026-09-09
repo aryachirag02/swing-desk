@@ -3,15 +3,15 @@
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 23431.5 · 50DMA 24184.8 · 200DMA 24576.9 · 1M -4.2%
 **Breadth:** 23.0% of universe above 50-DMA (Narrow / weak) · A/D 157/339
-**Flows:** FII ₹-123 cr today (+1,388 cr 5-day) · DII ₹+1,350 cr
+**Flows:** FII ₹-583 cr today (-5,884 cr 5-day) · DII ₹+1,509 cr
 
 **Indices:** NIFTY 50 23,431.5 (-0.9%) · BANK NIFTY 56,295.6 (-0.8%) · NIFTY REALTY 872.2 (-5.1%) · NIFTY AUTO 27,653.3 (+2.0%) · NIFTY FMCG 45,309.2 (-7.1%) · NIFTY IT 28,913.9 (-3.2%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=1 → below 200DMA — stand aside · BANK NIFTY RSI2=2 → below 200DMA — stand aside
 
 ---
-# Market intelligence — 2026-09-08
-_Claude web-research on the day's 35 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+# Market intelligence — 2026-09-09
+_Claude web-research on the day's 32 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 
 
