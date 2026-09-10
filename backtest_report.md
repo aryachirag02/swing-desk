@@ -1,18 +1,18 @@
 # Backtest report
 
-## Train window (2024-12-24 to 2026-03-05)
+## Train window (2024-12-26 to 2026-03-06)
 
-- **trades**: 48
-- **win rate**: 43.8
-- **avg win**: 12313.0
-- **avg loss**: -4773.0
-- **profit factor**: 2.01
-- **expectancy R**: 0.524
-- **avg hold days**: 30.5
-- **total return pct**: 17.0
-- **annualized pct**: 14.2
-- **max drawdown pct**: -6.4
+- **trades**: 50
+- **win rate**: 42.0
+- **avg win**: 13152.0
+- **avg loss**: -4896.0
+- **profit factor**: 1.95
+- **expectancy R**: 0.434
+- **avg hold days**: 30.6
+- **total return pct**: 17.5
+- **annualized pct**: 14.6
+- **max drawdown pct**: -7.5
 
-## Validate window (2026-03-06 to 2026-09-08)
+## Validate window (2026-03-09 to 2026-09-09)
 
 - **trades**: 0
