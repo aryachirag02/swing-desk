@@ -10,8 +10,8 @@ Nifty 23477.8 · 50DMA 24170.9 · 200DMA 24564.1 · 1M -3.9%
 **Index F&O (dip-buy):** NIFTY 50 RSI2=23 → below 200DMA — stand aside · BANK NIFTY RSI2=34 → below 200DMA — stand aside
 
 ---
-# Market intelligence — 2026-09-09
-_Claude web-research on the day's 32 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
+# Market intelligence — 2026-09-10
+_Claude web-research on the day's 34 quant-flagged movers. Research assistance, NOT validated signals — verify before any long-term buy._
 
 
 
