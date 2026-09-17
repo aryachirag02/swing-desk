@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-09-15
+# Daily swing brief — 2026-09-16
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 23118.6 · 50DMA 24127.2 · 200DMA 24535.3 · 1M -5.1%
-**Breadth:** 15.3% of universe above 50-DMA (Narrow / weak) · A/D 40/293
+Nifty 23217.6 · 50DMA 24103.6 · 200DMA 24521.6 · 1M -4.4%
+**Breadth:** 15.8% of universe above 50-DMA (Narrow / weak) · A/D 133/148
 **Flows:** FII ₹-2,033 cr today (-6,963 cr 5-day — **selling streak, tighten up**) · DII ₹+3,908 cr
 
-**Indices:** NIFTY 50 23,118.6 (-1.2%) · BANK NIFTY 55,794.8 (-1.4%) · NIFTY PHARMA 26,188.4 (-1.3%) · NIFTY MIDCAP 50 17,556.3 (-2.1%) · NIFTY MIDCAP 50 17,556.3 (-2.1%) · NIFTY IT 29,555.3 (+2.2%)
+**Indices:** NIFTY 50 23,217.6 (+0.4%) · BANK NIFTY 56,292.4 (+0.9%) · NIFTY PHARMA 26,146.2 (-0.2%) · NIFTY MIDCAP 50 17,560.1 (+0.0%) · NIFTY MIDCAP 50 17,560.1 (+0.0%) · NIFTY IT 29,087.7 (-1.6%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=3 → below 200DMA — stand aside · BANK NIFTY RSI2=11 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=37 → below 200DMA — stand aside · BANK NIFTY RSI2=55 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-16
@@ -15,27 +15,26 @@ _Claude web-research on the day's 31 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Media Entertainment & Publication (+9.5%) · Healthcare (+7.5%) · Consumer Services (+5.0%) · Oil Gas & Consumable Fuels (+4.9%)
+**Leading sectors:** Construction Materials (+18.1%) · Oil Gas & Consumable Fuels (+11.9%) · Services (+10.9%) · Media Entertainment & Publication (+10.7%)
 
 ## ✅ Strong Buy (1)
-- **AEGISVOPAK** (Oil Gas & Consumable Fuels · Small cap) — score 96, Breakout — new 20-day high on 4.1× volume. Entry ₹302.0 · Stop ₹272.8 · Target ₹360.3 · Risk/sh ₹29.2
+- **ABDL** (Fast Moving Consumer Goods · Small cap) — score 90, Breakout — new 20-day high on 4.0× volume. Entry ₹647.5 · Stop ₹597.7 · Target ₹747.3 · Risk/sh ₹49.9
 
-## 🟢 Buy (3)
-- **FSL** (Services · Small cap) — score 76, Breakout — new 20-day high on 13.8× volume. Entry ₹283.4 · Stop ₹256.9 · Target ₹336.3 · Risk/sh ₹26.5
-- **TATACHEM** (Chemicals · Small cap) — score 70, Breakout — new 20-day high on 3.1× volume. Entry ₹734.9 · Stop ₹680.3 · Target ₹844.0 · Risk/sh ₹54.6
-- **TATAINVEST** (Financial Services · Mid cap) — score 70, Breakout — new 20-day high on 13.8× volume. Entry ₹718.3 · Stop ₹667.0 · Target ₹821.0 · Risk/sh ₹51.3
+## 🟢 Buy (0)
+- none today
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **RBLBANK** — 2026-10-15
+- **PNB** — 2026-10-15
 - **PVRINOX** — 2026-10-15
-- **PERSISTENT** — 2026-10-15
+- **RBLBANK** — 2026-10-15
+- **KARURVYSYA** — 2026-10-16
 - **TECHM** — 2026-10-14
 - **CYIENT** — 2026-10-15
-- **PNB** — 2026-10-15
-- **ETERNAL** — 2026-10-15
+- **TATACOMM** — 2026-10-14
+- **PERSISTENT** — 2026-10-15
 
-## 👀 Watchlist (103)
-EMCURE · PFOCUS · MEESHO · GRANULES · ABDL · SUNDARMFIN · CHENNPETRO · ONESOURCE · ACMESOLAR · AEGISLOG · JUBLPHARMA · PINELABS · PWL · CASTROLIND · DIVISLAB · RBLBANK · SPLPETRO · ZYDUSWELL · FINCABLES · LICHSGFIN · SAGILITY · ANTHEM · CRAFTSMAN · LAURUSLABS · SYRMA …
+## 👀 Watchlist (101)
+PFOCUS · PAYTM · AEGISLOG · AEGISVOPAK · POLICYBZR · SUNDARMFIN · ACE · EMCURE · GRANULES · PNB · PVRINOX · CASTROLIND · ACMESOLAR · RBLBANK · SPLPETRO · ZYDUSWELL · FINCABLES · GRAPHITE · PINELABS · FSL · CRAFTSMAN · DIVISLAB · GLENMARK · OIL · REDINGTON …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
