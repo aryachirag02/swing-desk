@@ -2,7 +2,7 @@
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 23446.8 · 50DMA 24047.9 · 200DMA 24466.5 · 1M -3.3%
-**Breadth:** 35.7% of universe above 50-DMA (Narrow / weak) · A/D 343/155
+**Breadth:** 35.7% of universe above 50-DMA (Narrow / weak) · A/D 342/155
 **Flows:** FII ₹+1,617 cr today (-5,378 cr 5-day) · DII ₹+2,341 cr
 
 **Indices:** NIFTY 50 23,446.8 (+0.1%) · BANK NIFTY 56,548.9 (+0.1%) · NIFTY PHARMA 27,152.1 (+0.5%) · NIFTY MIDCAP 50 17,979.7 (+0.6%) · NIFTY MIDCAP 50 17,979.7 (+0.6%) · NIFTY IT 28,334.1 (-1.7%)
@@ -49,7 +49,7 @@ _Claude web-research on the day's 37 quant-flagged movers. Research assistance, 
 - **KOTAKBANK** — 2026-10-17
 - **YESBANK** — 2026-10-17
 
-## 👀 Watchlist (160)
+## 👀 Watchlist (159)
 AUROPHARMA · ZYDUSLIFE · BLUEJET · CASTROLIND · VIJAYA · ABDL · CAPLIPOINT · FIVESTAR · JINDALSTEL · JSWINFRA · LAURUSLABS · LGEINDIA · MEDANTA · RADICO · USHAMART · CONCORDBIO · GLENMARK · PFOCUS · WELSPUNLIV · ANANTRAJ · PCBL · PNB · RBLBANK · ADANIPORTS · ASAHIINDIA …
 
 ## 📌 Position reminders (check Trade log tab)
