@@ -1,8 +1,8 @@
-# Daily swing brief — 2026-09-24
+# Daily swing brief — 2026-09-23
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 23446.8 · 50DMA 24047.9 · 200DMA 24466.5 · 1M -3.3%
-**Breadth:** 28.9% of universe above 50-DMA (Narrow / weak) · A/D 66/379
+**Breadth:** 36.3% of universe above 50-DMA (Narrow / weak) · A/D 343/154
 **Flows:** FII ₹-5,027 cr today (-7,197 cr 5-day) · DII ₹+4,301 cr
 
 **Indices:** NIFTY 50 23,446.8 (+0.1%) · BANK NIFTY 56,548.9 (+0.1%) · NIFTY PHARMA 27,152.1 (+0.5%) · NIFTY MIDCAP 50 17,979.7 (+0.6%) · NIFTY MIDCAP 50 17,979.7 (+0.6%) · NIFTY IT 28,334.1 (-1.7%)
@@ -15,37 +15,42 @@ _Claude web-research on the day's 31 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Capital Goods (+21.6%) · Metals & Mining (+1.4%) · Chemicals (-0.4%) · Information Technology (-2.9%)
+**Leading sectors:** Media Entertainment & Publication (+12.3%) · Healthcare (+8.4%) · Services (+5.7%) · Oil Gas & Consumable Fuels (+5.0%)
 
-## ✅ Strong Buy (5)
-- **CARBORUNIV** (Capital Goods · Small cap) — score 90, Breakout — new 20-day high on 6.0× volume. Entry ₹1296.5 · Stop ₹1163.4 · Target ₹1562.7 · Risk/sh ₹133.1
-- **WOCKPHARMA** (Healthcare · Small cap) — score 90, Breakout — new 20-day high on 2.7× volume. Entry ₹2329.7 · Stop ₹2106.9 · Target ₹2775.3 · Risk/sh ₹222.8
-- **ABDL** (Fast Moving Consumer Goods · Small cap) — score 88, Breakout — new 20-day high on 8.3× volume. Entry ₹712.2 · Stop ₹651.8 · Target ₹832.9 · Risk/sh ₹60.4
-- **MCX** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 2.2× volume. Entry ₹3427.7 · Stop ₹3165.4 · Target ₹3952.3 · Risk/sh ₹262.3
+## ✅ Strong Buy (9)
+- **APOLLOHOSP** (Healthcare · Large cap) — score 100, Breakout — new 20-day high on 1.6× volume. Entry ₹9069.0 · Stop ₹8688.7 · Target ₹9829.6 · Risk/sh ₹380.3
+- **WOCKPHARMA** (Healthcare · Small cap) — score 96, Breakout — new 20-day high on 2.7× volume. Entry ₹2329.7 · Stop ₹2106.9 · Target ₹2775.3 · Risk/sh ₹222.8
+- **IKS** (Information Technology · Small cap) — score 94, Breakout — new 20-day high on 4.9× volume. Entry ₹1937.8 · Stop ₹1792.6 · Target ₹2228.1 · Risk/sh ₹145.2
+- **SONACOMS** (Automobile and Auto Components · Small cap) — score 94, Breakout — new 20-day high on 1.8× volume. Entry ₹833.0 · Stop ₹778.6 · Target ₹941.8 · Risk/sh ₹54.4 · 📅 results 2026-10-22 — inside holding window
+- **POLICYBZR** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 1.9× volume. Entry ₹1886.3 · Stop ₹1733.7 · Target ₹2191.6 · Risk/sh ₹152.6
+- **LLOYDSME** (Metals & Mining · Mid cap) — score 80, Breakout — new 20-day high on 2.2× volume. Entry ₹1890.9 · Stop ₹1777.8 · Target ₹2117.1 · Risk/sh ₹113.1
 - **WHIRLPOOL** (Consumer Durables · Small cap) — score 80, Breakout — new 20-day high on 9.7× volume. Entry ₹865.2 · Stop ₹791.1 · Target ₹1013.6 · Risk/sh ₹74.2
+- **CARBORUNIV** (Capital Goods · Small cap) — score 80, Breakout — new 20-day high on 1.4× volume. Entry ₹1264.5 · Stop ₹1142.7 · Target ₹1508.1 · Risk/sh ₹121.8
+- **ENGINERSIN** (Construction · Small cap) — score 80, Breakout — new 20-day high on 1.5× volume. Entry ₹303.7 · Stop ₹276.2 · Target ₹358.6 · Risk/sh ₹27.5
 
 ## 🟢 Buy (2)
-- **SUNTV** (Media Entertainment & Publication · Small cap) — score 76, Breakout — new 20-day high on 3.6× volume. Entry ₹512.7 · Stop ₹471.1 · Target ₹595.8 · Risk/sh ₹41.6
-- **OLAELEC** (Automobile and Auto Components · Small cap) — score 72, Breakout — new 20-day high on 4.0× volume. Entry ₹42.5 · Stop ₹37.8 · Target ₹52.0 · Risk/sh ₹4.7
+- **PHOENIXLTD** (Realty · Mid cap) — score 76, Breakout — new 20-day high on 1.6× volume. Entry ₹1993.2 · Stop ₹1883.0 · Target ₹2213.6 · Risk/sh ₹110.2
+- **NTPCGREEN** (Power · Mid cap) — score 70, Breakout — new 20-day high on 2.0× volume. Entry ₹95.4 · Stop ₹91.0 · Target ₹104.2 · Risk/sh ₹4.4
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **SONACOMS** — 2026-10-22
-- **LALPATHLAB** — 2026-10-23
-- **RBLBANK** — 2026-10-15
 - **LAURUSLABS** — 2026-10-22
-- **ETERNAL** — 2026-10-15
-- **PVRINOX** — 2026-10-15
-- **KAJARIACER** — 2026-10-15
-- **YESBANK** — 2026-10-17
 - **PNB** — 2026-10-15
+- **RBLBANK** — 2026-10-15
+- **IDFCFIRSTB** — 2026-10-17
+- **PVRINOX** — 2026-10-15
+- **LALPATHLAB** — 2026-10-23
+- **ETERNAL** — 2026-10-15
+- **POONAWALLA** — 2026-10-16
 - **CYIENT** — 2026-10-15
 - **HINDZINC** — 2026-10-23
 - **OBEROIRLTY** — 2026-10-14
-- **POONAWALLA** — 2026-10-16
-- **COFORGE** — 2026-10-22
+- **BPCL** — 2026-10-22
+- **KOTAKBANK** — 2026-10-17
+- **YESBANK** — 2026-10-17
 
-## 👀 Watchlist (118)
-USHAMART · IKS · SHYAMMETL · CAPLIPOINT · SONACOMS · JINDALSTEL · WELSPUNLIV · JSWINFRA · ZYDUSLIFE · ACE · FINCABLES · LALPATHLAB · PCBL · RBLBANK · VIJAYA · CPPLUS · ANANTRAJ · LAURUSLABS · MEDANTA · AUROPHARMA · CASTROLIND · LGEINDIA · DIVISLAB · GRAPHITE · HBLENGINE …
+## 👀 Watchlist (159)
+AUROPHARMA · ZYDUSLIFE · BLUEJET · CASTROLIND · VIJAYA · ABDL · CAPLIPOINT · FIVESTAR · JINDALSTEL · JSWINFRA · LAURUSLABS · LGEINDIA · MEDANTA · RADICO · USHAMART · CONCORDBIO · GLENMARK · PFOCUS · WELSPUNLIV · ANANTRAJ · PCBL · PNB · RBLBANK · ADANIPORTS · ASAHIINDIA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
