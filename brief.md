@@ -3,7 +3,7 @@
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 22780.2 · 50DMA 23963.4 · 200DMA 24406.9 · 1M -5.4%
 **Breadth:** 20.0% of universe above 50-DMA (Narrow / weak) · A/D 64/435
-**Flows:** FII ₹-3,694 cr today (-11,490 cr 5-day) · DII ₹+2,838 cr
+**Flows:** FII ₹-5,353 cr today (-16,267 cr 5-day — **selling streak, tighten up**) · DII ₹+5,189 cr
 
 **Indices:** NIFTY 50 22,780.2 (-1.6%) · BANK NIFTY 54,471.6 (-2.0%) · NIFTY PHARMA 26,761.7 (-0.9%) · NIFTY MIDCAP 50 17,208.9 (-1.5%) · NIFTY MIDCAP 50 17,208.9 (-1.5%) · NIFTY IT 28,086.5 (-0.3%)
 
