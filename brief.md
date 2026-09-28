@@ -2,7 +2,7 @@
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 23140.5 · 50DMA 23994.5 · 200DMA 24423.2 · 1M -4.4%
-**Breadth:** 27.3% of universe above 50-DMA (Narrow / weak) · A/D 243/255
+**Breadth:** 27.3% of universe above 50-DMA (Narrow / weak) · A/D 243/254
 **Flows:** FII ₹-5,353 cr today (-16,267 cr 5-day — **selling streak, tighten up**) · DII ₹+5,189 cr
 
 **Indices:** NIFTY 50 23,140.5 (+0.3%) · BANK NIFTY 55,580.4 (+0.3%) · NIFTY PHARMA 27,003.0 (-0.1%) · NIFTY MIDCAP 50 17,474.1 (-0.3%) · NIFTY MIDCAP 50 17,474.1 (-0.3%) · NIFTY IT 28,160.9 (-0.2%)
@@ -15,7 +15,7 @@ _Claude web-research on the day's 40 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Media Entertainment & Publication (+10.2%) · Healthcare (+6.2%) · Services (+5.7%) · Oil Gas & Consumable Fuels (+5.2%)
+**Leading sectors:** Media Entertainment & Publication (+10.2%) · Healthcare (+6.3%) · Services (+5.7%) · Oil Gas & Consumable Fuels (+5.2%)
 
 ## ✅ Strong Buy (4)
 - **ZYDUSLIFE** (Healthcare · Large cap) — score 100, Breakout — new 20-day high on 1.6× volume. Entry ₹1203.9 · Stop ₹1135.2 · Target ₹1341.2 · Risk/sh ₹68.7
