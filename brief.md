@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-09-30
+# Daily swing brief — 2026-10-01
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 22620.4 · 50DMA 23901.6 · 200DMA 24372.8 · 1M -6.1%
-**Breadth:** 20.5% of universe above 50-DMA (Narrow / weak) · A/D 253/241
+Nifty 22421.9 · 50DMA 23870.1 · 200DMA 24355.8 · 1M -6.8%
+**Breadth:** 16.9% of universe above 50-DMA (Narrow / weak) · A/D 113/383
 **Flows:** FII ₹-9,484 cr today (-38,660 cr 5-day — **selling streak, tighten up**) · DII ₹+10,042 cr
 
-**Indices:** NIFTY 50 22,620.4 (-0.4%) · BANK NIFTY 54,633.1 (+0.7%) · NIFTY PHARMA 26,438.0 (-1.8%) · NIFTY MIDCAP 50 17,028.7 (-0.0%) · NIFTY MIDCAP 50 17,028.7 (-0.0%) · NIFTY IT 27,704.8 (+0.1%)
+**Indices:** NIFTY 50 22,421.9 (-0.9%) · BANK NIFTY 54,450.8 (-0.3%) · NIFTY PHARMA 26,311.6 (-0.5%) · NIFTY MIDCAP 50 16,840.3 (-1.1%) · NIFTY MIDCAP 50 16,840.3 (-1.1%) · NIFTY IT 28,304.7 (+2.2%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=6 → below 200DMA — stand aside · BANK NIFTY RSI2=47 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=2 → below 200DMA — stand aside · BANK NIFTY RSI2=33 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-25
@@ -15,34 +15,34 @@ _Claude web-research on the day's 40 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Media Entertainment & Publication (+17.1%) · Telecommunication (+16.6%) · Fast Moving Consumer Goods (+12.9%) · Services (+8.6%)
+**Leading sectors:** Telecommunication (+18.2%) · Media Entertainment & Publication (+15.4%) · Fast Moving Consumer Goods (+11.3%) · Services (+7.1%)
 
 ## ✅ Strong Buy (2)
-- **CUPID** (Fast Moving Consumer Goods · Small cap) — score 96, Breakout — new 20-day high on 3.0× volume. Entry ₹311.6 · Stop ₹274.3 · Target ₹386.3 · Risk/sh ₹37.3
-- **SUNTV** (Media Entertainment & Publication · Small cap) — score 83, Breakout — new 20-day high on 12.3× volume. Entry ₹605.0 · Stop ₹539.5 · Target ₹735.9 · Risk/sh ₹65.5
+- **STLTECH** (Telecommunication · Small cap) — score 90, Breakout — new 20-day high on 2.9× volume. Entry ₹955.3 · Stop ₹844.3 · Target ₹1177.5 · Risk/sh ₹111.1
+- **WELSPUNLIV** (Textiles · Small cap) — score 81, Breakout — new 20-day high on 4.3× volume. Entry ₹239.2 · Stop ₹218.4 · Target ₹280.7 · Risk/sh ₹20.8
 
 ## 🟢 Buy (0)
 - none today
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **LALPATHLAB** — 2026-10-23
-- **SONACOMS** — 2026-10-22
-- **ADANIPORTS** — 2026-10-28
-- **DLF** — 2026-10-29
 - **KAJARIACER** — 2026-10-15
 - **KOTAKBANK** — 2026-10-17
-- **MANKIND** — 2026-10-29
-- **COALINDIA** — 2026-10-29
-- **SAIL** — 2026-10-29
-- **CYIENT** — 2026-10-15
-- **PVRINOX** — 2026-10-15
+- **SONACOMS** — 2026-10-22
+- **RBLBANK** — 2026-10-15
 - **CARBORUNIV** — 2026-10-29
+- **MANKIND** — 2026-10-29
 - **LAURUSLABS** — 2026-10-22
+- **CYIENT** — 2026-10-15
+- **BHEL** — 2026-10-15
+- **COALINDIA** — 2026-10-29
+- **DIVISLAB** — 2026-10-31
+- **DRREDDY** — 2026-10-23
 - **PHOENIXLTD** — 2026-10-29
-- **JINDALSTEL** — 2026-10-28
+- **COFORGE** — 2026-10-23
 
-## 👀 Watchlist (95)
-AJANTPHARM · LALPATHLAB · AZAD · MTARTECH · SONACOMS · ADANIPORTS · GESHIP · DLF · JSWINFRA · KAJARIACER · KIRLOSENG · SYRMA · TEGA · ACE · CPPLUS · LGEINDIA · KOTAKBANK · MANKIND · STLTECH · ABBOTINDIA · ABDL · CASTROLIND · NUVOCO · AETHER · COALINDIA …
+## 👀 Watchlist (76)
+LALPATHLAB · TDPOWERSYS · CUPID · AZAD · GESHIP · JSWINFRA · KAJARIACER · KOTAKBANK · MTARTECH · AJANTPHARM · LGEINDIA · HFCL · PRIVISCL · SONACOMS · ABDL · CASTROLIND · SUNTV · ACE · AETHER · CUB · INOXINDIA · IPCALAB · RBLBANK · BELRISE · ZYDUSLIFE …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
