@@ -45,7 +45,7 @@ AVANTIFEED.NS,Fast Moving Consumer Goods,2026-01-02,2026-01-08,870.58,800.08,68,
 LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,689,60,time stop,green,21619.0,1.85
 MCX.NS,Financial Services,2025-10-14,2026-01-09,1798.39,2185.64,100,60,time stop,green,38725.0,3.3
 MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,3004,3,stop,green,-13236.0,-1.0
-NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,83.75,79.01,41,1,stop,green,-195.0,-1.0
+NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,82.63,77.95,42,1,stop,green,-197.0,-1.0
 CUB.NS,Financial Services,2025-10-29,2026-01-12,178.33,199.92,859,51,stop,green,18548.0,1.56
 SANSERA.NS,Automobile and Auto Components,2026-01-06,2026-01-12,1921.46,1767.69,42,4,stop,green,-6458.0,-1.0
 BRITANNIA.NS,Fast Moving Consumer Goods,2026-01-08,2026-01-12,6054.17,5846.14,9,2,score decay,green,-1872.0,-0.79
