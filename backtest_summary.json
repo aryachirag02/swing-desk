@@ -2,11 +2,11 @@
   "windows": {
     "train": [
       "2025-01-21",
-      "2026-04-02"
+      "2026-04-07"
     ],
     "validate": [
-      "2026-04-06",
-      "2026-10-01"
+      "2026-04-08",
+      "2026-10-06"
     ]
   },
   "params_used": {
@@ -22,8 +22,8 @@
     "profit_factor": 2.99,
     "expectancy_R": 0.534,
     "avg_hold_days": 27.9,
-    "total_return_pct": 29.6,
-    "annualized_pct": 24.6,
+    "total_return_pct": 29.7,
+    "annualized_pct": 24.5,
     "max_drawdown_pct": -5.9
   },
   "train_exit_breakdown": {
@@ -47,27 +47,5 @@
   "validate": {
     "trades": 0
   },
-  "validate_exit_breakdown": {},
-  "tuning": {
-    "best_on_train": {
-      "buy_thr": 75,
-      "stop_mult": 2.5,
-      "trail_mult": 3.0,
-      "trades": 51,
-      "win_rate": 49.0,
-      "avg_win": 20108.0,
-      "avg_loss": -6093.0,
-      "profit_factor": 3.17,
-      "expectancy_R": 0.806,
-      "avg_hold_days": 29.0,
-      "total_return_pct": 38.6,
-      "annualized_pct": 31.9,
-      "max_drawdown_pct": -7.3
-    },
-    "best_on_validation": {
-      "trades": 0
-    },
-    "grid_size": 27,
-    "adopted": false
-  }
+  "validate_exit_breakdown": {}
 }
