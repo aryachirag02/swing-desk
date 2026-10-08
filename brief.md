@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-10-06
+# Daily swing brief — 2026-10-08
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 22776.1 · 50DMA 23824.0 · 200DMA 24324.1 · 1M -4.6%
-**Breadth:** 18.7% of universe above 50-DMA (Narrow / weak) · A/D 364/132
+Nifty 22231.8 · 50DMA 23761.1 · 200DMA 24287.9 · 1M -6.5%
+**Breadth:** 12.9% of universe above 50-DMA (Narrow / weak) · A/D 33/463
 **Flows:** FII ₹-6,121 cr today (-33,414 cr 5-day — **selling streak, tighten up**) · DII ₹+4,597 cr
 
-**Indices:** NIFTY 50 22,776.1 (+1.0%) · BANK NIFTY 55,128.4 (+0.8%) · NIFTY PHARMA 26,549.6 (+1.7%) · NIFTY MIDCAP 50 17,119.7 (+1.2%) · NIFTY MIDCAP 50 17,119.7 (+1.2%) · NIFTY IT 28,136.1 (-0.6%)
+**Indices:** NIFTY 50 22,231.8 (-1.6%) · BANK NIFTY 54,515.1 (-1.0%) · NIFTY PHARMA 25,823.2 (-2.3%) · NIFTY IT 27,736.6 (-0.1%) · NIFTY IT 27,736.6 (-0.1%) · NIFTY MIDCAP 50 16,530.9 (-2.7%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=78 → below 200DMA — stand aside · BANK NIFTY RSI2=85 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=13 → below 200DMA — stand aside · BANK NIFTY RSI2=20 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-25
@@ -15,38 +15,33 @@ _Claude web-research on the day's 40 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Telecommunication (+18.6%) · Fast Moving Consumer Goods (+12.9%) · Media Entertainment & Publication (+10.4%) · Services (+6.7%)
+**Leading sectors:** Fast Moving Consumer Goods (+18.9%) · Telecommunication (+18.0%) · Media Entertainment & Publication (+5.5%) · Capital Goods (+4.2%)
 
-## ✅ Strong Buy (6)
-- **BHEL** (Capital Goods · Mid cap) — score 94, Breakout — new 20-day high on 3.2× volume. Entry ₹452.0 · Stop ₹421.0 · Target ₹514.0 · Risk/sh ₹31.0 · 📅 results 2026-10-15 — inside holding window
-- **MOTILALOFS** (Financial Services · Mid cap) — score 94, Breakout — new 20-day high on 2.7× volume. Entry ₹1081.2 · Stop ₹1006.0 · Target ₹1231.5 · Risk/sh ₹75.2
-- **PETRONET** (Oil Gas & Consumable Fuels · Mid cap) — score 94, Breakout — new 20-day high on 2.8× volume. Entry ₹297.5 · Stop ₹282.2 · Target ₹328.2 · Risk/sh ₹15.3 · 📅 results 2026-11-05 — inside holding window
-- **RRKABEL** (Capital Goods · Small cap) — score 94, Breakout — new 20-day high on 2.8× volume. Entry ₹2789.7 · Stop ₹2561.9 · Target ₹3245.3 · Risk/sh ₹227.8
-- **AETHER** (Chemicals · Small cap) — score 90, Breakout — new 20-day high on 4.1× volume. Entry ₹1799.8 · Stop ₹1640.6 · Target ₹2118.3 · Risk/sh ₹159.2
-- **STLTECH** (Telecommunication · Small cap) — score 90, Breakout — new 20-day high on 1.6× volume. Entry ₹1016.7 · Stop ₹907.1 · Target ₹1236.0 · Risk/sh ₹109.6
+## ✅ Strong Buy (0)
+- none today
 
-## 🟢 Buy (1)
-- **TRENT** (Consumer Services · Large cap) — score 76, Breakout — new 20-day high on 6.9× volume. Entry ₹2906.0 · Stop ₹2722.0 · Target ₹3273.9 · Risk/sh ₹184.0 · 📅 results 2026-11-05 — inside holding window
+## 🟢 Buy (0)
+- none today
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **BHEL** — 2026-10-15
-- **KOTAKBANK** — 2026-10-17
-- **PETRONET** — 2026-11-05
-- **KPIL** — 2026-10-29
-- **RADICO** — 2026-10-28
-- **NYKAA** — 2026-11-05
-- **LAURUSLABS** — 2026-10-22
-- **CASTROLIND** — 2026-11-03
-- **LALPATHLAB** — 2026-10-23
-- **DIVISLAB** — 2026-10-31
 - **GLAND** — 2026-11-03
-- **AUROPHARMA** — 2026-11-05
-- **ETERNAL** — 2026-10-15
-- **REDINGTON** — 2026-11-04
-- **ADANIPORTS** — 2026-10-28
+- **PVRINOX** — 2026-10-15
+- **KOTAKBANK** — 2026-10-17
+- **BHEL** — 2026-10-15
+- **PETRONET** — 2026-11-05
+- **RADICO** — 2026-10-28
+- **CARBORUNIV** — 2026-10-29
+- **KPIL** — 2026-10-29
+- **LAURUSLABS** — 2026-10-22
+- **TRENT** — 2026-11-05
+- **NAVINFLUOR** — 2026-10-29
+- **COFORGE** — 2026-10-23
+- **NYKAA** — 2026-11-05
+- **CASTROLIND** — 2026-11-03
+- **DIVISLAB** — 2026-10-31
 
-## 👀 Watchlist (110)
-KOTAKBANK · ABDL · JSWINFRA · MEESHO · GESHIP · HFCL · AZAD · CPPLUS · KPIL · RKFORGE · BALRAMCHIN · RADICO · AJANTPHARM · CUPID · LGEINDIA · NYKAA · TDPOWERSYS · LAURUSLABS · AIIL · CASTROLIND · IDBI · LALPATHLAB · DIVISLAB · ENGINERSIN · GLAND …
+## 👀 Watchlist (68)
+PTCIL · GLAND · PVRINOX · RRKABEL · KOTAKBANK · CPPLUS · HFCL · MTARTECH · BHEL · CUPID · GESHIP · BBOX · PETRONET · PWL · TDPOWERSYS · BALRAMCHIN · RADICO · PNBHOUSING · AIIL · CHENNPETRO · STLTECH · AZAD · CARBORUNIV · AETHER · KPIL …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
