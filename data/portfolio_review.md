@@ -1,24 +1,25 @@
 # Weekly portfolio review — 2026-10-09
 
-### J&KBANK — HOLD (Valuation cheap; wait for breakout above ₹150 resistance)
-I'll search for recent news and analyst commentary on J&KBANK. NEWS:  J&K Bank business crossed ₹3.1 lakh crore Oct 3, up 19.4% YoY 
-ANALYSTS:  Target ₹131-218 range; low analyst coverage reported 
-FUNDAMENTALS:  P/E 6.7, P/B 0.9 — trading below book value 
-TECHNICALS: Price 138 below 50-day MA; 3-month decline -28%; downtrend confirmed
+### J&KBANK — HOLD (strong fundamentals support recovery; wait for stabilization near ₹135–140.)
+I'll search for recent news and analyst coverage on J&K Bank. Based on my research, here's your 5-line summary:
 
-### ORIENTHOT — ? ()
-I'll search for recent news and analyst coverage on ORIENTHOT. Based on the search results, I now have recent news and analyst data. Let me compile the information:
+NEWS:  J&K Bank reported 19.4% YoY business growth to ₹3,10,347 crore in Q2 FY2027 (ended Sept 30) 
+ANALYSTS:  JM Financial Buy ₹180; ICICI Securities Neutral ₹165; consensus ₹173 
+FUNDAMENTALS:  Record FY26 profit ₹2,363 crore (+13.5% YoY); ROE 16.85%, P/E 7.0 
+TECHNICALS: Trading below 50-day and 200-day averages; down 28% in 3 months from July peak.
 
-NEWS:  Indian Hotels Company agreed to acquire remaining majority stake in Oriental Hotels on Aug 24 
-ANALYSTS:  Motilal Oswal Buy at Rs 148.6, Centrum Broking Add at Rs 140.7, Prabhudas Lilladher Neutral at Rs 129.7 
-FUNDAMENTALS:  Revenue +12.3% YoY to Rs 4.94B, net income +73.3% 
-TECHNICALS: Price above 50-day average, 3-month +5%, above your cost basis at 140 rupees.
-HOLD — Await merger completion clarity; target range Rs 139-149 suggests limited upside.
+### ORIENTHOT — HOLD (merger catalyst in place, but wait for regulatory approvals clarity before addin)
+I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for more recent news specifically about the August-October 2026 period and any recent analyst updates. Based on my research, here's your 5-line analysis:
 
-### FEDERALBNK — HOLD (wait for Q2 earnings Oct 16; analyst targets 365 near entry point)
-I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent analyst calls and fundamentals data. Based on the search results, here is my analysis in your requested format:
+NEWS:  Indian Hotels approved merger with Oriental Hotels on August 24 at 25:117 share swap ratio 
+ANALYSTS:  Multiple brokerages bullish: Nomura buy TP 830, JM Financial buy TP 850, Axis Capital add TP 841 rupees 
+FUNDAMENTALS:  Revenue +12.31% YoY to 4.94B, net income +73.32% 
+TECHNICALS: Price 140 above 50-day average, recently rallied 5%, modest momentum with high PE of 37.4x
 
-NEWS:  Q2 FY27 results earnings call scheduled for October 16, 2026 
-ANALYSTS:  Consensus "Buy" rating; 21 buy, 4 sell, 10 hold from 35 analysts 
-FUNDAMENTALS:  Mkt cap up 58% YoY but low ROE 12.9% and coverage ratio 
-TECHNICALS: Price 330 below 50-day average; flat 3-month, down 6% from entry cost
+### FEDERALBNK — HOLD (Results Oct 16 will clarify trajectory; wait for Q2 guidance.)
+I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent analyst downgrades and any Q2 FY27 guidance. Based on the search results, here's your analysis in the exact format requested:
+
+NEWS:  Q2 FY27 results board meeting October 16, 2026 
+ANALYSTS:  Buy consensus, average target ₹365.69 (21 buy, 10 hold, 4 sell) 
+FUNDAMENTALS:  Q1 FY27 profit ₹1,256 crore, revenue ₹8,943 crore 
+TECHNICALS: Price 330 down 6% from buy, below 50-day average, sideways trend
