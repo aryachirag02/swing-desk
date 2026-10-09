@@ -1,22 +1,24 @@
-# Weekly portfolio review — 2026-10-02
+# Weekly portfolio review — 2026-10-09
 
-### J&KBANK — HOLD (Fundamentals strong, wait for capital raise clarity first)
-I'll search for recent news and analyst commentary on J&KBANK. NEWS:  Board approved ₹1,000 crore equity capital raise via QIP (August 2026) 
-ANALYSTS:  JM Financial Buy ₹180, ICICI Neutral ₹165, consensus ₹173 
-FUNDAMENTALS:  FY26 record profit ₹2,363 cr, 13.5% growth with strong 2.5% GNPA 
-TECHNICALS: Price 140 below 50-day average, down 21% from entry, weak near-term trend
+### J&KBANK — HOLD (Valuation cheap; wait for breakout above ₹150 resistance)
+I'll search for recent news and analyst commentary on J&KBANK. NEWS:  J&K Bank business crossed ₹3.1 lakh crore Oct 3, up 19.4% YoY 
+ANALYSTS:  Target ₹131-218 range; low analyst coverage reported 
+FUNDAMENTALS:  P/E 6.7, P/B 0.9 — trading below book value 
+TECHNICALS: Price 138 below 50-day MA; 3-month decline -28%; downtrend confirmed
 
-### ORIENTHOT — HOLD (Merger uncertainty, wait for NCLT/regulatory approvals before adding more)
-I'll search for recent news and analyst coverage on ORIENTHOT. Let me search for the most recent news about the merger announcement. Based on my research, here's your analysis:
+### ORIENTHOT — ? ()
+I'll search for recent news and analyst coverage on ORIENTHOT. Based on the search results, I now have recent news and analyst data. Let me compile the information:
 
-NEWS:  IHCL-Oriental Hotels merger approved Aug 24 2026, 25 shares swap for 117 
-ANALYSTS:  Motilal Oswal Buy ₹148.6, Centrum Add ₹140.7, consensus ₹139.7 
-FUNDAMENTALS:  FY26 revenue ₹502.5cr (+13.5%), net profit ₹72cr (+70%) 
-TECHNICALS: Price 140 above 50-day average, recent upmove +2%, uptrend intact with support building
+NEWS:  Indian Hotels Company agreed to acquire remaining majority stake in Oriental Hotels on Aug 24 
+ANALYSTS:  Motilal Oswal Buy at Rs 148.6, Centrum Broking Add at Rs 140.7, Prabhudas Lilladher Neutral at Rs 129.7 
+FUNDAMENTALS:  Revenue +12.3% YoY to Rs 4.94B, net income +73.3% 
+TECHNICALS: Price above 50-day average, 3-month +5%, above your cost basis at 140 rupees.
+HOLD — Await merger completion clarity; target range Rs 139-149 suggests limited upside.
 
-### FEDERALBNK — ? ()
-I'll search for recent news and analyst coverage on Federal Bank (FEDERALBNK). NEWS:  Federal Bank established US$500 million medium-term note programme, September 2026 
-ANALYSTS:  Consensus "Buy" rating from 53 analysts; 12-month target ₹524.65 
-FUNDAMENTALS:  Q1 net profit up 36.57% YoY to ₹1,177 crore 
-TECHNICALS: Price 318.2 below 50-day average, down 9.3% since July, 3-month decline 3%
-HOLD — Accumulation strategy sound; wait for stabilisation near support
+### FEDERALBNK — HOLD (wait for Q2 earnings Oct 16; analyst targets 365 near entry point)
+I'll search for recent news and analyst coverage on Federal Bank. Let me search for more recent analyst calls and fundamentals data. Based on the search results, here is my analysis in your requested format:
+
+NEWS:  Q2 FY27 results earnings call scheduled for October 16, 2026 
+ANALYSTS:  Consensus "Buy" rating; 21 buy, 4 sell, 10 hold from 35 analysts 
+FUNDAMENTALS:  Mkt cap up 58% YoY but low ROE 12.9% and coverage ratio 
+TECHNICALS: Price 330 below 50-day average; flat 3-month, down 6% from entry cost
