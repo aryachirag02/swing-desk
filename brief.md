@@ -1,13 +1,13 @@
 # Daily swing brief — 2026-10-13
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 22363.3 · 50DMA 23687.4 · 200DMA 24254.0 · 1M -4.6%
+Nifty 22721.9 · 50DMA 23654.2 · 200DMA 24238.5 · 1M -3.2%
 **Breadth:** nan% of universe above 50-DMA (Narrow / weak) · A/D 0/0
-**Flows:** FII ₹-1,708 cr today (-27,304 cr 5-day — **selling streak, tighten up**) · DII ₹+3,045 cr
+**Flows:** FII ₹-1,305 cr today (-25,647 cr 5-day — **selling streak, tighten up**) · DII ₹+2,439 cr
 
-**Indices:** NIFTY 50 22,363.3 (-0.7%) · BANK NIFTY 54,918.0 (-0.6%) · NIFTY IT 28,349.6 (-0.8%) · NIFTY PHARMA 26,078.8 (+0.4%) · NIFTY PHARMA 26,078.8 (+0.4%) · NIFTY MIDCAP 50 16,827.7 (+0.2%)
+**Indices:** NIFTY 50 22,721.9 (+1.6%) · BANK NIFTY 55,481.1 (+1.0%) · NIFTY IT 29,830.1 (+5.2%) · NIFTY PHARMA 26,075.0 (-0.0%) · NIFTY PHARMA 26,075.0 (-0.0%) · NIFTY MIDCAP 50 16,974.0 (+0.9%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=37 → below 200DMA — stand aside · BANK NIFTY RSI2=45 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=76 → below 200DMA — stand aside · BANK NIFTY RSI2=76 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-09-25
@@ -15,7 +15,7 @@ _Claude web-research on the day's 40 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Fast Moving Consumer Goods (+18.7%) · Telecommunication (+16.4%) · Media Entertainment & Publication (+9.5%) · Information Technology (+9.3%)
+**Leading sectors:** Fast Moving Consumer Goods (+17.2%) · Telecommunication (+14.9%) · Media Entertainment & Publication (+8.0%) · Information Technology (+7.8%)
 
 ## ✅ Strong Buy (6)
 - **COFORGE** (Information Technology · Mid cap) — score 100, Breakout — new 20-day high on 1.7× volume. Entry ₹1929.0 · Stop ₹1770.9 · Target ₹2245.3 · Risk/sh ₹158.1 · 📅 results 2026-10-23 — inside holding window
@@ -40,13 +40,13 @@ _Claude web-research on the day's 40 quant-flagged movers. Research assistance, 
 - **DRREDDY** — 2026-10-23
 - **KOTAKBANK** — 2026-10-24
 - **BSOFT** — 2026-10-28
-- **LTTS** — 2026-10-19
 - **KARURVYSYA** — 2026-10-15
-- **CUB** — 2026-11-02
+- **LTTS** — 2026-10-19
 - **NYKAA** — 2026-11-05
+- **CUB** — 2026-11-02
 
-## 👀 Watchlist (98)
-BHEL · ABDL · BALRAMCHIN · CYIENT · PVRINOX · PNBHOUSING · TCS · BBOX · CARTRADE · RADICO · HFCL · GLAND · MOTILALOFS · DRREDDY · KOTAKBANK · BSOFT · LTTS · NETWEB · AZAD · CPPLUS · CUB · LGEINDIA · MEESHO · MTARTECH · STLTECH …
+## 👀 Watchlist (93)
+BHEL · ABDL · BALRAMCHIN · CYIENT · PVRINOX · PNBHOUSING · TCS · BBOX · CARTRADE · RADICO · HFCL · GLAND · MOTILALOFS · DRREDDY · KOTAKBANK · BSOFT · NETWEB · AZAD · CPPLUS · LGEINDIA · MEESHO · MTARTECH · STLTECH · LTTS · NYKAA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
