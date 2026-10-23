@@ -5,7 +5,7 @@ UNITDSPR.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-11,1556.46,1465.27,111
 TATACONSUM.NS,Fast Moving Consumer Goods,2025-04-25,2025-06-12,1142.0,1076.0,15,33,score decay,green,-990.0,-0.83
 GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2615.65,2615.65,37,35,stop,green,0.0,0.0
 RHIM.NS,Capital Goods,2025-06-13,2025-07-01,472.37,458.09,255,12,score decay,green,-3641.0,-0.33
-SUPREMEIND.NS,Capital Goods,2025-06-18,2025-07-08,4549.61,4193.78,9,14,stop,green,-3202.0,-1.0
+SUPREMEIND.NS,Capital Goods,2025-06-18,2025-07-08,4549.6,4193.78,9,14,stop,green,-3202.0,-1.0
 MFSL.NS,Financial Services,2025-04-28,2025-07-17,1260.0,1526.25,92,57,stop,green,24495.0,3.34
 AUBANK.NS,Financial Services,2025-04-24,2025-07-18,657.05,794.13,164,60,time stop,green,22481.0,2.23
 CHOICEIN.NS,Financial Services,2025-04-24,2025-07-18,612.0,753.05,232,60,time stop,green,32724.0,3.24
@@ -17,7 +17,7 @@ BEL.NS,Capital Goods,2025-05-14,2025-07-21,336.33,389.0,1,48,stop,green,53.0,2.1
 HEGAM.NS,Capital Goods,2025-07-18,2025-07-25,553.88,510.24,261,5,stop,green,-11391.0,-1.0
 RRKABEL.NS,Capital Goods,2025-07-18,2025-07-28,1482.0,1358.14,92,6,stop,green,-11395.0,-1.0
 BALKRISIND.NS,Automobile and Auto Components,2025-07-18,2025-07-28,2705.86,2574.92,50,6,stop,green,-6547.0,-1.0
-BOSCHLTD.NS,Automobile and Auto Components,2025-07-08,2025-08-07,35275.93,37697.38,1,22,stop,green,2421.0,1.23
+BOSCHLTD.NS,Automobile and Auto Components,2025-07-08,2025-08-07,35275.92,37697.38,1,22,stop,green,2421.0,1.23
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,83,12,stop,green,-2302.0,-1.0
 INDIGO.NS,Services,2025-07-01,2025-08-29,5952.44,5646.0,20,41,score decay,green,-6129.0,-0.82
 DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2263.1,2270.77,94,45,stop,green,721.0,0.06
