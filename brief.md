@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-10-23
+# Daily swing brief — 2026-10-26
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
-Nifty 22600.0 · 50DMA 23403.7 · 200DMA 24125.4 · 1M -3.1%
-**Breadth:** 10.3% of universe above 50-DMA (Narrow / weak) · A/D 40/457
+Nifty 22753.2 · 50DMA 23370.1 · 200DMA 24108.5 · 1M -3.0%
+**Breadth:** 13.1% of universe above 50-DMA (Narrow / weak) · A/D 336/160
 **Flows:** FII ₹-1,462 cr today (-4,160 cr 5-day) · DII ₹+2,610 cr
 
-**Indices:** NIFTY 50 22,600.0 (-0.4%) · BANK NIFTY 54,287.4 (-1.2%) · NIFTY IT 31,995.5 (-0.3%) · NIFTY PSU BANK 8,070.7 (-2.3%) · NIFTY MIDCAP 50 16,066.4 (-2.1%) · NIFTY METAL 11,478.2 (-2.7%)
+**Indices:** NIFTY 50 22,753.2 (+0.7%) · BANK NIFTY 54,366.7 (+0.1%) · NIFTY IT 32,273.1 (+0.9%) · NIFTY PSU BANK 8,093.8 (+0.3%) · NIFTY MIDCAP 50 16,266.8 (+1.2%) · NIFTY METAL 11,731.5 (+2.2%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=11 → below 200DMA — stand aside · BANK NIFTY RSI2=3 → below 200DMA — stand aside
+**Index F&O (dip-buy):** NIFTY 50 RSI2=62 → below 200DMA — stand aside · BANK NIFTY RSI2=18 → below 200DMA — stand aside
 
 ---
 # Market intelligence — 2026-10-23
@@ -15,30 +15,32 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Fast Moving Consumer Goods (+8.9%) · Information Technology (+8.2%) · Telecommunication (+7.1%) · Oil Gas & Consumable Fuels (+0.3%)
+**Leading sectors:** Telecommunication (+8.9%) · Information Technology (+8.7%) · Fast Moving Consumer Goods (+7.0%) · Oil Gas & Consumable Fuels (+2.6%)
 
-## ✅ Strong Buy (1)
-- **CYIENT** (Information Technology · Small cap) — score 96, Breakout — new 20-day high on 11.3× volume. Entry ₹1233.0 · Stop ₹1098.9 · Target ₹1501.1 · Risk/sh ₹134.1
+## ✅ Strong Buy (3)
+- **COFORGE** (Information Technology · Mid cap) — score 96, Breakout — new 20-day high on 2.0× volume. Entry ₹1993.0 · Stop ₹1813.7 · Target ₹2351.7 · Risk/sh ₹179.3
+- **ATHERENERG** (Automobile and Auto Components · Small cap) — score 90, Breakout — new 20-day high on 2.8× volume. Entry ₹1575.0 · Stop ₹1387.1 · Target ₹1950.9 · Risk/sh ₹187.9
+- **DRREDDY** (Healthcare · Large cap) — score 88, Breakout — new 20-day high on 3.9× volume. Entry ₹1310.9 · Stop ₹1231.3 · Target ₹1470.2 · Risk/sh ₹79.6
 
 ## 🟢 Buy (1)
-- **IGIL** (Services · Small cap) — score 74, Breakout — new 20-day high on 11.1× volume. Entry ₹381.1 · Stop ₹347.9 · Target ₹447.7 · Risk/sh ₹33.3
+- **TTML** (Telecommunication · Small cap) — score 73, Breakout — new 20-day high on 4.3× volume. Entry ₹41.5 · Stop ₹35.6 · Target ₹53.3 · Risk/sh ₹5.9
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
-- **INFY** — 2026-10-23
-- **MPHASIS** — 2026-11-05
-- **COFORGE** — 2026-10-23
-- **BSOFT** — 2026-10-28
-- **DRREDDY** — 2026-10-23
-- **PVRINOX** — 2026-10-28
-- **BAJAJHLDNG** — 2026-11-03
-- **BHARTIARTL** — 2026-11-05
-- **CASTROLIND** — 2026-10-24
-- **KOTAKBANK** — 2026-10-24
 - **INDUSTOWER** — 2026-10-27
+- **MPHASIS** — 2026-11-05
+- **BSOFT** — 2026-10-28
+- **PETRONET** — 2026-11-02
+- **PVRINOX** — 2026-10-28
+- **IPCALAB** — 2026-11-12
 - **LAURUSLABS** — 2026-10-29
+- **ZYDUSLIFE** — 2026-11-04
+- **BHARTIARTL** — 2026-11-05
+- **BAJAJHLDNG** — 2026-11-03
+- **DLF** — 2026-10-29
+- **LEMONTREE** — 2026-11-12
 
-## 👀 Watchlist (46)
-ANANDRATHI · INFY · MPHASIS · CRISIL · INDHOTEL · COFORGE · PERSISTENT · BHARTIHEXA · TATAELXSI · LTTS · ZENSARTECH · HCLTECH · PNB · TCS · TECHM · WIPRO · BSOFT · HEXT · CHENNPETRO · FSL · DRREDDY · PVRINOX · SAGILITY · BAJAJHLDNG · SHYAMMETL …
+## 👀 Watchlist (54)
+CRISIL · MRPL · INDUSTOWER · INFY · PERSISTENT · CYIENT · INDHOTEL · CHENNPETRO · MPHASIS · TATAELXSI · ANANDRATHI · IGIL · SAGILITY · TECHM · BHARTIHEXA · BSOFT · KOTAKBANK · PETRONET · COHANCE · HCLTECH · LTTS · PNB · PVRINOX · TCS · WIPRO …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
