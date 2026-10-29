@@ -1,12 +1,12 @@
 {
   "windows": {
     "train": [
-      "2025-02-10",
-      "2026-04-23"
+      "2025-02-11",
+      "2026-04-27"
     ],
     "validate": [
-      "2026-04-24",
-      "2026-10-27"
+      "2026-04-28",
+      "2026-10-29"
     ]
   },
   "params_used": {
@@ -15,33 +15,33 @@
     "TRAIL_ATR_MULT": 4.0
   },
   "train": {
-    "trades": 52,
-    "win_rate": 38.5,
-    "avg_win": 19360.0,
-    "avg_loss": -3845.0,
-    "profit_factor": 3.15,
-    "expectancy_R": 0.502,
-    "avg_hold_days": 28.3,
-    "total_return_pct": 30.5,
-    "annualized_pct": 25.5,
-    "max_drawdown_pct": -5.6
+    "trades": 54,
+    "win_rate": 40.7,
+    "avg_win": 15080.0,
+    "avg_loss": -3865.0,
+    "profit_factor": 2.68,
+    "expectancy_R": 0.4,
+    "avg_hold_days": 27.9,
+    "total_return_pct": 24.8,
+    "annualized_pct": 20.8,
+    "max_drawdown_pct": -6.7
   },
   "train_exit_breakdown": {
     "score decay": {
-      "n": 9,
+      "n": 10,
       "avg_R": -0.28
     },
     "stop": {
       "n": 29,
-      "avg_R": 0.27
+      "avg_R": 0.04
     },
     "stop (gap)": {
       "n": 4,
-      "avg_R": -1.04
+      "avg_R": -0.63
     },
     "time stop": {
-      "n": 10,
-      "avg_R": 2.49
+      "n": 11,
+      "avg_R": 2.33
     }
   },
   "validate": {
