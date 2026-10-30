@@ -1,1 +1,1 @@
-# Weekly portfolio review — 2026-10-23
+# Weekly portfolio review — 2026-10-30
