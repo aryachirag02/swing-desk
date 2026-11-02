@@ -2,7 +2,7 @@
 
 **Market regime:** 🔴 **RED** — No new buys — protect capital, manage exits
 Nifty 23053.1 · 50DMA 23254.7 · 200DMA 24041.2 · 1M +1.5%
-**Breadth:** 19.1% of universe above 50-DMA (Narrow / weak) · A/D 116/380
+**Breadth:** 19.1% of universe above 50-DMA (Narrow / weak) · A/D 117/380
 **Flows:** FII ₹+3,115 cr today (+10,882 cr 5-day) · DII ₹-392 cr
 
 **Indices:** NIFTY 50 23,053.1 (+0.5%) · BANK NIFTY 54,686.9 (-0.4%) · NIFTY IT 32,606.9 (+2.3%) · NIFTY PSU BANK 8,234.8 (-0.9%) · NIFTY ENERGY 34,957.9 (-1.0%) · NIFTY METAL 11,784.9 (-0.5%)
@@ -15,7 +15,7 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Information Technology (+7.0%) · Telecommunication (+5.4%) · Fast Moving Consumer Goods (+4.3%) · Healthcare (+1.5%)
+**Leading sectors:** Information Technology (+7.0%) · Telecommunication (+5.4%) · Fast Moving Consumer Goods (+4.3%) · Healthcare (+1.4%)
 
 ## ✅ Strong Buy (6)
 - **COFORGE** (Information Technology · Mid cap) — score 96, Breakout — new 20-day high on 2.2× volume. Entry ₹2045.0 · Stop ₹1865.0 · Target ₹2405.1 · Risk/sh ₹180.0
