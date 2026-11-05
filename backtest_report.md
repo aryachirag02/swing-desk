@@ -1,6 +1,6 @@
 # Backtest report
 
-## Train window (2025-02-18 to 2026-05-05)
+## Train window (2025-02-18 to 2026-05-04)
 
 - **trades**: 52
 - **win rate**: 40.4
@@ -13,6 +13,6 @@
 - **annualized pct**: 23.6
 - **max drawdown pct**: -7.4
 
-## Validate window (2026-05-06 to 2026-11-05)
+## Validate window (2026-05-05 to 2026-11-04)
 
 - **trades**: 0
