@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-11-05
+# Daily swing brief — 2026-11-09
 
 **Market regime:** 🟡 **YELLOW** — No new buys — price above averages but 50DMA still falling (bull-trap filter)
-Nifty 24536.6 · 50DMA 23234.1 · 200DMA 24002.4 · 1M +7.7%
-**Breadth:** 47.4% of universe above 50-DMA (Selective) · A/D 357/138
-**Flows:** FII ₹+13,750 cr today (+45,960 cr 5-day) · DII ₹-5,969 cr
+Nifty 25044.7 · 50DMA 23264.8 · 200DMA 23995.8 · 1M +12.7%
+**Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 317/178
+**Flows:** FII ₹+0 cr today (+42,845 cr 5-day) · DII ₹-700 cr
 
-**Indices:** NIFTY 50 24,536.6 (+2.4%) · BANK NIFTY 57,773.6 (+3.3%) · NIFTY IT 32,837.9 (+2.4%) · NIFTY AUTO 27,601.8 (+4.1%) · NIFTY ENERGY 36,884.4 (-0.5%) · NIFTY METAL 12,595.1 (+0.9%)
+**Indices:** NIFTY 50 25,044.7 (+0.1%) · BANK NIFTY 59,741.2 (+1.1%) · NIFTY IT 32,468.9 (-1.5%) · NIFTY AUTO 27,925.9 (+0.4%) · NIFTY FMCG 46,660.6 (-0.3%) · NIFTY ENERGY 37,164.9 (+0.8%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=100 → no setup · BANK NIFTY RSI2=99 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=100 → no setup · BANK NIFTY RSI2=100 → no setup
 
 ---
 # Market intelligence — 2026-10-23
@@ -15,45 +15,36 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Information Technology (+1.3%) · Fast Moving Consumer Goods (+0.1%) · Textiles (+0.1%) · Healthcare (-1.3%)
+**Leading sectors:** Healthcare (-1.1%) · Textiles (-1.6%) · Media Entertainment & Publication (-2.8%) · Information Technology (-3.7%)
 
-## ✅ Strong Buy (20)
-- **AUROPHARMA** (Healthcare · Mid cap) — score 91, Breakout — new 20-day high on 3.1× volume. Entry ₹1785.0 · Stop ₹1672.2 · Target ₹2010.7 · Risk/sh ₹112.8
-- **BSE** (Financial Services · Large cap) — score 90, Breakout — new 20-day high on 2.7× volume. Entry ₹3790.0 · Stop ₹3502.9 · Target ₹4364.1 · Risk/sh ₹287.1
-- **PATANJALI** (Fast Moving Consumer Goods · Mid cap) — score 90, Breakout — new 20-day high on 3.2× volume. Entry ₹410.7 · Stop ₹374.8 · Target ₹482.6 · Risk/sh ₹35.9 · 📅 results 2026-11-13 — inside holding window
-- **BOSCHLTD** (Automobile and Auto Components · Large cap) — score 88, Breakout — new 20-day high on 1.9× volume. Entry ₹52475.0 · Stop ₹49330.1 · Target ₹58764.8 · Risk/sh ₹3144.9 · 📅 results 2026-11-06 — inside holding window
-- **GROWW** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 3.0× volume. Entry ₹223.9 · Stop ₹205.5 · Target ₹260.6 · Risk/sh ₹18.4
-- **ANGELONE** (Financial Services · Small cap) — score 86, Breakout — new 20-day high on 1.5× volume. Entry ₹326.1 · Stop ₹297.5 · Target ₹383.4 · Risk/sh ₹28.6
-- **INDIANB** (Financial Services · Mid cap) — score 86, Breakout — new 20-day high on 2.4× volume. Entry ₹892.2 · Stop ₹834.8 · Target ₹1006.8 · Risk/sh ₹57.3
-- **NHPC** (Power · Mid cap) — score 86, Breakout — new 20-day high on 4.2× volume. Entry ₹80.6 · Stop ₹75.5 · Target ₹90.8 · Risk/sh ₹5.1
-- **PNB** (Financial Services · Large cap) — score 86, Breakout — new 20-day high on 1.4× volume. Entry ₹126.1 · Stop ₹118.3 · Target ₹141.7 · Risk/sh ₹7.8
-- **SONACOMS** (Automobile and Auto Components · Small cap) — score 86, Breakout — new 20-day high on 1.7× volume. Entry ₹915.2 · Stop ₹843.1 · Target ₹1059.5 · Risk/sh ₹72.1
-- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 85, Breakout — new 20-day high on 4.6× volume. Entry ₹1020.8 · Stop ₹936.6 · Target ₹1189.3 · Risk/sh ₹84.2
-- **MOTHERSON** (Automobile and Auto Components · Large cap) — score 85, Breakout — new 20-day high on 4.3× volume. Entry ₹168.0 · Stop ₹155.7 · Target ₹192.7 · Risk/sh ₹12.3 · 📅 results 2026-11-05 — inside holding window
-- **ANANDRATHI** (Financial Services · Small cap) — score 84, Breakout — new 20-day high on 1.6× volume. Entry ₹2370.0 · Stop ₹2255.8 · Target ₹2598.4 · Risk/sh ₹114.2
-- **DLF** (Realty · Large cap) — score 84, Breakout — new 20-day high on 2.6× volume. Entry ₹745.2 · Stop ₹701.1 · Target ₹833.4 · Risk/sh ₹44.1
-- **ULTRACEMCO** (Construction Materials · Large cap) — score 84, Breakout — new 20-day high on 1.9× volume. Entry ₹12250.0 · Stop ₹11569.2 · Target ₹13611.6 · Risk/sh ₹680.8
+## ✅ Strong Buy (14)
+- **LAURUSLABS** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹2454.0 · Stop ₹2265.6 · Target ₹2830.7 · Risk/sh ₹188.4
+- **AUROPHARMA** (Healthcare · Mid cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹1855.3 · Stop ₹1743.2 · Target ₹2079.5 · Risk/sh ₹112.1
+- **DIVISLAB** (Healthcare · Large cap) — score 87, Breakout — new 20-day high on 3.3× volume. Entry ₹11565.5 · Stop ₹10744.0 · Target ₹13208.5 · Risk/sh ₹821.5
+- **MANKIND** (Healthcare · Mid cap) — score 87, Breakout — new 20-day high on 1.9× volume. Entry ₹2668.3 · Stop ₹2473.5 · Target ₹3057.9 · Risk/sh ₹194.8
+- **SANSERA** (Automobile and Auto Components · Small cap) — score 86, Breakout — new 20-day high on 2.8× volume. Entry ₹4653.4 · Stop ₹4151.5 · Target ₹5657.2 · Risk/sh ₹501.9
+- **ANTHEM** (Healthcare · Mid cap) — score 85, Breakout — new 20-day high on 3.5× volume. Entry ₹958.2 · Stop ₹882.1 · Target ₹1110.2 · Risk/sh ₹76.0
+- **PNB** (Financial Services · Large cap) — score 84, Breakout — new 20-day high on 2.0× volume. Entry ₹132.2 · Stop ₹123.9 · Target ₹148.8 · Risk/sh ₹8.3
+- **SAILIFE** (Healthcare · Small cap) — score 83, Breakout — new 20-day high on 6.3× volume. Entry ₹1836.8 · Stop ₹1653.9 · Target ₹2202.5 · Risk/sh ₹182.9
+- **GLAND** (Healthcare · Small cap) — score 82, Breakout — new 20-day high on 5.2× volume. Entry ₹3302.4 · Stop ₹3036.0 · Target ₹3835.2 · Risk/sh ₹266.4
+- **MAHABANK** (Financial Services · Mid cap) — score 82, Breakout — new 20-day high on 1.6× volume. Entry ₹87.7 · Stop ₹80.9 · Target ₹101.3 · Risk/sh ₹6.8
+- **ICICIBANK** (Financial Services · Large cap) — score 81, Breakout — new 20-day high on 1.7× volume. Entry ₹1589.0 · Stop ₹1508.7 · Target ₹1749.7 · Risk/sh ₹80.3
+- **HDFCBANK** (Financial Services · Large cap) — score 80, Breakout — new 20-day high on 1.8× volume. Entry ₹798.2 · Stop ₹754.7 · Target ₹885.1 · Risk/sh ₹43.5
+- **INDIANB** (Financial Services · Mid cap) — score 80, Breakout — new 20-day high on 1.8× volume. Entry ₹933.7 · Stop ₹874.1 · Target ₹1053.0 · Risk/sh ₹59.6
+- **UNOMINDA** (Automobile and Auto Components · Mid cap) — score 80, Breakout — new 20-day high on 1.4× volume. Entry ₹1353.8 · Stop ₹1241.0 · Target ₹1579.4 · Risk/sh ₹112.8
 
-## 🟢 Buy (4)
-- **NAVINFLUOR** (Chemicals · Small cap) — score 78, Breakout — new 20-day high on 1.5× volume. Entry ₹8845.0 · Stop ₹8125.8 · Target ₹10283.4 · Risk/sh ₹719.2
-- **ANTHEM** (Healthcare · Mid cap) — score 74, Breakout — new 20-day high on 1.7× volume. Entry ₹913.5 · Stop ₹845.0 · Target ₹1050.6 · Risk/sh ₹68.5
-- **HINDPETRO** (Oil Gas & Consumable Fuels · Mid cap) — score 72, Breakout — new 20-day high on 2.1× volume. Entry ₹380.0 · Stop ₹351.4 · Target ₹437.4 · Risk/sh ₹28.7
-- **UNOMINDA** (Automobile and Auto Components · Mid cap) — score 70, Breakout — new 20-day high on 7.1× volume. Entry ₹1335.0 · Stop ₹1227.2 · Target ₹1550.7 · Risk/sh ₹107.8
+## 🟢 Buy (2)
+- **BANKBARODA** (Financial Services · Large cap) — score 75, Breakout — new 20-day high on 2.0× volume. Entry ₹260.0 · Stop ₹244.7 · Target ₹290.7 · Risk/sh ₹15.3
+- **GLAXO** (Healthcare · Mid cap) — score 70, Breakout — new 20-day high on 8.3× volume. Entry ₹2710.0 · Stop ₹2494.2 · Target ₹3141.7 · Risk/sh ₹215.8
 
 ## 📅 Results due soon (earnings gaps jump past stops — size down or wait)
 - **PATANJALI** — 2026-11-13
-- **BOSCHLTD** — 2026-11-06
-- **MOTHERSON** — 2026-11-05
-- **GLAND** — 2026-11-06
-- **DIVISLAB** — 2026-11-07
 - **HAL** — 2026-11-12
-- **IPCALAB** — 2026-11-05
-- **GRASIM** — 2026-11-13
-- **EICHERMOT** — 2026-11-12
-- **M&M** — 2026-11-05
+- **WHIRLPOOL** — 2026-11-10
+- **ALKEM** — 2026-11-12
 
-## 👀 Watchlist (106)
-RUBICON · GLENMARK · ETERNAL · INFY · TATAELXSI · TECHM · GLAND · DRREDDY · KOTAKBANK · ZENSARTECH · ACUTAAS · ATHERENERG · BSOFT · COFORGE · HCLTECH · LGEINDIA · LTTS · PERSISTENT · PPLPHARMA · WIPRO · DIVISLAB · LEMONTREE · PHOENIXLTD · SAILIFE · BHARTIHEXA …
+## 👀 Watchlist (102)
+GLENMARK · RUBICON · ADANIPORTS · ANGELONE · HINDPETRO · ACUTAAS · BOSCHLTD · COFORGE · LTTS · SYNGENE · TATAELXSI · WIPRO · ETERNAL · IOC · IPCALAB · ADANIGREEN · DRREDDY · EMCURE · MOTILALOFS · PVRINOX · BSOFT · DLF · JINDALSTEL · LGEINDIA · TECHM …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
