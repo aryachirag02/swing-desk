@@ -1,11 +1,11 @@
 # Daily swing brief — 2026-11-09
 
 **Market regime:** 🟡 **YELLOW** — No new buys — price above averages but 50DMA still falling (bull-trap filter)
-Nifty 25030.3 · 50DMA 23248.0 · 200DMA 23998.9 · 1M +10.7%
+Nifty 25044.7 · 50DMA 23264.8 · 200DMA 23995.8 · 1M +12.7%
 **Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 317/178
 **Flows:** FII ₹+7,212 cr today (+43,220 cr 5-day) · DII ₹-7,173 cr
 
-**Indices:** NIFTY 50 25,030.3 (+2.0%) · BANK NIFTY 59,086.0 (+2.3%) · NIFTY IT 32,977.9 (+0.4%) · NIFTY AUTO 27,811.8 (+0.8%) · NIFTY MIDCAP 50 17,490.0 (+0.3%) · NIFTY ENERGY 36,867.3 (-0.0%)
+**Indices:** NIFTY 50 25,044.7 (+0.1%) · BANK NIFTY 59,086.0 (+2.3%) · NIFTY IT 32,977.9 (+0.4%) · NIFTY AUTO 27,811.8 (+0.8%) · NIFTY MIDCAP 50 17,490.0 (+0.3%) · NIFTY ENERGY 36,867.3 (-0.0%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=100 → no setup · BANK NIFTY RSI2=100 → no setup
 
@@ -15,7 +15,7 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Healthcare (-1.0%) · Textiles (-1.5%) · Media Entertainment & Publication (-2.7%) · Information Technology (-3.6%)
+**Leading sectors:** Healthcare (-1.1%) · Textiles (-1.6%) · Media Entertainment & Publication (-2.8%) · Information Technology (-3.7%)
 
 ## ✅ Strong Buy (14)
 - **LAURUSLABS** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹2454.0 · Stop ₹2265.6 · Target ₹2830.7 · Risk/sh ₹188.4
