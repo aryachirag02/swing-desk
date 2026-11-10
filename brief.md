@@ -2,10 +2,10 @@
 
 **Market regime:** 🟡 **YELLOW** — No new buys — price above averages but 50DMA still falling (bull-trap filter)
 Nifty 25044.7 · 50DMA 23264.8 · 200DMA 23995.8 · 1M +12.7%
-**Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 317/178
+**Breadth:** 51.6% of universe above 50-DMA (Selective) · A/D 318/179
 **Flows:** FII ₹+7,212 cr today (+43,220 cr 5-day) · DII ₹-7,173 cr
 
-**Indices:** NIFTY 50 25,044.7 (+0.1%) · BANK NIFTY 59,086.0 (+2.3%) · NIFTY IT 32,977.9 (+0.4%) · NIFTY AUTO 27,811.8 (+0.8%) · NIFTY MIDCAP 50 17,490.0 (+0.3%) · NIFTY ENERGY 36,867.3 (-0.0%)
+**Indices:** NIFTY 50 25,044.7 (+0.1%) · BANK NIFTY 59,741.2 (+1.1%) · NIFTY IT 32,468.9 (-1.5%) · NIFTY AUTO 27,925.9 (+0.4%) · NIFTY FMCG 46,660.6 (-0.3%) · NIFTY ENERGY 37,164.9 (+0.8%)
 
 **Index F&O (dip-buy):** NIFTY 50 RSI2=100 → no setup · BANK NIFTY RSI2=100 → no setup
 
