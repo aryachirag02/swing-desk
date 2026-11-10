@@ -16,18 +16,18 @@ ANURAS.NS,Chemicals,2025-04-25,2025-07-21,854.8,1158.03,112,60,time stop,green,3
 BEL.NS,Capital Goods,2025-05-14,2025-07-21,336.33,389.0,1,48,stop,green,53.0,2.12
 HEGAM.NS,Capital Goods,2025-07-18,2025-07-25,553.88,510.24,260,5,stop,green,-11347.0,-1.0
 RRKABEL.NS,Capital Goods,2025-07-18,2025-07-28,1477.08,1353.62,92,6,stop,green,-11358.0,-1.0
-BALKRISIND.NS,Automobile and Auto Components,2025-07-18,2025-07-28,2705.86,2574.92,50,6,stop,green,-6547.0,-1.0
+BALKRISIND.NS,Automobile and Auto Components,2025-07-18,2025-07-28,2701.24,2570.53,50,6,stop,green,-6536.0,-1.0
 BOSCHLTD.NS,Automobile and Auto Components,2025-07-08,2025-08-07,35275.92,37697.39,1,22,stop,green,2421.0,1.23
 AMBUJACEM.NS,Construction Materials,2025-07-22,2025-08-07,611.97,584.24,81,12,stop,green,-2246.0,-1.0
 INDIGO.NS,Services,2025-07-01,2025-08-29,5952.44,5646.0,19,41,score decay,green,-5822.0,-0.82
-DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2256.67,2264.32,94,45,stop,green,719.0,0.06
+DALBHARAT.NS,Construction Materials,2025-07-22,2025-09-25,2256.68,2264.32,94,45,stop,green,719.0,0.06
 HDFCAMC.NS,Financial Services,2025-07-17,2025-10-01,2633.65,2718.3,56,52,score decay,green,4740.0,0.57
 PVRINOX.NS,Media Entertainment & Publication,2025-07-22,2025-10-17,1035.0,1092.6,161,60,time stop,green,9274.0,0.82
 FORTIS.NS,Healthcare,2025-07-25,2025-10-23,843.46,1048.34,157,60,time stop,green,32167.0,3.95
 UBL.NS,Fast Moving Consumer Goods,2025-10-24,2025-10-27,1815.88,1809.42,8,1,score decay,green,-52.0,-0.08
 MOTILALOFS.NS,Financial Services,2025-10-14,2025-10-29,1000.47,1000.47,156,10,stop,green,0.0,0.0
 ATHERENERG.NS,Automobile and Auto Components,2025-10-17,2025-10-30,680.0,680.0,138,8,stop,green,0.0,0.0
-IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,1653,3,stop,green,-1646.0,-1.0
+IDEA.NS,Telecommunication,2025-10-27,2025-10-30,9.62,8.62,1655,3,stop,green,-1648.0,-1.0
 AEGISVOPAK.NS,Oil Gas & Consumable Fuels,2025-10-17,2025-11-06,288.79,260.37,414,12,stop,green,-11765.0,-1.0
 CEATLTD.NS,Automobile and Auto Components,2025-10-17,2025-11-07,3672.51,3873.56,28,13,stop,green,5629.0,0.83
 ABDL.NS,Fast Moving Consumer Goods,2025-10-23,2025-11-11,604.57,604.57,249,12,stop,green,0.0,0.0
