@@ -19,7 +19,7 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 ## ✅ Strong Buy (14)
 - **LAURUSLABS** (Healthcare · Mid cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹2454.0 · Stop ₹2265.6 · Target ₹2830.7 · Risk/sh ₹188.4
-- **AUROPHARMA** (Healthcare · Mid cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹1855.3 · Stop ₹1743.2 · Target ₹2079.5 · Risk/sh ₹112.1
+- **AUROPHARMA** (Healthcare · Mid cap) — score 90, Breakout — new 20-day high on 2.1× volume. Entry ₹1848.3 · Stop ₹1736.6 · Target ₹2071.7 · Risk/sh ₹111.7
 - **DIVISLAB** (Healthcare · Large cap) — score 87, Breakout — new 20-day high on 3.3× volume. Entry ₹11565.5 · Stop ₹10744.0 · Target ₹13208.5 · Risk/sh ₹821.5
 - **MANKIND** (Healthcare · Mid cap) — score 87, Breakout — new 20-day high on 1.9× volume. Entry ₹2668.3 · Stop ₹2473.5 · Target ₹3057.9 · Risk/sh ₹194.8
 - **SANSERA** (Automobile and Auto Components · Small cap) — score 86, Breakout — new 20-day high on 2.8× volume. Entry ₹4653.4 · Stop ₹4151.5 · Target ₹5657.2 · Risk/sh ₹501.9
