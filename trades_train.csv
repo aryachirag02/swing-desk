@@ -6,7 +6,7 @@ TATACONSUM.NS,Fast Moving Consumer Goods,2025-04-25,2025-06-12,1142.0,1076.0,15,
 GODFRYPHLP.NS,Fast Moving Consumer Goods,2025-04-24,2025-06-13,2601.28,2601.28,37,35,stop,green,0.0,0.0
 GABRIEL.NS,Automobile and Auto Components,2025-05-13,2025-06-17,616.17,591.86,1,25,score decay,green,-24.0,-0.34
 RHIM.NS,Capital Goods,2025-06-13,2025-07-01,472.37,458.09,254,12,score decay,green,-3627.0,-0.33
-SUPREMEIND.NS,Capital Goods,2025-06-18,2025-07-08,4532.6,4178.11,9,14,stop,green,-3190.0,-1.0
+SUPREMEIND.NS,Capital Goods,2025-06-18,2025-07-08,4532.6,4178.12,9,14,stop,green,-3190.0,-1.0
 MFSL.NS,Financial Services,2025-04-28,2025-07-17,1260.0,1526.28,92,57,stop,green,24498.0,3.34
 AUBANK.NS,Financial Services,2025-04-24,2025-07-18,657.05,794.13,164,60,time stop,green,22481.0,2.23
 CHOICEIN.NS,Financial Services,2025-04-24,2025-07-18,612.0,753.05,231,60,time stop,green,32583.0,3.24
@@ -41,15 +41,15 @@ AVANTIFEED.NS,Fast Moving Consumer Goods,2025-11-24,2025-12-01,851.54,779.76,1,5
 SONACOMS.NS,Automobile and Auto Components,2025-10-15,2025-12-09,450.03,476.21,353,37,score decay,green,9245.0,0.79
 CUPID.NS,Fast Moving Consumer Goods,2025-11-17,2026-01-02,63.0,93.21,6,33,stop,green,181.0,4.11
 RELIANCE.NS,Oil Gas & Consumable Fuels,2025-11-21,2026-01-06,1533.91,1500.66,166,31,score decay,green,-5519.0,-0.65
-BSOFT.NS,Information Technology,2025-12-04,2026-01-06,411.95,411.95,3,22,stop,green,0.0,0.0
-HINDZINC.NS,Metals & Mining,2025-12-12,2026-01-08,523.44,578.58,113,18,stop,green,6231.0,1.67
+HINDZINC.NS,Metals & Mining,2025-12-04,2026-01-08,495.89,585.91,2,24,stop,green,180.0,3.16
+AVANTIFEED.NS,Fast Moving Consumer Goods,2026-01-02,2026-01-08,870.58,800.08,68,4,stop,green,-4794.0,-1.0
 LTF.NS,Financial Services,2025-10-14,2026-01-09,265.27,296.65,685,60,time stop,green,21493.0,1.85
 MCX.NS,Financial Services,2025-10-14,2026-01-09,1798.39,2185.64,99,60,time stop,green,38338.0,3.3
-MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2947,3,stop,green,-12984.0,-1.0
+MSUMI.NS,Automobile and Auto Components,2026-01-06,2026-01-09,52.04,47.64,2921,3,stop,green,-12870.0,-1.0
+NMDC.NS,Metals & Mining,2026-01-08,2026-01-09,82.63,77.95,25,1,stop,green,-117.0,-1.0
 CUB.NS,Financial Services,2025-10-29,2026-01-12,178.33,199.92,853,51,stop,green,18419.0,1.56
-SANSERA.NS,Automobile and Auto Components,2026-01-06,2026-01-12,1921.46,1767.69,50,4,stop,green,-7688.0,-1.0
-BRITANNIA.NS,Fast Moving Consumer Goods,2026-01-08,2026-01-12,6054.17,5846.14,10,2,score decay,green,-2080.0,-0.79
+BRITANNIA.NS,Fast Moving Consumer Goods,2026-01-08,2026-01-12,6054.17,5846.14,25,2,score decay,green,-5201.0,-0.79
+WIPRO.NS,Information Technology,2025-12-04,2026-01-19,246.74,242.88,1,31,stop (gap),green,-4.0,-0.41
 PFOCUS.NS,Media Entertainment & Publication,2025-12-09,2026-01-20,188.47,211.72,579,29,stop,green,13463.0,1.12
 BHARATFORG.NS,Automobile and Auto Components,2025-11-12,2026-01-21,1404.13,1374.25,69,49,score decay,green,-2061.0,-0.34
-NATIONALUM.NS,Metals & Mining,2026-01-05,2026-01-30,321.02,379.33,1,18,stop,green,58.0,2.64
 INDUSTOWER.NS,Telecommunication,2025-11-06,2026-02-02,377.69,416.14,285,60,time stop,green,10959.0,1.46
