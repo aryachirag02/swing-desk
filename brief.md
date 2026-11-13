@@ -3,7 +3,7 @@
 **Market regime:** 🟢 **GREEN** — Full position size — trend supports new buys
 Nifty 25144.3 · 50DMA 23331.8 · 200DMA 23991.8 · 1M +10.7%
 **Breadth:** 59.1% of universe above 50-DMA (Selective) · A/D 160/335
-**Flows:** FII ₹+7,831 cr today (+41,356 cr 5-day) · DII ₹-6,331 cr
+**Flows:** FII ₹+5,737 cr today (+33,342 cr 5-day) · DII ₹-2,254 cr
 
 **Indices:** NIFTY 50 25,144.3 (-0.6%) · BANK NIFTY 61,034.1 (-0.8%) · NIFTY PSU BANK 9,258.6 (-0.5%) · NIFTY REALTY 921.2 (-1.4%) · NIFTY METAL 12,647.9 (-1.0%) · NIFTY ENERGY 37,399.1 (+0.0%)
 
