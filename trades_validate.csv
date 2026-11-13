@@ -1,6 +1,1 @@
-ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
-DLF.NS,Realty,2026-11-13,2026-11-13,767.0,758.75,217,0,end of test,green,-1790.0,-0.17
-PRESTIGE.NS,Realty,2026-11-13,2026-11-13,1687.4,1650.0,75,0,end of test,green,-2805.0,-0.27
-EMCURE.NS,Healthcare,2026-11-13,2026-11-13,2325.0,2361.7,51,0,end of test,green,1872.0,0.18
-PHOENIXLTD.NS,Realty,2026-11-13,2026-11-13,2300.0,2255.0,62,0,end of test,green,-2790.0,-0.27
-CUPID.NS,Fast Moving Consumer Goods,2026-11-13,2026-11-13,388.9,377.8,261,0,end of test,green,-2897.0,-0.28
+
