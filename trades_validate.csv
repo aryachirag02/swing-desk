@@ -1,9 +1,7 @@
 ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
-DLF.NS,Realty,2026-11-13,2026-11-17,767.0,765.95,217,2,end of test,green,-228.0,-0.02
-PRESTIGE.NS,Realty,2026-11-13,2026-11-17,1687.4,1691.5,75,2,end of test,green,307.0,0.03
-EMCURE.NS,Healthcare,2026-11-13,2026-11-17,2325.0,2339.4,51,2,end of test,green,734.0,0.07
-PHOENIXLTD.NS,Realty,2026-11-13,2026-11-17,2300.0,2229.0,62,2,end of test,green,-4402.0,-0.43
-CUPID.NS,Fast Moving Consumer Goods,2026-11-13,2026-11-17,388.9,365.85,261,2,end of test,green,-6016.0,-0.58
-HONASA.NS,Fast Moving Consumer Goods,2026-11-16,2026-11-17,504.75,517.8,224,1,end of test,green,2923.0,0.29
-ITC.NS,Fast Moving Consumer Goods,2026-11-17,2026-11-17,295.15,293.3,597,0,end of test,green,-1104.0,-0.11
-KPRMILL.NS,Textiles,2026-11-17,2026-11-17,1214.7,1217.1,72,0,end of test,green,173.0,0.02
+DLF.NS,Realty,2026-11-13,2026-11-16,767.0,754.75,217,1,end of test,green,-2658.0,-0.26
+PRESTIGE.NS,Realty,2026-11-13,2026-11-16,1687.4,1638.8,75,1,end of test,green,-3645.0,-0.35
+EMCURE.NS,Healthcare,2026-11-13,2026-11-16,2325.0,2338.8,51,1,end of test,green,704.0,0.07
+PHOENIXLTD.NS,Realty,2026-11-13,2026-11-16,2300.0,2202.0,62,1,end of test,green,-6076.0,-0.59
+CUPID.NS,Fast Moving Consumer Goods,2026-11-13,2026-11-16,388.9,361.9,261,1,end of test,green,-7047.0,-0.68
+HONASA.NS,Fast Moving Consumer Goods,2026-11-16,2026-11-16,504.75,501.25,224,0,end of test,green,-784.0,-0.08
