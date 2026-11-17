@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-11-17
+# Daily swing brief — 2026-11-16
 
 **Market regime:** 🟢 **GREEN** — Full position size — trend supports new buys
-Nifty 25387.4 · 50DMA 23386.0 · 200DMA 23992.9 · 1M +10.4%
-**Breadth:** 58.1% of universe above 50-DMA (Selective) · A/D 258/237
+Nifty 25291.1 · 50DMA 23356.5 · 200DMA 23992.4 · 1M +11.8%
+**Breadth:** 56.8% of universe above 50-DMA (Selective) · A/D 176/322
 **Flows:** FII ₹+4,195 cr today (+35,191 cr 5-day) · DII ₹+197 cr
 
-**Indices:** NIFTY 50 25,387.4 (+0.4%) · BANK NIFTY 62,273.2 (+1.1%) · NIFTY PSU BANK 9,486.6 (+1.9%) · NIFTY REALTY 926.5 (+1.9%) · NIFTY IT 31,654.1 (-0.9%) · NIFTY ENERGY 37,176.7 (-0.3%)
+**Indices:** NIFTY 50 25,291.1 (+0.6%) · BANK NIFTY 61,575.9 (+0.9%) · NIFTY PSU BANK 9,305.3 (+0.5%) · FIN NIFTY 28,015.4 (+0.6%) · NIFTY METAL 12,458.3 (-1.5%) · NIFTY ENERGY 37,276.6 (-0.3%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=84 → no setup · BANK NIFTY RSI2=91 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=73 → no setup · BANK NIFTY RSI2=80 → no setup
 
 ---
 # Market intelligence — 2026-10-23
@@ -15,22 +15,20 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Textiles (+0.0%) · Media Entertainment & Publication (-0.9%) · Healthcare (-1.0%) · Fast Moving Consumer Goods (-3.3%)
+**Leading sectors:** Healthcare (-1.9%) · Textiles (-4.0%) · Media Entertainment & Publication (-5.1%) · Fast Moving Consumer Goods (-5.1%)
 
-## ✅ Strong Buy (5)
-- **LICHSGFIN** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 2.6× volume. Entry ₹622.5 · Stop ₹575.5 · Target ₹716.6 · Risk/sh ₹47.0
-- **MAHABANK** (Financial Services · Mid cap) — score 88, Breakout — new 20-day high on 1.8× volume. Entry ₹96.0 · Stop ₹89.2 · Target ₹109.6 · Risk/sh ₹6.8
-- **BANKINDIA** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 1.9× volume. Entry ₹159.3 · Stop ₹147.7 · Target ₹182.5 · Risk/sh ₹11.6
-- **PNB** (Financial Services · Large cap) — score 81, Breakout — new 20-day high on 1.6× volume. Entry ₹150.0 · Stop ₹139.9 · Target ₹170.3 · Risk/sh ₹10.1
-- **MOTILALOFS** (Financial Services · Mid cap) — score 80, Breakout — new 20-day high on 1.7× volume. Entry ₹1240.2 · Stop ₹1118.8 · Target ₹1483.1 · Risk/sh ₹121.4
+## ✅ Strong Buy (4)
+- **ITC** (Fast Moving Consumer Goods · Large cap) — score 86, Breakout — new 20-day high on 2.3× volume. Entry ₹295.1 · Stop ₹278.2 · Target ₹329.0 · Risk/sh ₹16.9
+- **KPRMILL** (Textiles · Mid cap) — score 84, Breakout — new 20-day high on 1.7× volume. Entry ₹1211.0 · Stop ₹1108.1 · Target ₹1416.9 · Risk/sh ₹102.9
+- **LICHSGFIN** (Financial Services · Mid cap) — score 84, Breakout — new 20-day high on 2.3× volume. Entry ₹605.5 · Stop ₹560.1 · Target ₹696.4 · Risk/sh ₹45.4
+- **ASAHIINDIA** (Automobile and Auto Components · Small cap) — score 81, Breakout — new 20-day high on 2.3× volume. Entry ₹1165.1 · Stop ₹1075.1 · Target ₹1344.9 · Risk/sh ₹89.9
 
-## 🟢 Buy (3)
-- **HONASA** (Fast Moving Consumer Goods · Small cap) — score 78, Breakout — new 20-day high on 1.8× volume. Entry ₹517.8 · Stop ₹470.8 · Target ₹611.8 · Risk/sh ₹47.0
-- **GMRAIRPORT** (Services · Mid cap) — score 76, Breakout — new 20-day high on 2.0× volume. Entry ₹104.5 · Stop ₹97.3 · Target ₹118.9 · Risk/sh ₹7.2
-- **CANBK** (Financial Services · Large cap) — score 74, Breakout — new 20-day high on 2.0× volume. Entry ₹134.0 · Stop ₹125.6 · Target ₹150.7 · Risk/sh ₹8.4
+## 🟢 Buy (2)
+- **ABDL** (Fast Moving Consumer Goods · Small cap) — score 78, Breakout — new 20-day high on 1.8× volume. Entry ₹784.2 · Stop ₹712.1 · Target ₹928.5 · Risk/sh ₹72.1
+- **HDFCLIFE** (Financial Services · Large cap) — score 75, Breakout — new 20-day high on 1.4× volume. Entry ₹604.5 · Stop ₹565.7 · Target ₹682.0 · Risk/sh ₹38.8
 
-## 👀 Watchlist (134)
-KPRMILL · PHOENIXLTD · DIVISLAB · WELSPUNLIV · GLENMARK · ITCHOTELS · SAILIFE · LAURUSLABS · ACUTAAS · LENSKART · PPLPHARMA · GROWW · KARURVYSYA · NAVINFLUOR · KALYANKJIL · MCX · PAYTM · ABDL · BSE · CDSL · INDIANB · MANKIND · MEESHO · PATANJALI · PRESTIGE …
+## 👀 Watchlist (132)
+DIVISLAB · GLENMARK · KALYANKJIL · ACUTAAS · LENSKART · SAILIFE · TATACOMM · MCX · PVRINOX · KARURVYSYA · PHOENIXLTD · PPLPHARMA · SANSERA · BANKINDIA · GLAND · MANKIND · SYNGENE · BHARTIARTL · ETERNAL · NAVINFLUOR · PNB · ATHERENERG · DLF · DRREDDY · NH …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
