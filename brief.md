@@ -2,7 +2,7 @@
 
 **Market regime:** 🟢 **GREEN** — Full position size — trend supports new buys
 Nifty 25227.9 · 50DMA 23413.0 · 200DMA 23993.8 · 1M +9.0%
-**Breadth:** 51.8% of universe above 50-DMA (Selective) · A/D 123/374
+**Breadth:** 51.7% of universe above 50-DMA (Selective) · A/D 122/374
 **Flows:** FII ₹+7,411 cr today (+28,075 cr 5-day) · DII ₹-1,357 cr
 
 **Indices:** NIFTY 50 25,227.9 (-0.6%) · BANK NIFTY 62,038.6 (-0.4%) · NIFTY PSU BANK 9,542.8 (+0.6%) · NIFTY REALTY 918.7 (-0.8%) · NIFTY METAL 12,222.3 (-2.5%) · NIFTY IT 31,262.3 (-1.2%)
@@ -27,7 +27,7 @@ _Claude web-research on the day's 25 quant-flagged movers. Research assistance, 
 - **SBIN** (Financial Services · Large cap) — score 77, Breakout — new 20-day high on 2.2× volume. Entry ₹1135.0 · Stop ₹1075.2 · Target ₹1254.6 · Risk/sh ₹59.8
 - **GAIL** (Oil Gas & Consumable Fuels · Large cap) — score 72, Breakout — new 20-day high on 1.5× volume. Entry ₹190.0 · Stop ₹180.1 · Target ₹209.9 · Risk/sh ₹9.9
 
-## 👀 Watchlist (134)
+## 👀 Watchlist (133)
 GLENMARK · DIVISLAB · PHOENIXLTD · URBANCO · MAHABANK · EMCURE · MCX · PVRINOX · ACUTAAS · MANKIND · MARICO · PPLPHARMA · SAILIFE · WELSPUNLIV · KPRMILL · LICHSGFIN · SIGNATURE · TATACONSUM · BSE · CIPLA · GROWW · INDIGO · UNOMINDA · ANGELONE · CDSL …
 
 ## 📌 Position reminders (check Trade log tab)
