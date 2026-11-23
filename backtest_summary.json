@@ -1,12 +1,12 @@
 {
   "windows": {
     "train": [
-      "2025-03-05",
-      "2026-05-18"
+      "2025-03-07",
+      "2026-05-20"
     ],
     "validate": [
-      "2026-05-19",
-      "2026-11-19"
+      "2026-05-21",
+      "2026-11-23"
     ]
   },
   "params_used": {
@@ -16,12 +16,12 @@
   },
   "train": {
     "trades": 52,
-    "win_rate": 42.3,
-    "avg_win": 15655.0,
-    "avg_loss": -3795.0,
+    "win_rate": 38.5,
+    "avg_win": 17212.0,
+    "avg_loss": -3558.0,
     "profit_factor": 3.02,
-    "expectancy_R": 0.548,
-    "avg_hold_days": 28.2,
+    "expectancy_R": 0.315,
+    "avg_hold_days": 28.1,
     "total_return_pct": 27.1,
     "annualized_pct": 22.7,
     "max_drawdown_pct": -6.6
@@ -33,11 +33,11 @@
     },
     "stop": {
       "n": 31,
-      "avg_R": 0.26
+      "avg_R": -0.15
     },
     "stop (gap)": {
       "n": 4,
-      "avg_R": -0.63
+      "avg_R": -0.45
     },
     "time stop": {
       "n": 10,
@@ -46,20 +46,20 @@
   },
   "validate": {
     "trades": 9,
-    "win_rate": 44.4,
-    "avg_win": 2573.0,
-    "avg_loss": -2816.0,
-    "profit_factor": 0.73,
-    "expectancy_R": -0.049,
-    "avg_hold_days": 3.0,
-    "total_return_pct": 2.8,
-    "annualized_pct": 5.7,
+    "win_rate": 33.3,
+    "avg_win": 5738.0,
+    "avg_loss": -1634.0,
+    "profit_factor": 1.76,
+    "expectancy_R": 0.074,
+    "avg_hold_days": 4.9,
+    "total_return_pct": 3.9,
+    "annualized_pct": 7.9,
     "max_drawdown_pct": -1.8
   },
   "validate_exit_breakdown": {
     "end of test": {
       "n": 9,
-      "avg_R": -0.05
+      "avg_R": 0.07
     }
   }
 }
