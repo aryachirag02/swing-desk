@@ -16,12 +16,12 @@
 ## Validate window (2026-05-21 to 2026-11-23)
 
 - **trades**: 9
-- **win rate**: 22.2
-- **avg win**: 4686.0
-- **avg loss**: -997.0
-- **profit factor**: 1.34
-- **expectancy R**: 0.027
+- **win rate**: 33.3
+- **avg win**: 5738.0
+- **avg loss**: -1634.0
+- **profit factor**: 1.76
+- **expectancy R**: 0.074
 - **avg hold days**: 4.9
-- **total return pct**: 3.4
-- **annualized pct**: 6.9
+- **total return pct**: 3.9
+- **annualized pct**: 7.9
 - **max drawdown pct**: -1.8
