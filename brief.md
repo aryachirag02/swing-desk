@@ -1,13 +1,13 @@
-# Daily swing brief — 2026-11-23
+# Daily swing brief — 2026-11-25
 
 **Market regime:** 🟢 **GREEN** — Full position size — trend supports new buys
-Nifty 25349.7 · 50DMA 23520.1 · 200DMA 23997.4 · 1M +11.7%
-**Breadth:** 55.6% of universe above 50-DMA (Selective) · A/D 133/363
-**Flows:** FII ₹+5,673 cr today (+33,455 cr 5-day) · DII ₹-2,760 cr
+Nifty 25819.2 · 50DMA 23567.9 · 200DMA 23999.9 · 1M +14.2%
+**Breadth:** 59.1% of universe above 50-DMA (Selective) · A/D 269/227
+**Flows:** FII ₹+4,479 cr today (+33,739 cr 5-day) · DII ₹+4,019 cr
 
-**Indices:** NIFTY 50 25,349.7 (-1.7%) · BANK NIFTY 62,585.4 (-3.2%) · NIFTY REALTY 941.8 (+0.3%) · NIFTY PSU BANK 9,559.7 (-3.3%) · NIFTY METAL 11,819.2 (-3.7%) · NIFTY IT 31,850.8 (+1.7%)
+**Indices:** NIFTY 50 25,819.2 (+1.9%) · BANK NIFTY 63,703.2 (+1.8%) · NIFTY REALTY 942.0 (+0.0%) · NIFTY PSU BANK 9,595.0 (+0.4%) · NIFTY METAL 11,578.5 (-2.0%) · NIFTY IT 32,207.6 (+1.1%)
 
-**Index F&O (dip-buy):** NIFTY 50 RSI2=32 → no setup · BANK NIFTY RSI2=35 → no setup
+**Index F&O (dip-buy):** NIFTY 50 RSI2=71 → no setup · BANK NIFTY RSI2=62 → no setup
 
 ---
 # Market intelligence — 2026-11-24
@@ -15,20 +15,30 @@ _Claude web-research on the day's 30 quant-flagged movers. Research assistance, 
 
 
 
-**Leading sectors:** Fast Moving Consumer Goods (+1.1%) · Healthcare (+0.7%) · Textiles (+0.2%) · Realty (-2.5%)
+**Leading sectors:** Fast Moving Consumer Goods (+2.6%) · Healthcare (+1.0%) · Textiles (-1.5%) · Automobile and Auto Components (-3.0%)
 
-## ✅ Strong Buy (4)
-- **HONASA** (Fast Moving Consumer Goods · Small cap) — score 90, Breakout — new 20-day high on 1.7× volume. Entry ₹539.8 · Stop ₹494.6 · Target ₹630.0 · Risk/sh ₹45.1
-- **ASTERDM** (Healthcare · Mid cap) — score 88, Breakout — new 20-day high on 1.6× volume. Entry ₹790.3 · Stop ₹726.8 · Target ₹917.5 · Risk/sh ₹63.6
-- **JSWINFRA** (Services · Mid cap) — score 81, Breakout — new 20-day high on 2.5× volume. Entry ₹353.5 · Stop ₹325.8 · Target ₹409.0 · Risk/sh ₹27.7
-- **PERSISTENT** (Information Technology · Mid cap) — score 81, Breakout — new 20-day high on 2.1× volume. Entry ₹6282.5 · Stop ₹5846.5 · Target ₹7154.4 · Risk/sh ₹436.0
+## ✅ Strong Buy (9)
+- **NH** (Healthcare · Mid cap) — score 96, Breakout — new 20-day high on 2.2× volume. Entry ₹2003.7 · Stop ₹1866.5 · Target ₹2278.1 · Risk/sh ₹137.2
+- **ITC** (Fast Moving Consumer Goods · Large cap) — score 94, Breakout — new 20-day high on 1.7× volume. Entry ₹309.2 · Stop ₹291.7 · Target ₹344.3 · Risk/sh ₹17.5
+- **DABUR** (Fast Moving Consumer Goods · Mid cap) — score 90, Breakout — new 20-day high on 6.0× volume. Entry ₹430.0 · Stop ₹403.0 · Target ₹484.0 · Risk/sh ₹27.0
+- **INDIGO** (Services · Large cap) — score 90, Breakout — new 20-day high on 1.6× volume. Entry ₹5720.0 · Stop ₹5344.5 · Target ₹6471.0 · Risk/sh ₹375.5
+- **TATACONSUM** (Fast Moving Consumer Goods · Large cap) — score 90, Breakout — new 20-day high on 1.7× volume. Entry ₹1185.8 · Stop ₹1118.9 · Target ₹1319.6 · Risk/sh ₹66.9
+- **HINDUNILVR** (Fast Moving Consumer Goods · Large cap) — score 86, Breakout — new 20-day high on 2.7× volume. Entry ₹2141.8 · Stop ₹2018.9 · Target ₹2387.6 · Risk/sh ₹122.9
+- **TRENT** (Consumer Services · Large cap) — score 84, Breakout — new 20-day high on 1.7× volume. Entry ₹3319.6 · Stop ₹3102.5 · Target ₹3753.7 · Risk/sh ₹217.1
+- **EMAMILTD** (Fast Moving Consumer Goods · Small cap) — score 82, Breakout — new 20-day high on 1.6× volume. Entry ₹427.5 · Stop ₹397.6 · Target ₹487.4 · Risk/sh ₹29.9
+- **JSWINFRA** (Services · Mid cap) — score 81, Breakout — new 20-day high on 2.0× volume. Entry ₹357.6 · Stop ₹329.9 · Target ₹413.2 · Risk/sh ₹27.8
 
-## 🟢 Buy (2)
-- **ICICIGI** (Financial Services · Mid cap) — score 78, Breakout — new 20-day high on 1.7× volume. Entry ₹1742.6 · Stop ₹1638.9 · Target ₹1950.0 · Risk/sh ₹103.7
-- **PRIVISCL** (Chemicals · Small cap) — score 77, Breakout — new 20-day high on 1.4× volume. Entry ₹3617.1 · Stop ₹3303.9 · Target ₹4243.5 · Risk/sh ₹313.2
+## 🟢 Buy (7)
+- **APOLLOTYRE** (Automobile and Auto Components · Small cap) — score 79, Breakout — new 20-day high on 1.9× volume. Entry ₹437.4 · Stop ₹407.3 · Target ₹497.4 · Risk/sh ₹30.0
+- **HEROMOTOCO** (Automobile and Auto Components · Mid cap) — score 79, Breakout — new 20-day high on 1.6× volume. Entry ₹5751.5 · Stop ₹5380.0 · Target ₹6494.5 · Risk/sh ₹371.5
+- **BAJAJFINSV** (Financial Services · Large cap) — score 78, Breakout — new 20-day high on 3.8× volume. Entry ₹1925.0 · Stop ₹1803.5 · Target ₹2168.0 · Risk/sh ₹121.5
+- **EIHOTEL** (Consumer Services · Small cap) — score 76, Breakout — new 20-day high on 1.4× volume. Entry ₹340.2 · Stop ₹313.2 · Target ₹394.3 · Risk/sh ₹27.0
+- **EICHERMOT** (Automobile and Auto Components · Large cap) — score 74, Breakout — new 20-day high on 1.4× volume. Entry ₹8336.0 · Stop ₹7817.1 · Target ₹9373.9 · Risk/sh ₹518.9
+- **GODREJCP** (Fast Moving Consumer Goods · Large cap) — score 73, Breakout — new 20-day high on 2.3× volume. Entry ₹963.0 · Stop ₹900.4 · Target ₹1088.1 · Risk/sh ₹62.6
+- **COLPAL** (Fast Moving Consumer Goods · Mid cap) — score 70, Breakout — new 20-day high on 2.0× volume. Entry ₹1825.0 · Stop ₹1708.1 · Target ₹2058.9 · Risk/sh ₹116.9
 
-## 👀 Watchlist (163)
-DIVISLAB · PHOENIXLTD · PRESTIGE · KPRMILL · NH · VIJAYA · DLF · LALPATHLAB · APOLLOHOSP · COFORGE · GLENMARK · HDFCBANK · WELSPUNLIV · ANTHEM · MARICO · LICHSGFIN · BANKINDIA · EIHOTEL · GLAND · LAURUSLABS · PWL · SAILIFE · SYNGENE · TATACONSUM · UNIONBANK …
+## 👀 Watchlist (162)
+FORCEMOT · VIJAYA · DIVISLAB · GLENMARK · GLAND · HDFCLIFE · MANKIND · PHOENIXLTD · WELSPUNLIV · ANTHEM · AUROPHARMA · LAURUSLABS · BLUESTARCO · CEATLTD · ITCHOTELS · UNITDSPR · APOLLOHOSP · UNIONBANK · ETERNAL · MAXHEALTH · SAILIFE · SYNGENE · UNOMINDA · LGEINDIA · ASAHIINDIA …
 
 ## 📌 Position reminders (check Trade log tab)
 - **Exit** any holding whose score has dropped below 40; **Reduce** below 50.
