@@ -1,10 +1,12 @@
 ticker,sector,entry_date,exit_date,entry,exit,qty,bars,reason,regime,pnl,r_mult
-DLF.NS,Realty,2026-11-13,2026-11-25,767.0,795.0,217,7,end of test,green,6076.0,0.59
-PRESTIGE.NS,Realty,2026-11-13,2026-11-25,1687.4,1685.1,75,7,end of test,green,-173.0,-0.02
-EMCURE.NS,Healthcare,2026-11-13,2026-11-25,2325.0,2313.5,51,7,end of test,green,-586.0,-0.06
-PHOENIXLTD.NS,Realty,2026-11-13,2026-11-25,2300.0,2285.5,61,7,end of test,green,-884.0,-0.09
-CUPID.NS,Fast Moving Consumer Goods,2026-11-13,2026-11-25,388.9,366.35,261,7,end of test,green,-5886.0,-0.57
-HONASA.NS,Fast Moving Consumer Goods,2026-11-16,2026-11-25,504.75,536.45,224,6,end of test,green,7101.0,0.69
-ITC.NS,Fast Moving Consumer Goods,2026-11-17,2026-11-25,295.15,309.25,597,5,end of test,green,8418.0,0.83
-KPRMILL.NS,Textiles,2026-11-17,2026-11-25,1214.7,1173.0,73,5,end of test,green,-3044.0,-0.41
-MSUMI.NS,Automobile and Auto Components,2026-11-20,2026-11-25,41.75,42.12,6,2,end of test,green,2.0,0.13
+SUNTV.NS,Media Entertainment & Publication,2026-11-19,2026-11-25,696.35,623.53,1,3,stop,green,-73.0,-1.0
+DLF.NS,Realty,2026-11-13,2026-11-27,767.0,805.45,216,9,end of test,green,8305.0,0.81
+PRESTIGE.NS,Realty,2026-11-13,2026-11-27,1687.4,1796.7,75,9,end of test,green,8197.0,0.8
+EMCURE.NS,Healthcare,2026-11-13,2026-11-27,2325.0,2308.6,51,9,end of test,green,-836.0,-0.08
+PHOENIXLTD.NS,Realty,2026-11-13,2026-11-27,2300.0,2229.7,61,9,end of test,green,-4288.0,-0.42
+CUPID.NS,Fast Moving Consumer Goods,2026-11-13,2026-11-27,388.9,389.5,261,9,end of test,green,157.0,0.02
+HONASA.NS,Fast Moving Consumer Goods,2026-11-16,2026-11-27,504.75,512.55,224,8,end of test,green,1747.0,0.17
+ITC.NS,Fast Moving Consumer Goods,2026-11-17,2026-11-27,295.15,304.7,596,7,end of test,green,5692.0,0.56
+KPRMILL.NS,Textiles,2026-11-17,2026-11-27,1214.7,1217.3,73,7,end of test,green,190.0,0.03
+MSUMI.NS,Automobile and Auto Components,2026-11-20,2026-11-27,41.75,41.99,2,4,end of test,green,0.0,0.09
+APOLLOTYRE.NS,Automobile and Auto Components,2026-11-26,2026-11-27,436.0,426.05,1,1,end of test,green,-10.0,-0.33
